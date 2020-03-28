@@ -1,0 +1,24 @@
+---
+langs: [fr_FR, en_US]
+baseurl: "/jeedom-arlo" # the subpath of your site, e.g. /blog
+url: "/" # the base hostname & protocol for your site
+sass:
+  sass_dir: assets/css
+  style: compressed
+markdown: kramdown
+permalink: /404.html
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+exclude:
+- vendor
+plugins:
+- jekyll-paginate
+- jekyll-seo-tag
+title: "Arlo"
+description: "Ceci est la documentation du plugin Arlo de la solution domotique Jeedom."
+author: "Mips"
+image: https://www.jeedom.com/site/logo.png
+forum: https://community.jeedom.com/tags/plugin-arlo
+tagPlugin: plugin-arlo

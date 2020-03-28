@@ -16,7 +16,7 @@ exclude:
 plugins:
 - jekyll-paginate
 - jekyll-seo-tag
-title: "Mips's Plugins Documentations"
+title: "Mips Plugins Documentations"
 description: "Ceci est la documentation des plugins créés par Mips de la solution domotique Jeedom."
 author: "Mips"
 image: https://www.jeedom.com/site/logo.png

@@ -8,13 +8,9 @@ lang: fr_FR
 
 [Voir la dernière version](#tocAnchor-1-1-2)
 
-## 2020-02-01
+## 2020-04-xx
 
 Première version
-
-## 2020-02-14
-
-- Ajout du support des pièces jointes (par exemple les images des caméras)
 
 # Documentation
 

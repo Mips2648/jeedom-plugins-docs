@@ -20,4 +20,5 @@ title: "Mips's Plugins Documentations"
 description: "Ceci est la documentation des plugins créés par Mips de la solution domotique Jeedom."
 author: "Mips"
 image: https://www.jeedom.com/site/logo.png
-forum: https://community.jeedom.com
+forum: https://community.jeedom.com/tags/plugin-arlo
+tagPlugin: plugin-arlo

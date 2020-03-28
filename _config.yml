@@ -1,6 +1,6 @@
 ---
 langs: [fr_FR, en_US]
-baseurl: "/jeedom-arlo" # the subpath of your site, e.g. /blog
+baseurl: "/jeedom-plugins-docs" # the subpath of your site, e.g. /blog
 url: "/" # the base hostname & protocol for your site
 sass:
   sass_dir: assets/css
@@ -16,8 +16,8 @@ exclude:
 plugins:
 - jekyll-paginate
 - jekyll-seo-tag
-title: "Arlo"
-description: "Ceci est la documentation du plugin Arlo de la solution domotique Jeedom."
+title: "Mips's Plugins Documentations"
+description: "Ceci est la documentation des plugins créés par Mips de la solution domotique Jeedom."
 author: "Mips"
 image: https://www.jeedom.com/site/logo.png
 forum: https://community.jeedom.com/tags/plugin-arlo

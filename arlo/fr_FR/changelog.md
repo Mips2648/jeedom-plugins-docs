@@ -132,4 +132,4 @@ Il est recommandé de relancer l'installation des dépendances après l'installa
 
 # Documentation
 
-[Documentation]({{./}}/)
+[Documentation]({{./index}}/)

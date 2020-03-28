@@ -114,4 +114,4 @@ It is recommended to launch the installation of dependencies after installing th
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/)
+[Documentation]({{./}}/)

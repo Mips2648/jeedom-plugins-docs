@@ -4,4 +4,4 @@ title: Index
 lang: fr_FR
 ---
 
-[Arlo](./arlo)
+[Arlo](/arlo)

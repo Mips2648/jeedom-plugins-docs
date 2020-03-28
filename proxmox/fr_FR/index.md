@@ -29,7 +29,7 @@ Cette configuration se fait sur le "datacenter" dans l'interface de Proxmox, men
 
 Dans le menu Permissions>Users, cliquez sur "Add" et remplissez l'écran suivant:
 
-![Proxmox user](../assets/images/proxmox_user.png "Proxmox user")
+![Proxmox user](../images/proxmox_user.png "Proxmox user")
 
 > **Important**
 >
@@ -43,7 +43,7 @@ Nous avons créé un nouvel utilisateur sous Proxmox mais celui-ci n'a encore au
 
 Dans le menu principal "Permissions", cliquez sur sur "Add" puis "User permission" et remplissez l'écran suivant selon les permissions que vous voulez accorder à Jeedom (voir la documentation de Proxmox pour plus de détails):
 
-![Proxmox permissions](../assets/images/proxmox_permissions.png "Proxmox permissions")
+![Proxmox permissions](../images/proxmox_permissions.png "Proxmox permissions")
 
 > **Tip**
 >
@@ -58,11 +58,11 @@ Il faut saisir les informations suivantes dans la configuration du plugin:
 - un nom d'utilisateur et son mot de passe
 - le royaume d'authentification de l'utilisateur, si différent de "pve" (="Proxmox VE authentication server", royaume par défaut pour les utilisateurs créés localement sur Proxmox, voir documentation de Proxmox)
 
-![Configuration plugin](../assets/images/plugin_config.png "Configuration plugin")
+![Configuration plugin](../images/plugin_config.png "Configuration plugin")
 
 Vous pouvez vérifier si la configuration du plugin est correcte grâce à la page santé (menu Analyse > Santé)
 
-![Santé plugin](../assets/images/plugin_health.png "Santé plugin")
+![Santé plugin](../images/plugin_health.png "Santé plugin")
 
 Si la connexion est réussie, la version de votre serveur Proxmox sera affichée.
 

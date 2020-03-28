@@ -33,19 +33,19 @@ This step is not mandatory, you can use your current / main Fullup credentials f
 >
 > You will have to share each gauge you have if you want to view it in Jeedom (by reusing the same email address).
 
-![Fullup configuration](../assets/images/fullup_dashboard.png "Fullup configuration")
+![Fullup configuration](../images/fullup_dashboard.png "Fullup configuration")
 
 - Click the "Manage sharings" menu
 
-![Manage sharings](../assets/images/fullup_settings.png "Manage sharings")
+![Manage sharings](../images/fullup_settings.png "Manage sharings")
 
 - Click on the "+" to add a user
 
-![My sharings](../assets/images/fullup_partages.png "My sharings")
+![My sharings](../images/fullup_partages.png "My sharings")
 
 - Enter a new email address (or, if you use a gmail address, a gmail alias by adding +jeedom before @gmail.com for example)
 
-![Add a sharing](../assets/images/fullup_utilisateurs.png "Add a sharing")
+![Add a sharing](../images/fullup_utilisateurs.png "Add a sharing")
 
 - You will receive a confirmation email to create your new account on the Fullup application, simply follow the procedure.
 
@@ -57,17 +57,17 @@ This step is not mandatory, you can use your current / main Fullup credentials f
 
 - Go back to the plugin's configuration page and enter your user (email address) and password (from the Fullup account).
 
-![Plugin configuration](../assets/images/plugin_config.png "Plugin configuration")
+![Plugin configuration](../images/plugin_config.png "Plugin configuration")
 
 - Save the configuration.
 - Click on "Search for Fullup Gauges".
 - If the credentials are correct, you should see the message "Successful synchronization..."
 
-![Successful synchronization](../assets/images/sync_success.png "Successful synchronization")
+![Successful synchronization](../images/sync_success.png "Successful synchronization")
 
 - In case of error a message will explain the reason for it, for example to check the user and the password
 
-![Error](../assets/images/sync_failure.png "Error")
+![Error](../images/sync_failure.png "Error")
 
 > **Tip**
 >

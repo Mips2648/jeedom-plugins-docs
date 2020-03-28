@@ -38,18 +38,18 @@ The plugin will communicate with the HRV via the RS232 interface. On the HRV, th
 - a DB9 port,
 - or a RJ45 port.
 
-![Connector board picture](../assets/images/connectorBoard_picture.jpg "Connector board picture")
+![Connector board picture](../images/connectorBoard_picture.jpg "Connector board picture")
 
-![Connector board schema](../assets/images/connectorBoard_schema.png "Connector board schema")
+![Connector board schema](../images/connectorBoard_schema.png "Connector board schema")
 
 You will need to connect this interface to the Raspberry Pi.
 There are DB9-USB adapters, it's the simplest if the DB9 port is present on your HRV
 
-![Adapter db9-usb](../assets/images/db9_usb_adaptor.jpg "Adapter db9-usb")
+![Adapter db9-usb](../images/db9_usb_adaptor.jpg "Adapter db9-usb")
 
 If the db9 port is not present, there are also terminal block adapters to DB9 and then connect a DB9-USB adapter, up to you connect the wires to the terminal block of the HRV or to the RJ45 port.
 
-![Adapter bornier_db9](../assets/images/bornier_db9_adaptor.jpg "Adapter bornier_db9")
+![Adapter bornier_db9](../images/bornier_db9_adaptor.jpg "Adapter bornier_db9")
 
 # Plugin installation
 
@@ -67,7 +67,7 @@ There is no additional config to perform here, the plugin will use the cron5 to 
 - Click "Add" and choose a name.
 - You will land on the configuration of your newly created device on witch you can setup usual Jeedom options (don't forget to activate your new device).
 
-![Device configuration](../assets/images/equip_config.png "Device configuration")
+![Device configuration](../images/equip_config.png "Device configuration")
 
 ## Connectivity between plugin and pi (ssh configuration)
 
@@ -89,7 +89,7 @@ The installation will:
 If the previous step went well, you should see the list of "devices" (usb) connected to your pi, you must select the device connected to the HRV and possibly select the one connected to the CCEease (optional).
 It is not recommended to change the configuration of the TCP ports, only do this if you know what you are doing and you have a problem with usage of these ports; These ports will be used by the remote daemon, on the Raspberry connected to the VMC, not on Jeedom (unless it's the same device).
 
-![Daemon configuration](../assets/images/daemon_config.png "Daemon configuration")
+![Daemon configuration](../images/daemon_config.png "Daemon configuration")
 
 Save your device.
 
@@ -104,7 +104,7 @@ If all goes well, the status should go green. If not please wait a few minutes i
 In the tab "HRV configuration" you can see all the configuration of your HRV: model and version, fan speed (configured by your installer) ...
 There is a button to reload the configuration, it can be used whenever necessary without risk.
 
-![HRV configuration](../assets/images/vmc_config.png "HRV configuration")
+![HRV configuration](../images/vmc_config.png "HRV configuration")
 
 # Commands
 
@@ -125,7 +125,7 @@ The result gives an indication of the clogging of your filters: dirty filters wi
 
 # Widget
 
-![Example](../assets/images/widget.png "Example")
+![Example](../images/widget.png "Example")
 
 # Changelog
 

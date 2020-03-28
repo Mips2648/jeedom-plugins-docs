@@ -39,14 +39,14 @@ Vous devez ensuite choisir le type d'informations souhaitée:
 Pour ce type d'information, vous devez renseigner le symbole de l'action ou de l'indice.
 Le plugin offre une fonction de recherche dynamique, commencez simplement à taper le nom d'une entreprise (minimum 3 caractères) ou le symbole voulu et une liste de possibilités sera proposée. Vous n'avez plus qu'à choisir parmi celles-ci.
 
-![Configuration symbole](../assets/images/config_symbol.png "Configuration symbole")
+![Configuration symbole](../images/config_symbol.png "Configuration symbole")
 
 ## Taux de change
 
 Pour ce type d'information, vous devez choisir la devise d'origine et de destination.
 Le plugin offre une fonction de recherche dynamique, commencez simplement à taper le nom d'une devise ou son code et une liste des devise correspondante sera proposée. Vous n'avez plus qu'à choisir parmi celles-ci.
 
-![Configuration devise](../assets/images/config_currency.png "Configuration devise")
+![Configuration devise](../images/config_currency.png "Configuration devise")
 
 # Les commandes disponibles
 

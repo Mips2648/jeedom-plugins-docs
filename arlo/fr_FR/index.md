@@ -50,15 +50,15 @@ Il est donc nécessaire de créer un utilisateur dédié au plugin, dans le cas 
 
 - Pour cela, ouvrez <https://my.arlo.com> ou ouvrez l'app mobile;
 - Cliquez sur "Paramètres" en haut à droite;
-![Paramètres Arlo](../assets/images/settings.png "Paramètres Arlo")
+![Paramètres Arlo](../images/settings.png "Paramètres Arlo")
 
 - Cliquez sur "Autoriser l'accès" dans le menu de gauche puis sur "Ajouter" à droite.
-![Accès Arlo](../assets/images/access.png "Accès Arlo")
+![Accès Arlo](../images/access.png "Accès Arlo")
 
 - Entrez les informations demandées y compris une nouvelle adresse email (ou, si vous utilisez une adresse gmail, un alias gmail en rajoutant +jeedom avant @gmail.com par exemple);
 - Sélectionnez les équipements Arlo auxquels aura accès le plugin;
 - Activez l'option "Accorder des droits d'accès" pour pouvoir changer de mode, démarrer un enregistrement, prendre des captures etc depuis Jeedom.
-![Création compte Arlo](../assets/images/create.png "Création compte Arlo")
+![Création compte Arlo](../images/create.png "Création compte Arlo")
 - Cliquez sur "Envoyer une invitation"
 - Vous allez recevoir un email de confirmation afin de créer votre nouveau compte Arlo, suivez simplement la procédure.
 
@@ -81,7 +81,7 @@ Si le plugin est correctement configuré (cf. étape précédente), vous devriez
 
 Il n'est pas possible de créer manuellement un équipement. Les équipements sont créés ou mis à jour automatiquement par le plugin lors d'une synchronisation avec le système Arlo. Une synchronisation se fera automatiquement au minimum une fois par jour, si besoin il est possible de lancer une synchronisation manuellement via l'écran de gestion des équipement.
 
-![Équipements](../assets/images/devices.png "Équipements")
+![Équipements](../images/devices.png "Équipements")
 
 Le plugin ne supprimera jamais automatiquement un équipement; si vous ne disposez plus de l'équipement ou si vous avez supprimé les droits d'accès pour le plugin, il est recommandé de supprimer manuellement l'équipement correspondant dans Jeedom.
 Si vous rajoutez un nouvel équipement ou si vous modifiez les modes via l'application Arlo, il est recommandé de faire une synchronisation manuelle afin de mettre à jour la configuration du plugin immédiatement; dans le cas contraire cela se fera lors de la prochaine synchronisation automatique.
@@ -104,7 +104,7 @@ La station de base dispose d'une commande action par mode défini: activé, dés
 
 Le widget est celui par défaut de Jeedom:
 
-![Station de base](../assets/images/widget_basestation.png "Station de base")
+![Station de base](../images/widget_basestation.png "Station de base")
 
 > **Tip**
 >
@@ -116,7 +116,7 @@ Cet équipement possède simplement une commande "On" et "Off" ainsi qu'une info
 
 Le widget est également celui par défaut:
 
-![Sirène](../assets/images/widget_siren.png "Sirène")
+![Sirène](../images/widget_siren.png "Sirène")
 
 ## Les caméras
 
@@ -160,7 +160,7 @@ Ensuite est affiché la dernière image prise par la caméra, en cliquant sur ce
 
 Et en dessous un bouton pour prendre une capture instantanée et démarrer l'enregistrement (local).
 
-![Caméra](../assets/images/widget_camera.png "Caméra")
+![Caméra](../images/widget_camera.png "Caméra")
 
 ### Caméras Arlo Q & Arlo Baby
 

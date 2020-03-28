@@ -27,7 +27,7 @@ This configuration is done on the "datacenter" in the Proxmox interface, menu "P
 
 In the Permissions>Users menu, click on "Add" and complete the following screen:
 
-![Proxmox user](../assets/images/proxmox_user.png "Proxmox user")
+![Proxmox user](../images/proxmox_user.png "Proxmox user")
 
 > **Important**
 >
@@ -41,7 +41,7 @@ We have created a new user under Proxmox but this one has no access yet.
 
 In the main menu "Permissions", click on "Add" then "User permission" and fill in the following screen according to the permissions you want to grant to Jeedom (see the Proxmox documentation for more details):
 
-![Proxmox permissions](../assets/images/proxmox_permissions.png "Proxmox permissions")
+![Proxmox permissions](../images/proxmox_permissions.png "Proxmox permissions")
 
 > **Tip**
 >
@@ -56,11 +56,11 @@ The following information must be entered in the plugin configuration:
 - a username and password
 - the authentication realm of the user, if different from "pve" (= "Proxmox VE authentication server", default realm for users created locally on Proxmox, see Proxmox documentation)
 
-![Plugin configuration](../assets/images/plugin_config.png "Plugin configuration")
+![Plugin configuration](../images/plugin_config.png "Plugin configuration")
 
 You can check if the configuration of the plugin is correct thanks to the health page (menu Analysis > Health)
 
-![Plugin health](../assets/images/plugin_health.png "Plugin health")
+![Plugin health](../images/plugin_health.png "Plugin health")
 
 If the connection is successful, the version of your Proxmox server will be displayed.
 

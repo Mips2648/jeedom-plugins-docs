@@ -38,18 +38,18 @@ Le plugin communiquera avec la VMC par l'intermédiaire de l'interface RS232. Su
 - soit un port DB9,
 - soit parfois un port RJ45.
 
-![Image interface série](../assets/images/connectorBoard_picture.jpg "Interface série")
+![Image interface série](../images/connectorBoard_picture.jpg "Interface série")
 
-![Schéma interface série](../assets/images/connectorBoard_schema.png "Schéma interface série")
+![Schéma interface série](../images/connectorBoard_schema.png "Schéma interface série")
 
 Il vous faudra connecter cette interface sur le Raspberry Pi.
 Il existe des adaptateurs DB9-USB, c'est le plus simple si le port DB9 est présent sur votre VMC
 
-![Adaptateur db9-usb](../assets/images/db9_usb_adaptor.jpg "Adaptateur db9-usb")
+![Adaptateur db9-usb](../images/db9_usb_adaptor.jpg "Adaptateur db9-usb")
 
 Si vous le port db9 n'est pas présent, il existe aussi des adaptateurs de borniers vers DB9 pour ensuite brancher un adaptateur DB9-USB, à vous alors de brancher les fils au bornier de la VMC ou au port RJ45.
 
-![Adaptateur bornier_db9](../assets/images/bornier_db9_adaptor.jpg "Adaptateur bornier_db9")
+![Adaptateur bornier_db9](../images/bornier_db9_adaptor.jpg "Adaptateur bornier_db9")
 
 # Installation du plugin
 
@@ -67,7 +67,7 @@ Il n'y a pas de configuration supplémentaire à effectuer ici, le plugin utilis
 - Cliquez sur "Ajouter" et donnez un nom;
 - Vous arriverez sur la page de configuration de l'équipement sur laquelle vous pouvez configurer les options habituelles dans Jeedom (n'oubliez pas d'activer votre nouvel équipement).
 
-![Configuration équipement](../assets/images/equip_config.png "Configuration équipement")
+![Configuration équipement](../images/equip_config.png "Configuration équipement")
 
 ## Connectivité entre le plugin et le pi (configuration ssh)
 
@@ -89,7 +89,7 @@ L'installation va:
 Si l'étape précédente s'est bien déroulée, vous devriez voir la liste des "devices" (usb) connectés à votre pi, vous devez sélectionner le device connecté à la VMC et éventuellement sélectionné celui connecté au CCEase (optionnel).
 Il n'est pas recommandé de changer la configuration des ports TCP, ne faite cela que si vous savez ce que vous faites et que vous avez un problème avec l'utilisation de ces ports là; Ces ports seront utilisés par le démon distant installé sur le Raspberry lui-même connecté à la VMC, pas sur Jeedom (sauf si c'est le même équipement).
 
-![Configuration démon](../assets/images/daemon_config.png "Configuration démon")
+![Configuration démon](../images/daemon_config.png "Configuration démon")
 
 Sauvez votre équipement.
 
@@ -104,7 +104,7 @@ Si tout se déroule bien, le status devrait passer au vert. Si pas patientez que
 Dans l'onglet "Configuration de la VMC" vous pouvez voir toute la configuration de votre VMC: modèle et version, vitesse de ventilation (configurée par votre installeur)...
 Il y a un bouton pour recharger la configuration, cela peut-être refait à chaque fois que nécessaire sans risque.
 
-![Configuration VMC](../assets/images/vmc_config.png "Configuration VMC")
+![Configuration VMC](../images/vmc_config.png "Configuration VMC")
 
 # Commandes
 
@@ -125,7 +125,7 @@ Le résultat obtenu donne une indication de l'encrassement de vos filtres: des f
 
 # Widget
 
-![Exemple du widget de base](../assets/images/widget.png "Exemple du widget de base")
+![Exemple du widget de base](../images/widget.png "Exemple du widget de base")
 
 # Changelog
 

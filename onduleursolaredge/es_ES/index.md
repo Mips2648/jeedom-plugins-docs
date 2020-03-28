@@ -23,7 +23,7 @@ Les informations suivantes sont récupérables, d'autres pourraient être rajout
 >
 > Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
-![Configuration plugin](../assets/images/plugin_config.png "Configuration plugin")
+![Configuration plugin](../images/plugin_config.png "Configuration plugin")
 
 Le plugin utilise le "cron5" pour récupérer les données toutes les 5 minutes. Vous pouvez choisir de le désactiver et d'actualiser vos équipements manuellement ou via un autre moyen mais il n'est pas nécessaire de le faire plus fréquemment.
 > **Important**
@@ -37,11 +37,11 @@ Le plugin utilise le "cron5" pour récupérer les données toutes les 5 minutes.
 - Rendez-vous sur votre compte à l'adresse <https://monitoring.solaredge.com/> (vous devez vous connecter avec les identifiants reçu de votre fournisseur), vous devriez arriver sur votre Dashboard.
 - Ensuite, cliquez sur la section "Admin", en jaune dans la capture:
 
-![Dashboard Solaredge](../assets/images/solaredge_dashboard.png "Dashboard Solaredge")
+![Dashboard Solaredge](../images/solaredge_dashboard.png "Dashboard Solaredge")
 
 - Ensuite, cliquez sur l'onglet "Politique d'accès..." et dans le bas de l'écran vous devez accepter les conditions d'utilisations, générer une nouvelle clé (ou copier celle existante) et prendre note de l'ID du site. N'oubliez pas de sauver les changements.
 
-![Menu admin](../assets/images/solaredge_admin.png "Menu admin")
+![Menu admin](../images/solaredge_admin.png "Menu admin")
 
 ## Création de l'équipement dans votre Jeedom
 
@@ -55,23 +55,23 @@ Le plugin utilise le "cron5" pour récupérer les données toutes les 5 minutes.
 
 Choisissez ensuite le type d'informations voulue. Si vous en voulez plus qu'une il suffit de créer un deuxième équipement avec le même ID de site et la même clé API.
 
-![Configuration équipement](../assets/images/equip_config.png "Configuration équipement")
+![Configuration équipement](../images/equip_config.png "Configuration équipement")
 
 - C'est tout, vous pouvez retourner sur votre dashboard pour voir le widget correspondant.
 
 Aperçu global:
 
-![Widget](../assets/images/widget.png "Widget")
+![Widget](../images/widget.png "Widget")
 
 Puissance actuelle des différents équipements avec information de production/consommation/auto-consommation, achat/vente et chargement/déchargement batterie (selon les équipements de votre installation).
 
 Exemple achat:
 
-![Widget](../assets/images/widget_powerflow_purchased.png "Widget")
+![Widget](../images/widget_powerflow_purchased.png "Widget")
 
 Exemple vente:
 
-![Widget](../assets/images/widget_powerflow_feedin.png "Widget")
+![Widget](../images/widget_powerflow_feedin.png "Widget")
 
 Soit vous attendez 5 min. que la tâche cron s'éxécute pour voir les données soit vous faite une première actualisation manuellement.
 

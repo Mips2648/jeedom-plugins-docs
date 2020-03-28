@@ -23,7 +23,7 @@ Following information are available, others can be retrieved depending the deman
 >
 > In order to use the plugin you have to download,install and activate it as any other Jeedom plugin.
 
-![Plugin configuration](../assets/images/plugin_config.png "Plugin configuration")
+![Plugin configuration](../images/plugin_config.png "Plugin configuration")
 
 The plugin use a "cron5" to get the data every 5 minutes. You can decide to deactivate it and to refresh your device manually or another mean but it's useless to refresh data more frequently.
 > **Important**
@@ -37,11 +37,11 @@ The plugin use a "cron5" to get the data every 5 minutes. You can decide to deac
 - Browse to your Solaredge account at <https://monitoring.solaredge.com/> (You have to connect with your credentials provided by your provider), You should land on your Dashboard.
 - Then, click on "Admin" section, highlighted in yellow in the printscreen:
 
-![Solaredge dashboard](../assets/images/solaredge_dashboard.png "Solaredge dashboard")
+![Solaredge dashboard](../images/solaredge_dashboard.png "Solaredge dashboard")
 
 - Next, click on "Site access" and on the bottom of the screen you have to accept the T&C, get a new API key (or use the existing one) and use the provided "Site ID". Don't forget to save your changes.
 
-![Admin menu](../assets/images/solaredge_admin.png "Admin menu")
+![Admin menu](../images/solaredge_admin.png "Admin menu")
 
 ## Creating the device in Jeedom
 
@@ -55,23 +55,23 @@ The plugin use a "cron5" to get the data every 5 minutes. You can decide to deac
 
 Then choose the type of information you want. If you want more than one just create a second device with the same site ID and same API key.
 
-![Device configuration](../assets/images/equip_config.png "Device configuration")
+![Device configuration](../images/equip_config.png "Device configuration")
 
 - That's over, you can navigate to your dashboard to see the corresponding widget.
 
 Global overview:
 
-![Widget](../assets/images/widget.png "Widget")
+![Widget](../images/widget.png "Widget")
 
 Current power of different devices in the installation with information of production/consumption/self-consumption, purchased/feed-in and charge/discharge of batteries (if supported by your installation)
 
 Purchase example:
 
-![Widget](../assets/images/widget_powerflow_purchased.png "Widget")
+![Widget](../images/widget_powerflow_purchased.png "Widget")
 
 Feed-in example:
 
-![Widget](../assets/images/widget_powerflow_feedin.png "Widget")
+![Widget](../images/widget_powerflow_feedin.png "Widget")
 
 Either you wait 5min. for the task to run to see data or you trigger a manual refresh to get an update immediately.
 

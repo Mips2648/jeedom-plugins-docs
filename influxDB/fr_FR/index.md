@@ -33,7 +33,7 @@ Chaque équipement dispose d'une commande action pour envoyer un message sur le 
 Par défaut, lorsqu'un message est reçu sur le canal, le plugin va créer un commande correspondante à l'utilisateur l'ayant envoyé (si elle n'existe pas déjà).
 
 Une option existe sur l'équipement pour désactiver ce comportement.
-![Config équipement](../assets/images/device.png "Config équipement")
+![Config équipement](../images/device.png "Config équipement")
 
 Ces commandes permettent d'envoyer un message sur le canal de l'équipement mais en notifiant l'utilisateur correspondant, (ex: `@Mips Ceci est un message test`).
 
@@ -42,7 +42,7 @@ Ces commandes permettent d'envoyer un message sur le canal de l'équipement mais
 Pour que les interactions fonctionnent, il faut que le plugin connaissent l'utilisateur, il faut donc que la commande correspondante ait été créé (voir ci-dessus).
 
 Ensuite, dans l'onglet commande, il faut sélectionner l'utilisateur Jeedom correspondant à l'utilisateur Rocket.Chat en le sélectionnant dans la liste. Il est possible d'activer ou désactiver la prise en charges des interactions pour chaque utilisateur.
-![Commandes](../assets/images/commands.png "Commandes").
+![Commandes](../images/commands.png "Commandes").
 
 Votre bot (le plugin) ne répondra aux interactions que s'il est notifié sur le canal (ex: `@jeedombot Allume la radio`) ceci afin d'éviter qu'il ne réponde `Désolé je n'ai pas compris` à chaque message échangé entre d'autres utilisateurs.
 

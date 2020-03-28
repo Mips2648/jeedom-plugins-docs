@@ -33,19 +33,19 @@ Cette étape n'est pas obligatoire, vous pouvez utiliser votre identifiant actue
 >
 > Vous devrez partager chaque jauges que vous avez si vous voulez les visualiser dans Jeedom (en réutilisant la même adresse email).
 
-![Paramètres Fullup](../assets/images/fullup_dashboard.png "Paramètres Fullup")
+![Paramètres Fullup](../images/fullup_dashboard.png "Paramètres Fullup")
 
 - Cliquez sur le menu "Gérer les partages"
 
-![Gérer les partages](../assets/images/fullup_settings.png "Gérer les partages")
+![Gérer les partages](../images/fullup_settings.png "Gérer les partages")
 
 - Cliquez sur le "+" pour ajouter un utilisateur
 
-![Mes partages](../assets/images/fullup_partages.png "Mes partages")
+![Mes partages](../images/fullup_partages.png "Mes partages")
 
 - Entrez un nouvelle adresse email (ou, si vous utilisez une adresse gmail, un alias gmail en rajoutant +jeedom avant @gmail.com par exemple)
 
-![Ajouter un partage](../assets/images/fullup_utilisateurs.png "Ajouter un partage")
+![Ajouter un partage](../images/fullup_utilisateurs.png "Ajouter un partage")
 
 - Vous allez recevoir un email de confirmation afin de créer votre nouveau compte sur l'application Fullup, suivez simplement la procédure.
 
@@ -57,17 +57,17 @@ Cette étape n'est pas obligatoire, vous pouvez utiliser votre identifiant actue
 
 - Retournez sur la page de configuration du plugin et entrez votre utilisateur (adresse email) et le mot de passe (du compte Fullup).
 
-![Configuration plugin](../assets/images/plugin_config.png "Configuration plugin")
+![Configuration plugin](../images/plugin_config.png "Configuration plugin")
 
 - Sauvegardez la configuration.
 - Cliquez sur "Rechercher les jauges Fullup".
 - Si les identifiants sont correctes, vous devriez voir le message "Synchronisation réussie..."
 
-![Synchronisation réussie](../assets/images/sync_success.png "Synchronisation réussie")
+![Synchronisation réussie](../images/sync_success.png "Synchronisation réussie")
 
 - En cas d'erreur un message expliquera la raison de celle-ci, par exemple de vérifier l'utilisateur et le mot de passe
 
-![Erreur](../assets/images/sync_failure.png "Erreur")
+![Erreur](../images/sync_failure.png "Erreur")
 
 > **Tip**
 >

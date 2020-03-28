@@ -45,15 +45,15 @@ It is therefore necessary to create a user dedicated to the plugin, otherwise it
 
 - For this, open <https://my.arlo.com> or open the mobile app;
 - Click on &quot;Settings&quot; at the top right;
-![Arlo settings](../assets/images/settings.png "Arlo settings")
+![Arlo settings](../images/settings.png "Arlo settings")
 
 - Click on &quot;Allow access&quot; in the left menu and then on &quot;Add&quot; on the right.
-![Arlo access](../assets/images/access.png "Arlo access")
+![Arlo access](../images/access.png "Arlo access")
 
 - Enter the requested information including a new email address (or, if you use a gmail address, a gmail alias by adding + jeedom before @gmail.com for example);
 - Select the Arlo devices that the plugin will access;
 - Enable the option &quot;Grant access rights&quot; to be able to change modes, start recording, take snapshots etc from Jeedom.
-![Arlo account creation](../assets/images/create.png "Arlo account creation")
+![Arlo account creation](../images/create.png "Arlo account creation")
 - Click on &quot;Send an invitation&quot;
 - You will receive a confirmation email to create your new Arlo account, simply follow the procedure.
 
@@ -76,7 +76,7 @@ If the plugin is correctly configured (see previous step), you should see the li
 
 It is not possible to manually create a device. The devices are automatically created or updated by the plugin during synchronization with the Arlo system. Synchronization will be done automatically at least once a day, if necessary it is possible to start a synchronization manually via the device management screen.
 
-![Devices](../assets/images/devices.png "Devices")
+![Devices](../images/devices.png "Devices")
 
 The plugin will never automatically delete a device; if you no longer have the device or if you have removed the access rights for the plugin, it is recommended to manually delete the corresponding device in Jeedom.
 If you add a new device or change the modes via the Arlo application, it is recommended to do a manual synchronization to update the plugin configuration immediately; otherwise, this will be done during the next automatic synchronization.
@@ -99,7 +99,7 @@ The base station has one action command by available mode: Activated, Deactivate
 
 The widget is Jeedom's default one:
 
-![Basestation](../assets/images/widget_basestation.png "Basestation")
+![Basestation](../images/widget_basestation.png "Basestation")
 
 > **Tip**
 >
@@ -111,7 +111,7 @@ This device has an &quot;On&quot; and &quot;Off&quot; action command and a &quot
 
 The widget is also the default one:
 
-![Siren](../assets/images/widget_siren.png "Siren")
+![Siren](../images/widget_siren.png "Siren")
 
 ## Cameras
 
@@ -155,7 +155,7 @@ Then the last snapshot taken by the camera is displayed, by clicking on it you w
 
 And below a button to take a snapshot and start (local) video record
 
-![Camera](../assets/images/widget_camera.png "Camera")
+![Camera](../images/widget_camera.png "Camera")
 
 ### Arlo Q &amp; Arlo Baby cameras
 

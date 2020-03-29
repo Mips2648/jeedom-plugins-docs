@@ -6,7 +6,7 @@ lang: en_US
 
 # Changelog
 
-[See latest version](#tocAnchor-1-1-2)
+[See latest version](#tocAnchor-1-1-4)
 
 ## 2020-02-01
 
@@ -28,4 +28,4 @@ First release
 
 # Documentation
 
-[Documentation](%7B%7Bsite.baseurl%7D%7D/)
+[Documentation]({{site.baseurl}}/)

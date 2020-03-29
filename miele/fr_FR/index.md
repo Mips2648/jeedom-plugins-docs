@@ -6,36 +6,24 @@ lang: fr_FR
 
 # Description
 
-Plugin permettant la connexion à Miele.
+Plugin permettant d'intégré tous les appareils de la gamme Miele@Home.
+Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil)
 
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
+Vous devez avoir un compte utilisateur Miele avec au moins un appareil compatible Miele@Home lié et enfin <a href="https://www.miele.com/f/com/en/register_api.aspx" target="_blank">activer l'accès à l'API</a>
 
 # Configuration du plugin
 
-Dans la configuration du plugin il faudra renseigner le nom d'utilisateur et le mot de passe.
+Dans la configuration du plugin il faudra renseigner le nom d'utilisateur et le mot de passe ainsi que le pays d'inscription.
 
 # Les équipements
 
-Dès que le démon démarre, si votre nom d'utilisateur et mot de passe sont correctes, le plugin va créer automatiquement les véhicules liés à votre compte.
-Il est possible de faire une synchronisation manuelle via la page des équipements.
-
-Dans la page de l'équipement vous pouvez configurer la fréquence d'actualisation des données.
 
 # Les commandes
 
-Pour l'instant les commandes suivantes sont disponibles:
 
-- Température extérieur
-- Kilométrage
-- Prochaine vidange huile en jours et en km
-- Prochain entretien en jours et en km
-- Niveau de l'huile (en L et en %)
-- Avertissement du niveau d'huile bas et changement d'huile
-- Niveau du réservoir
-- Autonomie totale (en km)
-- Autonomie AdBlue (en km)
 
 # Changelog
 

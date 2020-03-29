@@ -6,23 +6,28 @@ lang: fr_FR
 
 # Arlo
 
- [Arlo](./arlo)
+- [Documentation]({{site.baseurl}}/arlo/{{page.lang}})
+- [Changelog]({{site.baseurl}}/arlo/{{page.lang}}/changelog)
 
 # Design Image
 
-- [Design Image](./designImgSwitch)
+- [Documentation]({{site.baseurl}}/designImgSwitch/{{page.lang}})
+- [Changelog]({{site.baseurl}}/designImgSwitch/{{page.lang}}/changelog)
 
 # Fullup
 
-- [Fullup](./fullup)
+- [Documentation]({{site.baseurl}}/fullup/{{page.lang}})
+- [Changelog]({{site.baseurl}}/fullup/{{page.lang}}/changelog)
 
 # InfluxDB Connector
 
-- [InfluxDB Connector](./influxDB)
+- [Documentation]({{site.baseurl}}/influxDB/{{page.lang}})
+- [Changelog]({{site.baseurl}}/influxDB/{{page.lang}}/changelog)
 
 # LogManager
 
-- [LogManager](./logmanager)
+- [Documentation]({{site.baseurl}}/logmanager/{{page.lang}})
+- [Changelog]({{site.baseurl}}/logmanager/{{page.lang}}/changelog)
 
 # Miele
 
@@ -41,28 +46,35 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 
 # NotificationQueue
 
-- [NotificationQueue](./notificationqueue)
+- [Documentation]({{site.baseurl}}/notificationqueue/{{page.lang}})
+- [Changelog]({{site.baseurl}}/notificationqueue/{{page.lang}}/changelog)
 
 # Solaredge
 
-- [Solaredge](./onduleursolaredge)
+- [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
+- [Changelog]({{site.baseurl}}/onduleursolaredge/{{page.lang}}/changelog)
 
 # Portainer
 
-- [Portainer](./portainer)
+- [Documentation]({{site.baseurl}}/portainer/{{page.lang}})
+- [Changelog]({{site.baseurl}}/portainer/{{page.lang}}/changelog)
 
 # Proxmox
 
-- [Proxmox](./proxmox)
+- [Documentation]({{site.baseurl}}/proxmox/{{page.lang}})
+- [Changelog]({{site.baseurl}}/proxmox/{{page.lang}}/changelog)
 
 # Rocket.Chat
 
-- [Rocket.Chat](./rocketchat)
+- [Documentation]({{site.baseurl}}/rocketchat/{{page.lang}})
+- [Changelog]({{site.baseurl}}/rocketchat/{{page.lang}}/changelog)
 
 # Stock exchange
 
-- [Stock exchange](./stockexchange)
+- [Documentation]({{site.baseurl}}/stockexchange/{{page.lang}})
+- [Changelog]({{site.baseurl}}/stockexchange/{{page.lang}}/changelog)
 
 # VMC (Zehnder/Storkair)
 
-- [VMC (Zehnder/Storkair)](./vmczehnder)
+- [Documentation]({{site.baseurl}}/vmczehnder/{{page.lang}})
+- [Changelog]({{site.baseurl}}/vmczehnder/{{page.lang}}/changelog)

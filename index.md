@@ -31,10 +31,13 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 
 - [Documentation](./miele)
 - [Changelog](./miele/changelog)
+- [Market](https://www.jeedom.com/market/index.php?v=d&plugin_id=3950)
 
 # MyAudi
 
-- [MyAudi](./myaudi)
+- [Documentation](./myaudi)
+- [Changelog](./myaudi/changelog)
+- [Market](https://www.jeedom.com/market/index.php?v=d&plugin_id=3941)
 
 # NotificationQueue
 

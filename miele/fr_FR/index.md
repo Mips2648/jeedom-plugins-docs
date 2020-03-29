@@ -21,10 +21,7 @@ Dans la configuration du plugin il faudra renseigner le nom d'utilisateur et le 
 
 # Les équipements
 
-
 # Les commandes
-
-
 
 # Changelog
 
@@ -32,4 +29,4 @@ Dans la configuration du plugin il faudra renseigner le nom d'utilisateur et le 
 
 # Support
 
-Si malgré cette documentation et après voir lu les sujets en rapport avec le plugin sur [community]({{site.forum}}) vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ('plugin-{{site.pluginId}}').
+Si malgré cette documentation et après voir lu les sujets en rapport avec le plugin sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}) vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ('plugin-{{page.pluginId}}').

@@ -6,7 +6,7 @@ lang: en_US
 
 # Changelog
 
-[See the latest version](#tocAnchor-1-1-18)
+[See the latest version](#tocAnchor-1-1-21)
 
 ## 2019-05-12
 
@@ -132,4 +132,4 @@ It is recommended to launch the installation of dependencies after installing th
 
 # Documentation
 
-[Documentation]({{./}}/)
+[Documentation]({{./index}}/)

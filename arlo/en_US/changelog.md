@@ -112,6 +112,24 @@ It is recommended to launch the installation of dependencies after installing th
 - Add possibility to activate 'Schedule' mode
 - Add 'Send snapshot' command on cameras to send a snapshot to a custom notification command directly from a scenario
 
+## 2020-02-14
+
+- Fixe un problème d'affichage sur le mode 'Planning'
+- Support des plugins [Rocket.Chat](https://www.jeedom.com/market/index.php?v=d&p=market&author={{site.author}}&categorie=communication), [Notification queue](https://www.jeedom.com/market/index.php?v=d&p=market&author={{site.author}}&categorie=communication) et [Gotify](https://www.jeedom.com/market/index.php?v=d&p=market&author={{site.author}}&categorie=communication) en plus de Mail et Telegram pour l'envoi des notifications
+
+## 2020-02-19
+
+- Fixe un problème de streaming pouvant se produit sur Raspbian Stretch: force l'usage de ffmpeg 4.2.1 car version 4.2.2 semble corrompue (réinstallation des dépendances nécessaires si vous êtes dans le cas)
+
+## 2020-03-21
+
+- Ajout de la vérification de version ffmpeg dans le check des dépendances
+- Fixe erreur http 403 au démarrage du démon causé par un changement introduit par Arlo au login
+
+## 2020-03-28
+
+- Optimisation: ne réinstalle plus ffmpeg si la bonne version a déjà été installée
+
 # Documentation
 
 [Documentation]({{./}}/)

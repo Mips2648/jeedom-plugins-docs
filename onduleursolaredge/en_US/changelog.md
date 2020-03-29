@@ -6,6 +6,11 @@ lang: en_US
 
 # Changelog
 
+## 2020-03-27
+
+- Ajout de vérification sur les valeurs configurées erronées pour éviter des erreurs
+- Optimisations mineures.
+
 ## 2019-09-10
 
 - Add support of Jeedom V4 and PHP 7.3

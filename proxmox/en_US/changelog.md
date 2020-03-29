@@ -63,6 +63,10 @@ First stable release
 - Add commands "Shutdown the node" and "Reboot the node"
 - Add commands "Suspend" and Resume" on VMs and LXCs
 
+## 2020-03-22
+
+- Ajout d'une commande "Redémarrer" sur VM
+
 # Documentation
 
 [Documentation]({{site.baseurl}}/)

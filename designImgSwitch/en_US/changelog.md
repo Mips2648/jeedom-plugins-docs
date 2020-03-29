@@ -25,6 +25,11 @@ lang: en_US
 
 - Add option to automatically crop image based on design size
 
+## 2020-03-22
+
+- Fixe mineure en cas de suppression d'un équipement
+- Mise à jour du logo
+
 # Documentation
 
 [Documentation]({{site.baseurl}}/)

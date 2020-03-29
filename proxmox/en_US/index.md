@@ -8,6 +8,8 @@ lang: en_US
 
 Plugin allowing the management of a Proxmox server. It is possible to get all resources (nodes, vm, lxc, storage) and all their properties (status, memory, CPU, disk, IP address, up time, snapshots list...). The plugin can also start, stop vm and containers and take snapshots.
 It also has a specific health page summarizing all the information on your devices.
+Le plugin permet aussi de démarrer et arrêter les VMs et les containers ainsi que de prendre des snapshots et des backups.
+Il dispose également d'une page santé spécifique résumant l'ensemble des informations de vos équipements.
 
 # Installation
 
@@ -85,6 +87,14 @@ The following action commands are also available:
 - **Shutdown all**: Shutdown all virtual machines and containers
 
 ## Virtual machines & containers
+
+Plusieurs commandes info existent donnant entre autre le statut, le nombre de CPU et leur utilisation, la mémoire totale et l'utilisation, le temps d'activité, les adresses IPv4 et IPv6.
+
+> **Tip**
+>
+> Pour remonter les adresses IP, il est nécessaire d'installer l'agent Proxmox sur les VMs et de l'activer (voir documentation Proxmox). Cet agent assurera aussi un état stable de votre VM lors des sauvegardes et snapshots.
+
+Les commandes actions suivantes sont également disponibles:
 
 - **Start**: Starts the virtual machine or container.
 - **Shutdown**: This triggers a clean shutdown of the virtual machine or container.

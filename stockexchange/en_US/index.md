@@ -19,7 +19,8 @@ There is no configuration to perform at the plugin, the API keys are configured 
 
 # Device configuration
 
-After creation of a new device , the usual options are available. You will also be able to enter the frequency with which the information is updated.
+After creation of a new device , the usual options are available.
+You will also be able to enter the frequency with which the information is updated.
 
 Then you must select the service to use for this device from the list provided. A description of each service is available in the configuration page. You will also find the link to create a new account if you do not have one yet or if you want to create a new one.
 

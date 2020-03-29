@@ -33,6 +33,10 @@ So far, it is possible to:
 
 ## Installation
 
+> **Important**
+>
+> Le plugin n'a pas été testé sous Jessie et son fonctionnement sur cette version ne sera pas assuré.
+
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 Then you have to install the dependencies.
 Before being able to launch the daemon it is necessary to input an email address and a password to be able to connect to Arlo.

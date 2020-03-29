@@ -6,11 +6,15 @@ lang: en_US
 
 # Changelog
 
+## 2019-11-04
+
+First version
+
 ## 2019-12-03
 
 - Adding stock index management
 - Added en_US translations
 
-## 2019-11-04
+## 2020-03-18
 
-First version
+- Ajout des matières premières

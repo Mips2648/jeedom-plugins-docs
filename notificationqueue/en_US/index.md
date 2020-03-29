@@ -21,7 +21,7 @@ There is no configuration to do on the plugin.
 
 # Device configuration
 
-The plugin is in the Plugins > Communication menu. 
+The plugin is in the Plugins > Communication menu.
 After creating new device, the usual options are available.
 
 You can create several devices to organize your different communications according to your preferences.
@@ -35,11 +35,27 @@ On top of the usual device configurations, you must configure:
 >
 > You can specify several notification commands by separating them with &&
 
+# Options additionnelles
+
+## Pause entre 2 évaluations
+
+Cela permet de configurer le temps de pause entre 2 évaluations de la conditions lors d'envoi de messages successifs si par exemple le retour d'état d'une commande prend du temps.
+
+## Pause dynamique entre 2 messages (TTS)
+
+Si activer, le plugin va calculer le temps de lecture du message. Pour cela il compte le nombre de syllabes totales et multiplie ce nombre par un temps de lecture moyen par syllabes. Vous pouvez adapter ce temps en fonction de votre périphérique TTS dans la configuration de l'équipement.
+
+## Doublon
+
 You can also choose the behavior when a notification with the same message as an existing notification is added to the queue.
 
 - Ignore: the new notification will simply be added at the end of the queue (default behavior);
 - Keep the first notification: the new one will therefore not be added;
 - Keep the last notification: the previous notification will be deleted from the queue and the new one will be added at the end of it.
+
+## Délai d'expiration
+
+Il est possible de configurer un délai d'expiration des notifications (en minute). Passé ce délai la notification ne sera plus envoyée si la condition n'a pas été remplie avant.
 
 # Some principles
 

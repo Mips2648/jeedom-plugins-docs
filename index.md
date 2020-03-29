@@ -26,7 +26,11 @@ lang: fr_FR
 
 # Miele
 
-- [Miele](./miele)
+Plugin permettant d'intégré tous les appareils de la gamme Miele@Home.
+Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil)
+
+- [Documentation](./miele)
+- [Changelog](./miele/changelog)
 
 # MyAudi
 

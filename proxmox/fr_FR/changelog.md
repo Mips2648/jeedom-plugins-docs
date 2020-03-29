@@ -2,6 +2,7 @@
 layout: default
 title: Changelog
 lang: fr_FR
+pluginId: proxmox
 ---
 
 # Changelog

@@ -2,6 +2,7 @@
 layout: default
 title: Index
 lang: fr_FR
+pluginId: influxDB
 ---
 
 # Description

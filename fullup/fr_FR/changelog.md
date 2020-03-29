@@ -2,21 +2,24 @@
 layout: default
 title: Changelog
 lang: fr_FR
+pluginId: fullup
 ---
 
 # Changelog
 
-## 2019-10-26
+[Voir la dernière version](#tocAnchor-1-1-8)
 
-- Augmentation de l'historique de consommation aux 24 dernières semaines/mois/années.
+## 2018-09-24
 
-## 2019-07-29
+Première version stable
 
-- Ajout du support de Jeedom v4 et de PHP 7.3
+## 2018-09-26
 
-## 2019-03-25
+Ajout du volume total sur la command info Volume
 
-- Adaptation de l'écran de configuration des équipements pour correspondre au standard v3
+## 2018-12-13
+
+Ajout des images d'équipements
 
 ## 2019-01-19
 
@@ -24,14 +27,22 @@ lang: fr_FR
 - Ajout d'une fonctionnalité pour consulter l'historique: un nouvel écran avec le graphique de la consommation basé sur les données de la plateforme Fullup
 - Ajout des traductions
 
-## 2018-12-13
+## 2019-03-25
 
-Ajout des images d'équipements
+- Adaptation de l'écran de configuration des équipements pour correspondre au standard v3
 
-## 2018-09-26
+## 2019-07-29
 
-Ajout du volume total sur la command info Volume
+- Ajout du support de Jeedom v4 et de PHP 7.3
 
-## 2018-09-24
+## 2019-10-26
 
-Première version stable
+- Augmentation de l'historique de consommation aux 24 dernières semaines/mois/années.
+
+## 2020-03-29
+
+- Déplacements de la documentation
+
+# Documentation
+
+[Documentation]({{site.baseurl}}/{{page.pluginId}})

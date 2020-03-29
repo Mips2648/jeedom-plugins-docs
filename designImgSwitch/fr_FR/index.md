@@ -2,7 +2,7 @@
 layout: default
 title: Index
 lang: fr_FR
-pluginTag: plugin-designImgSwitch
+pluginId: designImgSwitch
 ---
 
 # Description

@@ -2,6 +2,7 @@
 layout: default
 title: Index
 lang: en_US
+pluginTag: plugin-arlo
 ---
 
 # Description
@@ -221,4 +222,4 @@ The doorbell has the following commands:
 
 # Support
 
-If despite this documentation and after having read the topics related to the plugin on [community]({{site.forum}}/plugin-arlo) you do not find an answer to your question, do not hesitate to create a new topic with the tag of the plugin (plugin-arlo).
+If despite this documentation and after having read the topics related to the plugin on [community]({{site.forum}}/tags/{{page.pluginTag}}) you do not find an answer to your question, do not hesitate to create a new topic with the tag of the plugin ({{page.pluginTag}}).

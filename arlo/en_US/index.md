@@ -5,7 +5,7 @@ lang: en_US
 pluginTag: plugin-arlo
 ---
 
-# Plugin to control all Arlo devices like the cameras, the base station and the integrated siren.
+# Description
 
 All current models supported by the Arlo application (web or mobile) will be supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby ... but all the functions specific to each model are not yet integrated into the plugin (they will be in priority according to requests).
 

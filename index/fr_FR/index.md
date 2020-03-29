@@ -29,15 +29,15 @@ lang: fr_FR
 Plugin permettant d'intégré tous les appareils de la gamme Miele@Home.
 Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil)
 
-- [Documentation](./miele)
-- [Changelog](./miele/changelog)
+- [Documentation]({{site.baseurl}}/miele/{{page.lang}})
+- [Changelog]({{site.baseurl}}/miele/{{page.lang}}/changelog)
 - [Market](https://www.jeedom.com/market/index.php?v=d&plugin_id=3950)
 
 # MyAudi
 
-- [Documentation](./myaudi)
-- [Changelog](./myaudi/changelog)
-- [Market](https://www.jeedom.com/market/index.php?v=d&plugin_id=3941)
+- [Documentation]({{site.baseurl}}/myaudi/{{page.lang}})
+- [Changelog]({{site.baseurl}}/myaudi/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3941" target="_blank">Market</a>
 
 # NotificationQueue
 

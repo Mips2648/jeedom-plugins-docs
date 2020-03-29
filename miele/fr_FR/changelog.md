@@ -2,6 +2,7 @@
 layout: default
 title: Changelog
 lang: fr_FR
+pluginId: miele
 ---
 
 # Changelog
@@ -14,4 +15,4 @@ Première version
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/)
+[Documentation]({{site.baseurl}}/{{page.pluginId}})

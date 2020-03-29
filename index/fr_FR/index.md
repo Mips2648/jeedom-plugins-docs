@@ -31,7 +31,7 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 
 - [Documentation]({{site.baseurl}}/miele/{{page.lang}})
 - [Changelog]({{site.baseurl}}/miele/{{page.lang}}/changelog)
-- [Market](https://www.jeedom.com/market/index.php?v=d&plugin_id=3950)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3950" target="_blank">Market</a>
 
 # MyAudi
 

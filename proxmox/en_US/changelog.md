@@ -6,7 +6,7 @@ lang: en_US
 
 # Changelog
 
-[See the latest version](#tocAnchor-1-1-9)
+[See the latest version](#tocAnchor-1-1-10)
 
 ## 2019-10-21
 

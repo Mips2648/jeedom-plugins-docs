@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Logmanager Documentation
+title: LogManager Documentation
 lang: en_US
 pluginId: logmanager
 ---

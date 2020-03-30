@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Liste des plugins
 lang: fr_FR
 ---
 

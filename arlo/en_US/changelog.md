@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Arlo Changelog
 lang: en_US
 pluginId: arlo
 ---
@@ -130,6 +130,10 @@ It is recommended to launch the installation of dependencies after installing th
 ## 2020-03-28
 
 - Optimisation: ne réinstalle plus ffmpeg si la bonne version a déjà été installée
+
+## 2020-03-30
+
+- Move all documentations to a dedicated project
 
 # Documentation
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog VMC (Zehnder/Storkair)
 lang: fr_FR
 pluginId: vmczehnder
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Documentation InfluxDB
 lang: fr_FR
 pluginId: influxDB
 ---

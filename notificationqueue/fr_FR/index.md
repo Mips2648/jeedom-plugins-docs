@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Documentation NotificationQueue
 lang: fr_FR
 pluginId: notificationqueue
 ---

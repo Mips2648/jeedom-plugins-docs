@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Documentation Proxmox
 lang: fr_FR
 pluginId: proxmox
 ---

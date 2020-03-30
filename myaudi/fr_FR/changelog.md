@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog MyAudi
 lang: fr_FR
 pluginId: myaudi
 ---

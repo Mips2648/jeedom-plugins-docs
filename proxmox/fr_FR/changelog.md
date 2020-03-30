@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog Proxmox
 lang: fr_FR
 pluginId: proxmox
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Miele
+title: Documentation Miele
 lang: fr_FR
 pluginId: miele
 ---

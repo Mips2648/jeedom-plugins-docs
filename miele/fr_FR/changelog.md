@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog Miele
 lang: fr_FR
 pluginId: miele
 ---

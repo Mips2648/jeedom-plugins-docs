@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Documentation Portainer
 lang: fr_FR
 pluginId: portainer
 ---

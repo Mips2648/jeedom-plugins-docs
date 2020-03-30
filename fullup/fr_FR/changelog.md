@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog Fullup
 lang: fr_FR
 pluginId: fullup
 ---

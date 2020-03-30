@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Documentation Design Image
 lang: fr_FR
 pluginId: designImgSwitch
 ---

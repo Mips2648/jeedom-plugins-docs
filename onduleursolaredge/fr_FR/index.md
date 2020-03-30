@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Documentation Solaredge
 lang: fr_FR
 pluginId: onduleursolaredge
 ---

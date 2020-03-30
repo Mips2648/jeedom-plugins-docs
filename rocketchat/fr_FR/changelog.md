@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog Rocket.Chat
 lang: fr_FR
 pluginId: rocketchat
 ---

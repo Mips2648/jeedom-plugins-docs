@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog Stock exchange
 lang: fr_FR
 pluginId: stockexchange
 ---

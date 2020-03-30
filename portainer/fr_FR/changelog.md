@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog Portainer
 lang: fr_FR
 pluginId: portainer
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog Design Image
 lang: fr_FR
 pluginId: designImgSwitch
 ---

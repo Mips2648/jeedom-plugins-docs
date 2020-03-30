@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog NotificationQueue
 lang: fr_FR
 pluginId: notificationqueue
 ---

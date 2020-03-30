@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Documentation Stock exchange
 lang: fr_FR
 pluginId: stockexchange
 ---

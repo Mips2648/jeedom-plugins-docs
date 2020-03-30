@@ -41,4 +41,4 @@ pluginId: vmczehnder
 
 ## 2019-02-25
 
-Initial release
+Première version stable

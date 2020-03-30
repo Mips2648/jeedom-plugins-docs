@@ -2,6 +2,7 @@
 layout: default
 title: Index
 lang: en_US
+pluginId: stockexchange
 ---
 
 # Description

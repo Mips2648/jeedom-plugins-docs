@@ -2,6 +2,7 @@
 layout: default
 title: Changelog
 lang: en_US
+pluginId: vmczehnder
 ---
 
 # Changelog

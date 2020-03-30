@@ -27,4 +27,4 @@ First version
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/)
+[Documentation]({{site.baseurl}}/{{page.pluginId}})

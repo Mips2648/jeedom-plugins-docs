@@ -7,11 +7,11 @@ pluginId: fullup
 
 # Changelog
 
-[2019-10-26](#tocAnchor-1-1-8)
+[See the latest version](#tocAnchor-1-1-8)
 
-## Extend history to last 24 weeks/months/years
+## 2018-09-24
 
-2019-07-29
+First stable release
 
 ## Add support for Jeedom v4 and PHP 7.3
 

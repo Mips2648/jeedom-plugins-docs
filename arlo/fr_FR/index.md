@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arlo
+title: Documentation Arlo
 lang: fr_FR
 pluginId: arlo
 ---

@@ -26,6 +26,8 @@ lang: fr_FR
 
 # LogManager
 
+Plugin permettant une gestion de log personnalisée dans vos scénarios. Il est possible de créer autant de log que voulu, différent niveau de log sont possible pour chaque fichier de log. Cela permet d’organiser vos logs de scénario selon vos préférences, de par exemple regrouper toutes les actions sur un équipement dans le même log quelque soit le scénario.
+
 - [Documentation]({{site.baseurl}}/logmanager/{{page.lang}})
 - [Changelog]({{site.baseurl}}/logmanager/{{page.lang}}/changelog)
 

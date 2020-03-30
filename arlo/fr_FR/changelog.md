@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: Changelog Arlo
 lang: fr_FR
 pluginId: arlo
 ---
@@ -130,6 +130,10 @@ Il est recommandé de relancer l'installation des dépendances après l'installa
 ## 2020-03-28
 
 - Optimisation: ne réinstalle plus ffmpeg si la bonne version a déjà été installée
+
+## 2020-03-30
+
+- Déplacement de toute la documentation sur un projet séparé
 
 # Documentation
 

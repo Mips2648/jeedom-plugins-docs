@@ -15,7 +15,7 @@ pluginId: designImgSwitch
 
 ## 2019-10-01
 
-- Add english and german translations
+- Add English and German translations
 - Add option to force the refresh after a change of the background image
 
 ## 2020-01-11

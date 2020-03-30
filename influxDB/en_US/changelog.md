@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: InfluxDB Changelog
 lang: en_US
 pluginId: influxDB
 ---

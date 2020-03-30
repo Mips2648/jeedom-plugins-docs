@@ -17,7 +17,7 @@ First stable release
 
 2019-03-25
 
-## Adapt device screen layout to match 3.3
+## 2018-12-13
 
 2019-01-19
 

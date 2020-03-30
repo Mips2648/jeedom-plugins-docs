@@ -19,6 +19,11 @@ lang: fr_FR
 - [Documentation]({{site.baseurl}}/fullup/{{page.lang}})
 - [Changelog]({{site.baseurl}}/fullup/{{page.lang}}/changelog)
 
+# Gotify
+
+- [Documentation]({{site.baseurl}}/gotify/{{page.lang}})
+- [Changelog]({{site.baseurl}}/gotify/{{page.lang}}/changelog)
+
 # InfluxDB Connector
 
 - [Documentation]({{site.baseurl}}/influxDB/{{page.lang}})

@@ -11,25 +11,25 @@ pluginId: designImgSwitch
 
 ## 2019-09-08
 
-- First version
+- First release
 
 ## 2019-10-01
 
-- Added English and German translations
-- Added an option to force refresh after a change of the background image
+- Add English and German translations
+- Add option to force the refresh after a change of the background image
 
 ## 2020-01-11
 
-- Add a config to customize images
+- Add configuration to customize images
 
 ## 2020-02-08
 
-- Add option to automatically crop image based on design size
+- Add an option to automatically crop image to design dimension
 
 ## 2020-03-22
 
-- Fixe mineure en cas de suppression d'un équipement
-- Mise à jour du logo
+- Minor fix when deleting a device
+- Update logo
 
 # Documentation
 

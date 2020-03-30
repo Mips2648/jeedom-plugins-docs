@@ -8,10 +8,7 @@ pluginId: proxmox
 # 2020-03-30
 
 - Move all documentations to a dedicated project
-
-# 2020-03-22
-
-- Ajout d'une commande "Redémarrer" sur VM
+- Add "reset" command on VM
 
 # 2020-02-12
 
@@ -70,4 +67,4 @@ First stable release
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[Documentation]({{site.baseurl}}/{{page.pluginId}})

@@ -33,7 +33,7 @@ First stable release
 
 ## Added total volume of tank information in Volume command
 
-- 2018-09-24
+- Add support of Jeedom V4 and PHP 7.3
 
 ## 2019-10-26
 

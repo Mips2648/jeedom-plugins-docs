@@ -5,14 +5,10 @@ lang: en_US
 pluginId: miele
 ---
 
-# Changelog
+# 2020-04-xx
 
-[See the latest version](#tocAnchor-1-1-1)
-
-## 2020-04-xx
-
-First release
+First version
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}})

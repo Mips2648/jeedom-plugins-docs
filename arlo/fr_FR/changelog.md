@@ -49,12 +49,12 @@ pluginId: arlo
 - Amélioration de l'intégration avec l'app mobile Jeedom
 - La commande "Dernière image" retourne à présent le chemin relatif vers l'image
 
-## 2019-09-26
+# 2019-09-26
 
 - Ajout du streaming live
 - suppression des commandes "startStream" et "streamURL"
 
-## 2019-09-17
+# 2019-09-17
 
 - Ajout fonction d'enregistrement local
 - Mise à jour vers font awesome 5 (pour Jeedom V4)
@@ -62,12 +62,12 @@ pluginId: arlo
 - Adaptation du widget
 - Fixe pour les commandes on/off sur Arlo Baby
 
-## 2019-09-10
+# 2019-09-10
 
 - sécurisation des accès aux captures en locals
 - Mise à jour de l'API vers le domaine my.arlo.com suite aux changements effectués par Arlo
 
-## 2019-08-02
+# 2019-08-02
 
 - Support de Jeedom V4 et PHP 7.3
 - Fix: captures non-sauvés si Jeedom ne tourne pas dans /var/www/html/

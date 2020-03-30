@@ -20,7 +20,7 @@ pluginId: designImgSwitch
 
 ## 2020-01-11
 
-- Add configuration so customize images
+- Add configuration to customize images
 
 ## 2020-02-08
 

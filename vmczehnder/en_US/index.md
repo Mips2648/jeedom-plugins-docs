@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: VMC (Zehnder/Storkair) Documentation 
 lang: en_US
 pluginId: vmczehnder
 ---

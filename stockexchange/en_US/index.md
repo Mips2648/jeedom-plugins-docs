@@ -75,4 +75,4 @@ Below is an overview of the most important commands available by type of informa
 
 # Support
 
-If despite this documentation and after having read the topics related to the plugin on [community]({{site.forum}}) you do not find an answer to your question, do not hesitate to create a new topic with the tag of the plugin ({{site.tagPlugin}}).
+If despite this documentation and after having read the topics related to the plugin on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}) you do not find an answer to your question, do not hesitate to create a new topic with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).

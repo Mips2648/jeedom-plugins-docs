@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Fullup Documentation
 lang: en_US
 pluginId: fullup
 ---

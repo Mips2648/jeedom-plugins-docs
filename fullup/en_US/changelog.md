@@ -13,7 +13,7 @@ pluginId: fullup
 
 First stable release
 
-## Add support for Jeedom v4 and PHP 7.3
+## 2018-09-26
 
 2019-03-25
 
@@ -35,7 +35,7 @@ First stable release
 
 - 2018-09-24
 
-## First stable release
+## 2019-10-26
 
 - Increase available history to last 24 weeks/months/years
 

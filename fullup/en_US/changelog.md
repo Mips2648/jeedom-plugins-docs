@@ -29,7 +29,7 @@ First stable release
 
 ## Added devices image in configuration
 
-- 2018-09-26
+- Adapt device screen layout to match 3.3
 
 ## Added total volume of tank information in Volume command
 

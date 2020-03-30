@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Changelog
+title: Logmanager Changelog
 lang: en_US
 pluginId: logmanager
 ---
 
 # Changelog
 
-## 2019-09-05
+## 2020-01-22
 
-- First version
+- Add an option to display the contents of the log on the widget
 
 ## 2019-10-04
 
 - Added generation of an event when writing a log to use as a scenario trigger
 
-## 2020-01-22
+## 2019-09-05
 
-- Add an option to display the contents of the log on the widget
+- First version

@@ -21,6 +21,12 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
+    source_file_dir: gotify/fr_FR/
+    translation_files_expression: /gotify/<lang>/
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
     source_file_dir: influxDB/fr_FR/
     translation_files_expression: /influxDB/<lang>/
   - filter_type: dir

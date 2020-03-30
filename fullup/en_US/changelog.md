@@ -25,7 +25,7 @@ First stable release
 
 - Added history consumption feature: A new screen with graph of consumption based on data available in Fullup platform
 - Added translation files
-- 2018-12-13
+- Added translation files
 
 ## Added devices image in configuration
 

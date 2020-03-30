@@ -5,14 +5,10 @@ lang: en_US
 pluginId: influxDB
 ---
 
-# Changelog
+# 2020-04-xx
 
-[See the latest version](#tocAnchor-1-1-2)
-
-## 2020-04-xx
-
-First release
+First version
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/)
+[See documentation]({{site.baseurl}}/{{page.pluginId}})

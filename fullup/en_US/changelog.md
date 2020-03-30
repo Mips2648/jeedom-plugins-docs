@@ -5,44 +5,38 @@ lang: en_US
 pluginId: fullup
 ---
 
-# Changelog
+[See documentation]({{site.baseurl}}/{{page.pluginId}})
 
-[See the latest version](#tocAnchor-1-1-8)
+# 2020-03-30
 
-## 2018-09-24
+- Move all documentations to a dedicated project
 
-First stable release
+# 2019-10-26
 
-## 2018-09-26
+- Increase available history to last 24 weeks/months/years
 
-Added total volume of tank information in Volume command
+# 2019-07-29
 
-## 2018-12-13
+- Add support of Jeedom V4 and PHP 7.3
 
-Added devices image in configuration
+# 2019-03-25
 
-## 2019-01-19
+- Adapt device screen layout to match 3.3
+
+# 2019-01-19
 
 - Added health report
 - Added history consumption feature: A new screen with graph of consumption based on data available in Fullup platform
 - Added translation files
 
-## 2019-03-25
+# 2018-12-13
 
-- Adapt device screen layout to match 3.3
+- Added devices image in configuration
 
-## 2019-07-29
+# 2018-09-26
 
-- Add support of Jeedom V4 and PHP 7.3
+- Added total volume of tank information in Volume command
 
-## 2019-10-26
+# 2018-09-24
 
-- Increase available history to last 24 weeks/months/years
-
-## 2020-03-29
-
-- Move documentations
-
-# Documentation
-
-[Documentation]({{site.baseurl}}/{{page.pluginId}})
+- First stable release

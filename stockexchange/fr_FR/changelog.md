@@ -5,17 +5,23 @@ lang: fr_FR
 pluginId: stockexchange
 ---
 
-# Changelog
+# 2020-03-30
 
-## 2019-11-04
+- Déplacement de toute la documentation sur un projet séparé
 
-Première version
+# 2020-03-18
 
-## 2019-12-03
+- Ajout des matières premières
+
+# 2019-12-03
 
 - Ajout de la gestion des indices boursiers
 - Ajout des traductions en_US
 
-## 2020-03-18
+# 2019-11-04
 
-- Ajout des matières premières
+Première version
+
+# Documentation
+
+[Voir la documentation]({{site.baseurl}}/{{page.pluginId}})

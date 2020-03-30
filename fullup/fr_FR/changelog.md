@@ -5,8 +5,6 @@ lang: fr_FR
 pluginId: fullup
 ---
 
-[Voir la documentation]({{site.baseurl}}/{{page.pluginId}})
-
 # 2020-03-30
 
 - Déplacement de toute la documentation sur un projet séparé
@@ -40,3 +38,7 @@ pluginId: fullup
 # 2018-09-24
 
 - Première version stable
+
+# Documentation
+
+[Voir la documentation]({{site.baseurl}}/{{page.pluginId}})

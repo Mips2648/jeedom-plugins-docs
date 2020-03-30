@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Changelog
+title: Logmanager Changelog
 lang: fr_FR
 pluginId: logmanager
 ---
 
 # Changelog
 
-## 2019-09-05
+## 2020-01-22
 
-- Première version
+- Ajout d'une option pour afficher le contenu du log sur la tuile
 
 ## 2019-10-04
 
 - Ajout de la génération d'un événement lors de l'écriture d'un log à utiliser comme déclencheur de scénario
 
-## 2020-01-22
+## 2019-09-05
 
-- Ajout d'une option pour afficher le contenu du log sur la tuile
+- Première version

@@ -19,19 +19,19 @@ Added total volume of tank information in Volume command
 
 ## 2018-12-13
 
-2019-01-19
+Added devices image in configuration
 
-## Added health report
+## 2019-01-19
 
+- Added health report
 - Added history consumption feature: A new screen with graph of consumption based on data available in Fullup platform
 - Added translation files
-- Added translation files
 
-## Added devices image in configuration
+## 2019-03-25
 
 - Adapt device screen layout to match 3.3
 
-## Added total volume of tank information in Volume command
+## 2019-07-29
 
 - Add support of Jeedom V4 and PHP 7.3
 

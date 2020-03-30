@@ -15,7 +15,7 @@ First stable release
 
 ## 2018-09-26
 
-2019-03-25
+Added total volume of tank information in Volume command
 
 ## 2018-12-13
 

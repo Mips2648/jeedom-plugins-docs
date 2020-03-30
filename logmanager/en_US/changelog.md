@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Logmanager Changelog
+title: LogManager Changelog
 lang: en_US
 pluginId: logmanager
 ---

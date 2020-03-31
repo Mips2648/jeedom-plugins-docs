@@ -80,7 +80,7 @@ Chaque appareil Miele dispose des commandes suivantes, toutes ne sont pas forcé
 - Automatic program
 - Cleaning-/Care program
 
-## Les commandes de type infos spécifique à certain appareils
+## Les commandes de type infos spécifiques à certain appareils
 
 - **Vitesse de rotation** pour les machines à laver, valeur numérique en rpm.
 - **Niveau de séchage** pour les sèches linge, voir ci-dessous pour la liste des valeurs possibles

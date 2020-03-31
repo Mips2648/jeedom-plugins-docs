@@ -10,8 +10,9 @@ pluginId: myaudi
 - Info et commandes de verrouillage
 - Statut des portes et fenêtres
 
-# 2020-03-30
+# 2020-03-31
 
+- Fix installation des dépendances manquantes
 - Déplacement de toute la documentation sur un projet séparé
 
 # 2020-03-23

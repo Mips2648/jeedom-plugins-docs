@@ -7,8 +7,8 @@ pluginId: miele
 
 # Description
 
-Plugin permettant d'intégré tous les appareils de la gamme Miele@Home.
-Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil)
+Plugin permettant d'intégrer tous les appareils de la gamme Miele@Home.
+Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaines actions (en fonction de l'appareil).
 
 # Installation
 
@@ -17,18 +17,17 @@ Vous devez avoir un compte utilisateur Miele avec au moins un appareil compatibl
 
 # Configuration du plugin
 
-Dans la configuration du plugin il faudra renseigner le nom d'utilisateur et le mot de passe ainsi que le pays d'inscription.
-Et également les client Id et secret reçu pour l'accès API.
+Dans la configuration du plugin, il faudra renseigner le nom d'utilisateur, le mot de passe ainsi que le pays d'inscription, ainsi que le ClientId et le Client Secret reçus permettant l'accès à l’API.
 
 # Les équipements
 
-Dès que la configuration du plugin est correcte, le plugin synchronisera vos appareils chaque minutes. Il créera les appareils manquants avec leurs commandes et mettra à jour l'état de tout les appareils connectés.
+Dès que la configuration du plugin est correcte, le plugin synchronisera vos appareils chaque minute. Il créera les appareils manquants avec leurs commandes et mettra à jour l'état de tout les appareils connectés.
 
 > **Tip**
 >
-> Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement jeedom ne correspond plus à aucun appareils en votre possession, veuillez le supprimer manuellement.
+> Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement jeedom ne correspond plus à aucun appareil en votre possession, veuillez le supprimer manuellement.
 
-Dans la page de configuration d'un équipement, il existe un bouton pour créer les commandes manquantes sur celui-ci (dans le cas ou vous avez supprimé une commande par erreur par exemple).
+Dans la page de configuration d'un équipement, il existe un bouton pour créer les commandes manquantes sur celui-ci (dans le cas où vous auriez supprimé une commande par erreur par exemple).
 
 # Les commandes
 
@@ -99,7 +98,7 @@ Chaque appareil Miele dispose des commandes suivantes, toutes ne sont pas forcé
 
 ## Les commandes actions
 
-Les commandes actions ci-dessous seront présente sur les équipements si l'action est supportée par l'appareil. De plus, pour pouvoir effectuer une action il faut que l'appareil soit dans un statu/état donné (voir ci-dessus). Il n'est par exemple pas possible de stopper celui-ci s'il n'était pas démarrer.
+Les commandes actions ci-dessous seront présentes sur les équipements si l'action est supportée par l'appareil. De plus, pour pouvoir effectuer une action il faut que l'appareil soit dans un statut/état donné (voir ci-dessus). Il n'est par exemple pas possible de stopper celui-ci s'il n'était pas démarré.
 
 - **Démarrer**, l'appareil doit être en statut 4-Programmé et en attente de démarrage
 - **Arrêter**, l'appareil doit être en statut 4-Programmé et en attente de démarrage, 5-Fonctionnement ou 6-Pause

@@ -9,7 +9,7 @@ pluginId: arlo
 
 Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.
 
-Tous les modèles actuels supportés par l'application Arlo (web ou mobile) seront supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo go, Arlo baby ... mais toutes les fonctions propres à chaque modèle ne sont pas encore intégrées au plugin (elles le seront en priorités selon les demandes).
+Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo go, Arlo baby ... mais toutes les fonctions propres à chaque modèle ne sont pas encore intégrées au plugin (elles le seront en priorités selon les demandes).
 
 Pour l'instant, il est possible de:
 

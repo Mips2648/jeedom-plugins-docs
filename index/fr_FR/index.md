@@ -38,7 +38,7 @@ Plugin permettant une gestion de log personnalisée dans vos scénarios. Il est 
 
 # Miele
 
-Plugin permettant d'intégré tous les appareils de la gamme Miele@Home.
+Plugin permettant d'intégrer tous les appareils de la gamme Miele@Home.
 Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil)
 
 - [Documentation]({{site.baseurl}}/miele/{{page.lang}})

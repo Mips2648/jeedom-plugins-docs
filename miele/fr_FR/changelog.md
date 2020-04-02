@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: miele
 ---
 
-# 2020-04-xx
+# 2020-04-03
 
 Première version
 

@@ -34,6 +34,13 @@ Plugin permettant à Jeedom d'agir comme une application Gotify qui peut envoyer
 - [Documentation]({{site.baseurl}}/gotify/{{page.lang}})
 - [Changelog]({{site.baseurl}}/gotify/{{page.lang}}/changelog)
 
+# Hydrao
+
+Plugin permettant d'intégrer les pommeaux de douches Hydrao.
+
+- [Documentation]({{site.baseurl}}/hydrao/{{page.lang}})
+- [Changelog]({{site.baseurl}}/hydrao/{{page.lang}}/changelog)
+
 # InfluxDB Connector
 
 - [Documentation]({{site.baseurl}}/influxDB/{{page.lang}})

@@ -18,7 +18,8 @@ Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont
 
 # Design Image
 
-<img width="77" alt="Design Image" src="https://www.jeedom.com/market/filestore/market/plugin/images/designImgSwitch_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/designImgSwitch_icon.png">]({{site.baseurl}}/designImgSwitch/{{page.lang}})
+
 Plugin permettant de changer automatiquement l'image de fond de vos design en fonction de la météo.
 
 - [Documentation]({{site.baseurl}}/designImgSwitch/{{page.lang}})
@@ -27,7 +28,8 @@ Plugin permettant de changer automatiquement l'image de fond de vos design en fo
 
 # Fullup
 
-<img width="77" alt="Fullup" src="https://www.jeedom.com/market/filestore/market/plugin/images/fullup_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/fullup_icon.png">]({{site.baseurl}}/fullup/{{page.lang}})
+
 Plugin permettant la lecture des donées des jauges connectées <a href="https://fullup.be/" target="_blank">Fullup</a>.
 
 - [Documentation]({{site.baseurl}}/fullup/{{page.lang}})
@@ -36,7 +38,8 @@ Plugin permettant la lecture des donées des jauges connectées <a href="https:/
 
 # Gotify
 
-<img width="77" alt="Gotify" src="https://www.jeedom.com/market/filestore/market/plugin/images/gotify_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/gotify_icon.png">]({{site.baseurl}}/gotify/{{page.lang}})
+
 Plugin permettant à Jeedom d'agir comme une application Gotify qui peut envoyer des messages (notifications) à un serveur Gotify.
 
 - [Documentation]({{site.baseurl}}/gotify/{{page.lang}})
@@ -45,7 +48,8 @@ Plugin permettant à Jeedom d'agir comme une application Gotify qui peut envoyer
 
 # Hydrao
 
-<img width="77" alt="Hydrao" src="https://www.jeedom.com/market/filestore/market/plugin/images/hydrao_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/hydrao_icon.png">]({{site.baseurl}}/hydrao/{{page.lang}})
+
 Plugin permettant d'intégrer les pommeaux de douches Hydrao.
 
 - [Documentation]({{site.baseurl}}/hydrao/{{page.lang}})
@@ -54,7 +58,8 @@ Plugin permettant d'intégrer les pommeaux de douches Hydrao.
 
 # InfluxDB Connector
 
-<img width="77" alt="InfluxDB" src="https://www.jeedom.com/market/filestore/market/plugin/images/influxdb_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/influxdb_icon.png">]({{site.baseurl}}/influxDB/{{page.lang}})
+
 Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilement les informations des commandes sélectionnées à chaque changement de valeur ce qui permet d'externaliser l'historique qui peut ensuite être consulté via Grafana par exemple.
 
 - [Documentation]({{site.baseurl}}/influxDB/{{page.lang}})
@@ -63,7 +68,8 @@ Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilemen
 
 # Log Manager
 
-<img width="77" alt="Log Manager" src="https://www.jeedom.com/market/filestore/market/plugin/images/logmanager_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/logmanager_icon.png">]({{site.baseurl}}/logmanager/{{page.lang}})
+
 Plugin permettant une gestion de log personnalisée dans vos scénarios. Il est possible de créer autant de log que voulu, différent niveau de log sont possible pour chaque fichier de log. Cela permet d’organiser vos logs de scénario selon vos préférences, de par exemple regrouper toutes les actions sur un équipement dans le même log quelque soit le scénario.
 
 - [Documentation]({{site.baseurl}}/logmanager/{{page.lang}})
@@ -72,7 +78,7 @@ Plugin permettant une gestion de log personnalisée dans vos scénarios. Il est 
 
 # Miele
 
-[<img width="77" alt="Miele" src="https://www.jeedom.com/market/filestore/market/plugin/images/miele_icon.png"/>]({{site.baseurl}}/miele/{{page.lang}})
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/miele_icon.png"/>]({{site.baseurl}}/miele/{{page.lang}})
 
 Plugin permettant d'intégrer tous les appareils de la gamme Miele@Home.
 
@@ -84,7 +90,8 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 
 # My Audi
 
-<img width="77" alt="My Audi" src="https://www.jeedom.com/market/filestore/market/plugin/images/myaudi_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/myaudi_icon.png">]({{site.baseurl}}/myaudi/{{page.lang}})
+
 Plugin permettant la connexion à la plateforme MyAudi permettant de récupérer les voitures de la marque qui sont compatibles.
 
 - [Documentation]({{site.baseurl}}/myaudi/{{page.lang}})
@@ -93,7 +100,8 @@ Plugin permettant la connexion à la plateforme MyAudi permettant de récupérer
 
 # Notification Queue
 
-<img width="77" alt="Notification Queue" src="https://www.jeedom.com/market/filestore/market/plugin/images/notificationqueue_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/notificationqueue_icon.png">]({{site.baseurl}}/notificationqueue/{{page.lang}})
+
 Plugin permettant de créer des commandes de notifications (commande de type action/message) qui se comportent comme une file d'attente et ne délivrent les notifications (envoyées dans leur file respective) que si une condition est remplie.
 
 - [Documentation]({{site.baseurl}}/notificationqueue/{{page.lang}})
@@ -102,7 +110,8 @@ Plugin permettant de créer des commandes de notifications (commande de type act
 
 # Solaredge
 
-<img width="77" alt="Solaredge" src="https://www.jeedom.com/market/filestore/market/plugin/images/onduleursolaredge_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/onduleursolaredge_icon.png">]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
+
 Plugin permettant la lecture des données d'un onduleur de panneaux photovoltaïque de la marque Solaredge.
 
 - [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
@@ -111,7 +120,8 @@ Plugin permettant la lecture des données d'un onduleur de panneaux photovoltaï
 
 # Portainer
 
-<img width="77" alt="Portainer" src="https://www.jeedom.com/market/filestore/market/plugin/images/portainer_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/portainer_icon.png">]({{site.baseurl}}/portainer/{{page.lang}})
+
 Plugin permettant la connexion à un serveur Portainer. Portainer est une solution de gestion de container sous docker qui peut elle même s'installer très facilement dans un container.
 
 Via ce plugin, il est possible de récupérer dans jeedom tous les dockers configurés sous Portainer ainsi que tous les containers.
@@ -122,7 +132,8 @@ Via ce plugin, il est possible de récupérer dans jeedom tous les dockers confi
 
 # Proxmox
 
-<img width="77" alt="Proxmox" src="https://www.jeedom.com/market/filestore/market/plugin/images/proxmox_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/proxmox_icon.png">]({{site.baseurl}}/proxmox/{{page.lang}})
+
 Plugin permettant la gestion d'un serveur Proxmox.
 
 Il est possible de récupérer toutes les ressources (noeuds, vms, stockage...) et toutes leurs propriétés (statut, mémoire, CPU, disque, adresse IP, temps d'activité, list des snapshots...).
@@ -134,7 +145,8 @@ Le plugin permet aussi de démarrer et arrêter les VMs et les containers ainsi 
 
 # Rocket.Chat
 
-<img width="77" alt="Rocket.Chat" src="https://www.jeedom.com/market/filestore/market/plugin/images/rocketchat_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/rocketchat_icon.png">]({{site.baseurl}}/rocketchat/{{page.lang}})
+
 Plugin permettant la connexion à un serveur Rocket.chat. Rocket.chat est un plateforme de messagerie collaborative (type slack, HipChat...).
 
 Le plugin gère le ask (dans les scénarios), les interactions et l'envoi de pièces jointes (ex: image de caméra).
@@ -145,7 +157,8 @@ Le plugin gère le ask (dans les scénarios), les interactions et l'envoi de pi�
 
 # Stock exchange
 
-<img width="77" alt="Stock exchange" src="https://www.jeedom.com/market/filestore/market/plugin/images/stockexchange_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/stockexchange_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
+
 Plugin permettant de récupérer les cours de bourse d'une action ou d'un indice mais également le taux de change entre deux devises (y compris crypto-monnaie comme le bitcoin) ainsi que les matières premières.
 
 - [Documentation]({{site.baseurl}}/stockexchange/{{page.lang}})
@@ -154,7 +167,8 @@ Plugin permettant de récupérer les cours de bourse d'une action ou d'un indice
 
 # VMC (Zehnder/Storkair)
 
-<img width="77" alt="VMC (Zehnder/Storkair)" src="https://www.jeedom.com/market/filestore/market/plugin/images/vmczehnder_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/vmczehnder_icon.png">]({{site.baseurl}}/vmczehnder/{{page.lang}})
+
 Plugin permettant d'interfacer une VMC de la marque Zehnder - aussi connu sous Storkair, ComfoAir, Wernig - via le port série (RS232) utilisé par le CCEase/ComfoSense.
 
 - [Documentation]({{site.baseurl}}/vmczehnder/{{page.lang}})

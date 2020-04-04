@@ -6,7 +6,8 @@ lang: fr_FR
 
 # Arlo
 
-<img width="77" alt="Arlo" src="https://www.jeedom.com/market/filestore/market/plugin/images/arlo_icon.png">
+[<img width="77" src="https://www.jeedom.com/market/filestore/market/plugin/images/arlo_icon.png">]({{site.baseurl}}/arlo/{{page.lang}})
+
 Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.
 
 Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo go, Arlo baby ...
@@ -71,7 +72,8 @@ Plugin permettant une gestion de log personnalisée dans vos scénarios. Il est 
 
 # Miele
 
-<img width="77" alt="Miele" src="https://www.jeedom.com/market/filestore/market/plugin/images/miele_icon.png">
+[<img width="77" alt="Miele" src="https://www.jeedom.com/market/filestore/market/plugin/images/miele_icon.png"/>]({{site.baseurl}}/miele/{{page.lang}})
+
 Plugin permettant d'intégrer tous les appareils de la gamme Miele@Home.
 
 Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil)

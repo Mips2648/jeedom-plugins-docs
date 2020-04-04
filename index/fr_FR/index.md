@@ -24,7 +24,7 @@ Plugin permettant de changer automatiquement l'image de fond de vos design en fo
 
 # Fullup
 
-![](https://www.jeedom.com/market/filestore/market/plugin/images/fullup_icon.png width="100")
+![](https://www.jeedom.com/market/filestore/market/plugin/images/fullup_icon.png | width="100")
 Plugin permettant la lecture des donées des jauges connectées <a href="https://fullup.be/" target="_blank">Fullup</a>.
 
 - [Documentation]({{site.baseurl}}/fullup/{{page.lang}})

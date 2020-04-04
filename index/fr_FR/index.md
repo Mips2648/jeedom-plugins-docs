@@ -12,6 +12,7 @@ Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont
 
 - [Documentation]({{site.baseurl}}/arlo/{{page.lang}})
 - [Changelog]({{site.baseurl}}/arlo/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3708" target="_blank">Market</a>
 
 # Design Image
 
@@ -19,13 +20,16 @@ Plugin permettant de changer automatiquement l'image de fond de vos design en fo
 
 - [Documentation]({{site.baseurl}}/designImgSwitch/{{page.lang}})
 - [Changelog]({{site.baseurl}}/designImgSwitch/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3819" target="_blank">Market</a>
 
 # Fullup
 
+![](https://www.jeedom.com/market/filestore/market/plugin/images/fullup_icon.png width="100")
 Plugin permettant la lecture des donées des jauges connectées <a href="https://fullup.be/" target="_blank">Fullup</a>.
 
 - [Documentation]({{site.baseurl}}/fullup/{{page.lang}})
 - [Changelog]({{site.baseurl}}/fullup/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3445" target="_blank">Market</a>
 
 # Gotify
 

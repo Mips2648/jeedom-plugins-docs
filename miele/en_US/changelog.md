@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Miele Changelog
+title: MyAudi changelog 
 lang: en_US
-pluginId: miele
+pluginId: myaudi
 ---
 
 # 2020-04-03
@@ -11,4 +11,4 @@ First version
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[Documentation]({{site.baseurl}}/{{page.pluginId}})

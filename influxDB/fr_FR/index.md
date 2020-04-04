@@ -7,7 +7,7 @@ pluginId: influxDB
 
 # Description
 
-Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilement les informations voulues en sélectionnant simplement les commandes correspondantes et le plugin se charge d'envoyer les valeurs selon la configuration ce qui permet d'externaliser l'historique qui peut ensuite être consulté via Grafana par exemple.
+Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilement les informations voulues en sélectionnant simplement les commandes correspondantes dans une liste ce qui permet d'externaliser l'historique qui peut ensuite être consulté via Grafana par exemple.
 
 # Installation
 

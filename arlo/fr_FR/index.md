@@ -5,8 +5,6 @@ lang: fr_FR
 pluginId: arlo
 ---
 
-<img width="77" alt="{{page.pluginId}}" src="https://www.jeedom.com/market/filestore/market/plugin/images/{{page.pluginId}}_icon.png">
-
 # Description
 
 Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.

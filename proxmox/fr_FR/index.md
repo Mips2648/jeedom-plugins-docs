@@ -5,8 +5,6 @@ lang: fr_FR
 pluginId: proxmox
 ---
 
-<img width="77" alt="{{page.pluginId}}" src="https://www.jeedom.com/market/filestore/market/plugin/images/{{page.pluginId}}_icon.png">
-
 # Description
 
 Plugin permettant la gestion d'un serveur Proxmox.

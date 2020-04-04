@@ -37,6 +37,7 @@ Plugin permettant à Jeedom d'agir comme une application Gotify qui peut envoyer
 
 - [Documentation]({{site.baseurl}}/gotify/{{page.lang}})
 - [Changelog]({{site.baseurl}}/gotify/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3774" target="_blank">Market</a>
 
 # Hydrao
 
@@ -44,6 +45,7 @@ Plugin permettant d'intégrer les pommeaux de douches Hydrao.
 
 - [Documentation]({{site.baseurl}}/hydrao/{{page.lang}})
 - [Changelog]({{site.baseurl}}/hydrao/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3964" target="_blank">Market</a>
 
 # InfluxDB Connector
 
@@ -51,6 +53,7 @@ Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilemen
 
 - [Documentation]({{site.baseurl}}/influxDB/{{page.lang}})
 - [Changelog]({{site.baseurl}}/influxDB/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3935" target="_blank">Market</a>
 
 # LogManager
 
@@ -58,6 +61,7 @@ Plugin permettant une gestion de log personnalisée dans vos scénarios. Il est 
 
 - [Documentation]({{site.baseurl}}/logmanager/{{page.lang}})
 - [Changelog]({{site.baseurl}}/logmanager/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3817" target="_blank">Market</a>
 
 # Miele
 
@@ -83,6 +87,7 @@ Plugin permettant de créer des commandes de notifications (commande de type act
 
 - [Documentation]({{site.baseurl}}/notificationqueue/{{page.lang}})
 - [Changelog]({{site.baseurl}}/notificationqueue/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3823" target="_blank">Market</a>
 
 # Solaredge
 
@@ -90,6 +95,7 @@ Plugin permettant la lecture des données d'un onduleur de panneaux photovoltaï
 
 - [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 - [Changelog]({{site.baseurl}}/onduleursolaredge/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3440" target="_blank">Market</a>
 
 # Portainer
 
@@ -99,6 +105,7 @@ Via ce plugin, il est possible de récupérer dans jeedom tous les dockers confi
 
 - [Documentation]({{site.baseurl}}/portainer/{{page.lang}})
 - [Changelog]({{site.baseurl}}/portainer/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3931" target="_blank">Market</a>
 
 # Proxmox
 
@@ -109,6 +116,7 @@ Le plugin permet aussi de démarrer et arrêter les VMs et les containers ainsi 
 
 - [Documentation]({{site.baseurl}}/proxmox/{{page.lang}})
 - [Changelog]({{site.baseurl}}/proxmox/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3835" target="_blank">Market</a>
 
 # Rocket.Chat
 
@@ -118,6 +126,7 @@ Le plugin gère le ask (dans les scénarios), les interactions et l'envoi de pi�
 
 - [Documentation]({{site.baseurl}}/rocketchat/{{page.lang}})
 - [Changelog]({{site.baseurl}}/rocketchat/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3902" target="_blank">Market</a>
 
 # Stock exchange
 
@@ -125,6 +134,7 @@ Plugin permettant de récupérer les cours de bourse d'une action ou d'un indice
 
 - [Documentation]({{site.baseurl}}/stockexchange/{{page.lang}})
 - [Changelog]({{site.baseurl}}/stockexchange/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3841" target="_blank">Market</a>
 
 # VMC (Zehnder/Storkair)
 
@@ -132,3 +142,4 @@ Plugin permettant d'interfacer une VMC de la marque Zehnder - aussi connu sous S
 
 - [Documentation]({{site.baseurl}}/vmczehnder/{{page.lang}})
 - [Changelog]({{site.baseurl}}/vmczehnder/{{page.lang}}/changelog)
+- <a href="https://www.jeedom.com/market/index.php?v=d&plugin_id=3605" target="_blank">Market</a>

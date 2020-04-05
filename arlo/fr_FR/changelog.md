@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2020-04-05
+
+Il est nécessaire de relancer l'installation des dépendances après l'installation de cette mise à jour même si elles sont déjà _OK_.
+
+- Optimisations des dépendances.
+
 # 2020-03-30
 
 - Déplacement de toute la documentation sur un projet séparé

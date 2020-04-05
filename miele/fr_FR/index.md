@@ -74,10 +74,29 @@ Chaque appareil Miele dispose des commandes suivantes, toutes ne sont pas forcé
 
 ### Listes des valeurs pour l'info "Programme"
 
+Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
+
 - Normal operation mode
 - Own program
 - Automatic program
 - Cleaning-/Care program
+
+### Listes des valeurs connues pour l'info "Phase"
+
+Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
+
+#### Lave-vaisselle
+
+- Main Wash
+- Rinse
+- Final Rinse
+- Drying
+- Finished
+
+#### Four & tiroir Chauffant
+
+- PreHeat
+- Program Running
 
 ## Les commandes de type infos spécifiques à certain appareils
 

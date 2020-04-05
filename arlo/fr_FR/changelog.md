@@ -14,9 +14,6 @@ Il est nécessaire de relancer l'installation des dépendances après l'installa
 # 2020-03-30
 
 - Déplacement de toute la documentation sur un projet séparé
-
-# 2020-03-28
-
 - Optimisation: ne réinstalle plus ffmpeg si la bonne version a déjà été installée
 
 # 2020-03-21
@@ -106,10 +103,6 @@ Il est nécessaire de relancer l'installation des dépendances après l'installa
 
 # 2019-05-30
 
-- Fixe l'image des Arlo Baby
-
-# 2019-05-29
-
 Il est recommandé de relancer l'installation des dépendances après l'installation de cette mise à jour même si elles sont déjà _OK_.
 
 - Ajout du support des Arlo Q
@@ -117,6 +110,7 @@ Il est recommandé de relancer l'installation des dépendances après l'installa
 - Fixe des problèmes avec la compatibilité des dépendances
 - Fixe un problème de compatibilité des dépendances sur _Debian Jessie_: si vous êtes sous Jessie, vous devez réinstaller les dépendances même si elles sont déjà _OK_
 - réduction de la taille du plugin
+- Fixe l'image des Arlo Baby
 
 # 2019-05-24
 

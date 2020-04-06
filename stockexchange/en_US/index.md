@@ -8,7 +8,7 @@ pluginId: stockexchange
 # Description
 
 Plugin to retrieve stock or index quotation or exchange rate between two currencies (including cryptocurrency such as bitcoin).
-All data are available in real time.
+Most of the time all data are available in real time but refresh frequency depends on the service used.
 
 # Installation
 
@@ -47,6 +47,11 @@ The plugin offers a dynamic search function, just start typing the name of a com
 For this type of information, you must choose the original and destination currency.
 The plugin offers a dynamic search function, just start typing the name of a currency or its code and a list of the corresponding currency will be proposed. You just have to choose from these.
 
+## Commodity
+
+For this type of information, you must enter the symbol of the commodity.
+The plugin offers a dynamic search function, just start typing the name of a commodity (minimum 3 characters) or the desired symbol and a list of possibilities will be proposed. You just have to choose from these.
+
 ![Configuration devise](../images/config_currency.png "Configuration devise")
 
 # Available commands
@@ -68,6 +73,13 @@ Below is an overview of the most important commands available by type of informa
 - **Exchange rate**
 - **Bid**: the bid price
 - **Ask**: the ask price
+
+## Commodity
+
+- **Prize**
+- **Currency**
+- **Unit**
+- **Date**
 
 # Changelog
 

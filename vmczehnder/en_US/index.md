@@ -64,7 +64,7 @@ There is no additional config to perform here, the plugin will use the cron5 to 
 
 ## Creating the device in Jeedom
 
-- Navigate to devices management available under menu "Plugins", "Comfort" and "{{site.title}}".
+- Navigate to devices management available under menu "Plugins", "Comfort" and "VMC (Zehnder/Storkair)".
 - Click "Add" and choose a name.
 - You will land on the configuration of your newly created device on witch you can setup usual Jeedom options (don't forget to activate your new device).
 

@@ -9,7 +9,7 @@ pluginId: arlo
 
 Plugin to control all Arlo devices like the cameras, the base station and the integrated siren.
 
-All current models supported by the Arlo application (web or mobile) will be supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby ... but all the functions specific to each model are not yet integrated into the plugin (they will be in priority according to requests).
+All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby ... but all the functions specific to each model are not yet integrated into the plugin (they will be in priority according to requests).
 
 So far, it is possible to:
 
@@ -222,7 +222,7 @@ The doorbell has the following commands:
 
 # Changelog
 
-[See changelog](./changelog)
+[See the changelog](./changelog)
 
 # Support
 

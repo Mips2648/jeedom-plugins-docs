@@ -64,7 +64,7 @@ Il n'y a pas de configuration supplémentaire à effectuer ici, le plugin utilis
 
 ## Création de l'équipement dans votre Jeedom
 
-- Rendez-vous sur la page de configuration des équipements via le menu "Plugins", puis "Confort" et "{{site.title}}";
+- Rendez-vous sur la page de configuration des équipements via le menu "Plugins", puis "Confort" et "VMC (Zehnder/Storkair)";
 - Cliquez sur "Ajouter" et donnez un nom;
 - Vous arriverez sur la page de configuration de l'équipement sur laquelle vous pouvez configurer les options habituelles dans Jeedom (n'oubliez pas d'activer votre nouvel équipement).
 

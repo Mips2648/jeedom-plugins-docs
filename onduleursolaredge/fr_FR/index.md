@@ -7,7 +7,7 @@ pluginId: onduleursolaredge
 
 # Description
 
-Plugin permettant la lecture des données d'un onduleur de panneaux photovoltaïque de la marque Solaredge. Le plugin rafraîchit les données toutes les 5 minutes via un cron.
+Plugin permettant la lecture des données d'un onduleur de panneaux photovoltaïque de la marque Solaredge.
 Le plugin utilise l'API mise à disposition par Solaredge pour récupérer les données se trouvant dans la plateforme de monitoring.
 Les informations suivantes sont récupérables, d'autres pourraient être rajoutée selon les demandes:
 
@@ -26,12 +26,7 @@ Les informations suivantes sont récupérables, d'autres pourraient être rajout
 
 ![Configuration plugin](../images/plugin_config.png "Configuration plugin")
 
-Le plugin utilise le "cron5" pour récupérer les données toutes les 5 minutes. Vous pouvez choisir de le désactiver et d'actualiser vos équipements manuellement ou via un autre moyen mais il n'est pas nécessaire de le faire plus fréquemment.
-> **Important**
->
-> Solaredge n'autorise que 300 appels par jours via l'API; actualiser les données toutes les 5 minutes pendant 24 heures exécutera 288 appels (donc en dessous de la limite des 300). Si vous choisissez de gérer l'actualisation des données autrement, prenez soin de ne pas dépasser cette limite.
-
-- Sur la page de configuration du plugin, il est possible de renseigner un équipement/commande pour l'heure du lever et l'heure du coucher du soleil tel que fournit par le plugin "Météo" ou "Héliotrope". Ceci permettra de "mettre en pause" la récupération des données entre ces heures car il y a généralement peu de production solaire la nuit ;-). Si aucune commande n'est fournie, la tâche sera "en pause" entre 22h00 et 04h00 (non configurable pour l'instant).
+- Sur la page de configuration du plugin, il est possible de renseigner un équipement/commande pour l'heure du lever et l'heure du coucher du soleil tel que fournit par le plugin "Météo" ou "Héliotrope". Ceci permettra de "mettre en pause" la récupération des données entre ces heures car il y a généralement peu de production solaire la nuit ;-). Si aucune commande n'est fournie, la tâche sera "en pause" entre 22h00 et 04h00. Vous pouvez également entrer des heures en "dur", format hhmm, par exemple 400 pour 4h00 et 2200 pour 22h00.
 
 ## Activation de l'accès API Solaredge
 
@@ -46,7 +41,7 @@ Le plugin utilise le "cron5" pour récupérer les données toutes les 5 minutes.
 
 ## Création de l'équipement dans votre Jeedom
 
-- Rendez-vous sur la page de configuration des équipements via le menu "Plugins", puis "Energie" et "{{site.title}}".
+- Rendez-vous sur la page de configuration des équipements via le menu "Plugins", puis "Energie" et "Solaredge".
 - Cliquez sur "Ajouter" et donnez un nom.
 - Vous arriverez sur la page de configuration de l'équipement sur laquelle vous pouvez configurer les options habituelles dans Jeedom (n'oubliez pas d'activer votre nouvel équipement).
 
@@ -58,7 +53,17 @@ Choisissez ensuite le type d'informations voulue. Si vous en voulez plus qu'une 
 
 ![Configuration équipement](../images/equip_config.png "Configuration équipement")
 
-- C'est tout, vous pouvez retourner sur votre dashboard pour voir le widget correspondant.
+Enfin, choisissez la fréquence de rafraîchissement de l'équipement. Les choix suivant sont possibles:
+
+- automatique: la fréquence sera calculée dynamiquement en fonction des heures de lever et coucher configurées afin de rafraichir le plus souvent possible sans dépasser la limite du nombre de requêtes imposée par Solaredge.
+- manuelle: vous choisissez la fréquence mais le plugin n'acceptera pas de passer en dessous du minimum indiqué.
+- désactivé.
+
+> **Important**
+>
+> Solaredge n'autorise que 300 appels par jours via l'API; actualiser les données toutes les 5 minutes pendant 24 heures exécutera 288 appels (donc en dessous de la limite des 300). Si vous choisissez de gérer l'actualisation des données autrement, prenez soin de ne pas dépasser cette limite.
+
+## Exemples de widget
 
 Aperçu global:
 
@@ -73,8 +78,6 @@ Exemple achat:
 Exemple vente:
 
 ![Widget](../images/widget_powerflow_feedin.png "Widget")
-
-Soit vous attendez 5 min. que la tâche cron s'éxécute pour voir les données soit vous faite une première actualisation manuellement.
 
 # Changelog
 

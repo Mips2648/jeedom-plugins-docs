@@ -7,7 +7,7 @@ pluginId: onduleursolaredge
 
 # Description
 
-The plugin allow to retrieve data of an Solaredge inverter. The plugin refresh data every 5 minutes with a cron.
+The plugin allow to retrieve data of an Solaredge inverter.
 The plugin use Solaredge API to get these data from the Solaredge monitoring platform.
 Following information are available, others can be retrieved depending the demand:
 
@@ -26,12 +26,7 @@ Following information are available, others can be retrieved depending the deman
 
 ![Plugin configuration](../images/plugin_config.png "Plugin configuration")
 
-The plugin use a "cron5" to get the data every 5 minutes. You can decide to deactivate it and to refresh your device manually or another mean but it's useless to refresh data more frequently.
-> **Important**
->
-> Solaredge allow only 300 calls/day on their API; refreshing data every 5 minutes during 24 hours will trigger 288 calls (so below the limit of 300 calls). If you decide to manage the refresh with another mean, take care to not bypass this limit.
-
-- In the plugin configuration, it is possible to provide a command to get sunrise and sunset time as provided by the "Weather" or "Héliotrope" plugin. This will allow to pause the task that get data between those time as there isn't any solar energy production overnight ;-). If no commands are provided, the task will pause between 10pm and 4am (not configurable yet).
+- In the plugin configuration, it is possible to provide a command to get sunrise and sunset time as provided by the "Weather" or "Héliotrope" plugin. This will allow to pause the task that get data between those time as there isn't any solar energy production overnight ;-). If no commands are provided, the task will pause between 2h00 and 04h00. You can also specify hard-coded value, format hhmm, e.g. 400 for 4h00 and 2200 for 22h00
 
 ## Solaredge API access activation
 
@@ -46,7 +41,7 @@ The plugin use a "cron5" to get the data every 5 minutes. You can decide to deac
 
 ## Creating the device in Jeedom
 
-- Navigate to devices management available under menu "Plugins", "Energy" and "{{site.title}}".
+- Navigate to devices management available under menu "Plugins", "Energy" and "Solaredge".
 - Click "Add" and choose a name.
 - You will land on the configuration of your newly created device on witch you can setup usual Jeedom options (don't forget to activate your new device).
 
@@ -58,7 +53,17 @@ Then choose the type of information you want. If you want more than one just cre
 
 ![Device configuration](../images/equip_config.png "Device configuration")
 
-- That's over, you can navigate to your dashboard to see the corresponding widget.
+Finally, select refresh frequency of the device. Following options exist:
+
+- automatic: the frequency is dynamically calculated depending sunrise and sunset configuration to optimize the refresh without doing more requests than allowed by Solaredge
+- manual: you choose the frequency but the plugin will not accept a value below the minimum displayed
+- disabled
+
+> **Important**
+>
+> Solaredge allow only 300 calls/day on their API; refreshing data every 5 minutes during 24 hours will trigger 288 calls (so below the limit of 300 calls). If you decide to manage the refresh with another mean, take care to not bypass this limit.
+
+## Widget examples
 
 Global overview:
 
@@ -74,11 +79,9 @@ Feed-in example:
 
 ![Widget](../images/widget_powerflow_feedin.png "Widget")
 
-Either you wait 5min. for the task to run to see data or you trigger a manual refresh to get an update immediately.
-
 # Changelog
 
-[See changelog]({{site.baseurl}}/changelog)
+[See the changelog]({{site.baseurl}}/changelog)
 
 # Support
 

@@ -5,7 +5,7 @@ lang: en_US
 pluginId: influxDB
 ---
 
-# 2020-04-xx
+# 2020-04-06
 
 First version
 

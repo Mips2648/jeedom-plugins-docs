@@ -7,21 +7,21 @@ pluginId: influxdb
 
 # Description
 
-Installation
+Plugin to connect to InfluxDB. It allows to easily send information by simply selecting the corresponding commands in a list. This allow to externalize the history which can then be consulted via Grafana for example.
 
-# In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
+# Installation
 
-Plugin configuration
+In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 
-# The devices
+# Plugin configuration
 
-Changelog
+There is not specific configuration to do, the plugin might use a cron, depending devices configuration, to send measurements.
 
 # Devices
 
-Support
+A Jeedom device correspond to one InfluxDB connection
 
-If despite this documentation and after having read the topics related to the plugin on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}) you do not find an answer to your question, do not hesitate to create a new topic with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+For each connector, you have to configure the IP address of InfluxDB server, a user, a password and the database name.
 
 ## Sending mode
 

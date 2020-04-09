@@ -41,7 +41,7 @@ In the second tab all info commands of Jeedom are displayed in a table. It is po
 
 # Definitions
 
-A **point** in InfluxDB represents a single data record that has four components: a **measurement**, **field** set, **tag** set and a **timestamp**.
+A **point** in InfluxDB represents a single data record that has 4 components: a **measurement**, **field** set, **tag** set and a **timestamp**.
 
 Below the relation implemented by the plugin between InfluxDB concepts and Jeedom concepts:
 

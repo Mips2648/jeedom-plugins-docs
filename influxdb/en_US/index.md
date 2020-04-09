@@ -17,7 +17,7 @@ Plugin configuration
 
 Changelog
 
-# See the changelog
+# The devices
 
 Support
 

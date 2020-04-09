@@ -2,7 +2,7 @@
 layout: default
 title: InfluxDB Changelog
 lang: en_US
-pluginId: influxDB
+pluginId: influxdb
 ---
 
 # 2020-04-xx

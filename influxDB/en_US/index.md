@@ -2,7 +2,7 @@
 layout: default
 title: InfluxDB Documentation
 lang: en_US
-pluginId: influxDB
+pluginId: influxdb
 ---
 
 # Description

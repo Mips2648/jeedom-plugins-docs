@@ -41,7 +41,7 @@ Dans le second onglet sont affichées toutes les commandes infos de votre Jeedom
 
 # Définitions
 
-Un **point** dans InfluxDB représente une donnée caractérisée par 4 composants: la **mesure** (_measurement_), un ensemble de **champ** (_field_), un ensemble de **tag** et un information d'**horodatage** (_timestamp_)
+Un **point** dans InfluxDB représente une donnée caractérisée par 4 composants: la **mesure**, un ensemble de **champ**, un ensemble de **tag** et un information d'**horodatage**.
 
 Ci-dessous le lien qui est fait par le plugin entre les concepts InfluxDB et les concepts Jeedom:
 

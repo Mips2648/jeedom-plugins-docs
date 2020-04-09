@@ -27,8 +27,8 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
-    source_file_dir: influxDB/fr_FR/
-    translation_files_expression: /influxDB/<lang>/
+    source_file_dir: influxdb/fr_FR/
+    translation_files_expression: /influxdb/<lang>/
   - filter_type: dir
     file_format: GITHUBMARKDOWN
     source_file_extension: md

@@ -37,7 +37,7 @@ Il est parfaitement possible d'avoir plusieurs équipements connectés à la mê
 
 Dans le second onglet sont affichées toutes les commandes infos de votre Jeedom sous forme de tableau. Il est possible de filtrer et de trier chacune des colonnes. Il suffit de cocher celles que vous voulez envoyer.
 
-![Config commandes](../images/config_commands.png "Config commandes")
+![Config commandes](../images/commands.png "Config commandes")
 
 # Définitions
 

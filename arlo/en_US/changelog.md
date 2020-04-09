@@ -5,12 +5,15 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2020-04-05
+
+It is necessary to launch the installation of dependencies after installing this update even if they are already _OK_.
+
+- Optimizations of dependencies
+
 # 2020-03-30
 
 - Move all documentations to a dedicated project
-
-# 2020-03-28
-
 - Optimisation: ne réinstalle plus ffmpeg si la bonne version a déjà été installée
 
 # 2020-03-21
@@ -49,12 +52,12 @@ pluginId: arlo
 - Improved integration with the Jeedom mobile app
 - The "Last Image" command now returns the relative path to the image
 
-## 2019-09-26
+# 2019-09-26
 
 - Adding live streaming
 - remove "startStream"; and "streamURL" commands
 
-## 2019-09-17
+# 2019-09-17
 
 - Added local recording function
 - Update to font awesome 5 (for Jeedom V4)
@@ -62,12 +65,12 @@ pluginId: arlo
 - Adapt widget
 - Fix on/off commands on Arlo Baby
 
-## 2019-09-10
+# 2019-09-10
 
 - securing access to local snapshots
 - Update to my.arlo.com domain following changes made by Arlo
 
-## 2019-08-02
+# 2019-08-02
 
 - Jeedom V4 and PHP 7.3 support
 - Fix: snapshots not save correctly if Jeedom does not run in /var/www/html/
@@ -100,10 +103,6 @@ pluginId: arlo
 
 # 2019-05-30
 
-- Fix image of Arlo Baby
-
-# 2019-05-29
-
 It is recommended to launch the installation of dependencies after installing this update even if they are already _OK_.
 
 - Add support for Arlo Q
@@ -111,6 +110,7 @@ It is recommended to launch the installation of dependencies after installing th
 - Fix issues with dependency compatibility
 - Fix dependencies compatibility issues on _Debian Jessie_: if you are under Jessie, you must reinstall the dependencies even if they are already _OK_
 - reduce the size of the plugin
+- Fix image of Arlo Baby
 
 # 2019-05-24
 
@@ -130,4 +130,4 @@ First stable release
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[Documentation]({{site.baseurl}}/{{page.pluginId}})

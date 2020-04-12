@@ -48,9 +48,9 @@ Below the relation implemented by the plugin between InfluxDB concepts and Jeedo
 Jeedom | InfluxDB | Description
 - | - | -
 Command name | Measurement | A measurement in InfluxDB is conceptually similar to a SQL table.
-Timestamp | - | It's the timestamp of the data
-Device name | Field (key) | A field key is similar to a column name in a SQL table.
-Command value | Field (value) | It is the value of the point.
+- | Timestamp | It's the timestamp of the data
+Device name | Field(key) | A field key is similar to a column name in a SQL table.
+Command value | Field(value) | It is the value of the point.
 
 ## Tags
 

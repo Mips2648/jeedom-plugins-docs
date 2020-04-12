@@ -41,20 +41,20 @@ Dans le second onglet sont affichées toutes les commandes infos de votre Jeedom
 
 # Définitions
 
-Un **point** dans InfluxDB représente une donnée caractérisée par 4 composants: la **mesure**, un ensemble de **champ**, un ensemble de **tag** et un information d'**horodatage**.
+Un **point** dans InfluxDB représente une donnée caractérisée par 4 composants: la **mesure**, un ensemble de **champ**, un ensemble de **tag** et une information d'**horodatage**.
 
 Ci-dessous le lien qui est fait par le plugin entre les concepts InfluxDB et les concepts Jeedom:
 
 Jeedom | InfluxDB | Description
 - | - | -
 Nom de la commande | Measurement | Une mesure dans InfluxDB est similaire à une table SQL.
-Timestamp | - | C'est l'information d'horodatage de la donnée.
-Nom de l'équipement | Field (key) | La clé d'un champ est similaire au nom d'une colonne dans une table SQL.
-Valeur de la commande | Field (value) | C'est la donnée du point.
+- | Timestamp | C'est l'information d'horodatage de la donnée.
+Nom de l'équipement | Field(key) | La clé d'un champ est similaire au nom d'une colonne dans une table SQL.
+Valeur de la commande | Field(value) | C'est la donnée du point.
 
 ## Les tags
 
-Les tags dans InfluxDB sont une information supplémentaire optionnelle que l'on peut associer aux points.
+Les tags dans InfluxDB sont des informations supplémentaires optionnelles que l'on peut associer aux points.
 Ils permettent de filtrer les résultats lors d'une recherche.
 Les tags suivant sont systématiquement associés à chaque point; cette liste peut être complétée s'il vous en fallait d'autres:
 

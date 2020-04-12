@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
+# 2020-04-12
+
+- Ajout de la programmation personnalisée dans le mode "auto-actualisation" (par défaut chaque minute)
+
 # 2020-04-06
 
 Première version

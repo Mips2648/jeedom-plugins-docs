@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: miele
 ---
 
+# 2020-04-13
+
+- Ajout du statut de l'authentification dans la configuration du plugin ainsi que la gestion de la connexion
+- Ajout du résumé de santé dans la page santé de Jeedom
+- Ajout d'une page santé spécifique listant un aperçu de tous les équipements
+
 # 2020-04-06
 
 - Ajout des icônes par défaut sur certaines commandes actions

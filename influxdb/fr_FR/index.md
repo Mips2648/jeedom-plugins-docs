@@ -27,7 +27,7 @@ Pour chaque connecteur, vous devez configurer l'adresse IP de votre serveur Infl
 
 Vous pouvez aussi choisir le mode d'envoi, par défaut en auto-actualisation. Ce mode peut être changé à tout moment sans aucun impact.
 
-- Auto-actualisation: le plugin enverra toutes les mesures sélectionnées chaque minute en un seul appel.
+- Auto-actualisation: le plugin enverra toutes les mesures sélectionnées selon la programmation choisie en un seul appel, par défaut chaque minute.
 C'est le mode de fonctionnement recommandé, il est plus optimal et ne provoque quasi aucune charge sur votre Jeedom tout en permettant d'avoir des mesures toutes les minutes.
 - Temps réel: le plugin enverra les mesures une par une à chaque changement de valeur, potentiellement plusieurs appels par seconde pour la même commande. Ce mode provoque une charge conséquente sur Jeedom en fonction de votre matériel et du nombre de commandes sélectionnées alors que bien souvent un mise à jour d'InfluxDB par minute suffit amplement pour avoir des statistiques utiles.
 

@@ -5,6 +5,10 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2020-04-16
+
+- Fix a dependency issue on Jeedom Smart
+
 # 2020-04-12
 
 - Add custom cron configuration in "auto-refresh" mode (by default set on every minute)

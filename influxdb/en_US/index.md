@@ -28,7 +28,7 @@ For each connector, you have to configure the IP address of InfluxDB server, a u
 You can also choose how data must be sent, by default with auto-refresh. This configuration can be changed anytime without impact.
 
 - Auto-refresh: the plugin will send all selected measurements at the selected schedule in one call, by default every minute.
-This the the recommended way of working, it's the most optimal and do not add extra load on your Jeedom and at the same time it allows to have measurements every minute.
+This is the recommended way of working, it's the most optimal and do not add extra load on your Jeedom and at the same time it allows to have measurements every minute.
 - Real time: the plugin will send measurement one by one each time there is a change of value, potentially several calls in the second for the same command. This mode will induce an important load on your installation depending your hardware and number of selected commands while most of the time an update by minute is more than enough to get useful statistics.
 
 It is possible to have multiple connectors to the same database each configured with different mode and different commands if you want to have some commands send in real time while optimizing the load for others

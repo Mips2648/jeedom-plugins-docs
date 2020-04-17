@@ -27,6 +27,18 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
+    source_file_dir: hydrao/fr_FR/
+    translation_files_expression: /hydrao/<lang>/
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
+    source_file_dir: index/fr_FR/
+    translation_files_expression: /index/<lang>/
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
     source_file_dir: influxdb/fr_FR/
     translation_files_expression: /influxdb/<lang>/
   - filter_type: dir
@@ -46,7 +58,7 @@ filters:
     source_file_extension: md
     source_language: fr
     source_file_dir: myaudi/fr_FR/
-    translation_files_expression: /miele/<lang>/
+    translation_files_expression: /myaudi/<lang>/
   - filter_type: dir
     file_format: GITHUBMARKDOWN
     source_file_extension: md

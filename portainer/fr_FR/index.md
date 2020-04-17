@@ -35,7 +35,7 @@ Sur les équipements de type Docker, il existe des commandes info donnant le nom
 
 ## Container
 
-Sur les équipements de type Container, il existe une commande info donnant le status du container, la date du dernier démarrage ainsi que de la dernière extinction et des commandes actions pour Démarrer, arrêter, redémarrer, mettre en pause ainsi que tuer le container.
+Sur les équipements de type Container, il existe une commande info donnant le status du container, la date du dernier démarrage ainsi que de la dernière extinction et des commandes actions pour démarrer, arrêter, redémarrer, mettre en pause ainsi que tuer le container.
 
 # Changelog
 

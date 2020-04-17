@@ -7,7 +7,7 @@ pluginId: rocketchat
 
 # Description
 
-Plugin permettant la connexion à un serveur Rocket.chat. Rocket.chat est un plateforme de messagerie collaborative (type slack, HipChat...).
+Plugin permettant la connexion à un serveur Rocket.chat. Rocket.chat est un plateforme de messagerie collaborative (type Slack, HipChat...).
 Le plugin gère le ask (dans les scénarios), les interactions et l'envoi de pièces jointes (ex: image de caméra).
 L'avantage de cette solution est de pouvoir être hébergée chez vous (un docker suffit), vos données reste ainsi en votre possession.
 

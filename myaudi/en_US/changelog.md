@@ -25,4 +25,4 @@ First version
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}})

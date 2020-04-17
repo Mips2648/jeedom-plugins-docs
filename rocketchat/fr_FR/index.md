@@ -40,7 +40,7 @@ Par défaut, lorsqu'un message est reçu sur le canal, le plugin va créer un co
 Une option existe sur l'équipement pour désactiver ce comportement.
 ![Config équipement](../images/device.png "Config équipement")
 
-Ces commandes permettent d'envoyer un message sur le canal de l'équipement mais en notifiant l'utilisateur correspondant, (ex: `@Mips Ceci est un message test`).
+Ces commandes permettent d'envoyer un message sur le canal de l'équipement en notifiant l'utilisateur correspondant, (ex: `@Mips Ceci est un message test`).
 
 # Interactions
 

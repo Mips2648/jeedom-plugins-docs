@@ -1,9 +1,15 @@
 ---
 layout: default
-title: Miele Changelog
+title: Miele changelog
 lang: en_US
 pluginId: miele
 ---
+
+# 2020-04-13
+
+- Add authentication status and connection management in plugin configuration
+- Add plugin health summary in Jeedom health page
+- Added a specific health page listing an overview of all appliances
 
 # 2020-04-06
 
@@ -17,4 +23,4 @@ First version
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}})

@@ -33,7 +33,7 @@ Dans la page de configuration d'un équipement, il existe un bouton pour créer 
 
 ## Les commandes de type infos communes à tous les appareils
 
-Chaque appareil Miele dispose des commandes suivantes, toutes ne sont pas forcément applicables en toute circonstance pour vos appareils:
+Chaque appareil Miele dispose des commandes suivantes, toutes ne sont pas forcément applicables à tous les appareils:
 
 - **Etat** & **Statut** donne l'état de l'appareil sous forme de chaîne de caractère et d'identifiant respectivement (voir ci-dessous pour la liste des états possibles)
 - **Programme** donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)

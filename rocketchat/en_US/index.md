@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rocket.Chat documentation 
+title: Rocket.Chat documentation
 lang: en_US
 pluginId: rocketchat
 ---

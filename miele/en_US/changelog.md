@@ -13,8 +13,14 @@ pluginId: miele
 
 # 2020-04-03
 
+- First version
+- Documentation
+- Documentation
+
+# 2020-04-03
+
 First version
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}})

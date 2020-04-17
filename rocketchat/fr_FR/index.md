@@ -22,8 +22,8 @@ Sur celui-ci, veillez à créer un utilisateur ayant comme role `bot`.
 > Le plugin a été testé sous debian et raspbian version 9 (stretch) et 10 (buster).
 > Le plugin n'a pas été testé sous Jessie et son fonctionnement sur cette version ne sera pas assuré.
 
-Si vous êtes sous Stretch, l'installation des dépendances peut prendre 20min ou plus en fonction de votre matériel afin d'installer toutes les dépendances.
-Sous Buster, cela devrait être beaucoup plus rapide étant donné que la majorité est déjà présent.
+Sous Debian Stretch, l'installation des dépendances peut prendre 20min ou plus en fonction de votre matériel.
+Sous Debian Buster, cela devrait être beaucoup plus rapide étant donné que la majorité est déjà présente.
 
 # Configuration du plugin
 

@@ -35,7 +35,7 @@ So far, it is possible to:
 
 > **Important**
 >
-> Le plugin n'a pas été testé sous Jessie et son fonctionnement sur cette version ne sera pas assuré.
+> The plugin has not been tested under Jessie and its operation on this version will not be guaranteed.
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 Then you have to install the dependencies.

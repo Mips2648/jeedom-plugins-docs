@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: stockexchange
 ---
 
+# 2020-04-21
+
+- Fix une erreur lors de la sauvegarde et du rafraîchissement d'un équipement
+
 # 2020-03-30
 
 - Déplacement de toute la documentation sur un projet séparé

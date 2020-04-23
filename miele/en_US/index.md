@@ -36,7 +36,7 @@ In the device configuration page, there is a button to create the missing comman
 Each Miele device has the following commands, not all of them are applicable to all appliances:
 
 - **State** & **Status** gives the state of the device in string and numeric value respectively (see below for the list of possible states)
-- **Programm** display ongoing programm (see below for a list of known values)
+- **Program** display ongoing program (see below for a list of known values)
 - **Phase** gives the current phase of the program
 - **Remaining time** gives the remaining time in hours and minutes before the end of the program.
 - **Start time**

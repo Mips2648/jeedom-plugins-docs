@@ -5,6 +5,10 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2020-04-23
+
+- Fix an issue with sort of column "Sent" in commands configuration screen
+
 # 2020-04-16
 
 - Fix a dependency issue on Jeedom Smart

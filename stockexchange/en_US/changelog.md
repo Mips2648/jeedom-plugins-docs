@@ -5,6 +5,10 @@ lang: en_US
 pluginId: stockexchange
 ---
 
+# 2020-04-21
+
+- Fix issue on device save and auto-refresh
+
 # 2020-03-30
 
 - Move all documentations to a dedicated project

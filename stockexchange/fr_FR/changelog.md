@@ -28,4 +28,4 @@ Première version
 
 # Documentation
 
-[Voir la documentation]({{site.baseurl}}/{{page.pluginId}})
+[Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

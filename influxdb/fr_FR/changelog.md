@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
+# 2020-04-23
+
+- Fix un problème de tri sur la colonne "Envoyé" dans l'écran de configuration des commandes
+
 # 2020-04-16
 
 - Fix un problème de dépendances sur Jeedom Smart

@@ -7,10 +7,10 @@ pluginId: proxmox
 
 # Description
 
-Plugin allowing the management of a Proxmox server. It is possible to get all resources (nodes, vm, lxc, storage) and all their properties (status, memory, CPU, disk, IP address, up time, snapshots list...). The plugin can also start, stop vm and containers and take snapshots.
-It also has a specific health page summarizing all the information on your devices.
-Le plugin permet aussi de démarrer et arrêter les VMs et les containers ainsi que de prendre des snapshots et des backups.
-Il dispose également d'une page santé spécifique résumant l'ensemble des informations de vos équipements.
+Plugin allowing the management of a Proxmox server.
+It is possible to get all resources (nodes, vm, lxc, storage) and all their properties (status, memory, CPU, disk, IP address, up time, snapshots list...).
+The plugin can also start, stop vm and containers and take snapshots and backups.
+It also has a specific health page summarizing all the information of your devices.
 
 # Installation
 

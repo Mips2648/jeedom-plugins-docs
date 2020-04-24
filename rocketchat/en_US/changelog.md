@@ -11,7 +11,7 @@ pluginId: rocketchat
 
 # 2020-03-27
 
-- Changement de méthode d'envoi des messages car celle utilisée plantait l'app Android Rocket.Chat dans certaines situations (dû à un bug dans l'API de Rocket.Chat)
+- Change method for sending messages because the one used crashed the Android Rocket.Chat app in certain situations (due to a bug in the Rocket.Chat API)
 
 # 2020-03-20
 

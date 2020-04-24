@@ -60,7 +60,7 @@ Plugin permettant d'intégrer les pommeaux de douches Hydrao.
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/influxdb_icon.png">]({{site.baseurl}}/influxdb/{{page.lang}})
 
-Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilement les informations des commandes sélectionnées à chaque changement de valeur ce qui permet d'externaliser l'historique qui peut ensuite être consulté via Grafana par exemple.
+Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilement les informations voulues en sélectionnant simplement les commandes correspondantes dans une liste ce qui permet d'externaliser l'historique qui peut ensuite être consulté via Grafana par exemple.
 
 - [Documentation]({{site.baseurl}}/influxdb/{{page.lang}})
 - [Changelog]({{site.baseurl}}/influxdb/{{page.lang}}/changelog)

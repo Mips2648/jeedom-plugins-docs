@@ -7,7 +7,7 @@ pluginId: hydrao
 
 # Description
 
-Plugin to integrate Hydrao shower head
+Plugin to integrate Hydrao shower head.
 
 # Installation
 

@@ -17,7 +17,7 @@ pluginId: rocketchat
 
 - Il n'est plus nécessaire de mentionner le bot pour les interactions dans une conversion directe / message privé.
 - Vérification de la configuration avant le démarrage du démon
-- Vérification de l'état du démon avant l'utilisation d'une commande
+- Check daemon state before using a command
 
 # 2020-02-14
 

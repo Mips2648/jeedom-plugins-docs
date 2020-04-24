@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Fullup Changelog
+title: Fullup changelog
 lang: en_US
 pluginId: fullup
 ---
@@ -41,4 +41,4 @@ pluginId: fullup
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

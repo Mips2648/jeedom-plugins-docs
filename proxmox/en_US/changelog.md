@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Proxmox Changelog
+title: Proxmox changelog
 lang: en_US
 pluginId: proxmox
 ---
@@ -67,4 +67,4 @@ First stable release
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

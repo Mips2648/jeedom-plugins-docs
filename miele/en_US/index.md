@@ -21,7 +21,7 @@ In the plugin configuration, you shall enter your username, password and select 
 
 # The devices
 
-As soon as the plugin configuration is correct, the plugin will start synchronize all your appliances every minute. It will create missing appliances and their commands and will update information of all connected appliances.
+As soon as the plugin configuration is correct, the plugin will synchronize all your appliances every minute. It will create missing appliances and their commands and will update information of all connected appliances.
 
 > **Tip**
 >

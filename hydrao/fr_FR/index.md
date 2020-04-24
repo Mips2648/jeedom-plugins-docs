@@ -17,7 +17,7 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 # Les équipements
 
-Dès que la configuration du plugin est correcte, le plugin synchronisera vos pommeaux chaque minute.
+Dès que la configuration du plugin est correcte, le plugin synchronisera vos pommeaux de douche.
 
 > **Tip**
 >

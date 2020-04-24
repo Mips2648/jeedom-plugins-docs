@@ -37,7 +37,7 @@ pluginId: onduleursolaredge
 
 # 2018-11-06
 
-- Ajout option pour récupérer les détails d'énergie: consommation, auto-consommation, achat et vente du réseau) (si disponible dans votre installation)
+- Ajout option pour récupérer les détails d'énergie: consommation, auto-consommation, achat et vente du réseau (si disponible dans votre installation)
 - Changement mise en page de la page des commandes
 
 # 2018-09-30

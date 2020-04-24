@@ -130,4 +130,4 @@ First stable release
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/{{page.pluginId}})
+[Documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

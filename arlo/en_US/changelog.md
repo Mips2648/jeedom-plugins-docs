@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arlo Changelog
+title: Arlo changelog
 lang: en_US
 pluginId: arlo
 ---

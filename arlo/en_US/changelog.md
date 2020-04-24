@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arlo Changelog
+title: Arlo changelog
 lang: en_US
 pluginId: arlo
 ---
@@ -130,4 +130,4 @@ First stable release
 
 # Documentation
 
-[Documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

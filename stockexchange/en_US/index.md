@@ -7,7 +7,7 @@ pluginId: stockexchange
 
 # Description
 
-Plugin to retrieve stock or index quotation or exchange rate between two currencies (including cryptocurrency such as bitcoin).
+Plugin to retrieve stock or index quotation as well as exchange rate between two currencies (including cryptocurrency such as bitcoin) and commodities prices.
 Most of the time all data are available in real time but refresh frequency depends on the service used.
 
 # Installation

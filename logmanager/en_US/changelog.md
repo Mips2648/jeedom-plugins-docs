@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LogManager Changelog
+title: LogManager changelog
 lang: en_US
 pluginId: logmanager
 ---
@@ -23,4 +23,4 @@ pluginId: logmanager
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

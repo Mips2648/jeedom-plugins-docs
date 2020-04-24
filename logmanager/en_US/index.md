@@ -50,7 +50,7 @@ This event can be used as a scenario trigger, it is useful if you want to perfor
 - #lm-warning#
 - #lm-error#
 
-# Le widget
+# The widget
 
 There are two options:
 

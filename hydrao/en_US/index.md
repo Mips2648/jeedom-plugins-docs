@@ -13,9 +13,7 @@ Plugin to integrate Hydrao shower head.
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 
-# > **Important**
->
-> The plugin will not work under Jessie, it is necessary to be able to install python 3.5 minimum, which is not available under Jessie.
+# Plugin configuration
 
 # In the configuration of the plugin it will be necessary to setup the username and password.
 

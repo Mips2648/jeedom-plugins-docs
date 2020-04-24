@@ -17,7 +17,7 @@ In order to use the plugin, you must download, install and activate it like any 
 
 # Devices
 
-As soon as the plugin configuration is correct, the plugin will synchronize all your shower head every minute.
+As soon as the plugin configuration is correct, the plugin will synchronize all your shower heads.
 
 > **Tip**
 >

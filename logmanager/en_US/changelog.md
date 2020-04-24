@@ -23,4 +23,4 @@ pluginId: logmanager
 
 # Documentation
 
-[See Documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

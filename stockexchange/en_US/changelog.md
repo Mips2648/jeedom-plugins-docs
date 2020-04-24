@@ -15,7 +15,7 @@ pluginId: stockexchange
 
 # 2020-03-18
 
-- Ajout des matières premières
+- Add commodities prices
 
 # 2019-12-03
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stock exchange Changelog
+title: Stock exchange changelog
 lang: en_US
 pluginId: stockexchange
 ---
@@ -28,4 +28,4 @@ First version
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

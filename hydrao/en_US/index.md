@@ -15,7 +15,7 @@ In order to use the plugin, you must download, install and activate it like any 
 
 # Plugin configuration
 
-# In the configuration of the plugin it will be necessary to setup the username and password.
+# Devices
 
 As soon as the plugin configuration is correct, the plugin will synchronize all your shower head every minute.
 

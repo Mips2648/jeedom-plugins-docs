@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rocket.Chat Changelog
+title: Rocket.Chat changelog
 lang: en_US
 pluginId: rocketchat
 ---
@@ -11,13 +11,13 @@ pluginId: rocketchat
 
 # 2020-03-27
 
-- Changement de méthode d'envoi des messages car celle utilisée plantait l'app Android Rocket.Chat dans certaines situations (dû à un bug dans l'API de Rocket.Chat)
+- Change method for sending messages because the one used crashed the Android Rocket.Chat app in certain situations (due to a bug in the Rocket.Chat API)
 
 # 2020-03-20
 
-- Il n'est plus nécessaire de mentionner le bot pour les interactions dans une conversion directe / message privé.
-- Vérification de la configuration avant le démarrage du démon
-- Vérification de l'état du démon avant l'utilisation d'une commande
+- It is no longer necessary to mention the bot for interactions in a direct / private message conversion.
+- Check configuration before starting daemon
+- Check daemon state before using a command
 
 # 2020-02-14
 
@@ -29,4 +29,4 @@ First version
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

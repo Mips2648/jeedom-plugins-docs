@@ -15,7 +15,7 @@ pluginId: rocketchat
 
 # 2020-03-20
 
-- Il n'est plus nécessaire de mentionner le bot pour les interactions dans une conversion directe / message privé.
+- It is no longer necessary to mention the bot for interactions in a direct / private message conversion.
 - Check configuration before starting daemon
 - Check daemon state before using a command
 

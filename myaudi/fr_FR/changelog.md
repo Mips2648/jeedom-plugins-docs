@@ -7,8 +7,13 @@ pluginId: myaudi
 
 # Evolution future
 
-- Info et commandes de verrouillage
-- Statut des portes et fenêtres
+- Commandes de verrouillage
+- Statut des fenêtres
+
+# 2020-04-28
+
+- Ajout du statut du verrouillage des portes et du hayon
+- Ajout du statut d'ouverture des portes et du hayon
 
 # 2020-03-31
 

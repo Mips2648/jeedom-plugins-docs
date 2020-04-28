@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Solaredge Changelog
+title: Solaredge changelog
 lang: en_US
 pluginId: onduleursolaredge
 ---

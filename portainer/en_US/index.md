@@ -8,7 +8,7 @@ pluginId: portainer
 # Description
 
 Plugin to connect to Portainer. Portainer is a solution to manage containers on docker which can be easily installed in a container.
-With this plugin, it is possible to retrieve in Jeedom all dockers servers configured in Portainer and so all containers
+With this plugin, it is possible to retrieve in Jeedom all dockers servers configured in Portainer and so all containers.
 
 # Installation
 

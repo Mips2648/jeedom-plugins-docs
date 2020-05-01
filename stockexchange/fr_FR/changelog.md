@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: stockexchange
 ---
 
+# 2020-05-01
+
+- Fix: en cas de réponse incorrecte reçue du service, ne met pas à jours les valeurs de l'équipement
+
 # 2020-04-21
 
 - Fix une erreur lors de la sauvegarde et du rafraîchissement d'un équipement

@@ -7,8 +7,13 @@ pluginId: myaudi
 
 # Next update
 
-- Lock state and commands
-- Windows & door state
+- Lock and unlock commands
+- Window state
+
+# 2020-04-28
+
+- Add lock state of doors and trunk
+- Add open state of doors and trunk
 
 # 2020-03-31
 
@@ -25,4 +30,4 @@ First version
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

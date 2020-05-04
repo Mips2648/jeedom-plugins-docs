@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: rocketchat
 ---
 
+# 2020-05-03
+
+- Ajout du bouton "Dupliquer" un équipement
+
 # 2020-03-30
 
 - Déplacement de toute la documentation sur un projet séparé

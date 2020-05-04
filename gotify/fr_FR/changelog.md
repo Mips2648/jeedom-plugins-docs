@@ -8,7 +8,7 @@ pluginId: gotify
 # 2020-05-03
 
 - Optimisations interne
-- Ajout du bouton Dupliquer un équipement
+- Ajout du bouton "Dupliquer" un équipement
 
 # 2020-02-12
 

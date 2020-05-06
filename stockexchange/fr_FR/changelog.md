@@ -8,7 +8,7 @@ pluginId: stockexchange
 # 2020-05-01
 
 - Fix: en cas de réponse incorrecte reçue du service, ne met pas à jours les valeurs de l'équipement
-- Ajout du bouton dupliquer un équipement
+- Ajout du bouton "Dupliquer" un équipement
 
 # 2020-04-21
 

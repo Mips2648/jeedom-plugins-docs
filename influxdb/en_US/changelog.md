@@ -5,6 +5,10 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2020-05-03
+
+- Add "Duplicate" button on device configuration
+
 # 2020-04-23
 
 - Fix an issue with sort of column "Sent" in commands configuration screen
@@ -23,4 +27,4 @@ First version
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

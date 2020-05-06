@@ -5,6 +5,10 @@ lang: en_US
 pluginId: logmanager
 ---
 
+# 2020-05-03
+
+- Add "Duplicate" button on device configuration
+
 # 2020-03-30
 
 - Move all documentations to a dedicated project

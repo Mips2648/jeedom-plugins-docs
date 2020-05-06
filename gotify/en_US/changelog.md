@@ -5,6 +5,11 @@ lang: en_US
 pluginId: gotify
 ---
 
+# 2020-05-03
+
+- Internal optimizations
+- Add "Duplicate" button on device configuration
+
 # 2020-02-12
 
 - Verification on empty message before sending to Gotify

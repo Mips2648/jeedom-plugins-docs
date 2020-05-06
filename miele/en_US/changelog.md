@@ -5,6 +5,10 @@ lang: en_US
 pluginId: miele
 ---
 
+# 2020-05-04
+
+- Fix a dependency issue on Jeedom Smart
+
 # 2020-04-13
 
 - Add authentication status and connection management in plugin configuration
@@ -23,4 +27,4 @@ First version
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

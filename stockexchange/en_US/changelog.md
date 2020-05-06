@@ -7,7 +7,7 @@ pluginId: stockexchange
 
 # 2020-05-01
 
-- Fix: in case of incorrect response received from the service, do not update the information
+- Fix: in case of incorrect response received from the service, do not update the information of the device
 - Add "Duplicate" button on device configuration
 
 # 2020-04-21

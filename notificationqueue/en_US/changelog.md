@@ -5,6 +5,10 @@ lang: en_US
 pluginId: notificationqueue
 ---
 
+# 2020-05-03
+
+- Add "Duplicate" button on device configuration
+
 # 2020-03-30
 
 - Move all documentations to a dedicated project
@@ -22,13 +26,13 @@ pluginId: notificationqueue
 
 - Added an option to manage duplicate notifications
 
-## 2020-01-04
+# 2020-01-04
 
 - Added a command to empty the queue
 - Added an info command to know the number of messages in the queue
 - Added ask support for notifications
 
-## 2020-01-01
+# 2020-01-01
 
 - Added a configurable delay between each assessment of the condition of a queue (applied between each message in the queue)
 - Added management of multiple notification commands (separate commands by && in the configuration)
@@ -44,4 +48,4 @@ pluginId: notificationqueue
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}})
+[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

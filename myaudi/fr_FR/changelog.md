@@ -18,7 +18,7 @@ pluginId: myaudi
 # 2020-03-31
 
 - Fix installation des dépendances manquantes
-- Déplacement de toute la documentation sur un projet séparé
+- Déplacement de la documentation
 
 # 2020-03-23
 

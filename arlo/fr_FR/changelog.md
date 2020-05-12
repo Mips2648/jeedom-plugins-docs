@@ -13,7 +13,7 @@ Il est nécessaire de relancer l'installation des dépendances après l'installa
 
 # 2020-03-30
 
-- Déplacement de toute la documentation sur un projet séparé
+- Déplacement de la documentation
 - Optimisation: ne réinstalle plus ffmpeg si la bonne version a déjà été installée
 
 # 2020-03-21

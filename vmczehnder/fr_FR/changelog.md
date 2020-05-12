@@ -5,9 +5,9 @@ lang: fr_FR
 pluginId: vmczehnder
 ---
 
-# 2020-03-30
+# 2020-05-12
 
-- Déplacement de toute la documentation sur un projet séparé
+- Déplacement de la documentation
 
 # 2020-01-29
 

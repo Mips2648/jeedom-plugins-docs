@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # 2020-03-30
 
-- Déplacement de toute la documentation sur un projet séparé
+- Déplacement de la documentation
 - Ajout d'une commande "Redémarrer" sur les VM
 
 # 2020-02-12

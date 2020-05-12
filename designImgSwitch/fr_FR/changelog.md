@@ -7,7 +7,7 @@ pluginId: designImgSwitch
 
 # 2020-03-30
 
-- Déplacement de toute la documentation sur un projet séparé
+- Déplacement de la documentation
 
 # 2020-03-22
 

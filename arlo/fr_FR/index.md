@@ -9,13 +9,13 @@ pluginId: arlo
 
 Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.
 
-Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo go, Arlo baby ... mais toutes les fonctions propres à chaque modèle ne sont pas encore intégrées au plugin (elles le seront en priorités selon les demandes).
+Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo go, Arlo baby, Arlo Doorbell et Video Doorbell...
 
 Pour l'instant, il est possible de:
 
-- sélectionner le mode: Activé, désactivé mais aussi tous les modes personnalisés;
+- sélectionner le mode: Activé, désactivé ou planification mais aussi tous les modes personnalisés;
 - Activer / désactiver chaque caméra indépendamment l'une de l'autre (quelque soit le mode en cours);
-- déclencher la sirène intégrée à la station de base et connaître son statut;
+- déclencher la sirène intégrée à la station de base (ou au Pro3 et Ultra) et connaître son statut;
 - connaître le statut de chaque caméra:
   - connecté ou non
   - status général (inactif, alerte, ...)
@@ -207,7 +207,7 @@ L'équipement "light" dispose lui des commandes suivantes:
 - **Batterie**: niveau de batterie en %
 - **Chargement**: indique si l'équipement est en cours de chargement
 
-## Arlo Doorbell
+## Arlo Doorbell et Video Doorbell
 
 La sonnette dispose des commandes suivantes:
 
@@ -219,6 +219,20 @@ La sonnette dispose des commandes suivantes:
 - **Mode silencieux**: Indique si le mode silencieux est activé
 - **Mode silencieux On**: Permet d'activer le mode silencieux
 - **Mode silencieux Off**: Permet de désactiver le mode silencieux
+
+### Arlo Video Doorbell
+
+En plus des commandes ci-dessus, la Video Doorbell dispose de quelques commandes communes aux caméras:
+
+- **Activité**: donne une description de l'activité actuelle de la caméra
+- **Chargement**: indique si la caméra est en cours de chargement
+- **Mouvement détecté**: si du mouvement est détecté
+- **Dernière image**: URL (locale) vers la dernière image prise par la caméra
+- **Prendre une capture**: permet de prendre une capture (sauvée localement) avec la caméra
+- **Démarrer enregistrement**: permet de démarrer l'enregistrement de vidéo (sauvée localement)
+- **Arrêter enregistrement**: permet de d'arrêter un enregistrement local
+- **Démarrer enregistrement cloud**: permet de démarrer l'enregistrement dans le cloud Arlo
+- **Arrêter enregistrement cloud**: permet de stopper l'enregistrement dans le cloud Arlo
 
 # Changelog
 

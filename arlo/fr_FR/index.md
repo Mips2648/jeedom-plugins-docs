@@ -17,7 +17,7 @@ Pour l'instant, il est possible de:
 - Activer / désactiver chaque caméra indépendamment l'une de l'autre (quelque soit le mode en cours);
 - déclencher la sirène intégrée à la station de base (ou au Pro3 et Ultra) et connaître son statut;
 - connaître le statut de chaque caméra:
-  - connecté ou non
+  - connectée ou non
   - status général (inactif, alerte, ...)
   - niveau de batterie (et si la charge est en cours)
   - force du signal

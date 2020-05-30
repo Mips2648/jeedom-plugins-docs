@@ -20,6 +20,7 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 # Configuration du plugin
 
 Dans la configuration du plugin il faudra renseigner le nom d'utilisateur et le mot de passe.
+Vous pouvez aussi renseigner une clé API Google Maps qui sera utilisée pour afficher la carte avec la localisation du véhicule sur le widget.
 
 # Les équipements
 
@@ -27,6 +28,8 @@ Dès que le démon démarre, si votre nom d'utilisateur et mot de passe sont cor
 Il est possible de faire une synchronisation manuelle via la page des équipements.
 
 Dans la page de l'équipement vous pouvez configurer la fréquence d'actualisation des données.
+
+Vous pouvez également choisir d'afficher ou pas la carte avec la position du véhicule sur le widget (il faut que la commande localisation soit également visible).
 
 # Les commandes
 
@@ -41,6 +44,8 @@ Pour l'instant les commandes suivantes sont disponibles:
 - Niveau du réservoir
 - Autonomie totale (en km)
 - Autonomie AdBlue (en km)
+- Statut d'ouverture et de verrouillage des portes
+- Localisation du véhicule (latitude et longitude)
 
 # Changelog
 

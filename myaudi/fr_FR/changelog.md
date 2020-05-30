@@ -5,10 +5,10 @@ lang: fr_FR
 pluginId: myaudi
 ---
 
-# Evolution future
+# 2020-05-31
 
-- Commandes de verrouillage
-- Statut des fenêtres
+- Ajout d'une commande info donnant la dernière localisation connue du véhicule
+- Ajout d'une option pour le widget dans la configuration de l'équipement pour afficher la carte avec la localisation (il faut avoir configuré une clé API Google maps)
 
 # 2020-04-28
 

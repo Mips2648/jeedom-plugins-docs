@@ -29,8 +29,6 @@ Il est possible de faire une synchronisation manuelle via la page des équipemen
 
 Dans la page de l'équipement vous pouvez configurer la fréquence d'actualisation des données.
 
-Vous pouvez également choisir d'afficher ou pas la carte avec la position du véhicule sur le widget (il faut que la commande localisation soit également visible).
-
 # Les commandes
 
 Pour l'instant les commandes suivantes sont disponibles:
@@ -46,6 +44,17 @@ Pour l'instant les commandes suivantes sont disponibles:
 - Autonomie AdBlue (en km)
 - Statut d'ouverture et de verrouillage des portes
 - Localisation du véhicule (latitude et longitude)
+
+# Widget
+
+Dans la configuration avancée de la commande _Localisation_ vous pouvez configuré les options suivantes:
+
+- **showMap:** 0 pour ne pas afficher la carte, 1 pour afficher la carte
+- **mapWidth:** largeur de la carte, par défaut 240
+- **mapHeight:** hauteur de la carte, par défaut 180
+- **showCoordinates:** si la carte est affichée, par défaut n'affiche pas les coordonnées (latitude et longitude). 1 pour les afficher.
+
+![Paramètres localisation](../images/location.png "Paramètres localisation")
 
 # Changelog
 

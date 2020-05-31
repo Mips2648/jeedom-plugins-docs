@@ -47,7 +47,7 @@ Pour l'instant les commandes suivantes sont disponibles:
 
 # Widget
 
-Dans la configuration avancée de la commande _Localisation_ vous pouvez configuré les options suivantes:
+Dans la configuration avancée de la commande _Localisation_ vous pouvez configurer les options suivantes:
 
 - **showMap:** 0 pour ne pas afficher la carte, 1 pour afficher la carte
 - **mapWidth:** largeur de la carte, par défaut 240

@@ -31,10 +31,12 @@ Dès que la configuration est faite, vous pouvez activer l'équipement et sauveg
 Les designs sélectionnés seront immédiatement mis à jour et cela à chaque fois que les conditions météos changent ainsi qu'à l'heure du lever et du coucher du soleil.
 Aucune autre action ni aucun autre scénario n'est nécessaire.
 
-# Commande "Rafraichir"
+# Commandes
 
-L'équipement dispose d'une commande "Rafraichir" pour mettre à jour manuellement les designs liés.
+L'équipement dispose d'une commande **Rafraichir** pour mettre à jour manuellement les designs liés.
 A priori celle-ci ne doit jamais être utilisée, les images de fonds seront déjà automatiquement mises à jours à chaque fois que nécessaire.
+
+Une commande info **Condition** donne la dernière condition météo calculée qui vaudra une des valeurs suivantes: _Brume_, _Neige_, _Nuage_, _Orage_, _Pluie_, _Soleil_, _Vent_, _Défaut_.
 
 # Changelog
 

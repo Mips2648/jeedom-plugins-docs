@@ -5,10 +5,10 @@ lang: fr_FR
 pluginId: myaudi
 ---
 
-# 2020-05-31
+# 2020-06-02
 
 - Ajout d'une commande info donnant la dernière localisation connue du véhicule
-- Ajout d'une option pour le widget dans la configuration de l'équipement pour afficher la carte avec la localisation (il faut avoir configuré une clé API Google maps)
+- Ajout d'une option pour afficher la carte avec la localisation sur le widget (il faut avoir configuré une clé API Google maps, voir documentation pour plus d'information)
 
 # 2020-04-28
 

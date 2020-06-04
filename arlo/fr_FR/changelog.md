@@ -17,11 +17,6 @@ Il est nécessaire de relancer l'installation des dépendances après l'installa
 - Adaptation des permissions: les utilisateurs non-admin peuvent voir le streaming et la bibliothèque des médias.
 - Meilleur gestion des options de visibilités des commandes (principalement batterie, mouvement...) sur le widget des caméras
 - Ajout du support de la Arlo Video Doorbell
-
-# 2020-04-05
-
-Il est nécessaire de relancer l'installation des dépendances après l'installation de cette mise à jour même si elles sont déjà _OK_.
-
 - Optimisations des dépendances.
 
 # 2020-03-30

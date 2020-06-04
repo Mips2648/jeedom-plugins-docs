@@ -5,6 +5,13 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2020-06-xx
+
+- Ajout des commandes modes sur le widget pour la Video Doorbell (quand elle n'est pas liée à une base)
+- Fix sur la gestion des modes sur la Arlo Baby qui ne remontaient pas toujours correctement
+- Ajout des commandes info _IP_, _Luminosité_, _Température_, _Humidité_ et _Qualité de l'air_ sur la Arlo Baby
+- Ajout de la gestion de la veilleuse de la Arlo Baby: on/off, luminosité, couleur, température des couleurs et mode (voir documentation)
+
 # 2020-05-24
 
 Il est nécessaire de relancer l'installation des dépendances après l'installation de cette mise à jour même si elles sont déjà _OK_.

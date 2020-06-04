@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2020-06-4
+
+- Fix urgent dû à un changement d'url chez Arlo effectué cette nuit: si vous ne faite pas cette mise à jour le démon ne recevra plus les événements (même s'il est _OK_) et il ne pourra probablement plus du tout se connecter prochainement.
+
 # 2020-05-24
 
 Il est nécessaire de relancer l'installation des dépendances après l'installation de cette mise à jour même si elles sont déjà _OK_.

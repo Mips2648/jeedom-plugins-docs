@@ -170,20 +170,21 @@ En plus des commandes communes à toutes les caméras, les Arlo Q disposent d'un
 
 En plus des commandes communes à toutes les caméras, les Arlo Baby disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
-De plus, les commandes suivantes sont également disponibles:
+L'intégration de la Arlo Baby est complète, il est possible d'entièrement gérer la caméra, la veilleuse, la musique etc depuis le plugin.
+Voici un aperçu des commandes disponibles:
 
 - **IP**: l'adresse IP de la caméra
 - **Luminosité**: luminosité de la pièce
 - **Température**: température de la pièce
 - **Humidité**: en pourcent
 - **Qualité d'air**: en pourcent; moins de 30% étant "normal", de 30% à 65% étant "anormal" et plus de 65% étant "Très anormale" (selon la documentation d'Arlo)
-- **Etat lampe**: Indique si la lampe de la veilleuse est actuellement allumée ou éteinte.
-- **Lampe On**: Pour allumer la veilleuse
-- **Lampe Off**: Pour éteindre la veilleuse
-- **Mode de lumière**: les modes possibles sont: _Blanc_, _Couleur_, _Jeu de lumière_
-- **Luminosité**: commandes info et action et pour changer la luminosité de la veilleuse
-- **Couleur**: commandes info et action et pour changer la couleur de la veilleuse (en mode _Couleur_)
+- **Veilleuse**: Indique si la lampe de la veilleuse est actuellement allumée ou éteinte.
+- **Veilleuse On** et **Veilleuse Off**: pour allumer et éteindre la veilleuse
+- **Mode veilleuse**: les modes possibles sont: _Blanc_, _Couleur_, _Jeu de lumière_
+- **Luminosité veilleuse**: commandes info et action et pour changer la luminosité de la veilleuse
+- **Couleur veilleuse**: commandes info et action et pour changer la couleur de la veilleuse (en mode _Couleur_)
 - **Température couleur**: commandes info et action et pour changer la température de la couleur (en mode _Blanc_), valeur entre 2500K et 9000K
+- **Minuterie veilleuse**: commandes info et action pour définir la minuterie ainsi que connaître la durée restante (à la minute) avant l'extinction automatique de la veilleuse
 
 ### Caméras Arlo Go
 

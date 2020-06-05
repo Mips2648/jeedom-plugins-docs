@@ -5,10 +5,10 @@ lang: en_US
 pluginId: myaudi
 ---
 
-# Next update
+# 2020-06-02
 
-- Lock and unlock commands
-- Window state
+- Add an info command providing the last known localization of the vehicle
+- Add an option to display the map with the localization on the widget (it is necessary to configured a Google maps API key, see documentation for more information)
 
 # 2020-04-28
 
@@ -18,7 +18,7 @@ pluginId: myaudi
 # 2020-03-31
 
 - Fix missing dependency
-- Move all documentations to a dedicated project
+- Move documentations
 
 # 2020-03-23
 

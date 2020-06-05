@@ -31,10 +31,12 @@ As soon as the configuration is done, you can activate the device and save it.
 Selected designs will be immediately updated and this each time weather condition change and at sunrise and sunset.
 No other action or scenario is needed.
 
-# "Refresh" command
+# Commands
 
-The device has a "Refresh" command to update manually the selected designs.
-In normal condition, this command should nerver be used, background images will be automatically updated whenever is needed.
+The device has a **Refresh** command to update manually the selected designs.
+In normal condition, this command should never be used, background images will be automatically updated whenever is needed.
+
+A info command **Condition** give the last weather condition calculated which will be one of the following value: _Mist_, _Snow_, _Cloud_, _Storm_, _Rain_, _Sun_, _Wind_, _Default_.
 
 # Changelog
 

@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # 2020-03-30
 
-- Move all documentations to a dedicated project
+- Move documentations
 - Add "reset" command on VM
 
 # 2020-02-12

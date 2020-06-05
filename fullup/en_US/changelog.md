@@ -7,7 +7,7 @@ pluginId: fullup
 
 # 2020-03-30
 
-- Move all documentations to a dedicated project
+- Move documentations
 
 # 2019-10-26
 

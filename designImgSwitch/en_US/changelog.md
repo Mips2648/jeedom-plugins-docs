@@ -7,7 +7,7 @@ pluginId: designImgSwitch
 
 # 2020-05-31
 
-- Add a info command _Condition_
+- Add an info command _Condition_
 
 # 2020-03-30
 

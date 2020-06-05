@@ -16,7 +16,7 @@ pluginId: stockexchange
 
 # 2020-03-30
 
-- Move all documentations to a dedicated project
+- Move documentations
 
 # 2020-03-18
 

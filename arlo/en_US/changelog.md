@@ -5,15 +5,23 @@ lang: en_US
 pluginId: arlo
 ---
 
-# 2020-04-05
+# 2020-06-4
+
+- Urgent fix due to a change of url at Arlo made this night: if you do not do this update the daemon will no longer receive the events (even if it is _OK_) and it will probably no longer be able to connect at all soon.
+
+# 2020-05-24
 
 It is necessary to launch the installation of dependencies after installing this update even if they are already _OK_.
 
+- Migration of daemon in python3
+- Adapting permissions: non-admin users can view the streaming and media library.
+- Better management of options for visibility of commands (mainly battery, movement, etc.) on the cameras widget
+- Added support for the Arlo Video Doorbell
 - Optimizations of dependencies
 
 # 2020-03-30
 
-- Move all documentations to a dedicated project
+- Move documentations
 - Optimisation: ne réinstalle plus ffmpeg si la bonne version a déjà été installée
 
 # 2020-03-21

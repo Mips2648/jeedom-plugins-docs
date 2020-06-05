@@ -5,9 +5,13 @@ lang: en_US
 pluginId: designImgSwitch
 ---
 
+# 2020-05-31
+
+- Add a info command _Condition_
+
 # 2020-03-30
 
-- Move all documentations to a dedicated project
+- Move documentations
 
 # 2020-03-22
 

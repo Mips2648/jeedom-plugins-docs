@@ -9,13 +9,13 @@ pluginId: arlo
 
 Plugin to control all Arlo devices like the cameras, the base station and the integrated siren.
 
-All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby ... but all the functions specific to each model are not yet integrated into the plugin (they will be in priority according to requests).
+All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
 
 So far, it is possible to:
 
-- select mode: Activated, Deactivated but also all custom modes;
+- select mode: Activated, Deactivated or schedule but also all custom modes;
 - Enable / disable each camera independently of each other (regardless of the current mode);
-- trigger the siren integrated to the base station and know its status;
+- trigger the siren integrated to the base station (or Pro3 and Ultra camera) and know its status;
 - get the status of each camera:
   - connected or not
   - general status (inactive, alert, ...)
@@ -207,7 +207,7 @@ The &quot;light&quot; device has the following commands:
 - **Battery**: battery level in %
 - **Charging**: true if device battery is charging
 
-## Arlo Doorbell
+## Arlo Doorbell and Video Doorbell
 
 The doorbell has the following commands:
 
@@ -219,6 +219,20 @@ The doorbell has the following commands:
 - **Silent mode**: Indicates if silent mode is enabled
 - **Silent mode On **: Enable silent mode
 - **Silent mode Off **: Disable silent mode
+
+### Arlo Video Doorbell
+
+In addition to the above commands, the Video Doorbell has some of the commands common to the cameras:
+
+- **Activity**: description of current activity of the camera
+- **Charging**: true if camera battery is charging
+- **Motion detected**: if motion is detected
+- **Last image**: URL (local) to the last image taken by the camera
+- **Take a snapshot**: take a snapshot (saved locally) with the camera
+- **Start record**: to start recording video (saved locally)
+- **Stop record**: to stop recording video
+- **Start cloud record**: to start recording a video in Arlo cloud
+- **Stop cloud record**: to stop recording video in Arlo cloud
 
 # Changelog
 

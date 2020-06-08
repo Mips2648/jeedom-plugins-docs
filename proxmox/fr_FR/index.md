@@ -103,15 +103,19 @@ Les commandes actions suivantes sont également disponibles:
 - **Pause**: Suspend la machine virtuelle ou le container
 - **Reprendre**: Relance la machine virtuelle ou le container après avoir été suspendu
 - **Snapshot**: permet de prendre un snapshot, il est possible de donner le nom du snapshot (optionnel). Le nom doit être composé exclusivement de lettre et de chiffre ainsi que du caractère tiret bas (_) et doit commencer par une lettre. Si aucun nom n'est fourni ou si le nom n'est pas valide, un nom aléatoire sera généré par le plugin.
-- **Backup**: permet de prendre une sauvegarde. Cette commande (de type message) a un champ 'email' qui peut contenir une adresse email à laquelle sera envoyé une notification une fois la sauvegarde terminée (email envoyé par votre serveur Proxmox) et un champ 'Options' dans lequel il faut indiquer chaque option voulue sous la forme option=valeur; voir le tableau ci-dessous pour la liste des options disponibles.
+- **Backup**: permet de prendre une sauvegarde. Cette commande (de type message) a un champ 'email' qui peut contenir une adresse email à laquelle sera envoyé une notification une fois la sauvegarde terminée (email envoyé par votre serveur Proxmox) et un champ 'Options' dans lequel il faut indiquer chaque option voulue sous la forme _option=valeur_ (utiliser un espace pour séparer plusieurs options; voir le tableau ci-dessous pour la liste des options disponibles).
 
 Nom | Description | Format | Valeur par défaut
 - | - | - | -
 storage | Emplacement du backup | Nom de la ressource de type stockage qui doit être configurée pour le type de contenu 'backup' et avoir le statut 'available'. Attention de respecter la casse. | Par défaut, le premier stockage respectant les critères est utilisé.
 mode | Mode du backup | les valeurs possibles sont: `snapshot|suspend|stop` | `snapshot`
-compress | Compression backup | les valeurs possibles sont: `0|gzip|lzo` | `lzo`
+compress | Compression backup | les valeurs possibles sont: `0|gzip|lzo|zstd` | `lzo`
 mailnotification | Spécifie quand envoyer une notification | les valeurs possibles sont: `always|failure` | `always`
 remove | Supprime les anciennes sauvegardes s'ils y en a plus que le maximum configuré pour le stockage choisi (voir configuration Proxmox)| les valeurs possibles sont: `0|1` | `1`
+
+> **Tip**
+>
+> Le support du Zstandard (zstd) pour la compression est disponible à partir de la version 6.2 de Proxmox.
 
 ## Les stockages
 

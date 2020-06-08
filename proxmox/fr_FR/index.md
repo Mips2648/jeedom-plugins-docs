@@ -109,9 +109,13 @@ Nom | Description | Format | Valeur par défaut
 - | - | - | -
 storage | Emplacement du backup | Nom de la ressource de type stockage qui doit être configurée pour le type de contenu 'backup' et avoir le statut 'available'. Attention de respecter la casse. | Par défaut, le premier stockage respectant les critères est utilisé.
 mode | Mode du backup | les valeurs possibles sont: `snapshot|suspend|stop` | `snapshot`
-compress | Compression backup | les valeurs possibles sont: `0|gzip|lzo` | `lzo`
+compress | Compression backup | les valeurs possibles sont: `0|gzip|lzo|zstd` | `lzo`
 mailnotification | Spécifie quand envoyer une notification | les valeurs possibles sont: `always|failure` | `always`
 remove | Supprime les anciennes sauvegardes s'ils y en a plus que le maximum configuré pour le stockage choisi (voir configuration Proxmox)| les valeurs possibles sont: `0|1` | `1`
+
+> **Tip**
+>
+> Le support du Zstandard (zstd) pour la compression est disponible à partir de la version 6.2 de Proxmox.
 
 ## Les stockages
 

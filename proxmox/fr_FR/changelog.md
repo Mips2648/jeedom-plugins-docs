@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: proxmox
 ---
 
-# 2020-06-xx
+# 2020-06-09
 
 - Ajout du support du mode de compression Zstandard (zstd) dans les options de backup, nécessite Proxmox 6.2
 

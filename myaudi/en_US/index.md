@@ -7,7 +7,7 @@ pluginId: myaudi
 
 # Description
 
-Plugin to connect to the MyAudi platform allowing to recover the cars which are compatible.
+Plugin to connect to the MyAudi platform allowing to retrieve cars which are compatible.
 
 # Installation
 
@@ -20,6 +20,7 @@ In order to use the plugin, you must download, install and activate it like any 
 # Plugin configuration
 
 In the configuration of the plugin it will be necessary to setup the username and password.
+You can also enter a Google Maps API key which will be used to display the map with the location of the vehicle on the widget.
 
 # The devices
 
@@ -41,6 +42,19 @@ For the moment the following commands are available:
 - Tank level
 - Total range (in km)
 - AdBlue range (in km)
+- Door open and locked status
+- Vehicle location (latitude and longitude)
+
+# Widget
+
+In the advanced configuration of the _Location_ command you can configure the following options:
+
+- **showMap:** 0 to not display the map, 1 to display the map
+- **mapWidth:** map width, default 240
+- **mapHeight:** map height, default 180
+- **showCoordinates:** if the map is displayed, by default does not display the coordinates (latitude and longitude). 1 to display them.
+
+![location setting](../images/location.png "Location setting")
 
 # Changelog
 

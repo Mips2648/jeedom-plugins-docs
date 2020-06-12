@@ -7,7 +7,7 @@ pluginId: myaudi
 
 # Description
 
-Plugin to connect to the MyAudi platform allowing to retrieve the car which are compatible.
+Plugin to connect to the MyAudi platform allowing to retrieve cars which are compatible.
 
 # Installation
 

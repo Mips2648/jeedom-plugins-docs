@@ -10,6 +10,7 @@ pluginId: arlo
 - Ajout des commandes modes sur le widget pour la Video Doorbell (quand elle n'est pas liée à une base)
 - Ajout des commandes info _IP_, _Luminosité_, _Température_, _Humidité_ et _Qualité de l'air_ sur la Arlo Baby
 - Ajout de la gestion de la veilleuse de la Arlo Baby: on/off, minuterie, luminosité, couleur, température des couleurs et mode (voir documentation)
+- Ajout de la gestion de la berceuse de la Arlo Baby: Play/Pause/Suivant, minuterie, Playlist, Volume, Mode répétition et aléatoire (voir documentation)
 - Fix sur la gestion des modes sur la Arlo Baby qui ne remontaient pas toujours correctement
 
 # 2020-06-4

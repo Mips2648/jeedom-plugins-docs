@@ -185,6 +185,13 @@ Voici un aperçu des commandes disponibles:
 - **Couleur veilleuse**: commandes info et action et pour changer la couleur de la veilleuse (en mode _Couleur_)
 - **Température couleur**: commandes info et action et pour changer la température de la couleur (en mode _Blanc_), valeur entre 2500K et 9000K
 - **Minuterie veilleuse**: commandes info et action pour définir la minuterie ainsi que connaître la durée restante (à la minute) avant l'extinction automatique de la veilleuse
+- **Lecture**: une commande binaire et une commande string donnant le statut de lecture de la berceuse
+- **Play**, **Pause**, **Suivant**: commande permettant d'agir sur le statut de lecture
+- **Piste**: donne la piste sélectionnée et **Liste de lecture** donne la liste des pistes disponibles
+- **Répétition**: commande info et action pour activer et désactiver le mode répétition: lecture en continu ou d'une seule piste
+- **Aléatoire**: commande info et action pour activer et désactiver le mode aléatoire
+- **volume**: permet de connaître et changer le volume de la berceuse (en %)
+- **Minuterie berceuse**: commandes info et action pour définir la minuterie ainsi que connaître la durée restante (à la minute) avant l'extinction automatique de la berceuse
 
 ### Caméras Arlo Go
 

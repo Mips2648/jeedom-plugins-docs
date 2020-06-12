@@ -5,6 +5,10 @@ lang: en_US
 pluginId: proxmox
 ---
 
+# 2020-06-09
+
+- Add support for Zstandard compression mode (zstd) in backup options, requires Proxmox 6.2
+
 # 2020-03-30
 
 - Move documentations

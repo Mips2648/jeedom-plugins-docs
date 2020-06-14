@@ -76,23 +76,21 @@ Vous devez ensuit renseigner l'adresse IP du Raspberry précédemment installé 
 
 Sauvez votre équipement et si la configuration est correcte vous pouvez passer à l'étape suivante.
 
-## Installation du démon
+## Installation & configuration du démon
 
-Vous pouvez à présent lancer l'installation du démon et de ses dépendances, la première installation peut prendre plusieurs minutes (surtout si le pi n'était pas à jour avant).
+Ouvrez la configuration du démon et lancer l'installation, la première installation peut prendre plusieurs minutes (surtout si le pi n'était pas à jour avant).
 
 L'installation va:
 
 - copier les fichiers nécessaires sur le pi (via SSH);
 - installer les dépendances;
 
-## Configuration du démon
-
-Si l'étape précédente s'est bien déroulée, vous devriez voir la liste des "devices" (usb) connectés à votre pi, vous devez sélectionner le device connecté à la VMC et éventuellement sélectionné celui connecté au CCEase (optionnel).
-Il n'est pas recommandé de changer la configuration des ports TCP, ne faite cela que si vous savez ce que vous faites et que vous avez un problème avec l'utilisation de ces ports là; Ces ports seront utilisés par le démon distant installé sur le Raspberry lui-même connecté à la VMC, pas sur Jeedom (sauf si c'est le même équipement).
-
 ![Configuration démon](../images/daemon_config.png "Configuration démon")
 
-Sauvez votre équipement.
+Si l'installation s'est bien déroulée, vous devriez voir la liste des "devices" (usb) connectés à votre pi, vous devez sélectionner le device connecté à la VMC et éventuellement sélectionné celui connecté au CCEase (optionnel).
+Il n'est pas recommandé de changer la configuration des ports TCP, ne faite cela que si vous savez ce que vous faites et que vous avez un problème avec l'utilisation de ces ports là; Ces ports seront utilisés par le démon distant installé sur le Raspberry lui-même connecté à la VMC, pas sur Jeedom (sauf si c'est le même équipement).
+
+Sauvez la configuration.
 
 ## Démarrage du démon
 
@@ -102,10 +100,8 @@ Si tout se déroule bien, le status devrait passer au vert. Si pas patientez que
 
 # Configuration de la VMC
 
-Dans l'onglet "Configuration de la VMC" vous pouvez voir toute la configuration de votre VMC: modèle et version, vitesse de ventilation (configurée par votre installeur)...
-Il y a un bouton pour recharger la configuration, cela peut-être refait à chaque fois que nécessaire sans risque.
-
-![Configuration VMC](../images/vmc_config.png "Configuration VMC")
+L'action recharger la configuration permet de lire la configuration depuis la VMC qui peut ensuite être consultée via le bouton _Configuration_
+L'écran présente un résumé des information de la VMC, les compteurs d'utilisation ainsi que la configuration des vitesses de ventilation.
 
 # Commandes
 

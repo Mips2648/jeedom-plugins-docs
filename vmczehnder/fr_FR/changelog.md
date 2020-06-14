@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: vmczehnder
 ---
 
+# 2020-06-15
+
+- Refonte des pages de configuration en vue de futures mise à jours pour permettre la modification des configurations de la VMC
+
 # 2020-05-12
 
 - Déplacement de la documentation

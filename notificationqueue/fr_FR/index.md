@@ -62,8 +62,16 @@ Il est possible de configurer un délai d'expiration des notifications (en minut
 
 - L'ordre d'envoi des notifications est garantie (FIFO, première notification reçue, première notification renvoyée), exception suivant la configuration des doublons.
 - Si un problème est détecté pendant le renvoi (pas toujours possible), le message est remis à la fin de la file pour un nouvel essai plus tard.
-- Le plugin vérifie la condition de chaque file toutes les minutes et à chaque ajout de nouveaux messages.
+- Le plugin vérifie automatiquement la condition de chaque file toutes les minutes, à chaque ajout de nouveaux messages lorsqu'une commande info utilisée dans la condition change de valeurs (même principe que les déclencheurs de scénario)
 - le ask est géré par le plugin (il faut que la commande de notification utilisée ensuite le gère également)
+
+# Les commandes
+
+- **Ajouter** permet d'ajouter un message dans la file, la condition sera évaluée immédiatement et tous les messages seront alors envoyés (dans l'ordre)
+- **Vider** permet de vider la file.
+- **Vérifier et envoyer** permet de déclencher manuellement la vérification de la condition et l'envoi des messages si celle-ci est valide
+- **Envoyer maintenant** permet de forcer l'envoi immédiat de tous les messages sans tenir compte de la condition
+- **Nombre de messages** commande info donnant le nombre de message actuellement en attente
 
 # Le widget
 

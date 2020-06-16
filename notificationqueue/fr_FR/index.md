@@ -54,6 +54,10 @@ Vous pouvez aussi choisir le comportement lorsqu'une notification avec le même 
 - Garder la première notification: la nouvelle ne sera donc pas ajoutée;
 - Garder la dernière notification: la notification précédente sera supprimée de la file et la nouvelle sera ajoutée à la fin de celle-ci.
 
+## Délai d'envoi
+
+Il est possible de configurer un délai d'envoi des notifications (en seconde) pendant lequel une nouvelle notification sera gardée dans la file même si la condition est vrai, ce n'est qu'après ce délai que la notification sera envoyée si la condition est remplie.
+
 ## Délai d'expiration
 
 Il est possible de configurer un délai d'expiration des notifications (en minute). Passé ce délai la notification ne sera plus envoyée si la condition n'a pas été remplie avant.
@@ -70,7 +74,7 @@ Il est possible de configurer un délai d'expiration des notifications (en minut
 - **Ajouter** permet d'ajouter un message dans la file, la condition sera évaluée immédiatement et tous les messages seront alors envoyés (dans l'ordre)
 - **Vider** permet de vider la file.
 - **Vérifier et envoyer** permet de déclencher manuellement la vérification de la condition et l'envoi des messages si celle-ci est valide
-- **Envoyer maintenant** permet de forcer l'envoi immédiat de tous les messages sans tenir compte de la condition
+- **Envoyer sans condition** permet de forcer l'envoi immédiat de tous les messages sans tenir compte de la condition (mais en tenant compte du délai d'envoi)
 - **Nombre de messages** commande info donnant le nombre de message actuellement en attente
 
 # Le widget

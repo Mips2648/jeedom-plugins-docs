@@ -5,10 +5,11 @@ lang: fr_FR
 pluginId: notificationqueue
 ---
 
-# 2020-06-15
+# 2020-06-16
 
+- Ajout d'une option pour configurer un délai pendant lequel la notification sera gardée dans la file même si la condition est vrai
 - Ajout d'une commande pour déclencher manuellement la vérification de la condition et l'envoi des messages si celle-ci est valide
-- Ajout d'une commande pour forcer l'envoi immédiat de tous les messages sans tenir compte de la condition
+- Ajout d'une commande pour forcer l'envoi immédiat de tous les messages sans tenir compte de la condition (mais en tenant compte du délai d'envoi)
 
 # 2020-05-03
 

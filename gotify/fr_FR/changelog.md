@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: gotify
 ---
 
+# 2020-06-16
+
+- Fix: le message peut être vide si un fichier a été joint
+
 # 2020-05-03
 
 - Optimisations interne

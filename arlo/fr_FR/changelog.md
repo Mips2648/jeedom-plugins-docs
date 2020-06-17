@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: arlo
 ---
 
-# 2020-06-xx
+# 2020-06-18
 
 - Ajout des commandes modes sur le widget pour la Video Doorbell (quand elle n'est pas liée à une base)
 - Ajout des commandes info _IP_, _Luminosité_, _Température_, _Humidité_ et _Qualité de l'air_ sur la Arlo Baby

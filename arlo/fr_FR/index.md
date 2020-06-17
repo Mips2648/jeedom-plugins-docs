@@ -162,13 +162,36 @@ Et en dessous un bouton pour prendre une capture instantanée et démarrer l'enr
 
 ![Caméra](../images/widget_camera.png "Caméra")
 
-### Caméras Arlo Q & Arlo Baby
+### Caméras Arlo Q
 
-En plus des commandes communes à toutes les caméras, les Arlo Q & Arlo Baby disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
+En plus des commandes communes à toutes les caméras, les Arlo Q disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
-> **Tip**
->
-> En cas d'ajout d'une caméra Arlo Q ou Arlo Baby, il est nécessaire de redémarrer le démon pour que les événements liés soient correctement reçus.
+### Caméras Arlo Baby
+
+En plus des commandes communes à toutes les caméras, les Arlo Baby disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
+
+L'intégration de la Arlo Baby est complète, il est possible d'entièrement gérer la caméra, la veilleuse, la musique etc depuis le plugin.
+Voici un aperçu des commandes disponibles:
+
+- **IP**: l'adresse IP de la caméra
+- **Luminosité**: luminosité de la pièce
+- **Température**: température de la pièce
+- **Humidité**: en pourcent
+- **Qualité d'air**: en pourcent; moins de 30% étant "normal", de 30% à 65% étant "anormal" et plus de 65% étant "Très anormale" (selon la documentation d'Arlo)
+- **Veilleuse**: Indique si la lampe de la veilleuse est actuellement allumée ou éteinte.
+- **Veilleuse On** et **Veilleuse Off**: pour allumer et éteindre la veilleuse
+- **Mode veilleuse**: les modes possibles sont: _Blanc_, _Couleur_, _Jeu de lumière_
+- **Luminosité veilleuse**: commandes info et action et pour changer la luminosité de la veilleuse
+- **Couleur veilleuse**: commandes info et action et pour changer la couleur de la veilleuse (en mode _Couleur_)
+- **Température couleur**: commandes info et action et pour changer la température de la couleur (en mode _Blanc_), valeur entre 2500K et 9000K
+- **Minuterie veilleuse**: commandes info et action pour définir la minuterie ainsi que connaître la durée restante (à la minute) avant l'extinction automatique de la veilleuse
+- **Lecture**: une commande binaire et une commande string donnant le statut de lecture de la berceuse
+- **Play**, **Pause**, **Suivant**: commande permettant d'agir sur le statut de lecture
+- **Piste**: donne la piste sélectionnée et **Liste de lecture** donne la liste des pistes disponibles
+- **Répétition**: commande info et action pour activer et désactiver le mode répétition: lecture en continu ou d'une seule piste
+- **Aléatoire**: commande info et action pour activer et désactiver le mode aléatoire
+- **volume**: permet de connaître et changer le volume de la berceuse (en %)
+- **Minuterie berceuse**: commandes info et action pour définir la minuterie ainsi que connaître la durée restante (à la minute) avant l'extinction automatique de la berceuse
 
 ### Caméras Arlo Go
 
@@ -177,12 +200,12 @@ En plus des commandes communes à toutes les caméras, les caméras Arlo Go disp
 De plus, les commandes suivantes sont également disponibles:
 
 - **Nom du réseau**: Donne le nom du réseau mobile
-- **IP**: IP actuelle
+- **IP**: l'adresse IP actuelle
 - **Réseau actif**: indique le réseau actif actuel (wifi ou mobile)
 
 > **Tip**
 >
-> En cas d'ajout d'une caméra Arlo Go, il est nécessaire de redémarrer le démon pour que les événements liés soient correctement reçus.
+> En cas d'ajout d'une caméra Arlo Go, Arlo Q ou Arlo Baby, il est nécessaire de redémarrer le démon pour que les événements liés soient correctement reçus.
 
 ### Arlo Pro3 & Ultra
 

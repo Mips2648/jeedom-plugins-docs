@@ -5,9 +5,19 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2020-06-18
+
+- Ajout des commandes modes sur le widget pour la Video Doorbell (quand elle n'est pas liée à une base)
+- Ajout des commandes info _IP_, _Luminosité_, _Température_, _Humidité_ et _Qualité de l'air_ sur la Arlo Baby
+- Ajout de la gestion de la veilleuse de la Arlo Baby: on/off, minuterie, luminosité, couleur, température des couleurs et mode (voir documentation)
+- Ajout de la gestion de la berceuse de la Arlo Baby: Play/Pause/Suivant, minuterie, Playlist, Volume, Mode répétition et aléatoire (voir documentation)
+- Optimisation sur le widget
+- Fix sur la gestion des modes sur la Arlo Baby qui ne remontaient pas toujours correctement
+- Fix des tooltips sur le widget camera en v4
+
 # 2020-06-4
 
-- Fix urgent dû à un changement d'url chez Arlo effectué cette nuit: si vous ne faite pas cette mise à jour le démon ne recevra plus les événements (même s'il est _OK_) et il ne pourra probablement plus du tout se connecter prochainement.
+- Fix urgent dû à un changement d'url chez Arlo effectué dans la nuit du 3 au 4 juin: si vous ne faite pas cette mise à jour le démon ne recevra plus les événements (même s'il est _OK_) et il ne pourra probablement plus du tout se connecter prochainement.
 
 # 2020-05-24
 

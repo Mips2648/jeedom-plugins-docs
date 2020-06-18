@@ -262,7 +262,9 @@ En plus des commandes ci-dessus, la Video Doorbell dispose de quelques commandes
 
 En cliquant sur la vignette de sur le widget, vous pouvez lancer le flux de la caméra.
 La vidéo s'ouvrira dans une nouvelle fenêtre et il est évidement possible de passer en plein écran:
+
 ![Flux](../images/streaming.png "Flux")
+
 C'est un flux vidéo en continu, la caméra et le flux se couperont à la fermeture de la fenêtre.
 
 # La bibliothèque

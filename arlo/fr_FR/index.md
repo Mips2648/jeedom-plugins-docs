@@ -7,14 +7,14 @@ pluginId: arlo
 
 # Description
 
-Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.
+Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée. Il est possible de contrôler le mode, l'activation et désactivation des caméras, visualiser le flux live des caméras, déclencher des captures et des enregistrements vidéos, déclencher la sirène...
 
 Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo go, Arlo baby, Arlo Doorbell et Video Doorbell...
 
 Pour l'instant, il est possible de:
 
 - sélectionner le mode: Activé, désactivé ou planification mais aussi tous les modes personnalisés;
-- Activer / désactiver chaque caméra indépendamment l'une de l'autre (quelque soit le mode en cours);
+- activer / désactiver chaque caméra indépendamment l'une de l'autre (quelque soit le mode en cours);
 - déclencher la sirène intégrée à la station de base (ou au Pro3 et Ultra) et connaître son statut;
 - connaître le statut de chaque caméra:
   - connectée ou non
@@ -23,11 +23,11 @@ Pour l'instant, il est possible de:
   - force du signal
   - si la détection de son ou de mouvement est actif
   - si du son ou du mouvement est détecté
-  - effectuer une capture instantanée (stockée localement)
-  - effectuer un enregistrement (stocké localement)
-  - visualiser les captures et les vidéos prises
-  - lancer/arrêter un enregistrement (stocké dans le cloud Arlo)
-  - visualiser le streaming live de vos caméras (avec quelques secondes de décalage)
+- effectuer une capture instantanée (stockée localement)
+- effectuer un enregistrement (stocké localement)
+- visualiser les captures et les vidéos prises
+- lancer/arrêter un enregistrement stocké dans le cloud Arlo
+- visualiser le streaming live de vos caméras
 
 # Configuration
 
@@ -256,6 +256,22 @@ En plus des commandes ci-dessus, la Video Doorbell dispose de quelques commandes
 - **Arrêter enregistrement**: permet de d'arrêter un enregistrement local
 - **Démarrer enregistrement cloud**: permet de démarrer l'enregistrement dans le cloud Arlo
 - **Arrêter enregistrement cloud**: permet de stopper l'enregistrement dans le cloud Arlo
+
+# Visualisation du flux vidéo des caméras - live streaming
+
+En cliquant sur la vignette de sur le widget, vous pouvez lancer le flux de la caméra.
+La vidéo s'ouvrira dans une nouvelle fenêtre et il est évidement possible de passer en plein écran:
+![Flux](../images/streaming.png "Flux")
+C'est un flux en continu, la caméra et le flux se couperont à la fermeture de la fenêtre.
+
+# La bibliothèque
+
+Lorsqu'un enregistrement vidéo local est effectué ou lorsqu'une capture est prise par le plugin ou reçue depuis Arlo en cas de détection de mouvement celles-ci sont consultables via l'outils bibliothèque de chaque caméra.
+
+![Bibliothèque](../images/media_library.png "Bibliothèque")
+
+Dans cet écran présentant un aperçu des captures et vidéos prises, vous pouvez supprimer directement et définitivement les fichiers si vous le souhaitez, sinon le plugin s'en chargera automatiquement suivant les règles définies dans la configuration.
+Vous pouvez également cliquer sur les captures pour les visualiser dans une fenêtre plus grande ou sur les vidéos pour lancer la lecture.
 
 # Changelog
 

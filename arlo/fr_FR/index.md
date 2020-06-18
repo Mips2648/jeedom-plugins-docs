@@ -170,7 +170,8 @@ En plus des commandes communes à toutes les caméras, les Arlo Q disposent d'un
 
 En plus des commandes communes à toutes les caméras, les Arlo Baby disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
-L'intégration de la Arlo Baby est complète, il est possible d'entièrement gérer la caméra, la veilleuse, la musique etc depuis le plugin.
+L'intégration de la Arlo Baby est complète, il est possible de gérer entièrement la caméra et toutes ses fonctions depuis le plugin: la veilleuse, la berceuse et de récupérer les informations des capteurs de qualité de l'air.
+
 Voici un aperçu des commandes disponibles:
 
 - **IP**: l'adresse IP de la caméra

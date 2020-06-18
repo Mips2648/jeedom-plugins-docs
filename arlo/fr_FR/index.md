@@ -162,11 +162,11 @@ Et en dessous un bouton pour prendre une capture instantanée et démarrer l'enr
 
 ![Caméra](../images/widget_camera.png "Caméra")
 
-### Caméras Arlo Q
+## Caméras Arlo Q
 
 En plus des commandes communes à toutes les caméras, les Arlo Q disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
-### Caméras Arlo Baby
+## Caméras Arlo Baby
 
 En plus des commandes communes à toutes les caméras, les Arlo Baby disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
@@ -193,7 +193,7 @@ Voici un aperçu des commandes disponibles:
 - **volume**: permet de connaître et changer le volume de la berceuse (en %)
 - **Minuterie berceuse**: commandes info et action pour définir la minuterie ainsi que connaître la durée restante (à la minute) avant l'extinction automatique de la berceuse
 
-### Caméras Arlo Go
+## Caméras Arlo Go
 
 En plus des commandes communes à toutes les caméras, les caméras Arlo Go disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
@@ -207,7 +207,7 @@ De plus, les commandes suivantes sont également disponibles:
 >
 > En cas d'ajout d'une caméra Arlo Go, Arlo Q ou Arlo Baby, il est nécessaire de redémarrer le démon pour que les événements liés soient correctement reçus.
 
-### Arlo Pro3 & Ultra
+## Arlo Pro3 & Ultra
 
 En plus des commandes communes à toutes les caméras, les caméras Arlo Pro3 et Arlo Ultra disposent de commandes pour contrôler l'état de la sirène intégrée.
 

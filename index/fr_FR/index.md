@@ -9,8 +9,9 @@ lang: fr_FR
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/arlo_icon.png">]({{site.baseurl}}/arlo/{{page.lang}})
 
 Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.
+Il est possible de contrôler le mode, l'activation et désactivation des caméras, visualiser le flux live des caméras, déclencher des captures et des enregistrements vidéos, déclencher la sirène...
 
-Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo go, Arlo baby ...
+Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
 
 - [Documentation]({{site.baseurl}}/arlo/{{page.lang}})
 - [Changelog]({{site.baseurl}}/arlo/{{page.lang}}/changelog)

@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: logmanager
 ---
 
+# 2020-07-04
+
+- Ajout des commandes **Vider** et **Supprimer**
+
 # 2020-05-03
 
 - Ajout du bouton "Dupliquer" un équipement

@@ -50,6 +50,11 @@ Cet événement peut-être utilisé comme déclencheur de scénario, c'est utile
 - #lm-warning#
 - #lm-error#
 
+Il existe également les commandes suivantes qui ont le même comportement que les actions manuels correspondantes sous Jeedom:
+
+- **Vider**: vider le fichier de log
+- **Supprimer**: supprimer le fichier de log
+
 # Le widget
 
 Il y a deux options:

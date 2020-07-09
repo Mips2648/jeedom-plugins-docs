@@ -5,6 +5,12 @@ lang: en_US
 pluginId: notificationqueue
 ---
 
+# 2020-06-16
+
+- Add an option to configure a delay during which the notification will be kept in the queue even if the condition is true
+- Add a command to manually trigger the check of the condition and the sending of messages if it is valid
+- Add a command to force the immediate sending of all messages regardless of the condition (but taking into account the sending delay)
+
 # 2020-05-03
 
 - Add "Duplicate" button on device configuration

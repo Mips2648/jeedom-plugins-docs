@@ -50,6 +50,11 @@ This event can be used as a scenario trigger, it is useful if you want to perfor
 - #lm-warning#
 - #lm-error#
 
+There are also the following commands which have the same behavior as the corresponding manual actions in Jeedom:
+
+- **Empty**: empty the log file
+- **Delete**: delete the log file
+
 # The widget
 
 There are two options:

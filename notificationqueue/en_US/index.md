@@ -54,6 +54,10 @@ You can also choose the behavior when a notification with the same message as an
 - Keep the first notification: the new one will therefore not be added;
 - Keep the last notification: the previous notification will be deleted from the queue and the new one will be added at the end of it.
 
+## Sending delay
+
+It is possible to configure a sending delay (in seconds) of notifications during which a new notification will be kept in the queue even if the condition is true, it is only after this delay that the notification will be sent if the condition is fulfilled.
+
 ## Délai d'expiration
 
 Il est possible de configurer un délai d'expiration des notifications (en minute). Passé ce délai la notification ne sera plus envoyée si la condition n'a pas été remplie avant.
@@ -62,8 +66,16 @@ Il est possible de configurer un délai d'expiration des notifications (en minut
 
 - The order in which notifications are sent is guaranteed (FIFO, first notification received, first notification returned), exception depending on the configuration of the duplicates.
 - If a problem is detected during the return (not always possible), the message is put back at the end of the queue for a new try later.
-- The plugin checks the condition of each queue every minute and each time new messages are added.
+- The plugin automatically checks the condition of each queue every minute, each time new messages are added when an info command used in the condition changes values (same principle as scenario triggers)
 - the ask is managed by the plugin (the notification command used then must also manage it)
+
+# Commands
+
+- **Add** allows you to add a message to the queue, the condition will be evaluated immediately and all messages will then be sent (in order)
+- **Empty** empty the queue.
+- **Check and send** allows you to manually trigger the condition check and send messages if it is valid
+- **Force send** allows to force the immediate sending of all messages regardless of the condition (but taking into account the sending delay)
+- **Number of messages** info command giving the number of messages currently pending
 
 # The widget
 

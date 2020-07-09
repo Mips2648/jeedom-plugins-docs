@@ -5,6 +5,10 @@ lang: en_US
 pluginId: logmanager
 ---
 
+# 2020-07-04
+
+- Add commands **Empty** and **Delete**
+
 # 2020-05-03
 
 - Add "Duplicate" button on device configuration

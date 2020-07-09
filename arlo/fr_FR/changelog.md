@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2020-07-08
+
+- Fix démon si seulement une vidéo doorbell existe (sans base)
+
 # 2020-06-18
 
 - Ajout des commandes modes sur le widget pour la Video Doorbell (quand elle n'est pas liée à une base)

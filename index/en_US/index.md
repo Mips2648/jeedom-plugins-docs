@@ -8,9 +8,10 @@ lang: en_US
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/arlo_icon.png">]({{site.baseurl}}/arlo/{{page.lang}})
 
-Plugin to control all Arlo devices like the cameras, the base station and the integrated siren.
+Plugin for controlling Arlo equipment such as cameras, base station and doorbells.
+It is possible to control the mode, the activation and deactivation of the cameras, view the live stream of the cameras, trigger video captures and recordings, trigger the siren ...
 
-All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby ...
+All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell and Video Doorbell...
 
 - [Documentation]({{site.baseurl}}/arlo/{{page.lang}})
 - [Changelog]({{site.baseurl}}/arlo/{{page.lang}}/changelog)

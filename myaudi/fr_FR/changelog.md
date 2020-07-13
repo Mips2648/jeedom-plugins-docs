@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: myaudi
 ---
 
+# 2020-07-13
+
+- Fix affichage carte de localisation sur la vue mobile
+
 # 2020-06-02
 
 - Ajout d'une commande info donnant la dernière localisation connue du véhicule

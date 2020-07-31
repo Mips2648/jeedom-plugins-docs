@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2020-08-01
+
+- Fix urgent dû à un changement d'url chez Arlo effectué dans la nuit du 31 juillet au 01 août: si vous ne faite pas cette mise à jour le démon ne pourra plus se connecter.
+
 # 2020-07-08
 
 - Fix démon si seulement une vidéo doorbell existe (sans base)

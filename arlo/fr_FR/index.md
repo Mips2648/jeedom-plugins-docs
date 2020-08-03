@@ -36,7 +36,7 @@ Pour l'instant, il est possible de:
 
 > **Important**
 >
-> Le plugin n'a pas été testé sous Jessie et son fonctionnement sur cette version ne sera pas assuré.
+> Debian 8 (Jessie) n'étant plus supporté par Debian, le plugin ne fonctionnera pas sous Jessie car il est nécessaire d'installer des dépendances qui ne sont plus disponibles sur cette version.
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 Il faut ensuite installer les dépendances.

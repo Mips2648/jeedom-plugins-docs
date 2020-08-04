@@ -5,6 +5,11 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2020-08-02
+
+- Fixed broken streaming and local recording features following Arlo changes (their new system seems slower than before)
+- Urgent fix due to a change of url made during the night of July 31 to August 01 by Arlo : if you do not do this update the daemon will no longer be able to connect.
+
 # 2020-07-08
 
 - Fix demon when only a video doorbell exists (without base)
@@ -29,7 +34,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 - Migration of daemon in python3
 - Adapting permissions: non-admin users can view the streaming and media library.
-- Better management of options for visibility of commands (mainly battery, movement, etc.) on the cameras widget
+- Improved management of options for visibility of commands (mainly battery, movement, etc.) on the cameras widget
 - Added support for the Arlo Video Doorbell
 - Optimizations of dependencies
 
@@ -45,7 +50,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 # 2020-02-19
 
-- Fixe un problème de streaming pouvant se produit sur Raspbian Stretch: force l'usage de ffmpeg 4.2.1 car version 4.2.2 semble corrompue (réinstallation des dépendances nécessaires si vous êtes dans le cas)
+- Fix a streaming issue that could occur on Raspbian Stretch: force the use of ffmpeg 4.2.1 because version 4.2.2 seems corrupt (it is necessary to reinstall dependencies if you are in this case)
 
 # 2020-02-14
 
@@ -59,12 +64,12 @@ It is necessary to launch the installation of dependencies after installing this
 
 # 2020-01-22
 
-- Fixed an issue on the on/off commands of the Arlo Q and Arlo Qs cameras
-- Fix a streaming issue on Raspbian Buster (caused by ffmpeg)
+- Fix an issue on the on/off commands of the Arlo Q and Arlo Qs cameras
+- Fix a streaming issue on Raspbian Buster
 
 # 2019-12-28
 
-- Fix a streaming issue with Arlo Q and Arlo Q s cameras
+- Fix a streaming issue with Arlo Q and Arlo Qs cameras
 - Add support for Arlo Pro3
 - Add support of siren integrated in Arlo Pro3 & Arlo Ultra
 
@@ -100,13 +105,8 @@ It is necessary to launch the installation of dependencies after installing this
 
 # 2019-07-19
 
-- Adding mode commands to the Arlo Baby and Aro Q cameras widget
-- Add On/Off and status commands to camera device
-- Improve Library: added a button to delete a capture and display of the capture in full size
 - Fix a problem with the daemon if the plugin is only used with an Arlo Baby camera
-
-# 2019-06-26
-
+- 2019-06-26
 - Add support for Arlo Go
 - Add generic type on commands to prepare the integration with Jeedom mobile app
 
@@ -119,23 +119,23 @@ It is necessary to launch the installation of dependencies after installing this
 
 - Added a function to send the captures via Telegram or Mail (the corresponding plugins must be installed)
 - Fix size of captures on the mobile widget
-- Fix a bug on daemon startup if the password contains some special characters
+
+# Fix a bug on daemon startup if the password contains some special characters
+
 - Improve heartbeat process
 - Internal optimization of the plugin to prepare the integration of new Arlo device
-
-# 2019-05-30
-
-It is recommended to launch the installation of dependencies after installing this update even if they are already _OK_.
-
+- 2019-05-30
+- It is recommended to launch the installation of dependencies after installing this update even if they are already _OK_.
 - Add support for Arlo Q
-- Adapt charging status on the widget when the camera is lugged to the sector: display of a plug instead of a battery
-- Fix issues with dependency compatibility
+
+# Adapt charging status on the widget when the camera is lugged to the sector: display of a plug instead of a battery
+
+Fix issues with dependency compatibility
+
 - Fix dependencies compatibility issues on _Debian Jessie_: if you are under Jessie, you must reinstall the dependencies even if they are already _OK_
 - reduce the size of the plugin
 - Fix image of Arlo Baby
-
-# 2019-05-24
-
+- 2019-05-24
 - Improve stability of the demon
 - Change the default port to 55064 to avoid conflicts with the _RfPlayer_ plugin
 
@@ -143,10 +143,15 @@ It is recommended to launch the installation of dependencies after installing th
 
 - Improve camera widget and add display customization (in the _Display_ tab of the advanced device configuration)
 - Prevents the creation of inactive devices: if you have inactive devices in Arlo, they will not be created or synchronized with Jeedom
-- Improved compatibility if multiple base stations exist on the Arlo account
-- Fix a daemon crash if there is no base station (e.g. if used with only Arlo Q cameras)
 
-# 2019-05-12
+# Improved compatibility if multiple base stations exist on the Arlo account
+
+- Improve camera widget and add display customization (in the _Display_ tab of the advanced device configuration)
+- 2019-05-12
+- First stable release
+- Documentation
+
+# See documentation
 
 First stable release
 

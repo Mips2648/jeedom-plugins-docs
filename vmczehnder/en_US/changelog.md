@@ -17,7 +17,7 @@ pluginId: vmczehnder
 
 - Move documentations
 
-# 2019-08-03
+# 2020-01-29
 
 - Updates to prepare support of Jeedom V4 and PHP 7.3
 - Use plugin daemon instead generic to avoid side impact on/with others plugins

@@ -23,11 +23,11 @@ So far, it is possible to:
   - signal strength
   - if sound or motion detection is active
   - if sound or motion is detected
-  - take a snapshot (stored locally)
-  - record video (stored locally)
-  - view snapshots and videos
-  - start/stop recording (stored in Arlo cloud)
-  - view live streaming of your cameras (with a few seconds of lag)
+- take a snapshot (stored locally)
+- record video (stored locally)
+- view snapshots and videos
+- start/stop recording stored in Arlo cloud
+- view live streaming of your cameras
 
 # Configuration
 
@@ -35,7 +35,7 @@ So far, it is possible to:
 
 > **Important**
 >
-> The plugin has not been tested under Jessie and its operation on this version will not be guaranteed.
+> Debian 8 (Jessie) is no longer supported by Debian, the plugin will not work under Jessie because it is necessary to install dependencies which are no longer available on this version.
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 Then you have to install the dependencies.
@@ -162,29 +162,53 @@ And below a button to take a snapshot and start (local) video record
 
 ![Camera](../images/widget_camera.png "Camera")
 
-### Arlo Q &amp; Arlo Baby cameras
+## Arlo Q cameras
 
-On top of common commands to all cameras, the Arlo Q &amp; Arlo Baby have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
+On top of common commands to all cameras, the Arlo Q have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
 
-> **Tip**
->
-> When adding a Arlo Q or Arlo Baby camera, it is necessary to restart the daemon so the related events are correctly received.
+## Arlo Baby cameras
 
-### Arlo Go cameras
+On top of common commands to all cameras, the Arlo Baby have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
+
+The integration of the Arlo Baby is complete, it is possible to fully manage the camera and all of its functions from the plugin: the night light, the lullaby and retrieve information from the air quality sensors.
+
+Here is an overview of the available commands:
+
+- **IP**: camera IP
+- **Brightness**: brightness of the room
+- **Temperature**: room temperature
+- **Humidity**: in percent
+- **Air quality**: in percent; less than 30% being "normal", 30% to 65% being "abnormal" and more than 65% being "Very abnormal" (according to Arlo documentation)
+- **Nightlight**: Indicates whether the nightlight lamp is currently on or off.
+- **Nightlight On** and **Nightlight Off**: to switch the nightlight on and off
+- **Nightlight mode**: the possible modes are: _White_, _Color_, _Rainbow_
+- **Nightlight brightness**: info and action commands to change the nightlight brightness
+- **Nightlight color**: info and action commands to change the nightlight color (in _Color_ mode)
+- **Color temperature**: info and action commands to change the color temperature (in _White_ mode), value between 2500K and 9000K
+- **Nightlight timer**: info and action commands to set the timer as well as to know the remaining time (per minute) before the automatic switch-off of the nightlight
+- **Playing**: a binary command and a string command giving the reading status of the lullaby
+- **Play**, **Pause**, **Next**: command to act on the playback status
+- **Track**: gives the selected track and **Playlist** gives the list of available tracks
+- **Repeat**: info and action commands to activate and deactivate repeat mode: continuous or single track playback
+- **Random**: info and action commands to activate and deactivate random mode
+- **Volume**: allows you to know and change the volume of the lullaby (in %)
+- **Lullaby timer**: info and action commands to set the timer as well as to know the remaining time (in minute) before the automatic shutdown of the lullaby
+
+## Arlo Go cameras
 
 On top of common commands to all cameras, the Arlo Go have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
 
 On top, following commands are also available:
 
 - **Network Name**: Gives the name of the mobile network
-- **IP**: Current IP
+- **IP**: current IP address
 - **Active network**: indicates the current active network (wifi or mobile)
 
 > **Tip**
 >
-> When adding a Arlo go camera, it is necessary to restart the daemon so the related events are correctly received.
+> When adding a Arlo Go, Arlo Q or Arlo Baby camera, it is necessary to restart the daemon so the related events are correctly received.
 
-### Arlo Pro3 & Ultra
+## Arlo Pro3 & Ultra
 
 On top of common commands to all cameras, the Arlo Pro3 and Ultra have commands to control the siren integrated in the camera.
 
@@ -233,6 +257,24 @@ In addition to the above commands, the Video Doorbell has some of the commands c
 - **Stop record**: to stop recording video
 - **Start cloud record**: to start recording a video in Arlo cloud
 - **Stop cloud record**: to stop recording video in Arlo cloud
+
+# Viewing the video stream from the cameras - live streaming
+
+By clicking on the thumbnail on the widget, you can start the streaming.
+The video will open in a new window and it is obviously possible to switch to full screen:
+
+![Flow](../images/streaming.png "Flow")
+
+It is a continuous video stream, the camera and the stream will stop when the window will be closed.
+
+# The library
+
+When a local video recording is made or when a capture is taken by the plugin or received from Arlo in the event of motion detection, these can be viewed via the library tools of each camera.
+
+![Library](../images/media_library.png "Library")
+
+In this screen showing an overview of the captures and videos taken, you can directly and permanently delete the files if you wish, otherwise the plugin will take care of them automatically according to the rules defined in the configuration.
+You can also click on the captures to view them in a larger window or on the videos to start playback.
 
 # Changelog
 

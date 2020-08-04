@@ -141,7 +141,7 @@ It is recommended to launch the installation of dependencies after installing th
 
 # 2019-05-24
 
-- Improve camera widget and add display customization (in the _Display_ tab of the advanced device configuration)
+- Improve stability of the demon
 - Prevents the creation of inactive devices: if you have inactive devices in Arlo, they will not be created or synchronized with Jeedom
 
 # Improved compatibility if multiple base stations exist on the Arlo account

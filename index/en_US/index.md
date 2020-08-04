@@ -109,7 +109,7 @@ Plugin to connect to the MyAudi platform allowing to retrieve cars which are com
 
 - [Documentation]({{site.baseurl}}/myaudi/{{page.lang}})
 - [Changelog]({{site.baseurl}}/myaudi/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3823" target="_blank">Market</a>
+- <a href="{{site.market}}/index.php?v=d&plugin_id=3941" target="_blank">Market</a>
 
 # Solaredge
 

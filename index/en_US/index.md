@@ -49,7 +49,7 @@ It is possible to access device data, monitor them and perform actions (dependin
 - [Changelog]({{site.baseurl}}/gardena/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=4031" target="_blank">Market</a>
 
-# Hydrao
+# Gotify
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/hydrao_icon.png">]({{site.baseurl}}/gotify/{{page.lang}})
 

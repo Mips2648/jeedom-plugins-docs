@@ -89,9 +89,9 @@ Plugin allowing custom log management in your scenarios. It is possible to creat
 - [Changelog]({{site.baseurl}}/logmanager/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3817" target="_blank">Market</a>
 
-# <a href="{{site.market}}/index.php?v=d&plugin_id=3950" target="_blank">Market</a>
+# Miele
 
-[My Audi]({{site.baseurl}}/miele/{{page.lang}})
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/miele_icon.png"/>]({{site.baseurl}}/miele/{{page.lang}})
 
 <img width="77" src="{{site.market}}/filestore/market/plugin/images/myaudi_icon.png">
 

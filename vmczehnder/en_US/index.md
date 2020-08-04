@@ -119,7 +119,7 @@ a command to set the comfort temperature, accepting a value between 0 and 40 (°
 
 Efficiency
 
-# The plugin calculates the efficiency of the system via the formula of the efficiency on fresh air: ηt = (T ° C Air insufflated - T ° C New Air) / (T ° C Air Extract - T ° C Air New)
+# Widget
 
 ![Example](../images/widget.png "Example")
 

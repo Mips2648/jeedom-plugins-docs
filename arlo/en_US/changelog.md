@@ -19,7 +19,7 @@ pluginId: arlo
 - Add commands for modes on the widget for the Video Doorbell (when it is not linked to a base)
 - Add commands info _IP_, _Luminosity_, _Temperature_, _Humidity_ and _Quality of air_ on the Arlo Baby
 - Add management of the Arlo Baby night light: on / off, timer, brightness, color, color temperature and mode (see documentation)
-- Fix tooltips on the camera widget in v4
+- Add the lullaby management of the Arlo Baby: Play / Pause / Next, timer, Playlist, Volume, Repeat and random mode (see documentation)
 - 2020-06-4
 - Urgent fix due to a change of URL at Arlo made during the night of June 3 to 4: if you do not do this update the demon will no longer receive the events (even if it is _OK_) and it won't be able to connect anymore soon probably.
 - 2020-05-24

@@ -5,6 +5,14 @@ lang: en_US
 pluginId: vmczehnder
 ---
 
+# 2020-06-18
+
+- fix daemon installation
+
+# 2020-06-15
+
+- Redesign of configuration pages for future updates to allow modification of HRV configurations
+
 # 2020-05-12
 
 - Move documentations
@@ -26,14 +34,14 @@ pluginId: vmczehnder
 - add usage counters (available as info commands and visible in config tab of your VMC)
 - add action to reset filters counter (in config tab of your VMC)
 - add filterError command (binary) to indicate that filters need to be cleaned or replaced
-- adapt device screen layout to match 3.3
-
-# 2019-03-15
-
-- Add local dependencies management
-- Change sync with VMC every minute instead of 5 minutes
 - Improve daemon management
-- Add get remote logs of daemon (every 5 min.)
+
+# Add get remote logs of daemon (every 5 min.)
+
+- Add automatic update of remote daemon after plugin update
+- Add socat management on remote pi (to connect CCEase/comfoSense module)
+- 2019-03-02
+- Reduce CPU usage of remote daemon
 - Add automatic update of remote daemon after plugin update
 - Add socat management on remote pi (to connect CCEase/comfoSense module)
 

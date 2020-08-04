@@ -170,7 +170,7 @@ Plugin to retrieve stock or index quotation as well as exchange rate between two
 
 # Stock exchange
 
-[<img width="77" src="{{site.market}}/filestore/market/plugin/images/vmczehnder_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/stockexchange_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
 
 Plugin to interface a Zehnder HRV-ERC - also known as Storkair, Comfo Air, Wernig - via the serial port (RS-232) used by the CCEase/ComfoSense.
 

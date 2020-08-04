@@ -54,7 +54,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 # 2020-02-14
 
-- Add possibility to activate 'Schedule' mode
+- Fixe un problème d'affichage sur le mode 'Planning'
 - Add 'Send snapshot' command on cameras to send a snapshot to a custom notification command directly from a scenario
 
 # 2020-01-22

@@ -21,7 +21,7 @@ pluginId: myaudi
 
 # 2020-03-31
 
-- 2020-03-23
+- Fix missing dependency
 - Check configuration and state of daemon
 
 # 2020-03-23

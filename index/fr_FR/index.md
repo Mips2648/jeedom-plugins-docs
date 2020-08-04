@@ -37,6 +37,17 @@ Plugin permettant la lecture des donées des jauges connectées <a href="https:/
 - [Changelog]({{site.baseurl}}/fullup/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3445" target="_blank">Market</a>
 
+# Gardena
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/gardena_icon.png">]({{site.baseurl}}/gardena/{{page.lang}})
+
+Plugin permettant d'intégrer tous les appareils de la gamme Gardena Smart System (Water Control, sensor, irrigation control, power socket et mower) ainsi que les robots Husqvarna Automower.
+Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil)
+
+- [Documentation]({{site.baseurl}}/gardena/{{page.lang}})
+- [Changelog]({{site.baseurl}}/gardena/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4031" target="_blank">Market</a>
+
 # Gotify
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/gotify_icon.png">]({{site.baseurl}}/gotify/{{page.lang}})

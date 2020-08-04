@@ -90,7 +90,7 @@ If you add a new device or change the modes via the Arlo application, it is reco
 >
 > This obviously does not affect the values of the commands such as the selected mode or motion or sound detection which are updated in real time.
 
-For most of the devices there is no specific configuration, the name of the device will be the one defined in Arlo paltform, but remember to assign the parent object, the category and activate it.
+For most of the devices there is no specific configuration, the name of the device will be the one defined in Arlo platform, but remember to assign the parent object, the category and activate it.
 
 For camera devices, it is possible to configure an action command of the Mail or Telegram plugin. If this one is configured, the plugin will send a message, including the snapshot, as soon as a new one is available.
 
@@ -241,8 +241,8 @@ The doorbell has the following commands:
 - **Motion detected**: if motion is detected
 - **Button**: if the button has been pressed (it will remain active for 1 min after the last press)
 - **Silent mode**: Indicates if silent mode is enabled
-- **Silent mode On **: Enable silent mode
-- **Silent mode Off **: Disable silent mode
+- **Silent mode On**: Enable silent mode
+- **Silent mode Off**: Disable silent mode
 
 ### Arlo Video Doorbell
 

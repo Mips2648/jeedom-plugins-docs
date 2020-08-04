@@ -67,7 +67,7 @@ It is necessary to launch the installation of dependencies after installing this
 - Fix an issue on the on/off commands of the Arlo Q and Arlo Qs cameras
 - Fix a streaming issue on Raspbian Buster
 
-# Add support of siren integrated in Arlo Pro3 & Arlo Ultra
+# 2019-12-28
 
 - 2019-12-01
 - Added a specific health page listing an overview of all Arlo devices

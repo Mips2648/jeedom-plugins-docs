@@ -97,9 +97,9 @@ It is necessary to launch the installation of dependencies after installing this
 - securing access to local snapshots
 - Update to my.arlo.com domain following changes made by Arlo
 
-# Fix: default size of widgets
+# 2019-08-02
 
-- 2019-07-19
+- Jeedom V4 and PHP 7.3 support
 - Adding mode commands to the Arlo Baby and Aro Q cameras widget
 - Add On/Off and status commands to camera device
 

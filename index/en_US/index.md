@@ -57,9 +57,9 @@ Plugin allowing Jeedom to act as a Gotify application that can send messages (no
 
 - [Documentation]({{site.baseurl}}/gotify/{{page.lang}})
 - [Changelog]({{site.baseurl}}/gotify/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3964" target="_blank">Market</a>
+- <a href="{{site.market}}/index.php?v=d&plugin_id=3774" target="_blank">Market</a>
 
-# InfluxDB Connector
+# Hydrao
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/influxdb_icon.png">]({{site.baseurl}}/hydrao/{{page.lang}})
 

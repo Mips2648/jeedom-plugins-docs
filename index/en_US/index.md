@@ -127,7 +127,7 @@ Plugin allow to create notification commands (action / message type command) tha
 
 The plugin allow to retrieve data of an Solaredge inverter.
 
-- [With this plugin, it is possible to retrieve in Jeedom all dockers servers configured in Portainer and so all containers.]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
+- [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 - [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}}/changelog)
 - Changelog
 

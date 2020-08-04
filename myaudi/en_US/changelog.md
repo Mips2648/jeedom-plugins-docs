@@ -5,7 +5,7 @@ lang: en_US
 pluginId: myaudi
 ---
 
-# 2020-06-02
+# 2020-07-13
 
 - Add an info command providing the last known localization of the vehicle
 

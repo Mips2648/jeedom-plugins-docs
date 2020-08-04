@@ -20,10 +20,10 @@ pluginId: vmczehnder
 # 2020-01-29
 
 - Add compatibility with Jeedom mobile App: it's now possible to control fan speed via the app
-- Use plugin daemon instead generic to avoid side impact on/with others plugins
+- Improve connection with remote daemon
 - fix error message on connection error
 
-# add configured delay (visible in config tab of your VMC)
+# 2019-08-03
 
 - add usage counters (available as info commands and visible in config tab of your VMC)
 - add action to reset filters counter (in config tab of your VMC)

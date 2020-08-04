@@ -32,7 +32,7 @@ pluginId: arlo
 
 It is necessary to launch the installation of dependencies after installing this update even if they are already _OK_.
 
-- Added support for the Arlo Video Doorbell
+- Migration of daemon in python3
 - Optimizations of dependencies
 - 2020-03-30
 - Move documentations

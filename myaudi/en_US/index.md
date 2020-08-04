@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MyAudi documentation 
+title: MyAudi documentation
 lang: en_US
 pluginId: myaudi
 ---

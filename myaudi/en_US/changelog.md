@@ -9,7 +9,7 @@ pluginId: myaudi
 
 - Add an info command providing the last known localization of the vehicle
 
-# Add an option to display the map with the localization on the widget (it is necessary to configured a Google maps API key, see documentation for more information)
+# 2020-06-02
 
 - Add an info command providing the last known localization of the vehicle
 - Add an option to display the map with the localization on the widget (it is necessary to configured a Google maps API key, see documentation for more information)

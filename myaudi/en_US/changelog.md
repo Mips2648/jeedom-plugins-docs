@@ -1,9 +1,13 @@
 ---
 layout: default
-title: MyAudi changelog 
+title: MyAudi changelog
 lang: en_US
 pluginId: myaudi
 ---
+
+# 2020-07-13
+
+- Add an info command providing the last known localization of the vehicle
 
 # 2020-06-02
 

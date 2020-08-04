@@ -137,7 +137,7 @@ It is recommended to launch the installation of dependencies after installing th
 - Fix issues with dependency compatibility
 - Fix dependencies compatibility issues on _Debian Jessie_: if you are under Jessie, you must reinstall the dependencies even if they are already _OK_
 - reduce the size of the plugin
-- Change the default port to 55064 to avoid conflicts with the _RfPlayer_ plugin
+- Fix image of Arlo Baby
 
 # 2019-05-13
 

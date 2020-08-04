@@ -37,7 +37,7 @@ Plugin permettant la lecture des donées des jauges connectées <a href="https:/
 - [Changelog]({{site.baseurl}}/fullup/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3445" target="_blank">Market</a>
 
-# Gardena
+# Gardena-Husqvarna
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/gardena_icon.png">]({{site.baseurl}}/gardena/{{page.lang}})
 

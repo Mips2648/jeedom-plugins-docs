@@ -47,7 +47,7 @@ pluginId: vmczehnder
 
 # Documentation
 
-- See documentation
+- Reduce CPU usage of remote daemon
 
 # 2019-02-25
 

@@ -144,7 +144,7 @@ It is recommended to launch the installation of dependencies after installing th
 - Improve stability of the demon
 - Change the default port to 55064 to avoid conflicts with the _RfPlayer_ plugin
 
-# Improved compatibility if multiple base stations exist on the Arlo account
+# 2019-05-13
 
 - Improve camera widget and add display customization (in the _Display_ tab of the advanced device configuration)
 - 2019-05-12

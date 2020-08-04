@@ -5,6 +5,14 @@ lang: en_US
 pluginId: vmczehnder
 ---
 
+# 2020-06-18
+
+- fix daemon installation
+
+# 2020-06-15
+
+- Redesign of configuration pages for future updates to allow modification of HRV configurations
+
 # 2020-05-12
 
 - Move documentations

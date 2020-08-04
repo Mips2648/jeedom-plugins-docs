@@ -241,7 +241,7 @@ The doorbell has the following commands:
 - **Motion detected**: if motion is detected
 - **Button**: if the button has been pressed (it will remain active for 1 min after the last press)
 - **Silent mode**: Indicates if silent mode is enabled
-- **Silent mode On **: Enable silent mode
+- **Silent mode On**: Enable silent mode
 - **Silent mode Off **: Disable silent mode
 
 ### Arlo Video Doorbell

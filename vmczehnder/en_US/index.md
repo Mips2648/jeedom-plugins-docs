@@ -85,14 +85,12 @@ The installation will:
 - copy the necessary files to the pi (via SSH)
 - install the dependencies
 
-## Daemon configuration
+![Daemon configuration](../images/daemon_config.png "Daemon configuration")
 
 If the previous step went well, you should see the list of "devices" (usb) connected to your pi, you must select the device connected to the HRV and possibly select the one connected to the CCEease (optional).
 It is not recommended to change the configuration of the TCP ports, only do this if you know what you are doing and you have a problem with usage of these ports; These ports will be used by the remote daemon, on the Raspberry connected to the VMC, not on Jeedom (unless it's the same device).
 
-![Daemon configuration](../images/daemon_config.png "Daemon configuration")
-
-Save your device.
+Save the configuration.
 
 ## Starting the daemon
 
@@ -102,10 +100,7 @@ If all goes well, the status should go green. If not please wait a few minutes i
 
 # HRV configuration
 
-In the tab "HRV configuration" you can see all the configuration of your HRV: model and version, fan speed (configured by your installer) ...
-There is a button to reload the configuration, it can be used whenever necessary without risk.
-
-![HRV configuration](../images/vmc_config.png "HRV configuration")
+HRV configuration
 
 # Commands
 
@@ -130,7 +125,7 @@ The result gives an indication of the clogging of your filters: dirty filters wi
 
 # Changelog
 
-[See changelog](./changelog)
+[See the changelog](./changelog)
 
 # Support
 

@@ -43,7 +43,7 @@ pluginId: vmczehnder
 - 2019-03-02
 - Reduce CPU usage of remote daemon
 - 2019-02-25
-- First stable release
+- Add socat management on remote pi (to connect CCEase/comfoSense module)
 
 # 2019-03-02
 

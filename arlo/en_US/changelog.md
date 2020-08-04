@@ -81,7 +81,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 # 2019-09-26
 
-- Added local recording function
+- Adding live streaming
 - Update to font awesome 5 (for Jeedom V4)
 
 # Improved media library and added video playback

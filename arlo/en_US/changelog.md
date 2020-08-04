@@ -35,7 +35,7 @@ It is necessary to launch the installation of dependencies after installing this
 - Migration of daemon in python3
 - Adapting permissions: non-admin users can view the streaming and media library.
 - Improved management of options for visibility of commands (mainly battery, movement, etc.) on the cameras widget
-- Move documentations
+- Added support for the Arlo Video Doorbell
 - Optimisation: ne réinstalle plus ffmpeg si la bonne version a déjà été installée
 
 # 2020-03-21

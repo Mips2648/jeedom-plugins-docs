@@ -168,7 +168,7 @@ Plugin to retrieve stock or index quotation as well as exchange rate between two
 - [Changelog]({{site.baseurl}}/rocketchat/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3902" target="_blank">Market</a>
 
-# VMC (Zehnder/Storkair)
+# Stock exchange
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/vmczehnder_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
 

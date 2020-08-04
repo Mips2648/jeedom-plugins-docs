@@ -41,7 +41,7 @@ It is necessary to launch the installation of dependencies after installing this
 # 2020-03-30
 
 - Move documentations
-- Fixe erreur http 403 au démarrage du démon causé par un changement introduit par Arlo au login
+- Optimisation: ne réinstalle plus ffmpeg si la bonne version a déjà été installée
 
 # 2020-02-19
 

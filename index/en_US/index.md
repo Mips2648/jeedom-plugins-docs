@@ -37,6 +37,18 @@ Plugin getting data from <a href="https://fullup.be/" target="_blank"> Fullup </
 - [Changelog]({{site.baseurl}}/fullup/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3445" target="_blank">Market</a>
 
+# Gardena
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/gardena_icon.png">]({{site.baseurl}}/gardena/{{page.lang}})
+
+Plugin to integrate all devices from Gardena Smart System (Water Control, sensor, irrigation control, power socket and mower) as well as Husqvarna Automower robots.
+
+It is possible to access device data, monitor them and perform actions (depending on the device)
+
+- [Documentation]({{site.baseurl}}/gardena/{{page.lang}})
+- [Changelog]({{site.baseurl}}/gardena/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4031" target="_blank">Market</a>
+
 # Gotify
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/gotify_icon.png">]({{site.baseurl}}/gotify/{{page.lang}})
@@ -51,7 +63,7 @@ Plugin allowing Jeedom to act as a Gotify application that can send messages (no
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/hydrao_icon.png">]({{site.baseurl}}/hydrao/{{page.lang}})
 
-Plugin to integrate Hydrao shower head
+Plugin to integrate Hydrao shower head.
 
 - [Documentation]({{site.baseurl}}/hydrao/{{page.lang}})
 - [Changelog]({{site.baseurl}}/hydrao/{{page.lang}}/changelog)
@@ -81,7 +93,7 @@ Plugin allowing custom log management in your scenarios. It is possible to creat
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/miele_icon.png"/>]({{site.baseurl}}/miele/{{page.lang}})
 
-Plugin allowing to integrate all appliances compatible with Miel@Home.
+Plugin allowing to integrate all appliances compatible with Miel@Home.
 
 It is possible to get appliances information, to monitor them and execute some actions (depending the appliance). 
 
@@ -93,7 +105,7 @@ It is possible to get appliances information, to monitor them and execute some a
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/myaudi_icon.png">]({{site.baseurl}}/myaudi/{{page.lang}})
 
-Plugin to connect to the MyAudi platform allowing to recover the cars which are compatible.
+Plugin to connect to the MyAudi platform allowing to retrieve cars which are compatible.
 
 - [Documentation]({{site.baseurl}}/myaudi/{{page.lang}})
 - [Changelog]({{site.baseurl}}/myaudi/{{page.lang}}/changelog)
@@ -113,7 +125,7 @@ Plugin allow to create notification commands (action / message type command) tha
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/onduleursolaredge_icon.png">]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 
-The plugin allow to retrieve data of an Solaredge inverter.
+The plugin allow to retrieve data of an Solaredge inverter.
 
 - [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 - [Changelog]({{site.baseurl}}/onduleursolaredge/{{page.lang}}/changelog)
@@ -135,7 +147,7 @@ With this plugin, it is possible to retrieve in Jeedom all dockers servers confi
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/proxmox_icon.png">]({{site.baseurl}}/proxmox/{{page.lang}})
 
-Plugin allowing the management of a Proxmox server.
+Plugin allowing the management of a Proxmox server.
 
 It is possible to get all resources (nodes, vm, lxc, storage) and all their properties (status, memory, CPU, disk, IP address, up time, snapshots list...).
 The plugin can also start, stop vm and containers and take snapshots and backups.
@@ -148,9 +160,9 @@ The plugin can also start, stop vm and containers and take snapshots and backups
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/rocketchat_icon.png">]({{site.baseurl}}/rocketchat/{{page.lang}})
 
-Plugin allowing connection to a Rocket.chat server. Rocket.chat is a collaborative messaging platform (like Slack, HipChat ...).
+Plugin allowing connection to a Rocket.chat server. Rocket.chat is a collaborative messaging platform (like Slack, HipChat...).
 
-The plugin take in charge the ask (in scenarios), interactions and sending of attachments (ex: camera image).
+The plugin take in charge the ask (in scenarios), interactions and sending of attachments (ex: camera image).
 
 - [Documentation]({{site.baseurl}}/rocketchat/{{page.lang}})
 - [Changelog]({{site.baseurl}}/rocketchat/{{page.lang}}/changelog)

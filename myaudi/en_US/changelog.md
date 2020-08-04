@@ -1,9 +1,13 @@
 ---
 layout: default
-title: MyAudi changelog 
+title: MyAudi changelog
 lang: en_US
 pluginId: myaudi
 ---
+
+# 2020-07-13
+
+- Fix display of location map on mobile view
 
 # 2020-06-02
 

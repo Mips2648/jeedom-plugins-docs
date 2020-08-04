@@ -76,7 +76,7 @@ You must then enter the IP address of the Raspberry previously installed and con
 
 Save the change and if the configuration is correct you can proceed to next step.
 
-## Installing the daemon
+## Daemon installation & configuration
 
 You can now start the installation of the daemon and its dependencies, the first installation can take several minutes (especially if the pi was not up to date before).
 
@@ -85,14 +85,12 @@ The installation will:
 - copy the necessary files to the pi (via SSH)
 - install the dependencies
 
-## Daemon configuration
-
-If the previous step went well, you should see the list of "devices" (usb) connected to your pi, you must select the device connected to the HRV and possibly select the one connected to the CCEease (optional).
-It is not recommended to change the configuration of the TCP ports, only do this if you know what you are doing and you have a problem with usage of these ports; These ports will be used by the remote daemon, on the Raspberry connected to the VMC, not on Jeedom (unless it's the same device).
-
 ![Daemon configuration](../images/daemon_config.png "Daemon configuration")
 
-Save your device.
+If the previous step went well, you should see the list of "devices" (usb) connected to your pi, you must select the device connected to the HRV and possibly select the one connected to the CCEease (optional).
+It is not recommended to change the configuration of the TCP ports, only do this if you know what you are doing and you have a problem with usage of these ports; These ports will be used by the remote daemon, on the Raspberry connected to the VMC, not on Jeedom (except it's the same device).
+
+Save the configuration.
 
 ## Starting the daemon
 
@@ -102,10 +100,8 @@ If all goes well, the status should go green. If not please wait a few minutes i
 
 # HRV configuration
 
-In the tab "HRV configuration" you can see all the configuration of your HRV: model and version, fan speed (configured by your installer) ...
-There is a button to reload the configuration, it can be used whenever necessary without risk.
-
-![HRV configuration](../images/vmc_config.png "HRV configuration")
+The reload configuration action is used to read the configuration from the HRV which can then be consulted via the _Configuration_ button
+The screen presents a summary of the ventilation information, the usage counters as well as the configuration of the ventilation speeds.
 
 # Commands
 
@@ -130,7 +126,7 @@ The result gives an indication of the clogging of your filters: dirty filters wi
 
 # Changelog
 
-[See changelog](./changelog)
+[See the changelog](./changelog)
 
 # Support
 

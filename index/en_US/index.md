@@ -156,9 +156,9 @@ The plugin can also start, stop vm and containers and take snapshots and backups
 - [Changelog]({{site.baseurl}}/proxmox/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3835" target="_blank">Market</a>
 
-# <a href="{{site.market}}/index.php?v=d&plugin_id=3902" target="_blank">Market</a>
+# Rocket.Chat
 
-[Stock exchange]({{site.baseurl}}/rocketchat/{{page.lang}})
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/rocketchat_icon.png">]({{site.baseurl}}/rocketchat/{{page.lang}})
 
 <img width="77" src="{{site.market}}/filestore/market/plugin/images/stockexchange_icon.png">
 

@@ -21,7 +21,7 @@ pluginId: arlo
 - Add management of the Arlo Baby night light: on / off, timer, brightness, color, color temperature and mode (see documentation)
 - Add the lullaby management of the Arlo Baby: Play / Pause / Next, timer, Playlist, Volume, Repeat and random mode (see documentation)
 - Widget optimization
-- Urgent fix due to a change of URL at Arlo made during the night of June 3 to 4: if you do not do this update the demon will no longer receive the events (even if it is _OK_) and it won't be able to connect anymore soon probably.
+- Fix management of the modes on the Arlo Baby which were not always correctly created
 - 2020-05-24
 
 # It is necessary to launch the installation of dependencies after installing this update even if they are already _OK_.

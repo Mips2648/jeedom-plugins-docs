@@ -95,7 +95,7 @@ Plugin allowing custom log management in your scenarios. It is possible to creat
 
 Plugin allowing to integrate all appliances compatible with Miel@Home.
 
-Plugin to connect to the MyAudi platform allowing to recover the cars which are compatible.
+It is possible to get appliances information, to monitor them and execute some actions (depending the appliance). 
 
 - [Documentation]({{site.baseurl}}/miele/{{page.lang}})
 - [Changelog]({{site.baseurl}}/miele/{{page.lang}}/changelog)

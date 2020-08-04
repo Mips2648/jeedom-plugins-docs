@@ -39,8 +39,8 @@ pluginId: vmczehnder
 # 2019-03-15
 
 - Add local dependencies management
-- Add socat management on remote pi (to connect CCEase/comfoSense module)
-- 2019-03-02
+- Change sync with VMC every minute instead of 5 minutes
+- Improve daemon management
 - Reduce CPU usage of remote daemon
 - Add automatic update of remote daemon after plugin update
 - Add socat management on remote pi (to connect CCEase/comfoSense module)

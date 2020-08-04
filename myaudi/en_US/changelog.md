@@ -1,11 +1,15 @@
 ---
 layout: default
-title: MyAudi changelog 
+title: MyAudi changelog
 lang: en_US
 pluginId: myaudi
 ---
 
-# 2020-06-02
+# 2020-07-13
+
+- Add an info command providing the last known localization of the vehicle
+
+# Add an option to display the map with the localization on the widget (it is necessary to configured a Google maps API key, see documentation for more information)
 
 - Add an info command providing the last known localization of the vehicle
 - Add an option to display the map with the localization on the widget (it is necessary to configured a Google maps API key, see documentation for more information)

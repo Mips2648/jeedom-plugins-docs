@@ -45,7 +45,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 # 2020-03-21
 
-- Fixe un problème de streaming pouvant se produit sur Raspbian Stretch: force l'usage de ffmpeg 4.2.1 car version 4.2.2 semble corrompue (réinstallation des dépendances nécessaires si vous êtes dans le cas)
+- Ajout de la vérification de version ffmpeg dans le check des dépendances
 - 2020-02-14
 
 # Fixe un problème d'affichage sur le mode 'Planning'

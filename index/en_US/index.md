@@ -51,7 +51,7 @@ It is possible to access device data, monitor them and perform actions (dependin
 
 # Gotify
 
-[<img width="77" src="{{site.market}}/filestore/market/plugin/images/hydrao_icon.png">]({{site.baseurl}}/gotify/{{page.lang}})
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/gotify_icon.png">]({{site.baseurl}}/gotify/{{page.lang}})
 
 Plugin to integrate Hydrao shower head
 

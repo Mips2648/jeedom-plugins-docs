@@ -12,7 +12,7 @@ pluginId: myaudi
 # Add an option to display the map with the localization on the widget (it is necessary to configured a Google maps API key, see documentation for more information)
 
 - 2020-04-28
-- Add lock state of doors and trunk
+- Add an option to display the map with the localization on the widget (it is necessary to configured a Google maps API key, see documentation for more information)
 
 # 2020-04-28
 

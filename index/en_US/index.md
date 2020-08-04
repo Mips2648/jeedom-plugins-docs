@@ -137,7 +137,7 @@ The plugin allow to retrieve data of an Solaredge inverter.
 
 Plugin to connect to Portainer. Portainer is a solution to manage containers on docker which can be easily installed in a container.
 
-Plugin allowing the management of a Proxmox server.
+With this plugin, it is possible to retrieve in Jeedom all dockers servers configured in Portainer and so all containers.
 
 - [It is possible to get all resources (nodes, vm, lxc, storage) and all their properties (status, memory, CPU, disk, IP address, up time, snapshots list...).
 The plugin can also start, stop vm and containers and take snapshots and backups.]({{site.baseurl}}/portainer/{{page.lang}})

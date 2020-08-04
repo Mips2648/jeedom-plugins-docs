@@ -85,14 +85,12 @@ The installation will:
 - copy the necessary files to the pi (via SSH)
 - install the dependencies
 
-## Daemon configuration
+![Daemon configuration](../images/daemon_config.png "Daemon configuration")
 
 If the previous step went well, you should see the list of "devices" (usb) connected to your pi, you must select the device connected to the HRV and possibly select the one connected to the CCEease (optional).
 It is not recommended to change the configuration of the TCP ports, only do this if you know what you are doing and you have a problem with usage of these ports; These ports will be used by the remote daemon, on the Raspberry connected to the VMC, not on Jeedom (unless it's the same device).
 
-![Daemon configuration](../images/daemon_config.png "Daemon configuration")
-
-Save your device.
+Save the configuration.
 
 ## Starting the daemon
 
@@ -102,35 +100,32 @@ If all goes well, the status should go green. If not please wait a few minutes i
 
 # HRV configuration
 
-In the tab "HRV configuration" you can see all the configuration of your HRV: model and version, fan speed (configured by your installer) ...
-There is a button to reload the configuration, it can be used whenever necessary without risk.
-
-![HRV configuration](../images/vmc_config.png "HRV configuration")
+HRV configuration
 
 # Commands
 
-All created commands are obviously in the "Commands" tab.
+![HRV configuration](../images/vmc_config.png "HRV configuration")
+
+Commands
+
+- All created commands are obviously in the "Commands" tab.
 There is a button to recreate the missing commands on your device if needed. There is no risk to perform this action, an existing command will never be replaced.
-
 On top of the information commands (current fan speed, measured temperature, etc.) and the refresh command for these information, there are:
-
 - a command for each fan speed (0-absent, 1-low, 2-medium, 3-high) to set the corresponding speed.
-You can use these commands in your scenarios for example to reduce speed in case of absence, vacation or at night or increase it in case of increased humidity in the bathroom and/or kitchen ( via separate sensors).
-- a command to set the comfort temperature, accepting a value between 0 and 40 (° C). The comfort temperature determines whether or not the bypass is used by the VMC (to cool the house in case of overheating, see the VMC manual). It is not recommended to change this value often, the VMC will handle the management once the temperature is set and this temperature is probably already set correctly in your installation.
 
-# Efficiency
+# You can use these commands in your scenarios for example to reduce speed in case of absence, vacation or at night or increase it in case of increased humidity in the bathroom and/or kitchen ( via separate sensors).
 
-The plugin calculates the efficiency of the system via the formula of the efficiency on fresh air: ηt = (T ° C Air insufflated - T ° C New Air) / (T ° C Air Extract - T ° C Air New)
+a command to set the comfort temperature, accepting a value between 0 and 40 (° C). The comfort temperature determines whether or not the bypass is used by the VMC (to cool the house in case of overheating, see the VMC manual). It is not recommended to change this value often, the VMC will handle the management once the temperature is set and this temperature is probably already set correctly in your installation.
 
-The result gives an indication of the clogging of your filters: dirty filters will reduce the efficiency of the HRV.
+Efficiency
 
-# Widget
+# The plugin calculates the efficiency of the system via the formula of the efficiency on fresh air: ηt = (T ° C Air insufflated - T ° C New Air) / (T ° C Air Extract - T ° C Air New)
 
 ![Example](../images/widget.png "Example")
 
 # Changelog
 
-[See changelog](./changelog)
+[See the changelog](./changelog)
 
 # Support
 

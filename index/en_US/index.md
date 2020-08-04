@@ -61,7 +61,7 @@ Plugin allowing Jeedom to act as a Gotify application that can send messages (no
 
 # Hydrao
 
-[<img width="77" src="{{site.market}}/filestore/market/plugin/images/influxdb_icon.png">]({{site.baseurl}}/hydrao/{{page.lang}})
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/hydrao_icon.png">]({{site.baseurl}}/hydrao/{{page.lang}})
 
 Plugin to connect to InfluxDB. It allows to easily send information by simply selecting the corresponding commands in a list. This allow to externalize the history which can then be consulted via Grafana for example.
 

@@ -152,7 +152,7 @@ Plugin allowing the management of a Proxmox server.
 It is possible to get all resources (nodes, vm, lxc, storage) and all their properties (status, memory, CPU, disk, IP address, up time, snapshots list...).
 The plugin can also start, stop vm and containers and take snapshots and backups.
 
-- [The plugin take in charge the ask (in scenarios), interactions and sending of attachments (ex: camera image).]({{site.baseurl}}/proxmox/{{page.lang}})
+- [Documentation]({{site.baseurl}}/proxmox/{{page.lang}})
 - [Documentation]({{site.baseurl}}/proxmox/{{page.lang}}/changelog)
 - Changelog
 

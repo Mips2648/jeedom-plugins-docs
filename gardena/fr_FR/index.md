@@ -18,7 +18,7 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 Dans la configuration du plugin, il faudra renseigner le nom d'utilisateur, ainsi que l'application key permettant l'accès à l’API.
 
-# Les équipements
+# Synchronisation et configuration des équipements
 
 Dès que la configuration du plugin est correcte, le plugin synchronisera.
 Il créera les appareils manquants avec leurs commandes et mettra à jour l'état de tout les appareils connectés.
@@ -29,7 +29,7 @@ Il créera les appareils manquants avec leurs commandes et mettra à jour l'éta
 
 Dans la page de configuration d'un équipement, il existe un bouton pour créer les commandes manquantes sur celui-ci (dans le cas où vous auriez supprimé une commande par erreur par exemple).
 
-# Les commandes
+# Les équipements et leurs commandes
 
 ## Les commandes communes à tous les appareils
 
@@ -81,6 +81,10 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Démarrage mode auto** commande action pour démarrer en mode auto (en suivant la programmation)
 - **Annulation et retour à la base** commande action, la tondeuse redémarrera lors de la prochaine tâche
 - **Stop et retour à la base** commande action, la tondeuse ne redémarrera pas pour la prochaine tâche
+
+## Gardena Smart Irrigation Control
+
+## Husqvarna Automower
 
 # Changelog
 

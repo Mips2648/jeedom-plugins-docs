@@ -42,9 +42,9 @@ Dans la page de configuration d'un équipement, il existe un bouton pour créer 
 Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
 - **Batterie** indique le niveau de charge la batterie (si applicable) en pourcent
-- **Etat batterie** donne une description de l'état de la batterie
+- **Etat batterie** donne une description de l'état de la batterie: *OK*, *LOW*, *REPLACE_NOW*, *OUT_OF_OPERATION*, *CHARGING*, *NO_BATTERY*, *UNKNOWN*
 - **Niveau connexion** indique la niveau de la connexion avec la passerelle en pourcent
-- **Etat connexion** donne une description de l'état de connexion
+- **Etat connexion** donne une description de l'état de connexion: _ONLINE_, _OFFLINE_, _UNKNOWN_
 
 ## Gardena Smart Sensor
 
@@ -97,7 +97,14 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Mode** aura une des valeurs suivantes: *MAIN_AREA*, *DEMO*, *SECONDARY_AREA*, *HOME*, *UNKNOWN* (voir ci-dessous pour une description des valeurs)
 - **Etat** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (voir ci-dessous pour une description des valeurs)
 - **Activité** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (voir ci-dessous pour une description des valeurs)
-- **Erreur** donne la description de l'erreur le cas échéant
+- **Code erreur** & **Description erreur** donne le code et la description de l'erreur le cas échéant
+- **Durée restante** commande info donnant le temps restant d'activité
+- **Démarrage mode manuel** Démarre et tond l'herbe pendant la durée (en minute) donnée en option de la commande
+- **Pause**
+- **Reprendre** Reprend selon la programmation
+- **Retour à la base** Retourne à la base pendant le nombre de minute donnée en option de la commande, reprend la programmation ensuite
+- **Annulation et retour à la base** commande action, la tondeuse redémarrera lors de la prochaine tâche
+- **Stop et retour à la base** commande action, la tondeuse ne redémarrera pas pour la prochaine tâche
 
 ### Description des modes
 

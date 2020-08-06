@@ -80,7 +80,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
 - **Santé** indique l'état général de la tondeuse: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
 - **Activité** indique l'activité en cours: *PAUSED*, *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*, *PARKED_TIMER*, *PARKED_PARK_SELECTED*, *PARKED_AUTOTIMER*, *NONE*
-- **Active** commande binaire indiquant si la tondeuse est active ou non; elle sera indiquée comme active dans lors de ces activités: *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*
+- **Active** commande binaire indiquant si la tondeuse est active ou non; elle sera indiquée comme active lors de ces activités: *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*
 - **Heures de travail** commande info donnant le nombre d'heures de travail
 - **Durée restante** commande info donnant le temps restant d'activité
 - **Démarrage mode manuel** commande action pour démarrer en mode manuel demandant en option le nombre de minute d'activité

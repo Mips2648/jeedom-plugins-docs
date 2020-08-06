@@ -23,9 +23,9 @@ pluginId: fullup
 
 # 2019-01-19
 
-- Added health report
+- Added health page
 - Added history consumption feature: A new screen with graph of consumption based on data available in Fullup platform
-- Added translation files
+- Added translations
 
 # 2018-12-13
 

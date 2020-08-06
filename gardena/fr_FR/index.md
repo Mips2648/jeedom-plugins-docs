@@ -16,12 +16,18 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 # Configuration du plugin
 
-Dans la configuration du plugin, il faudra renseigner le nom d'utilisateur, ainsi que l'application key permettant l'accès à l’API.
+Dans la configuration du plugin, il faudra renseigner le nom d'utilisateur, ainsi que l'application key permettant l'accès aux API.
+Vous devez également sélectionner les services que vous voulez activer parmi les 2 options possibles (les 2 peuvent être activés en même temps):
+
+- Gardena Smart System
+- Husqvarna Automower
 
 # Synchronisation et configuration des équipements
 
-Dès que la configuration du plugin est correcte, le plugin synchronisera.
-Il créera les appareils manquants avec leurs commandes et mettra à jour l'état de tout les appareils connectés.
+Dès que la configuration du plugin est complète et correcte, le plugin synchronisera les équipements selon les services activés.
+Il créera les équipements manquants avec leurs commandes et mettra à jour les commandes de tout les appareils connectés.
+
+Les commandes des équipements de la gamme Gardena Smart System seront mises à jours en temps réel, il n'y a donc pas de configuration supplémentaire à faire.Les tondeuses Husqvarna Automower seront mise à jour chaque minute et une commande **Rafraichir** existe pour demander une actualisation supplémentaire manuelle.
 
 > **Tip**
 >
@@ -60,7 +66,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
 ## Gardena Smart Power Socket
 
-- **Santé** indique l'état général de la prise: : _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Santé** indique l'état général de la prise: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
 - **On** commande action pour allumer la prise
 - **Off** commande action pour éteindre la prise
 - **On minuteur** command action pour allumer la prise avec auto extinction après x minutes (entières) passées en option de la commande
@@ -72,7 +78,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
 ## Gardena Smart Mower
 
-- **Santé** indique l'état général de la tondeuse: : _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Santé** indique l'état général de la tondeuse: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
 - **Activité** indique l'activité en cours: *PAUSED*, *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*, *PARKED_TIMER*, *PARKED_PARK_SELECTED*, *PARKED_AUTOTIMER*, *NONE*
 - **Active** commande binaire indiquant si la tondeuse est active ou non; elle sera indiquée comme active dans lors de ces activités: *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*
 - **Heures de travail** commande info donnant le nombre d'heures de travail
@@ -85,6 +91,45 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 ## Gardena Smart Irrigation Control
 
 ## Husqvarna Automower
+
+- **Connecté** commande info binaire indiquant si la tondeuse est connectée
+- **Batterie** indique le niveau de charge la batterie (si applicable) en pourcent
+- **Mode** aura une des valeurs suivantes: *MAIN_AREA*, *DEMO*, *SECONDARY_AREA*, *HOME*, *UNKNOWN* (voir ci-dessous pour une description des valeurs)
+- **Etat** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (voir ci-dessous pour une description des valeurs)
+- **Activité** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (voir ci-dessous pour une description des valeurs)
+- **Erreur** donne la description de l'erreur le cas échéant
+
+### Description des modes
+
+- *MAIN_AREA* - La tondeuse va tondre, rentrer à la base pour se charger selon son programme.
+- *DEMO* - Identique à *MAIN_AREA* mais moins longtemps. Pas d'activité des lames.
+- *SECONDARY_AREA* - Pas de programmation, la tondeuse est en mode manuel.
+- *HOME* - La tondeuse est sur sa base et la programmation n'est pas appliquée.
+- *UNKNOWN* - Inconnu.
+
+### Description de l'état
+
+- *PAUSED* - La tondeuse est en pause.
+- *IN_OPERATION* - En opération, voir la valeur **Activité**.
+- *WAIT_UPDATING* - La tondeuse télécharge et met à jour le firmware.
+- *WAIT_POWER_UP* - La tondeuse s'allume.
+- *RESTRICTED*` - la tondeuse ne peut pas tondre dû à la programmation ou un stop manuel.
+- *OFF* - La tondeuse est éteinte.
+- *STOPPED* - La tondeuse est arrêtée et demande une intervention manuelle.
+- *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* - Une erreur s'est produite, voir la valeur de **Erreur**. La tondeuse demande une intervention manuelle.
+- *NOT_APPLICABLE* - Pas applicable.
+- *UNKNOWN* - Inconnu.
+
+### Description de l'activité
+
+- *MOWING* - Tonte en cours
+- *GOING_HOME* - Se rend à la base
+- *CHARGING* - Sur la base, en chargement.
+- *LEAVING* - Quitte la base.
+- *PARKED_IN_CS* - Sur la base.
+- *STOPPED_IN_GARDEN* - Tondeuse arrêtée dans le jardin. Action manuelle nécessaire.
+- *NOT_APPLICABLE* - Action manuelle nécessaire.
+- *UNKNOWN* - Inconnu.
 
 # Changelog
 

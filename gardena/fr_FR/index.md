@@ -24,7 +24,7 @@ Vous devez également sélectionner les API que vous voulez activer parmi les 2 
 
 # Synchronisation et configuration des équipements
 
-Dès que la configuration du plugin est complète et correcte, le plugin synchronisera les équipements selon les services activés.
+Dès que la configuration du plugin est complète et correcte, le plugin synchronisera les équipements selon les API activées.
 Il créera les équipements manquants avec leurs commandes et mettra à jour les commandes de tout les appareils connectés.
 
 Les commandes des équipements de la gamme Gardena Smart System seront mises à jours en temps réel, il n'y a donc pas de configuration supplémentaire à faire.Les tondeuses Husqvarna Automower seront mise à jour chaque minute et une commande **Rafraichir** existe pour demander une actualisation supplémentaire manuelle.

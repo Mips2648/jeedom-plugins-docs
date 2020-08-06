@@ -17,7 +17,7 @@ pluginId: arlo
 # 2020-06-18
 
 - Add commands for modes on the widget for the Video Doorbell (when it is not linked to a base)
-- Add commands info _IP_, _Luminosity_, _Temperature_, _Humidity_ and _Quality of air_ on the Arlo Baby
+- Add info commands _IP_, _Luminosity_, _Temperature_, _Humidity_ and _Quality of air_ on the Arlo Baby
 - Add management of the Arlo Baby night light: on / off, timer, brightness, color, color temperature and mode (see documentation)
 - Add the lullaby management of the Arlo Baby: Play / Pause / Next, timer, Playlist, Volume, Repeat and random mode (see documentation)
 - Widget optimization

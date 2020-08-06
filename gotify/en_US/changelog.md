@@ -20,7 +20,7 @@ pluginId: gotify
 
 # 2020-01-19
 
-- Added the possibility of creating several send commands by equipment
+- Added the possibility of creating several send commands by device
 - Added a configuration on each command to choose the priority
 - Added a configuration on each command to choose the format
 - Add a command to delete all messages on the server (you must have configured a client token)

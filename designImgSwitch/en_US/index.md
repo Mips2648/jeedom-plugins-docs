@@ -38,6 +38,8 @@ In normal condition, this command should never be used, background images will b
 
 A info command **Condition** give the last weather condition calculated which will be one of the following value: _Mist_, _Snow_, _Cloud_, _Storm_, _Rain_, _Sun_, _Wind_, _Default_.
 
+An info command ** Phase of the day ** having one of the following values: _Day_, _Night_ depending on the current phase of the day which was used by the plugin to choose the image.
+
 # Changelog
 
 [See the changelog](./changelog)

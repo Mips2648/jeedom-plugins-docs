@@ -56,12 +56,15 @@ Command value | Field(value) | It is the value of the point.
 
 Tags in InfluxDB are optional additional information associated to points.
 Tags can be used in queries to filter result.
-Following tags are systematically associated to each point; this list can be amended if you need more:
+The following tags can be associated with each point sent, they must be selected in the device configuration page.
+This list can be amended if you need more:
 
 Tag(key) | Tag(value)
 - | -
 Plugin | plugin name
-Object | Object/room name in Jeedom or "None".
+Object | Object/room name in Jeedom or "None"
+CommandName | command name
+GenericType | generic type of command
 
 # Changelog
 

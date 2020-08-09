@@ -38,6 +38,8 @@ A priori celle-ci ne doit jamais être utilisée, les images de fonds seront dé
 
 Une commande info **Condition** donne la dernière condition météo calculée qui vaudra une des valeurs suivantes: _Brume_, _Neige_, _Nuage_, _Orage_, _Pluie_, _Soleil_, _Vent_, _Défaut_.
 
+Une commande info **Phase du jour** vaudra une des valeurs suivantes: _Jour_, _Nuit_ en fonction de la phase du jour actuelle qui a servi au plugin pour choisir l'image.
+
 # Changelog
 
 [Voir le changelog](./changelog)

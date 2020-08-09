@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: designImgSwitch
 ---
 
+# 2020-08-09
+
+- Fix un problème sur la mise à jour du design en fonction du changement jour/nuit
+
 # 2020-05-31
 
 - Ajout d'une commande info _Condition_

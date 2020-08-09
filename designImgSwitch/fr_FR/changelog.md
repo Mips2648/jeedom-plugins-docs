@@ -8,6 +8,7 @@ pluginId: designImgSwitch
 # 2020-08-09
 
 - Fix un problème sur la mise à jour du design en fonction du changement jour/nuit
+- Ajout d'une commande info _Phase du jour_
 
 # 2020-05-31
 

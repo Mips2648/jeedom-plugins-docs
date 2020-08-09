@@ -8,7 +8,7 @@ pluginId: gardena
 # Description
 
 Plugin permettant d'intégrer tous les appareils de la gamme Gardena Smart System (Water Control, sensor, irrigation control, power socket et Sileno mower) ainsi que les robots Husqvarna Automower.
-Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil)
+Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil, voir ci-dessous pour plus de détails)
 
 # Installation
 
@@ -71,7 +71,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Off** commande action pour éteindre la prise
 - **On minuteur** command action pour allumer la prise avec auto extinction après x minutes (entières) passées en option de la commande
 - **Activité** indique l'activité en cours: *OFF*, *FOREVER_ON*, *TIME_LIMITED_ON*, *SCHEDULED_ON*
-- **Etat** commande info indiquant si la prise est allumée ou éteinte
+- **Etat** commande info binaire indiquant si la prise est allumée ou éteinte
 - **Durée restante** commande info donnant le temps restant de la minuterie (si applicable)
 - **Pause programmation** commande action
 - **Reprise programmation** commande action
@@ -89,6 +89,8 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Stop et retour à la base** commande action, la tondeuse ne redémarrera pas pour la prochaine tâche
 
 ## Gardena Smart Irrigation Control
+
+- **Santé** indique l'état général: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
 
 ## Husqvarna Automower
 
@@ -114,7 +116,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - *HOME* - La tondeuse est sur sa base et la programmation n'est pas appliquée.
 - *UNKNOWN* - Inconnu.
 
-### Description de l'état
+### Description des états
 
 - *PAUSED* - La tondeuse est en pause.
 - *IN_OPERATION* - En opération, voir la valeur **Activité**.
@@ -127,7 +129,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - *NOT_APPLICABLE* - Pas applicable.
 - *UNKNOWN* - Inconnu.
 
-### Description de l'activité
+### Description des activités
 
 - *MOWING* - Tonte en cours
 - *GOING_HOME* - Se rend à la base

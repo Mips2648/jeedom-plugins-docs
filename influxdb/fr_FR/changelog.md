@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
+# 2020-08-09
+
+- Ajout de la possibilité de définir un nom de mesure et de clé personnalisé pour chaque commande (à configurer dans la liste des commandes)
+- Ajout d'une configuration sur l'équipement permettant de choisir les tags à envoyer avec chaque point
+- Ajout des tags (en option) "Nom de la commande" (*CommandName*) et "Type générique de la commande" (*GenericType*)
+
 # 2020-05-03
 
 - Ajout du bouton "Dupliquer" un équipement

@@ -5,6 +5,11 @@ lang: en_US
 pluginId: designImgSwitch
 ---
 
+# 2020-08-09
+
+- Fixed an issue on updating the design based on the day / night change
+- Add an info command _Phase of the day_
+
 # 2020-05-31
 
 - Add an info command _Condition_

@@ -5,6 +5,12 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2020-08-09
+
+- Added possibility to define a personalized name of measurement and key for each command (to be configured in the list of commands)
+- Added a configuration on the device allowing to choose the tags to send with each point
+- Added tags (in option) "Command name" (*CommandName*) and "Generic type of command" (*GenericType*)
+
 # 2020-05-03
 
 - Add "Duplicate" button on device configuration

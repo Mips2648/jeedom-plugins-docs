@@ -25,7 +25,7 @@ You must also select the API you want to activate among the 2 possible options (
 
 # Device synchronization and configuration
 
-As soon as the plugin configuration is complete and correct, the plugin will synchronize the devices according to the activated API. 
+As soon as the plugin configuration is complete and correct, the plugin will synchronize the devices according to the activated API.
 It will create the missing devices with their commands and update the commands of all connected devices.
 
 The commands of the Gardena Smart System devices will be updated in real time, so there is no additional configuration to do. Husqvarna Automower mowers will be updated every minute and a **Refresh** command exists to request manually an additional update.

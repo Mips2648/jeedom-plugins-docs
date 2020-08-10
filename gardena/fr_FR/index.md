@@ -122,7 +122,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - *IN_OPERATION* - En opération, voir la valeur **Activité**.
 - *WAIT_UPDATING* - La tondeuse télécharge et met à jour le firmware.
 - *WAIT_POWER_UP* - La tondeuse s'allume.
-- *RESTRICTED*` - la tondeuse ne peut pas tondre dû à la programmation ou un stop manuel.
+- *RESTRICTED* - la tondeuse ne peut pas tondre dû à la programmation ou un stop manuel.
 - *OFF* - La tondeuse est éteinte.
 - *STOPPED* - La tondeuse est arrêtée et demande une intervention manuelle.
 - *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* - Une erreur s'est produite, voir la valeur de **Erreur**. La tondeuse demande une intervention manuelle.

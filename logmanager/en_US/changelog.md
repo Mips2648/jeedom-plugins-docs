@@ -5,6 +5,10 @@ lang: en_US
 pluginId: logmanager
 ---
 
+# 2020-08-15
+
+- Deletion of the corresponding log file when deleting the device
+
 # 2020-07-04
 
 - Add commands **Empty** and **Delete**

@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
+# 2020-08-15
+
+- Fix: l'envoi en temps réel ne fonctionnait pas après une désactivation et réactivation du plugin (sauf en re-sauvant l'équipement correspondant)
+
 # 2020-08-09
 
 - Ajout de la possibilité de définir un nom de mesure et de clé personnalisé pour chaque commande (à configurer dans la liste des commandes)

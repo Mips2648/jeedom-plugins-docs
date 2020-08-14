@@ -5,6 +5,10 @@ lang: en_US
 pluginId: rocketchat
 ---
 
+# 2020-08-15
+
+- Force configuration of the API key in localhost mode
+
 # 2020-05-03
 
 - Add "Duplicate" button on device configuration

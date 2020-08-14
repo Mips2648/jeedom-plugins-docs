@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2020-08-xx
+
+- Force la configuration de la clé API en mode localhost
+
 # 2020-08-02
 
 - Fix les fonctionnalités de streaming et d'enregistrements locaux cassés suite à un changent d'Arlo (leur nouveau système semble plus lent qu'avant)

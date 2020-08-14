@@ -31,11 +31,29 @@ Deux options existent pour rapatrier dans Jeedom les logs de sorties stdout et s
 
 ## Docker
 
-Sur les équipements de type Docker, il existe des commandes info donnant le nombre de CPU et la mémoire totale ainsi sur le nombre de containers allumés et éteints.
+Sur les équipements de type Docker, il existe les commandes info suivantes:
+
+- **Nombre de CPU** donne le nombre de CPU de la machine
+- **Mémoire** donne la mémoire totale de la machine en bytes
+- **Nombre de containers allumés**
+- **Nombre de containers éteints**
 
 ## Container
 
-Sur les équipements de type Container, il existe une commande info donnant le status du container, la date du dernier démarrage ainsi que de la dernière extinction et des commandes actions pour démarrer, arrêter, redémarrer, mettre en pause ainsi que tuer le container.
+Sur les équipements de type Container, il existe les commandes info suivantes:
+
+- **Statut**
+- **Dernier démarrage** la date du dernier démarrage
+- **Dernier arrêt** la dernière extinction
+
+et des commandes actions:
+
+- **Démarrer**
+- **Arrêter**
+- **Redémarrer**
+- **Pause**
+- **Reprendre**
+- **Tuer**
 
 # Changelog
 

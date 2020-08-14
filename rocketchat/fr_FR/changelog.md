@@ -7,7 +7,7 @@ pluginId: rocketchat
 
 # 2020-08-15
 
-- Configure la clé API en mode localhost
+- Force la configuration de la clé API en mode localhost
 
 # 2020-05-03
 

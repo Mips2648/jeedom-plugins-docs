@@ -13,6 +13,7 @@ pluginId: portainer
 - Lorsqu'un container est détruit et recréé sur Docker, le plugin ne créera plus un nouvel équipement Jeedom mais mettra à jour l'équipement existant s'il le retrouve (le nouveau container doit avoir le même nom et se trouver sur la même instance Docker que l'ancien); cela aussi réduira fortement la maintenance à effectuer côté Jeedom.
 - Ajout de commandes infos réseau sur les containers (IP, MAC, gateway, ports)
 - Lors de la suppression d'un équipement jeedom, les logs correspondant aux containers seront également supprimés de votre Jeedom afin de faciliter la maintenance.
+- L'équipement de type "Docker" aura une icône différente des équipements de type "Container" pour augmenter la visibilité.
 
 # 2020-03-30
 

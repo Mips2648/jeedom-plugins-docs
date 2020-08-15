@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: gardena
 ---
 
-# 2020-08-xx
+# 2020-08-16
 
 Première version
 

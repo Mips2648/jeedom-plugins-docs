@@ -14,6 +14,10 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
+> **Important**
+>
+> Debian 8 (Jessie) n'étant plus supporté par Debian, le plugin ne fonctionnera pas sous Jessie car il est nécessaire d'installer des dépendances qui ne sont plus disponibles sur cette version.
+
 # Configuration du plugin
 
 Dans la configuration du plugin, il faudra renseigner le nom d'utilisateur, le mot de passe ainsi que l'application key permettant l'accès aux API.
@@ -21,6 +25,8 @@ Vous devez également sélectionner les API que vous voulez activer parmi les 2 
 
 - Gardena Smart System
 - Husqvarna Automower
+
+Vous trouverez plus d'information directement disponible sur la page de configuration du plugin.
 
 # Synchronisation et configuration des équipements
 
@@ -90,7 +96,21 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
 ## Gardena Smart Irrigation Control
 
-- **Santé** indique l'état général: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+L'équipement permet de contrôler jusqu'à 6 valves 24v. Il disposent des commandes suivantes:
+
+- **Santé contrôleur** indique l'état général du contrôleur: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Arrêter toutes les valves** permet d'arrêter l'arrosage de toutes les valves en une commande, l'arrosage reprendra à la prochaine programmation
+
+Ainsi que des commandes suivantes pour chacune des valves (où X aura une valeur de 1 à 6 donc):
+
+- **Activité valve X** indique l'activité en cours: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
+- **Etat valve X** commande info binaire indiquant si la valve est ouverte ou fermée
+- **Santé valve X** indique l'état général de la prise: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Démarrer valve X** commande action pour démarrer l'arrosage demandant en option le nombre de minute (entière) d'arrosage
+- **Arrêter valve X** commande action pour arrêter l'arrosage
+- **Durée restante valve X** commande info donnant le temps restant (en minute) lorsque l'arrosage est en cours
+- **Pause programmation valve X** commande action
+- **Reprise programmation valve X** commande action
 
 ## Husqvarna Automower
 

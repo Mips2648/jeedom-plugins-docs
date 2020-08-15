@@ -5,6 +5,10 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2020-08-15
+
+- Fix: real-time sending did not work after deactivating and reactivating the plugin (except when saving again the corresponding device)
+
 # 2020-08-09
 
 - Added possibility to define a personalized name of measurement and key for each command (to be configured in the list of commands)

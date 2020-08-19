@@ -101,7 +101,7 @@ L'équipement permet de contrôler jusqu'à 6 valves 24v. Il dispose des command
 - **Santé contrôleur** indique l'état général du contrôleur: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
 - **Arrêter toutes les valves** permet d'arrêter l'arrosage de toutes les valves en une commande, l'arrosage reprendra à la prochaine programmation
 
-Ainsi que des commandes suivantes pour chacune des valves (où X aura une valeur de 1 à 6 donc):
+Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une valeur de 1 à 6):
 
 - **Activité valve X** indique l'activité en cours: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
 - **Etat valve X** commande info binaire indiquant si la valve est ouverte ou fermée

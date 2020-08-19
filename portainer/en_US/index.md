@@ -30,11 +30,29 @@ There are two options to get the output logs stdout and stderr to Jeedom. If the
 
 ## Docker
 
-On Docker type device, there are info commands giving the number of CPUs and total memory, as well as the number of containers switched on and off.
+On device of type Docker, there are the following info commands:
+
+- **Number of CPU** gives the number of CPU of the machine
+- **Memory** gives the total memory of the machine in bytes
+- **Number of containers running**
+- **Number of containers stopped**
 
 ## Container
 
-On Container type device, there is an info command giving the status of the container, the date of the last start-up as well as the last shutdown and action commands to start, stop, restart, pause and kill the container.
+On device of type Container, there are the following info commands:
+
+- **Status**
+- **Last start** the date of the last start
+- **Last shutdown** last shutdown
+
+and actions commands:
+
+- **Start**
+- **Stop**
+- **Restart**
+- **Pause**
+- **Unpause**
+- **Kill**
 
 # Changelog
 

@@ -40,11 +40,11 @@ On top of the usual device configurations, you must configure:
 
 ## Pause entre 2 évaluations
 
-Cela permet de configurer le temps de pause entre 2 évaluations de la conditions lors d'envoi de messages successifs si par exemple le retour d'état d'une commande prend du temps.
+This allows to configure a pause time between 2 evaluations of the condition when sending successive messages if, for example, the feedback of a command takes time to update the status.
 
 ## Pause dynamique entre 2 messages (TTS)
 
-Si activer, le plugin va calculer le temps de lecture du message. Pour cela il compte le nombre de syllabes totales et multiplie ce nombre par un temps de lecture moyen par syllabes. Vous pouvez adapter ce temps en fonction de votre périphérique TTS dans la configuration de l'équipement.
+If enabled, the plugin will calculate the reading time of the message. To do this, he counts the number of total syllables and multiplies this number by an average reading time per syllable. You can adapt this time according to your TTS device in the device configuration.
 
 ## Doublon
 
@@ -60,18 +60,21 @@ It is possible to configure a sending delay (in seconds) of notifications during
 
 ## Délai d'expiration
 
-Il est possible de configurer un délai d'expiration des notifications (en minute). Passé ce délai la notification ne sera plus envoyée si la condition n'a pas été remplie avant.
+It is possible to configure a notification expiration time (in minutes). After this period, the notification will no longer be sent if the condition has not been fulfilled until then.
 
 # Some principles
 
-- The order in which notifications are sent is guaranteed (FIFO, first notification received, first notification returned), exception depending on the configuration of the duplicates.
-- If a problem is detected during the return (not always possible), the message is put back at the end of the queue for a new try later.
-- The plugin automatically checks the condition of each queue every minute, each time new messages are added when an info command used in the condition changes values (same principle as scenario triggers)
+- The order in which notifications are sent is guaranteed (FIFO, first notification received, first notification send), exception depending on the configuration of the duplicates.
+- If a problem is detected during the send (not always possible), the message is put back at the end of the queue for a new try later.
+- The plugin automatically checks the condition of each queue:
+  - every minute,
+  - each time new messages are added and
+  - when the value of an info command used in the condition changes (same principle as scenario triggers)
 - the ask is managed by the plugin (the notification command used then must also manage it)
 
 # Commands
 
-- **Add** allows you to add a message to the queue, the condition will be evaluated immediately and all messages will then be sent (in order)
+- **Add** allows you to add a message to the queue, the condition will be evaluated immediately and all messages will then be sent (in order) if it is fulfilled
 - **Empty** empty the queue.
 - **Check and send** allows you to manually trigger the condition check and send messages if it is valid
 - **Force send** allows to force the immediate sending of all messages regardless of the condition (but taking into account the sending delay)

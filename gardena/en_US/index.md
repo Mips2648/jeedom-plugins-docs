@@ -15,6 +15,10 @@ It is possible to access device data, monitor them and perform actions (dependin
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 
+> **Important**
+>
+> Debian 8 (Jessie) is no longer supported by Debian, the plugin will not work under Jessie because it is necessary to install dependencies which are no longer available on this version.
+
 # Plugin configuration
 
 In the plugin configuration, you shall enter your username, password and application key to access the API.
@@ -22,6 +26,8 @@ You must also select the API you want to activate among the 2 possible options (
 
 - Gardena Smart System
 - Husqvarna Automower
+
+You will find more information directly available on the plugin configuration page.
 
 # Device synchronization and configuration
 
@@ -91,7 +97,21 @@ Each Gardena Smart System device has the following commands:
 
 ## Gardena Smart Irrigation Control
 
-- **Health** indicates the general condition: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+The device can control up to 6 24v valves. It has the following commands:
+
+- **Controller health** indicates the general condition of controller: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Stop all valves** allows you to stop watering all valves in one command, watering will resume at the next schedule
+
+As well as the following commands for each of the valves (where X will therefore have a value from 1 to 6):
+
+- **Activity valve X** indicates the current activity: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
+- **Status valve X** binary info command indicating whether the valve is open or closed
+- **Health valve X** indicates the general condition of the power socket: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Start valve X** action command to start watering, needing the number of minutes (full) of watering in parameter
+- **Stop valve X** action command to stop watering
+- **Remaining time valve X** info command giving the remaining time (in minutes) when watering is in progress
+- **Pause schedule valve X** action command
+- **Resume schedule valve X** action command
 
 ## Husqvarna Automower
 

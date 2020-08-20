@@ -5,9 +5,10 @@ lang: fr_FR
 pluginId: gardena
 ---
 
-# 2020-08-19
+# 2020-08-20
 
 - Amélioration du processus de reconnexion en cas de coupure réseau ou de déconnexion de l'API par Gardena
+- Nettoyage de la mise en page pour la V4
 
 # 2020-08-16
 

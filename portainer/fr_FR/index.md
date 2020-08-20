@@ -7,21 +7,23 @@ pluginId: portainer
 
 # Description
 
-Plugin permettant la connexion à un serveur Portainer. Portainer est une solution de gestion de container sous docker qui peut elle même s'installer très facilement dans un container.
-Via ce plugin, il est possible de récupérer dans jeedom tous les dockers configurés sous Portainer ainsi que tous les containers.
+Plugin permettant la connexion à un serveur Portainer.io. Portainer.io est une solution de gestion de container sous docker qui peut elle même s'installer très facilement dans un container.
+Via ce plugin, il est possible de récupérer dans jeedom tous les dockers configurés sous Portainer.io ainsi que tous leurs containers.
 
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
-Il est nécessaire de déjà avoir un serveur Portainer, les différentes solutions pour cela sont très bien documentée sur leur site.
+Il est nécessaire de déjà avoir un serveur Portainer.io, les différentes solutions pour cela sont très bien documentée sur leur site.
 
 # Configuration du plugin
 
-Dans la configuration du plugin il faudra renseigner l'URL de portainer sous la forme `http://PORTAINER_SERVER:9000` ainsi qu'un nom d'utilisateur et un mot de passe.
+Dans la configuration du plugin il faudra renseigner l'URL de Portainer.io sous la forme `http://PORTAINER_SERVER:9000` ainsi qu'un nom d'utilisateur et un mot de passe.
+
+Vous pouvez également choisir d'activer ou non le panel affichant un aperçu de touts les containers et permettant d'effectuer toutes les actions de base, similaire à la page "Containers" sur Portainer.io.
 
 # Les équipements
 
-Dès qu'un utilisateur sera configuré, le plugin essaiera de se connecter à Portainer toutes les minutes afin de se synchroniser.
+Dès qu'un utilisateur sera configuré, le plugin essaiera de se connecter à Portainer.io toutes les minutes afin de se synchroniser.
 Tous les équipements auxquels le plugin a accès seront automatiquement créés dans Jeedom, il n'est pas possible de créer un équipement manuellement.
 Il est possible de faire une synchronisation manuelle via le bouton dans la page des équipements.
 
@@ -43,6 +45,9 @@ Sur les équipements de type Docker, il existe les commandes info suivantes:
 Sur les équipements de type Container, il existe les commandes info suivantes:
 
 - **Statut**
+- **Adresse IP** du container
+- **Adresse MAC** du container
+- **Passerelle** gateway réseau
 - **Dernier démarrage** la date du dernier démarrage
 - **Dernier arrêt** la dernière extinction
 

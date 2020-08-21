@@ -5,10 +5,10 @@ lang: fr_FR
 pluginId: portainer
 ---
 
-# 2020-08-xx
+# 2020-08-21
 
 - Nouvelle page santé affichant un aperçu de touts les containers et permettant d'effectuer toutes les actions de base (similaire à la page "Containers" sur Portainer)
-- Un nouveau panel (à activer dans la configuration du plugin) reprend les mêmes informations que la page santé.
+- Un nouveau panel (à activer dans la configuration du plugin) reprend les mêmes informations et actions que la page santé.
 - Ajout d'une config sur le plugin permettant de définir l'objet parent par défaut qui sera utilisé lors de la création d'un nouveau container, cela vous évitera d'avoir à systématiquement le faire à la main.
 - Lors d'une synchronisation, le plugin activera et désactivera automatiquement les équipements Jeedom correspondant aux containers selon qu'ils existent ou pas sur Docker afin de faciliter la gestion de vos containers et d'apporter plus de clarté.
 - Lorsqu'un container est détruit et recréé sur Docker, le plugin ne créera plus un nouvel équipement Jeedom mais mettra à jour l'équipement existant s'il le retrouve (le nouveau container doit avoir le même nom et se trouver sur la même instance Docker que l'ancien); cela aussi réduira fortement la maintenance à effectuer côté Jeedom.

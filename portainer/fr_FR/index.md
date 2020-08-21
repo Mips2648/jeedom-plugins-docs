@@ -10,6 +10,8 @@ pluginId: portainer
 Plugin permettant la connexion à un serveur Portainer.io. Portainer.io est une solution de gestion de container sous docker qui peut elle même s'installer très facilement dans un container.
 Via ce plugin, il est possible de récupérer dans jeedom tous les dockers configurés sous Portainer.io ainsi que tous leurs containers.
 
+Le plugin dispose d'une page santé et d'un panel dédié affichant un aperçu de touts les containers et permettant d'effectuer toutes les actions de base, similaire à la page "Containers" sur Portainer.io.
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
@@ -19,7 +21,7 @@ Il est nécessaire de déjà avoir un serveur Portainer.io, les différentes sol
 
 Dans la configuration du plugin il faudra renseigner l'URL de Portainer.io sous la forme `http://PORTAINER_SERVER:9000` ainsi qu'un nom d'utilisateur et un mot de passe.
 
-Vous pouvez également choisir d'activer ou non le panel affichant un aperçu de touts les containers et permettant d'effectuer toutes les actions de base, similaire à la page "Containers" sur Portainer.io.
+Vous pouvez également choisir d'activer ou non le panel.
 
 # Les équipements
 

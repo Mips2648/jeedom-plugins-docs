@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: portainer
 ---
 
-# 2020-08-21
+# 2020-08-22
 
 - Nouvelle page santé affichant un aperçu de touts les containers et permettant d'effectuer toutes les actions de base (similaire à la page "Containers" sur Portainer)
 - Un nouveau panel (à activer dans la configuration du plugin) reprend les mêmes informations et actions que la page santé.

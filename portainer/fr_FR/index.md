@@ -21,7 +21,7 @@ Il est nécessaire de déjà avoir un serveur portainer.io, les différentes sol
 
 Dans la configuration du plugin il faudra renseigner l'URL de portainer sous la forme `http://PORTAINER_SERVER:9000` ainsi qu'un nom d'utilisateur et un mot de passe.
 
-Vous pouvez également choisir d'activer ou non le panel.
+Vous pouvez également choisir d'activer ou non le panel ainsi que l'objet parent qui sera utilisé lors de la création des équipements Jeedom: si un équipement portant le même nom n'existe pas encore sous cet objet, le nouvel équipement Portainer aura comme parent cet objet sinon "Aucun".
 
 # Les équipements
 

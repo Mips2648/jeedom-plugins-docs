@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: stockexchange
 ---
 
+# 2020-08-23
+
+- Maintenance sur les services disponibles: world trading data a été remplacé par marketstack
+- Nettoyage des styles (mise en page) pour la v4
+
 # 2020-05-01
 
 - Fix: en cas de réponse incorrecte reçue du service, ne met pas à jour les valeurs de l'équipement

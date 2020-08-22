@@ -9,7 +9,7 @@ pluginId: gardena
 
 - Amélioration du processus de reconnexion en cas de coupure réseau ou de déconnexion de l'API par Gardena
 - Nettoyage de la mise en page pour la V4
-- Fix un problème de dépendance (pas systématique)
+- Fix un problème de dépendance sur certaines installations
 
 # 2020-08-16
 

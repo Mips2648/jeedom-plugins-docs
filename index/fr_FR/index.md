@@ -134,9 +134,10 @@ Plugin permettant la lecture des données d'un onduleur de panneaux photovoltaï
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/portainer_icon.png">]({{site.baseurl}}/portainer/{{page.lang}})
 
-Plugin permettant la connexion à un serveur Portainer. Portainer est une solution de gestion de container sous docker qui peut elle même s'installer très facilement dans un container.
+Plugin permettant la connexion à un serveur [portainer.io](https://www.portainer.io/portainer-ce/) qui est une solution de gestion de containers sous docker qui peut elle même s'installer très facilement dans un container.
+Via ce plugin, il est possible de récupérer dans jeedom tous les dockers configurés sous [portainer.io](https://www.portainer.io/portainer-ce/) ainsi que tous leurs containers.
 
-Via ce plugin, il est possible de récupérer dans jeedom tous les dockers configurés sous Portainer ainsi que tous les containers.
+Le plugin dispose également d'une page santé et d'un panel dédié affichant un aperçu de tous les containers et permettant d'effectuer toutes les actions de base, similaire à la page "Containers" sur [portainer.io](https://www.portainer.io/portainer-ce/).
 
 - [Documentation]({{site.baseurl}}/portainer/{{page.lang}})
 - [Changelog]({{site.baseurl}}/portainer/{{page.lang}}/changelog)

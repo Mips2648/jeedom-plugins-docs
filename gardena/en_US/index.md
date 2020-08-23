@@ -18,6 +18,8 @@ In order to use the plugin, you must download, install and activate it like any 
 > **Important**
 >
 > Debian 8 (Jessie) is no longer supported by Debian, the plugin will not work under Jessie because it is necessary to install dependencies which are no longer available on this version.
+>
+> If you tried to install the "Gardena Smart System" plugin, you must deactivate it before activating this one. Indeed, a problem in the "Gardena Smart System" plugin create a conflict with this plugin which could make Jeedom unavailable. This problem must be fixed in the other plugin, it is unfortunately impossible for me to avoid it.
 
 # Plugin configuration
 

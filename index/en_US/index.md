@@ -135,9 +135,10 @@ The plugin allow to retrieve data of an Solaredge inverter.
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/portainer_icon.png">]({{site.baseurl}}/portainer/{{page.lang}})
 
-Plugin to connect to Portainer. Portainer is a solution to manage containers on docker which can be easily installed in a container.
+Plugin to connect to [portainer.io](https://www.portainer.io/portainer-ce/) which is a solution to manage containers on docker which can be easily installed in a container.
+With this plugin, it is possible to retrieve in Jeedom all dockers servers configured in [portainer.io](https://www.portainer.io/portainer-ce/) and so all containers.
 
-With this plugin, it is possible to retrieve in Jeedom all dockers servers configured in Portainer and so all containers.
+The plugin has also a health page and a dedicated panel displaying an overview of all containers and allowing you to perform all basic actions, similar to the "Containers" page on [portainer.io] (https://www.portainer.io/portainer-ce/).
 
 - [Documentation]({{site.baseurl}}/portainer/{{page.lang}})
 - [Changelog]({{site.baseurl}}/portainer/{{page.lang}}/changelog)

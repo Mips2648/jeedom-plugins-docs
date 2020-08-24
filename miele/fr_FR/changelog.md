@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: miele
 ---
 
+# 2020-08-24
+
+- Nettoyage de la mise en page pour la V4
+
 # 2020-05-04
 
 - Fix un problème de dépendances sur Jeedom Smart

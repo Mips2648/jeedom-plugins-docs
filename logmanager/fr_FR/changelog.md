@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: logmanager
 ---
 
+# 2020-08-24
+
+- Nettoyage de la mise en page pour la V4
+
 # 2020-08-15
 
 - Suppression du fichier log correspondant lors de la suppression de l'équipement

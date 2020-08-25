@@ -5,9 +5,13 @@ lang: fr_FR
 pluginId: arlo
 ---
 
-# 2020-08-xx
+# 2020-08-26
 
 - Force la configuration de la clé API en mode localhost
+- Rotation automatique de la clé API à chaque mise à jour
+- Nettoyage de la mise en page pour la V4
+- Suppression d'un log "error" de connexion qui n'était pas important (car le démon se reconnecte tout seul si nécessaire)
+- Ajout d'un log si la double authentification est activée sur l'utilisateur du plugin car celle-ci n'est pas encore prise en charge
 
 # 2020-08-02
 

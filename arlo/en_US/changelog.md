@@ -5,6 +5,14 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2020-08-26
+
+- Force configuration of the API key in localhost mode
+- Automatic rotation of the API key on each update
+- Cleanup of the layout for V4
+- Removed an unnecessary "error" log during connection (because the daemon reconnects on its own if necessary)
+- Added a log if double authentication is enabled on the plugin user because it is not yet supported
+
 # 2020-08-02
 
 - Fixed broken streaming and local recording features following Arlo changes (their new system seems slower than before)

@@ -5,6 +5,10 @@ lang: en_US
 pluginId: fullup
 ---
 
+# 2020-08-24
+
+- Cleanup of the layout for V4
+
 # 2020-03-30
 
 - Move documentations

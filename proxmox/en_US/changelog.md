@@ -5,6 +5,13 @@ lang: en_US
 pluginId: proxmox
 ---
 
+# 2020-08-25
+
+- Update of the plugin icon to match the Jeedom standard
+- Add an icon for each type of Proxmox resource for greater clarity
+- During synchronization, the plugin will automatically activate and deactivate Jeedom devices corresponding to Proxmox resources depending on whether they exist or not in order to facilitate management and provide more clarity.
+- Add an accordion menu in the devices page
+
 # 2020-06-09
 
 - Add support for Zstandard compression mode (zstd) in backup options, requires Proxmox 6.2

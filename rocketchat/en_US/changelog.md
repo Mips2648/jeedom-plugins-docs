@@ -5,6 +5,10 @@ lang: en_US
 pluginId: rocketchat
 ---
 
+# 2020-08-24
+
+- Cleanup of the layout for V4
+
 # 2020-08-15
 
 - Force configuration of the API key in localhost mode

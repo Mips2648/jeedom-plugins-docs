@@ -5,6 +5,10 @@ lang: en_US
 pluginId: designImgSwitch
 ---
 
+# 2020-08-24
+
+- Cleanup of the layout for V4
+
 # 2020-08-09
 
 - Fixed an issue on updating the design based on the day / night change

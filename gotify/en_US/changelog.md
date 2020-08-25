@@ -5,6 +5,10 @@ lang: en_US
 pluginId: gotify
 ---
 
+# 2020-08-24
+
+- Cleanup of the layout for V4
+
 # 2020-06-16
 
 - Fix: the message can be empty if a file has been attached

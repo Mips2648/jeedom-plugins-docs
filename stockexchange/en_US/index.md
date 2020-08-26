@@ -47,12 +47,12 @@ The plugin offers a dynamic search function, just start typing the name of a com
 For this type of information, you must choose the original and destination currency.
 The plugin offers a dynamic search function, just start typing the name of a currency or its code and a list of the corresponding currency will be proposed. You just have to choose from these.
 
+![Configuration devise](../images/config_currency.png "Configuration devise")
+
 ## Commodity
 
 For this type of information, you must enter the symbol of the commodity.
 The plugin offers a dynamic search function, just start typing the name of a commodity (minimum 3 characters) or the desired symbol and a list of possibilities will be proposed. You just have to choose from these.
-
-![Configuration devise](../images/config_currency.png "Configuration devise")
 
 # Available commands
 

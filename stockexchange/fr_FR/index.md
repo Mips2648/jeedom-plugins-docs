@@ -47,12 +47,12 @@ Le plugin offre une fonction de recherche dynamique, commencez simplement à tap
 Pour ce type d'information, vous devez choisir la devise d'origine et de destination.
 Le plugin offre une fonction de recherche dynamique, commencez simplement à taper le nom d'une devise ou son code et une liste des devise correspondante sera proposée. Vous n'avez plus qu'à choisir parmi celles-ci.
 
+![Configuration devise](../images/config_currency.png "Configuration devise")
+
 ## Matière première
 
 Pour ce type d'information, vous devez renseigner le symbole de la matière première.
 Le plugin offre une fonction de recherche dynamique, commencez simplement à taper le nom d'une matière première (minimum 3 caractères) ou le symbole voulu et une liste de possibilités sera proposée. Vous n'avez plus qu'à choisir parmi celles-ci.
-
-![Configuration devise](../images/config_currency.png "Configuration devise")
 
 # Les commandes disponibles
 

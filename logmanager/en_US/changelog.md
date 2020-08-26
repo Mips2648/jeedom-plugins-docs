@@ -5,6 +5,10 @@ lang: en_US
 pluginId: logmanager
 ---
 
+# 2020-08-24
+
+- Cleanup of the layout for V4
+
 # 2020-08-15
 
 - Deletion of the corresponding log file when deleting the device

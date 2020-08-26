@@ -89,12 +89,74 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Santé** indique l'état général de la tondeuse: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
 - **Activité** indique l'activité en cours: *PAUSED*, *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*, *PARKED_TIMER*, *PARKED_PARK_SELECTED*, *PARKED_AUTOTIMER*, *NONE*
 - **Active** commande binaire indiquant si la tondeuse est active ou non; elle sera indiquée comme active lors de ces activités: *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*
-- **Description erreur** donne la description de l'erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_
+- **Description erreur** donne la description de l'erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_ (voir ci-dessous pour une liste des valeurs possibles)
 - **Heures de travail** commande info donnant le nombre d'heures de travail
 - **Démarrage mode manuel** commande action pour démarrer en mode manuel demandant en option le nombre de minute d'activité
 - **Démarrage mode auto** commande action pour démarrer en mode auto (en suivant la programmation)
 - **Annulation et retour à la base** commande action, la tondeuse redémarrera lors de la prochaine tâche
 - **Stop et retour à la base** commande action, la tondeuse ne redémarrera pas pour la prochaine tâche
+
+### Description des erreurs
+
+- *NO_MESSAGE* - pas d'explication fournie
+- *OUTSIDE_WORKING_AREA* - En dehors de la zone de travail
+- *NO_LOOP_SIGNAL* - Pas de signal du câble périphérique
+- *WRONG_LOOP_SIGNAL* - Mauvais signal du câble périphérique
+- *LOOP_SENSOR_PROBLEM_FRONT* - Problème sur le capteur de câble avant
+- *LOOP_SENSOR_PROBLEM_REAR* - Problème sur le capteur de câble arrière
+- *LOOP_SENSOR_PROBLEM_LEFT* - Problème sur le capteur de câble gauche
+- *LOOP_SENSOR_PROBLEM_RIGHT* - Problème sur le capteur de câble droit
+- *WRONG_PIN_CODE* - Mauvais code PIN
+- *TRAPPED* - Coincé
+- *UPSIDE_DOWN* - Retourné.
+- *EMPTY_BATTERY* - Batterie vide
+- *NO_DRIVE* - Pas de câble guide
+- *TEMPORARILY_LIFTED* - Tondeuse soulevée
+- *LIFTED* - Soulevé
+- *STUCK_IN_CHARGING_STATION* - Coincé dans la station de chargement
+- *CHARGING_STATION_BLOCKED* - Station de chargement bloquée
+- *COLLISION_SENSOR_PROBLEM_REAR* - Problème sur le capteur de collision arrière
+- *COLLISION_SENSOR_PROBLEM_FRONT* - Problème sur le capteur de collision avant
+- *WHEEL_MOTOR_BLOCKED_RIGHT* - Roue moteur droite bloquée
+- *WHEEL_MOTOR_BLOCKED_LEFT* - Roue moteur gauche bloquée
+- *WHEEL_DRIVE_PROBLEM_RIGHT* - Problème sur la roue de direction droite
+- *WHEEL_DRIVE_PROBLEM_LEFT* - Problème sur la roue de direction gauche
+- *CUTTING_MOTOR_DRIVE_DEFECT* - Motorisation du système de coupe défectueux
+- *CUTTING_SYSTEM_BLOCKED* - Système de coupe bloqué
+- *INVALID_SUB_DEVICE_COMBINATION* -
+- *MEMORY_CIRCUIT_PROBLEM* - Problème avec le circuit mémoire
+- *CHARGING_SYSTEM_PROBLEM* - Problème avec le système de chargement
+- *STOP_BUTTON_PROBLEM* - Problème avec le bouton STOP
+- *TILT_SENSOR_PROBLEM* - Problème avec le capteur d'inclinaison
+- *MOWER_TILTED* - Tondeuse inclinée
+- *WHEEL_MOTOR_OVERLOADED_RIGHT* -
+- *WHEEL_MOTOR_OVERLOADED_LEFT* -
+- *CHARGING_CURRENT_TOO_HIGH* -
+- *ELECTRONIC_PROBLEM* - Problème électronique.
+- *CUTTING_MOTOR_PROBLEM* -
+- *LIMITED_CUTTING_HEIGHT_RANGE* -
+- *CUTTING_HEIGHT_PROBLEM_DRIVE* -
+- *CUTTING_HEIGHT_PROBLEM_CURR* -
+- *CUTTING_HEIGHT_PROBLEM_DIR* -
+- *CUTTING_HEIGHT_BLOCKED* -
+- *CUTTING_HEIGHT_PROBLEM* -
+- *BATTERY_PROBLEM* - Problème batterie
+- *TOO_MANY_BATTERIES* - Trop de batteries
+- *ALARM_MOWER_SWITCHED_OFF* - Alarme, tondeuse éteinte
+- *ALARM_MOWER_STOPPED* - Alarme, tondeuse arrêtée
+- *ALARM_MOWER_LIFTED* - Alarme, tondeuse soulevée
+- *ALARM_MOWER_TILTED* - Alarme, tondeuse inclinée
+- *ALARM_MOWER_IN_MOTION* - Alarme, tondeuse en mouvement
+- *ALARM_OUTSIDE_GEOFENCE* - Alarme, tondeuse en dehors de la barrière virtuelle
+- *SLIPPED* - La tondeuse a dérapé
+- *INVALID_BATTERY_COMBINATION* - Combinaison de batterie de différent type invalide
+- *UNINITIALISED* - Status de la tondeuse inconnu
+- *WAIT_UPDATING* - Tondeuse en attente d'installation du firmware
+- *WAIT_POWER_UP* - Tondeuse s'allume
+- *OFF_DISABLED* - Tondeuse désactivée via l'interrupteur principal
+- *OFF_HATCH_OPEN* - Tondeuse en attente avec son capot ouvert
+- *OFF_HATCH_CLOSED* - Tondeuse en attente avec son capot fermé
+- *PARKED_DAILY_LIMIT_REACHED* - Tondeuse parquée, limite de coupe journalière atteinte
 
 ## Gardena Smart Irrigation Control
 

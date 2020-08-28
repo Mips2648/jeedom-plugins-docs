@@ -64,6 +64,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 ## Gardena Smart Water Control
 
 - **Santé** indique l'état général de la valve: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_ (voir ci-dessous pour une liste des valeurs possibles)
 - **Activité** indique l'activité en cours: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
 - **Etat** commande info binaire indiquant si la valve est ouverte ou fermée
 - **Démarrer** commande action pour démarrer l'arrosage demandant en option le nombre de minute (entière) d'arrosage
@@ -75,6 +76,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 ## Gardena Smart Power Socket
 
 - **Santé** indique l'état général de la prise: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_; peut avoir la valeur: *TIMER_CANCELLED*, *UNKNOWN*
 - **On** commande action pour allumer la prise
 - **Off** commande action pour éteindre la prise
 - **On minuteur** command action pour allumer la prise avec auto extinction après x minutes (entières) passées en option de la commande
@@ -89,16 +91,69 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Santé** indique l'état général de la tondeuse: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
 - **Activité** indique l'activité en cours: *PAUSED*, *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*, *PARKED_TIMER*, *PARKED_PARK_SELECTED*, *PARKED_AUTOTIMER*, *NONE*
 - **Active** commande binaire indiquant si la tondeuse est active ou non; elle sera indiquée comme active lors de ces activités: *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*
-- **Description erreur** donne la description de l'erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_ (voir ci-dessous pour une liste des valeurs possibles)
+- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_ (voir ci-dessous pour une liste des valeurs possibles)
 - **Heures de travail** commande info donnant le nombre d'heures de travail
 - **Démarrage mode manuel** commande action pour démarrer en mode manuel demandant en option le nombre de minute d'activité
 - **Démarrage mode auto** commande action pour démarrer en mode auto (en suivant la programmation)
 - **Annulation et retour à la base** commande action, la tondeuse redémarrera lors de la prochaine tâche
 - **Stop et retour à la base** commande action, la tondeuse ne redémarrera pas pour la prochaine tâche
 
-### Description des erreurs
+## Gardena Smart Irrigation Control
 
-- *NO_MESSAGE* - pas d'explication fournie
+L'équipement permet de contrôler jusqu'à 6 valves 24v. Il dispose des commandes suivantes:
+
+- **Santé contrôleur** indique l'état général du contrôleur: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_ (voir ci-dessous pour une liste des valeurs possibles)
+- **Arrêter toutes les valves** permet d'arrêter l'arrosage de toutes les valves en une commande, l'arrosage reprendra à la prochaine programmation
+
+Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une valeur de 1 à 6):
+
+- **Activité valve X** indique l'activité en cours: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
+- **Etat valve X** commande info binaire indiquant si la valve est ouverte ou fermée
+- **Santé valve X** indique l'état général de la prise: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Démarrer valve X** commande action pour démarrer l'arrosage demandant en option le nombre de minute (entière) d'arrosage
+- **Arrêter valve X** commande action pour arrêter l'arrosage
+- **Durée restante valve X** commande info donnant le temps restant (en minute) lorsque l'arrosage est en cours
+- **Pause programmation valve X** commande action
+- **Reprise programmation valve X** commande action
+
+## Husqvarna Automower
+
+- **Connecté** commande info binaire indiquant si la tondeuse est connectée
+- **Batterie** indique le niveau de charge la batterie (si applicable) en pourcent
+- **Mode** aura une des valeurs suivantes: *MAIN_AREA*, *DEMO*, *SECONDARY_AREA*, *HOME*, *UNKNOWN* (voir ci-dessous pour une description des valeurs)
+- **Etat** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (voir ci-dessous pour une description des valeurs)
+- **Activité** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (voir ci-dessous pour une description des valeurs)
+- **Code erreur** & **Description erreur** donne le code et la description de l'erreur le cas échéant
+- **Durée restante** commande info donnant le temps restant d'activité
+- **Démarrage mode manuel** Démarre et tond l'herbe pendant la durée (en minute) donnée en option de la commande
+- **Pause**
+- **Reprendre** Reprend selon la programmation
+- **Retour à la base** Retourne à la base pendant le nombre de minute donnée en option de la commande, reprend la programmation ensuite
+- **Annulation et retour à la base** commande action, la tondeuse redémarrera lors de la prochaine tâche
+- **Stop et retour à la base** commande action, la tondeuse ne redémarrera pas pour la prochaine tâche
+
+# Annexes
+
+## Description des erreurs pour les valves Gardena Smart System (Water Control ou Irrigation Control)
+
+- *NO_MESSAGE* - pas d'erreur
+- *CONCURRENT_LIMIT_REACHED* - Ouverture de la valve impossible, un maximum de 2 valves peuvent être ouverte en même temps
+- *NOT_CONNECTED* - Aucune valve connectée
+- *VALVE_CURRENT_MAX_EXCEEDED* - La valve a été fermée car elle avait une consommation électrique excessive
+- *TOTAL_CURRENT_MAX_EXCEEDED* - La valve a été fermée car la consommation électrique totale était trop importante
+- *WATERING_CANCELED* - Arrosage annulé
+- *MASTER_VALVE* - La valve principale n'est pas connectée
+- *WATERING_DURATION_TOO_SHORT* - Durée d'arrosage trop courte, arrosage annulé
+- *VALVE_BROKEN* - La connection électrique avec la valve est interrompue
+- *FROST_PREVENTS_STARTING* - Le givre empêche l'ouverture de la valve
+- *LOW_BATTERY_PREVENTS_STARTING* - Batterie faible, impossible d'ouvrir la valve
+- *VALVE_POWER_SUPPLY_FAILED* - Problème d'alimentation électrique, impossible d'ouvrir la valve
+- *UNKNOWN* - Inconnu
+
+## Description des erreurs du Gardena Smart Mower
+
+- *NO_MESSAGE* - pas d'erreur
 - *OUTSIDE_WORKING_AREA* - En dehors de la zone de travail
 - *NO_LOOP_SIGNAL* - Pas de signal du câble périphérique
 - *WRONG_LOOP_SIGNAL* - Mauvais signal du câble périphérique
@@ -158,41 +213,15 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - *OFF_HATCH_CLOSED* - Tondeuse en attente avec son capot fermé
 - *PARKED_DAILY_LIMIT_REACHED* - Tondeuse parquée, limite de coupe journalière atteinte
 
-## Gardena Smart Irrigation Control
+## Description des erreurs du Gardena Smart Irrigation Control
 
-L'équipement permet de contrôler jusqu'à 6 valves 24v. Il dispose des commandes suivantes:
+- *NO_MESSAGE* - pas d'erreur
+- *VOLTAGE_DROP* - Baisse de tension détectée sur l'alimentation électrique (VDD_IN)
+- *WRONG_POWER_SUPPLY* - Alimentation électrique incorrecte
+- *NO_MCU_CONNECTION* - Problème de communication avec le MCU secondaire
+- *UNKNOWN* - Inconnu
 
-- **Santé contrôleur** indique l'état général du contrôleur: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
-- **Arrêter toutes les valves** permet d'arrêter l'arrosage de toutes les valves en une commande, l'arrosage reprendra à la prochaine programmation
-
-Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une valeur de 1 à 6):
-
-- **Activité valve X** indique l'activité en cours: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
-- **Etat valve X** commande info binaire indiquant si la valve est ouverte ou fermée
-- **Santé valve X** indique l'état général de la prise: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
-- **Démarrer valve X** commande action pour démarrer l'arrosage demandant en option le nombre de minute (entière) d'arrosage
-- **Arrêter valve X** commande action pour arrêter l'arrosage
-- **Durée restante valve X** commande info donnant le temps restant (en minute) lorsque l'arrosage est en cours
-- **Pause programmation valve X** commande action
-- **Reprise programmation valve X** commande action
-
-## Husqvarna Automower
-
-- **Connecté** commande info binaire indiquant si la tondeuse est connectée
-- **Batterie** indique le niveau de charge la batterie (si applicable) en pourcent
-- **Mode** aura une des valeurs suivantes: *MAIN_AREA*, *DEMO*, *SECONDARY_AREA*, *HOME*, *UNKNOWN* (voir ci-dessous pour une description des valeurs)
-- **Etat** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (voir ci-dessous pour une description des valeurs)
-- **Activité** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (voir ci-dessous pour une description des valeurs)
-- **Code erreur** & **Description erreur** donne le code et la description de l'erreur le cas échéant
-- **Durée restante** commande info donnant le temps restant d'activité
-- **Démarrage mode manuel** Démarre et tond l'herbe pendant la durée (en minute) donnée en option de la commande
-- **Pause**
-- **Reprendre** Reprend selon la programmation
-- **Retour à la base** Retourne à la base pendant le nombre de minute donnée en option de la commande, reprend la programmation ensuite
-- **Annulation et retour à la base** commande action, la tondeuse redémarrera lors de la prochaine tâche
-- **Stop et retour à la base** commande action, la tondeuse ne redémarrera pas pour la prochaine tâche
-
-### Description des modes
+## Description des modes Husqvarna Automower
 
 - *MAIN_AREA* - La tondeuse va tondre, rentrer à la base pour se charger selon son programme.
 - *DEMO* - Identique à *MAIN_AREA* mais moins longtemps. Pas d'activité des lames.
@@ -200,7 +229,7 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - *HOME* - La tondeuse est sur sa base et la programmation n'est pas appliquée.
 - *UNKNOWN* - Inconnu.
 
-### Description des états
+## Description des états Husqvarna Automower
 
 - *PAUSED* - La tondeuse est en pause.
 - *IN_OPERATION* - En opération, voir la valeur **Activité**.
@@ -213,7 +242,7 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - *NOT_APPLICABLE* - Pas applicable.
 - *UNKNOWN* - Inconnu.
 
-### Description des activités
+## Description des activités Husqvarna Automower
 
 - *MOWING* - Tonte en cours
 - *GOING_HOME* - Se rend à la base

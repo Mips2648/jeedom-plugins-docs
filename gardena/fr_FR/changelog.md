@@ -9,6 +9,7 @@ pluginId: gardena
 
 - Ajout d'une commande **Dernière erreur** sur les Gardena Smart Socket, Water Control et Irrigation Control: Veuillez utiliser le bouton _Créer les commandes manquantes_ sur la page de l'équipement pour la rajouter
 - Ajout de l'info _Dernière erreur_ dans la page santé
+- Fix un problème de démarrage du démon avec les tondeuses Husqvarna Automower
 
 # 2020-08-27
 

@@ -22,6 +22,14 @@ Il est nécessaire de déjà avoir un serveur portainer.io, les différentes sol
 Dans la configuration du plugin il faudra renseigner l'URL de portainer sous la forme `http://PORTAINER_SERVER:9000` ainsi qu'un nom d'utilisateur et un mot de passe.
 
 Vous pouvez également choisir d'activer ou non le panel ainsi que l'objet parent qui sera utilisé lors de la création des équipements Jeedom: si un équipement portant le même nom n'existe pas encore sous cet objet, le nouvel équipement Portainer aura comme parent cet objet sinon "Aucun".
+Il est également possible de choisir entre deux modes pour la synchronisation automatique:
+
+- soit créer les nouveaux containers qui n'existent pas encore sous jeedom et mettre à jour les containers existants
+- soit uniquement mettre à jour les containers existants
+
+> **Tip**
+>
+> L'action _Synchroniser_ disponible dans la page des équipements pour forcer une synchronisation manuellement créera toujours les containers manquants. L'option ci-dessus n'est applicable qu'à la synchronisation automatique
 
 # Les équipements
 

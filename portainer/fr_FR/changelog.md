@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: portainer
 ---
 
+# 2020-09-06
+
+- Fix la commande rafraichir sur un équipement de type _Docker_ ne fonctionnait pas
+- Ajout du numéro de version de Portainer dans la page santé
+- Ajout d'une option dans la config du plugin pour choisir le mode de synchronisation automatique
+
 # 2020-08-22
 
 - Nouvelle page santé affichant un aperçu de tous les containers et permettant d'effectuer toutes les actions de base (similaire à la page "Containers" sur portainer.io)

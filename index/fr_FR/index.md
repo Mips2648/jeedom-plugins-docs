@@ -41,7 +41,7 @@ Plugin permettant la lecture des donées des jauges connectées <a href="https:/
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/gardena_icon.png">]({{site.baseurl}}/gardena/{{page.lang}})
 
-Plugin permettant d'intégrer tous les appareils de la gamme Gardena Smart System (Water Control, sensor, irrigation control, power socket et Sileno mower) ainsi que les robots Husqvarna Automower.
+Plugin permettant d'intégrer tous les appareils de la gamme Gardena Smart System (Water Control, sensor, irrigation control, power socket et Sileno mower) ainsi que les robots Husqvarna Automower Connect.
 Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil)
 
 - [Documentation]({{site.baseurl}}/gardena/{{page.lang}})

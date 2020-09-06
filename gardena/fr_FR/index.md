@@ -10,6 +10,10 @@ pluginId: gardena
 Plugin permettant d'intégrer tous les appareils de la gamme Gardena Smart System (Water Control, sensor, irrigation control, power socket et Sileno mower) ainsi que les robots Husqvarna Automower Connect.
 Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil, voir ci-dessous pour plus de détails)
 
+> **Important**
+>
+> Pour les robots tondeuses Husqvarna, il faut un modèle "X" / "Automower Connect" avec la connectivité internet. Ce plugin ne fonctionnera pas avec tout autre technologie local, comme par exemple mais pas uniquement, les "Automower Connect@Home" qui utilise le bluetooth.
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

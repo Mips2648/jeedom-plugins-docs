@@ -5,6 +5,11 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2020-09-04
+
+- Cleanup of the layout for V4
+- Configuration optimization
+
 # 2020-08-15
 
 - Fix: real-time sending did not work after deactivating and reactivating the plugin (except when saving again the corresponding device)

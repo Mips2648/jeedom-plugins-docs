@@ -5,6 +5,12 @@ lang: en_US
 pluginId: portainer
 ---
 
+# 2020-09-06
+
+- Fix the refresh command on _Docker_ type device was not working
+- Add of the Portainer version number in the health page
+- Add an option in the plugin config to choose the automatic synchronization mode
+
 # 2020-08-22
 
 - New health page displaying an overview of all the containers and allowing all basic actions to be performed (similar to the "Containers" page on portainer.io)

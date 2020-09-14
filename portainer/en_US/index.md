@@ -22,6 +22,14 @@ You need to have portainer.io already installed, solutions to have this are full
 In the plugin configuration you have to provide portainer URL with the format `http://PORTAINER_SERVER:9000` as well as a username and a password.
 
 You can also choose to activate or not the panel as well as the parent object that will be used when creating Jeedom device: if a device with the same name does not yet exist under this object, the new Portainer device will have this object as parent otherwise "None".
+It is also possible to choose between two modes for automatic synchronization:
+
+- either create new containers that do not yet exist under jeedom and update existing containers
+- or only update existing containers
+
+> **Tip**
+>
+> The _Synchronize_ action available in the device page to force a manual synchronization will always create the missing containers. The above option is only applicable for automatic synchronization
 
 # Devices
 

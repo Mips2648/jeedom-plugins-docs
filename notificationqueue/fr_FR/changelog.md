@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: notificationqueue
 ---
 
+# 2020-09-14
+
+- Ajout d'une gestion de (non-)répétition servant à supprimer une notification en double déjà envoyée lors des x dernières minutes
+
 # 2020-06-16
 
 - Ajout d'une option pour configurer un délai pendant lequel la notification sera gardée dans la file même si la condition est vrai

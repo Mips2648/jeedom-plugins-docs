@@ -15,6 +15,8 @@ Cela permet par exemple:
 - de vous avertir d'une action à faire que si vous êtes présent chez vous;
 - de n'envoyer certaines communications que pendant la journée et éviter de faire sonner votre téléphone la nuit.
 
+Chaque file peut aussi être configurée pour ajouter un délai avant envoi, un délai d'expiration du message, éviter de répéter une notification déjà envoyée précédemment...
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
@@ -36,6 +38,8 @@ En plus des configurations habituelles d'un équipement, vous devez configurer:
 >
 > Vous pouvez spécifier plusieurs commandes de notification en les séparant par &&
 
+![Paramètres](../images/config.png "Paramètres")
+
 # Options additionnelles
 
 ## Pause entre 2 évaluations
@@ -46,6 +50,14 @@ Cela permet de configurer le temps de pause entre 2 évaluations de la condition
 
 Si activé, le plugin va calculer le temps de lecture du message. Pour cela il compte le nombre de syllabes totales et multiplie ce nombre par un temps de lecture moyen par syllabe. Vous pouvez adapter ce temps en fonction de votre périphérique TTS dans la configuration de l'équipement.
 
+## Délai d'envoi
+
+Il est possible de configurer un délai d'envoi des notifications (en seconde) pendant lequel une nouvelle notification sera gardée dans la file même si la condition est vrai, ce n'est qu'après ce délai que la notification sera envoyée si la condition est remplie.
+
+## Délai d'expiration
+
+Il est possible de configurer un délai d'expiration des notifications (en minute). Passé ce délai la notification ne sera plus envoyée si la condition n'a pas été remplie jusque là.
+
 ## Doublon
 
 Vous pouvez aussi choisir le comportement lorsqu'une notification avec le même message qu'une notification existante est ajoutée à la file.
@@ -54,13 +66,9 @@ Vous pouvez aussi choisir le comportement lorsqu'une notification avec le même 
 - Garder la première notification: la nouvelle ne sera donc pas ajoutée;
 - Garder la dernière notification: la notification précédente sera supprimée de la file et la nouvelle sera ajoutée à la fin de celle-ci.
 
-## Délai d'envoi
+## Délai de non-répétition
 
-Il est possible de configurer un délai d'envoi des notifications (en seconde) pendant lequel une nouvelle notification sera gardée dans la file même si la condition est vrai, ce n'est qu'après ce délai que la notification sera envoyée si la condition est remplie.
-
-## Délai d'expiration
-
-Il est possible de configurer un délai d'expiration des notifications (en minute). Passé ce délai la notification ne sera plus envoyée si la condition n'a pas été remplie jusque là.
+Cela permet de supprimer la notification et donc de ne pas ajouter l'ajouter à la file; elle ne sera donc pas envoyée si le même message a déjà été envoyé durant les X dernières minutes.
 
 # Quelques principes
 

@@ -5,6 +5,10 @@ lang: en_US
 pluginId: notificationqueue
 ---
 
+# 2020-09-14
+
+- Add (non-)repetition management used to delete a duplicate notification already sent during the last x minutes
+
 # 2020-06-16
 
 - Add an option to configure a delay during which the notification will be kept in the queue even if the condition is true

@@ -15,6 +15,8 @@ This allows for example:
 - to notice you of an action to be done only if you are present at your place;
 - to only send some notifications during the day and to avoid ringing your phone at night.
 
+Each queue can also be configured to add a delay before sending, an expiration of the message, avoid repeating a notification already sent previously...
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
@@ -36,6 +38,8 @@ On top of the usual device configurations, you must configure:
 >
 > You can specify several notification commands by separating them with &&
 
+![Settings](../images/config.png "Settings")
+
 # Options additionnelles
 
 ## Pause entre 2 évaluations
@@ -46,6 +50,14 @@ This allows to configure a pause time between 2 evaluations of the condition whe
 
 If enabled, the plugin will calculate the reading time of the message. To do this, he counts the number of total syllables and multiplies this number by an average reading time per syllable. You can adapt this time according to your TTS device in the device configuration.
 
+## Sending delay
+
+It is possible to configure a sending delay (in seconds) of notifications during which a new notification will be kept in the queue even if the condition is true, it is only after this delay that the notification will be sent if the condition is fulfilled.
+
+## Délai d'expiration
+
+It is possible to configure a notification expiration time (in minutes). After this period, the notification will no longer be sent if the condition has not been fulfilled until then.
+
 ## Doublon
 
 You can also choose the behavior when a notification with the same message as an existing notification is added to the queue.
@@ -54,13 +66,9 @@ You can also choose the behavior when a notification with the same message as an
 - Keep the first notification: the new one will therefore not be added;
 - Keep the last notification: the previous notification will be deleted from the queue and the new one will be added at the end of it.
 
-## Sending delay
+## No-repeat delay
 
-It is possible to configure a sending delay (in seconds) of notifications during which a new notification will be kept in the queue even if the condition is true, it is only after this delay that the notification will be sent if the condition is fulfilled.
-
-## Délai d'expiration
-
-It is possible to configure a notification expiration time (in minutes). After this period, the notification will no longer be sent if the condition has not been fulfilled until then.
+This allows you to delete the notification and therefore not to add it to the queue; it will therefore not be sent if the same message has already been sent during the last X minutes.
 
 # Some principles
 

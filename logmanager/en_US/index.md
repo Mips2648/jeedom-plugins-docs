@@ -27,7 +27,7 @@ One device corresponds to one log, the name of the device will be used as the na
 
 > **Tip**
 >
-> In order to avoid potential problems, the name of the device must consist only of letters a to z, in lowercase, and the underscore character "_", the first character must be a letter.
+> In order to avoid potential problems, the name of the device must consist only of letters a to z, in lowercase or uppercase, and the underscore character "_", the first character must be a letter.
 
 In addition, you can select the level of log to write: Debug, Info, Warning, Error.
 

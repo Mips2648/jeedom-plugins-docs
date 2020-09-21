@@ -5,6 +5,13 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2020-09-21
+
+- Ajout du support de l'authentification en 2 étapes (lire documentation)
+- Ajout du support de l'éclairage sur les Arlo Pro3 et Arlo Ultra
+- Ajout du support de la Arlo Pro3 Floodlight
+- Fix d'un plantage du démon lorsqu'un équipement était hors ligne ou désactivé
+
 # 2020-08-26
 
 - Force la configuration de la clé API en mode localhost

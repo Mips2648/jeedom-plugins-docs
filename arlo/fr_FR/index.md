@@ -10,9 +10,9 @@ pluginId: arlo
 Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.
 Il est possible de contrôler le mode, l'activation et désactivation des caméras, visualiser le flux live des caméras, déclencher des captures et des enregistrements vidéos, déclencher la sirène...
 
-Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
+Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Floodlight, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
 
-Pour l'instant, il est possible de:
+Voici un aperçu des possibilités du plugin:
 
 - sélectionner le mode: Activé, désactivé ou planification mais aussi tous les modes personnalisés;
 - activer / désactiver chaque caméra indépendamment l'une de l'autre (quelque soit le mode en cours);
@@ -29,10 +29,10 @@ Pour l'instant, il est possible de:
 - visualiser les captures et les vidéos prises
 - lancer/arrêter un enregistrement stocké dans le cloud Arlo
 - visualiser le streaming live de vos caméras
+- contrôler la lampe intégrée sur les caméras compatible
+- contrôler la sirène intégrée sur les caméras et bases compatibles
 
-# Configuration
-
-## Installation
+# Installation
 
 > **Important**
 >
@@ -40,14 +40,35 @@ Pour l'instant, il est possible de:
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 Il faut ensuite installer les dépendances.
-Avant de pouvoir lancer le démon il faut renseigner l'adresse email et le mot de passe pour pouvoir se connecter à Arlo.
 
-## Création d'un utilisateur dédié au plugin
+# Configuration
 
 Arlo n'autorise pas de connexions simultanées d'un utilisateur à plusieurs interface: si vous êtes connecté dans l'app sur un mobile, vous ne pourrez pas l'être sur un autre mobile en même temps ni sur l'interface web. Si vous vous connectez sur l'interface web par exemple vous serez automatiquement déconnecté de l'app mobile.
 Le plugin se connecte au système Arlo comme un utilisateur standard et il sera donc soumis à la même contrainte.
 
 Il est donc nécessaire de créer un utilisateur dédié au plugin, dans le cas contraire il ne fonctionnera pas correctement.
+
+# Authentification en 2 étapes
+
+Arlo impose progressivement l'utilisation de l'authentification en 2 étapes.
+Avant de créer un nouvel utilisateur Arlo, il est important de connaître les informations suivantes:
+
+- Le plugin gère celle-ci via email avec support IMAP uniquement, il faudra donc une boite mail avec un accès IMAP (il est parfois bloqué ou payant donc vérifiez avant) et ne supporte qu'une authentification par _nom d'utilisateur_/_mot de passe_; pas de MFA sur le mail!
+- Le plugin doit avoir un accès direct à la boite mail de l’utilisateur arlo, en effet le code pour le TFA est demandé par Arlo à chaque login! Donc si le démon doit redémarrer il doit pouvoir récupérer lui même le code.
+- le plugin ne lira que le mail en provenance de *do_not_reply@arlo.com*; donc même s’il est recommandé d’avoir une boite mail dédié et pas un alias d’une boite existante, cela ne devrait pas être un problème; il notera les mails comme « lu » dans la boite une fois fait (et n’essaiera plus de les lire au prochain démarrage)
+- le plugin ne cherchera que parmi les mails non lu de la journée en cours, par ordre chronologique inverse (du plus récent ou plus ancien) et passera tous les mails envoyés avant son dernier login.
+- la langue du mail n’a pas d’importance: la recherche du code TFA fonctionnera quelque soit la langue du mail.
+
+> **Tip**
+>
+> pour Gmail, vous devez:
+>
+> - soit activer les applications _non sécurisées_ si MFA n’est pas actif sur le compte
+> - soit créer un _mot de passe d’application_ qui n’imposera pas le MFA pour se connecter
+
+Après avoir créé une boite mail pour le plugin, vous pouvez passer à l'étape suivante.
+
+## Création d'un utilisateur Arlo dédié au plugin
 
 - Pour cela, ouvrez <https://my.arlo.com> ou ouvrez l'app mobile;
 - Cliquez sur "Paramètres" en haut à droite;
@@ -56,9 +77,9 @@ Il est donc nécessaire de créer un utilisateur dédié au plugin, dans le cas 
 - Cliquez sur "Autoriser l'accès" dans le menu de gauche puis sur "Ajouter" à droite.
 ![Accès Arlo](../images/access.png "Accès Arlo")
 
-- Entrez les informations demandées y compris une nouvelle adresse email (ou, si vous utilisez une adresse gmail, un alias gmail en rajoutant +jeedom avant @gmail.com par exemple);
-- Sélectionnez les équipements Arlo auxquels aura accès le plugin;
-- Activez l'option "Accorder des droits d'accès" pour pouvoir changer de mode, démarrer un enregistrement, prendre des captures etc depuis Jeedom.
+- Entrez les informations demandées y compris une nouvelle adresse email (un alias gmail en rajoutant +jeedom avant @gmail.com par exemple fonctionnera cependant pour l'authentification en 2 étapes je recommande d'utiliser une adresse mail dédié au plugin);
+- **Sélectionnez les équipements Arlo** auxquels aura accès le plugin;
+- **Activez l'option "Accorder des droits d'accès"** pour pouvoir changer de mode, démarrer un enregistrement, prendre des captures etc depuis Jeedom.
 ![Création compte Arlo](../images/create.png "Création compte Arlo")
 - Cliquez sur "Envoyer une invitation"
 - Vous allez recevoir un email de confirmation afin de créer votre nouveau compte Arlo, suivez simplement la procédure.
@@ -69,10 +90,13 @@ Il est donc nécessaire de créer un utilisateur dédié au plugin, dans le cas 
 
 ## Configuration du plugin
 
-- Retournez sur la page de configuration du plugin et entrez votre utilisateur (la nouvelle adresse email) et le mot de passe associé.
+Sur la page de configuration du plugin:
+
+- Entrez votre utilisateur (la nouvelle adresse email) et le mot de passe Arlo associé.
+- Si vous avez activé l'authentification en 2 étapes, entrez l'adresse IMAP du serveur mail sous la forme _imap.server.com_ ainsi que le nom d'utilisateur et le mot de passe de la boite mail associée (pas nécessaire si TFA n'est pas actif)
 - Démarrez le démon (s'il ne démarre pas tout seul)
 
-Si l'adresse email et le mot de passe sont correcte, le status devrait passer au vert et le plugin va commencer à synchroniser vos équipements précédemment partagés.
+Si les informations de connexions sont correcte, le status devrait passer au vert et le plugin va commencer à synchroniser vos équipements précédemment partagés.
 
 Sur cette page, il est aussi possible de configurer les règles de retentions des captures et des enregistrements, ces règles permettent au plugin de supprimer automatiquement les médias (sauvegardés localement) les plus anciens.
 
@@ -113,7 +137,11 @@ Le widget est celui par défaut de Jeedom:
 
 ## La sirène (intégrée à la station de base)
 
-Cet équipement possède simplement une commande "On" et "Off" ainsi qu'une info "Etat".
+Cet équipement possède les commande suivantes permettant le contrôle de la sirène:
+
+- **Etat Sirène**: Indique si la sirène est active
+- **Sirène On**: Pour déclencher manuellement la sirène
+- **Sirène Off**: Pour couper la sirène
 
 Le widget est également celui par défaut:
 
@@ -125,6 +153,7 @@ Les modèles suivant sont actuellement reconnu par le plugin:
 
 - baby
 - pro, pro2, pro3, ultra
+- floodlight
 - Go
 - arlo Q
 
@@ -209,9 +238,16 @@ De plus, les commandes suivantes sont également disponibles:
 >
 > En cas d'ajout d'une caméra Arlo Go, Arlo Q ou Arlo Baby, il est nécessaire de redémarrer le démon pour que les événements liés soient correctement reçus.
 
-## Arlo Pro3 & Ultra
+## Arlo Pro3, Pro3 Floodlight & Ultra
 
-En plus des commandes communes à toutes les caméras, les caméras Arlo Pro3 et Arlo Ultra disposent de commandes pour contrôler l'état de la sirène intégrée.
+En plus des commandes communes à toutes les caméras, les caméras Arlo Pro3, Pro3 Floodlight et Ultra disposent des commandes suivantes pour contrôler l'état de la sirène et de l'éclairage intégrés:
+
+- **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte
+- **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)
+- **Lampe Off**: Pour éteindre manuellement la lampe
+- **Etat Sirène**: Indique si la sirène est active
+- **Sirène On**: Pour déclencher manuellement la sirène
+- **Sirène Off**: Pour couper la sirène
 
 ## Arlo security bridge & light
 
@@ -223,7 +259,7 @@ Comme pour la station de base (cf. ci-dessus), l'équipement bridge dispose d'un
 
 L'équipement "light" dispose lui des commandes suivantes:
 
-- **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte.
+- **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte
 - **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)
 - **Lampe Off**: Pour éteindre manuellement la lampe
 - **Détection de mouvement**: indique si la détection de mouvement est active

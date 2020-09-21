@@ -5,6 +5,10 @@ lang: en_US
 pluginId: logmanager
 ---
 
+# 2020-09-21
+
+- Allow uppercase characters in device name (and so filename)
+
 # 2020-08-24
 
 - Cleanup of the layout for V4

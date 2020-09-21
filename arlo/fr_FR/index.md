@@ -137,7 +137,7 @@ Le widget est celui par défaut de Jeedom:
 
 ## La sirène (intégrée à la station de base)
 
-Cet équipement possède les commande suivantes permettant le contrôle de la sirène:
+Cet équipement possède les commandes suivantes permettant le contrôle de la sirène:
 
 - **Etat Sirène**: Indique si la sirène est active
 - **Sirène On**: Pour déclencher manuellement la sirène

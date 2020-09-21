@@ -27,7 +27,7 @@ Un équipement correspond à un log, le nom de l'équipement sera utilisé comme
 
 > **Tip**
 >
-> Afin d'éviter des problèmes potentiels, le nom de l'équipement doit être uniquement composé des lettres de a à z, en miniscule, et du caractère souligné "_", le première caractère doit être une lettre.
+> Afin d'éviter des problèmes potentiels, le nom de l'équipement doit être uniquement composé des lettres de a à z, en miniscule ou en majuscule, et du caractère souligné "_", le première caractère doit être une lettre.
 
 De plus, vous pouvez sélectionner le niveau de log à écrire: Debug, Info, Warning, Erreur.
 

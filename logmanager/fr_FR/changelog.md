@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: logmanager
 ---
 
+# 2020-09-21
+
+- Autorise les majuscules dans le nom de l'équipement (et du log donc)
+
 # 2020-08-24
 
 - Nettoyage de la mise en page pour la V4

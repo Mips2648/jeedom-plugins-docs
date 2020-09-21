@@ -5,6 +5,13 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2020-09-21
+
+- Add support of 2 factors authentication (read the documentation)
+- Add support of light on Arlo Pro3 and Arlo Ultra
+- Add support of Arlo Prod3 Floodlight
+- Fix daemon crash in case device is offline or not provisionned
+
 # 2020-08-26
 
 - Force configuration of the API key in localhost mode

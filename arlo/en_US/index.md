@@ -9,9 +9,9 @@ pluginId: arlo
 
 Plugin to control all Arlo devices like the cameras, the base station and the integrated siren.
 
-All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
+All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Floodlight, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
 
-So far, it is possible to:
+Here is an overview of the possibilities of the plugin:
 
 - select mode: Activated, Deactivated or schedule but also all custom modes;
 - Enable / disable each camera independently of each other (regardless of the current mode);
@@ -28,25 +28,46 @@ So far, it is possible to:
 - view snapshots and videos
 - start/stop recording stored in Arlo cloud
 - view live streaming of your cameras
+- control the light on compatible cameras
+- control de siren on compatible cameras
 
-# Configuration
-
-## Installation
+# Installation
 
 > **Important**
 >
 > Debian 8 (Jessie) is no longer supported by Debian, the plugin will not work under Jessie because it is necessary to install dependencies which are no longer available on this version.
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
-Then you have to install the dependencies.
-Before being able to launch the daemon it is necessary to input an email address and a password to be able to connect to Arlo.
+Then you need to install dependencies.
 
-## Creating a user dedicated to the plugin
+# Configuration
 
 Arlo does not allow simultaneous connections from one user to multiple interfaces: if you are logged into the app on one mobile, you will not be able to be on another mobile at the same time or on the web interface. If you connect to the web interface for example you will be automatically disconnected from the mobile app.
 The plugin connects to the Arlo system as a standard user and will therefore be subject to the same constraint.
 
 It is therefore necessary to create a user dedicated to the plugin, otherwise it will not work properly.
+
+# 2-step authentication
+
+Arlo is gradually enforcing the use of 2-step authentication.
+Before creating a new Arlo user, it is important to know the following information:
+
+- The plugin manages this via email with IMAP support only, so you will need a mailbox with IMAP access (it is sometimes blocked or not free so check before) and only supports authentication by _username_ /_password_ ; no MFA on the mail!
+- The plugin must have direct access to the arlo user's mailbox, indeed the code for the TFA is requested by Arlo at each login! So if the daemon has to restart it must be able to retrieve the code itself.
+- the plugin will only read the mail coming from *do_not_reply@arlo.com*; so even though it is recommended to have a dedicated mailbox and not an alias of an existing mailbox, this shouldn't be a problem; it will flag the emails as "read" in the box when done (and will no longer try to read them on the next start)
+- the plugin will only search among the unread mails of the current day, in reverse chronological order (from the most recent to the oldest) and will skip all the mails sent before its last login.
+- the language of the email is not important: the search for the TFA code will work regardless of the language of the email.
+
+> **Tip**
+>
+> for Gmail, you must:
+>
+> - either activate _nonsecure_ applications if MFA is not active on the account
+> - or create an _application password_ which will not require the MFA
+
+After creating an email box for the plugin, you can go to the next step.
+
+## Creating a Arlo user dedicated to the plugin
 
 - For this, open <https://my.arlo.com> or open the mobile app;
 - Click on &quot;Settings&quot; at the top right;
@@ -55,9 +76,9 @@ It is therefore necessary to create a user dedicated to the plugin, otherwise it
 - Click on &quot;Allow access&quot; in the left menu and then on &quot;Add&quot; on the right.
 ![Arlo access](../images/access.png "Arlo access")
 
-- Enter the requested information including a new email address (or, if you use a gmail address, a gmail alias by adding + jeedom before @gmail.com for example);
-- Select the Arlo devices that the plugin will access;
-- Enable the option &quot;Grant access rights&quot; to be able to change modes, start recording, take snapshots etc from Jeedom.
+- Enter the requested information including a new email address (a gmail alias by adding +jeedom before @gmail.com for example will work however for 2-step authentication I recommend to use a dedicated email address for the plugin);
+- **Select the Arlo devices** that the plugin will access;
+- **Enable the option "Grant access rights"** to be able to change modes, start recording, take snapshots etc from Jeedom.
 ![Arlo account creation](../images/create.png "Arlo account creation")
 - Click on &quot;Send an invitation&quot;
 - You will receive a confirmation email to create your new Arlo account, simply follow the procedure.
@@ -68,10 +89,13 @@ It is therefore necessary to create a user dedicated to the plugin, otherwise it
 
 ## Plugin configuration
 
-- Go back to the plugin configuration page and enter your user (the new email address) and the associated password.
+On the plugin configuration page:
+
+- Enter your user (the new email address) and the associated Arlo password.
+- If you have enabled 2-step authentication, enter the IMAP address of the mail server in the form _imap.server.com_ as well as the username and password of the associated mailbox (not necessary if TFA is not active)
 - Start the daemon (if it does not start on its own)
 
-If the email address and password are correct, the status should turn green and the plugin will start to synchronize your previously shared devices.
+If the connection information are correct, the status should turn green and the plugin will start to synchronize your previously shared devices.
 
 On this page, it is also possible to configure the retentions rules of snapshots and records, these rules allow the plugin to automatically delete the oldest medias (saved locally).
 
@@ -112,7 +136,11 @@ The widget is Jeedom's default one:
 
 ## The siren (integrated in the base station)
 
-This device has an &quot;On&quot; and &quot;Off&quot; action command and a &quot;Status&quot; info command.
+This device has the following commands to control the siren:
+
+- **Siren status**: Indicates if the siren is active
+- **Siren On**: To manually turn on the siren
+- **Siren Off**: To turn off the siren
 
 The widget is also the default one:
 
@@ -124,6 +152,7 @@ The following models are currently supported by the plugin:
 
 - baby
 - pro, pro2, pro3, ultra
+- floodlight
 - Go
 - arlo Q
 
@@ -208,9 +237,16 @@ On top, following commands are also available:
 >
 > When adding a Arlo Go, Arlo Q or Arlo Baby camera, it is necessary to restart the daemon so the related events are correctly received.
 
-## Arlo Pro3 & Ultra
+## Arlo Pro3, Pro3 Floodlight & Ultra
 
-On top of common commands to all cameras, the Arlo Pro3 and Ultra have commands to control the siren integrated in the camera.
+On top of common commands to all cameras, the Arlo Pro3, Pro3 Floodlight and Ultra have commands to control the siren and the light integrated in the camera.
+
+- **Lamp status**: Indicates whether the lamp is currently on or off
+- **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)
+- **Lamp Off**: To manually turn off the lamp
+- **Siren status**: Indicates if the siren is active
+- **Siren On**: To manually turn on the siren
+- **Siren Off**: To turn off the siren
 
 ## Arlo security bridge & light
 
@@ -222,7 +258,7 @@ As for the base station (see above), the bridge device has an action command by 
 
 The &quot;light&quot; device has the following commands:
 
-- **Lamp status**: Indicates whether the lamp is currently on or off.
+- **Lamp status**: Indicates whether the lamp is currently on or off
 - **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)
 - **Lamp Off**: To manually turn off the lamp
 - **Motion detection**: Indicates if motion detection is active

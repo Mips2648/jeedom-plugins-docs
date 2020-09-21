@@ -7,7 +7,7 @@ pluginId: arlo
 
 # 2020-09-21
 
-- Ajout du support de l'authentification en 2 étapes (lire documentation)
+- Ajout du support de l'authentification en 2 étapes (lire la documentation)
 - Ajout du support de l'éclairage sur les Arlo Pro3 et Arlo Ultra
 - Ajout du support de la Arlo Pro3 Floodlight
 - Fix d'un plantage du démon lorsqu'un équipement était hors ligne ou désactivé

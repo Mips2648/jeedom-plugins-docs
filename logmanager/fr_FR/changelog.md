@@ -7,7 +7,7 @@ pluginId: logmanager
 
 # 2020-09-21
 
-- Autorise les majuscules dans le nom de l'équipement (et du log donc)
+- Autorise les majuscules dans le nom de l'équipement (et donc du nom de fichier)
 
 # 2020-08-24
 

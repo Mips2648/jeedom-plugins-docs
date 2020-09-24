@@ -48,7 +48,7 @@ Le plugin se connecte au système Arlo comme un utilisateur standard et il sera 
 
 Il est donc nécessaire de créer un utilisateur dédié au plugin, dans le cas contraire il ne fonctionnera pas correctement.
 
-# Authentification en 2 étapes
+## Authentification en 2 étapes
 
 Arlo impose progressivement l'utilisation de l'authentification en 2 étapes.
 Avant de créer un nouvel utilisateur Arlo, il est important de connaître les informations suivantes:

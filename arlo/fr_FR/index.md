@@ -96,13 +96,13 @@ Sur la page de configuration du plugin:
 - Si vous avez activé l'authentification en 2 étapes, entrez l'adresse IMAP du serveur mail sous la forme _imap.server.com_ ainsi que le nom d'utilisateur et le mot de passe de la boite mail associée (pas nécessaire si TFA n'est pas actif)
 - Démarrez le démon (s'il ne démarre pas tout seul)
 
-Si les informations de connexions sont correcte, le status devrait passer au vert et le plugin va commencer à synchroniser vos équipements précédemment partagés.
+Si les informations de connexions sont correctes, le status devrait passer au vert et le plugin va commencer à synchroniser vos équipements précédemment partagés.
 
 Sur cette page, il est aussi possible de configurer les règles de retentions des captures et des enregistrements, ces règles permettent au plugin de supprimer automatiquement les médias (sauvegardés localement) les plus anciens.
 
 # Utilisation
 
-Si le plugin est correctement configuré (cf. étape précédente), vous devriez voir la liste des équipements Arlo que vous avez partagé lors de la création du compte dédié au plugin.
+Si le plugin est correctement configuré (cf. étape précédente), vous devriez voir la liste des équipements Arlo que vous avez partagés lors de la création du compte dédié au plugin.
 
 Il n'est pas possible de créer manuellement un équipement. Les équipements sont créés ou mis à jour automatiquement par le plugin lors d'une synchronisation avec le système Arlo. Une synchronisation se fera automatiquement au minimum une fois par jour, si besoin il est possible de lancer une synchronisation manuellement via l'écran de gestion des équipement.
 
@@ -117,7 +117,7 @@ Si vous rajoutez un nouvel équipement ou si vous modifiez les modes via l'appli
 
 Pour la plupart des équipements il n'y a pas de configuration spécifique, le nom de l'équipement sera celui défini dans le système Arlo, mais pensez à assigner le parent, la catégorie et à activer celui-ci.
 
-Pour les équipements de type caméra, il est possible de configurer une commande action du plugin Mail ou Telegram. Si celle-ci est configurée, le plugin enverra un message, incluant la capture, dès qu'une nouvelle capture est disponible.
+Pour les équipements de type caméra, il est possible de configurer une commande action du plugin Mail ou Telegram. Si celle-ci est configurée, le plugin enverra un message, incluant la capture, dès qu'une nouvelle capture est reçue.
 
 # Les équipements compatibles
 
@@ -153,7 +153,7 @@ Les modèles suivant sont actuellement reconnu par le plugin:
 
 - baby
 - pro, pro2, pro3, ultra
-- floodlight
+- Floodlight
 - Go
 - arlo Q
 
@@ -184,9 +184,9 @@ Le widget possède quelques spécificités. En haut de gauche à droite vous ver
 - le niveau de la batterie
 - l'indicateur de son, 3 états possible: détection désactivée, surveillance active, son détecté.
 - l'indicateur de mouvement, à nouveau 3 états possible: détection désactivée, surveillance active, mouvement détecté.
-- un bouton pour ouvrir la bibliothèque, dedans vous pourrez voir les captures et les enregistrements sauvegardés localement.
+- un bouton pour ouvrir la bibliothèque dans laquelle vous pourrez visualiser les captures et les enregistrements sauvegardés localement.
 
-Ensuite est affiché la dernière image prise par la caméra, en cliquant sur celle-ci vous pourrez visionner le flux de la caméra quasi en temps réel (quelques secondes de décalages)
+Ensuite est affichée la dernière image prise par la caméra, en cliquant sur celle-ci vous pourrez visionner le flux de la caméra quasi en temps réel (quelques secondes de décalages)
 
 Et en dessous un bouton pour prendre une capture instantanée et démarrer l'enregistrement (local).
 

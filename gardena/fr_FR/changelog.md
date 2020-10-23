@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: gardena
 ---
 
+# 2020-10-24
+
+- Fix un problème avec les Smart Irrigation Control qui empêchait le démon de démarrer correctement
+- Augmentation de la limite maximum de durée (de 1h à 6h) pour le démarrage manuel des Tondeuses Gardena.
+
 # 2020-08-29
 
 - Ajout d'une commande **Dernière erreur** sur les Gardena Smart Socket, Water Control et Irrigation Control: Veuillez utiliser le bouton _Créer les commandes manquantes_ sur la page de l'équipement pour la rajouter

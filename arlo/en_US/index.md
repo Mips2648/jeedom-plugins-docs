@@ -47,7 +47,7 @@ The plugin connects to the Arlo system as a standard user and will therefore be 
 
 It is therefore necessary to create a user dedicated to the plugin, otherwise it will not work properly.
 
-# 2-step authentication
+## 2-step authentication
 
 Arlo is gradually enforcing the use of 2-step authentication.
 Before creating a new Arlo user, it is important to know the following information:
@@ -152,7 +152,7 @@ The following models are currently supported by the plugin:
 
 - baby
 - pro, pro2, pro3, ultra
-- floodlight
+- Floodlight
 - Go
 - arlo Q
 

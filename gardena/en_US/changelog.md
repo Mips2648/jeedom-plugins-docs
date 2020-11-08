@@ -5,6 +5,11 @@ lang: en_US
 pluginId: gardena
 ---
 
+# 2020-10-24
+
+- Fixed an issue with the Smart Irrigation Control that prevented the daemon from starting correctly
+- Increase of the maximum time limit (from 1 hour to 6 hours) for manual starting of Gardena Mowers.
+
 # 2020-08-29
 
 - Add **Last error** command on Gardena Smart Socket, Water Control and Irrigation Control: Please use the _Create missing commands_ button on the device page to add it

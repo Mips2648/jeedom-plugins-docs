@@ -5,8 +5,9 @@ lang: fr_FR
 pluginId: gotify
 ---
 
-# 2020-08-24
+# 2020-11-28
 
+- Nouvelle présentation de la liste des objets
 - Nettoyage de la mise en page pour la V4
 
 # 2020-06-16

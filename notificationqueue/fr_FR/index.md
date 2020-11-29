@@ -80,6 +80,27 @@ Cela permet de supprimer la notification et donc de ne pas ajouter l'ajouter à 
   - lorsqu'une commande info utilisée dans la condition change de valeur (même principe que les déclencheurs de scénario)
 - le ask est géré par le plugin (il faut que la commande de notification utilisée ensuite le gère également)
 
+## Génération de texte
+
+Le plugin gère la génération de texte aléatoire. Le système est le même que pour les interactions:
+
+> "[Bonjour|Salut|Coucou]" retournera soit "Bonjour" soit "Salut" soit "Coucou"
+
+## Texte conditionnel
+
+Le plugin gère les conditions dans le texte grâce à un opérateur ternaire:
+
+> "{(test) ? vrai : faux}"
+
+Exemple:
+> Ce matin {(#[Maison][Météo][Température]# < 6) ? il fait froid:il fait chaud}
+
+Il est possible de ne pas mettre de texte dans le cas de la condition vrai ou faux mais il faut obligatoirement laisser les deux points (":"), exemple:
+
+> Ce matin {(#[Maison][Météo][Température]# < 6) ? il fait froid:}
+
+Les conditions ne peuvent pas être imbriquée, ce n'est pas géré.
+
 # Les commandes
 
 - **Ajouter** permet d'ajouter un message dans la file, la condition sera évaluée immédiatement et tous les messages seront alors envoyés (dans l'ordre) si elle est remplie

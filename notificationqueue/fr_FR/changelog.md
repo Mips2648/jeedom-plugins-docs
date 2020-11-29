@@ -5,6 +5,13 @@ lang: fr_FR
 pluginId: notificationqueue
 ---
 
+# 2020-11-29
+
+- Ajout de la gestion de la génération du texte aléatoire (même système que dans les interactions, voir documentation)
+- Ajout de la gestion du texte conditionnel via un opérateur ternaire (voir documentation)
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+
 # 2020-09-14
 
 - Ajout d'une gestion de (non-)répétition servant à supprimer une notification en double déjà envoyée lors des x dernières minutes

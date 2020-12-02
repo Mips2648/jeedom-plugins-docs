@@ -5,6 +5,13 @@ lang: en_US
 pluginId: notificationqueue
 ---
 
+# 2020-11-29
+
+- Add management of random text generation (same system as in interactions, see documentation)
+- Add management of conditional text via a ternary operator (see documentation)
+- New presentation of objects list 
+- Improved layout of device and commands configuration pages
+
 # 2020-09-14
 
 - Add (non-)repetition management used to delete a duplicate notification already sent during the last x minutes

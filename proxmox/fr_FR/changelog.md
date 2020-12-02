@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: proxmox
 ---
 
+# 2020-12-02
+
+- Ajout d'une config sur le plugin permettant de définir l'objet parent par défaut qui sera utilisé lors de la création d'une nouvelle ressource, cela vous évitera d'avoir à systématiquement le faire à la main.
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+
 # 2020-08-25
 
 - Mise à jour de l'icône du plugin pour correspondre au standard Jeedom

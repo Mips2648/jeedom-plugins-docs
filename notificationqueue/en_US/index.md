@@ -80,6 +80,27 @@ This allows you to delete the notification and therefore not to add it to the qu
   - when the value of an info command used in the condition changes (same principle as scenario triggers)
 - the ask is managed by the plugin (the notification command used then must also manage it)
 
+## Text generation
+
+The plugin manages the generation of random text. The system is the same as for interactions:
+
+> "[Hello|Hi]" will return either "Hello" or "Hi"
+
+## Conditional text
+
+The plugin manages the conditions in the text thanks to a ternary operator:
+
+> "{(test) ? true : false}"
+
+Example:
+> This morning {(#[Home][Weather][Temperature]# < 6) ? it's cold:it's hot}
+
+It is possible not to put text int the true or false result but it is mandatory to leave the colon (":"), example:
+
+> This morning {(#[Home][Weather][Temperature]# < 6) ? it's cold:}
+
+Conditions cannot be nested, it is not managed.
+
 # Commands
 
 - **Add** allows you to add a message to the queue, the condition will be evaluated immediately and all messages will then be sent (in order) if it is fulfilled

@@ -5,8 +5,11 @@ lang: fr_FR
 pluginId: rocketchat
 ---
 
-# 2020-08-24
+# 2020-12-02
 
+- Ajout du support des boutons pour répondre rapidement au ask (type telegram); fonctionne sur la web app mais un bug est ouvert pour l'app mobile: https://github.com/RocketChat/Rocket.Chat.ReactNative/issues/2684
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
 - Nettoyage de la mise en page pour la V4
 
 # 2020-08-15

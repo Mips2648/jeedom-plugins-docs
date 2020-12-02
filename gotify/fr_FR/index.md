@@ -34,6 +34,8 @@ Après avoir créé un nouvel équipement, les options habituelles sont disponib
 Il faudra également renseigner le token de l'application que vous aurez précédemment créé dans Gotify (à ne pas confondre avec le token client).
 Donc un équipement Jeedom correspond à une application Gotify.
 
+Il est possible de créer plusieurs commandes d'envoi avec des priorités différentes (voir documentation de Gotify à ce sujet) si votre application client gère celles-ci.
+
 # Changelog
 
 [Voir le changelog](./changelog)

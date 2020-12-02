@@ -5,6 +5,11 @@ lang: en_US
 pluginId: portainer
 ---
 
+# 2020-12-02
+
+- New presentation of objects list 
+- Improved layout of device and commands configuration pages
+
 # 2020-09-06
 
 - Fix the refresh command on _Docker_ type device was not working

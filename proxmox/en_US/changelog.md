@@ -5,6 +5,12 @@ lang: en_US
 pluginId: proxmox
 ---
 
+# 2020-12-02
+
+- Added a configuration on the plugin to define the default parent object that will be used when creating a new resource, this will prevent you from having to systematically do it by hand.
+- New presentation of objects list 
+- Improved layout of device and commands configuration pages
+
 # 2020-08-25
 
 - Update of the plugin icon to match the Jeedom standard

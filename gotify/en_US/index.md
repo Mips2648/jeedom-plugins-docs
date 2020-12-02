@@ -34,6 +34,8 @@ After creating new device, the usual options are available.
 It will also be needed to setup the token of the application which you will have previously created in Gotify (do not mix with the client token).
 So one Jeedom device matches one Gotify application.
 
+It is possible to create several send commands with different priorities (see Gotify documentation on this subject) if your client application manages these.
+
 # Changelog
 
 [See the changelog](./changelog)

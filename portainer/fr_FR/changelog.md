@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: portainer
 ---
 
+# 2020-12-02
+
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+
 # 2020-09-06
 
 - Fix la commande rafraichir sur un équipement de type _Docker_ ne fonctionnait pas

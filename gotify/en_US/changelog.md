@@ -5,8 +5,9 @@ lang: en_US
 pluginId: gotify
 ---
 
-# 2020-08-24
+# 2020-11-28
 
+- New presentation of objects list 
 - Cleanup of the layout for V4
 
 # 2020-06-16

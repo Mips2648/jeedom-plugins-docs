@@ -84,20 +84,19 @@ Cela permet de supprimer la notification et donc de ne pas ajouter l'ajouter à 
 
 Le plugin gère la génération de texte aléatoire. Le système est le même que pour les interactions:
 
-> "[Bonjour|Salut|Coucou]" retournera soit "Bonjour" soit "Salut" soit "Coucou"
+`[Bonjour|Salut|Coucou]` retournera soit `Bonjour` soit `Salut` soit `Coucou`
 
 ## Texte conditionnel
 
-Le plugin gère les conditions dans le texte grâce à un opérateur ternaire:
-
-> "{(test) ? vrai : faux}"
+Le plugin gère les conditions dans le texte grâce à un opérateur ternaire: `{(test) ? vrai : faux}`
 
 Exemple:
-> Ce matin {(#[Maison][Météo][Température]# < 6) ? il fait froid:il fait chaud}
+
+`Ce matin {(#[Maison][Météo][Température]# < 6) ? il fait froid:il fait chaud}`
 
 Il est possible de ne pas mettre de texte dans le cas de la condition vrai ou faux mais il faut obligatoirement laisser les deux points (":"), exemple:
 
-> Ce matin {(#[Maison][Météo][Température]# < 6) ? il fait froid:}
+`Ce matin {(#[Maison][Météo][Température]# < 6) ? il fait froid:}`
 
 Les conditions ne peuvent pas être imbriquée, ce n'est pas géré.
 

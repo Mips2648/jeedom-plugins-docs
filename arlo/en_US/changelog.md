@@ -5,6 +5,13 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2020-12-02
+
+- New presentation of objects list 
+- Improved layout of device and commands configuration pages
+- Add support of Arlo Essential
+- Fix daemon on video doorbell if connected without base
+
 # 2020-09-21
 
 - Add support of 2 factors authentication (read the documentation)

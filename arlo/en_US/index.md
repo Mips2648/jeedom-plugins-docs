@@ -9,7 +9,7 @@ pluginId: arlo
 
 Plugin to control all Arlo devices like the cameras, the base station and the integrated siren.
 
-All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Floodlight, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
+All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
 
 Here is an overview of the possibilities of the plugin:
 
@@ -153,6 +153,7 @@ The following models are currently supported by the plugin:
 - baby
 - pro, pro2, pro3, ultra
 - Floodlight
+- Essential
 - Go
 - arlo Q
 
@@ -191,11 +192,11 @@ And below a button to take a snapshot and start (local) video record
 
 ![Camera](../images/widget_camera.png "Camera")
 
-## Arlo Q cameras
+## Arlo Q
 
 On top of common commands to all cameras, the Arlo Q have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
 
-## Arlo Baby cameras
+## Arlo Baby
 
 On top of common commands to all cameras, the Arlo Baby have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
 
@@ -223,7 +224,7 @@ Here is an overview of the available commands:
 - **Volume**: allows you to know and change the volume of the lullaby (in %)
 - **Lullaby timer**: info and action commands to set the timer as well as to know the remaining time (in minute) before the automatic shutdown of the lullaby
 
-## Arlo Go cameras
+## Arlo Go
 
 On top of common commands to all cameras, the Arlo Go have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
 
@@ -236,6 +237,14 @@ On top, following commands are also available:
 > **Tip**
 >
 > When adding a Arlo Go, Arlo Q or Arlo Baby camera, it is necessary to restart the daemon so the related events are correctly received.
+
+## Arlo Essential
+
+On top of common commands to all cameras, the Arlo Essential cameras have commands to control the integrated light.
+
+- **Lamp status**: Indicates whether the lamp is currently on or off
+- **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)
+- **Lamp Off**: To manually turn off the lamp
 
 ## Arlo Pro3, Pro3 Floodlight & Ultra
 

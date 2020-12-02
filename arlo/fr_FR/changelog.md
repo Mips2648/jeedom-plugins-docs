@@ -5,6 +5,13 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2020-12-02
+
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+- Ajout du support de la Arlo Essential
+- Fix démon sur video doorbell si connectée sans base
+
 # 2020-09-21
 
 - Ajout du support de l'authentification en 2 étapes (lire la documentation)

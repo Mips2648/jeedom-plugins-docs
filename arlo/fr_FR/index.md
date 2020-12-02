@@ -10,7 +10,7 @@ pluginId: arlo
 Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.
 Il est possible de contrôler le mode, l'activation et désactivation des caméras, visualiser le flux live des caméras, déclencher des captures et des enregistrements vidéos, déclencher la sirène...
 
-Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Floodlight, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
+Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
 
 Voici un aperçu des possibilités du plugin:
 
@@ -154,6 +154,7 @@ Les modèles suivant sont actuellement reconnu par le plugin:
 - baby
 - pro, pro2, pro3, ultra
 - Floodlight
+- Essential
 - Go
 - arlo Q
 
@@ -192,11 +193,11 @@ Et en dessous un bouton pour prendre une capture instantanée et démarrer l'enr
 
 ![Caméra](../images/widget_camera.png "Caméra")
 
-## Caméras Arlo Q
+## Arlo Q
 
 En plus des commandes communes à toutes les caméras, les Arlo Q disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
-## Caméras Arlo Baby
+## Arlo Baby
 
 En plus des commandes communes à toutes les caméras, les Arlo Baby disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
@@ -224,7 +225,7 @@ Voici un aperçu des commandes disponibles:
 - **Volume**: permet de connaître et changer le volume de la berceuse (en %)
 - **Minuterie berceuse**: commandes info et action pour définir la minuterie ainsi que connaître la durée restante (à la minute) avant l'extinction automatique de la berceuse
 
-## Caméras Arlo Go
+## Arlo Go
 
 En plus des commandes communes à toutes les caméras, les caméras Arlo Go disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
@@ -237,6 +238,14 @@ De plus, les commandes suivantes sont également disponibles:
 > **Tip**
 >
 > En cas d'ajout d'une caméra Arlo Go, Arlo Q ou Arlo Baby, il est nécessaire de redémarrer le démon pour que les événements liés soient correctement reçus.
+
+## Arlo Essential
+
+En plus des commandes communes à toutes les caméras, les caméras Arlo Essential disposent des commandes suivantes pour contrôler l'état de l'éclairage intégré:
+
+- **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte
+- **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)
+- **Lampe Off**: Pour éteindre manuellement la lampe
 
 ## Arlo Pro3, Pro3 Floodlight & Ultra
 

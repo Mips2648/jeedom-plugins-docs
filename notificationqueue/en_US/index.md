@@ -84,20 +84,19 @@ This allows you to delete the notification and therefore not to add it to the qu
 
 The plugin manages the generation of random text. The system is the same as for interactions:
 
-> "[Hello|Hi]" will return either "Hello" or "Hi"
+`[Hello|Hi|Hey]` will return either `Hello` or `Hi` or `Hey`
 
 ## Conditional text
 
-The plugin manages the conditions in the text thanks to a ternary operator:
-
-> "{(test) ? true : false}"
+The plugin manages the conditions in the text thanks to a ternary operator: `{(test) ? true : false}`
 
 Example:
-> This morning {(#[Home][Weather][Temperature]# < 6) ? it's cold:it's hot}
+
+`This morning {(#[Home][Weather][Temperature]# < 6) ? it's cold:it's hot}`
 
 It is possible not to put text int the true or false result but it is mandatory to leave the colon (":"), example:
 
-> This morning {(#[Home][Weather][Temperature]# < 6) ? it's cold:}
+`This morning {(#[Home][Weather][Temperature]# < 6) ? it's cold:}`
 
 Conditions cannot be nested, it is not managed.
 

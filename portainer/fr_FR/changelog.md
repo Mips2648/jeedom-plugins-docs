@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: portainer
 ---
 
+# 2021-01-06
+
+- Nouvelle présentation de la liste des équipements par catégorie: Docker & Container
+
 # 2020-12-02
 
 - Nouvelle présentation de la liste des objets

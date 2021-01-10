@@ -63,10 +63,6 @@ Il n'est pas recommandé de donner le rôle "Administrator" à l'utilisateur "Je
 
 Vous trouverez plus d'information ici: <https://pve.proxmox.com/wiki/User_Management>
 
-> **Tip**
->
-> La configuration illustrée ci-dessus donne des droits d'administrations complets à l'utilisateur jeedom@pve sur la totalité des ressources Proxmox.
-
 # Configuration du plugin
 
 Il faut saisir les informations suivantes dans la configuration du plugin:

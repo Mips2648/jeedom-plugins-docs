@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: arlo
 ---
 
-# 2021-01-22
+# 2021-01-11
 
 - Amélioration du heartbeat du démon au démarrage
 - Amélioration de l'intégration de la Arlo Essential

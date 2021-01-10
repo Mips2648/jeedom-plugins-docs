@@ -5,6 +5,14 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2021-01-22
+
+- Amélioration du heartbeat du démon au démarrage
+- Amélioration de l'intégration de la Arlo Essential
+- Fix image pour la video doorbell modèle AVD1001A qui ne s'affichait pas
+- Fix: depuis la dernière mise à jour, l'équipement sirène (intégrée à certaine base) avait par erreur les commandes suivantes: _Rafraichir_, _Connecté_, _Mode_ , _Etat planning_ qui ne fonctionnaient pas évidement. Ces commandes peuvent être supprimées sur cet équipement, elles ne seront plus créées par le plugin.
+- Fix une erreur mineur qui pouvait s'afficher dans les logs (sans conséquence) lorsqu'une caméra n'était pas partagée avec Jeedom
+
 # 2020-12-02
 
 - Nouvelle présentation de la liste des objets

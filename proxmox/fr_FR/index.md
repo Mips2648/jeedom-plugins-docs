@@ -46,6 +46,23 @@ Dans le menu principal "Permissions", cliquez sur sur "Add" puis "User permissio
 
 ![Proxmox permissions](../images/proxmox_permissions.png "Proxmox permissions")
 
+Il n'est pas recommandé de donner le rôle "Administrator" à l'utilisateur "Jeedom"; les privilèges minimum requis pour que toutes les fonctions du plugin fonctionnent sont les suivants:
+
+| Privilèges              | Noeud: infos | Noeud: actions | KVM & LXC: infos | KVM & LXC: actions | KVM & LXC: backup & snapshot | Stockage: infos |
+|-------------------------|--------------|----------------|------------------|--------------------|------------------------------|-----------------|
+| Datastore.Allocate      |              |                |                  |                    | requis                       |                 |
+| Datastore.AllocateSpace |              |                |                  |                    | requis                       |                 |
+| Datastore.Audit         |              |                |                  |                    | requis                       | requis          |
+| Sys.Audit               | requis       | requis         |                  |                    |                              |                 |
+| Sys.Modify              |              | requis         |                  |                    |                              |                 |
+| Sys.PowerMgmt           |              | requis         |                  |                    |                              |                 |
+| VM.Audit                |              |                | requis           | requis             |                              |                 |
+| VM.Backup               |              |                |                  |                    | requis                       |                 |
+| VM.PowerMgmt            |              |                |                  | requis             |                              |                 |
+| VM.Snapshot             |              |                |                  |                    | requis                       |                 |
+
+Vous trouverez plus d'information ici: <https://pve.proxmox.com/wiki/User_Management>
+
 > **Tip**
 >
 > La configuration illustrée ci-dessus donne des droits d'administrations complets à l'utilisateur jeedom@pve sur la totalité des ressources Proxmox.

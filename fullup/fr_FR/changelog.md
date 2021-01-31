@@ -5,6 +5,13 @@ lang: fr_FR
 pluginId: fullup
 ---
 
+# 2021-01-31
+
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+- Ajout d'une configuration pour sélectionner l'application: pour l'instant _Q8 Mazout_ ou _Fullup_
+- Optimisation interne
+
 # 2020-08-24
 
 - Nettoyage de la mise en page pour la V4

@@ -21,7 +21,22 @@ Il n'y a pas de configuration particulière à faire, le plugin utilise éventue
 
 Un équipement Jeedom correspond à un connecteur InfluxDB.
 
+Chaque connecteur va se connecter et envoyer les données à une et une seule instance influxDB mais vous pouvez avoir autant de connecteur que nécessaire.
+Le plugin gère InfluxDB v1 et v2, le principe de base entre les deux reste identique mais la façon de se connecter change entre les deux.
+
+## InfluxDB v1
+
 Pour chaque connecteur, vous devez configurer l'adresse IP de votre serveur InfluxDB, un utilisateur, un mot de passe ainsi que le nom de la base de donnée.
+Vous avez la possibilité d'activer ou non https.
+![InfluxDB v1](../images/influxv1.png "InfluxDB v1")
+
+## InfluxDB v2
+
+Pour la v2, vous devez configurer l'url sous la forme `https://server.my`, le token d'accès, l'organisation et le bucket de destination (voir documentation de influxDB)
+![InfluxDB v2](../images/influxv2.png "InfluxDB v2")
+
+> **Tip**
+> influxDB possède une offre cloud gratuite pour la v2 très facile à mettre en place pour tester ou même définitivement si cela vous convient (limitée à une seule organisation, en volume de donnée et durée d'historique), plus d'info: <https://www.influxdata.com/influxdb-cloud-pricing/>
 
 ## Mode d'envoi
 

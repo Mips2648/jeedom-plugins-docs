@@ -28,12 +28,14 @@ Le plugin gère InfluxDB v1 et v2, le principe de base entre les deux reste iden
 
 Pour chaque connecteur, vous devez configurer l'adresse IP de votre serveur InfluxDB, un utilisateur, un mot de passe ainsi que le nom de la base de donnée.
 Vous avez la possibilité d'activer ou non https.
-![InfluxDB v1](../images/influxv1.png "InfluxDB v1")
+
+![InfluxDB v1](../images/influxV1.png "InfluxDB v1")
 
 ## InfluxDB v2
 
 Pour la v2, vous devez configurer l'url sous la forme `https://server.my`, le token d'accès, l'organisation et le bucket de destination (voir documentation de influxDB)
-![InfluxDB v2](../images/influxv2.png "InfluxDB v2")
+
+![InfluxDB v2](../images/influxV2.png "InfluxDB v2")
 
 > **Tip**
 > influxDB possède une offre cloud gratuite pour la v2 très facile à mettre en place pour tester ou même définitivement si cela vous convient (limitée à une seule organisation, en volume de donnée et durée d'historique), plus d'info: <https://www.influxdata.com/influxdb-cloud-pricing/>
@@ -44,7 +46,7 @@ Vous pouvez aussi choisir le mode d'envoi, par défaut en auto-actualisation. Ce
 
 - Auto-actualisation: le plugin enverra toutes les mesures sélectionnées selon la programmation choisie en un seul appel, par défaut chaque minute.
 C'est le mode de fonctionnement recommandé, il est plus optimal et ne provoque quasi aucune charge sur votre Jeedom tout en permettant d'avoir des mesures toutes les minutes.
-- Temps réel: le plugin enverra les mesures une par une à chaque changement de valeur, potentiellement plusieurs appels par seconde pour la même commande. Ce mode provoque une charge conséquente sur Jeedom en fonction de votre matériel et du nombre de commandes sélectionnées alors que bien souvent un mise à jour d'InfluxDB par minute suffit amplement pour avoir des statistiques utiles.
+- Temps réel: le plugin enverra les mesures une par une à chaque changement de valeur, potentiellement plusieurs appels par seconde pour la même commande (tout dépend de vos équipements/commandes). Ce mode peut provoquer une charge conséquente sur Jeedom en fonction de votre matériel et du nombre de commandes sélectionnées alors que bien souvent un mise à jour d'InfluxDB par minute suffit amplement pour avoir des statistiques utiles.
 
 Il est parfaitement possible d'avoir plusieurs équipements connectés à la même base de donnée configurés chacun avec un mode différent et des commandes différentes si vous voulez avoir certaines commandes envoyées en temps réel tout en optimisant la charge pour les autres.
 

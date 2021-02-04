@@ -21,7 +21,24 @@ There is not specific configuration to do, the plugin might use a cron, dependin
 
 A Jeedom device correspond to one InfluxDB connection
 
+Each connector will connect and send data to one and only one influxDB instance, but you can have as many connectors as you need.
+The plugin manages InfluxDB v1 and v2, the basic principle between the two remains the same but the way to connect changes between the two.
+
+## InfluxDB v1
+
 For each connector, you have to configure the IP address of InfluxDB server, a user, a password and the database name.
+You have the option to enable or not https.
+
+![InfluxDB v1](../images/influxV1.png "InfluxDB v1")
+
+## InfluxDB v2
+
+For v2, you must configure the URL in the form `https://server.my`, the access token, the organization and the destination bucket (see influxDB documentation)
+
+![InfluxDB v2](../images/influxV2.png "InfluxDB v2")
+
+> **Tip**
+> influxDB has a free cloud offer for v2 that is very easy to set up for testing or even definitively if it suits you (limited to a single organization, rate and history retention), more info: <https: //www.influxdata.com/influxdb-cloud-pricing/>
 
 ## Sending mode
 
@@ -29,7 +46,7 @@ You can also choose how data must be sent, by default with auto-refresh. This co
 
 - Auto-refresh: the plugin will send all selected measurements at the selected schedule in one call, by default every minute.
 This is the recommended way of working, it's the most optimal and do not add extra load on your Jeedom and at the same time it allows to have measurements every minute.
-- Real time: the plugin will send measurement one by one each time there is a change of value, potentially several calls in the second for the same command. This mode will induce an important load on your installation depending your hardware and number of selected commands while most of the time an update by minute is more than enough to get useful statistics.
+- Real time: the plugin will send measurement one by one each time there is a change of value, potentially several calls in the second for the same command (depending devices/commands). This mode might induce an important load on your installation depending your hardware and number of selected commands while most of the time an update by minute is more than enough to get useful statistics.
 
 It is possible to have multiple connectors to the same database each configured with different mode and different commands if you want to have some commands send in real time while optimizing the load for others
 

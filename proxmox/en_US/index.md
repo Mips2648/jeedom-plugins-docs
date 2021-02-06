@@ -46,9 +46,22 @@ In the main menu "Permissions", click on "Add" then "User permission" and fill i
 
 ![Proxmox permissions](../images/proxmox_permissions.png "Proxmox permissions")
 
-> **Tip**
->
-> The configuration below gives full administration rights to the user jeedom@pve on all Proxmox resources.
+It is not recommended to give the "Administrator" role to the "Jeedom" user; the minimum privileges required for all functions of the plugin to work are as follows:
+
+| Privileges              | Node: info | Node: actions | KVM & LXC: infos | KVM & LXC: actions | KVM & LXC: backup & snapshot | Storage: infos |
+|-------------------------|--------------|----------------|------------------|--------------------|------------------------------|-----------------|
+| Datastore.Allocate      |              |                |                  |                    | required                       |                 |
+| Datastore.AllocateSpace |              |                |                  |                    | required                       |                 |
+| Datastore.Audit         |              |                |                  |                    | required                       | required          |
+| Sys.Audit               | required       | required         |                  |                    |                              |                 |
+| Sys.Modify              |              | required         |                  |                    |                              |                 |
+| Sys.PowerMgmt           |              | required         |                  |                    |                              |                 |
+| VM.Audit                |              |                | required           | required             |                              |                 |
+| VM.Backup               |              |                |                  |                    | required                       |                 |
+| VM.PowerMgmt            |              |                |                  | required             |                              |                 |
+| VM.Snapshot             |              |                |                  |                    | required                       |                 |
+
+You will find more information here: <https://pve.proxmox.com/wiki/User_Management>
 
 # Plugin configuration
 

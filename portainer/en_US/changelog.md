@@ -5,6 +5,10 @@ lang: en_US
 pluginId: portainer
 ---
 
+# 2021-01-06
+
+- New presentation of the list of device by category: Docker & Container
+
 # 2020-12-02
 
 - New presentation of objects list 

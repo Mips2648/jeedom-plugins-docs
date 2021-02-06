@@ -5,6 +5,12 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2021-02-04
+
+- Add https support for InfluxDb v1.x
+- Add support for InfluxDb v2.x (see documentation)
+- New presentation of objects list 
+
 # 2020-09-04
 
 - Cleanup of the layout for V4

@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: vmczehnder
 ---
 
+# 2021-02-06
+
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+
 # 2020-06-18
 
 - bugfix sur l'installation du démon

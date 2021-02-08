@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: portainer
 ---
 
+# 2021-02-08
+
+- Ajout d'une commande _URL Publique_ sur l'équipement Docker
+- Ajout de l'affichage de l'image utilisée pour le container dans la page de configuration de l'équipement
+- Fix un cas d'affichage en doublon des containers si plusieurs dockers utilisés (il faut forcer une synchro manuelle pour que la page santé affiche les infos correctes après la mise à jour du plugin)
+
 # 2021-01-06
 
 - Nouvelle présentation de la liste des équipements par catégorie: Docker & Container

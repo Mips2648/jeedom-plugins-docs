@@ -9,7 +9,7 @@ pluginId: portainer
 
 - Ajout d'une commande _URL Publique_ sur l'équipement Docker
 - Ajout de l'affichage de l'image utilisée pour le container dans la page de configuration de l'équipement
-- Fix un cas d'affichage en doublon des containers si plusieurs dockers utilisés (il faut forcer une synchro manuelle pour que la page santé affiche les infos correctes après la mise à jour du plugin)
+- Fix un cas d'affichage en doublon des containers sur le panel si plusieurs dockers utilisés (il faut forcer une synchro manuelle pour que la page santé affiche les infos correctes après la mise à jour du plugin)
 
 # 2021-01-06
 

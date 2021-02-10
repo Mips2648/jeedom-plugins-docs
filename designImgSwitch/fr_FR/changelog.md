@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: designImgSwitch
 ---
 
+# 2021-02-10
+
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+- Fix sur upload d'image personnalisée pour Jeedom v4.1
+
 # 2020-08-24
 
 - Nettoyage de la mise en page pour la V4

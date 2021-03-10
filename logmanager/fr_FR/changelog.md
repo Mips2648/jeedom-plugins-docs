@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: logmanager
 ---
 
+# 2021-03-10
+
+- Ajout du choix du nombre de lignes à afficher sur la tuile dans la configuration de l'équipement
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+
 # 2020-09-21
 
 - Autorise les majuscules dans le nom de l'équipement (et donc du nom de fichier)

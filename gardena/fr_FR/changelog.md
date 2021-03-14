@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: gardena
 ---
 
+# 2021-03-14
+
+- Fix la version d'une dépendance dû à un bug dans la dernière version de celle-ci (voir <https://github.com/websocket-client/websocket-client/commit/3112b7d75b1e5d65cb8fdfca7801606649044ed1#commitcomment-48226116>)
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+
 # 2020-10-24
 
 - Fix un problème avec les Smart Irrigation Control qui empêchait le démon de démarrer correctement

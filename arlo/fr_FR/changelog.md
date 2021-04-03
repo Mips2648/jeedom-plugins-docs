@@ -7,6 +7,8 @@ pluginId: arlo
 
 # 2021-04-03
 
+Il est nécessaire de relancer l'installation des dépendances après l'installation de cette mise à jour même si elles sont déjà _OK_.
+
 - Prise en charge de la sonnette Arlo video doorbell Essential (Wire-Free) AVD2001
 - Amélioration de la prise en charge de la gamme Arlo Essential et Arlo Go
 - Refonte complète de la gestion des événements par le démon (réduction des déconnexions et réduction du nombre de requêtes sur les périphériques sur batterie tel que Arlo Essential et Arlo Go)

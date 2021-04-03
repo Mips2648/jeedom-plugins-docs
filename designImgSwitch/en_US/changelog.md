@@ -5,6 +5,12 @@ lang: en_US
 pluginId: designImgSwitch
 ---
 
+# 2021-02-10
+
+- New presentation of objects list 
+- Improved layout of device and commands configuration pages
+- Fix on custom image upload for Jeedom v4.1
+
 # 2020-08-24
 
 - Cleanup of the layout for V4

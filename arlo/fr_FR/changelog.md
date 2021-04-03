@@ -7,9 +7,9 @@ pluginId: arlo
 
 # 2021-04-03
 
-- Prise en charge de la sonnette Arlo video doorbell AVD2001
-- Amélioration de la prise en charge de la gamme Arlo Essentials
-- Refont complète de la gestion des événements par le démon (réduction des déconnexion et réduction du nombre de requêtes sur les périphériques sur batteries)
+- Prise en charge de la sonnette Arlo video doorbell Essential (Wire-Free) AVD2001
+- Amélioration de la prise en charge de la gamme Arlo Essential et Arlo Go
+- Refonte complète de la gestion des événements par le démon (réduction des déconnexions et réduction du nombre de requêtes sur les périphériques sur batterie tel que Arlo Essential et Arlo Go)
 - Fix urgent suite à un changement chez Arlo effectué dans la nuit du 02 au 03 avril: si vous ne faite pas cette mise à jour le démon ne pourra plus se connecter.
 
 # 2021-01-11

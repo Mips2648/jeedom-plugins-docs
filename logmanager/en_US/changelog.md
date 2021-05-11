@@ -5,6 +5,12 @@ lang: en_US
 pluginId: logmanager
 ---
 
+# 2021-03-10
+
+- Add the choice of the number of lines to display on the widget in the device configuration
+- New presentation of objects list 
+- Improved layout of device and commands configuration pages
+
 # 2020-09-21
 
 - Allow uppercase characters in device name (and so filename)

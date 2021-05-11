@@ -5,6 +5,15 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2021-04-03
+
+It is necessary to launch the installation of dependencies after installing this update even if they are already _OK_.
+
+- Add support of Arlo Video Doorbell Essential (Wire-Free) AVD2001
+- Improve support of Arlo Essential and Arlo Go
+- Full refactoring of the daemon's handling of events (reduced disconnections and reduced number of requests on battery-powered devices such as Arlo Essential and Arlo Go)
+- Urgent fix following a change at Arlo made on the night of April 02 to 03: if you do not do this update the daemon will no longer be able to connect.
+
 # 2021-01-11
 
 - Improved daemon heartbeat on startup

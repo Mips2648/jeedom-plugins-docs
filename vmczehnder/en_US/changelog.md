@@ -5,6 +5,11 @@ lang: en_US
 pluginId: vmczehnder
 ---
 
+# 2021-02-06
+
+- New presentation of objects list 
+- Improved layout of device and commands configuration pages
+
 # 2020-06-18
 
 - fix daemon installation

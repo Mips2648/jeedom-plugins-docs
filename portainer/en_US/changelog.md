@@ -5,6 +5,12 @@ lang: en_US
 pluginId: portainer
 ---
 
+# 2021-02-08
+
+- Add a _Public URL_ command on the Docker device
+- Add the display of the image used for the container in the device configuration page
+- Fixed a case of duplicate display of containers on the panel if several dockers used (you have to force a manual sync so that the health page displays the correct information after the plugin update)
+
 # 2021-01-06
 
 - New presentation of the list of device by category: Docker & Container

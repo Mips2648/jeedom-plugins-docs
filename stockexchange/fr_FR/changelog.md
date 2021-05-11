@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: stockexchange
 ---
 
+# 2021-05-12
+
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+- Fix: recherche de symbole avec le service marketstack
+
 # 2020-08-23
 
 - Maintenance sur les services disponibles: world trading data a été remplacé par marketstack

@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: portainer
 ---
 
+# 2021-05-19
+
+- Ajout du support des instances Portainer de type **agent**
+- Ajout de commandes info donnant le nombre de containers, de volumes, d'images, de services et de stacks sur les équipements de types **agent** et **docker**
+
 # 2021-02-08
 
 - Ajout d'une commande _URL Publique_ sur l'équipement Docker

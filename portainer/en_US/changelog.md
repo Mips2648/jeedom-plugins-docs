@@ -5,6 +5,11 @@ lang: en_US
 pluginId: portainer
 ---
 
+# 2021-05-19
+
+- Add support of Portainer instance of type **agent**
+- Add info commands giving the number of containers, volumes, images, services and stacks on **agent** and **docker** type devices
+
 # 2021-02-08
 
 - Add a _Public URL_ command on the Docker device

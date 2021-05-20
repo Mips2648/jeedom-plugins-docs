@@ -41,14 +41,18 @@ Deux options existent pour rapatrier dans Jeedom les logs de sorties stdout et s
 
 # Les commandes disponibles
 
-## Docker
+## EndPoint
 
-Sur les équipements de type Docker, il existe les commandes info suivantes:
+Sur les équipements de type EndPoint (Instance docker, agent portainer...), il existe les commandes info suivantes:
 
 - **Nombre de CPU** donne le nombre de CPU de la machine
 - **Mémoire** donne la mémoire totale de la machine en bytes
-- **Nombre de containers allumés**
-- **Nombre de containers éteints**
+- **Nombre de containers allumés** et **Nombre de containers éteints**
+- **Nombre de containers sains** et **Nombre de containers malsains**
+- **Nombre de volumes**
+- **Nombre d'images**
+- **Nombre de stacks**
+- **URL publique**
 
 ## Container
 

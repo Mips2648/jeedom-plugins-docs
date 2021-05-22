@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: myaudi
 ---
 
+# 2021-05-22
+
+- Nouvelle version compatible avec les dernières api Audi/VW (thx @ripleyxlr8)
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+
 # 2020-07-13
 
 - Fix affichage carte de localisation sur la vue mobile

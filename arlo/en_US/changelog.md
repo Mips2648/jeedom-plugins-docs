@@ -5,6 +5,14 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2021-06-02
+
+- Added action command _Send record_ on Arlo VideoDoorbell
+- Fix parsing of the authentication code in 2 steps following a format change in the email sent by Arlo
+- Complete refactoring of the management of the connection to the Arlo system by the daemon:
+  - the daemon will attempt to reconnect automatically without stopping in the event of a problem during login or in the event of a forced disconnection by Arlo,
+  - the daemon will re-execute the requested mode change before disconnection if necessary
+
 # 2021-04-03
 
 It is necessary to launch the installation of dependencies after installing this update even if they are already _OK_.

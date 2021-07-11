@@ -5,6 +5,12 @@ lang: en_US
 pluginId: myaudi
 ---
 
+# 2021-05-22
+
+- New version compatible with the latest Audi/VW APIs (thx @ ripleyxlr8)
+- New presentation of objects list 
+- Improved layout of device and commands configuration pages
+
 # 2020-07-13
 
 - Fix display of location map on mobile view

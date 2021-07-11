@@ -5,6 +5,12 @@ lang: en_US
 pluginId: gardena
 ---
 
+# 2021-07-12
+
+- Added a configurable cron for updating Husqvarna Automowers in the plugin configuration.
+- Added the possibility of selecting pause time (in minutes) in command *Pause schedule*. To have this option, you must delete the existing command on the device (do not delete the device), save and then use the function *Create missing commands * so that the command is recreated with the correct configuration. The scenarios will have to be adapted with the new command.
+- Move plugin to "Nature" category
+
 # 2021-03-14
 
 - Fix version of a dependency due to a bug in the latest version of it (see <https://github.com/websocket-client/websocket-client/commit/3112b7d75b1e5d65cb8fdfca7801606649044ed1#commitcomment-48226116>). If you installed the plugin and its dependencies after March 3, you probably need to rerun the dependency installation; if everything is working well for you it is not necessary.

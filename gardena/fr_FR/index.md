@@ -39,7 +39,10 @@ Vous trouverez plus d'information directement disponible sur la page de configur
 Dès que la configuration du plugin est complète et correcte, le plugin synchronisera les équipements selon les API activées.
 Il créera les équipements manquants avec leurs commandes et mettra à jour les commandes de tout les appareils connectés.
 
-Les commandes des équipements de la gamme Gardena Smart System seront mises à jours en temps réel, il n'y a donc pas de configuration supplémentaire à faire.Les tondeuses Husqvarna Automower seront mise à jour chaque minute et une commande **Rafraichir** existe pour demander une actualisation supplémentaire manuelle.
+Les commandes des équipements de la gamme Gardena Smart System seront mises à jours en temps réel, il n'y a donc pas de configuration supplémentaire à faire.
+
+Les tondeuses Husqvarna Automower seront mise à jour en fonction de la configuration du plugin, par défaut toutes les 2 minutes entre 9h et 20h. **Attention** il y a une limite de 10.000 actualisations par mois imposée par Husqvarna.
+Une commande **Rafraichir** existe pour demander une actualisation supplémentaire manuelle.
 
 > **Tip**
 >
@@ -49,7 +52,7 @@ Dans la page de configuration d'un équipement, il existe un bouton pour créer 
 
 # Les équipements et leurs commandes
 
-## Les commandes communes à tous les appareils
+## Les commandes communes à tous les appareils Gardena Smart System
 
 Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
@@ -74,7 +77,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Démarrer** commande action pour démarrer l'arrosage demandant en option le nombre de minute (entière) d'arrosage
 - **Arrêter** commande action pour arrêter l'arrosage
 - **Durée restante** commande info donnant le temps restant (en minute) lorsque l'arrosage est en cours
-- **Pause programmation** commande action
+- **Pause programmation** commande action demandant en option le nombre de minutes
 - **Reprise programmation** commande action
 
 ## Gardena Smart Power Socket
@@ -87,7 +90,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Activité** indique l'activité en cours: *OFF*, *FOREVER_ON*, *TIME_LIMITED_ON*, *SCHEDULED_ON*
 - **Etat** commande info binaire indiquant si la prise est allumée ou éteinte
 - **Durée restante** commande info donnant le temps restant de la minuterie (si applicable)
-- **Pause programmation** commande action
+- **Pause programmation** commande action demandant en option le nombre de minutes
 - **Reprise programmation** commande action
 
 ## Gardena Smart Mower
@@ -118,7 +121,7 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - **Démarrer valve X** commande action pour démarrer l'arrosage demandant en option le nombre de minute (entière) d'arrosage
 - **Arrêter valve X** commande action pour arrêter l'arrosage
 - **Durée restante valve X** commande info donnant le temps restant (en minute) lorsque l'arrosage est en cours
-- **Pause programmation valve X** commande action
+- **Pause programmation valve X** commande action demandant en option le nombre de minutes
 - **Reprise programmation valve X** commande action
 
 ## Husqvarna Automower

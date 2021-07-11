@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: gardena
 ---
 
+# 2021-07-12
+
+- Ajout d'un cron configurable pour l'actualisation des tondeuses Husqvarna dans la config du plugin.
+- Ajout de la possibilité de choisir le temps de pause (en minute) avec la commande *Pause programmation*. Pour avoir cette option il faut supprimer la commande existante sur l'équipement (ne pas supprimer l'équipement), sauver et ensuite utiliser la fonction *Créer les commandes manquantes* pour que la commande soit recréé avec la bonne configuration. Il faudra adapter les scénarios avec la nouvelle commande.
+- Déplacement du plugin dans la catégorie "Nature".
+
 # 2021-03-14
 
 - Fix la version d'une dépendance dû à un bug dans la dernière version de celle-ci (voir <https://github.com/websocket-client/websocket-client/commit/3112b7d75b1e5d65cb8fdfca7801606649044ed1#commitcomment-48226116>). Si vous avez installé le plugin et ses dépendances après le 3 mars, vous devez probablement relancer l'installation des dépendances; si tout fonctionne bien pour vous cela n'est pas nécessaire.

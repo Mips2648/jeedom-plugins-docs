@@ -10,7 +10,7 @@ pluginId: arlo
 Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.
 Il est possible de contrôler le mode, l'activation et désactivation des caméras, visualiser le flux live des caméras, déclencher des captures et des enregistrements vidéos, déclencher la sirène...
 
-Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
+Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Pro4, Ultra, Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
 
 Voici un aperçu des possibilités du plugin:
 
@@ -36,7 +36,7 @@ Voici un aperçu des possibilités du plugin:
 
 > **Important**
 >
-> Debian 8 (Jessie) n'étant plus supporté par Debian, le plugin ne fonctionnera pas sous Jessie car il est nécessaire d'installer des dépendances qui ne sont plus disponibles sur cette version.
+> Il est indispensable d'être sous Debian 10 Buster minimum pour faire fonctionner le plugin.
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 Il faut ensuite installer les dépendances.
@@ -247,7 +247,15 @@ En plus des commandes communes à toutes les caméras, les caméras Arlo Essenti
 - **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)
 - **Lampe Off**: Pour éteindre manuellement la lampe
 
-## Arlo Pro3, Pro3 Floodlight & Ultra
+## Arlo Essential Indoor
+
+En plus des commandes communes à toutes les caméras, les caméras Arlo Essential disposent des commandes suivantes pour contrôler l'état de la sirène intégrée:
+
+- **Etat Sirène**: Indique si la sirène est active
+- **Sirène On**: Pour déclencher manuellement la sirène
+- **Sirène Off**: Pour couper la sirène
+
+## Arlo Pro3, Pro3 Floodlight, Pro4 & Ultra
 
 En plus des commandes communes à toutes les caméras, les caméras Arlo Pro3, Pro3 Floodlight et Ultra disposent des commandes suivantes pour contrôler l'état de la sirène et de l'éclairage intégrés:
 

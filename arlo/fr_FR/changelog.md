@@ -5,6 +5,16 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2021-07-28
+
+- Prise en charge de la Arlo Essential Indoor
+- Prise en charge de la Arlo Pro4
+- Permet l'affichage en tableau des tuiles (excepté la tuile caméra qui est personnalisé par le plugin)
+- Désactivation de la gestion des événements sur la Arlo Video doorbell wire-free (pas de soucis avec la Video doorbell classique) car cela draine la batterie de ce modèle trop rapidement
+- Optimisation interne sur les processus d'heartbeat et de reconnexion
+- Meilleur gestion des timeouts
+- Amélioration: mise à jour du mode en tant réel si celui-ci est modifié en dehors du plugin (dans l'app Arlo donc); précédemment il fallait jusqu'à 1m30
+
 # 2021-06-02
 
 - Ajout d'une commande action _Envoyer un enregistrement_ sur les Arlo VideoDoorbell

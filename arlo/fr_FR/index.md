@@ -249,7 +249,7 @@ En plus des commandes communes à toutes les caméras, les caméras Arlo Essenti
 
 ## Arlo Essential Indoor
 
-En plus des commandes communes à toutes les caméras, les caméras Arlo Essential disposent des commandes suivantes pour contrôler l'état de la sirène intégrée:
+En plus des commandes communes à toutes les caméras, les caméras Arlo Essential Indoor disposent des commandes suivantes pour contrôler l'état de la sirène intégrée:
 
 - **Etat Sirène**: Indique si la sirène est active
 - **Sirène On**: Pour déclencher manuellement la sirène
@@ -257,7 +257,7 @@ En plus des commandes communes à toutes les caméras, les caméras Arlo Essenti
 
 ## Arlo Pro3, Pro3 Floodlight, Pro4 & Ultra
 
-En plus des commandes communes à toutes les caméras, les caméras Arlo Pro3, Pro3 Floodlight et Ultra disposent des commandes suivantes pour contrôler l'état de la sirène et de l'éclairage intégrés:
+En plus des commandes communes à toutes les caméras, les caméras Arlo Pro3, Pro3 Floodlight, Pro4 et Ultra disposent des commandes suivantes pour contrôler l'état de la sirène et de l'éclairage intégrés:
 
 - **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte
 - **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)

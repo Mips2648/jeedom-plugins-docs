@@ -13,7 +13,7 @@ pluginId: arlo
 - Désactivation de la gestion des événements sur la Arlo Video doorbell wire-free (pas de soucis avec la Video doorbell classique) car cela draine la batterie de ce modèle trop rapidement
 - Optimisation interne sur les processus d'heartbeat et de reconnexion
 - Meilleur gestion des timeouts
-- Amélioration: mise à jour du mode en tant réel si celui-ci est modifié en dehors du plugin (dans l'app Arlo donc); précédemment il fallait jusqu'à 1m30
+- Amélioration: mise à jour du mode en tant réel si celui-ci est modifié en dehors du plugin (dans l'app Arlo donc); précédemment il fallait maximum 1 min. 30
 
 # 2021-06-02
 

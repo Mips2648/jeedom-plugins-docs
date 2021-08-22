@@ -156,7 +156,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *VALVE_BROKEN* - 
 - *FROST_PREVENTS_STARTING* -
 - *LOW_BATTERY_PREVENTS_STARTING* - 
-- *VALVE_POWER_SUPPLY_FAILED* - Problème d'alimentation électrique, impossible d'ouvrir la valve
+- *VALVE_POWER_SUPPLY_FAILED* - 
 - *UNKNOWN*
 
 ## Description of Gardena Smart Mower errors

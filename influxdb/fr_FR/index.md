@@ -59,8 +59,8 @@ Dans le second onglet sont affichées toutes les commandes sélectionnées pour 
 Il est possible de rechercher et sélectionner des commandes à envoyer via 3 méthodes:
 
 - Recherche d'une commande unique via le bouton **Ajouter une commande**
-- Recherche et ajout de commande multiple via le bouton **Ajouter commandes par objet**. Cette méthode à l'avantage de n'afficher que les commandes des équipements liés à un objet particulier et donc l'affichage sera plus rapide si vous avez énormément de commandes (+ de 10.000)
-- Recherche et ajout de commande multiple via le bouton **Ajouter commandes (liste)**. Cet écran va afficher toutes les commandes infos de votre Jeedom sous forme de tableau: pratique car tout est affiché mais si vous avez plus de 10.000 commandes cela peut prendre 30s ou plus.
+- Recherche et ajout de commandes multiple via le bouton **Ajouter commandes par objet**. Cette méthode à l'avantage de n'afficher que les commandes des équipements liés à un objet particulier et donc l'affichage sera plus rapide si vous avez énormément de commandes (+ de 10.000)
+- Recherche et ajout de commandes multiple via le bouton **Ajouter commandes (liste)**. Cet écran va afficher toutes les commandes infos de votre Jeedom sous forme de tableau: pratique car tout est affiché mais si vous avez plus de 10.000 commandes cela peut prendre 30s ou plus.
 
 Exemple de recherche:
 ![Recherche commandes](../images/search.png "Recherche commandes")

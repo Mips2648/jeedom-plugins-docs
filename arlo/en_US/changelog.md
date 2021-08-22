@@ -5,6 +5,16 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2021-07-28
+
+- Add support of Arlo Essential Indoor
+- Add support of Arlo Pro4
+- Allows the display in table of widget (except the camera widget which is personalized by the plugin)
+- Disabled event management on the Arlo Video doorbell wire-free (no problem with the classic Video doorbell) because it drains the battery of this model too quickly
+- Internal optimization on the heartbeat and reconnection processes
+- Better timeouts management
+- Improvement: update mode in real time if it is modified outside the plugin (in the Arlo app therefore); previously it took a maximum of 1 min. 30
+
 # 2021-06-02
 
 - Added action command _Send record_ on Arlo VideoDoorbell

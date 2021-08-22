@@ -5,6 +5,11 @@ lang: en_US
 pluginId: stockexchange
 ---
 
+# 2021-07-27
+
+- Changed the API used for marketstack to avoid the "incorrect data received: null" error
+- Internal optimization
+
 # 2021-05-12
 
 - New presentation of objects list 

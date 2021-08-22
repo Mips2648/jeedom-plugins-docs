@@ -5,6 +5,13 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2021-08-22
+
+- Add table display mode of the list of device for Jeedom 4.2
+- Enhancement: Optionally allows the display of the following commands on the Arlo Baby widget: **Temperature**, **Humidity**, **Air quality**, **Brightness**
+- Fix: the **Air quality** command returned a value per thousand instead of percent, the value is again in percent now.
+- Fix daemon crash in case a camera (not connected to a base) is offline.
+
 # 2021-07-28
 
 - Add support of Arlo Essential Indoor

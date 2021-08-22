@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: portainer
 ---
 
+# 2021-08-21
+
+- Ajout d'une commande _Etat_ sur les équipements de types **agent** et **docker**
+- Fix un problème de synchronisation lorsqu'un endpoint est hors ligne
+
 # 2021-05-19
 
 - Ajout du support des instances Portainer de type **agent**

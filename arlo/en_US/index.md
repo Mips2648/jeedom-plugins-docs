@@ -10,7 +10,7 @@ pluginId: arlo
 Plugin for controlling Arlo equipment such as cameras, base station and doorbells.
 It is possible to control the mode, the activation and deactivation of the cameras, view the live stream of the cameras, trigger video captures and recordings, trigger the siren ...
 
-All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Ultra, Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell and Video Doorbell...
+All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Pro4, Ultra, Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell and Video Doorbell...
 
 Here is an overview of the possibilities of the plugin:
 
@@ -36,7 +36,7 @@ Here is an overview of the possibilities of the plugin:
 
 > **Important**
 >
-> Debian 8 (Jessie) is no longer supported by Debian, the plugin will not work under Jessie because it is necessary to install dependencies which are no longer available on this version.
+> It is essential to be under Debian 10 Buster minimum to run the plugin.
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 Then you need to install dependencies.
@@ -247,9 +247,17 @@ On top of common commands to all cameras, the Arlo Essential cameras have comman
 - **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)
 - **Lamp Off**: To manually turn off the lamp
 
-## Arlo Pro3, Pro3 Floodlight & Ultra
+## Arlo Essential Indoor
 
-On top of common commands to all cameras, the Arlo Pro3, Pro3 Floodlight and Ultra have commands to control the siren and the light integrated in the camera.
+On top of common commands to all cameras, the Arlo Essential indoor cameras have commands to control the integrated siren.
+
+- **Siren status**: Indicates if the siren is active
+- **Siren On**: To manually turn on the siren
+- **Siren Off**: To turn off the siren
+
+## Arlo Pro3, Pro3 Floodlight, Pro4 & Ultra
+
+On top of common commands to all cameras, the Arlo Pro3, Pro3 Floodlight, Pro4 and Ultra have commands to control the siren and the light integrated in the camera.
 
 - **Lamp status**: Indicates whether the lamp is currently on or off
 - **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)

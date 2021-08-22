@@ -100,6 +100,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Active** commande binaire indiquant si la tondeuse est active ou non; elle sera indiquée comme active lors de ces activités: *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*
 - **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_ (voir ci-dessous pour une liste des valeurs possibles)
 - **Heures de travail** commande info donnant le nombre d'heures de travail
+- **Durée restante** commande info donnant le temps restant de la minuterie (si applicable)
 - **Démarrage mode manuel** commande action pour démarrer en mode manuel demandant en option le nombre de minute d'activité
 - **Démarrage mode auto** commande action pour démarrer en mode auto (en suivant la programmation)
 - **Annulation et retour à la base** commande action, la tondeuse redémarrera lors de la prochaine tâche
@@ -132,7 +133,7 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - **Etat** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (voir ci-dessous pour une description des valeurs)
 - **Activité** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (voir ci-dessous pour une description des valeurs)
 - **Code erreur** & **Description erreur** donne le code et la description de l'erreur le cas échéant
-- **Durée restante** commande info donnant le temps restant d'activité
+- **Durée restante** commande info donnant le temps restant d'activité; valable uniquement lors de l'utilisation des commandes **Démarrage mode manuel** ou **Retour à la base**
 - **Démarrage mode manuel** Démarre et tond l'herbe pendant la durée (en minute) donnée en option de la commande
 - **Pause**
 - **Reprendre** Reprend selon la programmation

@@ -45,12 +45,14 @@ There are two options to get the output logs stdout and stderr to Jeedom. If the
 
 On device of type EndPoint (docker instance, portainer agent...), there are the following info commands:
 
+- **State** is 1 or 0 depending on whether the device is on and reachable or not
 - **Number of CPU** gives the number of CPU of the machine
 - **Memory** gives the total memory of the machine in bytes
 - **Number of containers running** and **Number of containers stopped**
 - **Number of healthy containers** and **Number of unhealthy containers**
 - **Volumes counter**
 - **Images counter**
+- **Services counter**
 - **Stacks counter**
 - **Public URL**
 

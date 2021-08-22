@@ -5,6 +5,15 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2021-08-22
+
+- Complete redesign of the commands selection, much more responsive interface even with a very large number (+15,000) of commands to display:
+  - Add the ability to search and add individual command
+  - Add the ability to search and add command by object / room
+  - And redesign of search and add of commands via full list of commands
+  - Add search / filter to all lists
+- Add table display mode of the list of device for Jeedom 4.2
+
 # 2021-02-04
 
 - Add https support for InfluxDb v1.x

@@ -5,6 +5,15 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
+# 2021-08-22
+
+- Refonte complète de la sélection des commandes, interface beaucoup plus réactive même avec un très grand nombre (+15.000) de commandes à afficher:
+  - Ajout de la possibilité de recherche et d'ajout de commande individuelle
+  - Ajout de la possibilité de recherche et d'ajout de commande par objet/pièce
+  - Et refonte de la recherche et d'ajout de commandes via la liste complète des commandes
+  - Ajout de zone de rechercher/filtre sur toutes les listes
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+
 # 2021-02-04
 
 - Ajout du support https pour InfluxDb v1.x

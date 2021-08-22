@@ -10,7 +10,7 @@ pluginId: arlo
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
 - Amélioration: permet, en option, l'affichage des commandes suivantes sur le widget de la Arlo Baby: **Température**, **Humidité**, **Qualité d'air**, **Luminosité**
 - Fix: la commande **Qualité d'air** retournait une valeur en pour mille au lieu de pourcent, la valeur est à nouveau en pourcent à présent.
-- Fix un crash du démon dans le cas où une caméra (non connectée à une base) est offline.
+- Fix un crash du démon dans le cas où une caméra (non connectée à une base) est hors ligne.
 
 # 2021-07-28
 

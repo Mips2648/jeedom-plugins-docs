@@ -101,6 +101,7 @@ Each Gardena Smart System device has the following commands:
 - **Active** binary command indicating whether the mower is active or not; it will be indicated as active during these activities: *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*
 - **Last error** gives the last error if any, only valid if the command **Health** has the value _WARNING_ or _ERROR_ (see below for a list of possible values)
 - **Operating hours** info command giving the number of operating hours
+- **Remaining time** info command giving the remaining time of the timer (if applicable)
 - **Start mode manual** action command to start in manual mode needing number of minute of activity in option
 - **Start mode auto** action command to start in auto mode (depending on the schedule)
 - **Cancel and go back to charging station** action command, the mower will start at next schedule
@@ -133,7 +134,7 @@ As well as the following commands for each of the valves (where X will therefore
 - **State** will have one of the following values: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (see below for a description of the values)
 - **Activity** will have one of the following values: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (see below for a description of the values)
 - **Error code** & **Error description** gives the code and description of the error if applicable
-- **Remaining time** command info giving the remaining time of activity
+- **Remaining time** info command giving the remaining time of activity; valid only after having used commands **Start manual mode** or **Return to base**
 - **Start mode manual** Starts and mows the grass for the time (in minutes) given as an option on the command
 - **Pause**
 - **Resume** Resume schedule

@@ -7,7 +7,7 @@ pluginId: gardena
 
 # 2021-08-22
 
-- Ajout d'une commande **Durée restante** sur les Gardena Mower
+- Ajout d'une commande **Durée restante** sur les Gardena Smart Mower
 - Ajout de la mise à jour de l'info **Durée restante** pour les Husqvarna Automower (calculé en interne par le plugin) seulement lors de l'utilisation des commandes **Démarrage mode manuel** ou **Retour à la base**
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
 

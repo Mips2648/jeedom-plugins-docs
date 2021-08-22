@@ -5,6 +5,12 @@ lang: en_US
 pluginId: gardena
 ---
 
+# 2021-08-22
+
+- Add command **Remaining time** on Gardena Smart Mower
+- Add info command ** Remaining time ** for Husqvarna Automower (calculated internally by the plugin) only when using the commands **Start manual mode** or **Back to base**
+- Add table display mode of the list of device for Jeedom 4.2
+
 # 2021-07-12
 
 - Added a configurable cron for updating Husqvarna Automowers in the plugin configuration.

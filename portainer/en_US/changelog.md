@@ -5,6 +5,11 @@ lang: en_US
 pluginId: portainer
 ---
 
+# 2021-08-21
+
+- Added a _State_ command on **agent** and **docker** device
+- Fix a sync issue when an endpoint is offline
+
 # 2021-05-19
 
 - Add support of Portainer instance of type **agent**
@@ -49,7 +54,7 @@ pluginId: portainer
 
 # 2020-03-19
 
-Add option to fetch stdout and stderr output during synchronization. It's needed to go to device configuration page and save the configuration to activate the option.
+Add option to fetch stdout and stderr output during synchronization of device. It's needed to go to device configuration page and save the configuration to activate the option.
 
 # 2020-03-10
 

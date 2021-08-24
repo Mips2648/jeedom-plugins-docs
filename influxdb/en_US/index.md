@@ -52,9 +52,22 @@ It is possible to have multiple connectors to the same database each configured 
 
 ## Commands selection
 
-In the second tab all info commands of Jeedom are displayed in a table. It is possible to filter and sort each columns. You only have to select the commands that you want to send.
+In the second tab are displayed all the commands selected for sending to InfluxDB. It is possible to filter the lines displayed via the "Search" field.
 
 ![Commands config](../images/commands.png "Commands config")
+
+It is possible to search and select commands to send via 3 methods:
+
+- Search for a single command via the button **Add a command**
+- Search and add multiple commands via the button **Add commands by object**. This method has the advantage of only displaying the commands of devices linked to a particular object and therefore the display will be faster if you have a lot of commands (more than 10,000)
+- Search and add multiple commands via the **Add commands (list)** button. This screen will display all the info commands of your Jeedom: useful because everything is displayed but if you have more than 10,000 commands it can take 30s or more.
+
+Search example:
+![Search commands](../images/search.png "Search commands")
+
+1. In the command search screens, it is possible to filter / search on any value by typing the search in the field at the top of the list.
+2. The list will only show commands that have not yet been selected for this device / connector.
+3. To select an command and send it to InfluxDB, all you have to do is click on the **Add** button. Remember to save the device after adding all the commands you want.
 
 # Definitions
 
@@ -65,7 +78,7 @@ Below the relation implemented by the plugin between InfluxDB concepts and Jeedo
 Jeedom | InfluxDB | Description
 - | - | -
 Command name | Measurement | A measurement in InfluxDB is conceptually similar to a SQL table.
-- | Timestamp | It's the timestamp of the data
+n/a | Timestamp | It's the timestamp of the data
 Device name | Field(key) | A field key is similar to a column name in a SQL table.
 Command value | Field(value) | It is the value of the point.
 

@@ -56,6 +56,7 @@ It is not recommended to give the "Administrator" role to the "Jeedom" user; the
 | Sys.Audit               | required       | required         |                  |                    |                              |                 |
 | Sys.Modify              |              | required         |                  |                    |                              |                 |
 | Sys.PowerMgmt           |              | required         |                  |                    |                              |                 |
+| VM.Monitor              |              |                | required           |                    |                              |                 |
 | VM.Audit                |              |                | required           | required             |                              |                 |
 | VM.Backup               |              |                |                  |                    | required                       |                 |
 | VM.PowerMgmt            |              |                |                  | required             |                              |                 |

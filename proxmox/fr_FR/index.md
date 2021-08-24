@@ -56,6 +56,7 @@ Il n'est pas recommandé de donner le rôle "Administrator" à l'utilisateur "Je
 | Sys.Audit               | requis       | requis         |                  |                    |                              |                 |
 | Sys.Modify              |              | requis         |                  |                    |                              |                 |
 | Sys.PowerMgmt           |              | requis         |                  |                    |                              |                 |
+| VM.Monitor              |              |                | requis           |                    |                              |                 |
 | VM.Audit                |              |                | requis           | requis             |                              |                 |
 | VM.Backup               |              |                |                  |                    | requis                       |                 |
 | VM.PowerMgmt            |              |                |                  | requis             |                              |                 |

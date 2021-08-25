@@ -19,7 +19,7 @@ Voici un aperçu des possibilités du plugin:
 - déclencher la sirène intégrée à la station de base (ou au Pro3 et Ultra) et connaître son statut;
 - connaître le statut de chaque caméra:
   - connectée ou non
-  - status général (inactif, alerte, ...)
+  - statut général (inactif, alerte, ...)
   - niveau de batterie (et si la charge est en cours)
   - force du signal
   - si la détection de son ou de mouvement est actif
@@ -31,6 +31,10 @@ Voici un aperçu des possibilités du plugin:
 - visualiser le streaming live de vos caméras
 - contrôler la lampe intégrée sur les caméras compatible
 - contrôler la sirène intégrée sur les caméras et bases compatibles
+
+> **Important**
+>
+> Il n'est pas recommandé d'utiliser les caméras et sonnettes de la gamme Essentials si aucune base n'est présente dans le système excepté si celles-ci sont alimentées en permanences (sur le courant ou via panneau solaire si ensoleillement suffisant) car leur batterie n'offre pas suffisamment d'autonomie. Si une base existe alors aucun problème.
 
 # Installation
 
@@ -51,6 +55,11 @@ Il est donc nécessaire de créer un utilisateur dédié au plugin, dans le cas 
 ## Authentification en 2 étapes
 
 Arlo impose progressivement l'utilisation de l'authentification en 2 étapes.
+
+> **Tip**
+>
+> A ce jour, il est toujours possible de ne pas activer l'authentification en 2 étapes dans Arlo, cette étape est donc optionnelle.
+
 Avant de créer un nouvel utilisateur Arlo, il est important de connaître les informations suivantes:
 
 - Le plugin gère celle-ci via email avec support IMAP uniquement, il faudra donc une boite mail avec un accès IMAP (il est parfois bloqué ou payant donc vérifiez avant) et ne supporte qu'une authentification par _nom d'utilisateur_/_mot de passe_; pas de MFA sur le mail!
@@ -96,7 +105,7 @@ Sur la page de configuration du plugin:
 - Si vous avez activé l'authentification en 2 étapes, entrez l'adresse IMAP du serveur mail sous la forme _imap.server.com_ ainsi que le nom d'utilisateur et le mot de passe de la boite mail associée (pas nécessaire si TFA n'est pas actif)
 - Démarrez le démon (s'il ne démarre pas tout seul)
 
-Si les informations de connexions sont correctes, le status devrait passer au vert et le plugin va commencer à synchroniser vos équipements précédemment partagés.
+Si les informations de connexions sont correctes, le statut devrait passer au vert et le plugin va commencer à synchroniser vos équipements précédemment partagés.
 
 Sur cette page, il est aussi possible de configurer les règles de retentions des captures et des enregistrements, ces règles permettent au plugin de supprimer automatiquement les médias (sauvegardés localement) les plus anciens.
 

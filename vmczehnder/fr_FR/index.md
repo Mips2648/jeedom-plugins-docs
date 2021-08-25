@@ -96,7 +96,7 @@ Sauvez la configuration.
 
 Vous pouvez à présent démarrer le démon et activer la gestion automatique.
 
-Si tout se déroule bien, le status devrait passer au vert. Si pas patientez quelques minutes si l'installation n'est pas finie (surveillez le log), le démon sera démarré automatiquement dès que possible.
+Si tout se déroule bien, le statut devrait passer au vert. Si pas patientez quelques minutes si l'installation n'est pas finie (surveillez le log), le démon sera démarré automatiquement dès que possible.
 
 # Configuration de la VMC
 

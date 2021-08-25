@@ -43,7 +43,7 @@ pluginId: proxmox
 - Ajout d'une commande "Liste des snapshots" sur VM et LXC
 - Ajout d'une commande donnant le pourcentage d'utilisation pour la mémoire, le disque et le swap sur tous les équipements concernés
 - suppression des commandes vmid et Noeud sur tous les équipements
-- Fixe: le status "paused" est précisé correctement sur une VM ou un container en pause
+- Fixe: le statut "paused" est précisé correctement sur une VM ou un container en pause
 - Fixe: il est à présent possible de renommer l'équipement dans Jeedom avec un nom différent que celui dans Proxmox
 
 # 2019-11-12

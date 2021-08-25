@@ -213,7 +213,7 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - *ALARM_OUTSIDE_GEOFENCE* - Alarme, tondeuse en dehors de la barrière virtuelle
 - *SLIPPED* - La tondeuse a dérapé
 - *INVALID_BATTERY_COMBINATION* - Combinaison de batterie de différent type invalide
-- *UNINITIALISED* - Status de la tondeuse inconnu
+- *UNINITIALISED* - Statut de la tondeuse inconnu
 - *WAIT_UPDATING* - Tondeuse en attente d'installation du firmware
 - *WAIT_POWER_UP* - Tondeuse s'allume
 - *OFF_DISABLED* - Tondeuse désactivée via l'interrupteur principal

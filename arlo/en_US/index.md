@@ -32,6 +32,10 @@ Here is an overview of the possibilities of the plugin:
 - control the light on compatible cameras
 - control de siren on compatible cameras
 
+> **Important**
+>
+> It is not recommended to use Essentials cameras and doorbells if no base exists in the system, except if they have power supply (from grid or from a solar panel if sufficient sunlight) because their battery does not provide sufficient autonomy. If a base exists then no problem.
+
 # Installation
 
 > **Important**
@@ -51,6 +55,11 @@ It is therefore necessary to create a user dedicated to the plugin, otherwise it
 ## 2-step authentication
 
 Arlo is gradually enforcing the use of 2-step authentication.
+
+> **Tip**
+>
+> Nowadays, it is still possible to not enable 2-step authentication in Arlo, so this step is optional.
+
 Before creating a new Arlo user, it is important to know the following information:
 
 - The plugin manages this via email with IMAP support only, so you will need a mailbox with IMAP access (it is sometimes blocked or not free so check before) and only supports authentication by _username_ /_password_ ; no MFA on the mail!
@@ -96,7 +105,7 @@ On the plugin configuration page:
 - If you have enabled 2-step authentication, enter the IMAP address of the mail server in the form _imap.server.com_ as well as the username and password of the associated mailbox (not necessary if TFA is not active)
 - Start the daemon (if it does not start on its own)
 
-If the connection information are correct, the status should turn green and the plugin will start to synchronize your previously shared devices.
+If the credentials are correct, the status should turn green and the plugin will start to synchronize devices that you shared on previous step.
 
 On this page, it is also possible to configure the retentions rules of snapshots and records, these rules allow the plugin to automatically delete the oldest medias (saved locally).
 

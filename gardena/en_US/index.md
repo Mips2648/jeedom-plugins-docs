@@ -214,7 +214,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *ALARM_OUTSIDE_GEOFENCE* - 
 - *SLIPPED* - 
 - *INVALID_BATTERY_COMBINATION* - 
-- *UNINITIALISED* - 
+- *UNINITIALISED* - Unknown status
 - *WAIT_UPDATING* - 
 - *WAIT_POWER_UP* - 
 - *OFF_DISABLED* - 

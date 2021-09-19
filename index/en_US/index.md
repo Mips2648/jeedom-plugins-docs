@@ -128,9 +128,9 @@ The plugin allow to retrieve data of an Solaredge inverter.
 
 - [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 - [Changelog]({{site.baseurl}}/onduleursolaredge/{{page.lang}}/changelog)
-- [Changelog]({{site.baseurl}}/onduleursolaredge/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=3440" target="_blank">Market</a>
 
-# <a href="{{site.market}}/index.php?v=d&plugin_id=3440" target="_blank">Market</a>
+# Portainer
 
 Portainer
 

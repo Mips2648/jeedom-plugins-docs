@@ -175,8 +175,8 @@ As well as the following commands for each of the valves (where X will therefore
 - *EMPTY_BATTERY* - Empty battery
 - *NO_DRIVE* - No drive
 - *TEMPORARILY_LIFTED* - Temporary lifted
-- *TEMPORARILY_LIFTED* - Temporary lifted
 - *LIFTED*
+- *STUCK_IN_CHARGING_STATION* - 
 - *STUCK_IN_CHARGING_STATION* - 
 - *CHARGING_STATION_BLOCKED* - 
 - *COLLISION_SENSOR_PROBLEM_REAR* - 

@@ -72,7 +72,7 @@ Plugin to integrate Hydrao shower head.
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/influxdb_icon.png">]({{site.baseurl}}/influxdb/{{page.lang}})
 
-[<img width="77" src="{{site.market}}/filestore/market/plugin/images/influxdb_icon.png">]({{site.baseurl}}/influxdb/{{page.lang}})
+Plugin to connect to InfluxDB. It allows to easily send information by simply selecting the corresponding commands in a list. This allow to externalize the history which can then be consulted via Grafana for example.
 
 - Plugin to connect to InfluxDB. It allows to easily send information by simply selecting the corresponding commands in a list. This allow to externalize the history which can then be consulted via Grafana for example.
 - [Documentation]({{site.baseurl}}/influxdb/{{page.lang}})

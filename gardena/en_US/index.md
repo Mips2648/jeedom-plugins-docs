@@ -265,6 +265,6 @@ As well as the following commands for each of the valves (where X will therefore
 
 [See the changelog](./changelog)
 
-# [See the changelog](./changelog)
+# Support
 
 Support

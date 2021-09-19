@@ -167,7 +167,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *WRONG_LOOP_SIGNAL* -
 - *LOOP_SENSOR_PROBLEM_FRONT* - 
 - *LOOP_SENSOR_PROBLEM_REAR* -
-- *LOOP_SENSOR_PROBLEM_REAR* -
+- *LOOP_SENSOR_PROBLEM_LEFT* -
 - *LOOP_SENSOR_PROBLEM_LEFT* -
 - *LOOP_SENSOR_PROBLEM_RIGHT* -
 - *WRONG_PIN_CODE* - Wrong pin code

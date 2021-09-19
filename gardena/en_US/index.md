@@ -125,7 +125,7 @@ As well as the following commands for each of the valves (where X will therefore
 - **Pause schedule valve X** action command requesting the number of minutes in parameter
 - **Resume schedule valve X** action command
 
-## **Resume schedule valve X** action command
+## Husqvarna Automower
 
 - Husqvarna Automower
 - **Connected** binary info command indicating if the mower is connected

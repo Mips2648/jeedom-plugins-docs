@@ -8,7 +8,6 @@ pluginId: gardena
 # Description
 
 Plugin to integrate all devices from Gardena Smart System (Water Control, sensor, irrigation control, power socket and Sileno mower) as well as Husqvarna Automower Connect robots.
-
 It is possible to access device data, monitor them and perform actions (depending on the device, see below for more details)
 
 > **Important**
@@ -148,6 +147,7 @@ As well as the following commands for each of the valves (where X will therefore
 
 - *NO_MESSAGE* - No error
 - *CONCURRENT_LIMIT_REACHED* - Valve cannot be opened, a maximum of 2 valves can be opened at the same time
+- *CONCURRENT_LIMIT_REACHED* - Valve cannot be opened, a maximum of 2 valves can be opened at the same time
 - *NOT_CONNECTED* - No valve connected
 - *VALVE_CURRENT_MAX_EXCEEDED* - 
 - *TOTAL_CURRENT_MAX_EXCEEDED* - 
@@ -158,10 +158,10 @@ As well as the following commands for each of the valves (where X will therefore
 - *FROST_PREVENTS_STARTING* -
 - *LOW_BATTERY_PREVENTS_STARTING* - 
 - *VALVE_POWER_SUPPLY_FAILED* - 
-- *UNKNOWN*
 
-## Description of Gardena Smart Mower errors
+## *UNKNOWN*
 
+- Description of Gardena Smart Mower errors
 - *NO_MESSAGE* - No error
 - *OUTSIDE_WORKING_AREA* -
 - *NO_LOOP_SIGNAL* -
@@ -220,26 +220,26 @@ As well as the following commands for each of the valves (where X will therefore
 - *OFF_DISABLED* - 
 - *OFF_HATCH_OPEN* - 
 - *OFF_HATCH_CLOSED* - 
-- *PARKED_DAILY_LIMIT_REACHED* - 
 
-## Description of Gardena Smart Irrigation Control errors
+## *PARKED_DAILY_LIMIT_REACHED* - 
 
+- Description of Gardena Smart Irrigation Control errors
 - *NO_MESSAGE* - No error
 - *VOLTAGE_DROP* - Voltage drop (VDD_IN)
 - *WRONG_POWER_SUPPLY* -
 - *NO_MCU_CONNECTION* -
-- *UNKNOWN*
 
-## Mode description of Husqvarna Automower
+## *UNKNOWN*
 
+- Mode description of Husqvarna Automower
 - *MAIN_AREA* - Mower will mow until low battery. Go home and charge. Leave and continue mowing. Week schedule is used. Schedule can be overridden with forced park or forced mowing.
 - *DEMO* - Same as *MAIN_AREA*, but shorter times. No blade operation.
 - *SECONDARY_AREA* - Mower is in secondary area. Schedule is overridden with forced park or forced mowing. Mower will mow for request time or until the battery runs out.
 - *HOME* - Mower goes home and parks forever. Week schedule is not used. Cannot be overridden with forced mowing.
-- *UNKNOWN*
 
-## Status description of Husqvarna Automower
+## *UNKNOWN*
 
+- Status description of Husqvarna Automower
 - *PAUSED* - Mower has been paused by user.
 - *IN_OPERATION* - See value in **Activity** for status.
 - *WAIT_UPDATING* - Mower is downloading new firmware.
@@ -249,10 +249,10 @@ As well as the following commands for each of the valves (where X will therefore
 - *STOPPED* - Mower is stopped and requires manual action.
 - *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* - An error has occurred, check value of **Error**. Mower requires manual action.
 - *NOT_APPLICABLE* - Manuel action needed.
-- *UNKNOWN*
 
-## Activity description of Husqvarna Automower
+## *UNKNOWN*
 
+- Activity description of Husqvarna Automower
 - *MOWING* - Mower is mowing lawn. If in demo mode the blades are not in operation.
 - *GOING_HOME* - Mower is going home to the charging station.
 - *CHARGING* - Mower is charging in station due to low battery.
@@ -260,12 +260,11 @@ As well as the following commands for each of the valves (where X will therefore
 - *PARKED_IN_CS* - Mower is parked in charging station.
 - *STOPPED_IN_GARDEN* - Mower has stopped. Needs manual action to resume.
 - *NOT_APPLICABLE* - Manuel action needed.
-- *UNKNOWN*
 
-# Changelog
+# *UNKNOWN*
 
-[See the changelog](./changelog)
+Changelog
 
-# Support
+# [See the changelog](./changelog)
 
-If despite this documentation and after having read the topics related to the plugin on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}) you do not find an answer to your question, do not hesitate to create a new topic with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+Support

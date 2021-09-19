@@ -212,7 +212,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *ALARM_MOWER_IN_MOTION* - 
 - *ALARM_OUTSIDE_GEOFENCE* - 
 - *SLIPPED* - 
-- *SLIPPED* - 
+- *INVALID_BATTERY_COMBINATION* - 
 - *INVALID_BATTERY_COMBINATION* - 
 - *UNINITIALISED* - Unknown status
 - *WAIT_UPDATING* - 

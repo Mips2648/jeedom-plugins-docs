@@ -8,7 +8,6 @@ pluginId: gardena
 # Description
 
 Plugin to integrate all devices from Gardena Smart System (Water Control, sensor, irrigation control, power socket and Sileno mower) as well as Husqvarna Automower Connect robots.
-
 It is possible to access device data, monitor them and perform actions (depending on the device, see below for more details)
 
 > **Important**
@@ -259,13 +258,13 @@ As well as the following commands for each of the valves (where X will therefore
 - *LEAVING* - Mower is leaving the charging station.
 - *PARKED_IN_CS* - Mower is parked in charging station.
 - *STOPPED_IN_GARDEN* - Mower has stopped. Needs manual action to resume.
+- *STOPPED_IN_GARDEN* - Mower has stopped. Needs manual action to resume.
 - *NOT_APPLICABLE* - Manuel action needed.
-- *UNKNOWN*
 
-# Changelog
+# *UNKNOWN*
 
-[See the changelog](./changelog)
+Changelog
 
-# Support
+# [See the changelog](./changelog)
 
-If despite this documentation and after having read the topics related to the plugin on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}) you do not find an answer to your question, do not hesitate to create a new topic with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+Support

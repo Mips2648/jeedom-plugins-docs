@@ -101,7 +101,7 @@ Each Gardena Smart System device has the following commands:
 - **Last error** gives the last error if any, only valid if the command **Health** has the value _WARNING_ or _ERROR_ (see below for a list of possible values)
 - **Operating hours** info command giving the number of operating hours
 - **Remaining time** info command giving the remaining time of the timer (if applicable)
-- **Remaining time** info command giving the remaining time of the timer (if applicable)
+- **Start mode manual** action command to start in manual mode needing number of minute of activity in option
 - **Start mode manual** action command to start in manual mode needing number of minute of activity in option
 - **Start mode auto** action command to start in auto mode (depending on the schedule)
 - **Cancel and go back to charging station** action command, the mower will start at next schedule

@@ -80,9 +80,9 @@ Plugin to connect to InfluxDB. It allows to easily send information by simply se
 
 # Log Manager
 
-Log Manager
-
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/logmanager_icon.png">]({{site.baseurl}}/logmanager/{{page.lang}})
+
+Plugin allowing custom log management in your scenarios. It is possible to create as many log as wanted, different log level are possible for each log file. This allows you to organize your scenario logs according to your preferences, for example to group all the actions on a device in the same log whatever the scenario.
 
 - Plugin allowing custom log management in your scenarios. It is possible to create as many log as wanted, different log level are possible for each log file. This allows you to organize your scenario logs according to your preferences, for example to group all the actions on a device in the same log whatever the scenario.
 - [Documentation]({{site.baseurl}}/logmanager/{{page.lang}})

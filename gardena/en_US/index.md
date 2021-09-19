@@ -208,8 +208,8 @@ As well as the following commands for each of the valves (where X will therefore
 - *ALARM_MOWER_SWITCHED_OFF* - 
 - *ALARM_MOWER_STOPPED* - 
 - *ALARM_MOWER_LIFTED* - 
-- *ALARM_MOWER_LIFTED* - 
 - *ALARM_MOWER_TILTED* - 
+- *ALARM_MOWER_IN_MOTION* - 
 - *ALARM_MOWER_IN_MOTION* - 
 - *ALARM_OUTSIDE_GEOFENCE* - 
 - *SLIPPED* - 

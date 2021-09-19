@@ -128,7 +128,7 @@ As well as the following commands for each of the valves (where X will therefore
 ## Husqvarna Automower
 
 - **Connected** binary info command indicating if the mower is connected
-- **Connected** binary info command indicating if the mower is connected
+- **Battery** gives the battery charge level (if applicable) in percent
 - **Battery** gives the battery charge level (if applicable) in percent
 - **Mode** will have one of the following values: *MAIN_AREA*, *DEMO*, *SECONDARY_AREA*, *HOME*, *UNKNOWN* (see below for a description of the values)
 - **State** will have one of the following values: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (see below for a description of the values)

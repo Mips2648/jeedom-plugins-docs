@@ -120,7 +120,7 @@ As well as the following commands for each of the valves (where X will therefore
 - **Status valve X** binary info command indicating whether the valve is open or closed
 - **Health valve X** indicates the general condition of the power socket: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
 - **Start valve X** action command to start watering, needing the number of minutes (full) of watering in parameter
-- **Start valve X** action command to start watering, needing the number of minutes (full) of watering in parameter
+- **Stop valve X** action command to stop watering
 - **Stop valve X** action command to stop watering
 - **Remaining time valve X** info command giving the remaining time (in minutes) when watering is in progress
 - **Pause schedule valve X** action command requesting the number of minutes in parameter

@@ -8,7 +8,6 @@ pluginId: gardena
 # Description
 
 Plugin to integrate all devices from Gardena Smart System (Water Control, sensor, irrigation control, power socket and Sileno mower) as well as Husqvarna Automower Connect robots.
-
 It is possible to access device data, monitor them and perform actions (depending on the device, see below for more details)
 
 > **Important**

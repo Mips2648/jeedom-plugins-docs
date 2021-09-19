@@ -66,9 +66,9 @@ Plugin to integrate Hydrao shower head.
 
 - [Documentation]({{site.baseurl}}/hydrao/{{page.lang}})
 - [Changelog]({{site.baseurl}}/hydrao/{{page.lang}}/changelog)
-- [Changelog]({{site.baseurl}}/hydrao/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=3964" target="_blank">Market</a>
 
-# <a href="{{site.market}}/index.php?v=d&plugin_id=3964" target="_blank">Market</a>
+# InfluxDB Connector
 
 InfluxDB Connector
 

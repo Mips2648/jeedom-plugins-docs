@@ -19,7 +19,7 @@ Il faut ensuite installer les dépendances.
 
 # Configuration du plugin
 
-Il est recommandé, mais pas obligatoire, de créer un utilisateur dédié à Jeedom via l'App mobile officielle.
+Il est fortement recommandé de créer un utilisateur dédié à Jeedom via l'App mobile officielle.
 Pour se faire, ouvrez l'application, allez de le menu _réglage_ puis _Accès_ et suivez les étapes pour créer un nouvel utilisateur.
 
 Il ne vous reste plus qu'à renseigner le nom d'utilisateur et son mot de passe dans la configuration du plugin.
@@ -55,19 +55,69 @@ Voici un aperçu des commandes disponibles:
 - **Date début vacances**, **Date fin vacances** & **Définir dates vacances** sont respectivement les commandes donnant la date de début et de fin de vacances enregistrées ainsi que la commande pour définir ces dates
 - **Consigne vacances** permet de connaître et définir la consigne de température appliquée lorsque le mode vacances est actif.
 - **Mode vacances actif**, **Mode vacances On**, **Mode vacances Off** sont les commandes permettant de connaître le statut, d'activer et de désactiver le mode vacances.
-- Il existera également une commande info/numérique par sonde de température existante, par exemple **Température extérieure**, **Température ECS ballon**, **Température de départ**, ...
+- Il existera également une commande info/numérique par sonde de température connectée au système, par exemple **Température extérieure**, **Température ECS ballon**, **Température de départ**, ...
 
 ## Eau chaude sanitaire
 
-Cette équipement reprend des information sur la production d'eau chaude sanitaire ainsi que sur l'état de la circulation qui est indissociable du premier.
+Cette équipement reprend des informations sur la production d'eau chaude sanitaire ainsi que sur l'état de la circulation qui est indissociable de l'eau chaude sanitaire.
 
 - **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _On_, _Off_
-- **Auto**, **On**, **Off**, commande action pour activer les modes correspondants
-- **Etat** donne l'état actuel, _On_ ou _Off_: donc si le **Mode** est _Auto_, **Etat** permettra de savoir la valeur effective.
+- **Auto**, **On**, **Off**, commande action pour activer le mode correspondant
+- **Etat** donne l'état actuel: _On_ ou _Off_. Donc si le **Mode** est _Auto_, **Etat** permettra de connaître l'état réel.
 - **Consigne** donne la consigne appliquée actuellement (par exemple 5°C si l'**Etat** est _Off_)
 - **Consigne chauffe** indique et permet de modifier la consigne voulue (lorsque l'**Etat** est _On_)
 - **Température** indique la température actuelle de l'eau
 - **Mode circulation** et **Etat circulation** donne les informations respective pour la circulation. Le mode n'est pas contrôlable, il est lié à la production d'eau chaude.
+
+## Ventilation
+
+- **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Jour_, _Nuit_, _Off_
+- **Jour**, **Nuit**, **Off**, commande action pour activer le mode correspondant
+- **Etat** donne l'état actuel, _Jour_, _Nuit_, _Off_.
+- **Vitesse** donne la vitesse actuelle
+- **Température** indique la température actuelle
+
+## Les zones
+
+Il y aura un équipement de type _Zone_ par zone de chauffage (par circuit) géré par votre system Vaillant.
+Chaque zone disposera des commandes suivantes:
+
+- **Actif** commande info binaire indiquant si la zone est active ou non
+- **Contrôle via les pièces** Important, commande info binaire indiquant si la zone est contrôlée par la gestion des pièces dans le cas où vous posséder des équipements de la gamme ambiSENSE. Si c'est le cas alors le contrôle sur le zone n'aura aucun effet: changer de mode ou changer la consigne n'influencera pas la chauffe; il faut utiliser les équipements de type _Room_ à la place, voir ci-dessous.
+- **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _Jour_, _Nuit_, _Off_
+- **Auto**, **Jour**, **Nuit**, **Off**, commande action pour activer le mode correspondant
+- **Etat** donne l'état actuel: _Jour_, _Nuit_ ou _Off_. Donc si le **Mode** est _Auto_, **Etat** permettra de connaître l'état réel.
+- **Consigne** donne la consigne appliquée actuellement
+- **Consigne jour** indique et permet de modifier la consigne utilisée en mode _Jour_
+- **Consigne nuit** indique et permet de modifier la consigne utilisée en mode _Nuit_
+- **Température** indique la température actuelle de la zone
+- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcé l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme normal.
+- **Annuler température forcée** commande action permettant d'annuler le mode forcé
+
+## Les pièces
+
+Lorsque vous avez des vannes et/ou des thermostats de la gamme ambiSENSE reliées au système, le plugin créera des équipements _Pièce_ correspondant aux pièces existantes dans l'app mobile.
+La gestion des consignes de température se fera individuellement via ces équipements et plus de façon centralisée sur la zone entière. Cela permettra donc une gestion plus granulaire de votre chauffage.
+Les équipements _Pièce_ disposent des commandes suivantes:
+
+- **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _Manuel_, _Off_
+- **Auto**, **Manuel**, **Off**, commande action pour activer le mode correspondant
+- **Etat** donne l'état actuel: _Auto_, _Manuel_ ou _Off_.
+- **Consigne** donne la consigne appliquée actuellement
+- **Consigne chauffe** indique et permet de modifier la consigne voulue lors du mode _Manuel_
+- **Température** indique la température actuelle de la pièce
+- **Humidité** indique l'humidité actuelle de la pièce si un thermostat s'y trouve sinon cette aucune info ne remontera sur cette commande
+- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcé l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme normal.
+- **Annuler température forcée** commande action permettant d'annuler le mode forcé
+- **Sécurité enfant** commande info binaire indiquant si la sécurité enfant est activée sur la vanne ou le thermostat de la pièce
+- **Fenêtre ouverte** commande info binaire indiquant si la vanne ou le thermostat de la pièce a détecté une fenêtre ouverte (par une chute brutale de la température)
+
+## Vannes & thermostats
+
+Ces équipements "techniques" n'ont aucune commande pour gérer le chauffage, tout ce fait via les équipements _Pièce_. Ils disposent tout de même des 2 commandes suivantes:
+
+- **Batterie faible** commande info binaire indiquant si l'état de la batterie est faible. Il n'existe pas de remontée de l'état en pourcent.
+- **Hors portée** commande info binaire indiquant si l'équipement est hors portée du système (et que donc il ne communique plus avec la passerelle).
 
 # Changelog
 

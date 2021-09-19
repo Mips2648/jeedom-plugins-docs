@@ -42,7 +42,6 @@ Plugin getting data from <a href="https://fullup.be/" target="_blank"> Fullup </
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/gardena_icon.png">]({{site.baseurl}}/gardena/{{page.lang}})
 
 Plugin to integrate all devices from Gardena Smart System (Water Control, sensor, irrigation control, power socket and Sileno mower) as well as Husqvarna Automower Connect robots.
-
 It is possible to access device data, monitor them and perform actions (depending on the device)
 
 - [Documentation]({{site.baseurl}}/gardena/{{page.lang}})

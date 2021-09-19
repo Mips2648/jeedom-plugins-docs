@@ -143,7 +143,7 @@ The plugin has also a health page and a dedicated panel displaying an overview o
 - [Changelog]({{site.baseurl}}/portainer/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3931" target="_blank">Market</a>
 
-# <a href="{{site.market}}/index.php?v=d&plugin_id=3931" target="_blank">Market</a>
+# Proxmox
 
 Proxmox
 

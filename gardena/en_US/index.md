@@ -221,7 +221,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *OFF_HATCH_CLOSED* - 
 - *PARKED_DAILY_LIMIT_REACHED* - 
 
-## *PARKED_DAILY_LIMIT_REACHED* - 
+## Description of Gardena Smart Irrigation Control errors
 
 - Description of Gardena Smart Irrigation Control errors
 - *NO_MESSAGE* - No error

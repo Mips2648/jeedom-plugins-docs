@@ -178,6 +178,19 @@ Plugin to retrieve stock or index quotation as well as exchange rate between two
 - [Changelog]({{site.baseurl}}/stockexchange/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3841" target="_blank">Market</a>
 
+# Vaillant multiMATIC
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/vaillantmultimatic_icon.png">]({{site.baseurl}}/vaillantmultimatic/{{page.lang}})
+
+Plugin allowing connection to a Vaillant multiMATIC system via its internet gateway.
+It is possible to report the status of all connected device in Jeedom and to control them: define the mode (On, Off, Auto ...), define the setpoint temperatures, activate a fast mode, activate forced mode ...
+
+The valves and thermostats of the ambiSENSE range connected to the system are also managed.
+
+- [Documentation]({{site.baseurl}}/vaillantmultimatic/{{page.lang}})
+- [Changelog]({{site.baseurl}}/vaillantmultimatic/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4164" target="_blank">Market</a>
+
 # VMC (Zehnder/Storkair)
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/vmczehnder_icon.png">]({{site.baseurl}}/vmczehnder/{{page.lang}})

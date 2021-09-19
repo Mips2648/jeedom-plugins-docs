@@ -60,7 +60,7 @@ Plugin allowing Jeedom to act as a Gotify application that can send messages (no
 
 # Hydrao
 
-Hydrao
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/hydrao_icon.png">]({{site.baseurl}}/hydrao/{{page.lang}})
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/hydrao_icon.png">]({{site.baseurl}}/hydrao/{{page.lang}})
 

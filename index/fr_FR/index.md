@@ -178,6 +178,19 @@ Plugin permettant de récupérer les cours de bourse d'une action ou d'un indice
 - [Changelog]({{site.baseurl}}/stockexchange/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3841" target="_blank">Market</a>
 
+# Vaillant multiMATIC
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/vaillantmultimatic_icon.png">]({{site.baseurl}}/vaillantmultimatic/{{page.lang}})
+
+Plugin permettant de se connecter à un système Vaillant multiMATIC via sa passerelle internet.
+Il est possible de remonter dans Jeedom l'état de tous les équipements connectés et de les contrôler: définir le mode (On, Off, Auto...), définir les températures de consigne, activer un mode rapide, activer une marche forcée...
+
+Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont également gérés.
+
+- [Documentation]({{site.baseurl}}/vaillantmultimatic/{{page.lang}})
+- [Changelog]({{site.baseurl}}/vaillantmultimatic/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4164" target="_blank">Market</a>
+
 # VMC (Zehnder/Storkair)
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/vmczehnder_icon.png">]({{site.baseurl}}/vmczehnder/{{page.lang}})

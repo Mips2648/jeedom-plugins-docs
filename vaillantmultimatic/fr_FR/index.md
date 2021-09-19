@@ -7,7 +7,7 @@ pluginId: vaillantmultimatic
 
 # Description
 
-Plugin permettant de se connecter à un système Vaillant multiMATIC via la passerelle internet.
+Plugin permettant de se connecter à un système Vaillant multiMATIC via sa passerelle internet.
 Il est possible de remonter dans Jeedom l'état de tous les équipements connectés et de les contrôler: définir le mode (On, Off, Auto...), définir les températures de consigne, activer un mode rapide, activer une marche forcée...
 
 Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont également gérés.

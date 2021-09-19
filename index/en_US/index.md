@@ -158,9 +158,9 @@ The plugin can also start, stop vm and containers and take snapshots and backups
 
 # Rocket.Chat
 
-Rocket.Chat
-
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/rocketchat_icon.png">]({{site.baseurl}}/rocketchat/{{page.lang}})
+
+Plugin allowing connection to a Rocket.chat server. Rocket.chat is a collaborative messaging platform (like Slack, HipChat...).
 
 Plugin allowing connection to a Rocket.chat server. Rocket.chat is a collaborative messaging platform (like Slack, HipChat...).
 

@@ -54,7 +54,7 @@ It is possible to access device data, monitor them and perform actions (dependin
 
 Plugin allowing Jeedom to act as a Gotify application that can send messages (notifications) to a Gotify server.
 
-- Plugin allowing Jeedom to act as a Gotify application that can send messages (notifications) to a Gotify server.
+- [Documentation]({{site.baseurl}}/gotify/{{page.lang}})
 - [Documentation]({{site.baseurl}}/gotify/{{page.lang}})
 - [Changelog]({{site.baseurl}}/gotify/{{page.lang}}/changelog)
 

@@ -122,7 +122,7 @@ Plugin allow to create notification commands (action / message type command) tha
 
 # Solaredge
 
-Solaredge
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/onduleursolaredge_icon.png">]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/onduleursolaredge_icon.png">]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 

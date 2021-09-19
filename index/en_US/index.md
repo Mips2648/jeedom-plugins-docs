@@ -97,7 +97,7 @@ Plugin allowing to integrate all appliances compatible with Miel@Home.
 It is possible to get appliances information, to monitor them and execute some actions (depending the appliance). 
 
 - [Documentation]({{site.baseurl}}/miele/{{page.lang}})
-- [Documentation]({{site.baseurl}}/miele/{{page.lang}})
+- [Changelog]({{site.baseurl}}/miele/{{page.lang}}/changelog)
 - [Changelog]({{site.baseurl}}/miele/{{page.lang}}/changelog)
 
 # <a href="{{site.market}}/index.php?v=d&plugin_id=3950" target="_blank">Market</a>

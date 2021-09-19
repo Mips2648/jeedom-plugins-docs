@@ -24,7 +24,7 @@ Pour se faire, ouvrez l'application, allez de le menu _réglage_ puis _Accès_ e
 
 Il ne vous reste plus qu'à renseigner le nom d'utilisateur et son mot de passe dans la configuration du plugin.
 
-# Les équipements
+# Les équipements et leurs commandes
 
 Dès que les dépendances seront installées et la configuration du plugin sera correcte, le plugin synchronisera vos équipements.
 
@@ -32,15 +32,11 @@ Dès que les dépendances seront installées et la configuration du plugin sera 
 >
 > Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement jeedom ne correspond plus à aucun équipement en votre possession, veuillez le supprimer manuellement.
 
-Des équipements de différents types seront créés en fonction de ce qui existent dans votre système. Les équipements possibles sont: la passerelle elle-même, le multiMatic qui contrôle votre production d'eau chaude et le circulateur, un équipement gérer la ventilation, un équipement par zone de chauffage, un équipement par pièce (si vous avez des équipements de la gamme ambiSENSE) et un équipement par vanne et par thermostat.
+Des équipements de différents types seront créés en fonction de ce qui existent dans votre système. Les équipements possibles sont: la passerelle elle-même, le multiMatic qui contrôle votre production d'eau chaude et le circulateur, un équipement pour gérer la ventilation, un équipement par zone de chauffage et si vous avez des équipements de la gamme ambiSENSE, un équipement par pièce et un équipement par vanne et par thermostat.
 
 > **Tip**
 >
-> Si votre système Vaillant multiMATIC ne dispose pas d'un des équipements listés ci-dessous il n'y aura donc pas d'équipement de ce type créé sous Jeedom, cela est normal. Cette documentation reprend simplement l'ensemble des possibilités.
-
-Voir ci-dessous pour le détails des commandes possibles par type d'équipement.
-
-# Les commandes
+> Si votre système Vaillant multiMATIC ne dispose pas d'un des équipements listés ci-dessus il n'y aura donc pas d'équipement de ce type créé sous Jeedom, cela est normal. Cette documentation reprend simplement l'ensemble des possibilités.
 
 ## La passerelle
 

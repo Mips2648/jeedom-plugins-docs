@@ -174,7 +174,7 @@ The plugin take in charge the ask (in scenarios), interactions and sending of at
 
 Plugin to retrieve stock or index quotation as well as exchange rate between two currencies (including cryptocurrency such as bitcoin) and commodities prices.
 
-- Plugin to retrieve stock or index quotation as well as exchange rate between two currencies (including cryptocurrency such as bitcoin) and commodities prices.
+- [Documentation]({{site.baseurl}}/stockexchange/{{page.lang}})
 - [Documentation]({{site.baseurl}}/stockexchange/{{page.lang}})
 - [Changelog]({{site.baseurl}}/stockexchange/{{page.lang}}/changelog)
 

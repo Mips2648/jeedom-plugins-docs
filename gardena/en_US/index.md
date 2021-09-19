@@ -204,7 +204,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *CUTTING_HEIGHT_BLOCKED* -
 - *CUTTING_HEIGHT_PROBLEM* -
 - *BATTERY_PROBLEM* - 
-- *BATTERY_PROBLEM* - 
+- *TOO_MANY_BATTERIES* - 
 - *TOO_MANY_BATTERIES* - 
 - *ALARM_MOWER_SWITCHED_OFF* - 
 - *ALARM_MOWER_STOPPED* - 

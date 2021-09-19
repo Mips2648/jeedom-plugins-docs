@@ -218,7 +218,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *WAIT_POWER_UP* - 
 - *OFF_DISABLED* - 
 - *OFF_HATCH_OPEN* - 
-- *OFF_HATCH_OPEN* - 
+- *OFF_HATCH_CLOSED* - 
 - *OFF_HATCH_CLOSED* - 
 
 ## *PARKED_DAILY_LIMIT_REACHED* - 

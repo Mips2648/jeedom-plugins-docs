@@ -216,7 +216,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *UNINITIALISED* - Unknown status
 - *WAIT_UPDATING* - 
 - *WAIT_POWER_UP* - 
-- *WAIT_POWER_UP* - 
+- *OFF_DISABLED* - 
 - *OFF_DISABLED* - 
 - *OFF_HATCH_OPEN* - 
 - *OFF_HATCH_CLOSED* - 

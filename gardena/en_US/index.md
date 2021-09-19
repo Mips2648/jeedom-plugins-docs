@@ -248,7 +248,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *STOPPED* - Mower is stopped and requires manual action.
 - *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* - An error has occurred, check value of **Error**. Mower requires manual action.
 - *NOT_APPLICABLE* - Manuel action needed.
-- *NOT_APPLICABLE* - Manuel action needed.
+- *UNKNOWN*
 
 ## *UNKNOWN*
 

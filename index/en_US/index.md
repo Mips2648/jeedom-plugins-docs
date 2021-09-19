@@ -42,7 +42,6 @@ Plugin getting data from <a href="https://fullup.be/" target="_blank"> Fullup </
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/gardena_icon.png">]({{site.baseurl}}/gardena/{{page.lang}})
 
 Plugin to integrate all devices from Gardena Smart System (Water Control, sensor, irrigation control, power socket and Sileno mower) as well as Husqvarna Automower Connect robots.
-
 It is possible to access device data, monitor them and perform actions (depending on the device)
 
 - [Documentation]({{site.baseurl}}/gardena/{{page.lang}})
@@ -119,72 +118,72 @@ Plugin allow to create notification commands (action / message type command) tha
 
 - [Documentation]({{site.baseurl}}/notificationqueue/{{page.lang}})
 - [Changelog]({{site.baseurl}}/notificationqueue/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3823" target="_blank">Market</a>
+- [Changelog]({{site.baseurl}}/notificationqueue/{{page.lang}}/changelog)
 
-# Solaredge
+# <a href="{{site.market}}/index.php?v=d&plugin_id=3823" target="_blank">Market</a>
+
+Solaredge
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/onduleursolaredge_icon.png">]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 
-The plugin allow to retrieve data of an Solaredge inverter.
-
+- The plugin allow to retrieve data of an Solaredge inverter.
 - [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 - [Changelog]({{site.baseurl}}/onduleursolaredge/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3440" target="_blank">Market</a>
 
-# Portainer
+# <a href="{{site.market}}/index.php?v=d&plugin_id=3440" target="_blank">Market</a>
+
+Portainer
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/portainer_icon.png">]({{site.baseurl}}/portainer/{{page.lang}})
 
 Plugin to connect to [portainer.io](https://www.portainer.io/portainer-ce/) which is a solution to manage containers on docker which can be easily installed in a container.
 With this plugin, it is possible to retrieve in Jeedom all dockers servers configured in [portainer.io](https://www.portainer.io/portainer-ce/) and so all containers.
 
-The plugin has also a health page and a dedicated panel displaying an overview of all containers and allowing you to perform all basic actions, similar to the "Containers" page on [portainer.io] (https://www.portainer.io/portainer-ce/).
-
+- The plugin has also a health page and a dedicated panel displaying an overview of all containers and allowing you to perform all basic actions, similar to the "Containers" page on [portainer.io] (https://www.portainer.io/portainer-ce/).
 - [Documentation]({{site.baseurl}}/portainer/{{page.lang}})
 - [Changelog]({{site.baseurl}}/portainer/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3931" target="_blank">Market</a>
 
-# Proxmox
+# <a href="{{site.market}}/index.php?v=d&plugin_id=3931" target="_blank">Market</a>
+
+Proxmox
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/proxmox_icon.png">]({{site.baseurl}}/proxmox/{{page.lang}})
 
 Plugin allowing the management of a Proxmox server.
 
-It is possible to get all resources (nodes, vm, lxc, storage) and all their properties (status, memory, CPU, disk, IP address, up time, snapshots list...).
+- It is possible to get all resources (nodes, vm, lxc, storage) and all their properties (status, memory, CPU, disk, IP address, up time, snapshots list...).
 The plugin can also start, stop vm and containers and take snapshots and backups.
-
 - [Documentation]({{site.baseurl}}/proxmox/{{page.lang}})
 - [Changelog]({{site.baseurl}}/proxmox/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3835" target="_blank">Market</a>
 
-# Rocket.Chat
+# <a href="{{site.market}}/index.php?v=d&plugin_id=3835" target="_blank">Market</a>
+
+Rocket.Chat
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/rocketchat_icon.png">]({{site.baseurl}}/rocketchat/{{page.lang}})
 
 Plugin allowing connection to a Rocket.chat server. Rocket.chat is a collaborative messaging platform (like Slack, HipChat...).
 
-The plugin take in charge the ask (in scenarios), interactions and sending of attachments (ex: camera image).
-
+- The plugin take in charge the ask (in scenarios), interactions and sending of attachments (ex: camera image).
 - [Documentation]({{site.baseurl}}/rocketchat/{{page.lang}})
 - [Changelog]({{site.baseurl}}/rocketchat/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3902" target="_blank">Market</a>
 
-# Stock exchange
+# <a href="{{site.market}}/index.php?v=d&plugin_id=3902" target="_blank">Market</a>
+
+Stock exchange
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/stockexchange_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
 
-Plugin to retrieve stock or index quotation as well as exchange rate between two currencies (including cryptocurrency such as bitcoin) and commodities prices.
-
+- Plugin to retrieve stock or index quotation as well as exchange rate between two currencies (including cryptocurrency such as bitcoin) and commodities prices.
 - [Documentation]({{site.baseurl}}/stockexchange/{{page.lang}})
 - [Changelog]({{site.baseurl}}/stockexchange/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3841" target="_blank">Market</a>
 
-# VMC (Zehnder/Storkair)
+# <a href="{{site.market}}/index.php?v=d&plugin_id=3841" target="_blank">Market</a>
+
+VMC (Zehnder/Storkair)
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/vmczehnder_icon.png">]({{site.baseurl}}/vmczehnder/{{page.lang}})
 
-Plugin to interface a Zehnder HRV-ERC - also known as Storkair, Comfo Air, Wernig - via the serial port (RS-232) used by the CCEase/ComfoSense.
-
+- Plugin to interface a Zehnder HRV-ERC - also known as Storkair, Comfo Air, Wernig - via the serial port (RS-232) used by the CCEase/ComfoSense.
 - [Documentation]({{site.baseurl}}/vmczehnder/{{page.lang}})
 - [Changelog]({{site.baseurl}}/vmczehnder/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3605" target="_blank">Market</a>

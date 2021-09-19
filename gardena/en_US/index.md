@@ -111,7 +111,7 @@ Each Gardena Smart System device has the following commands:
 The device can control up to 6 24v valves. It has the following commands:
 
 - **Controller health** indicates the general condition of controller: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
-- **Controller health** indicates the general condition of controller: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Last error** gives the last error if any, only valid if the command **Health** has the value _WARNING_ or _ERROR_ (see below for a list of possible values)
 - **Last error** gives the last error if any, only valid if the command **Health** has the value _WARNING_ or _ERROR_ (see below for a list of possible values)
 
 **Stop all valves** allows you to stop watering all valves in one command, watering will resume at the next schedule

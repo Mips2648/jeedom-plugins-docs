@@ -147,7 +147,7 @@ The plugin has also a health page and a dedicated panel displaying an overview o
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/proxmox_icon.png">]({{site.baseurl}}/proxmox/{{page.lang}})
 
-[<img width="77" src="{{site.market}}/filestore/market/plugin/images/proxmox_icon.png">]({{site.baseurl}}/proxmox/{{page.lang}})
+Plugin allowing the management of a Proxmox server.
 
 Plugin allowing the management of a Proxmox server.
 

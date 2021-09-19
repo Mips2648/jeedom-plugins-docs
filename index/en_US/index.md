@@ -170,7 +170,7 @@ The plugin take in charge the ask (in scenarios), interactions and sending of at
 
 # Stock exchange
 
-Stock exchange
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/stockexchange_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/stockexchange_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
 

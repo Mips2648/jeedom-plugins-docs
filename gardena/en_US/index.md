@@ -172,7 +172,7 @@ As well as the following commands for each of the valves (where X will therefore
 - *WRONG_PIN_CODE* - Wrong pin code
 - *TRAPPED*
 - *UPSIDE_DOWN* - Upside down.
-- *UPSIDE_DOWN* - Upside down.
+- *EMPTY_BATTERY* - Empty battery
 - *EMPTY_BATTERY* - Empty battery
 - *NO_DRIVE* - No drive
 - *TEMPORARILY_LIFTED* - Temporary lifted

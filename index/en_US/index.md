@@ -42,7 +42,6 @@ Plugin getting data from <a href="https://fullup.be/" target="_blank"> Fullup </
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/gardena_icon.png">]({{site.baseurl}}/gardena/{{page.lang}})
 
 Plugin to integrate all devices from Gardena Smart System (Water Control, sensor, irrigation control, power socket and Sileno mower) as well as Husqvarna Automower Connect robots.
-
 It is possible to access device data, monitor them and perform actions (depending on the device)
 
 - [Documentation]({{site.baseurl}}/gardena/{{page.lang}})
@@ -173,18 +172,18 @@ The plugin take in charge the ask (in scenarios), interactions and sending of at
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/stockexchange_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
 
-Plugin to retrieve stock or index quotation as well as exchange rate between two currencies (including cryptocurrency such as bitcoin) and commodities prices.
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/stockexchange_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
 
+- Plugin to retrieve stock or index quotation as well as exchange rate between two currencies (including cryptocurrency such as bitcoin) and commodities prices.
 - [Documentation]({{site.baseurl}}/stockexchange/{{page.lang}})
 - [Changelog]({{site.baseurl}}/stockexchange/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3841" target="_blank">Market</a>
 
-# VMC (Zehnder/Storkair)
+# <a href="{{site.market}}/index.php?v=d&plugin_id=3841" target="_blank">Market</a>
+
+VMC (Zehnder/Storkair)
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/vmczehnder_icon.png">]({{site.baseurl}}/vmczehnder/{{page.lang}})
 
-Plugin to interface a Zehnder HRV-ERC - also known as Storkair, Comfo Air, Wernig - via the serial port (RS-232) used by the CCEase/ComfoSense.
-
+- Plugin to interface a Zehnder HRV-ERC - also known as Storkair, Comfo Air, Wernig - via the serial port (RS-232) used by the CCEase/ComfoSense.
 - [Documentation]({{site.baseurl}}/vmczehnder/{{page.lang}})
 - [Changelog]({{site.baseurl}}/vmczehnder/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=3605" target="_blank">Market</a>

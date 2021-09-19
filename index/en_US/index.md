@@ -78,7 +78,7 @@ Plugin to connect to InfluxDB. It allows to easily send information by simply se
 - [Changelog]({{site.baseurl}}/influxdb/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3935" target="_blank">Market</a>
 
-# <a href="{{site.market}}/index.php?v=d&plugin_id=3935" target="_blank">Market</a>
+# Log Manager
 
 Log Manager
 

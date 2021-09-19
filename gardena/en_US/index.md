@@ -136,7 +136,7 @@ As well as the following commands for each of the valves (where X will therefore
 - **Remaining time** info command giving the remaining time of activity; valid only after having used commands **Start manual mode** or **Return to base**
 - **Start mode manual** Starts and mows the grass for the time (in minutes) given as an option on the command
 - **Pause**
-- **Pause**
+- **Resume** Resume schedule
 - **Resume** Resume schedule
 - **Return to base** Return to the charging station for the number of minutes given as an option of the command, then resume schedule
 - **Cancel and go back to charging station** action command, the mower will start at next schedule

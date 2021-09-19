@@ -233,7 +233,7 @@ As well as the following commands for each of the valves (where X will therefore
 
 - *MAIN_AREA* - Mower will mow until low battery. Go home and charge. Leave and continue mowing. Week schedule is used. Schedule can be overridden with forced park or forced mowing.
 - *DEMO* - Same as *MAIN_AREA*, but shorter times. No blade operation.
-- *DEMO* - Same as *MAIN_AREA*, but shorter times. No blade operation.
+- *SECONDARY_AREA* - Mower is in secondary area. Schedule is overridden with forced park or forced mowing. Mower will mow for request time or until the battery runs out.
 - *SECONDARY_AREA* - Mower is in secondary area. Schedule is overridden with forced park or forced mowing. Mower will mow for request time or until the battery runs out.
 - *HOME* - Mower goes home and parks forever. Week schedule is not used. Cannot be overridden with forced mowing.
 

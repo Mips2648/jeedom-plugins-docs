@@ -83,7 +83,7 @@ Il y aura un équipement de type _Zone_ par zone de chauffage (par circuit) gér
 Chaque zone disposera des commandes suivantes:
 
 - **Actif** commande info binaire indiquant si la zone est active ou non
-- **Contrôle via les pièces** Important, commande info binaire indiquant si la zone est contrôlée par la gestion des pièces dans le cas où vous posséder des équipements de la gamme ambiSENSE. Si c'est le cas alors le contrôle sur le zone n'aura aucun effet: changer de mode ou changer la consigne n'influencera pas la chauffe; il faut utiliser les équipements de type _Room_ à la place, voir ci-dessous.
+- **Contrôle via les pièces** Important, commande info binaire indiquant si la zone est contrôlée par la gestion des pièces dans le cas où vous posséder des équipements de la gamme ambiSENSE. Si c'est le cas alors le contrôle sur la zone n'aura aucun effet: changer de mode ou changer la consigne n'influencera pas la chauffe; il faut utiliser les équipements de type _Pièce_ à la place, voir ci-dessous.
 - **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _Jour_, _Nuit_, _Off_
 - **Auto**, **Jour**, **Nuit**, **Off**, commande action pour activer le mode correspondant
 - **Etat** donne l'état actuel: _Jour_, _Nuit_ ou _Off_. Donc si le **Mode** est _Auto_, **Etat** permettra de connaître l'état réel.
@@ -97,7 +97,7 @@ Chaque zone disposera des commandes suivantes:
 ## Les pièces
 
 Lorsque vous avez des vannes et/ou des thermostats de la gamme ambiSENSE reliées au système, le plugin créera des équipements _Pièce_ correspondant aux pièces existantes dans l'app mobile.
-La gestion des consignes de température se fera individuellement via ces équipements et plus de façon centralisée sur la zone entière. Cela permettra donc une gestion plus granulaire de votre chauffage.
+La gestion de la consigne de température se fera individuellement via ces équipements et plus de façon centralisée sur la zone entière. Cela permettra donc une gestion plus granulaire de votre chauffage.
 Les équipements _Pièce_ disposent des commandes suivantes:
 
 - **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _Manuel_, _Off_

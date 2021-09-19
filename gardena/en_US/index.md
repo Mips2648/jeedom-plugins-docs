@@ -163,7 +163,7 @@ As well as the following commands for each of the valves (where X will therefore
 
 - *NO_MESSAGE* - No error
 - *OUTSIDE_WORKING_AREA* -
-- *OUTSIDE_WORKING_AREA* -
+- *NO_LOOP_SIGNAL* -
 - *NO_LOOP_SIGNAL* -
 - *WRONG_LOOP_SIGNAL* -
 - *LOOP_SENSOR_PROBLEM_FRONT* - 

@@ -126,7 +126,7 @@ Plugin allow to create notification commands (action / message type command) tha
 
 The plugin allow to retrieve data of an Solaredge inverter.
 
-- The plugin allow to retrieve data of an Solaredge inverter.
+- [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 - [Documentation]({{site.baseurl}}/onduleursolaredge/{{page.lang}})
 - [Changelog]({{site.baseurl}}/onduleursolaredge/{{page.lang}}/changelog)
 

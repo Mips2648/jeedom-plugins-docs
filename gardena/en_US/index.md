@@ -114,7 +114,7 @@ The device can control up to 6 24v valves. It has the following commands:
 - **Last error** gives the last error if any, only valid if the command **Health** has the value _WARNING_ or _ERROR_ (see below for a list of possible values)
 - **Stop all valves** allows you to stop watering all valves in one command, watering will resume at the next schedule
 
-**Stop all valves** allows you to stop watering all valves in one command, watering will resume at the next schedule
+As well as the following commands for each of the valves (where X will therefore have a value from 1 to 6):
 
 - As well as the following commands for each of the valves (where X will therefore have a value from 1 to 6):
 - **Activity valve X** indicates the current activity: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*

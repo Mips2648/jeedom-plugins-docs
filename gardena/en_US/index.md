@@ -108,7 +108,7 @@ Each Gardena Smart System device has the following commands:
 
 ## Gardena Smart Irrigation Control
 
-Gardena Smart Irrigation Control
+The device can control up to 6 24v valves. It has the following commands:
 
 - The device can control up to 6 24v valves. It has the following commands:
 - **Controller health** indicates the general condition of controller: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_

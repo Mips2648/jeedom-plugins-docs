@@ -364,6 +364,7 @@ For this, I recommend the following configuration:
 - the command **Last capture URL** of camera device (the one that returns a text info starting with http pointing to your jeedom, not the one giving the Arlo image) for the _Snapshot Url command_ config of the widget
 - the commands **Start recording**, **Stop recording** and **Recording** for the _Save_, _Stop recording_ and _Recording info_ configs of the widget
 - In the _Records folder_ config, you must copy the path displayed in the Arlo camera configuration page as visible in this capture:
+
 ![Records folder](../images/config_recordspath.png "Records folder")
 You can use the small "copy" button to the right of the path to copy it to the clipboard and you just have to paste the information in the configuration of the widget on Jeedom Connect
 

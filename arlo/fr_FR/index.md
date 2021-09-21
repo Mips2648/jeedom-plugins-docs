@@ -160,12 +160,12 @@ Le widget est également celui par défaut:
 
 Les modèles suivant sont actuellement reconnu par le plugin:
 
-- baby
+- Baby
 - pro, pro2, pro3, ultra
 - Floodlight
 - Essential
 - Go
-- arlo Q
+- Arlo Q
 
 Les commandes suivantes sont disponibles sur tous les modèles:
 

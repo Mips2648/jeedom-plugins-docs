@@ -5,6 +5,15 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2021-09-22
+
+- Better integration with third-party plugins like [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) (see documentation for more information)
+  - Add a _Last capture URL_ command on the cameras, this command can be used in the _Snapshot URL command_ config of the Jeedom Connect camera widget
+  - Add an easy-to-copy link in the camera configuration page, this path can be used in the _Recordings folder_ config of the Jeedom Connect camera widget
+- Restored several features for the Arlo Video doorbell wire-free (event handling is still disabled), see documentation for details
+- Add Arlo chimes 2 (AC2001)
+- Fix "playing" status on Arlo Baby which was not always correct.
+
 # 2021-08-22
 
 - Add table display mode of the list of device for Jeedom 4.2

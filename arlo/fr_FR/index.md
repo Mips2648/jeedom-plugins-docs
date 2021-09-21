@@ -364,7 +364,9 @@ Pour cela, je conseille la configuration suivante:
 - la commande **URL dernière capture** de la caméra (celle qui retourne une info texte commençant par http pointant sur votre jeedom, pas celle donnant l'image Arlo) pour la config _Commande Url Snapshot_ du widget
 - les commandes **Démarrer enregistrement**, **Arrêter enregistrement** et **Enregistrement** pour les configs _Enregistrer_, _Arrêter enregistrement_ et _Info Enregistrement_ du widget
 - Dans la config _Dossier des enregistrements_, vous devez y copier le chemin affiché dans la page de configuration de la caméra Arlo comme visible sur cette capture:
+
 ![Dossier des enregistrements](../images/config_recordspath.png "Dossier des enregistrements")
+
 Vous pouvez utiliser le petit bouton "copier" à droite du chemin pour copier celui-ci dans le presse papier et vous n'avez plus qu'à coller l'information dans la configuration du widget sur Jeedom Connect
 
 Actuellement, il est impossible de consulter le flux vidéo en live depuis l'application Jeedom Connect.

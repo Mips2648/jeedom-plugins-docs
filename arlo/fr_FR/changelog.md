@@ -5,6 +5,15 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2021-09-22
+
+- Meilleur intégration avec les plugins tiers comme [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) (voir documentation pour plus d'informations)
+  - Ajout d'une commande _URL dernière capture_ sur les caméras, cette commande peut-être utilisée dans la config _Commande Url Snapshot_ du widget caméra de Jeedom Connect
+  - Ajout d'un lien facile à copier dans la page de configuration de la caméra, ce chemin peut être utilisé dans la config _Dossier des enregistrements_ du widget caméra de Jeedom Connect
+- Restauration de plusieurs fonctionnalités pour la Arlo Video doorbell wire-free (la gestion des événements est toujours désactivée), voir documentation pour plus de détails
+- Ajout du carillon Arlo Chimes 2 (AC2001)
+- Fix du statut "Lecture" sur la Arlo Baby qui n'était pas toujours à correct.
+
 # 2021-08-22
 
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
@@ -177,7 +186,7 @@ Il est nécessaire de relancer l'installation des dépendances après l'installa
 # 2019-06-26
 
 - Ajout du support des Arlo Go
-- Ajout des généric type sur les commandes pour préparer l'intégration avec l'app mobile de Jeedom
+- Ajout des types génériques sur les commandes pour préparer l'intégration avec l'app mobile de Jeedom
 
 # 2019-06-21
 

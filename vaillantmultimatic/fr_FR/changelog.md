@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: vaillantmultimatic
 ---
 
-# 2021-09-xx
+# 2021-09-20
 
 Première version
 

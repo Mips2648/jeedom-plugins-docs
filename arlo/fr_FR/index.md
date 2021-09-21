@@ -321,6 +321,20 @@ En plus des commandes ci-dessus, la Video Doorbell dispose de quelques commandes
 - **Démarrer enregistrement cloud**: permet de démarrer l'enregistrement dans le cloud Arlo
 - **Arrêter enregistrement cloud**: permet de stopper l'enregistrement dans le cloud Arlo
 
+### Arlo Video doorbell wire-free
+
+Je déconseille l'utilisation de cette sonnette de la gamme Arlo Essentials avec Jeedom sans l'avoir connectée à une base Arlo. En effet, malgré qu'elle soit relié à une source de courant pour se recharger la batterie ne tient pas la charge si on veut l'utiliser "normalement".
+
+Pour cette raison la gestion des événements est désactivées sur cette sonnette lorsqu'elle est le seul équipement dont vous disposez, les informations ne remonteront donc pas automatiquement sous Jeedom, c'est-à-dire principalement pas de détection de mouvement et pas d'information si quelqu'un sonne.
+
+Par contre, cette sonnette dispose d'une commande **Rafraichir** pour actualiser "manuellement" son état, vous êtes donc libre d'appeler cette commande lorsque vous en avez besoin ou régulièrement via scénario... A vous de trouver le compromis entre votre utilisation et l'autonomie de la batterie.
+
+Toutes les commandes actions fonctionneront normalement mais vous pourrez constater un petit délai supplémentaire de maximum 10s sur cette sonnette par rapport à un autre équipement. En effet, avant d'effectuer l'action, le plugin devra rétablir la connexion qui n'est pas maintenue en permanence pour économiser la batterie.
+
+Après avoir effectué l'action, le plugin restera connecté une trentaine de secondes à la sonnette avant de couper le lien, il se peut donc que pendant ce temps des informations remontent vers Jeedom.
+
+A chaque démarrage du démon le plugin rafraîchira également l'état une seule fois.
+
 # Visualisation du flux vidéo des caméras - live streaming
 
 En cliquant sur la vignette de sur le widget, vous pouvez lancer le flux de la caméra.
@@ -338,6 +352,21 @@ Lorsqu'un enregistrement vidéo local est effectué ou lorsqu'une capture est pr
 
 Dans cet écran présentant un aperçu des captures et vidéos prises, vous pouvez supprimer directement et définitivement les fichiers si vous le souhaitez, sinon le plugin s'en chargera automatiquement suivant les règles définies dans la configuration.
 Vous pouvez également cliquer sur les captures pour les visualiser dans une fenêtre plus grande ou sur les vidéos pour lancer la lecture.
+
+# Intégration avec Jeedom Connect
+
+Il est possible d'utiliser le widget caméra de [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) pour intégrer les caméras Arlo avec cette application mobile.
+
+Pour cela, je conseille la configuration suivante:
+![Jeedom Connect](../images/jeedomConnect.png "Jeedom Connect")
+
+- la commande **URL dernière capture** de la caméra (celle qui retourne une info texte commençant par http pointant sur votre jeedom, pas celle donnant l'image Arlo) pour la config _Commande Url Snapshot_ du widget
+- les commandes **Démarrer enregistrement**, **Arrêter enregistrement** et **Enregistrement** pour les configs _Enregistrer_, _Arrêter enregistrement_ et _Info Enregistrement_ du widget
+- Dans la config _Dossier des enregistrements_, vous devez y copier le chemin affiché dans la page de configuration de la caméra Arlo comme visible sur cette capture:
+![Dossier des enregistrements](../images/config_recordspath.png "Dossier des enregistrements")
+Vous pouvez utiliser le petit bouton "copier" à droite du chemin pour copier celui-ci dans le presse papier et vous n'avez plus qu'à coller l'information dans la configuration du widget sur Jeedom Connect
+
+Actuellement, il est impossible de consulter le flux vidéo en live depuis l'application Jeedom Connect.
 
 # Changelog
 

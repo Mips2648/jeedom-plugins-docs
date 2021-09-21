@@ -358,6 +358,7 @@ Vous pouvez également cliquer sur les captures pour les visualiser dans une fen
 Il est possible d'utiliser le widget caméra de [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) pour intégrer les caméras Arlo avec cette application mobile.
 
 Pour cela, je conseille la configuration suivante:
+
 ![Jeedom Connect](../images/jeedomConnect.png "Jeedom Connect")
 
 - la commande **URL dernière capture** de la caméra (celle qui retourne une info texte commençant par http pointant sur votre jeedom, pas celle donnant l'image Arlo) pour la config _Commande Url Snapshot_ du widget

@@ -321,6 +321,20 @@ In addition to the above commands, the Video Doorbell has some of the commands c
 - **Start cloud record**: to start recording a video in Arlo cloud
 - **Stop cloud record**: to stop recording video in Arlo cloud
 
+### Arlo Video doorbell wire-free
+
+I do not recommend using this doorbell from the Arlo Essentials range with Jeedom without having connected it to an Arlo hub. Indeed, although it is connected to power to recharge it the battery does not hold the charge if you want to use it "normally".
+
+For this reason, event management is disabled on this doorbell when it is the only device you have, the information will therefore not be updated automatically under Jeedom, i.e. mainly no motion detection and no information if someone rings.
+
+Nevertheless, this doorbell has a **Refresh** command to update its status "manually", so you are free to call this command when you need it or regularly via scenario... You have to find the compromise between your use and battery life.
+
+All the action commands will work normally but you may notice a small additional delay of maximum 10s on this doorbell compared to another device. Indeed, before performing the action, the plugin will have to reestablish the connection which is not maintained permanently to save battery.
+
+After performing the action, the plugin will remain connected to the doorbell for about 30 seconds before cutting the link, so information may be sent back to Jeedom during this time.
+
+Each time the daemon is started, the plugin will also refresh the state once.
+
 # Viewing the video stream from the cameras - live streaming
 
 By clicking on the thumbnail on the widget, you can start the streaming.
@@ -338,6 +352,22 @@ When a local video recording is made or when a capture is taken by the plugin or
 
 In this screen showing an overview of the captures and videos taken, you can directly and permanently delete the files if you wish, otherwise the plugin will take care of them automatically according to the rules defined in the configuration.
 You can also click on the captures to view them in a larger window or on the videos to start playback.
+
+# Jeedom Connect integration
+
+It is possible to use the camera widget of [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) to integrate Arlo cameras with this mobile application.
+
+For this, I recommend the following configuration:
+
+![Jeedom Connect](../images/jeedomConnect.png "Jeedom Connect")
+
+- the command **Last capture URL** of camera device (the one that returns a text info starting with http pointing to your jeedom, not the one giving the Arlo image) for the _Snapshot Url command_ config of the widget
+- the commands **Start recording**, **Stop recording** and **Recording** for the _Save_, _Stop recording_ and _Recording info_ configs of the widget
+- In the _Records folder_ config, you must copy the path displayed in the Arlo camera configuration page as visible in this capture:
+![Records folder](../images/config_recordspath.png "Records folder")
+You can use the small "copy" button to the right of the path to copy it to the clipboard and you just have to paste the information in the configuration of the widget on Jeedom Connect
+
+Currently, it is not possible to view the live video stream from Jeedom Connect application.
 
 # Changelog
 

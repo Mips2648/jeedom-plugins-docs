@@ -59,7 +59,7 @@ Voici un aperçu des commandes disponibles:
 
 ## Eau chaude sanitaire
 
-Cette équipement reprend des informations sur la production d'eau chaude sanitaire ainsi que sur l'état de la circulation qui est indissociable de l'eau chaude sanitaire.
+Cet équipement reprend des informations sur la production d'eau chaude sanitaire ainsi que sur l'état de la circulation qui est indissociable de l'eau chaude sanitaire.
 
 - **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _On_, _Off_
 - **Auto**, **On**, **Off**, commande action pour activer le mode correspondant
@@ -106,8 +106,8 @@ Les équipements _Pièce_ disposent des commandes suivantes:
 - **Consigne** donne la consigne appliquée actuellement
 - **Consigne chauffe** indique et permet de modifier la consigne voulue lors du mode _Manuel_
 - **Température** indique la température actuelle de la pièce
-- **Humidité** indique l'humidité actuelle de la pièce si un thermostat s'y trouve sinon cette aucune info ne remontera sur cette commande
-- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcé l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme normal.
+- **Humidité** indique l'humidité actuelle de la pièce si un thermostat s'y trouve sinon aucune info ne remontera sur cette commande
+- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcer l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme normal.
 - **Annuler température forcée** commande action permettant d'annuler le mode forcé
 - **Sécurité enfant** commande info binaire indiquant si la sécurité enfant est activée sur la vanne ou le thermostat de la pièce
 - **Fenêtre ouverte** commande info binaire indiquant si la vanne ou le thermostat de la pièce a détecté une fenêtre ouverte (par une chute brutale de la température)

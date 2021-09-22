@@ -7,10 +7,10 @@ pluginId: arlo
 
 # 2021-09-22
 
-- Better integration with third-party plugins like [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) (see documentation for more information)
+- Better integration with third-party plugins like [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) ([See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) for more information)
   - Add a _Last capture URL_ command on the cameras, this command can be used in the _Snapshot URL command_ config of the Jeedom Connect camera widget
   - Add an easy-to-copy link in the camera configuration page, this path can be used in the _Recordings folder_ config of the Jeedom Connect camera widget
-- Restored several features for the Arlo Video doorbell wire-free (event handling is still disabled), see documentation for details
+- Restored several features for the Arlo Video doorbell wire-free (event handling is still disabled), [see documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) for details
 - Add Arlo chimes 2 (AC2001)
 - Fix "playing" status on Arlo Baby which was not always correct.
 
@@ -65,7 +65,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 # 2020-09-21
 
-- Add support of 2 factors authentication (read the documentation)
+- Add support of 2 factors authentication ([see documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
 - Add support of light on Arlo Pro3 and Arlo Ultra
 - Add support of Arlo Prod3 Floodlight
 - Fix daemon crash in case device is offline or not provisioned
@@ -91,8 +91,8 @@ It is necessary to launch the installation of dependencies after installing this
 
 - Add commands for modes on the widget for the Video Doorbell (when it is not linked to a base)
 - Add info commands _IP_, _Luminosity_, _Temperature_, _Humidity_ and _Quality of air_ on the Arlo Baby
-- Add management of the Arlo Baby night light: on / off, timer, brightness, color, color temperature and mode (see documentation)
-- Add the lullaby management of the Arlo Baby: Play / Pause / Next, timer, Playlist, Volume, Repeat and random mode (see documentation)
+- Add management of the Arlo Baby night light: on / off, timer, brightness, color, color temperature and mode ([See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
+- Add the lullaby management of the Arlo Baby: Play / Pause / Next, timer, Playlist, Volume, Repeat and random mode ([See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
 - Widget optimization
 - Fix management of the modes on the Arlo Baby which were not always correctly created
 - Fix tooltips on the camera widget in v4

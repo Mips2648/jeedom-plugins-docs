@@ -22,11 +22,11 @@ Il faut ensuite installer les dépendances.
 Il est fortement recommandé de créer un utilisateur dédié à Jeedom via l'App mobile officielle.
 Pour se faire, ouvrez l'application, allez de le menu _réglage_ puis _Accès_ et suivez les étapes pour créer un nouvel utilisateur.
 
-Il ne vous reste plus qu'à renseigner le nom d'utilisateur et son mot de passe dans la configuration du plugin.
+Il ne vous reste plus qu'à renseigner le nom d'utilisateur et son mot de passe dans la configuration du plugin et vous pouvez ensuite lancer le démon.
 
 # Les équipements et leurs commandes
 
-Dès que les dépendances seront installées et la configuration du plugin sera correcte, le plugin synchronisera vos équipements.
+Dès que les dépendances seront installées et la configuration du plugin sera correcte, le démon sera démarré et le plugin synchronisera vos équipements avec Jeedom.
 
 > **Tip**
 >

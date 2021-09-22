@@ -7,10 +7,10 @@ pluginId: arlo
 
 # 2021-09-22
 
-- Meilleur intégration avec les plugins tiers comme [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) (voir documentation pour plus d'informations)
+- Meilleur intégration avec les plugins tiers comme [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) ([Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) pour plus d'informations)
   - Ajout d'une commande _URL dernière capture_ sur les caméras, cette commande peut-être utilisée dans la config _Commande Url Snapshot_ du widget caméra de Jeedom Connect
   - Ajout d'un lien facile à copier dans la page de configuration de la caméra, ce chemin peut être utilisé dans la config _Dossier des enregistrements_ du widget caméra de Jeedom Connect
-- Restauration de plusieurs fonctionnalités pour la Arlo Video doorbell wire-free (la gestion des événements est toujours désactivée), voir documentation pour plus de détails
+- Restauration de plusieurs fonctionnalités pour la Arlo Video doorbell wire-free (la gestion des événements est toujours désactivée), [Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) pour plus de détails
 - Ajout du carillon Arlo Chimes 2 (AC2001)
 - Fix du statut "Lecture" sur la Arlo Baby qui n'était pas toujours à correct.
 
@@ -65,7 +65,7 @@ Il est nécessaire de relancer l'installation des dépendances après l'installa
 
 # 2020-09-21
 
-- Ajout du support de l'authentification en 2 étapes (lire la documentation)
+- Ajout du support de l'authentification en 2 étapes ([Voir documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
 - Ajout du support de l'éclairage sur les Arlo Pro3 et Arlo Ultra
 - Ajout du support de la Arlo Pro3 Floodlight
 - Fix d'un plantage du démon lorsqu'un équipement était hors ligne ou désactivé
@@ -91,8 +91,8 @@ Il est nécessaire de relancer l'installation des dépendances après l'installa
 
 - Ajout des commandes modes sur le widget pour la Video Doorbell (quand elle n'est pas liée à une base)
 - Ajout des commandes info _IP_, _Luminosité_, _Température_, _Humidité_ et _Qualité de l'air_ sur la Arlo Baby
-- Ajout de la gestion de la veilleuse de la Arlo Baby: on/off, minuterie, luminosité, couleur, température des couleurs et mode (voir documentation)
-- Ajout de la gestion de la berceuse de la Arlo Baby: Play/Pause/Suivant, minuterie, Playlist, Volume, Mode répétition et aléatoire (voir documentation)
+- Ajout de la gestion de la veilleuse de la Arlo Baby: on/off, minuterie, luminosité, couleur, température des couleurs et mode ([Voir documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
+- Ajout de la gestion de la berceuse de la Arlo Baby: Play/Pause/Suivant, minuterie, Playlist, Volume, Mode répétition et aléatoire ([Voir documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
 - Optimisation sur le widget
 - Fix sur la gestion des modes sur la Arlo Baby qui ne remontaient pas toujours correctement
 - Fix des tooltips sur le widget camera en v4

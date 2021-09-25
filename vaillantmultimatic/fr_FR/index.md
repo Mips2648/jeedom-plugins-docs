@@ -24,6 +24,12 @@ Pour se faire, ouvrez l'application, allez de le menu _réglage_ puis _Accès_ e
 
 Il ne vous reste plus qu'à renseigner le nom d'utilisateur et son mot de passe dans la configuration du plugin et vous pouvez ensuite lancer le démon.
 
+Vous avez également la possibilité de configurer la fréquence de mise à jour des informations, en minute.
+
+> **Tip**
+>
+> Lors d'une action, un changement de consigne ou de mode par exemple, l'état de tout le système est mis à jour en temps réel. Il s'agit ici de mise à jours supplémentaires effectuées en arrière plan.
+
 # Les équipements et leurs commandes
 
 Dès que les dépendances seront installées et la configuration du plugin sera correcte, le démon sera démarré et le plugin synchronisera vos équipements avec Jeedom.

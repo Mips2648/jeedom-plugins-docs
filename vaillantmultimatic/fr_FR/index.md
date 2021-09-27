@@ -12,6 +12,10 @@ Il est possible de remonter dans Jeedom l'état de tous les équipements connect
 
 Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont également gérés.
 
+> **Important**
+>
+> Il est nécessaire d'avoir une passerelle modèle VR920 ou supérieur.
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

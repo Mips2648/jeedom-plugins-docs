@@ -7,14 +7,15 @@ pluginId: vaillantmultimatic
 
 # Description
 
-Plugin permettant de se connecter à un système Vaillant multiMATIC via sa passerelle internet.
+Plugin permettant de se connecter à un système Vaillant multiMATIC via sa passerelle internet (VR900, VR920, VR921).
 Il est possible de remonter dans Jeedom l'état de tous les équipements connectés et de les contrôler: définir le mode (On, Off, Auto...), définir les températures de consigne, activer un mode rapide, activer une marche forcée...
 
 Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont également gérés.
 
 > **Important**
 >
-> Il est nécessaire d'avoir une passerelle modèle VR920 ou supérieur.
+> Le plugin devrait fonctionner avec toutes les passerelles (VR900, VR920, VR921) et le régulateur VRC700, compatible avec l'application multiMATIC uniquement.
+> Le régulateur VRC720 n'est pas compatible car il fonctionne avec l'application sensoAPP.
 
 # Installation
 

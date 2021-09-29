@@ -5,6 +5,10 @@ lang: en_US
 pluginId: vaillantmultimatic
 ---
 
+# 2021-09-26
+
+- Add possibility to configure the update frequency
+
 # 2021-09-20
 
 First version

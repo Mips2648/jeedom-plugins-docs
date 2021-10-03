@@ -5,6 +5,10 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2021-10-04
+
+- Adaptation of connection timeouts on influxDb v2
+
 # 2021-08-22
 
 - Complete redesign of the commands selection, much more responsive interface even with a very large number (+15,000) of commands to display:

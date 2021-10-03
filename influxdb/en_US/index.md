@@ -63,6 +63,7 @@ It is possible to search and select commands to send via 3 methods:
 - Search and add multiple commands via the **Add commands (list)** button. This screen will display all the info commands of your Jeedom: useful because everything is displayed but if you have more than 10,000 commands it can take 30s or more.
 
 Search example:
+
 ![Search commands](../images/search.png "Search commands")
 
 1. In the command search screens, it is possible to filter / search on any value by typing the search in the field at the top of the list.
@@ -71,7 +72,7 @@ Search example:
 
 # Definitions
 
-A **point** in InfluxDB represents a single data record that has 4 components: a **measurement**, **field** set, **tag** set and a **timestamp**.
+A **point** in InfluxDB represents a single data record that has 4 components: a **measurement**, **fields** set, **tags** set and a **timestamp**.
 
 Below the relation implemented by the plugin between InfluxDB concepts and Jeedom concepts:
 

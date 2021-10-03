@@ -52,7 +52,7 @@ Il est parfaitement possible d'avoir plusieurs équipements connectés à la mê
 
 ## Sélection des commandes
 
-Dans le second onglet sont affichées toutes les commandes sélectionnées pour envoi à InfluxDB. Il est possible de filtrer les lignes afficher via le champs "Recherche".
+Dans le second onglet sont affichées toutes les commandes sélectionnées pour envoi à InfluxDB. Il est possible de filtrer les lignes afficher via le champ "Recherche".
 
 ![Config commandes](../images/commands.png "Config commandes")
 
@@ -63,6 +63,7 @@ Il est possible de rechercher et sélectionner des commandes à envoyer via 3 m�
 - Recherche et ajout de commandes multiple via le bouton **Ajouter commandes (liste)**. Cet écran va afficher toutes les commandes infos de votre Jeedom: pratique car tout est affiché mais si vous avez plus de 10.000 commandes cela peut prendre 30s ou plus.
 
 Exemple de recherche:
+
 ![Recherche commandes](../images/search.png "Recherche commandes")
 
 1. Dans les écrans de recherche de commandes, il est possible de filtrer/rechercher sur n'importe quelle valeur en tapant la recherche dans le champ en haut de la liste.
@@ -71,7 +72,7 @@ Exemple de recherche:
 
 # Définitions
 
-Un **point** dans InfluxDB représente une donnée caractérisée par 4 composants: la **mesure**, un ensemble de **champ**, un ensemble de **tag** et une information d'**horodatage**.
+Un **point** dans InfluxDB représente une donnée caractérisée par 4 composants: la **mesure**, un ensemble de **champs**, un ensemble de **tags** et une information d'**horodatage**.
 
 Ci-dessous le lien qui est fait par le plugin entre les concepts InfluxDB et les concepts Jeedom:
 

@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: gardena
 ---
 
+# 2021-01-04
+
+- Ajout de 3 commandes donnant la position GPS sur la tondeuse Husqvarna: **Latitude**, **Longitude** et **Position**
+- Mise à jour des dépendances: cette mise à jour nécessite de réinstaller les dépendances: cela devrait être fait automatiquement lors de la mise à jour du plugin.
+
 # 2021-08-22
 
 - Ajout d'une commande **Durée restante** sur les Gardena Smart Mower

@@ -132,6 +132,9 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - **Mode** aura une des valeurs suivantes: *MAIN_AREA*, *DEMO*, *SECONDARY_AREA*, *HOME*, *UNKNOWN* (voir ci-dessous pour une description des valeurs)
 - **Etat** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (voir ci-dessous pour une description des valeurs)
 - **Activité** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (voir ci-dessous pour une description des valeurs)
+- **Latitude** commande info donnant la latitude
+- **Longitude** commande info donnant la longitude
+- **Position** commande info donnant la position GPS avec le format _latitude,longitude_
 - **Code erreur** & **Description erreur** donne le code et la description de l'erreur le cas échéant
 - **Durée restante** commande info donnant le temps restant d'activité; valable uniquement lors de l'utilisation des commandes **Démarrage mode manuel** ou **Retour à la base**
 - **Démarrage mode manuel** Démarre et tond l'herbe pendant la durée (en minute) donnée en option de la commande

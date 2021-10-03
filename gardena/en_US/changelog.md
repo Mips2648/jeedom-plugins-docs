@@ -5,6 +5,11 @@ lang: en_US
 pluginId: gardena
 ---
 
+# 2021-10-04
+
+- Add 3 commands giving the GPS position on the Husqvarna mower: **Latitude**, **Longitude** and **Position**
+- Update dependencies: this update requires reinstalling dependencies: this should be done automatically when updating the plugin.
+
 # 2021-08-22
 
 - Add command **Remaining time** on Gardena Smart Mower

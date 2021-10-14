@@ -15,7 +15,7 @@ Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont é
 > **Important**
 >
 > Le plugin devrait fonctionner avec toutes les passerelles (VR900, VR920, VR921) et le régulateur VRC700, compatible avec l'application multiMATIC uniquement.
-> Le régulateur VRC720 n'est pas compatible car il fonctionne avec l'application sensoAPP.
+> Le régulateur VRC720, appelé "sensoCOMFORT" ou "sensoHOME" par exemple, n'est pas compatible car il fonctionne avec l'application sensoAPP.
 
 # Installation
 
@@ -65,7 +65,9 @@ Voici un aperçu des commandes disponibles:
 - **Mode rapide** il y a une commande info indiquant le mode rapide en cours (valeurs possibles: _Aucun_, _Boost ECS_, _Boost ventilation_, _Absence exceptionnelle_, _Présence exceptionnelle_, _Fête_, _Absence_, _Arrêt du système_) ainsi qu'une commande action correspondante à chaque mode pour l'activer.
 - **Date début vacances**, **Date fin vacances** & **Définir dates vacances** sont respectivement les commandes donnant la date de début et de fin de vacances enregistrées ainsi que la commande pour définir ces dates
 - **Consigne vacances** permet de connaître et définir la consigne de température appliquée lorsque le mode vacances est actif.
-- **Mode vacances actif**, **Mode vacances On**, **Mode vacances Off** sont les commandes permettant de connaître le statut, d'activer et de désactiver le mode vacances.
+- **Mode vacances actif**, **Mode vacances Off** sont les commandes permettant de connaître le statut et de désactiver le mode vacances.
+- **Définir dates vacances**
+- **Commande Consigne vacances**
 - Il existera également une commande info/numérique par sonde de température connectée au système, par exemple **Température extérieure**, **Température ECS ballon**, **Température de départ**, ...
 
 ## Eau chaude sanitaire

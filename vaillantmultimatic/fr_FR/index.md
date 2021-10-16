@@ -55,7 +55,7 @@ C'est l'équipement principal du système. Il permet le contrôle des modes rapi
 
 Les modes rapides sont les mêmes que ceux disponibles dans l'app mobile, ils ont un impact global sur les composants du système en fonction du mode activé.
 
-Le mode vacances aura également un impact global mais il est un peu particulier car il a un date de début et de fin et peut-être activé, programmé ou pas. S'il est activé mais que la date actuelle ne se trouve pas dans l'interval défini il ne sera pas appliqué (et un autre mode rapide le sera éventuellement selon votre configuration).
+Le mode vacances aura également un impact global mais il est un peu particulier car il a une date de début et de fin et est donc programmé. S'il est activé mais que la date actuelle ne se trouve pas dans l'interval défini il ne sera pas appliqué (et un autre mode rapide le sera éventuellement selon votre configuration).
 
 Voici un aperçu des commandes disponibles:
 
@@ -64,10 +64,8 @@ Voici un aperçu des commandes disponibles:
 - **A jour** commande info/binaire indiquant si le système est à jour
 - **Mode rapide** il y a une commande info indiquant le mode rapide en cours (valeurs possibles: _Aucun_, _Boost ECS_, _Boost ventilation_, _Absence exceptionnelle_, _Présence exceptionnelle_, _Fête_, _Absence_, _Arrêt du système_) ainsi qu'une commande action correspondante à chaque mode pour l'activer.
 - **Date début vacances**, **Date fin vacances** & **Définir dates vacances** sont respectivement les commandes donnant la date de début et de fin de vacances enregistrées ainsi que la commande pour définir ces dates
-- **Consigne vacances** permet de connaître et définir la consigne de température appliquée lorsque le mode vacances est actif.
+- **Consigne vacances** et **Définir consigne vacances** permettent de connaître et de définir la consigne de température appliquée lorsque le mode vacances est actif.
 - **Mode vacances actif**, **Mode vacances Off** sont les commandes permettant de connaître le statut et de désactiver le mode vacances.
-- **Définir dates vacances**
-- **Commande Consigne vacances**
 - Il existera également une commande info/numérique par sonde de température connectée au système, par exemple **Température extérieure**, **Température ECS ballon**, **Température de départ**, ...
 
 ## Eau chaude sanitaire
@@ -78,7 +76,7 @@ Cet équipement reprend des informations sur la production d'eau chaude sanitair
 - **Auto**, **On**, **Off**, commande action pour activer le mode correspondant
 - **Etat** donne l'état actuel: _On_ ou _Off_. Donc si le **Mode** est _Auto_, **Etat** permettra de connaître l'état réel.
 - **Consigne** donne la consigne appliquée actuellement (par exemple 5°C si l'**Etat** est _Off_)
-- **Consigne chauffe** indique et permet de modifier la consigne voulue (lorsque l'**Etat** est _On_)
+- **Consigne chauffe** et **Définir consigne chauffe** indique et permet de modifier la consigne voulue (lorsque l'**Etat** est _On_)
 - **Température** indique la température actuelle de l'eau
 - **Mode circulation** et **Etat circulation** donne les informations respective pour la circulation. Le mode n'est pas contrôlable, il est lié à la production d'eau chaude.
 
@@ -101,8 +99,8 @@ Chaque zone disposera des commandes suivantes:
 - **Auto**, **Jour**, **Nuit**, **Off**, commande action pour activer le mode correspondant
 - **Etat** donne l'état actuel: _Jour_, _Nuit_ ou _Off_. Donc si le **Mode** est _Auto_, **Etat** permettra de connaître l'état réel.
 - **Consigne** donne la consigne appliquée actuellement
-- **Consigne jour** indique et permet de modifier la consigne utilisée en mode _Jour_
-- **Consigne nuit** indique et permet de modifier la consigne utilisée en mode _Nuit_
+- **Consigne jour** et **Définir consigne jour** indique et permet de modifier la consigne utilisée en mode _Jour_
+- **Consigne nuit** et **Définir consigne nuit** indique et permet de modifier la consigne utilisée en mode _Nuit_
 - **Température** indique la température actuelle de la zone
 - **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcé l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme normal.
 - **Annuler température forcée** commande action permettant d'annuler le mode forcé
@@ -117,7 +115,7 @@ Les équipements _Pièce_ disposent des commandes suivantes:
 - **Auto**, **Manuel**, **Off**, commande action pour activer le mode correspondant
 - **Etat** donne l'état actuel: _Auto_, _Manuel_ ou _Off_.
 - **Consigne** donne la consigne appliquée actuellement
-- **Consigne chauffe** indique et permet de modifier la consigne voulue lors du mode _Manuel_
+- **Consigne chauffe** et **Définir consigne chauffe** indique et permet de modifier la consigne voulue lors du mode _Manuel_
 - **Température** indique la température actuelle de la pièce
 - **Humidité** indique l'humidité actuelle de la pièce si un thermostat s'y trouve sinon aucune info ne remontera sur cette commande
 - **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcer l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme normal.

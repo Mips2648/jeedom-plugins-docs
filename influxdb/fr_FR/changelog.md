@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
+# 2021-10-26
+
+- Fix: le point n'était pas envoyé à influx lorsqu'il avait la valeur _0_
+
 # 2021-10-04
 
 - Adaptation des timeouts de connexions sur influxDb v2

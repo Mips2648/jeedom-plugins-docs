@@ -12,7 +12,7 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 
 > **Important**
 >
-> Pour les robots tondeuses Husqvarna, il faut un modèle "X" / "Automower Connect" avec la connectivité internet. Ce plugin ne fonctionnera pas avec tout autre technologie local, comme par exemple mais pas uniquement, les "Automower Connect@Home" qui utilisent le bluetooth.
+> Quelque soit le matériel (Gardena et Husqvarna) il faut une connectivité internet. Ce plugin ne fonctionnera pas avec tout autre technologie de connexion locale, comme par exemple mais pas uniquement, le bluetooth.
 
 # Installation
 

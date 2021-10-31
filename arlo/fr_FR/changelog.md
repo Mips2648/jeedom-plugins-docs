@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# 2021-10-31
+
+- Mise à jour des commandes audio lors du refresh manuel et automatique de la Arlo Baby
+- Fix de l'enregistrement vidéo cloud
+
 # 2021-09-22
 
 - Meilleur intégration avec les plugins tiers comme [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) ([Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) pour plus d'informations)
@@ -12,7 +17,7 @@ pluginId: arlo
   - Ajout d'un lien facile à copier dans la page de configuration de la caméra, ce chemin peut être utilisé dans la config _Dossier des enregistrements_ du widget caméra de Jeedom Connect
 - Restauration de plusieurs fonctionnalités pour la Arlo Video doorbell wire-free (la gestion des événements est toujours désactivée), [Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) pour plus de détails
 - Ajout du carillon Arlo Chimes 2 (AC2001)
-- Fix du statut "Lecture" sur la Arlo Baby qui n'était pas toujours à correct.
+- Fix du statut "Lecture" sur la Arlo Baby qui n'était pas toujours correct.
 
 # 2021-08-22
 

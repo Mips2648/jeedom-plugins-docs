@@ -181,8 +181,11 @@ Les commandes suivantes sont disponibles sur tous les modèles:
 - **Détection de son**: indique si la détection de son est active
 - **Mouvement détecté**: si du mouvement est détecté
 - **Son détecté**: si du son est détecté
-- **Dernière image**: URL (locale) vers la dernière image prise par la caméra
+- **Dernière image**: chemin (locale) vers la dernière image prise par la caméra
+- **URL dernière capture**: URL (locale) vers la dernière image prise par la caméra
 - **Prendre une capture**: permet de prendre une capture (sauvée localement) avec la caméra
+- **Envoyer une capture**: permet d'envoyer une capture (qui sera sauvée en local) depuis un scénario en choisissant la commande de notification à utiliser
+- **Envoyer un enregistrement**: permet d'envoyer un enregistrement vidéo (qui sera sauvé en local) depuis un scénario en choisissant la commande de notification à utiliser
 - **Démarrer enregistrement**: permet de démarrer l'enregistrement de vidéo (sauvée localement)
 - **Arrêter enregistrement**: permet de d'arrêter un enregistrement local
 - **Démarrer enregistrement cloud**: permet de démarrer l'enregistrement dans le cloud Arlo

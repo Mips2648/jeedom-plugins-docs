@@ -5,6 +5,13 @@ lang: fr_FR
 pluginId: myaudi
 ---
 
+# 2021-11-04
+
+- Fix login failed suite à un changement chez VW/Audi
+- Fix retry en cas d'échec d'une action
+- Optimisations diverses
+- Nettoyage des dépendances
+
 # 2021-05-22
 
 - Nouvelle version compatible avec les dernières api Audi/VW (thx @ripleyxlr8)

@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: vaillantmultimatic
 ---
 
+# 2021-11-04
+
+- Correction des types génériques
+- Remontée des information de batterie sur les équipements de type _Vanne_ et _Thermostat_ (voir documentation)
+
 # 2021-10-17
 
 - Fix message d'erreur dans le log en cas d'échec de connexion

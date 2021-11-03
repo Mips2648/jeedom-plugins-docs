@@ -130,6 +130,11 @@ Ces équipements "techniques" n'ont aucune commande pour gérer le chauffage, to
 - **Batterie faible** commande info binaire indiquant si l'état de la batterie est faible. Il n'existe pas de remontée de l'état en pourcent.
 - **Hors portée** commande info binaire indiquant si l'équipement est hors portée du système (et que donc il ne communique plus avec la passerelle).
 
+Le plugin remontera l'information _batterie_ dans l'équipement pour que le core puisse y accéder de façon standard (comme tous les autres équipements sous Jeedom) et que l'on puisse être notifié via les alertes prévues dans Jeedom mais comme l'information en pourcent n'existe pas réellement, les valeurs fictives suivantes seront définies:
+
+- 100% tant que la commande **Batterie faible** vaut 0
+- 10% lorsque la commande **Batterie faible** vaut 1
+
 # Changelog
 
 [Voir le changelog](./changelog)

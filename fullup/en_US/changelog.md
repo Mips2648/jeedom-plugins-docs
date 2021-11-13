@@ -7,7 +7,7 @@ pluginId: fullup
 
 # 2021-01-31
 
-- New presentation of objects list 
+- New presentation of objects list
 - Improved layout of device and commands configuration pages
 - Add a configuration to select the application: currently _Q8 Mazout_ or _Fullup_
 - Internal optimization

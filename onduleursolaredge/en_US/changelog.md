@@ -5,6 +5,11 @@ lang: en_US
 pluginId: onduleursolaredge
 ---
 
+# 2021-10-04
+
+- New presentation of objects list
+- Improved layout of device and commands configuration pages
+
 # 2020-08-24
 
 - Cleanup of the layout for V4

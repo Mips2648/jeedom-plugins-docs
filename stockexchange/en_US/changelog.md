@@ -12,7 +12,7 @@ pluginId: stockexchange
 
 # 2021-05-12
 
-- New presentation of objects list 
+- New presentation of objects list
 - Improved layout of device and commands configuration pages
 - Fix: search of symbol with marketstack sevice
 

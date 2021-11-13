@@ -5,6 +5,11 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2021-10-31
+
+- Update audio commands during manual and automatic refresh of the Arlo Baby
+- Fix video recording in cloud
+
 # 2021-09-22
 
 - Better integration with third-party plugins like [Jeedom Connect]({{site.market}}/index.php?v=d&p=market_display&id=4077) ([See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) for more information)
@@ -12,7 +17,7 @@ pluginId: arlo
   - Add an easy-to-copy link in the camera configuration page, this path can be used in the _Recordings folder_ config of the Jeedom Connect camera widget
 - Restored several features for the Arlo Video doorbell wire-free (event handling is still disabled), [see documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) for details
 - Add Arlo chimes 2 (AC2001)
-- Fix "playing" status on Arlo Baby which was not always correct.
+- Fix "Playing" status on the Arlo Baby which was not always correct.
 
 # 2021-08-22
 
@@ -58,7 +63,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 # 2020-12-02
 
-- New presentation of objects list 
+- New presentation of objects list
 - Improved layout of device and commands configuration pages
 - Add support of Arlo Essential
 - Fix daemon on video doorbell if connected without base

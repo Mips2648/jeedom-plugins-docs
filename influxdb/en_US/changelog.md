@@ -5,6 +5,14 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# 2021-10-26
+
+- Fix: the measure was not correctly sent to influx if it has the value _0_
+
+# 2021-10-04
+
+- Adaptation of connection timeouts on influxDb v2
+
 # 2021-08-22
 
 - Complete redesign of the commands selection, much more responsive interface even with a very large number (+15,000) of commands to display:
@@ -18,7 +26,7 @@ pluginId: influxdb
 
 - Add https support for InfluxDb v1.x
 - Add support for InfluxDb v2.x (see documentation)
-- New presentation of objects list 
+- New presentation of objects list
 
 # 2020-09-04
 

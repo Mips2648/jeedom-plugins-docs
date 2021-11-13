@@ -5,6 +5,11 @@ lang: en_US
 pluginId: gardena
 ---
 
+# 2021-10-04
+
+- Add 3 commands giving the GPS position on the Husqvarna mower: **Latitude**, **Longitude** and **Position**
+- Update dependencies: this update requires reinstalling dependencies: this should be done automatically when updating the plugin.
+
 # 2021-08-22
 
 - Add command **Remaining time** on Gardena Smart Mower
@@ -20,7 +25,7 @@ pluginId: gardena
 # 2021-03-14
 
 - Fix version of a dependency due to a bug in the latest version of it (see <https://github.com/websocket-client/websocket-client/commit/3112b7d75b1e5d65cb8fdfca7801606649044ed1#commitcomment-48226116>). If you installed the plugin and its dependencies after March 3, you probably need to rerun the dependency installation; if everything is working well for you it is not necessary.
-- New presentation of objects list 
+- New presentation of objects list
 - Improved layout of device and commands configuration pages
 
 # 2020-10-24

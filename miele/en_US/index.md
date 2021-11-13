@@ -17,9 +17,19 @@ You must have a Miele account with at least one appliance compatible with Miele@
 
 # Plugin configuration
 
-In the plugin configuration, you shall enter your username, password and select you country, you shall also enter the ClientId and Client Secret received to access the API.
+In the configuration of the plugin, you will need to fill in the ClientId and the Client Secret received allowing access to the API and then save.
+You can then click on the _Link Jeedom and Miele@Home_ button and follow the instructions: this will open a new tab on the Miele website where you will need to log in with your Miele username and password to validate the link .
 
-# The devices
+If everything went without error, returning to the configuration page, you can click on the _Refresh_ button in front of the status if it is still indicated as _NOK_.
+
+![Configuration](../images/config.png "Configuration")
+
+The plugin has two tasks:
+
+- **cron**: is used to automatically synchronize the devices every minute. If you deactivate this task you will have to refresh each device manually or via scenario.
+- **cronDaily**: is used to refresh the access token if necessary. You should not disable this cron.
+
+# Devices
 
 As soon as the plugin configuration is correct, the plugin will synchronize all your appliances every minute. It will create missing appliances and their commands and will update information of all connected appliances.
 
@@ -36,7 +46,8 @@ In the device configuration page, there is a button to create the missing comman
 Each Miele device has the following commands, not all of them are applicable to all appliances:
 
 - **State** & **Status** gives the state of the device in string and numeric value respectively (see below for the list of possible states)
-- **Program** display ongoing program (see below for a list of known values)
+- **Program type** display ongoing program (see below for a list of known values)
+- **Program name** gives the name of the program running on devices supporting this feature.
 - **Phase** gives the current phase of the program
 - **Remaining time** gives the remaining time in hours and minutes before the end of the program.
 - **Start time**

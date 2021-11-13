@@ -9,7 +9,7 @@ pluginId: notificationqueue
 
 - Add management of random text generation (same system as in interactions, see documentation)
 - Add management of conditional text via a ternary operator (see documentation)
-- New presentation of objects list 
+- New presentation of objects list
 - Improved layout of device and commands configuration pages
 
 # 2020-09-14

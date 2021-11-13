@@ -8,7 +8,7 @@ pluginId: rocketchat
 # 2020-12-02
 
 - Add support of buttons to respond quickly to ask (as in telegram); it works on the web app but a bug is open for the mobile app: <https://github.com/RocketChat/Rocket.Chat.ReactNative/issues/2684>
-- New presentation of objects list 
+- New presentation of objects list
 - Improved layout of device and commands configuration pages
 - Cleanup of the layout for V4
 

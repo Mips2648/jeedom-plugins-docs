@@ -5,6 +5,15 @@ lang: fr_FR
 pluginId: miele
 ---
 
+# 2021-11-13
+
+- Mise à jour de l'API Miele@Home
+- Ajout d'une commande info **Nom du programme** qui retournera le nom du programme en cours sur les appareils supportant cette fonctionnalité (il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir cette nouvelle commande)
+- Changement du mode d'authentification pour plus de sécurité
+- Nouvelle présentation de la liste des objets dans la configuration de l'équipement
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+
 # 2020-08-24
 
 - Nettoyage de la mise en page pour la V4

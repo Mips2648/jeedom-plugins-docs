@@ -17,7 +17,17 @@ Vous devez avoir un compte utilisateur Miele avec au moins un appareil compatibl
 
 # Configuration du plugin
 
-Dans la configuration du plugin, il faudra renseigner le nom d'utilisateur, le mot de passe ainsi que le pays d'inscription, ainsi que le ClientId et le Client Secret reçus permettant l'accès à l’API.
+Dans la configuration du plugin, il faudra renseigner le ClientId et le Client Secret reçus permettant l'accès à l’API et sauvegarder.
+Vous pouvez ensuite cliquer sur le bouton _Lier Jeedom et Miele@Home_ et suivre les instructions: cela ouvrira un nouvel onglet sur le site de Miele dans lequel vous devrez vous connecter avec votre nom d'utilisateur et votre mot de passe Miele pour valider le lien.
+
+Si tout c'est déroulé sans erreur, en revenant sur la page de configuration, vous pouvez cliquer sur le bouton _Rafraichir_ en face du statut si celui-ci est toujours indiqué comme _NOK_.
+
+![Configuration](../images/config.png "Configuration")
+
+Le plugin dispose de deux tâches:
+
+- **cron**: sert à synchroniser automatiquement chaque minute les équipements. Si vous désactivez cette tâche vous devrez rafraichir chaque équipement manuellement ou via scénario.
+- **cronDaily**: sert à rafraichir le token d'accès si nécessaire. Vous ne devriez pas désactiver ce cron.
 
 # Les équipements
 
@@ -36,7 +46,8 @@ Dans la page de configuration d'un équipement, il existe un bouton pour créer 
 Chaque équipement Miele dispose des commandes suivantes, toutes ne sont pas forcément applicables à tous les appareils:
 
 - **Etat** & **Statut** donne l'état de l'appareil sous forme de chaîne de caractère et d'identifiant respectivement (voir ci-dessous pour la liste des états possibles)
-- **Programme** donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)
+- **Type de programme** donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)
+- **Nom du programme** donne le nom du programme en cours sur les appareils supportant cette fonctionnalité.
 - **Phase** donne la phase en cours du programme
 - **Temps restant** donne le temps restant en heure et minute avant la fin du programme.
 - **Heure de démarrage**

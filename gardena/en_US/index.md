@@ -12,7 +12,7 @@ It is possible to access device data, monitor them and perform actions (dependin
 
 > **Important**
 >
-> Husqvarna mowers require an "X" / "Automower Connect" model with internet connectivity. This plugin will not work with any other local technology, such as for example, but not exclusively, "Automower Connect@Home" which use bluetooth.
+> Whatever the device (Gardena and Husqvarna) you need internet connectivity. This plugin will not work with any other local connection technology, such as, but not only, bluetooth.
 
 # Installation
 
@@ -132,6 +132,9 @@ As well as the following commands for each of the valves (where X will therefore
 - **Mode** will have one of the following values: *MAIN_AREA*, *DEMO*, *SECONDARY_AREA*, *HOME*, *UNKNOWN* (see below for a description of the values)
 - **State** will have one of the following values: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (see below for a description of the values)
 - **Activity** will have one of the following values: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (see below for a description of the values)
+- **Latitude** info command giving latitude
+- **Longitude** info command giving longitude
+- **Position** info command giving GPS position in format _latitude,longitude_
 - **Error code** & **Error description** gives the code and description of the error if applicable
 - **Remaining time** info command giving the remaining time of activity; valid only after having used commands **Start manual mode** or **Return to base**
 - **Start mode manual** Starts and mows the grass for the time (in minutes) given as an option on the command

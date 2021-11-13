@@ -5,10 +5,17 @@ lang: en_US
 pluginId: myaudi
 ---
 
+# 2021-11-04
+
+- Fix login failed due to a change at VW/Audi
+- Fix retry in case of action issue
+- Various optimizations
+- Dependencies cleaning
+
 # 2021-05-22
 
 - New version compatible with the latest Audi/VW APIs (thx @ ripleyxlr8)
-- New presentation of objects list 
+- New presentation of objects list
 - Improved layout of device and commands configuration pages
 
 # 2020-07-13

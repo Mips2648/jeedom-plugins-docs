@@ -181,8 +181,11 @@ The following commands are available on all model:
 - **Sound detection**: indicates if sound detection is active
 - **Motion detected**: if motion is detected
 - **Sound detected**: if sound is detected
-- **Last image**: URL (local) to the last image taken by the camera
+- **Last image**: (local) path to the last image taken by the camera
+- **Last snapshot URL**: (local) URL to the last image taken by the camera
 - **Take a snapshot**: take a snapshot (saved locally) with the camera
+- **Send snapshot**: allows you to send a snapshot (which will be saved locally) from a scenario by choosing the notification command to use
+- **Send record**: allows you to send a video record (which will be saved locally) from a scenario by choosing the notification command to use
 - **Start record**: to start recording video (saved locally)
 - **Stop record**: to stop recording video
 - **Start cloud record**: to start recording a video in Arlo cloud

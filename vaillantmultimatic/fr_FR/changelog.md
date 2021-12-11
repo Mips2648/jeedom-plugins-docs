@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: vaillantmultimatic
 ---
 
+# 2021-12-11
+
+- Simplification de la gestion de la consigne sur les pièces: le plugin adaptera automatiquement la consigne forcée ou la consigne manuelle en fonction du mode en actuel de la pièce
+- Amélioration sur le retour d'état en cas d'exécution d'une commande: seul l'équipement impacté est rafraîchi ce qui permet un retour plus rapide
+- Ajout d'une commande action **Rafraichir** sur les équipements le supportant
+
 # 2021-11-04
 
 - Correction des types génériques

@@ -33,7 +33,7 @@ Vous avez également la possibilité de configurer la fréquence de mise à jour
 
 > **Tip**
 >
-> Lors d'une action, un changement de consigne ou de mode par exemple, l'état de tout le système est mis à jour en temps réel. Il s'agit ici de mise à jours supplémentaires effectuées en arrière plan.
+> Lors d'une action, un changement de consigne ou de mode par exemple, l'état de l'équipement est mis à jour immédiatement. Il s'agit ici de mise à jours supplémentaires effectuées en arrière plan.
 
 # Les équipements et leurs commandes
 
@@ -59,6 +59,7 @@ Le mode vacances aura également un impact global mais il est un peu particulier
 
 Voici un aperçu des commandes disponibles:
 
+- **Rafraichir** rafraîchit toutes les informations de tous les équipements
 - **Statut** commande info/string
 - **Online** commande info/binaire
 - **A jour** commande info/binaire indiquant si le système est à jour
@@ -72,6 +73,7 @@ Voici un aperçu des commandes disponibles:
 
 Cet équipement reprend des informations sur la production d'eau chaude sanitaire ainsi que sur l'état de la circulation qui est indissociable de l'eau chaude sanitaire.
 
+- **Rafraichir** rafraîchit les informations de l'équipement
 - **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _On_, _Off_
 - **Auto**, **On**, **Off**, commande action pour activer le mode correspondant
 - **Etat** donne l'état actuel: _On_ ou _Off_. Donc si le **Mode** est _Auto_, **Etat** permettra de connaître l'état réel.
@@ -93,6 +95,7 @@ Cet équipement reprend des informations sur la production d'eau chaude sanitair
 Il y aura un équipement de type _Zone_ par zone de chauffage (par circuit) géré par votre system Vaillant.
 Chaque zone disposera des commandes suivantes:
 
+- **Rafraichir** rafraîchit les informations de la zone
 - **Actif** commande info binaire indiquant si la zone est active ou non
 - **Contrôle via les pièces** Important, commande info binaire indiquant si la zone est contrôlée par la gestion des pièces dans le cas où vous posséder des équipements de la gamme ambiSENSE. Si c'est le cas alors le contrôle sur la zone n'aura aucun effet: changer de mode ou changer la consigne n'influencera pas la chauffe; il faut utiliser les équipements de type _Pièce_ à la place, voir ci-dessous.
 - **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _Jour_, _Nuit_, _Off_
@@ -111,15 +114,16 @@ Lorsque vous avez des vannes et/ou des thermostats de la gamme ambiSENSE reliée
 La gestion de la consigne de température se fera individuellement via ces équipements et plus de façon centralisée sur la zone entière. Cela permettra donc une gestion plus granulaire de votre chauffage.
 Les équipements _Pièce_ disposent des commandes suivantes:
 
+- **Rafraichir** rafraîchit les informations de la pièce
 - **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _Manuel_, _Off_
 - **Auto**, **Manuel**, **Off**, commande action pour activer le mode correspondant
-- **Etat** donne l'état actuel: _Auto_, _Manuel_ ou _Off_.
+- **Etat** donne l'état actuel: _Auto_, _Manuel_ ou _Off_
 - **Consigne** donne la consigne appliquée actuellement
-- **Consigne chauffe** et **Définir consigne chauffe** indique et permet de modifier la consigne voulue lors du mode _Manuel_
+- **Définir consigne** permet de modifier la consigne. En mode _Manuel_ cela changera la consigne manuelle, en mode _Auto_ ou _Forcé_ cela activera le mode forcé et appliquera la nouvelle consigne (équivalent à la commande **Activer température forcée**)
 - **Température** indique la température actuelle de la pièce
 - **Humidité** indique l'humidité actuelle de la pièce si un thermostat s'y trouve sinon aucune info ne remontera sur cette commande
-- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcer l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme normal.
-- **Annuler température forcée** commande action permettant d'annuler le mode forcé
+- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcer l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme précédent
+- **Annuler température forcée** commande action permettant d'annuler le mode forcé et de revenir au programme précédent
 - **Sécurité enfant** commande info binaire indiquant si la sécurité enfant est activée sur la vanne ou le thermostat de la pièce
 - **Fenêtre ouverte** commande info binaire indiquant si la vanne ou le thermostat de la pièce a détecté une fenêtre ouverte (par une chute brutale de la température)
 

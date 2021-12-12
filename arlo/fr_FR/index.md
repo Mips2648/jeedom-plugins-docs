@@ -167,6 +167,10 @@ Les modèles suivant sont actuellement reconnu par le plugin:
 - Go
 - Arlo Q
 
+> **Tip**
+>
+> Dans la majorité des cas lors d'un ajout d'une caméra ou d'un autre équipement Arlo, il est nécessaire de redémarrer le démon pour que les différents états et événements liés soient correctement remontés dans Jeedom.
+
 Les commandes suivantes sont disponibles sur tous les modèles:
 
 - **Connexion**: indique si la connexion avec la caméra est opérationnelle
@@ -246,10 +250,6 @@ De plus, les commandes suivantes sont également disponibles:
 - **Nom du réseau**: Donne le nom du réseau mobile
 - **IP**: l'adresse IP actuelle
 - **Réseau actif**: indique le réseau actif actuel (wifi ou mobile)
-
-> **Tip**
->
-> En cas d'ajout d'une caméra Arlo Go, Arlo Q ou Arlo Baby, il est nécessaire de redémarrer le démon pour que les événements liés soient correctement reçus.
 
 ## Arlo Essential
 

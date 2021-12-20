@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: miele
 ---
 
+# 2021-12-20
+
+- Ajout des commandes **Définir niveau de ventilation** et **Définir couleurs** sur les Hôtes
+- Ajout des commandes **Allumer** et **Eteindre** sur les appareils supportant cette fonctionnalité (il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir ces nouvelles commandes)
+- Fix dû à un changement de comportement de l'API Miele@Home
+
 # 2021-11-13
 
 - Mise à jour de l'API Miele@Home

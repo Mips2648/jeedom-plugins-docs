@@ -5,6 +5,12 @@ lang: en_US
 pluginId: miele
 ---
 
+# 2021-12-20
+
+- Add commands **Set ventilation step** and **Set colors** on hood
+- Add commands **Power on** and **Power off** on appliances supporting this functionality (you must create the missing commands on the device if you wish to have these new commands)
+- Fix due to a change in the Miele@Home API behavior
+
 # 2021-11-13
 
 - Update Miele@Home API

@@ -128,8 +128,9 @@ This list is not exhaustive, there may be other values.
 
 ## Actions commands
 
-The action commands below will be present on the device if the action is supported by the appliance. On top, to be able to perform an action, the appliance must be in a given status/state (see above). For example, it is not possible to stop it if it was not started.
+The action commands below will be present on the device if the action is supported by the appliance. On top, to be able to perform an action, the appliance must be in a given status/state. For example, it is not possible to stop it if it was not started.
 
+- **Power on**, **Power off**
 - **Start**, the device must be in 4-Programmed status and waiting to start
 - **Stop**, the device must be in 4-Programmed status and waiting to start, 5-Operating or 6-Pause
 - **Pause** ??
@@ -137,9 +138,10 @@ The action commands below will be present on the device if the action is support
 - **Stop Freezing**, only for freezer type devices, the device must be in Freezing mode
 - **Start Cooling**, only for freezer type devices, the device must be in 5-Operating status
 - **Stop Cooling**, only for freezer type devices, the device must be in Cooling mode
-- **Turn on light**, the device must be in 5-Operating status
-- **Turn off light**, the device must be in 5-Operating status
+- **Switch on light**
+- **Switch off light**
 - **Set start time**, the device must be in 4-Programmed status and waiting to start
+- **Set ventilation step** & **Set colors**, for hoods
 
 # Changelog
 

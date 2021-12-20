@@ -128,8 +128,9 @@ Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 
 ## Les commandes actions
 
-Les commandes actions ci-dessous seront présentes sur les équipements si l'action est supportée par l'appareil. De plus, pour pouvoir effectuer une action il faut que l'appareil soit dans un statut/état donné (voir ci-dessus). Il n'est par exemple pas possible de stopper celui-ci s'il n'était pas démarré.
+Les commandes actions ci-dessous seront présentes sur les équipements si l'action est supportée par l'appareil. De plus, pour pouvoir effectuer une action il faut que l'appareil soit dans un statut/état donné. Il n'est par exemple pas possible de stopper celui-ci s'il n'était pas démarré.
 
+- **Allumer**, **Eteindre**
 - **Démarrer**, l'appareil doit être en statut 4-Programmé et en attente de démarrage
 - **Arrêter**, l'appareil doit être en statut 4-Programmé et en attente de démarrage, 5-Fonctionnement ou 6-Pause
 - **Pause** ??
@@ -137,9 +138,10 @@ Les commandes actions ci-dessous seront présentes sur les équipements si l'act
 - **Arrêter Freezing**, uniquement pour les appareils de type surgélateur, l'appareil doit être en mode Freezing
 - **Démarrer Cooling**, uniquement pour les appareils de type congélateur, l'appareil doit être en statut 5-Fonctionnement
 - **Arrêter Cooling**, uniquement pour les appareils de type congélateur, l'appareil doit être en mode Cooling
-- **Allumer la lumière**, l'appareil doit être en statut 5-Fonctionnement
-- **Eteindre la lumière**, l'appareil doit être en statut 5-Fonctionnement
+- **Allumer la lumière**
+- **Eteindre la lumière**
 - **Définir heure de démarrage**, l'appareil doit être en statut 4-Programmé et en attente de démarrage
+- **Définir niveau de ventilation** & **Définir couleurs**, pour les Hôtes
 
 # Changelog
 

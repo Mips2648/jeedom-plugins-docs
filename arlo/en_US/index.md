@@ -167,6 +167,10 @@ The following models are currently supported by the plugin:
 - Go
 - Arlo Q
 
+> **Tip**
+>
+> In the majority of cases when adding a camera or other Arlo device, it is necessary to restart the daemon so that the various states and related events are correctly reported to Jeedom.
+
 The following commands are available on all model:
 
 - **Connection**: true if the camera is actually connected
@@ -246,10 +250,6 @@ On top, following commands are also available:
 - **Network Name**: Gives the name of the mobile network
 - **IP**: current IP address
 - **Active network**: indicates the current active network (wifi or mobile)
-
-> **Tip**
->
-> When adding a Arlo Go, Arlo Q or Arlo Baby camera, it is necessary to restart the daemon so the related events are correctly received.
 
 ## Arlo Essential
 

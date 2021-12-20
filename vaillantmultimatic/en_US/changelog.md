@@ -5,6 +5,12 @@ lang: en_US
 pluginId: vaillantmultimatic
 ---
 
+# 2021-12-11
+
+- Simplification of the management of the setpoint on the rooms: the plugin will automatically adapt the forced setpoint or the manual setpoint according to the current mode of the room
+- Improvement in status feedback when a command is executed: only the impacted device is refreshed, which allows faster feedback
+- Add an action command ** Refresh ** on the device supporting it
+
 # 2021-11-04
 
 - Fix generic types

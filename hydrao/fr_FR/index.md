@@ -15,15 +15,34 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 # Configuration du plugin
 
+Dans la configuration du plugin, vous devez spécifier votre nom d'utilisateur et votre mot de passer utilisés sur l'application Hydrao.
+
+Vous pouvez également configuré combien de douches dans le passé doivent être synchroniser avec Jeedom, cela est surtout utile lors de la première synchronisation, plus d'information ci-dessous.
+
 # Les équipements
 
 Dès que la configuration du plugin est correcte, le plugin synchronisera vos pommeaux de douche.
+Il effectuera une synchronisation chaque heure via le cronHourly et vous pouvez faire un refresh manuel via la commande correspondante sur l'équipement.
 
-> **Tip**
+Le plugin créera une équipement *Pommeau* par pommeau activé sur votre compte. Chaque équipement *Pommeau* aura les commandes info décrites ci-dessous donnant l'information sur la *dernière douche connue* mais les douches précédentes qui n'auraient pas déjà été synchronisées avec Jeedom seront synchronisées également et insérées dans l'historique de la commande sous Jeedom, avec l'heure connue par Hydrao. Le nombre maximum de douche à synchroniser dans le passée est à choisir dans la configuration du plugin.
+
+> **Attention**
 >
-> Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement jeedom ne correspond plus à aucun pommeau en votre possession, veuillez le supprimer manuellement.
+> Comme vous savez, La date de synchronisation entre le pommeau de douche et Hydrao n'est pas forcément la date réelle de la douche et cette date de synchro est la seule date connue par le plugin, il est impossible de connaître la date réelle de la douche à moins que vous ne fassiez la synchro entre votre pommeau et Hydrao lors de chaque douche. Ceci est une limite du système fourni par Hydrao lié au fait que les pommeaux doivent être régulièrement synchronisés avec le cloud Hydrao via votre téléphone.
+
+Le plugin créera également un équipement *Tableau de bord* qui donne des informations et des statistiques générales liées à votre compte (et pas à une douche en particulier).
 
 # Les commandes
+
+Sur un équipement *Pommeau*, il existe les commandes suivantes:
+
+- **Date synchro** donne la dernière date de synchronisation entre le pommeau et Hydrao
+- **Volume** indique le nombre de litre consommé lors de la dernière douche
+- **Durée**indique la durée, en seconde, de la dernière douche
+- **Température** indique la température moyenne de l'eau de la dernière douche
+- **Durée de savonnage** & **Nombre de savonnage** pour la dernière douche (si connu)
+- **Débit** de la dernière douche
+- **Consommation moyenne** des 100 dernières douches
 
 # Changelog
 

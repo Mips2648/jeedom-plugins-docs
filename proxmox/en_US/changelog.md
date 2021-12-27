@@ -5,6 +5,23 @@ lang: en_US
 pluginId: proxmox
 ---
 
+# 2021-12-27
+
+- Add an info command **Node** on VM and LXC which returns the node on which the VM is running (useful if you have several nodes in the cluster)
+- Add a **Restart** (reboot) command that will do a clean reboot of VMs, the **Restart immediately** (reset) command still exists.
+- Add a panel and redesign of the health page. You must activate the panel in the plugin configuration.
+  - Organization of resources by node;
+  - Sorting of resources (same order as in Proxmox: LXC, VM, storage);
+  - Possibility to execute actions ((re)Start, Pause, Stop ...) on VMs and LXC from the panel;
+- Add more config information on LXCs
+- Add info commands on nodes giving the number of VM/LXC started and stopped ([See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
+- Add table display mode of the list of device for Jeedom 4.2
+- Improvement: Devices which are VM and LXC templates have a different icon to identify them more easily
+- Improvement: move synchronization process to daemon to be able to increase the refresh rate, this can be configured in the plugin configuration.
+- Improvement: The **Updates Available** command is now an info/numeric command instead of info/binary as it should have been from the start, please check your scenarios.
+- Various interface improvements
+- minor bugfixes
+
 # 2020-12-02
 
 - Added a configuration on the plugin to define the default parent object that will be used when creating a new resource, this will prevent you from having to systematically do it by hand.
@@ -25,13 +42,13 @@ pluginId: proxmox
 # 2020-03-30
 
 - Move documentations
-- Add "reset" command on VM
+- Add **Restart** command on VM
 
 # 2020-02-12
 
-- Add commands "Start all" and "Shutdown all" on the nodes
-- Add commands "Shutdown the node" and "Reboot the node"
-- Add commands "Suspend" and Resume" on VMs and LXCs
+- Add commands **Start all** and **Shutdown all** on the nodes
+- Add commands **Shutdown the node** and **Reboot the node**
+- Add commands **Suspend** and **Resume** on VMs and LXCs
 
 # 2019-11-23
 
@@ -40,10 +57,10 @@ pluginId: proxmox
 # 2019-11-16
 
 - Added a field to enter a description (optional) when taking a snapshot. If you have scenarios using this command please check them.
-- Add snapshot list command on VM and LXC
+- Add **snapshot list** command on VM and LXC
 - Added a command giving the percentage of usage for memory, disk and swap on all devices
 - remove vmid and node commands on all devices
-- Fixed: status "paused" is correctly specified on a VM or a container on pause
+- Fixed: status *paused* is correctly specified on a VM or a container on pause
 - Fix: It is now possible to rename the device in Jeedom with a different name than the one in Proxmox
 
 # 2019-11-12

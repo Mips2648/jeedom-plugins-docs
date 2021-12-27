@@ -101,7 +101,7 @@ Tous les équipements auxquels le plugin a accès seront automatiquement créés
 
 Il est possible de faire une synchronisation manuelle via le bouton dans la page des équipements.
 
-Lors d'une action (prise d'un snapshot ou redémarrage du machine par exemple), l'état de l'équipement sera automatiquement actualisé également.
+Lors d'une action (prise d'un snapshot ou redémarrage d'une machine par exemple), l'état de l'équipement sera automatiquement actualisé également.
 
 # Les commandes disponibles
 

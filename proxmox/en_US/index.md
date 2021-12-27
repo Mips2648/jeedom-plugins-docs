@@ -81,13 +81,27 @@ You can check if the configuration of the plugin is correct thanks to the health
 
 If the connection is successful, the version of your Proxmox server will be displayed.
 
+You can also configure the object in which the device will be created to not have to move them afterwards. The plugin will attempt to assign the parent to the device unless a device with the same name already exists for this object.
+
+Finally, you can choose the information refresh time, by default at 30s.
+
+You can also activate the panel for the dashboard which will be accessible via the *Home* menu
+![Menu panel](../images/panel_menu.png "Menu panel")
+
+# Panel
+
+The panel provide a lot of information, it offers a global view of all proxmox resources (containers, virtual machines and storage spaces) organized by nodes. It is possible to perform all actions on the VMs directly from the panel and the information is updated in real time.
+![Panel](../images/panel.png "Panel")
+
 # How the plugin works
 
-Once a user is set up, the plugin will try to connect to Proxmox every minute to synchronize.
+As soon as the plugin configuration is complete, the daemon should start and will try to connect to Proxmox according to the configured delay in order to synchronize the information.
 
 All resources to which the plugin has access will be automatically created in Jeedom, it is not possible to manually create a device.
 
 It is possible to do a manual synchronization via the button in the device page.
+
+After an action has been executed (taking a snapshot or restarting a machine for example), the status of the device will also be automatically updated.
 
 # Available commands
 

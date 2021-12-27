@@ -5,6 +5,23 @@ lang: fr_FR
 pluginId: proxmox
 ---
 
+# 2021-12-27
+
+- Ajout d'une commande info **Noeud** sur VM et LXC qui retourne le noeud sur lequel tourne la VM (utile si vous avez plusieurs noeuds dans le cluster)
+- Ajout d'une commande **Redémarrer** (reboot) qui fera un redémarrage plus propre des VMs, la commande **Redémarrer immédiatement** (reset) existe toujours.
+- Ajout d'un panel et refonte de la page santé. Vous devez activez le panel dans la configuration du plugin.
+  - Organisation des ressources par Noeud;
+  - Tri des ressources (même ordre que sous Proxmox: LXC, VM, stockage);
+  - Possibilité d'exécuter les actions ((re)Démarrer, Pause, Arrêter...) sur les VMs et LXC depuis le panel;
+- Ajout de plus d'information de config sur les LXC
+- Ajout de commandes info sur les noeuds donnant le nombre de VM/LXC démarré et arrêté ([Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+- Amélioration: Les équipements qui sont des templates de VM et de LXC ont une icône différente pour les identifier plus facilement
+- Amélioration: passage de la synchronisation en démon pour pouvoir augmenter la fréquence d'actualisation, celle-ci est paramétrable dans la configuration du plugin.
+- Amélioration: la commande **Mises à jour disponibles** est maintenant une commande info/numérique au lieu de info/binaire comme cela aurait dû être depuis le début, veuillez vérifier vos scénarios.
+- Diverses améliorations de l'interface
+- bugfix mineurs
+
 # 2020-12-02
 
 - Ajout d'une config sur le plugin permettant de définir l'objet parent par défaut qui sera utilisé lors de la création d'une nouvelle ressource, cela vous évitera d'avoir à systématiquement le faire à la main.
@@ -40,7 +57,7 @@ pluginId: proxmox
 # 2019-11-16
 
 - Ajout d'un champ pour entrer une description (optionnelle) lors de la prise de snapshot. Si vous avez des scénarios utilisant cette commande veuillez les vérifier.
-- Ajout d'une commande "Liste des snapshots" sur VM et LXC
+- Ajout d'une commande **"**Liste des snapshots**"** sur VM et LXC
 - Ajout d'une commande donnant le pourcentage d'utilisation pour la mémoire, le disque et le swap sur tous les équipements concernés
 - suppression des commandes vmid et Noeud sur tous les équipements
 - Fixe: le statut "paused" est précisé correctement sur une VM ou un container en pause

@@ -81,13 +81,27 @@ Vous pouvez vérifier si la configuration du plugin est correcte grâce à la pa
 
 Si la connexion est réussie, la version de votre serveur Proxmox sera affichée.
 
+Vous pouvez également configurer l'objet dans lequel seront créer les équipements pour ne pas devoir les déplacer ensuite. Le plugin tentera d'assigner le parent à l'équipement sauf si un équipement du même nom existe déjà pour cet objet.
+
+Enfin, vous pouvez choisir le délai d'actualisation des informations, par défaut à 30s.
+
+Vous pouvez aussi activer le panel pour le dashboard qui sera accessible via le menu *Accueil*
+![Menu panel](../images/panel_menu.png "Menu panel")
+
+# Panel
+
+Le panel est très complet, il offre une vue globale de toute les ressources proxmox (les containers, les machines virtuelles et les espaces de stockage) organisées par noeuds. Il est possible d'effectuer toutes les actions sur les VMs directement depuis le panel et les informations sont mises à jours en temps réel.
+![Panel](../images/panel.png "Panel")
+
 # Fonctionnement du plugin
 
-Dès qu'un utilisateur sera configuré, le plugin essaiera de se connecter à Proxmox toutes les minutes afin de se synchroniser.
+Dès que la configuration du plugin sera terminée, le démon devrait démarrer et essaiera de se connecter à Proxmox selon le délai configuré afin de synchroniser les informations.
 
 Tous les équipements auxquels le plugin a accès seront automatiquement créés dans Jeedom, il n'est pas possible de créer un équipement manuellement.
 
 Il est possible de faire une synchronisation manuelle via le bouton dans la page des équipements.
+
+Lors d'une action (prise d'un snapshot ou redémarrage du machine par exemple), l'état de l'équipement sera automatiquement actualisé également.
 
 # Les commandes disponibles
 

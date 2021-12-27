@@ -57,7 +57,7 @@ pluginId: proxmox
 # 2019-11-16
 
 - Ajout d'un champ pour entrer une description (optionnelle) lors de la prise de snapshot. Si vous avez des scénarios utilisant cette commande veuillez les vérifier.
-- Ajout d'une commande **"**Liste des snapshots**"** sur VM et LXC
+- Ajout d'une commande **Liste des snapshots** sur VM et LXC
 - Ajout d'une commande donnant le pourcentage d'utilisation pour la mémoire, le disque et le swap sur tous les équipements concernés
 - suppression des commandes vmid et Noeud sur tous les équipements
 - Fixe: le statut "paused" est précisé correctement sur une VM ou un container en pause

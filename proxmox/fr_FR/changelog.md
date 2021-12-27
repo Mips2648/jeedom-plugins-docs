@@ -10,7 +10,7 @@ pluginId: proxmox
 - Ajout d'une commande info **Noeud** sur VM et LXC qui retourne le noeud sur lequel tourne la VM (utile si vous avez plusieurs noeuds dans le cluster)
 - Ajout d'une commande **Redémarrer** (reboot) qui fera un redémarrage plus propre des VMs, la commande **Redémarrer immédiatement** (reset) existe toujours.
 - Ajout d'un panel et refonte de la page santé. Vous devez activez le panel dans la configuration du plugin.
-  - Organisation des ressources par Noeud;
+  - Organisation des ressources par noeud;
   - Tri des ressources (même ordre que sous Proxmox: LXC, VM, stockage);
   - Possibilité d'exécuter les actions ((re)Démarrer, Pause, Arrêter...) sur les VMs et LXC depuis le panel;
 - Ajout de plus d'information de config sur les LXC

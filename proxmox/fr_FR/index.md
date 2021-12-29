@@ -86,11 +86,13 @@ Vous pouvez également configurer l'objet dans lequel seront créer les équipem
 Enfin, vous pouvez choisir le délai d'actualisation des informations, par défaut à 30s.
 
 Vous pouvez aussi activer le panel pour le dashboard qui sera accessible via le menu *Accueil*
+
 ![Menu panel](../images/panel_menu.png "Menu panel")
 
 # Panel
 
 Le panel est très complet, il offre une vue globale de toute les ressources proxmox (les containers, les machines virtuelles et les espaces de stockage) organisées par noeuds. Il est possible d'effectuer toutes les actions sur les VMs directement depuis le panel et les informations sont mises à jours en temps réel.
+
 ![Panel](../images/panel.png "Panel")
 
 # Fonctionnement du plugin

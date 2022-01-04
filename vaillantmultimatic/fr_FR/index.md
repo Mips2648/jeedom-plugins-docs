@@ -88,6 +88,8 @@ Cet équipement reprend des informations sur la production d'eau chaude sanitair
 - **Jour**, **Nuit**, **Off**, commande action pour activer le mode correspondant
 - **Etat** donne l'état actuel, _Jour_, _Nuit_, _Off_.
 - **Vitesse** donne la vitesse actuelle
+- **Vitesse Jour** et **Vitesse Nuit** commandes info donnant la vitesse programmée pendant le jour et la nuit respectivement
+- **Définir vitesse Jour** et **Définir vitesse Nuit** commandes actions permettant de modifier la vitesse programmée pendant le jour et la nuit respectivement
 - **Température** indique la température actuelle
 
 ## Les zones

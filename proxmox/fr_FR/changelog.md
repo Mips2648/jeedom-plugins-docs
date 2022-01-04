@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: proxmox
 ---
 
+# Version beta
+
+- Amélioration: possibilité de configurer une liste d'IP, séparée par une virgule, dans la config du plugin (vers des noeuds différents) pour assurer la résilience
+
 # 2021-12-27
 
 - Ajout d'une commande info **Noeud** sur VM et LXC qui retourne le noeud sur lequel tourne la VM (utile si vous avez plusieurs noeuds dans le cluster)

@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: vaillantmultimatic
 ---
 
+# Version beta
+
+- Ajout des commandes actions et infos **Vitesse jour** et **Vitesse nuit** sur les équipements de type *Ventilation*
+
 # 2021-12-11
 
 - Simplification de la gestion de la consigne sur les pièces: le plugin adaptera automatiquement la consigne forcée ou la consigne manuelle en fonction du mode en actuel de la pièce

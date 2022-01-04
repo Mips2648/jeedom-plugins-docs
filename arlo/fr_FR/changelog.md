@@ -5,6 +5,13 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# Version beta
+
+- Ajout de la commande **Etat bouclier** sur la Arlo Essential Indoor
+- Amélioration: permet, en option, l'affichage de toutes les commandes actions existantes sur le widget caméra
+- Ajout d'un bouton dans la bibliothèque pour télécharger les enregistrements
+- Fix: le nom de l'objet/pièce était toujours visible sur le widget caméra
+
 # 2021-10-31
 
 - Mise à jour des commandes audio lors du refresh manuel et automatique de la Arlo Baby

@@ -107,7 +107,7 @@ Chaque zone disposera des commandes suivantes:
 - **Consigne jour** et **Définir consigne jour** indique et permet de modifier la consigne utilisée en mode _Jour_
 - **Consigne nuit** et **Définir consigne nuit** indique et permet de modifier la consigne utilisée en mode _Nuit_
 - **Température** indique la température actuelle de la zone
-- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcé l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme normal.
+- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcé l'application de cette consigne indépendamment du programme en cours. Ce mode sera actif pendant 6h avant de revenir au programme normal et la durée n'est pas modifiable.
 - **Annuler température forcée** commande action permettant d'annuler le mode forcé
 
 ## Les pièces
@@ -124,8 +124,10 @@ Les équipements _Pièce_ disposent des commandes suivantes:
 - **Définir consigne** permet de modifier la consigne. En mode _Manuel_ cela changera la consigne manuelle, en mode _Auto_ ou _Forcé_ cela activera le mode forcé et appliquera la nouvelle consigne (équivalent à la commande **Activer température forcée**)
 - **Température** indique la température actuelle de la pièce
 - **Humidité** indique l'humidité actuelle de la pièce si un thermostat s'y trouve sinon aucune info ne remontera sur cette commande
-- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcer l'application de cette consigne indépendamment du programme en cours, ce mode sera actif pendant 3h avant de revenir au programme précédent
+- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcer l'application de cette consigne indépendamment du programme en cours. Ce mode sera actif pendant la durée configurée dans la commande **Durée mode forcé** avant de revenir au programme précédent.
 - **Annuler température forcée** commande action permettant d'annuler le mode forcé et de revenir au programme précédent
+- **Durée mode forcé** contient la durée pendant laquelle le mode forcé sera actif *lors de la prochaine activation*
+- **Définir durée mode forcé** permet de modifier la durée pendant laquelle le mode forcé sera actif *lors de la prochaine activation*. Modifier cette durée n'a pas d'influence sur la durée restante si la température forcée était déjà activée, pour cela il faut à nouveau utiliser la commande **Activer température forcée**
 - **Sécurité enfant** commande info binaire indiquant si la sécurité enfant est activée sur la vanne ou le thermostat de la pièce
 - **Fenêtre ouverte** commande info binaire indiquant si la vanne ou le thermostat de la pièce a détecté une fenêtre ouverte (par une chute brutale de la température)
 

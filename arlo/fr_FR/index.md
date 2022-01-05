@@ -253,11 +253,14 @@ De plus, les commandes suivantes sont également disponibles:
 
 ## Arlo Essential
 
-En plus des commandes communes à toutes les caméras, les caméras Arlo Essential disposent des commandes suivantes pour contrôler l'état de l'éclairage intégré:
+En plus des commandes communes à toutes les caméras, les caméras Arlo Essential disposent des commandes suivantes pour contrôler l'état de l'éclairage et de la sirène intégré:
 
 - **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte
 - **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)
 - **Lampe Off**: Pour éteindre manuellement la lampe
+- **Etat Sirène**: Indique si la sirène est active
+- **Sirène On**: Pour déclencher manuellement la sirène
+- **Sirène Off**: Pour couper la sirène
 
 ## Arlo Essential Indoor
 

@@ -8,8 +8,10 @@ pluginId: arlo
 # Version beta
 
 - Ajout de la commande **Etat bouclier** sur la Arlo Essential Indoor
+- Ajout des commandes **Etat Sirène**, **Sirène On** et **Sirène Off** sur la Arlo Essential
 - Amélioration: permet, en option, l'affichage de toutes les commandes actions existantes sur le widget caméra
 - Ajout d'un bouton dans la bibliothèque pour télécharger les enregistrements
+- Désactivation de la gestion des événements sur la Arlo Essential lorsqu'aucun hub n'est connecté car cela draine la batterie de ce modèle trop rapidement
 - Fix: le nom de l'objet/pièce était toujours visible sur le widget caméra
 
 # 2021-10-31

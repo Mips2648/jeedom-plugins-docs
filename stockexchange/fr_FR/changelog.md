@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: stockexchange
 ---
 
+# Version beta
+
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+
 # 2021-07-27
 
 - Changement de l'api utilisée pour marketstack pour éviter le problème "incorrect data received:null"

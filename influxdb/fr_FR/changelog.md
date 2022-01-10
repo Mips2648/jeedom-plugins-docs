@@ -5,6 +5,12 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
+# Version beta
+
+- Ajout de configuration avancée pour définir les timeouts et le nombre de tentatives d'envoi.
+- Tri des équipements et des commandes dans les écrans de sélection par objet
+- Fix: Dans la sélection d'équipement par objet il n'était pas possible de chercher/sélectionner les équipements sans objet
+
 # 2021-10-26
 
 - Fix: le point n'était pas envoyé à influx lorsqu'il avait la valeur _0_

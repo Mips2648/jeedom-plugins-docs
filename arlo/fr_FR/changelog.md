@@ -13,6 +13,7 @@ pluginId: arlo
 - Ajout d'un bouton dans la bibliothèque pour télécharger les enregistrements
 - Désactivation de la gestion des événements sur la Arlo Essential lorsqu'aucun hub n'est connecté car cela draine la batterie de ce modèle trop rapidement
 - Fix: le nom de l'objet/pièce était toujours visible sur le widget caméra
+- Suppression de l'installation de la version custom de ffmpeg qui était nécessaire sous  Debian Stretch.
 
 # 2021-10-31
 

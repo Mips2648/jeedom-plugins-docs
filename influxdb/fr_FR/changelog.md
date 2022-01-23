@@ -9,7 +9,9 @@ pluginId: influxdb
 
 - Ajout de l'export de l'historique vers InfluxDB
 - Ajout d'une commande **Envoyer tout** pour forcer l'envoi de la valeur actuelle de toutes les commandes sélectionnées dans l'équipement
-- Ajout de configuration avancée pour définir les timeouts et le nombre de tentatives d'envoi.
+- Ajout de plusieurs commandes info pour connaître l'état de santé du connecteur: statut générale, dernière erreur... (voir documentation)
+- Ajout de commandes compteurs totaux et journalier du nombre de mesures envoyées par équipement
+- Ajout de configuration avancée pour définir les timeouts et le nombre de tentatives d'envoi
 - Tri des équipements et des commandes dans les écrans de sélection par objet/pièce
 - Fix: Dans la sélection d'équipement par objet il n'était pas possible de chercher/sélectionner les équipements sans objet/pièce
 

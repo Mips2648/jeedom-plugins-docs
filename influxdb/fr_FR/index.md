@@ -50,7 +50,7 @@ C'est le mode de fonctionnement recommandé, il est plus optimal et ne provoque 
 
 Il est parfaitement possible d'avoir plusieurs équipements connectés à la même base de donnée configurés chacun avec un mode différent et des commandes différentes si vous voulez avoir certaines commandes envoyées en temps réel tout en optimisant la charge pour les autres.
 
-## Sélection des commandes
+## Sélection des mesures à envoyer
 
 Dans le second onglet sont affichées toutes les commandes sélectionnées pour envoi à InfluxDB. Il est possible de filtrer les lignes afficher via le champ "Recherche".
 
@@ -70,6 +70,16 @@ Exemple de recherche:
 2. La liste n'affichera que les commandes qui n'ont pas encore été sélectionnées pour cet équipement / connecteur.
 3. Pour sélectionner une commande et l'envoyer à InfluxDB il suffit de cliquer sur le bouton **Ajouter**. N'oubliez pas de sauvegarder l'équipement après avoir ajouté toutes les commandes voulues.
 
+# Les commandes
+
+Chaque équipement/connecteur dispose des commandes suivantes:
+
+- **Envoyer tout** permet d'envoyer toutes les valeurs actuelles des mesures configurées sur l'équipement, cela n'envoi pas l'historique des commandes, uniquement la valeur courante.
+- **Statut** donne l'état du connecteur, sera égal à 1 si aucun problème n'est détecté, 0 dans le cas contraire.
+- **Date dernière envoi** donne la date/heure du dernier envoi réussi
+- **Date dernière erreur** & **Description dernière erreur** donne la date/heure du dernier envoi en erreur ainsi que le message d'erreur
+- **Total mesures** & **Total journalier mesures** compteurs des mesures envoyées: total & journalier.
+
 # Définitions
 
 Un **point** dans InfluxDB représente une donnée caractérisée par 4 composants: la **mesure**, un ensemble de **champs**, un ensemble de **tags** et une information d'**horodatage**.
@@ -77,9 +87,8 @@ Un **point** dans InfluxDB représente une donnée caractérisée par 4 composan
 Ci-dessous le lien qui est fait par le plugin entre les concepts InfluxDB et les concepts Jeedom:
 
 Jeedom | InfluxDB | Description
-- | - | -
 Nom de la commande | Measurement | Une mesure dans InfluxDB est similaire à une table SQL.
-n/a | Timestamp | C'est l'information d'horodatage de la donnée.
+Date valeur de la commande | Timestamp | C'est l'information d'horodatage de la donnée.
 Nom de l'équipement | Field(key) | La clé d'un champ est similaire au nom d'une colonne dans une table SQL.
 Valeur de la commande | Field(value) | C'est la donnée du point.
 
@@ -91,7 +100,6 @@ Les tags suivant sont peuvent être associés à chaque point envoyé, il faut l
 Cette liste peut être complétée s'il vous en fallait d'autres:
 
 Tag(key) | Tag(value)
-- | -
 Plugin | nom du plugin
 Object | nom de l'objet/pièce Jeedom ou "Aucun"
 CommandName | nom de la commande

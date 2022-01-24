@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: vaillantmultimatic
 ---
 
-# Version beta
+# 2022-01-25
 
 - Ajout des commandes actions et infos **Vitesse jour** et **Vitesse nuit** sur les équipements de type *Ventilation*
 - Ajout d'une commande **Durée mode forcé** sur les équipements de type *Pièce* permettant de définir, par pièce, la durée du mode forcé lors de la prochaine activation de ce mode.

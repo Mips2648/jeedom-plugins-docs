@@ -9,20 +9,22 @@ pluginId: influxdb
 
 Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilement les informations voulues en sélectionnant simplement les commandes correspondantes dans une liste ce qui permet d'externaliser l'historique qui peut ensuite être consulté via Grafana par exemple.
 
+Le plugin permet également d'exporter l'historique des commandes Jeedom vers InfluxDB.
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
 # Configuration du plugin
 
-Il n'y a pas de configuration particulière à faire, le plugin utilise éventuellement un cron, selon la configuration des équipements, pour l'envoi des mesures.
+Il n'y a pas de configuration particulière à faire, le plugin utilise éventuellement le cronDaily pour la remise à zéro des compteurs.
 
 # Les équipements
 
 Un équipement Jeedom correspond à un connecteur InfluxDB.
 
 Chaque connecteur va se connecter et envoyer les données à une et une seule instance influxDB mais vous pouvez avoir autant de connecteur que nécessaire.
-Le plugin gère InfluxDB v1 et v2, le principe de base entre les deux reste identique mais la façon de se connecter change entre les deux.
+Le plugin gère InfluxDB v1 et v2, le principe de base entre les deux reste identique mais la façon de se connecter change.
 
 ## InfluxDB v1
 
@@ -70,9 +72,21 @@ Exemple de recherche:
 2. La liste n'affichera que les commandes qui n'ont pas encore été sélectionnées pour cet équipement / connecteur.
 3. Pour sélectionner une commande et l'envoyer à InfluxDB il suffit de cliquer sur le bouton **Ajouter**. N'oubliez pas de sauvegarder l'équipement après avoir ajouté toutes les commandes voulues.
 
+## Export de l'historique Jeedom vers InfluxDB
+
+Pour exporter l'historique vous devez vous rendre dans l'onglet _Mesures_ dans lequel vous avez configurer les commandes de vos équipements Jeedom à envoyer.
+
+Vous pouvez:
+
+- soit envoyer l'historique d'une commande particulière en cliquant sur le bouton _Exporter_ de la ligne correspondante dans les actions
+- soit cocher/décocher les mesures voulues (et cocher/décocher tout avec les sélecteurs de la colonne) et ensuite cliquer sur le bouton _Exporter_ situé dans la zone supérieur de la colonne.
+
+Dans les 2 cas, l'étape suivante vous demandera la date de début et la date de fin voulue pour l'export et ensuite la tâche sera programmée.
+Cela peut prendre un peu de temps en fonction de la quantité de données à exporter mais cela sera transparent car la tâche s'exécutera en arrière plan.
+
 # Les commandes
 
-Chaque équipement/connecteur dispose des commandes suivantes:
+Les commandes de l'équipement/connecteur InfluxDb sont visibles dans le 3ème onglet:
 
 - **Envoyer tout** permet d'envoyer toutes les valeurs actuelles des mesures configurées sur l'équipement, cela n'envoi pas l'historique des commandes, uniquement la valeur courante.
 - **Statut** donne l'état du connecteur, sera égal à 1 si aucun problème n'est détecté, 0 dans le cas contraire.

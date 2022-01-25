@@ -7,7 +7,8 @@ pluginId: influxdb
 
 # 2022-01-25
 
-- Ajout de l'export de l'historique vers InfluxDB
+- Refonte du "moteur" du plugin pour effectuer toutes les tâches dans des processus dédiés de façon asynchrone pour ne pas impacter les autres processus sur votre Jeedom ni la navigation dans le dashboard
+- Ajout de l'export de l'historique vers InfluxDB (qui bénéficie de la refonte expliquée ci-dessus)
 - Ajout d'une commande **Envoyer tout** pour forcer l'envoi de la valeur actuelle de toutes les commandes sélectionnées dans l'équipement
 - Ajout de plusieurs commandes info pour connaître l'état de santé du connecteur: **Statut**, **Dernière erreur**... (voir documentation)
 - Ajout de l'information de santé des connecteurs dans la page santé générale

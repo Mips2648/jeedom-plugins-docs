@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: designImgSwitch
 ---
 
+# 2022-02-09
+
+- Ajout d'une configuration manuelle pour intégrer n'importe quelle source météo, il n'est donc plus obligatoire d'avoir le plugin Météo officiel
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+
 # 2021-02-10
 
 - Nouvelle présentation de la liste des objets

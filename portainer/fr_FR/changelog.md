@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: portainer
 ---
 
+# 2022-02-09
+
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+
 # 2021-08-21
 
 - Ajout d'une commande _Etat_ sur les équipements de types **agent** et **docker**

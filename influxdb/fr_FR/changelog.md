@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
+# 2022-02-09
+
+- Ajout d'une nouvelle option pour le choix de la valeur du timestamp envoyé, 3 options possibles: heure d'envoi, heure collecte jeedom, heure valeur jeedom (voir documentation)
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+
 # 2022-01-25
 
 - Refonte du "moteur" du plugin pour effectuer toutes les tâches dans des processus dédiés de façon asynchrone pour ne pas impacter les autres processus sur votre Jeedom ni la navigation dans le dashboard
@@ -54,7 +59,7 @@ pluginId: influxdb
 
 - Ajout de la possibilité de définir un nom de mesure et de clé personnalisé pour chaque commande (à configurer dans la liste des commandes)
 - Ajout d'une configuration sur l'équipement permettant de choisir les tags à envoyer avec chaque point
-- Ajout des tags (en option) "Nom de la commande" (*CommandName*) et "Type générique de la commande" (*GenericType*)
+- Ajout des tags (en option) "Nom de la commande" (_CommandName_) et "Type générique de la commande" (_GenericType_)
 
 # 2020-05-03
 

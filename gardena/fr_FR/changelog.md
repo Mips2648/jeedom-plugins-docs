@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: gardena
 ---
 
+# 2022-02-11
+
+- Changements mineurs de présentation des écrans de configuration
+
 # 2021-10-04
 
 - Ajout de 3 commandes donnant la position GPS sur la tondeuse Husqvarna: **Latitude**, **Longitude** et **Position**
@@ -35,8 +39,8 @@ pluginId: gardena
 
 # 2020-08-29
 
-- Ajout d'une commande **Dernière erreur** sur les Gardena Smart Socket, Water Control et Irrigation Control: Veuillez utiliser le bouton _Créer les commandes manquantes_ sur la page de l'équipement pour la rajouter
-- Ajout de l'info _Dernière erreur_ dans la page santé
+- Ajout d'une commande **Dernière erreur** sur les Gardena Smart Socket, Water Control et Irrigation Control: Veuillez utiliser le bouton *Créer les commandes manquantes* sur la page de l'équipement pour la rajouter
+- Ajout de l'info *Dernière erreur* dans la page santé
 - Fix un problème de démarrage du démon avec les tondeuses Husqvarna Automower
 
 # 2020-08-27

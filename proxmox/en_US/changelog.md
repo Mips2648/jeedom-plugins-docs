@@ -5,6 +5,11 @@ lang: en_US
 pluginId: proxmox
 ---
 
+# 2022-02-11
+
+- Improvement: possibility to configure a list of IPs, separated by a comma, in the plugin config (to different nodes) to ensure resilience
+- Minor layout changes to configuration screens
+
 # 2021-12-27
 
 - Add an info command **Node** on VM and LXC which returns the node on which the VM is running (useful if you have several nodes in the cluster)

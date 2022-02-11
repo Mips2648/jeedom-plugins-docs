@@ -5,6 +5,11 @@ lang: en_US
 pluginId: vaillantmultimatic
 ---
 
+# 2022-01-25
+
+- Added **Day speed** and **Night speed** action and info commands on *Ventilation* type equipment
+- Added a **Forced mode duration** command on *Room* type device allowing to define, per room, the duration of the forced mode during the next activation of this mode.
+
 # 2021-12-11
 
 - Simplification of the management of the setpoint on the rooms: the plugin will automatically adapt the forced setpoint or the manual setpoint according to the current mode of the room

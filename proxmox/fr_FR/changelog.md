@@ -5,9 +5,10 @@ lang: fr_FR
 pluginId: proxmox
 ---
 
-# Version beta
+# 2022-02-11
 
 - Amélioration: possibilité de configurer une liste d'IP, séparée par une virgule, dans la config du plugin (vers des noeuds différents) pour assurer la résilience
+- Changements mineurs de présentation des écrans de configuration
 
 # 2021-12-27
 

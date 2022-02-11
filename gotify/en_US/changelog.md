@@ -5,6 +5,10 @@ lang: en_US
 pluginId: gotify
 ---
 
+# 2022-01-05
+
+- Add table display mode of the list of device for Jeedom 4.2
+
 # 2020-11-28
 
 - New presentation of objects list

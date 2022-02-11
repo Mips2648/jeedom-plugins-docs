@@ -5,13 +5,14 @@ lang: fr_FR
 pluginId: arlo
 ---
 
-# Version beta
+# 2022-02-11
 
 - Ajout de la commande **Etat bouclier** sur la Arlo Essential Indoor
 - Ajout des commandes **Etat Sirène**, **Sirène On** et **Sirène Off** sur la Arlo Essential
 - Amélioration: permet, en option, l'affichage de toutes les commandes actions existantes sur le widget caméra
 - Ajout d'un bouton dans la bibliothèque pour télécharger les enregistrements
-- Désactivation de la gestion des événements sur la Arlo Essential lorsqu'aucun hub n'est connecté car cela draine la batterie de ce modèle trop rapidement
+- Désactivation par défaut de la gestion des événements sur la Arlo Essential lorsqu'aucun hub n'est connecté car cela draine la batterie de ce modèle trop rapidement
+- Ajout de nouvelles commandes pour activer la gestion des événements à la demande sur la Arlo Essential: **Activer gestion des événements**, **Désactiver gestion des événements** et **Etat gestion des événements**
 - Fix: le nom de l'objet/pièce était toujours visible sur le widget caméra
 - Suppression de l'installation de la version custom de ffmpeg qui était nécessaire sous  Debian Stretch.
 

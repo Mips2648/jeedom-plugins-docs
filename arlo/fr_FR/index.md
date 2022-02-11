@@ -64,7 +64,7 @@ Avant de créer un nouvel utilisateur Arlo, il est important de connaître les i
 
 - Le plugin gère celle-ci via email avec support IMAP uniquement, il faudra donc une boite mail avec un accès IMAP (il est parfois bloqué ou payant donc vérifiez avant) et ne supporte qu'une authentification par _nom d'utilisateur_/_mot de passe_; pas de MFA sur le mail!
 - Le plugin doit avoir un accès direct à la boite mail de l’utilisateur arlo, en effet le code pour le TFA est demandé par Arlo à chaque login! Donc si le démon doit redémarrer il doit pouvoir récupérer lui même le code.
-- le plugin ne lira que le mail en provenance de *do_not_reply@arlo.com*; donc même s’il est recommandé d’avoir une boite mail dédié et pas un alias d’une boite existante, cela ne devrait pas être un problème; il notera les mails comme « lu » dans la boite une fois fait (et n’essaiera plus de les lire au prochain démarrage)
+- le plugin ne lira que le mail en provenance de "do_not_reply@arlo.com"; donc même s’il est recommandé d’avoir une boite mail dédié et pas un alias d’une boite existante, cela ne devrait pas être un problème; il notera les mails comme « lu » dans la boite une fois fait (et n’essaiera plus de les lire au prochain démarrage)
 - le plugin ne cherchera que parmi les mails non lu de la journée en cours, par ordre chronologique inverse (du plus récent au plus ancien) et passera tous les mails envoyés avant son dernier login.
 - la langue du mail n’a pas d’importance: la recherche du code TFA fonctionnera quelque soit la langue du mail.
 
@@ -261,6 +261,13 @@ En plus des commandes communes à toutes les caméras, les caméras Arlo Essenti
 - **Etat Sirène**: Indique si la sirène est active
 - **Sirène On**: Pour déclencher manuellement la sirène
 - **Sirène Off**: Pour couper la sirène
+
+De plus, cette caméra dispose des commandes suivantes pour activer ou désactiver la gestion des évènements, ce qui permet d'avoir les informations des détections de mouvements en temps réels.
+En effet, sur ce modèle, la remontée des infos en temps réel est désactivée par défaut car cela draine la batterie de la caméra trop rapidement mais avec ces commandes vous êtes libres de gérer cette fonctionnalité selon vos propres critères.
+
+- **Activer gestion des événements**
+- **Désactiver gestion des événements**
+- **Etat gestion des événements**
 
 ## Arlo Essential Indoor
 

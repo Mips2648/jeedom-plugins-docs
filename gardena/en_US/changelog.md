@@ -5,6 +5,10 @@ lang: en_US
 pluginId: gardena
 ---
 
+# 2022-02-11
+
+- Minor layout changes to configuration screens
+
 # 2021-10-04
 
 - Add 3 commands giving the GPS position on the Husqvarna mower: **Latitude**, **Longitude** and **Position**
@@ -35,8 +39,8 @@ pluginId: gardena
 
 # 2020-08-29
 
-- Add **Last error** command on Gardena Smart Socket, Water Control and Irrigation Control: Please use the _Create missing commands_ button on the device page to add it
-- Add info _Last error_ in health page
+- Add **Last error** command on Gardena Smart Socket, Water Control and Irrigation Control: Please use the *Create missing commands* button on the device page to add it
+- Add info *Last error* in health page
 - Fix an issue on daemon start with Husqvarna Automower
 
 # 2020-08-27

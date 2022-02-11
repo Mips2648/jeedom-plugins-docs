@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: stockexchange
 ---
 
-# Version beta
+# 2022-02-11
 
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
 

@@ -86,11 +86,13 @@ You can also configure the object in which the device will be created to not hav
 Finally, you can choose the information refresh time, by default at 30s.
 
 You can also activate the panel for the dashboard which will be accessible via the *Home* menu
+
 ![Menu panel](../images/panel_menu.png "Menu panel")
 
 # Panel
 
 The panel provide a lot of information, it offers a global view of all proxmox resources (containers, virtual machines and storage spaces) organized by nodes. It is possible to perform all actions on the VMs directly from the panel and the information is updated in real time.
+
 ![Panel](../images/panel.png "Panel")
 
 # How the plugin works

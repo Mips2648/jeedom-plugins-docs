@@ -19,15 +19,11 @@ Sur celui-ci, veillez à créer un utilisateur ayant comme role `bot`.
 
 > **Important**
 >
-> Le plugin a été testé sous debian et raspbian version 9 (stretch) et 10 (buster).
-> Le plugin n'a pas été testé sous Jessie et son fonctionnement sur cette version ne sera pas assuré.
-
-Sous Debian Stretch, l'installation des dépendances peut prendre 20min ou plus en fonction de votre matériel.
-Sous Debian Buster, cela devrait être beaucoup plus rapide étant donné que la majorité est déjà présente.
+> Il est indispensable d'être sous Debian 10 Buster minimum pour faire fonctionner le plugin.
 
 # Configuration du plugin
 
-Dans la configuration du plugin il faudra renseigner l'URL du server rocketchat sous la forme `https://yourdomain.com:3000` ainsi que le nom d'utilisateur et le mot de passe de votre bot.
+Dans la configuration du plugin il faudra renseigner l'URL du server rocketchat sous la forme `https://IP_SERVER:3000` ainsi que le nom d'utilisateur et le mot de passe de votre bot.
 
 # Les équipements
 

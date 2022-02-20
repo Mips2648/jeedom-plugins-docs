@@ -5,9 +5,16 @@ lang: fr_FR
 pluginId: rocketchat
 ---
 
+# beta
+
+- Compatibilité avec Rocket.Chat v4
+- Cette mise à jour nécessite de réinstaller les dépendances, cela devrait être fait automatiquement lors de la mise à jour du plugin.
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+- Suppression de la compatibilité avec Debian Stretch, dorénavant il est indispensable d'être sous Debian Buster minimum
+
 # 2020-12-02
 
-- Ajout du support des boutons pour répondre rapidement au ask (type telegram); fonctionne sur la web app mais un bug est ouvert pour l'app mobile: <https://github.com/RocketChat/Rocket.Chat.ReactNative/issues/2684>
+- Ajout du support des boutons pour répondre rapidement au ask (type telegram)
 - Nouvelle présentation de la liste des objets
 - Amélioration de la mise en page de la configuration de l'équipement et des commandes
 - Nettoyage de la mise en page pour la V4
@@ -15,10 +22,6 @@ pluginId: rocketchat
 # 2020-08-15
 
 - Force la configuration de la clé API en mode localhost
-
-# 2020-05-03
-
-- Ajout du bouton "Dupliquer" un équipement
 
 # 2020-03-30
 

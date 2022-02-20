@@ -8,12 +8,12 @@ pluginId: designImgSwitch
 # Description
 
 Plugin to automatically change the background image of your design according to the weather.
-Weather, sunrise and sunset information will be obtained from the official weather plugin.
+Weather as well as sunrise and sunset information will be obtained either from the official Weather plugin (automatic integration) or from commands of your choice with manual configuration.
 
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
-You will also need to install and configure the official weather plugin.
+You will also need to install and configure the official weather plugin if you want to use the automatic integration.
 
 There is no configuration to perform at the plugin level.
 
@@ -23,7 +23,10 @@ The plugin is in the Plugins > Weather menu.
 After creating new device, the usual options are available.
 
 Then select the designs for which you want to change the background image according to the weather and choose the weather device to use.
-If no weather device is active, you will see an error message.
+
+In case of manual configuration, it is necessary to provide info commands that will give the time of sunrise and sunset in Jeedom format (HHMM) as well as to specify the conditions for each of the weather situations so that the plugin can deduce the background image to use.
+
+Background images are customizable via the device configuration screen.
 
 # Device activation
 

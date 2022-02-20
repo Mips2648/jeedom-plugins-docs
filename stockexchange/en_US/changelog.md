@@ -5,6 +5,10 @@ lang: en_US
 pluginId: stockexchange
 ---
 
+# 2022-02-11
+
+- Add table display mode of the list of device for Jeedom 4.2
+
 # 2021-07-27
 
 - Changed the API used for marketstack to avoid the "incorrect data received: null" error

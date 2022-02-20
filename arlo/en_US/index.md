@@ -64,7 +64,7 @@ Before creating a new Arlo user, it is important to know the following informati
 
 - The plugin manages this via email with IMAP support only, so you will need a mailbox with IMAP access (it is sometimes blocked or not free so check before) and only supports authentication by _username_ /_password_ ; no MFA on the mail!
 - The plugin must have direct access to the arlo user's mailbox, indeed the code for the TFA is requested by Arlo at each login! So if the daemon has to restart it must be able to retrieve the code itself.
-- the plugin will only read the mail coming from *do_not_reply@arlo.com*; so even though it is recommended to have a dedicated mailbox and not an alias of an existing mailbox, this shouldn't be a problem; it will flag the emails as "read" in the box when done (and will no longer try to read them on the next start)
+- the plugin will only read the mail coming from "do_not_reply@arlo.com"; so even though it is recommended to have a dedicated mailbox and not an alias of an existing mailbox, this shouldn't be a problem; it will flag the emails as "read" in the box when done (and will no longer try to read them on the next start)
 - the plugin will only search among the unread mails of the current day, in reverse chronological order (from the most recent to the oldest) and will skip all the mails sent before its last login.
 - the language of the email is not important: the search for the TFA code will work regardless of the language of the email.
 
@@ -253,11 +253,21 @@ On top, following commands are also available:
 
 ## Arlo Essential
 
-On top of common commands to all cameras, the Arlo Essential cameras have commands to control the integrated light.
+On top of common commands to all cameras, the Arlo Essential cameras have commands to control the integrated light and the integrated siren.
 
 - **Lamp status**: Indicates whether the lamp is currently on or off
 - **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)
 - **Lamp Off**: To manually turn off the lamp
+- **Siren status**: Indicates if the siren is active
+- **Siren On**: To manually turn on the siren
+- **Siren Off**: To turn off the siren
+
+On top, this camera has the following commands to enable or disable event handling, which provides real-time motion detection information.
+Indeed, on this model, real-time feedback is disabled by default because it drains the camera's battery too quickly, but with these commands you are free to manage this feature according to your own criteria.
+
+- **Enable event handling**
+- **Disable event handling**
+- **Event management status**
 
 ## Arlo Essential Indoor
 

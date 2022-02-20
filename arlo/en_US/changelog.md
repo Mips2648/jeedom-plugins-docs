@@ -5,6 +5,17 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2022-02-11
+
+- Added **Shield State** command on Arlo Essential Indoor
+- Added **Siren Status**, **Siren On** and **Siren Off** commands to Arlo Essential
+- Improvement: optionally allow all existing action commands to be displayed on the camera widget
+- Added a button in the library to download the records
+- Disabling event handling by default on the Arlo Essential when no hub is connected because it drains the battery of this model too quickly
+- Added new commands to enable on-demand event handling on Arlo Essential: **Enable Event Handling**, **Disable Event Handling** and **Event Handling Status**
+- Fix: object/room name was still visible on camera widget
+- Removed the installation of the custom version of ffmpeg which was required under Debian Stretch.
+
 # 2021-10-31
 
 - Update audio commands during manual and automatic refresh of the Arlo Baby

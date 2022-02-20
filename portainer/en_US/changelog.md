@@ -5,6 +5,10 @@ lang: en_US
 pluginId: portainer
 ---
 
+# 2022-02-09
+
+- Add table display mode of the list of device for Jeedom 4.2
+
 # 2021-08-21
 
 - Added a _State_ command on **agent** and **docker** device

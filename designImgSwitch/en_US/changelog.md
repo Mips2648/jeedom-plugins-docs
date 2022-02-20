@@ -5,6 +5,11 @@ lang: en_US
 pluginId: designImgSwitch
 ---
 
+# 2022-02-09
+
+- Added a manual configuration to integrate any weather source, so it is no longer mandatory to have the official Weather plugin
+- Add table display mode of the list of device for Jeedom 4.2
+
 # 2021-02-10
 
 - New presentation of objects list

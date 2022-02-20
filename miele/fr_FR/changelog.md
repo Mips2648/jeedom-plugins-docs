@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: miele
 ---
 
+# beta
+
+- Ajout des commandes **Consommation eau** et **Consommation énergie** sur les appareils supportant cette fonctionnalité (voir documentation), il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir ces nouvelles commandes
+
 # 2021-12-20
 
 - Ajout des commandes **Définir niveau de ventilation** et **Définir couleurs** sur les Hôtes

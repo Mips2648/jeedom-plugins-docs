@@ -5,6 +5,10 @@ lang: en_US
 pluginId: miele
 ---
 
+# beta
+
+- Add commands **Water consumption** and **Energy consumption** commands on appliances supporting this functionality (see documentation), you must create the missing commands on the device if you wish to have these new commands
+
 # 2021-12-20
 
 - Add commands **Set ventilation step** and **Set colors** on hood

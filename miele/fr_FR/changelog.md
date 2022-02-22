@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: miele
 ---
 
-# beta
+# 2022-02-22
 
 - Ajout des commandes **Consommation eau** et **Consommation énergie** sur les appareils supportant cette fonctionnalité (voir documentation), il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir ces nouvelles commandes
 

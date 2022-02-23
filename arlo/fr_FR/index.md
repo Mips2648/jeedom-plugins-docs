@@ -34,7 +34,7 @@ Voici un aperçu des possibilités du plugin:
 
 > **Important**
 >
-> Il n'est pas recommandé d'utiliser les caméras et sonnettes de la gamme Essentials si aucune base n'est présente dans le système excepté si celles-ci sont alimentées en permanences (sur le courant ou via panneau solaire si ensoleillement suffisant) car leur batterie n'offre pas suffisamment d'autonomie. Si une base existe alors aucun problème.
+> Il n'est pas recommandé d'utiliser les caméras et sonnettes de la gamme Essentials ou Wire-free si aucune base n'est présente dans le système excepté si celles-ci sont alimentées en permanences (sur le courant ou via panneau solaire si ensoleillement suffisant) car leur batterie n'offre pas suffisamment d'autonomie. Si une base existe alors aucun problème.
 
 # Installation
 

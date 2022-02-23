@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# Beta
+
+- Support du modèle VMC4041P (Arlo Pro4)
+
 # 2022-02-11
 
 - Ajout de la commande **Etat bouclier** sur la Arlo Essential Indoor

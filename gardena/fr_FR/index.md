@@ -20,7 +20,7 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 > **Important**
 >
-> Debian 8 (Jessie) n'étant plus supporté par Debian, le plugin ne fonctionnera pas sous Jessie car il est nécessaire d'installer des dépendances qui ne sont plus disponibles sur cette version.
+> Il est indispensable d'être sous Debian 10 Buster minimum pour faire fonctionner le plugin.
 >
 > Si vous aviez tenté d'installer le plugin "Gardena Smart System", il est nécessaire de le désactiver avant d'activer celui-ci. En effet, un problème dans le plugin "Gardena Smart System" crée un conflit avec ce plugin qui risque de rendre Jeedom indisponible. Ce problème doit être réglé dans l'autre plugin, il m'est malheureusement impossible de l'éviter.
 
@@ -59,7 +59,7 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 - **Batterie** indique le niveau de charge la batterie (si applicable) en pourcent
 - **Etat batterie** donne une description de l'état de la batterie: *OK*, *LOW*, *REPLACE_NOW*, *OUT_OF_OPERATION*, *CHARGING*, *NO_BATTERY*, *UNKNOWN*
 - **Niveau connexion** indique la niveau de la connexion avec la passerelle en pourcent
-- **Etat connexion** donne une description de l'état de connexion: _ONLINE_, _OFFLINE_, _UNKNOWN_
+- **Etat connexion** donne une description de l'état de connexion: *ONLINE*, *OFFLINE*, *UNKNOWN*
 
 ## Gardena Smart Sensor
 
@@ -70,8 +70,8 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
 ## Gardena Smart Water Control
 
-- **Santé** indique l'état général de la valve: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
-- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_ (voir ci-dessous pour une liste des valeurs possibles)
+- **Santé** indique l'état général de la valve: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
+- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur *WARNING* ou *ERROR* (voir ci-dessous pour une liste des valeurs possibles)
 - **Activité** indique l'activité en cours: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
 - **Etat** commande info binaire indiquant si la valve est ouverte ou fermée
 - **Démarrer** commande action pour démarrer l'arrosage demandant en option le nombre de minute (entière) d'arrosage
@@ -82,8 +82,8 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
 ## Gardena Smart Power Socket
 
-- **Santé** indique l'état général de la prise: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
-- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_; peut avoir la valeur: *TIMER_CANCELLED*, *UNKNOWN*
+- **Santé** indique l'état général de la prise: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
+- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur *WARNING* ou *ERROR*; peut avoir la valeur: *TIMER_CANCELLED*, *UNKNOWN*
 - **On** commande action pour allumer la prise
 - **Off** commande action pour éteindre la prise
 - **On minuteur** command action pour allumer la prise avec auto extinction après x minutes (entières) passées en option de la commande
@@ -95,10 +95,10 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
 ## Gardena Smart Mower
 
-- **Santé** indique l'état général de la tondeuse: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Santé** indique l'état général de la tondeuse: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
 - **Activité** indique l'activité en cours: *PAUSED*, *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*, *PARKED_TIMER*, *PARKED_PARK_SELECTED*, *PARKED_AUTOTIMER*, *NONE*
 - **Active** commande binaire indiquant si la tondeuse est active ou non; elle sera indiquée comme active lors de ces activités: *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*
-- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_ (voir ci-dessous pour une liste des valeurs possibles)
+- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur *WARNING* ou *ERROR* (voir ci-dessous pour une liste des valeurs possibles)
 - **Heures de travail** commande info donnant le nombre d'heures de travail
 - **Durée restante** commande info donnant le temps restant de la minuterie (si applicable)
 - **Démarrage mode manuel** commande action pour démarrer en mode manuel demandant en option le nombre de minute d'activité
@@ -110,15 +110,15 @@ Chaque équipement Gardena Smart System dispose des commandes suivantes:
 
 L'équipement permet de contrôler jusqu'à 6 valves 24v. Il dispose des commandes suivantes:
 
-- **Santé contrôleur** indique l'état général du contrôleur: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
-- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur _WARNING_ ou _ERROR_ (voir ci-dessous pour une liste des valeurs possibles)
+- **Santé contrôleur** indique l'état général du contrôleur: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
+- **Dernière erreur** donne la dernière erreur le cas échéant, uniquement valable si la commande **Santé** à la valeur *WARNING* ou *ERROR* (voir ci-dessous pour une liste des valeurs possibles)
 - **Arrêter toutes les valves** permet d'arrêter l'arrosage de toutes les valves en une commande, l'arrosage reprendra à la prochaine programmation
 
 Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une valeur de 1 à 6):
 
 - **Activité valve X** indique l'activité en cours: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
 - **Etat valve X** commande info binaire indiquant si la valve est ouverte ou fermée
-- **Santé valve X** indique l'état général de la prise: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Santé valve X** indique l'état général de la prise: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
 - **Démarrer valve X** commande action pour démarrer l'arrosage demandant en option le nombre de minute (entière) d'arrosage
 - **Arrêter valve X** commande action pour arrêter l'arrosage
 - **Durée restante valve X** commande info donnant le temps restant (en minute) lorsque l'arrosage est en cours
@@ -134,7 +134,7 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - **Activité** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (voir ci-dessous pour une description des valeurs)
 - **Latitude** commande info donnant la latitude
 - **Longitude** commande info donnant la longitude
-- **Position** commande info donnant la position GPS avec le format _latitude,longitude_
+- **Position** commande info donnant la position GPS avec le format *latitude,longitude*
 - **Code erreur** & **Description erreur** donne le code et la description de l'erreur le cas échéant
 - **Durée restante** commande info donnant le temps restant d'activité; valable uniquement lors de l'utilisation des commandes **Démarrage mode manuel** ou **Retour à la base**
 - **Démarrage mode manuel** Démarre et tond l'herbe pendant la durée (en minute) donnée en option de la commande

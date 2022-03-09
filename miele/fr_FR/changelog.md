@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: miele
 ---
 
+# 2022-03-10
+
+- Fix d'un crash  lors de la synchronisation des informations de consommation suite à un changement de comportement de l'API Miele@Home
+
 # 2022-02-22
 
 - Ajout des commandes **Consommation eau** et **Consommation énergie** sur les appareils supportant cette fonctionnalité (voir documentation), il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir ces nouvelles commandes

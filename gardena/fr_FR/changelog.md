@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: gardena
 ---
 
+# 2022-03-12
+
+- Fix vérification des dépendances
+
 # 2022-02-11
 
 - Changements mineurs de présentation des écrans de configuration

@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: notificationqueue
 ---
 
+# beta
+
+- Dorénavant les messages expirés seront supprimés de la queue au fur et à mesure (et pas uniquement si une condition est vrai).
+
 # 2020-11-29
 
 - Ajout de la gestion de la génération du texte aléatoire (même système que dans les interactions, voir documentation)

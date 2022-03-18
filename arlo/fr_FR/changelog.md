@@ -8,6 +8,7 @@ pluginId: arlo
 # Beta
 
 - Support du modèle VMC4041P (Arlo Pro4)
+- Ajout des commandes **Activer gestion des événements**, **Désactiver gestion des événements** et **Etat gestion des événements** sur la Arlo doorbell wire free
 
 # 2022-02-11
 

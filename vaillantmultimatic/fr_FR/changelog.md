@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: vaillantmultimatic
 ---
 
+# 2022-03-18
+
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+- Fix installation des dépendances
+
 # 2022-01-25
 
 - Ajout des commandes actions et infos **Vitesse jour** et **Vitesse nuit** sur les équipements de type *Ventilation*
@@ -19,7 +24,7 @@ pluginId: vaillantmultimatic
 # 2021-11-04
 
 - Correction des types génériques
-- Remontée des information de batterie sur les équipements de type _Vanne_ et _Thermostat_ (voir documentation)
+- Remontée des information de batterie sur les équipements de type *Vanne* et *Thermostat* (voir documentation)
 
 # 2021-10-17
 

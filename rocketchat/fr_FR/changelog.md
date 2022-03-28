@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: rocketchat
 ---
 
-# beta
+# 2022-03-28
 
 - Compatibilité avec Rocket.Chat v4
 - Cette mise à jour nécessite de réinstaller les dépendances, cela devrait être fait automatiquement lors de la mise à jour du plugin.

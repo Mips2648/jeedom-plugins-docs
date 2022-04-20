@@ -5,6 +5,15 @@ lang: fr_FR
 pluginId: gardena
 ---
 
+# beta
+
+- Ajout des commandes suivantes pour les robots Husqvarna:
+  - **Hauteur de coupe** permettant de connaître et définir la hauteur de coupe
+  - **Phare** permettant de connaître et définir le mode d'allumage des phare
+  - **Heure dernier rapport** et **Heure prochain départ**
+  - **Restriction programmation** donnant la raison de l'exception sur la programmation normale
+  - **Positions** contenant l'historique des 50 dernières positions du robot (les commandes **Position**, **Latitude** et **Longitude** existent toujours et indiquent la dernière position connue)
+
 # 2022-03-12
 
 - Fix vérification des dépendances

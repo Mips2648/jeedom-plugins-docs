@@ -7,6 +7,7 @@ pluginId: gardena
 
 # beta
 
+- Mise à jour des infos pour les robots husqvarna en temps réel et par conséquent suppression du cron de mise à jour qui n'est plus nécessaire. Il n'y a donc plus de limite sur le nombre de mise à jour.
 - Ajout des commandes suivantes pour les robots Husqvarna:
   - **Hauteur de coupe** permettant de connaître et définir la hauteur de coupe
   - **Phare** permettant de connaître et définir le mode d'allumage des phare

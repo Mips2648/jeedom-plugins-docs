@@ -13,7 +13,8 @@ pluginId: gardena
   - **Phare** permettant de connaître et définir le mode d'allumage des phare
   - **Heure dernier rapport** et **Heure prochain départ**
   - **Restriction programmation** donnant la raison de l'exception sur la programmation normale
-  - **Positions** contenant l'historique des 50 dernières positions du robot (les commandes **Position**, **Latitude** et **Longitude** existent toujours et indiquent la dernière position connue)
+  - **Positions** contenant l'historique des 50 dernières positions du robot (les commandes **Dernière position**, **Latitude** et **Longitude** existent toujours et indiquent la dernière position connue)
+- Ajout d'un widget pour l'affichage de l'historique des positions sur une carte à appliquer sur la commande **Positions** (voir documentation) (contribution de @t0urista)
 
 # 2022-03-12
 

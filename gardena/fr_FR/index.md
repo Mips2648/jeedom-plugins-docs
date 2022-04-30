@@ -39,10 +39,9 @@ Vous trouverez plus d'information directement disponible sur la page de configur
 Dès que la configuration du plugin est complète et correcte, le plugin synchronisera les équipements selon les API activées.
 Il créera les équipements manquants avec leurs commandes et mettra à jour les commandes de tout les appareils connectés.
 
-Les commandes des équipements de la gamme Gardena Smart System seront mises à jours en temps réel, il n'y a donc pas de configuration supplémentaire à faire.
+Les commandes de tous les équipements, que ce soit de la gamme Gardena Smart System ou les robots Husqvarna, seront mises à jours en temps réel, il n'y a donc pas de configuration supplémentaire à faire.
 
-Les tondeuses Husqvarna Automower seront mise à jour en fonction de la configuration du plugin, par défaut toutes les 2 minutes entre 9h et 20h. **Attention** il y a une limite de 10.000 actualisations par mois imposée par Husqvarna.
-Une commande **Rafraichir** existe pour demander une actualisation supplémentaire manuelle.
+Une commande **Rafraichir** existe pour demander une actualisation supplémentaire manuelle pour les tondeuses robots Husqvarna Automower mais cela n'est en principe pas nécessaire puisque tout changement d'état sera mis à jour en temps réel. **Attention** il y a une limite de 10.000 actualisations par mois pour les actualisations manuelles, cette limite est imposée par Husqvarna.
 
 > **Tip**
 >
@@ -132,9 +131,14 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - **Mode** aura une des valeurs suivantes: *MAIN_AREA*, *DEMO*, *SECONDARY_AREA*, *HOME*, *UNKNOWN* (voir ci-dessous pour une description des valeurs)
 - **Etat** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (voir ci-dessous pour une description des valeurs)
 - **Activité** aura une des valeurs suivantes: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (voir ci-dessous pour une description des valeurs)
-- **Latitude** commande info donnant la latitude
-- **Longitude** commande info donnant la longitude
-- **Position** commande info donnant la position GPS avec le format *latitude,longitude*
+- **Latitude** commande info donnant la latitude de la dernière position
+- **Longitude** commande info donnant la longitude de la dernière position
+- **Dernière position** commande info donnant la dernière position GPS avec le format *latitude,longitude*
+- **Positions** contenant l'historique des 50 dernières positions du robot au format *position1,position2,position3,...*
+- **Hauteur de coupe** et **Réglage hauteur de coupe** permettant de connaître et définir la hauteur de coupe (entre 1 et 9)
+- **Phare** et **Réglage phare** permettant de connaître et définir le mode d'allumage des phare, valeurs possibles: *ALWAYS_ON*, *ALWAYS_OFF*, *EVENING_ONLY*, *EVENING_AND_NIGHT*
+- **Heure dernier rapport** et **Heure prochain départ** les valeurs sont des timestamp en milliseconde (pour une utilisation plus facile dans un scénario) et seront affichées au format date/heure sur le widget
+- **Restriction programmation** donnant la raison de l'exception sur la programmation normale
 - **Code erreur** & **Description erreur** donne le code et la description de l'erreur le cas échéant
 - **Durée restante** commande info donnant le temps restant d'activité; valable uniquement lors de l'utilisation des commandes **Démarrage mode manuel** ou **Retour à la base**
 - **Démarrage mode manuel** Démarre et tond l'herbe pendant la durée (en minute) donnée en option de la commande
@@ -143,6 +147,26 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - **Retour à la base** Retourne à la base pendant le nombre de minute donnée en option de la commande, reprend la programmation ensuite
 - **Annulation et retour à la base** commande action, la tondeuse redémarrera lors de la prochaine tâche
 - **Stop et retour à la base** commande action, la tondeuse ne redémarrera pas pour la prochaine tâche
+
+# Widget Positions
+
+Le plugin met à disposition un widget *Positions* à appliquer sur la commande **Positions** des tondeuses Husqvarna (les tondeuses Gardena ne disposent pas encore d'une localisation GPS).
+
+Pour que le widget fonctionne bien vous devez effectuer les configurations suivantes:
+
+1. Dans la configuration avancée de la commande **Positions**, onglet *Affichage*, sélectionnez le widget *Gardena/Positions*:
+![Configuration avancée](../images/advance_config.png "Configuration avancée")
+
+2. Prenez une capture de la zone de tonte (sur Google Maps par exemple), nommez le fichier *maison.png* par exemple et ensuite copiez l’image dans le dossier *plugins/gardena/data/* sur votre Jeedom (via l'explorateur de fichier intégré à Jeedom par exemple)
+3. Identifiez les coordonnées géographiques (latitude et longitude) du coin inférieur gauche et du coin supérieur droit de la zone correspondante à la capture.
+4. Encodez les coordonnées prises ci-dessus dans la liste des Paramètres du widgets: *latMin*, *longMin*, *latMax* et *longMax* sont obligatoires.
+Si vous avez nommé votre fichier autrement que *maison.png* ou si vous voulez tester une autre capture, encodez le nom du fichier dans le paramètre *imgFile*
+5. Les autres paramètres sont optionnels:
+![Configuration widget](../images/config_widget.png "Configuration widget")
+
+Sauvez et vous devriez voir la mini-carte avec l'historique des positions sur la tuile de l'équipement:
+
+![Positions](../images/Positions.png "Positions")
 
 # Annexes
 

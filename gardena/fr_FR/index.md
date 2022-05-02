@@ -155,6 +155,7 @@ Le plugin met à disposition un widget *Positions* à appliquer sur la commande 
 Pour que le widget fonctionne bien vous devez effectuer les configurations suivantes:
 
 1. Dans la configuration avancée de la commande **Positions**, onglet *Affichage*, sélectionnez le widget *Gardena/Positions*:
+
 ![Configuration avancée](../images/advance_config.png "Configuration avancée")
 
 2. Prenez une capture de la zone de tonte (sur Google Maps par exemple), nommez le fichier *maison.png* par exemple et ensuite copiez l’image dans le dossier *plugins/gardena/data/* sur votre Jeedom (via l'explorateur de fichier intégré à Jeedom par exemple)
@@ -162,6 +163,7 @@ Pour que le widget fonctionne bien vous devez effectuer les configurations suiva
 4. Encodez les coordonnées prises ci-dessus dans la liste des Paramètres du widgets: *latMin*, *longMin*, *latMax* et *longMax* sont obligatoires.
 Si vous avez nommé votre fichier autrement que *maison.png* ou si vous voulez tester une autre capture, encodez le nom du fichier dans le paramètre *imgFile*
 5. Les autres paramètres sont optionnels:
+
 ![Configuration widget](../images/config_widget.png "Configuration widget")
 
 Sauvez et vous devriez voir la mini-carte avec l'historique des positions sur la tuile de l'équipement:

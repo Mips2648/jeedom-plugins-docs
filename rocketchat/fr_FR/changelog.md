@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: rocketchat
 ---
 
+# 2022-05-17
+
+- Changement de l'API utilisée pour envoi des messages pour fixer le problème de date incorrecte (messages envoyés à la date du 1/01/1979)
+
 # 2022-03-28
 
 - Compatibilité avec Rocket.Chat v4

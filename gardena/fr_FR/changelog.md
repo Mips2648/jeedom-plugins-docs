@@ -5,6 +5,11 @@ lang: fr_FR
 pluginId: gardena
 ---
 
+# 2022-05-22
+
+- Fix: commandes action/messages pour les robots Husqvarna ne fonctionnaient pas.
+- Fix: la commande info **Durée restante** pour les robots Husqvarna ne se mettait jamais à jour.
+
 # 2022-04-30
 
 - Mise à jour des infos pour les robots husqvarna en temps réel et par conséquent suppression du cron de mise à jour qui n'est plus nécessaire. Il n'y a donc plus de limite sur le nombre de mise à jour.

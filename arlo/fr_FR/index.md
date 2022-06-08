@@ -56,24 +56,18 @@ Il est donc nécessaire de créer un utilisateur dédié au plugin, dans le cas 
 
 Arlo impose progressivement l'utilisation de l'authentification en 2 étapes.
 
-> **Tip**
->
-> A ce jour, il est toujours possible de ne pas activer l'authentification en 2 étapes dans Arlo, cette étape est donc optionnelle.
-
 Avant de créer un nouvel utilisateur Arlo, il est important de connaître les informations suivantes:
 
 - Le plugin gère celle-ci via email avec support IMAP uniquement, il faudra donc une boite mail avec un accès IMAP (il est parfois bloqué ou payant donc vérifiez avant) et ne supporte qu'une authentification par _nom d'utilisateur_/_mot de passe_; pas de MFA sur le mail!
-- Le plugin doit avoir un accès direct à la boite mail de l’utilisateur arlo, en effet le code pour le TFA est demandé par Arlo à chaque login! Donc si le démon doit redémarrer il doit pouvoir récupérer lui même le code.
+- Le plugin doit avoir un accès direct à la boite mail de l’utilisateur Arlo, en effet le code pour le TFA est demandé par Arlo à chaque login! Donc si le démon doit redémarrer il doit pouvoir récupérer lui même le code.
 - le plugin ne lira que le mail en provenance de "do_not_reply@arlo.com"; donc même s’il est recommandé d’avoir une boite mail dédié et pas un alias d’une boite existante, cela ne devrait pas être un problème; il notera les mails comme « lu » dans la boite une fois fait (et n’essaiera plus de les lire au prochain démarrage)
 - le plugin ne cherchera que parmi les mails non lu de la journée en cours, par ordre chronologique inverse (du plus récent au plus ancien) et passera tous les mails envoyés avant son dernier login.
 - la langue du mail n’a pas d’importance: la recherche du code TFA fonctionnera quelque soit la langue du mail.
 
 > **Tip**
 >
-> pour Gmail, vous devez:
->
-> - soit activer les applications _non sécurisées_ si MFA n’est pas actif sur le compte
-> - soit créer un _mot de passe d’application_ qui n’imposera pas le MFA pour se connecter
+> Dorénavant pour pouvoir vous connecter sur une boite mail gmail (Google), vous devez créer un _mot de passe d’application_, qui n’imposera pas le MFA pour se connecter, l'activation de l'option "applications non sécurisées" n'étant plus permise.
+> Plus de détails sur la procédure ici: <https://community.jeedom.com/t/google-applications-moins-securisees-mot-de-passe-dapplication/85617>
 
 Après avoir créé une boite mail pour le plugin, vous pouvez passer à l'étape suivante.
 

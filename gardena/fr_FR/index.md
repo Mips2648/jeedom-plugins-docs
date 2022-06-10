@@ -26,8 +26,8 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 # Configuration du plugin
 
-Dans la configuration du plugin, il faudra renseigner le nom d'utilisateur, le mot de passe ainsi que l'application key permettant l'accès aux API.
-Vous devez également sélectionner les API que vous voulez activer parmi les 2 options possibles (les 2 peuvent être activés en même temps):
+Dans la configuration du plugin, il faudra renseigner l'application key et l'application secret permettant l'accès aux API.
+Vous devez également sélectionner les API que vous voulez activer parmi les 2 options possibles (les 2 peuvent être activées en même temps):
 
 - Gardena Smart System
 - Husqvarna Automower

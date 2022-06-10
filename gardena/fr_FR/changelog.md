@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: gardena
 ---
 
+# beta
+
+- Changement sur la méthode d'authentification dû à un changement effectué par Gardena / Husqvarna, il est nécessaire de refaire la configuration du plugin: l'email et le mot de passe ne sont plus nécessaire par contre l'application secret est requis à présent.
+
 # 2022-05-22
 
 - Fix: commandes action/messages pour les robots Husqvarna ne fonctionnaient pas.

@@ -15,7 +15,7 @@ In order to use the plugin, you must download, install and activate it like any 
 
 > **Important**
 >
-> The plugin will not work under Jessie, it is necessary to be able to install python 3.5 minimum, which is not available under Jessie.
+> It is essential to be under Debian 10 Buster minimum to run the plugin.
 
 # Plugin configuration
 

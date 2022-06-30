@@ -19,17 +19,13 @@ On it, please create a user with the `bot` role.
 
 > **Important**
 >
-> The plugin has been tested under debian and raspbian version 9 (stretch) and 10 (buster).
-> The plugin has not been tested under Jessie and its operation on this version will not be guaranteed.
-
-Under Debian Stretch, installing dependencies can take 20 minutes or more depending on your hardware.
-Under Debian Buster, this should be much faster since the majority is already present.
+> It is essential to be under Debian 10 Buster minimum to run the plugin.
 
 # Plugin configuration
 
-In the plugin configuration you have to provide server URL with the format `https://yourdomain.com:3000` as well as the username and the password of your bot.
+In the plugin configuration you have to provide server URL with the format `https://IP_SERVER:3000` as well as the username and the password of your bot.
 
-# The devices
+# Devices
 
 As soon as the daemon starts and your bot has been able to connect, the plugin will create one device per existing channel on your server (as long as the bot has access).
 

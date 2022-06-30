@@ -40,7 +40,7 @@ Voici un aperçu des possibilités du plugin:
 
 > **Important**
 >
-> Il est indispensable d'être sous Debian 10 Buster minimum pour faire fonctionner le plugin.
+> Il est indispensable d'être sous Debian 10 Buster ou Debian 11 Bullseye pour faire fonctionner le plugin.
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 Il faut ensuite installer les dépendances.

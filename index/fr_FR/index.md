@@ -100,6 +100,16 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 - [Changelog]({{site.baseurl}}/miele/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3950" target="_blank">Market</a>
 
+# ModBus 2 MQTT
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/modbus2mqtt_icon.png">]({{site.baseurl}}/modbus2mqtt/{{page.lang}})
+
+Plugin permettant de faire passerelle entre du modbus TCP/IP et MQTT.
+
+- [Documentation]({{site.baseurl}}/modbus2mqtt/{{page.lang}})
+- [Changelog]({{site.baseurl}}/modbus2mqtt/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4309" target="_blank">Market</a>
+
 # My Audi
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/myaudi_icon.png">]({{site.baseurl}}/myaudi/{{page.lang}})
@@ -119,6 +129,16 @@ Plugin permettant de créer des commandes de notifications (commande de type act
 - [Documentation]({{site.baseurl}}/notificationqueue/{{page.lang}})
 - [Changelog]({{site.baseurl}}/notificationqueue/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3823" target="_blank">Market</a>
+
+# Roomba
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/kroomba_icon.png">]({{site.baseurl}}/kroomba/{{page.lang}})
+
+Plugin permettant de piloter un aspirateur robot de la marque iRobot.
+
+- [Documentation]({{site.baseurl}}/kroomba/{{page.lang}})
+- [Changelog]({{site.baseurl}}/kroomba/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=2776" target="_blank">Market</a>
 
 # Solaredge
 

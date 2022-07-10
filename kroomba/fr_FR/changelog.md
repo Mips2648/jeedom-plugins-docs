@@ -7,6 +7,11 @@ pluginId: kroomba
 
 # Beta
 
+## 2022-07-10
+
+- Ajout des commandes info: **Nombre de tâches annulées**, **Sécurité enfant**
+- Fix MAC adresse sur modèle i7
+
 ## 2022-07-09
 
 - Ajout des commandes info: **Nombre de tâches de nettoyage**, **Nombre de tâches réussies**, **Nombre de tâches échouées**, **Nombre de vidages automatiques**, **Nombre de détections de saleté**, **Nombre de blocages**

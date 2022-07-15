@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: fullup
 ---
 
+# 2022-07-15
+
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+
 # 2021-01-31
 
 - Nouvelle présentation de la liste des objets

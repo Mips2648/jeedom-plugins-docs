@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: logmanager
 ---
 
+# 2022-07-15
+
+- Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
+
 # 2021-03-10
 
 - Ajout du choix du nombre de lignes à afficher sur la tuile dans la configuration de l'équipement

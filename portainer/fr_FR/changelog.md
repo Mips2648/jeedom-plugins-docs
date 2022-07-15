@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: portainer
 ---
 
+# 2022-07-15
+
+- Mise à jour de librairies internes
+
 # 2022-02-09
 
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2

@@ -5,9 +5,13 @@ lang: fr_FR
 pluginId: proxmox
 ---
 
+# 2022-07-15
+
+- Mise à jour de librairies internes
+
 # 2022-02-11
 
-- Amélioration: possibilité de configurer une liste d'IP, séparée par une virgule, dans la config du plugin (vers des noeuds différents) pour assurer la résilience
+- Amélioration: possibilité de configurer une liste d'IP, séparée par une virgule, dans la config du plugin (vers des noeuds différents d'un même cluster) pour assurer la résilience
 - Changements mineurs de présentation des écrans de configuration
 
 # 2021-12-27

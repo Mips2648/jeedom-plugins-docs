@@ -7,6 +7,10 @@ pluginId: kroomba
 
 # Beta
 
+# 2022-07-19
+
+- Ajout de la commande **Vidange** (ne fonctionne que sur les modèles compatibles)
+
 ## 2022-07-10
 
 - Ajout des commandes info: **Nombre de tâches annulées**, **Sécurité enfant**

@@ -81,7 +81,7 @@ Exemple vente:
 
 # Changelog
 
-[Voir le changelog]({{site.baseurl}}/changelog)
+[Voir le changelog](./changelog)
 
 # Support
 

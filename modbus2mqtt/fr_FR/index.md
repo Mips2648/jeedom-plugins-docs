@@ -17,14 +17,10 @@ Il n'y a aucune configuration à effectuer au niveau du plugin.
 
 # Configuration de l'équipement
 
-Le plugin se trouve dans le menu Plugins > Météo.
-Après avoir créé un nouvel équipement, les options habituelles sont disponible.
+Le plugin se trouve dans le menu Plugins > Protocole domotique.
+Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
 
-Il suffit alors de sélectionner les designs pour lesquels vous voulez changer l'image de fond en fonction de la météo et de choisir l'équipement météo à utiliser.
 
-En cas de configuration manuelle, il est nécessaire de fournir des commandes info qui donneront l'heure du levé et du couché du soleil au format Jeedom (HHMM) ainsi que d'encoder les conditions pour chacun des situations météorologiques afin que le plugin puisse déduire l'image de fond à utiliser.
-
-Les images de fond sont personnalisable via l'écran de configuration des équipements.
 
 # Activation de l'équipement
 

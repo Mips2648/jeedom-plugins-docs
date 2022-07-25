@@ -5,6 +5,10 @@ lang: en_US
 pluginId: fullup
 ---
 
+# 2022-07-15
+
+- Add table display mode of the list of device for Jeedom 4.2
+
 # 2021-01-31
 
 - New presentation of objects list

@@ -114,6 +114,7 @@ This list is not exhaustive, there may be other values.
 - **Rotation speed** for washing machines, numerical value in rpm.
 - **Drying level** for tumble dryers, see below for the list of possible values
 - **Ventilation level** for hoods, values from 0 to 4
+- **Water consumption** and **Energy consumption** for washing machines, dryers and dishwashers
 
 ### List of values for the info "Drying level"
 

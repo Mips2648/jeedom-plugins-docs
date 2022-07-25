@@ -5,7 +5,11 @@ lang: en_US
 pluginId: rocketchat
 ---
 
-# beta
+# 2022-05-17
+
+- Changed the API used for sending messages to fix the incorrect date issue (messages sent on the date 01/01/1979)
+
+# 2022-03-28
 
 - Compatibility with Rocket.Chat v4
 - This update requires reinstalling dependencies, this should be done automatically when updating the plugin.

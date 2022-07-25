@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
+# beta
+
+- Fix: le cron n'était pas correctement supprimé lors de la désinstallation du plugin
+
 # 2022-02-09
 
 - Ajout d'une nouvelle option pour le choix de la valeur du timestamp envoyé, 3 options possibles: heure d'envoi, heure collecte jeedom, heure valeur jeedom (voir documentation)

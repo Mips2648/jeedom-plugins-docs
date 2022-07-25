@@ -100,6 +100,16 @@ It is possible to get appliances information, to monitor them and execute some a
 - [Changelog]({{site.baseurl}}/miele/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3950" target="_blank">Market</a>
 
+# ModBus 2 MQTT
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/modbus2mqtt_icon.png">]({{site.baseurl}}/modbus2mqtt/{{page.lang}})
+
+Plugin to create a gateway between modbus TCP/IP and MQTT.
+
+- [Documentation]({{site.baseurl}}/modbus2mqtt/{{page.lang}})
+- [Changelog]({{site.baseurl}}/modbus2mqtt/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4309" target="_blank">Market</a>
+
 # My Audi
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/myaudi_icon.png">]({{site.baseurl}}/myaudi/{{page.lang}})
@@ -119,6 +129,16 @@ Plugin allow to create notification commands (action / message type command) tha
 - [Documentation]({{site.baseurl}}/notificationqueue/{{page.lang}})
 - [Changelog]({{site.baseurl}}/notificationqueue/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3823" target="_blank">Market</a>
+
+# Roomba
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/kroomba_icon.png">]({{site.baseurl}}/kroomba/{{page.lang}})
+
+Plugin for controlling an iRobot robot vacuum cleaner.
+
+- [Documentation]({{site.baseurl}}/kroomba/{{page.lang}})
+- [Changelog]({{site.baseurl}}/kroomba/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=2776" target="_blank">Market</a>
 
 # Solaredge
 
@@ -183,7 +203,7 @@ Plugin to retrieve stock or index quotation as well as exchange rate between two
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/vaillantmultimatic_icon.png">]({{site.baseurl}}/vaillantmultimatic/{{page.lang}})
 
 Plugin allowing connection to a Vaillant multiMATIC system via its internet gateway.
-It is possible to report the status of all connected device in Jeedom and to control them: define the mode (On, Off, Auto ...), define the setpoint temperatures, activate a fast mode, activate forced mode ...
+It is possible to report the status of all connected device in Jeedom and to control them: define the mode (On, Off, Auto ...), define the setpoint temperatures, activate a quick mode, activate forced mode ...
 
 The valves and thermostats of the ambiSENSE range connected to the system are also managed.
 

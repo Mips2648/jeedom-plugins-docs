@@ -5,6 +5,11 @@ lang: en_US
 pluginId: arlo
 ---
 
+# 2022-05-17
+
+- Support model VMC4041P (Arlo Pro4)
+- Add **Enable event handling**, **Disable event handling** and **Event handling status** commands on Arlo doorbell wire free & Arlo Go
+
 # 2022-02-11
 
 - Added **Shield State** command on Arlo Essential Indoor

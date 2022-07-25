@@ -5,6 +5,10 @@ lang: en_US
 pluginId: portainer
 ---
 
+# 2022-07-15
+
+- Update of internal libraries
+
 # 2022-02-09
 
 - Add table display mode of the list of device for Jeedom 4.2

@@ -5,6 +5,11 @@ lang: en_US
 pluginId: vaillantmultimatic
 ---
 
+# 2022-03-18
+
+- Add table display mode of the list of device for Jeedom 4.2
+- Fix dependencies install
+
 # 2022-01-25
 
 - Added **Day speed** and **Night speed** action and info commands on *Ventilation* type device
@@ -19,7 +24,7 @@ pluginId: vaillantmultimatic
 # 2021-11-04
 
 - Fix generic types
-- Retrieve battery information on _Valve_ and _Thermostat_ device (see documentation)
+- Reporting of battery information on *Valve* and *Thermostat* type equipment (see documentation)
 
 # 2021-10-17
 

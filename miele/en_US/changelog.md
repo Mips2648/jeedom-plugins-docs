@@ -5,7 +5,11 @@ lang: en_US
 pluginId: miele
 ---
 
-# beta
+# 2022-03-10
+
+- Fixed a crash when synchronizing consumption information due to a change in behavior of the Miele@Home API
+
+# 2022-02-22
 
 - Add commands **Water consumption** and **Energy consumption** commands on appliances supporting this functionality (see documentation), you must create the missing commands on the device if you wish to have these new commands
 

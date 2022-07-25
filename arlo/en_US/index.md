@@ -34,13 +34,13 @@ Here is an overview of the possibilities of the plugin:
 
 > **Important**
 >
-> It is not recommended to use Essentials cameras and doorbells if no base exists in the system, except if they have power supply (from grid or from a solar panel if sufficient sunlight) because their battery does not provide sufficient autonomy. If a base exists then no problem.
+> It is not recommended to use Essentials or Wire-free cameras and doorbells if no base exists in the system, except if they have power supply (from grid or from a solar panel if sufficient sunlight) because their battery does not provide sufficient autonomy. If a base exists then no problem.
 
 # Installation
 
 > **Important**
 >
-> It is essential to be under Debian 10 Buster minimum to run the plugin.
+> It is essential to be under Debian 10 Buster or Debian 11 Bullseye to use the plugin.
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 Then you need to install dependencies.
@@ -56,24 +56,18 @@ It is therefore necessary to create a user dedicated to the plugin, otherwise it
 
 Arlo is gradually enforcing the use of 2-step authentication.
 
-> **Tip**
->
-> Nowadays, it is still possible to not enable 2-step authentication in Arlo, so this step is optional.
-
 Before creating a new Arlo user, it is important to know the following information:
 
 - The plugin manages this via email with IMAP support only, so you will need a mailbox with IMAP access (it is sometimes blocked or not free so check before) and only supports authentication by _username_ /_password_ ; no MFA on the mail!
-- The plugin must have direct access to the arlo user's mailbox, indeed the code for the TFA is requested by Arlo at each login! So if the daemon has to restart it must be able to retrieve the code itself.
+- The plugin must have direct access to the Arlo user's mailbox, indeed the code for the TFA is requested by Arlo at each login! So if the daemon has to restart it must be able to retrieve the code itself.
 - the plugin will only read the mail coming from "do_not_reply@arlo.com"; so even though it is recommended to have a dedicated mailbox and not an alias of an existing mailbox, this shouldn't be a problem; it will flag the emails as "read" in the box when done (and will no longer try to read them on the next start)
 - the plugin will only search among the unread mails of the current day, in reverse chronological order (from the most recent to the oldest) and will skip all the mails sent before its last login.
 - the language of the email is not important: the search for the TFA code will work regardless of the language of the email.
 
 > **Tip**
 >
-> for Gmail, you must:
->
-> - either activate _nonsecure_ applications if MFA is not active on the account
-> - or create an _application password_ which will not require the MFA
+> From now on, to be able to connect to a gmail (Google) mailbox, you must create an _application password_, which will not require MFA to connect, activating the "unsecured applications" option does not being permitted anymore.
+> More details on the procedure here: <https://community.jeedom.com/t/google-applications-moins-securisees-mot-de-passe-dapplication/85617>
 
 After creating an email box for the plugin, you can go to the next step.
 

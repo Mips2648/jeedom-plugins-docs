@@ -81,7 +81,7 @@ Feed-in example:
 
 # Changelog
 
-[See the changelog]({{site.baseurl}}/changelog)
+[See the changelog](./changelog)
 
 # Support
 

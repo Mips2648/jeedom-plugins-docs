@@ -5,6 +5,10 @@ lang: en_US
 pluginId: logmanager
 ---
 
+# 2022-07-15
+
+- Add table display mode of the list of device for Jeedom 4.2
+
 # 2021-03-10
 
 - Add the choice of the number of lines to display on the widget in the device configuration

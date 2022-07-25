@@ -5,6 +5,10 @@ lang: en_US
 pluginId: notificationqueue
 ---
 
+# beta
+
+- From now on expired messages will be removed from the queue over time (and not only if a condition is true).
+
 # 2020-11-29
 
 - Add management of random text generation (same system as in interactions, see documentation)

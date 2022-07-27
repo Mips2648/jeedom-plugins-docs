@@ -5,6 +5,28 @@ lang: en_US
 pluginId: influxdb
 ---
 
+# beta
+
+- Fix: cron was not properly deleted when uninstalling the plugin
+
+# 2022-02-09
+
+- Addition of a new option for choosing the value of the timestamp sent, 3 possible options: sending time, command collect time, command value time (see documentation)
+- Add table display mode of the list of device for Jeedom 4.2
+
+# 2022-01-25
+
+- Redesign of the plugin "engine" to perform all tasks in dedicated processes asynchronously in order to not to impact other processes on your Jeedom or navigation in the dashboard
+- Add history export to InfluxDB (which benefits from the redesign explained above)
+- Add a **Send All** command to force sending the current value of all selected commands in device
+- Add several info commands to know the health status of the connector: **Status**, **Last error**... (see documentation)
+- Add connector health information in the general health page
+- Add total and daily counter commands for the number of measurements sent by device
+- Add advanced configuration to set timeouts and number of send retries
+- Sorting device and commands in selection screens by object/room
+- From now on the measurements will be sent with their jeedom value date as timestamp instead of the time of sending
+- Fix: In the device selection by item it was not possible to search/select device without items/parts
+
 # 2021-10-26
 
 - Fix: the measure was not correctly sent to influx if it has the value _0_
@@ -41,7 +63,7 @@ pluginId: influxdb
 
 - Added possibility to define a personalized name of measurement and key for each command (to be configured in the list of commands)
 - Added a configuration on the device allowing to choose the tags to send with each point
-- Added tags (in option) "Command name" (*CommandName*) and "Generic type of command" (*GenericType*)
+- Add tags (optional) "Command name" (_CommandName_) and "Generic type of command" (_GenericType_)
 
 # 2020-05-03
 

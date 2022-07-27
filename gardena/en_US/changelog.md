@@ -5,6 +5,34 @@ lang: en_US
 pluginId: gardena
 ---
 
+# 2022-06-30
+
+- Fix possible crash of the daemon when renewing the connection
+
+# 2022-06-11
+
+- Change on the authentication method due to a change made by Gardena / Husqvarna, it is necessary to redo the configuration of the plugin: the email and the password are no longer necessary, however the secret application is now required.
+
+# 2022-05-22
+
+- Fix: action/message commands for Husqvarna robots were not working.
+- Fix: **Remaining Time** info command for Husqvarna robots never updated.
+
+# 2022-04-30
+
+- Updating info for Husqvarna robots in real time and therefore removing the update cron which is no longer necessary. There is therefore no longer a limit on the number of updates.
+- Add the following commands for Husqvarna robots:
+  - **Height of cut** allowing to know and define the height of cut
+  - **Headlight** allowing to know and define the lighting mode of the headlights
+  - **Last report time** and **Next departure time**
+  - **Schedule restriction** giving the reason for the exception on normal schedule
+  - **Positions** containing the history of the last 50 positions of the robot (the commands **Last position**, **Latitude** and **Longitude** still exist and indicate the last known position)
+- Addition of a widget for displaying the history of positions on a map to be applied to the **Positions** command (see documentation) (contribution from @t0urista)
+
+# 2022-03-12
+
+- Fix dependency check
+
 # 2022-02-11
 
 - Minor layout changes to configuration screens

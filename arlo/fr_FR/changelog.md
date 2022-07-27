@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# beta
+
+- Fix: le widget caméra pour les utilisateurs non-admin n'affichait pas la dernière capture
+
 # 2022-05-17
 
 - Support du modèle VMC4041P (Arlo Pro4)

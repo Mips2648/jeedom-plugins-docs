@@ -21,7 +21,7 @@ Avant de commencer, assurez-vous d'avoir installer et configurer le plugin *MQTT
 Dans la page de configuration du plugin, vous pouvez modifier les options suivantes:
 
 - Le topic de base sous lequel le plugin va publier les informations (voir configuration des équipements). Par défaut le plugin publiera sous le topic *modbus2mqtt*; vous n'avez pas besoin de modifier si cela vous convient
-- Le port d'écoute du démon du plugin. Ne modifier cette valeur uniquement si vous comprenez le fonctionnement et uniquement si vous avez un conflit avec un autre plugin.
+- Le port d'écoute du démon du plugin. Ne modifiez cette valeur que si vous comprenez le fonctionnement et uniquement si vous avez un conflit avec un autre plugin.
 
 # Configuration de l'équipement
 
@@ -42,9 +42,9 @@ En plus des paramètres généraux il faudra donc configurer les paramètres sp�
 ## Paramètre MQTT
 
 Le topic de cet équipement. Ce sera un sous-topic du topic général du plugin (voir configuration du plugin).
-Chaque registre sera publier dans un sous-topic de ce topic.
+Chaque registre sera publié dans un sous-topic de ce topic.
 
-Exemple: si vous avez un équipement modbus que l'on va appelé *solar* qui permet d'obtenir la puissance produite que l'on va appelé *power*, l'info sera publiée dans le topic *modbus2mqtt/solar/power*
+Exemple: si vous avez un équipement modbus que l'on va appeler *solar* qui permet d'obtenir la puissance produite que l'on va appeler *power*, l'info sera publiée dans le topic *modbus2mqtt/solar/power*
 
 ## Définition des registres modbus
 
@@ -57,10 +57,10 @@ Vous devez donc spécifier:
 - la table de registre (*holding* ou *input* pour l'instant uniquement, évolution à envisager selon les demandes)
 - le type
 - la mise à l'échelle
-- le topic MQTT de publication de la valeur
+- le topic MQTT de publication de la valeur (donc modbus -> MQTT)
 - option *Publication seulement si changement* permet de ne publier sur MQTT que si la valeur à changée, si décoché la valeur sera publiée lors de chaque lecture
 - option *retain* pour publier avec l'option *retain* ou non
-- éventuellement le topic de lecture: toute info publiée sur ce topic sera écrite le registre modbus correspondant
+- éventuellement le topic de lecture: toute info publiée sur ce topic sera écrite sur le registre modbus correspondant (donc MQTT -> modbus)
 
 ## Création des commandes
 

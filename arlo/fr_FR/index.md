@@ -96,7 +96,7 @@ Après avoir créé une boite mail pour le plugin, vous pouvez passer à l'étap
 Sur la page de configuration du plugin:
 
 - Entrez votre utilisateur (la nouvelle adresse email) et le mot de passe Arlo associé.
-- Si vous avez activé l'authentification en 2 étapes, entrez l'adresse IMAP du serveur mail sous la forme _imap.server.com_ ainsi que le nom d'utilisateur et le mot de passe de la boite mail associée (pas nécessaire si TFA n'est pas actif)
+- Si vous avez activé l'authentification en 2 étapes, entrez l'adresse IMAP du serveur mail sous la forme _imap.server.com_ ainsi que le nom d'utilisateur et le mot de passe de la boite mail associée (ou le mot de passe applicatif dans le cas d'un compte gmail au lieu de votre mot de passe personnel) (pas nécessaire si TFA sur votre compte Arlo n'est pas actif)
 - Démarrez le démon (s'il ne démarre pas tout seul)
 
 Si les informations de connexions sont correctes, le statut devrait passer au vert et le plugin va commencer à synchroniser vos équipements précédemment partagés.

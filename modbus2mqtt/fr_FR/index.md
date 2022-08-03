@@ -12,19 +12,64 @@ Plugin permettant de faire passerelle entre du modbus TCP/IP et MQTT.
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
+Ce plugin nécessite le plugin *MQTT Manager (MQTT2)* pour fonctionner. Pour l'instant et tant que le plugin *MQTT Manager (MQTT2)* sera en beta, il est nécessaire d'installer celui-ci manuellement.
 
-Il n'y a aucune configuration à effectuer au niveau du plugin.
+# Configuration du plugin
+
+Avant de commencer, assurez-vous d'avoir installer et configurer le plugin *MQTT Manager (MQTT2)*, voir documentation de ce plugin.
+
+Dans la page de configuration du plugin, vous pouvez modifier les options suivantes:
+
+- Le topic de base sous lequel le plugin va publier les informations (voir configuration des équipements). Par défaut le plugin publiera sous le topic *modbus2mqtt*; vous n'avez pas besoin de modifier si cela vous convient
+- Le port d'écoute du démon du plugin. Ne modifier cette valeur uniquement si vous comprenez le fonctionnement et uniquement si vous avez un conflit avec un autre plugin.
 
 # Configuration de l'équipement
 
 Le plugin se trouve dans le menu Plugins > Protocole domotique.
 Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
 
+Chaque équipement correspond à une passerelle composée d'un client modbus et un client MQTT. L'équipement se connectera donc à l'équipement modbus configuré pour lire et écrire les registres définis et se connectera à votre broker MQTT pour y publier et recevoir les messages correspondant.
 
+En plus des paramètres généraux il faudra donc configurer les paramètres spécifiques pour la connexion modbus ainsi que le topic MQTT pour cet équipement.
 
-# Activation de l'équipement
+## Paramètres de connexion modbus
 
-# Commandes
+- *IP* et *Port*
+- *Actualisation* en secondes
+- *Décalage* (offset) à appliquer sur les adresses des registres
+- *Lot*: nombre de registre à lire
+
+## Paramètre MQTT
+
+Le topic de cet équipement. Ce sera un sous-topic du topic général du plugin (voir configuration du plugin).
+Chaque registre sera publier dans un sous-topic de ce topic.
+
+Exemple: si vous avez un équipement modbus que l'on va appelé *solar* qui permet d'obtenir la puissance produite que l'on va appelé *power*, l'info sera publiée dans le topic *modbus2mqtt/solar/power*
+
+## Définition des registres modbus
+
+Dans le deuxième onglet, *Registres*, vous allez devoir configurer les registres modbus qui vous intéressent et leur correspondance MQTT.
+Exemple:
+![Modbus register](../images/modbus_register.png "Modbus register")
+Vous devez donc spécifier:
+
+- l'adresse
+- la table de registre (*holding* ou *input* pour l'instant uniquement, évolution à envisager selon les demandes)
+- le type
+- la mise à l'échelle
+- le topic MQTT de publication de la valeur
+- option *Publication seulement si changement* permet de ne publier sur MQTT que si la valeur à changée, si décoché la valeur sera publiée lors de chaque lecture
+- option *retain* pour publier avec l'option *retain* ou non
+- éventuellement le topic de lecture: toute info publiée sur ce topic sera écrite le registre modbus correspondant
+
+## Création des commandes
+
+Vous pouvez à présent sauver votre équipement; le plugin créera les commandes correspondantes à votre configuration et vous pourrez donc obtenir les valeurs directement sur ces commandes, elles seront mise à jour lors de chaque nouvelle publication et sont donc directement utilisables partout sous Jeedom.
+
+Il n'est donc pas nécessaire de configurer un autre équipement MQTT pour obtenir les valeurs cependant vous êtes libre de le faire ou de consommer les topics MQTT depuis un autre appareil, une autre plateforme...
+
+Les commandes sont visibles dans le 3ème onglet et vous y trouverez les options de configurations habituelles.
+Vous devriez vérifier et modifier si besoin le sous-type (numérique ou binaire) pour que cela corresponde à la définition du registre.
 
 # Changelog
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documentation Design Image
+title: Documentation Modbus 2 MQTT
 lang: fr_FR
 pluginId: modbus2mqtt
 ---

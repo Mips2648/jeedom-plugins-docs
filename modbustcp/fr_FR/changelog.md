@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Changelog Modbus 2 MQTT
+title: Changelog Modbus TCP
 lang: fr_FR
-pluginId: modbus2mqtt
+pluginId: modbustcp
 ---
 
 # 2022-08-xx

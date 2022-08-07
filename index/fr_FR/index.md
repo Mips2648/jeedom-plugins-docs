@@ -110,6 +110,16 @@ Plugin permettant de faire passerelle entre du modbus TCP/IP et MQTT.
 - [Changelog]({{site.baseurl}}/modbus2mqtt/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=4309" target="_blank">Market</a>
 
+# ModBus TCP Server
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/modbustcp_icon.png">]({{site.baseurl}}/modbustcp/{{page.lang}})
+
+Plugin transformant votre Jeedom en seveur modbus TCP
+
+- [Documentation]({{site.baseurl}}/modbustcp/{{page.lang}})
+- [Changelog]({{site.baseurl}}/modbustcp/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4320" target="_blank">Market</a>
+
 # My Audi
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/myaudi_icon.png">]({{site.baseurl}}/myaudi/{{page.lang}})

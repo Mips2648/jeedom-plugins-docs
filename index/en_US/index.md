@@ -110,6 +110,16 @@ Plugin to create a gateway between modbus TCP/IP and MQTT.
 - [Changelog]({{site.baseurl}}/modbus2mqtt/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=4309" target="_blank">Market</a>
 
+# ModBus TCP Server
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/modbustcp_icon.png">]({{site.baseurl}}/modbustcp/{{page.lang}})
+
+Plugin transforming your Jeedom into a modbus TCP server
+
+- [Documentation]({{site.baseurl}}/modbustcp/{{page.lang}})
+- [Changelog]({{site.baseurl}}/modbustcp/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4320" target="_blank">Market</a>
+
 # My Audi
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/myaudi_icon.png">]({{site.baseurl}}/myaudi/{{page.lang}})

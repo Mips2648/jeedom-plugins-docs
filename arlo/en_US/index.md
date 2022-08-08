@@ -96,7 +96,7 @@ After creating an email box for the plugin, you can go to the next step.
 On the plugin configuration page:
 
 - Enter your user (the new email address) and the associated Arlo password.
-- If you have enabled 2-step authentication, enter the IMAP address of the mail server in the form _imap.server.com_ as well as the username and password of the associated mailbox (not necessary if TFA is not active)
+- If you have enabled 2-step authentication, enter the IMAP address of the mail server in the form _imap.server.com_ as well as the username and password (or the application password in case of of a gmail account  instead of your own password) of the associated mailbox (not necessary if TFA is not active on your Arlo account)
 - Start the daemon (if it does not start on its own)
 
 If the credentials are correct, the status should turn green and the plugin will start to synchronize devices that you shared on previous step.

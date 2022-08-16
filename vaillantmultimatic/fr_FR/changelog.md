@@ -4,6 +4,9 @@ title: Changelog Vaillant multiMATIC
 lang: fr_FR
 pluginId: vaillantmultimatic
 ---
+# 2022-08-17
+
+- Mise à jour de librairies internes
 
 # 2022-03-18
 

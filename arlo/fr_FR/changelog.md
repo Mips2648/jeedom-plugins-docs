@@ -5,7 +5,7 @@ lang: fr_FR
 pluginId: arlo
 ---
 
-# beta
+# 2022-08-17
 
 - Fix: le widget caméra pour les utilisateurs non-admin n'affichait pas la dernière capture
 

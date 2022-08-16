@@ -63,6 +63,18 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
+    source_file_dir: modbus2mqtt/fr_FR/
+    translation_files_expression: 'modbus2mqtt/<lang>/'
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
+    source_file_dir: modbustcp/fr_FR/
+    translation_files_expression: 'modbustcp/<lang>/'
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
     source_file_dir: myaudi/fr_FR/
     translation_files_expression: 'myaudi/<lang>/'
   - filter_type: dir

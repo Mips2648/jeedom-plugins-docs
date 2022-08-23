@@ -34,10 +34,10 @@ On top of the general parameters, it will therefore be necessary to configure th
 
 ## Modbus connection settings
 
-- *IP* and *Port*
-- *Refresh* in seconds
+- *IP* and *Port* of your modbus TCP device
+- *Refresh*: delay in seconds between each read/write operation on the modbus device
 - *Offset* This offset is applied to every register address.
-- *scan_batching*: number of continuous register to read in on read operation.
+- *Batch*: number of contiguous registers to read during each read operation (between 1 and 100 inclusive). If 1 then each register will be read separately.
 
 ## MQTT settings
 
@@ -55,8 +55,8 @@ So you need to specify:
 
 - the address
 - the register table (*holding* or *input* for the moment only, evolution to be considered according to requests)
-- Type
-- Scale
+- Type: signed 16-bit integer or unsigned 16-bit integer for the moment, evolution to consider according to the requests.
+- Scale: the read value will be multiplied by this value before being published
 - the MQTT topic for publishing the value (so modbus -> MQTT)
 - option *Publish only if change* allows to publish on MQTT only if the value has changed, if unchecked the value will be published after each read operation
 - *retain* option to publish with *retain* option or not

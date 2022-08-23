@@ -34,10 +34,10 @@ En plus des paramètres généraux il faudra donc configurer les paramètres sp�
 
 ## Paramètres de connexion modbus
 
-- *IP* et *Port*
-- *Actualisation* en secondes
+- *IP* et *Port* de votre équipement modbus TCP
+- *Actualisation*: délai en secondes entre chaque opérations de lecture/écriture sur l'équipement modbus
 - *Décalage* (offset) à appliquer sur les adresses des registres
-- *Lot*: nombre de registre à lire
+- *Lot*: nombre de registres contingus à lire lors de chaque opération de lecture (entre 1 et 100 inclus). Si 1 alors chaque registre sera lû séparément.
 
 ## Paramètre MQTT
 

@@ -20,14 +20,14 @@ In order to use the plugin, you must download, install and activate it like any 
 
 > **Important**
 >
-> Debian 8 (Jessie) is no longer supported by Debian, the plugin will not work under Jessie because it is necessary to install dependencies which are no longer available on this version.
+> It is essential to be under Debian 10 Buster minimum to make the plugin work.
 >
-> If you tried to install the "Gardena Smart System" plugin, you must deactivate it before activating this one. Indeed, a problem in the "Gardena Smart System" plugin create a conflict with this plugin which could make Jeedom unavailable. This problem must be fixed in the other plugin, it is unfortunately impossible for me to avoid it.
+> If you tried to install the "Gardena Smart System" plugin, it is necessary to deactivate it before activating this one. Indeed, a problem in the "Gardena Smart System" plugin creates a conflict with this plugin which risks making Jeedom unavailable. This problem must be solved in the other plugin, it is unfortunately impossible for me to avoid it.
 
 # Plugin configuration
 
-In the plugin configuration, you shall enter your username, password and application key to access the API.
-You must also select the API you want to activate among the 2 possible options (both can be activated at the same time):
+In the configuration of the plugin, you will need to enter the application key and the application secret allowing access to the APIs.
+You must also select the APIs you want to activate from the 2 possible options (both can be activated at the same time):
 
 - Gardena Smart System
 - Husqvarna Automower
@@ -39,10 +39,9 @@ You will find more information directly available on the plugin configuration pa
 As soon as the plugin configuration is complete and correct, the plugin will synchronize the devices according to the activated API.
 It will create the missing devices with their commands and update the commands of all connected devices.
 
-The commands of the Gardena Smart System devices will be updated in real time, so there is no additional configuration to do.
+The commands of all devices, whether from the Gardena Smart System range or Husqvarna robots, will be updated in real time, so there is no additional configuration to do.
 
-Husqvarna Automowers will be updated according to the plugin configuration, by default every 2 minutes between 9 a.m. and 8 p.m. **Please note** there is a limit of 10,000 updates per month imposed by Husqvarna.
-A **Refresh** command exists to request manually an additional update.
+A **Refresh** command exists to request an additional manual refresh for Husqvarna Automower robotic lawnmowers but this is normally not necessary as any status change will be updated in real time. **Attention** there is a limit of 10,000 updates per month for manual updates, this limit is imposed by Husqvarna.
 
 > **Tip**
 >
@@ -59,7 +58,7 @@ Each Gardena Smart System device has the following commands:
 - **Battery** gives the battery charge level (if applicable) in percent
 - **Battery status** gives a description of the battery status: *OK*, *LOW*, *REPLACE_NOW*, *OUT_OF_OPERATION*, *CHARGING*, *NO_BATTERY*, *UNKNOWN*
 - **Connection level** gives the connection level with the gateway in percent
-- **Connection status** gives a description of the connection status: _ONLINE_, _OFFLINE_, _UNKNOWN_
+- **Connection state** gives a description of the connection state: *ONLINE*, *OFFLINE*, *UNKNOWN*
 
 ## Gardena Smart Sensor
 
@@ -70,8 +69,8 @@ Each Gardena Smart System device has the following commands:
 
 ## Gardena Smart Water Control
 
-- **Health** indicates the general condition of the valve: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
-- **Last error** gives the last error if any, only valid if the command **Health** has the value _WARNING_ or _ERROR_ (see below for a list of possible values)
+- **Health** indicates the general condition of the valve: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
+- **Last error** gives the last error if any, only valid if the command **Health** has the value *WARNING* or *ERROR* (see below for a list of possible values)
 - **Activity** indicates the current activity: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
 - **Status** binary info command indicating whether the valve is open or closed
 - **Start** action command to start watering, needing the number of minutes (full) of watering in parameter
@@ -82,8 +81,8 @@ Each Gardena Smart System device has the following commands:
 
 ## Gardena Smart Power Socket
 
-- **Health** indicates the general condition of the power socket: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
-- **Last error** gives the last error if any, only valid if the command **Health** has the value _WARNING_ or _ERROR_; can have the value: *TIMER_CANCELLED*, *UNKNOWN*
+- **Health** indicates the general condition of the power socket: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
+- **Last error** gives the last error if any, only valid if the command **Health** has the value *WARNING* or *ERROR*; can have the value: *TIMER_CANCELLED*, *UNKNOWN*
 - **On** action command to switch on the power socket
 - **Off** action command to switch off the power socket
 - **On timer** command action to switch on the power socket with auto switch off after x (whole) minutes passed as an option of the command
@@ -95,10 +94,10 @@ Each Gardena Smart System device has the following commands:
 
 ## Gardena Smart Mower
 
-- **Health** indicates the general condition of mower: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Health** indicates the general condition of mower: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
 - **Activity** indicates the current activity: *PAUSED*, *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*, *PARKED_TIMER*, *PARKED_PARK_SELECTED*, *PARKED_AUTOTIMER*, *NONE*
 - **Active** binary command indicating whether the mower is active or not; it will be indicated as active during these activities: *OK_CUTTING*, *OK_CUTTING_TIMER_OVERRIDDEN*, *OK_SEARCHING*, *OK_LEAVING*, *OK_CHARGING*
-- **Last error** gives the last error if any, only valid if the command **Health** has the value _WARNING_ or _ERROR_ (see below for a list of possible values)
+- **Last error** gives the last error if any, only valid if the command **Health** has the value *WARNING* or *ERROR* (see below for a list of possible values)
 - **Operating hours** info command giving the number of operating hours
 - **Remaining time** info command giving the remaining time of the timer (if applicable)
 - **Start mode manual** action command to start in manual mode needing number of minute of activity in option
@@ -110,15 +109,15 @@ Each Gardena Smart System device has the following commands:
 
 The device can control up to 6 24v valves. It has the following commands:
 
-- **Controller health** indicates the general condition of controller: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
-- **Last error** gives the last error if any, only valid if the command **Health** has the value _WARNING_ or _ERROR_ (see below for a list of possible values)
+- **Controller health** indicates the general condition of controller: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
+- **Last error** gives the last error if any, only valid if the command **Health** has the value *WARNING* or *ERROR* (see below for a list of possible values)
 - **Stop all valves** allows you to stop watering all valves in one command, watering will resume at the next schedule
 
 As well as the following commands for each of the valves (where X will therefore have a value from 1 to 6):
 
 - **Activity valve X** indicates the current activity: *CLOSED*, *MANUAL_WATERING*, *SCHEDULED_WATERING*
 - **Status valve X** binary info command indicating whether the valve is open or closed
-- **Health valve X** indicates the general condition of the power socket: _OK_, _WARNING_, _ERROR_, _UNAVAILABLE_
+- **Health valve X** indicates the general condition of the power socket: *OK*, *WARNING*, *ERROR*, *UNAVAILABLE*
 - **Start valve X** action command to start watering, needing the number of minutes (full) of watering in parameter
 - **Stop valve X** action command to stop watering
 - **Remaining time valve X** info command giving the remaining time (in minutes) when watering is in progress
@@ -132,9 +131,14 @@ As well as the following commands for each of the valves (where X will therefore
 - **Mode** will have one of the following values: *MAIN_AREA*, *DEMO*, *SECONDARY_AREA*, *HOME*, *UNKNOWN* (see below for a description of the values)
 - **State** will have one of the following values: *UNKNOWN*, *NOT_APPLICABLE*, *PAUSED*, *IN_OPERATION*, *WAIT_UPDATING*, *WAIT_POWER_UP*, *RESTRICTED*, *OFF*, *STOPPED*, *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* (see below for a description of the values)
 - **Activity** will have one of the following values: *UNKNOWN*, *NOT_APPLICABLE*, *MOWING*, *GOING_HOME*, *CHARGING*, *LEAVING*, *PARKED_IN_CS*, *STOPPED_IN_GARDEN* (see below for a description of the values)
-- **Latitude** info command giving latitude
-- **Longitude** info command giving longitude
-- **Position** info command giving GPS position in format _latitude,longitude_
+- **Latitude** info command giving latitude of last position
+- **Longitude** info command giving longitude of last position
+- **Last position** info command giving last GPS position in format *latitude,longitude*
+- **Positions** containing the history of the last 50 positions of the robot in the format *position1,position2,position3,...*
+- **Cutting height** and **Cutting height adjustment** to know and define the cutting height (between 1 and 9)
+- **Headlight** and **Headlight adjustment** allowing to know and define the lighting mode of the headlights, possible values: *ALWAYS_ON*, *ALWAYS_OFF*, *EVENING_ONLY*, *EVENING_AND_NIGHT*
+- **Last report time** and **Next start time** the values are timestamp in milliseconds (for easier use in a scenario) and will be displayed in date/time format on the widget
+- **Programming restriction** giving the reason for the exception on normal programming
 - **Error code** & **Error description** gives the code and description of the error if applicable
 - **Remaining time** info command giving the remaining time of activity; valid only after having used commands **Start manual mode** or **Return to base**
 - **Start mode manual** Starts and mows the grass for the time (in minutes) given as an option on the command
@@ -143,6 +147,28 @@ As well as the following commands for each of the valves (where X will therefore
 - **Return to base** Return to the charging station for the number of minutes given as an option of the command, then resume schedule
 - **Cancel and go back to charging station** action command, the mower will start at next schedule
 - **Stop and go back to charging station** action command, the mower will ignore next schedule
+
+# Positions widget
+
+The plugin provides a *Positions* widget to be applied to the **Positions** command of Husqvarna mowers (Gardena mowers do not yet have a GPS location).
+
+For the widget to work well you must perform the following configurations:
+
+1. In the advanced configuration of the **Positions** command, *View* tab, select the *Gardena/Positions* widget:
+
+![Advance configuration](../images/advance_config.png "Advance configuration")
+
+2. Take a snapshot of the mowing area (on Google Maps for example), name the file *home.png* for example and then copy the image to the *plugins/gardena/data/* folder on your Jeedom (via the file explorer integrated into Jeedom for example)
+3. Identify the geographical coordinates (latitude and longitude) of the lower left corner and the upper right corner of the area corresponding to the capture.
+4. Enter the coordinates taken above in the list of Widget Parameters: *latMin*, *longMin*, *latMax* and *longMax* are mandatory.
+If you have named your file other than *home.png* or if you want to test another capture, encode the file name in the *imgFile* parameter
+5. The other parameters are optional:
+
+![Configuration widget](../images/config_widget.png "Configuration widget")
+
+Save and you should see the mini-map with position history on the widget:
+
+![Positions](../images/Positions.png "Positions")
 
 # Appendices
 

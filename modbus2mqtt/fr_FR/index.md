@@ -34,10 +34,10 @@ En plus des paramètres généraux il faudra donc configurer les paramètres sp�
 
 ## Paramètres de connexion modbus
 
-- *IP* et *Port*
-- *Actualisation* en secondes
+- *IP* et *Port* de votre équipement modbus TCP
+- *Actualisation*: délai en secondes entre chaque opérations de lecture/écriture sur l'équipement modbus
 - *Décalage* (offset) à appliquer sur les adresses des registres
-- *Lot*: nombre de registre à lire
+- *Lot*: nombre de registres contigus à lire lors de chaque opération de lecture (entre 1 et 100 inclus). Si 1 alors chaque registre sera lû séparément.
 
 ## Paramètre MQTT
 
@@ -55,8 +55,8 @@ Vous devez donc spécifier:
 
 - l'adresse
 - la table de registre (*holding* ou *input* pour l'instant uniquement, évolution à envisager selon les demandes)
-- le type
-- la mise à l'échelle
+- le type: entier 16 bits signé ou entier 16 bits non-signé pour l'instant, évolution à envisager selon les demandes.
+- la mise à l'échelle: la valeur lue sera multiplié par cette valeur avant d'être publiée
 - le topic MQTT de publication de la valeur (donc modbus -> MQTT)
 - option *Publication seulement si changement* permet de ne publier sur MQTT que si la valeur à changée, si décoché la valeur sera publiée lors de chaque lecture
 - option *retain* pour publier avec l'option *retain* ou non

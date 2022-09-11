@@ -7,7 +7,7 @@ pluginId: kroomba
 
 # Beta
 
-# 2022-07-19
+## 2022-07-19
 
 - Ajout de la commande **Vidange** (ne fonctionne que sur les modèles compatibles)
 

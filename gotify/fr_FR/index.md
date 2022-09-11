@@ -26,13 +26,13 @@ Dans la configuration du plugin il faudra renseigner l'URL du server Gotify sous
 http://yourdomain.com:32768
 ```
 
-Vous pouvez éventuellement configurer un token client, ceci permettra à jeedom de consulter et supprimer les messages sur le serveur (sinon il ne pourra qu'en envoyer).
-
 # Configuration de l'équipement
 
 Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
 Il faudra également renseigner le token de l'application que vous aurez précédemment créé dans Gotify (à ne pas confondre avec le token client).
 Donc un équipement Jeedom correspond à une application Gotify.
+
+Vous pouvez éventuellement configurer un token client, ceci permettra à Jeedom de consulter et supprimer les messages de toutes les apps pour ce client (sinon il ne pourra qu'en envoyer).
 
 Il est possible de créer plusieurs commandes d'envoi avec des priorités différentes (voir documentation de Gotify à ce sujet) si votre application client gère celles-ci.
 

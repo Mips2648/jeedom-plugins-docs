@@ -7,11 +7,9 @@ pluginId: kroomba
 
 # Description
 
-Plugin permettant de piloter un aspirateur robot de la marque IRobot.
+Plugin permettant de piloter les robots aspirateurs et laveurs de sols de la marque iRobot.
 
-Le plugin a été testé avec succès sur des modèles 960, 980 et i7.
-Si vous testez d'autres modèles, communiquez le résultat dans le fil officel du plugin sur le forum communautaire Jeedom.
-
+Le plugin a été testé avec succès sur beaucoup de modèles différents et la plupart des modèles wifi de la marque devraient être supportés, si vous avez un doute, testez par vous même et vous serez fixé!
 Ce plugin ne fonctionne pas avec les anciens modèles d'aspirateurs robot Roomba munis d'un extension matérielle (type RooWifi ou Thinking Cleaner), il ne fonctionne qu'avec les modèles récents dotés d'une liaison Wifi.
 
 # Fonctionnalités

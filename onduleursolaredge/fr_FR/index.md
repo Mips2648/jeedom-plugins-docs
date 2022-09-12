@@ -24,9 +24,7 @@ Les informations suivantes sont récupérables, d'autres pourraient être rajout
 >
 > Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
-![Configuration plugin](../images/plugin_config.png "Configuration plugin")
-
-- Sur la page de configuration du plugin, il est possible de renseigner un équipement/commande pour l'heure du lever et l'heure du coucher du soleil tel que fournit par le plugin "Météo" ou "Héliotrope". Ceci permettra de "mettre en pause" la récupération des données entre ces heures car il y a généralement peu de production solaire la nuit ;-). Si aucune commande n'est fournie, la tâche sera "en pause" entre 22h00 et 04h00. Vous pouvez également entrer des heures en "dur", format hhmm, par exemple 400 pour 4h00 et 2200 pour 22h00.
+Sur la page de configuration du plugin, il est possible de renseigner un équipement/commande pour l'heure du lever et l'heure du coucher du soleil tel que fournit par le plugin "Météo" ou "Héliotrope". Ceci permettra de "mettre en pause" la récupération des données entre ces heures car il y a généralement peu de production solaire la nuit ;-). Si aucune commande n'est fournie, la tâche sera "en pause" entre 22h00 et 04h00. Vous pouvez également entrer des heures en "dur", format hhmm, par exemple 400 pour 4h00 et 2200 pour 22h00.
 
 ## Activation de l'accès API Solaredge
 
@@ -55,7 +53,7 @@ Choisissez ensuite le type d'informations voulue. Si vous en voulez plus qu'une 
 
 Enfin, choisissez la fréquence de rafraîchissement de l'équipement. Les choix suivant sont possibles:
 
-- automatique: la fréquence sera calculée dynamiquement en fonction des heures de lever et coucher configurées afin de rafraichir le plus souvent possible sans dépasser la limite du nombre de requêtes imposée par Solaredge.
+- automatique: la fréquence sera calculée dynamiquement en fonction des heures de lever et coucher configurées afin de rafraîchir le plus souvent possible sans dépasser la limite du nombre de requêtes imposée par Solaredge.
 - manuelle: vous choisissez la fréquence mais le plugin n'acceptera pas de passer en dessous du minimum indiqué.
 - désactivé.
 

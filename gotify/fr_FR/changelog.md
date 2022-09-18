@@ -7,7 +7,7 @@ pluginId: gotify
 
 # Beta
 
-- Le token client se configure sur l'équipement afin de permettre de créer des équipements (apps sous Gotify) et des clients sous des utilisateurs Gotify différents
+- Le token client se configure à présent sur l'équipement et plus dans la configuration globale du plugin afin de permettre de créer des équipements (apps sous Gotify) et des clients sous des utilisateurs Gotify différents => vérifiez vos configuration.
 
 # Stable
 

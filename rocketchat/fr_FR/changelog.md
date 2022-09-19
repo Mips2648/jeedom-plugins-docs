@@ -5,11 +5,11 @@ lang: fr_FR
 pluginId: rocketchat
 ---
 
-# Beta
+# Stable
+
+# 2022-09-19
 
 - Ajout d'un option pour envoyer des fichiers locaux directement depuis un scénario, voir documentation.
-
-# Stable
 
 ## 2022-05-17
 

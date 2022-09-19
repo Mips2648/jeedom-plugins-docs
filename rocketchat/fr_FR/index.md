@@ -27,7 +27,7 @@ Dans la configuration du plugin il faudra renseigner l'URL du server rocketchat 
 
 # Les équipements
 
-Dès que le démon démarre et que votre bot a pu se connecter, le plugin va créer un équipement par canal existant sur votre server (pour autant que le bot ait accès).
+Dès que le démon démarre et que votre bot a pu se connecter, le plugin va créer un équipement par canal existant sur votre serveur (pour autant que le bot ait accès).
 
 Chaque équipement dispose d'une commande action pour envoyer un message sur le canal ainsi que deux commandes info donnant le dernier message envoyé (par un autre utilisateur que le bot) et le nom de l'utilisateur.
 
@@ -37,6 +37,17 @@ Une option existe sur l'équipement pour désactiver ce comportement.
 ![Config équipement](../images/device.png "Config équipement")
 
 Ces commandes permettent d'envoyer un message sur le canal de l'équipement en notifiant l'utilisateur correspondant, (ex: `@Mips Ceci est un message test`).
+
+# Options des commandes messages
+
+Un champ *Options* existe sur les commandes *messages* du plugin. Actuellement une seule option existe: la possibilité de spécifier un fichier accessible localement pour l'envoyer (par exemple une capture de caméra qui se trouverait déjà sur votre Jeedom).
+Il faut y mettre une config similaire à ceci: `file=/path/to/file description="description de mon fichier"`
+
+Attention de bien mettre des guillemets s’il y a des espace dans le path ou dans la description (sinon pas nécessaire); La description est optionnelle.
+
+> **Tip**
+>
+> Ceci n'est pas nécessaire lors de l'envoi d'une nouvelle capture depuis le plugin caméra (par exemple), pour ce cas il suffit d'utiliser la commande adéquate du plugin caméra dans votre scénario et d'y spécifier la commande *message* du plugin *Rocket.Chat* pour l'envoi.
 
 # Interactions
 

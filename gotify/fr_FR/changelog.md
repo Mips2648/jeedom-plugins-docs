@@ -9,7 +9,7 @@ pluginId: gotify
 
 # 2022-09-19
 
-- Le token client se configure à présent sur l'équipement et plus dans la configuration globale du plugin afin de permettre de créer des équipements (apps sous Gotify) et des clients sous des utilisateurs Gotify différents => vérifiez vos configuration.
+- Le token client se configure à présent sur l'équipement et plus dans la configuration globale du plugin afin de permettre de créer des équipements (apps sous Gotify) et des clients sous des utilisateurs Gotify différents => vérifiez votre configuration.
 
 ## 2022-01-05
 

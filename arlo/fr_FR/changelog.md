@@ -5,12 +5,12 @@ lang: fr_FR
 pluginId: arlo
 ---
 
-# Beta
+# Stable
+
+## 2022-10-06
 
 - Amélioration de l'intégration de la Arlo Floodlight: gestion de plus de modèle, ajout de la gestion personnalisée des événements si pas de base (voir doc)
 - Fix mineure sur le widget caméra pour Jeedom v4 et suppression de la compatibilité avec Jeedom v3; la version minimum requise de Jeedom est maintenant la 4.0
-
-# Stable
 
 ## 2022-08-17
 

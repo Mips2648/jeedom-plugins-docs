@@ -5,49 +5,55 @@ lang: fr_FR
 pluginId: logmanager
 ---
 
-# 2022-07-15
+# Beta
+
+- Mise à jour de la présentation des commandes pour Jeedom v4.3
+
+# Stable
+
+## 2022-07-15
 
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
 
-# 2021-03-10
+## 2021-03-10
 
 - Ajout du choix du nombre de lignes à afficher sur la tuile dans la configuration de l'équipement
 - Nouvelle présentation de la liste des objets
 - Amélioration de la mise en page de la configuration de l'équipement et des commandes
 
-# 2020-09-21
+## 2020-09-21
 
 - Autorise les majuscules dans le nom de l'équipement (et donc du nom de fichier)
 
-# 2020-08-24
+## 2020-08-24
 
 - Nettoyage de la mise en page pour la V4
 
-# 2020-08-15
+## 2020-08-15
 
 - Suppression du fichier log correspondant lors de la suppression de l'équipement
 
-# 2020-07-04
+## 2020-07-04
 
 - Ajout des commandes **Vider** et **Supprimer**
 
-# 2020-05-03
+## 2020-05-03
 
 - Ajout du bouton "Dupliquer" un équipement
 
-# 2020-03-30
+## 2020-03-30
 
 - Déplacement de la documentation
 
-# 2020-01-22
+## 2020-01-22
 
 - Ajout d'une option pour afficher le contenu du log sur la tuile
 
-# 2019-10-04
+## 2019-10-04
 
 - Ajout de la génération d'un événement lors de l'écriture d'un log à utiliser comme déclencheur de scénario
 
-# 2019-09-05
+## 2019-09-05
 
 - Première version
 

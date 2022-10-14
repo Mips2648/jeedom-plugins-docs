@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# Beta
+
+- Mise à jour de la présentation des commandes pour Jeedom v4.3
+
 # Stable
 
 ## 2022-10-06

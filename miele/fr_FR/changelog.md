@@ -5,21 +5,27 @@ lang: fr_FR
 pluginId: miele
 ---
 
-# 2022-03-10
+# Beta
+
+- Mise à jour de la présentation des commandes pour Jeedom v4.3
+
+# Stable
+
+## 2022-03-10
 
 - Fix d'un crash  lors de la synchronisation des informations de consommation suite à un changement de comportement de l'API Miele@Home
 
-# 2022-02-22
+## 2022-02-22
 
 - Ajout des commandes **Consommation eau** et **Consommation énergie** sur les appareils supportant cette fonctionnalité (voir documentation), il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir ces nouvelles commandes
 
-# 2021-12-20
+## 2021-12-20
 
 - Ajout des commandes **Définir niveau de ventilation** et **Définir couleurs** sur les Hôtes
 - Ajout des commandes **Allumer** et **Eteindre** sur les appareils supportant cette fonctionnalité (il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir ces nouvelles commandes)
 - Fix dû à un changement de comportement de l'API Miele@Home
 
-# 2021-11-13
+## 2021-11-13
 
 - Mise à jour de l'API Miele@Home
 - Ajout d'une commande info **Nom du programme** qui retournera le nom du programme en cours sur les appareils supportant cette fonctionnalité (il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir cette nouvelle commande)
@@ -28,27 +34,27 @@ pluginId: miele
 - Amélioration de la mise en page de la configuration de l'équipement et des commandes
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
 
-# 2020-08-24
+## 2020-08-24
 
 - Nettoyage de la mise en page pour la V4
 
-# 2020-05-04
+## 2020-05-04
 
 - Fix un problème de dépendances sur Jeedom Smart
 
-# 2020-04-13
+## 2020-04-13
 
 - Ajout du statut de l'authentification dans la configuration du plugin ainsi que la gestion de la connexion
 - Ajout du résumé de santé dans la page santé de Jeedom
 - Ajout d'une page santé spécifique listant un aperçu de tous les équipements
 
-# 2020-04-06
+## 2020-04-06
 
 - Ajout des icônes par défaut sur certaines commandes actions
 - Affichage des unités dans l'écran des commandes
 - Ajout possibilité d'inverser les valeurs binaires
 
-# 2020-04-03
+## 2020-04-03
 
 Première version
 

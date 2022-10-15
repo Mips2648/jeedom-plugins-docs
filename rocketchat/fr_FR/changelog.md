@@ -5,9 +5,13 @@ lang: fr_FR
 pluginId: rocketchat
 ---
 
+# Beta
+
+- Mise à jour de la présentation des commandes pour Jeedom v4.3
+
 # Stable
 
-# 2022-09-19
+## 2022-09-19
 
 - Ajout d'un option pour envoyer des fichiers locaux directement depuis un scénario, voir documentation.
 

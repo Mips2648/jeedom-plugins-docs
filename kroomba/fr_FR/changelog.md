@@ -7,6 +7,10 @@ pluginId: kroomba
 
 # Beta
 
+## 2022-10-15
+
+- Mise à jour de la présentation des commandes pour Jeedom v4.3
+
 ## 2022-07-19
 
 - Ajout de la commande **Vidange** (ne fonctionne que sur les modèles compatibles)

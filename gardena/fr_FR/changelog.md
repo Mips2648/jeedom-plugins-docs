@@ -66,7 +66,7 @@ n/a
 
 ## 2021-03-14
 
-- Fix la version d'une dépendance dû à un bug dans la dernière version de celle-ci (voir <https://github.com/websocket-client/websocket-client/commit/3112b7d75b1e5d65cb8fdfca7801606649044ed1##commitcomment-48226116>). Si vous avez installé le plugin et ses dépendances après le 3 mars, vous devez probablement relancer l'installation des dépendances; si tout fonctionne bien pour vous cela n'est pas nécessaire.
+- Fix la version d'une dépendance dû à un bug dans la dernière version de celle-ci (voir <https://github.com/websocket-client/websocket-client/commit/3112b7d75b1e5d65cb8fdfca7801606649044ed1#commitcomment-48226116>). Si vous avez installé le plugin et ses dépendances après le 3 mars, vous devez probablement relancer l'installation des dépendances; si tout fonctionne bien pour vous cela n'est pas nécessaire.
 - Nouvelle présentation de la liste des objets
 - Amélioration de la mise en page de la configuration de l'équipement et des commandes
 

@@ -5,16 +5,26 @@ lang: en_US
 pluginId: proxmox
 ---
 
-# 2022-07-15
+# Beta
+
+n/a
+
+# Stable
+
+## 2022-10-17
+
+- Update of the presentation of commands for Jeedom v4.3
+
+## 2022-07-15
 
 - Update of internal libraries
 
-# 2022-02-11
+## 2022-02-11
 
 - Improvement: possibility to configure a list of IPs, separated by a comma, in the plugin config (to different nodes of the same cluster) to ensure resilience
 - Minor layout changes to configuration screens
 
-# 2021-12-27
+## 2021-12-27
 
 - Add an info command **Node** on VM and LXC which returns the node on which the VM is running (useful if you have several nodes in the cluster)
 - Add a **Restart** (reboot) command that will do a clean reboot of VMs, the **Restart immediately** (reset) command still exists.
@@ -31,39 +41,39 @@ pluginId: proxmox
 - Various interface improvements
 - minor bugfixes
 
-# 2020-12-02
+## 2020-12-02
 
 - Added a configuration on the plugin to define the default parent object that will be used when creating a new resource, this will prevent you from having to systematically do it by hand.
 - New presentation of objects list
 - Improved layout of device and commands configuration pages
 
-# 2020-08-25
+## 2020-08-25
 
 - Update of the plugin icon to match the Jeedom standard
 - Add an icon for each type of Proxmox resource for greater clarity
 - During synchronization, the plugin will automatically activate and deactivate Jeedom devices corresponding to Proxmox resources depending on whether they exist or not in order to facilitate management and provide more clarity.
 - Add an accordion menu in the devices page
 
-# 2020-06-09
+## 2020-06-09
 
 - Add support for Zstandard compression mode (zstd) in backup options, requires Proxmox 6.2
 
-# 2020-03-30
+## 2020-03-30
 
 - Move documentations
 - Add **Restart** command on VM
 
-# 2020-02-12
+## 2020-02-12
 
 - Add commands **Start all** and **Shutdown all** on the nodes
 - Add commands **Shutdown the node** and **Reboot the node**
 - Add commands **Suspend** and **Resume** on VMs and LXCs
 
-# 2019-11-23
+## 2019-11-23
 
 - Added a specific health page listing an overview of all Proxmox resources
 
-# 2019-11-16
+## 2019-11-16
 
 - Added a field to enter a description (optional) when taking a snapshot. If you have scenarios using this command please check them.
 - Add **snapshot list** command on VM and LXC
@@ -72,7 +82,7 @@ pluginId: proxmox
 - Fixed: status *paused* is correctly specified on a VM or a container on pause
 - Fix: It is now possible to rename the device in Jeedom with a different name than the one in Proxmox
 
-# 2019-11-12
+## 2019-11-12
 
 - Added configuration information on VMs (agent, processors, memory, network)
 - Added IPv4, IPv6 and MAC address information commands on VMs
@@ -81,22 +91,22 @@ pluginId: proxmox
 - Addition of a command giving swap usage
 - Added a binary command indicating if updates are available on the node
 
-# 2019-11-05
+## 2019-11-05
 
 - Added more information on storage device
 - Added a Backup command for VMs (check documentation for all options)
 
-# 2019-10-28
+## 2019-10-28
 
 - Fix an (non-blocking) error when starting and stopping the plugin
 - Add translation for en_US
 
-# 2019-10-26
+## 2019-10-26
 
 - Added more information on nodes
 - Added a Refresh command on nodes
 
-# 2019-10-22
+## 2019-10-22
 
 - Added support for linux containers (LXC)
 - Added a command to take a snapshot on VM and LXC
@@ -104,7 +114,7 @@ pluginId: proxmox
 - Added a Refresh command on VM and LXC
 - Fixed problem connecting to Proxmox when the certificate is invalid
 
-# 2019-10-21
+## 2019-10-21
 
 First stable release
 

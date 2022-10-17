@@ -26,13 +26,13 @@ In the configuration of the plugin it will be necessary to setup the URL of the 
 http://yourdomain.com:32768
 ```
 
-You can optionally configure a client token, this will allow Jeedom to view and delete messages on the server (otherwise it can only send).
-
 # Device configuration
 
 After creating new device, the usual options are available.
 It will also be needed to setup the token of the application which you will have previously created in Gotify (do not mix with the client token).
 So one Jeedom device matches one Gotify application.
+
+You can optionally configure a client token, this will allow Jeedom to view and delete messages of all apps belonging to the associated client on the server (otherwise it can only send new messages).
 
 It is possible to create several send commands with different priorities (see Gotify documentation on this subject) if your client application manages these.
 

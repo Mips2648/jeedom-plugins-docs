@@ -7,10 +7,14 @@ pluginId: notificationqueue
 
 # Beta
 
-- Dorénavant les messages expirés seront supprimés de la queue au fur et à mesure (et pas uniquement si une condition est vrai).
-- Mise à jour de la présentation des commandes pour Jeedom v4.3
+n/a
 
 # Stable
+
+## 2022-10-17
+
+- Dorénavant les messages expirés seront supprimés de la queue au fur et à mesure (et pas uniquement si une condition est vrai).
+- Mise à jour de la présentation des commandes pour Jeedom v4.3
 
 ## 2020-11-29
 

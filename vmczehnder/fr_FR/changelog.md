@@ -7,9 +7,13 @@ pluginId: vmczehnder
 
 # Beta
 
-- Mise à jour de la présentation des commandes pour Jeedom v4.3
+n/a
 
 # Stable
+
+## 2022-10-17
+
+- Mise à jour de la présentation des commandes pour Jeedom v4.3
 
 ## 2021-02-06
 

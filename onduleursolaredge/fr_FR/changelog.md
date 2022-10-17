@@ -7,12 +7,16 @@ pluginId: onduleursolaredge
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2022-10-17
+
 - Ajout du pourcentage de charge de batterie sur l'équipement "Puissance & Flux"
 - Changement des heures de fonctionnement par défaut (si aucune configuration n'était réalisée): précédemment de 4h00 à 22h00 et à présent de 0h00 à 23h59. Vous pouvez adapter la configuration du plugin si nécessaire
 - Prise en compte des multiples onduleurs dans l'affichage des détails du site
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
-
-# Stable
 
 ## 2021-10-04
 

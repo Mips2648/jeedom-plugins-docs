@@ -5,41 +5,55 @@ lang: en_US
 pluginId: gotify
 ---
 
-# 2022-01-05
+# Beta
+
+n/a
+
+# Stable
+
+## 2022-10-17
+
+- Update of the presentation of commands for Jeedom v4.3
+
+## 2022-09-19
+
+- The client token is now configured on the equipment and no longer in the global configuration of the plugin in order to allow the creation of devices (apps under Gotify) and clients under different Gotify users => check your configuration.
+
+## 2022-01-05
 
 - Add table display mode of the list of device for Jeedom 4.2
 
-# 2020-11-28
+## 2020-11-28
 
 - New presentation of objects list
 - Cleanup of the layout for V4
 
-# 2020-06-16
+## 2020-06-16
 
 - Fix: the message can be empty if a file has been attached
 
-# 2020-05-03
+## 2020-05-03
 
 - Internal optimizations
 - Add "Duplicate" button on device configuration
 
-# 2020-02-12
+## 2020-02-12
 
 - Verification on empty message before sending to Gotify
 
-# 2020-01-19
+## 2020-01-19
 
 - Added the possibility of creating several send commands by device
 - Added a configuration on each command to choose the priority
 - Added a configuration on each command to choose the format
 - Add a command to delete all messages on the server (you must have configured a client token)
 
-# 2019-09-28
+## 2019-09-28
 
 - Added an option for checking the host name of the Gotify certificate
 - Added support for notifications with images
 
-# 2019-08-02
+## 2019-08-02
 
 First version
 

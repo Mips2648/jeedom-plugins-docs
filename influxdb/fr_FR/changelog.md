@@ -7,7 +7,7 @@ pluginId: influxdb
 
 # Beta
 
-- Ajout d'un nouveau mode d'export: *Historique* qui permet d'exporter chaque nuit tous l'historique de la veille
+- Ajout d'un nouveau mode d'export: *Historique* qui permet d'exporter chaque nuit tout l'historique de la veille
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
 - Fix: le cron n'était pas correctement supprimé lors de la désinstallation du plugin
 

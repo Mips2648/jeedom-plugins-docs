@@ -38,6 +38,17 @@ An option exists on the device to deactivate this behavior.
 
 These commands allow you to send a message on the device channel with a notification to the corresponding user, (e.g.: `@Mips This is a test message`).
 
+# Messages commands options
+
+An *Options* field exists on the *messages* commands of the plugin. Currently only one option exists: the possibility of specifying a file accessible locally to send it (for example a capture of camera which would already be on your Jeedom).
+You have to put a config similar to this: `file=/path/to/file description="description of my file"`
+
+Be careful to put quotes if there are spaces in the path or in the description (otherwise not necessary); The description is optional.
+
+> **Tip**
+>
+> This is not necessary when sending a new capture from the camera plugin (for example), for this case you just have to use the appropriate command of the camera plugin in your scenario and to specify the command *message* from *Rocket.Chat* plugin for sending.
+
 # Interactions
 
 For the interactions to work, the plugin must know the user, so the corresponding command must have been created (see above).

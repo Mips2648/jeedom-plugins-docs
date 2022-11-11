@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Fix mineur: évite un double re-démarrage du démon dans certains cas lorsque la connexion socket a été interrompue
 
 # Stable
 

@@ -41,8 +41,9 @@ En plus des paramètres généraux il faudra donc configurer les paramètres sp�
 
 ## Paramètre MQTT
 
-Le topic de cet équipement. Ce sera un sous-topic du topic général du plugin (voir configuration du plugin).
-Chaque registre sera publié dans un sous-topic de ce topic.
+Un seul élément à configuré, le topic de cet équipement.
+
+Ce sera un sous-topic du topic général du plugin (voir configuration du plugin) et chaque registre modbus sera publié dans un sous-topic de ce topic.
 
 Exemple: si vous avez un équipement modbus que l'on va appeler *solar* qui permet d'obtenir la puissance produite que l'on va appeler *power*, l'info sera publiée dans le topic *modbus2mqtt/solar/power*
 
@@ -60,7 +61,7 @@ Vous devez donc spécifier:
 - le topic MQTT de publication de la valeur (donc modbus -> MQTT)
 - option *Publication seulement si changement* permet de ne publier sur MQTT que si la valeur à changée, si décoché la valeur sera publiée lors de chaque lecture
 - option *retain* pour publier avec l'option *retain* ou non
-- éventuellement le topic de lecture: toute info publiée sur ce topic sera écrite sur le registre modbus correspondant (donc MQTT -> modbus)
+- éventuellement le topic d'écriture: toute info publiée sur ce topic sera écrite sur le registre modbus correspondant (donc MQTT -> modbus); typiquement si besoin vous pourrez y mettre `power\set` ou `power_set` par exemple.
 
 ## Création des commandes
 
@@ -69,7 +70,9 @@ Vous pouvez à présent sauver votre équipement; le plugin créera les commande
 Il n'est donc pas nécessaire de configurer un autre équipement MQTT pour obtenir les valeurs cependant vous êtes libre de le faire ou de consommer les topics MQTT depuis un autre appareil, une autre plateforme...
 
 Les commandes sont visibles dans le 3ème onglet et vous y trouverez les options de configurations habituelles.
-Vous devriez vérifier et modifier si besoin le sous-type (numérique ou binaire) pour que cela corresponde à la définition du registre.
+Vous devriez vérifier et modifier si besoin le sous-type des commandes infos (numérique ou binaire) pour que cela corresponde à la définition du registre.
+
+Si vous avez configuré un topic pour pouvoir écrire une valeur dans un registre, une commande action/message correspondante sera également créée, cette commande est utilisable directement partout dans Jeedom également.
 
 # Changelog
 

@@ -41,7 +41,7 @@ En plus des paramètres généraux il faudra donc configurer les paramètres sp�
 
 ## Paramètre MQTT
 
-Un seul élément à configuré, le topic de cet équipement.
+Un seul élément à configurer, le topic de cet équipement.
 
 Ce sera un sous-topic du topic général du plugin (voir configuration du plugin) et chaque registre modbus sera publié dans un sous-topic de ce topic.
 

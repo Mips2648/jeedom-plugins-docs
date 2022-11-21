@@ -7,41 +7,31 @@ pluginId: kroomba
 
 # Beta
 
-## 2022-10-15
+N/A
 
-- Mise à jour de la présentation des commandes pour Jeedom v4.3
+# Stable
 
-## 2022-07-19
+## 2022-11-21
 
-- Ajout de la commande **Vidange** (ne fonctionne que sur les modèles compatibles)
-
-## 2022-07-10
-
-- Ajout des commandes info: **Nombre de tâches annulées**, **Sécurité enfant**
-- Fix MAC adresse sur modèle i7
-
-## 2022-07-09
-
-- Ajout des commandes info: **Nombre de tâches de nettoyage**, **Nombre de tâches réussies**, **Nombre de tâches échouées**, **Nombre de vidages automatiques**, **Nombre de détections de saleté**, **Nombre de blocages**
-
-## 2022-07-05
-
-- Correction page santé
-- Ajout commande info **Erreur**
-- Ajout d'un bouton pour recréer les commandes manquantes selon la configuration (fait automatiquement lors de l'update du plugin)
-- Gestion de tous les états avec widget par défaut (excepté encore *Emptying* et *New Mission*)
-- Fix modal de découverte des robots
-
-## 2022-06-29
+> **Important**
+>
+> Il est nécessaire de relancer l'installation des dépendances après l'installation de cette mise à jour même si elles sont déjà *OK*.
+>
+> Après l'installation de cette nouvelle version, il faudra refaire une découverte de vos robots (voir documentation) et un nouvel équipement sera créé pour chaque robot.
+> Utilisez le nouvel outils présent sur Jeedom v4.3 pour migrer vos commandes ou faites le manuellement ensuite les anciens équipements peuvent être supprimés, il ne serviront plus.
 
 - Reprise du plugin par @Mips et refonte complète du plugin, voir <https://community.jeedom.com/t/nouvelle-version-du-plugin-roomba-cherche-testeurs-volontaires/86743> pour plus de détails
 - Jeedom v4.2 minimum requis
-- Plugin "MQTT Manager" (MQTT2) requis
+- Plugin *MQTT Manager* (MQTT2) requis
 - Implémentation d'un démon pour garder la connexion avec le robot
 - Communication via MQTT entre le démon et Jeedom
 - Découverte et configuration des robots automatiques (accès cloud iRobot requis pendant la configuration)
-
-# Stable
+- Mise à jour de la présentation des commandes pour Jeedom v4.3
+- Ajout d'un bouton pour recréer les commandes manquantes selon la configuration (fait automatiquement lors de l'update du plugin)
+- Ajout de la commande **Vidange** (ne fonctionne que sur les modèles compatibles)
+- Ajout de la commande info **Réservoir** (ne fonctionne que sur les modèles laveurs compatibles)
+- Ajout des commandes info: **Nombre de tâches de nettoyage**, **Nombre de tâches réussies**, **Nombre de tâches échouées**, **Nombre de vidages automatiques**, **Nombre de détections de saleté**, **Nombre de blocages**, **Nombre de tâches annulées**
+- Ajout des commandes info **Erreur** et **Sécurité enfant**
 
 ## 2020-05-24 by @vedrine
 

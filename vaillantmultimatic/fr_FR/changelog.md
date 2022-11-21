@@ -11,6 +11,8 @@ n/a
 
 # Stable
 
+## 2022-11-21
+
 - Fix problème de connexion du démon au cloud Vaillant
 
 ## 2022-10-17

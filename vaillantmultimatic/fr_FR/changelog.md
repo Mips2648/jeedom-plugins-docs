@@ -11,6 +11,8 @@ n/a
 
 # Stable
 
+- Fix problème de connexion du démon au cloud Vaillant
+
 ## 2022-10-17
 
 - Mise à jour de la présentation des commandes pour Jeedom v4.3

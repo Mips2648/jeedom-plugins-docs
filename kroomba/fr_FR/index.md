@@ -52,15 +52,15 @@ Ensuite attendez cela prend entre 15s et 30s, vous verrez des notifications à l
 
 # Liste des états connus et correspondance sur le widget
 
-| Valeur commande *Etat*                             | Signification        |
-|----------------------------------------------------|----------------------|
-| **Charging** et **Recharging**                     | **En charge**        |
-| **Docking - End Mission** et **Mission Completed** | **Tâche achevée**    |
-| **Docking** et **User Docking**                    | **Retour à la base** |
-| **Paused**                                         | **Mis en pause**     |
-| **Running**                                        | **Nettoyage**        |
-| **Stopped**                                        | **Arrêté**           |
-| **Stuck** et **Base Unplugged**                    | **Bloqué**           |
+| Valeur commande *Etat*                         | Signification      |
+|------------------------------------------------|--------------------|
+| *Charging* et *Recharging*                     | *En charge*        |
+| *Docking - End Mission* et *Mission Completed* | *Tâche achevée*    |
+| *Docking* et *User Docking*                    | *Retour à la base* |
+| *Paused*                                       | *Mis en pause*     |
+| *Running*                                      | *Nettoyage*        |
+| *Stopped*                                      | *Arrêté*           |
+| *Stuck* et *Base Unplugged*                    | *Bloqué*           |
 
 > **Tip**
 >

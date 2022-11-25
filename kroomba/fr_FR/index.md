@@ -50,6 +50,18 @@ Depuis la page de configuration du plugin cliquer sur le bouton *Découverte* et
 
 Ensuite attendez cela prend entre 15s et 30s, vous verrez des notifications à l'écran et le démon redémarrera tout seul à la fin du processus si cela a réussi. L’équipement sera ensuite créé (vous pouvez surveiller l’avancement via le log si nécessaire).
 
+# Liste des états connus et correspondance sur le widget
+
+| Valeur commande *Etat*                             | Signification        |
+|----------------------------------------------------|----------------------|
+| **Charging** et **Recharging**                     | **En charge**        |
+| **Docking - End Mission** et **Mission Completed** | **Tâche achevée**    |
+| **Docking** et **User Docking**                    | **Retour à la base** |
+| **Paused**                                         | **Mis en pause**     |
+| **Running**                                        | **Nettoyage**        |
+| **Stopped**                                        | **Arrêté**           |
+| **Stuck** et **Base Unplugged**                    | **Bloqué**           |
+
 > **Tip**
 >
 > Lorsque la procédure de découverte est terminée, vous pouvez à nouveau utiliser votre application mobile iRobot si nécessaire.

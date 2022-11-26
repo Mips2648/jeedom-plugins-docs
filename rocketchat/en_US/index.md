@@ -65,4 +65,12 @@ This is not the case in direct private messages between you and the bot.
 
 # Support
 
-If despite this documentation and after having read the topics related to the plugin on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}) you do not find an answer to your question, do not hesitate to create a new topic with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site. forum}}/tags/plugin-{{page.pluginId}})).
+
+At a minimum, you will need to provide:
+
+- a screenshot of the Jeedom health page
+- all available plugin logs
+- depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...

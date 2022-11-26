@@ -7,6 +7,7 @@ pluginId: influxdb
 
 # Beta
 
+- Add a new export mode: *History* which allows you to export all the history of the day before each night
 - Update of the presentation of commands for Jeedom v4.3
 - Fix: cron was not properly deleted when uninstalling the plugin
 

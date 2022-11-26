@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2022-11-11
+
+- Minor Fix for Audio Doorbells
+
 ## 2022-10-17
 
 - Update of the presentation of commands for Jeedom v4.3
@@ -18,7 +22,7 @@ n/a
 ## 2022-10-06
 
 - Improved Arlo Floodlight integration: more model handling, added custom event handling if no base (see doc)
-- Minor fix on the camera widget for Jeedom v4 and removal of compatibility with Jeedom v3; the minimum required version of Jeedom is now 4.0
+- Minor fix on camera widget for Jeedom v4 and removal of compatibility with Jeedom v3; the minimum required version of Jeedom is now 4.0
 
 ## 2022-08-17
 

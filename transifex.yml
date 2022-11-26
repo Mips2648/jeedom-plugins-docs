@@ -51,6 +51,12 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
+    source_file_dir: kroomba/fr_FR/
+    translation_files_expression: 'kroomba/<lang>/'
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
     source_file_dir: logmanager/fr_FR/
     translation_files_expression: 'logmanager/<lang>/'
   - filter_type: dir
@@ -65,12 +71,6 @@ filters:
     source_language: fr
     source_file_dir: modbus2mqtt/fr_FR/
     translation_files_expression: 'modbus2mqtt/<lang>/'
-  - filter_type: dir
-    file_format: GITHUBMARKDOWN
-    source_file_extension: md
-    source_language: fr
-    source_file_dir: modbustcp/fr_FR/
-    translation_files_expression: 'modbustcp/<lang>/'
   - filter_type: dir
     file_format: GITHUBMARKDOWN
     source_file_extension: md
@@ -125,3 +125,9 @@ filters:
     source_language: fr
     source_file_dir: vmczehnder/fr_FR/
     translation_files_expression: 'vmczehnder/<lang>/'
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
+    source_file_dir: worxLandroidS/fr_FR/
+    translation_files_expression: 'worxLandroidS/<lang>/'

@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Minor fix: Avoid double restart of the daemon in some cases when socket connection was broken
 
 # Stable
 

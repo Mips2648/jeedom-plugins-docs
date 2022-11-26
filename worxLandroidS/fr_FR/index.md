@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documentation worxLandroidS
+title: Documentation WorxLandroidS
 lang: fr_FR
 pluginId: worxLandroidS
 ---

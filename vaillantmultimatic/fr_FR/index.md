@@ -126,8 +126,8 @@ Les équipements _Pièce_ disposent des commandes suivantes:
 - **Humidité** indique l'humidité actuelle de la pièce si un thermostat s'y trouve sinon aucune info ne remontera sur cette commande
 - **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcer l'application de cette consigne indépendamment du programme en cours. Ce mode sera actif pendant la durée configurée dans la commande **Durée mode forcé** avant de revenir au programme précédent.
 - **Annuler température forcée** commande action permettant d'annuler le mode forcé et de revenir au programme précédent
-- **Durée mode forcé** contient la durée pendant laquelle le mode forcé sera actif *lors de la prochaine activation*
-- **Définir durée mode forcé** permet de modifier la durée pendant laquelle le mode forcé sera actif *lors de la prochaine activation*. Modifier cette durée n'a pas d'influence sur la durée restante si la température forcée était déjà activée, pour cela il faut à nouveau utiliser la commande **Activer température forcée**
+- **Durée mode forcé** contient la durée pendant laquelle le mode forcé sera actif _lors de la prochaine activation_
+- **Définir durée mode forcé** permet de modifier la durée pendant laquelle le mode forcé sera actif _lors de la prochaine activation_. Modifier cette durée n'a pas d'influence sur la durée restante si la température forcée était déjà activée, pour cela il faut à nouveau utiliser la commande **Activer température forcée**
 - **Sécurité enfant** commande info binaire indiquant si la sécurité enfant est activée sur la vanne ou le thermostat de la pièce
 - **Fenêtre ouverte** commande info binaire indiquant si la vanne ou le thermostat de la pièce a détecté une fenêtre ouverte (par une chute brutale de la température)
 
@@ -149,4 +149,12 @@ Le plugin remontera l'information _batterie_ dans l'équipement pour que le core
 
 # Support
 
-Si malgré cette documentation et après voir lu les sujets en rapport avec le plugin sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}) vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+Si vous avez un problème, commencez par lire les derniers sujets en rapport avec le plugin sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+
+Il faudra au minimum fournir:
+
+- une capture d'écran de la page santé Jeedom
+- tous les logs disponibles du plugin
+- selon les cas, une capture d'écran de l'erreur rencontrée, une capture d'écran de la configuration posant problème...

@@ -87,4 +87,12 @@ Vous trouverez ci-dessous un aperçu des commandes les plus importantes disponib
 
 # Support
 
-Si malgré cette documentation et après voir lu les sujets en rapport avec le plugin sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}) vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+Si vous avez un problème, commencez par lire les derniers sujets en rapport avec le plugin sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+
+Il faudra au minimum fournir:
+
+- une capture d'écran de la page santé Jeedom
+- tous les logs disponibles du plugin
+- selon les cas, une capture d'écran de l'erreur rencontrée, une capture d'écran de la configuration posant problème...

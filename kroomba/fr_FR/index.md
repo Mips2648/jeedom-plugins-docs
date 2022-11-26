@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documentation Roomba
+title: Documentation iRobot
 lang: fr_FR
 pluginId: kroomba
 ---

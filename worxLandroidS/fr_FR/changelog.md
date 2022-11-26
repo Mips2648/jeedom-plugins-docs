@@ -1,24 +1,37 @@
-# Changelog
+---
+layout: default
+title: Changelog WorxLandroidS
+lang: fr_FR
+pluginId: worxLandroidS
+---
 
-En cas d'absence de note dans ce chapitre, les mises à jour ne concernent que la doc, les traductions et des corrections mineures
+# Beta
 
-# 21/11/2020
+N/A
+
+# Stable
+
+## 21/11/2020
+
 - Modification de la commande pour la coupe de la bordure (compatibilité des modèles à vérifier)
 
-# 04/08/2020
+## 04/08/2020
+
 - correction affichage coordonnées GPS
 
-# 08/06/2020
+## 08/06/2020
+
 - correction de l'image landroid rouge
 - après les mises à jour vous devez éventuellement enregistrer l'équipement et peut-être  réinitialiser les données du cloud (configuration du plugin). erreur execcmd / cmd=>getId().
 - attention la tondeuse doit être connectée, sinon le plugin ne pourra pas se mettre correctement à jour
 
+## 06/06/2020
 
-# 06/06/2020
 - ajout onglet gestion des zones de tonte. (distance de départ + % répartition selon chaque zone)
 - possibilité de masquer les infos inclinaison+direction
 
-# 29/05/2020
+## 29/05/2020
+
 - ajout information en cas de non communication avec la tondeuse + 24 hr (dissocier et associer à nouveau sur le compte worx)
 - modif saisie des temps.
 - ajout historique bouton santé du plugin (reinitialisez les données cloud pour activer la modif)
@@ -26,46 +39,55 @@ En cas d'absence de note dans ce chapitre, les mises à jour ne concernent que l
 - tentative de suppression erreur 500 si la communication n'est pas possible avec la tondeuse
 
 ## 23/05/2020
+
 - correction du chemin des images
 - modification de backgound color pour V3
 
 ## 10/05/2020
+
 - Changement du template.  (reprise des images d'Antoinekl du widget worklandroid + travail de Tektek pour les animations, merci à eux)
 - correction pour masquer ou afficher certaines zones (planning_starttime permet de masquer ou afficher le jour dans le planning)
 - Edition possible des horaires de tonte depuis le widget
 - ajout de la gestion de durée de vie des lames (renseigner la durée de vie estimée dans l'équipement et en enregistrer, puis réinitialiser la durée sur le widget en cliquant sur les lames sous l'indicateur batterie)
 
 ## 12/03/2020
+
 - correction pour l'initialisation de l'équipement et 1er refresh des données (+aide de Mips)
 
 ## 27/06/2019
+
 - correction date de fin de garantie (à la création de l'équipement)
 - suppression code inutile
 - correction bug lié à virtualInfo
 
 ## 08/05/2019
+
 - Ajout d'une info (virtualInfo) pour concatener plusieurs infos du plugin séparé par des virgules pour l'utilisation du widget worklandroid. Le widget est dispo sur le market des widgets. Recherche équipement pour récupérer l'info d'un autre équipement.
 - remplacement des infos planning/xxxx/xxx par planning_xxxxx_xxxx suite à un changement du core jeedom
 
 ## 28/04/2019
+
 - Diverses corrections
 - Ajout de la fonction set_schedule pour modifier le planning de tonte d'un jour donné. Par défaut l'action n'est pas visible. Le but étant de faire de la planification à l'aide d'un scénario mais il est possible de rendre visible sur le widget si besoin.
 - Format attendu: numéro jour;heure départ;durée en minutes;bordure
 Exemples :
-  * 1;10:00;120;1 => lundi, démarrage à 10:00 pendant 120 minutes, coupe la bordure
-  * 0;08:00;300;0 => dimanche, démarrage à 08:00 pendant 300 minutes, ne coupe pas la bordure
-
+  - 1;10:00;120;1 => lundi, démarrage à 10:00 pendant 120 minutes, coupe la bordure
+  - 0;08:00;300;0 => dimanche, démarrage à 08:00 pendant 300 minutes, ne coupe pas la bordure
 
 ## 17/04/2019
+
 - Nouvelle méthode d'authentification
 
 ## 03/04/2019
+
 - Ajout coordonnées GPS si disponibles
 
 ## 29/03/2019
+
 - Correction sur la fréquence de rafraîchissement des données
 
 ## 07/11/2018
+
 - La nouvelle version du plugin nécessite la recréation des équipements, vous devez donc supprimer les équipements existants
 - Gestion multi-tondeuses
 - Détection automatique du type de tondeuse
@@ -112,10 +134,12 @@ Exemples :
 ## 09/06/2018
 
 Ajout de nouvelles actions:
+
 - Ajout des délais de tonte après une pluie
 - Ajout des actions off_today / on_today pour faciliter la gestion de l'activité du jour par scénarios (pour les jours fériés par exemple)
 
 Autres modifications:
+
 - Widget désormais modifiable (couleur/transparence...)
 - Possibilité d'enlever certaines infos: errorCode, statusCode, totalDistance, batteryChargeCycle, rainDelay
 - Affichage de la prochaine zone de tonte. C'est la zone de départ de la prochaine tonte ou de celle en cours.
@@ -124,6 +148,7 @@ Autres modifications:
 ## 06/06/2018
 
 Modification des fréquences de mise à jour des infos:
+
 - Toutes les 2 minutes pendant la tonte
 - Toutes les 30 minutes en dehors des periodes de tonte
 - sur demande ou envoi de mise à jour du planning de fonctionnement.
@@ -140,3 +165,7 @@ Modification des fréquences de mise à jour des infos:
 ## Mai 2018
 
 Création du plugin
+
+# Documentation
+
+[Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

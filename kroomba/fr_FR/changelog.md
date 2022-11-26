@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog Design Image
+title: Changelog iRobot
 lang: fr_FR
 pluginId: kroomba
 ---

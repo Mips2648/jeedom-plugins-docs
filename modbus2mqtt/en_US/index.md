@@ -41,8 +41,9 @@ On top of the general parameters, it will therefore be necessary to configure th
 
 ## MQTT settings
 
-The topic of this device. It will be a sub-topic of the general topic of the plugin (see plugin configuration).
-Each register will be published in a sub-topic of this topic.
+Only one element to configure, the topic of this device.
+
+It will be a sub-topic of the general plugin topic (see plugin configuration) and each modbus register will be published in a sub-topic of this topic.
 
 Example: if you have modbus device that we will call *solar* which allows you to obtain the power produced that we will call *power*, the information will be published in the topic *modbus2mqtt/solar/power*
 
@@ -60,7 +61,7 @@ So you need to specify:
 - the MQTT topic for publishing the value (so modbus -> MQTT)
 - option *Publish only if change* allows to publish on MQTT only if the value has changed, if unchecked the value will be published after each read operation
 - *retain* option to publish with *retain* option or not
-- possibly the reading topic: any info published on this topic will be written on the corresponding modbus register (so MQTT -> modbus)
+- possibly the writing topic: any info published on this topic will be written on the corresponding modbus register (thus MQTT -> modbus); typically if necessary you can put `power\set` or `power_set` for example.
 
 ## Commands creation
 
@@ -69,7 +70,9 @@ You can now save your device; the plugin will create the commands corresponding 
 It is therefore not necessary to configure another MQTT device to obtain the values, however you are free to do so or to consume the MQTT topics from another device, another platform...
 
 The commands are visible in the 3rd tab and you will find the usual configuration options there.
-You should check and if necessary change the subtype (numeric or binary) to match the modbus register definition.
+You should check and if necessary change the subtype of the info commands (numeric or binary) to match the registry definition.
+
+If you have configured a topic to be able to write a value in a register, a corresponding action/message command will also be created, this command can be used directly everywhere in Jeedom as well.
 
 # Changelog
 
@@ -77,4 +80,12 @@ You should check and if necessary change the subtype (numeric or binary) to matc
 
 # Support
 
-If despite this documentation and after having read the topics related to the plugin on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}) you do not find an answer to your question, do not hesitate to create a new topic with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site. forum}}/tags/plugin-{{page.pluginId}})).
+
+At a minimum, you will need to provide:
+
+- a screenshot of the Jeedom health page
+- all available plugin logs
+- depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...

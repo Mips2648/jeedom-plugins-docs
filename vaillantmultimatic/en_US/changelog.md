@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2022-11-21
+
+- Fix Vaillant cloud connection problem
+
 ## 2022-10-17
 
 - Update of the presentation of commands for Jeedom v4.3

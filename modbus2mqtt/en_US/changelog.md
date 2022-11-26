@@ -5,7 +5,7 @@ lang: en_US
 pluginId: modbus2mqtt
 ---
 
-# 2022-08-xx
+# 2022-11-11
 
 - First version
 

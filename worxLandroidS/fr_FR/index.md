@@ -1,10 +1,19 @@
-# Robots tondeuses Worx Landroid
+---
+layout: default
+title: Documentation worxLandroidS
+lang: fr_FR
+pluginId: worxLandroidS
+---
 
-## Présentation
+# Description
 
 Ce plugin permet de se connecter aux tondeuses worx Landroid modèles WIFI
 
-### Configuration du plugin
+# Installation
+
+Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
+
+# Configuration du plugin
 
 La connexion vers la tondeuse se fait à partir d'un serveur cloud en utilisant le compte utilisé lors de l'enregistrement de la tondeuse.
 
@@ -18,7 +27,7 @@ En cas du défaillance il se peut que le Daemon soit à l'arrêt et vous pouvez 
 
 En cas d'arrêt prolongé, la meilleure solution est de désactiver le plugin.
 
-### utilisation
+# Utilisation
 
 Le nom par défaut = Nom de la tondeuse sur l'application mobile
 
@@ -181,6 +190,18 @@ Connexion au broker Mosquitto en fonction des liens et paramètres récupérés 
 La clé publique se trouve à ce lien:
 <https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem>
 
-## Changelog
+# Changelog
 
-[Voir la page dédiée](changelog.md)
+[Voir le changelog](./changelog)
+
+# Support
+
+Si vous avez un problème, commencez par lire les derniers sujets en rapport avec le plugin sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+
+Il faudra au minimum fournir:
+
+- une capture d'écran de la page santé Jeedom
+- tous les logs disponibles du plugin
+- selon les cas, une capture d'écran de l'erreur rencontrée, une capture d'écran de la configuration posant problème...

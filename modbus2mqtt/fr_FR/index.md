@@ -12,7 +12,7 @@ Plugin permettant de faire passerelle entre du modbus TCP/IP et MQTT.
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
-Ce plugin nécessite le plugin *MQTT Manager (MQTT2)* pour fonctionner. Pour l'instant et tant que le plugin *MQTT Manager (MQTT2)* sera en beta, il est nécessaire d'installer celui-ci manuellement.
+Ce plugin nécessite le plugin *MQTT Manager (MQTT2)* pour fonctionner.
 
 # Configuration du plugin
 

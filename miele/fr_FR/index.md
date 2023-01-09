@@ -15,6 +15,11 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 Vous devez avoir un compte utilisateur Miele avec au moins un appareil compatible Miele@Home lié et enfin <a href="https://www.miele.com/f/com/en/register_api.aspx" target="_blank">activer l'accès à l'API</a>
 
+> **Important**
+>
+> Il semble que pour l'instant l'activation automatique soit désactivée par Miele (et je n'ai aucune idée si cela va rester ainsi ou pas).
+> Comme indiqué sur <a href="https://www.miele.com/developer/getinvolved.html" target="_blank">cette page</a>, il faut envoyer un mail à developer@miele.com et leur expliquer que vous avez besoin d'une clé api pour un projet personnel / DIY pour connecter votre équipement Miele à votre domotique sous Jeedom.
+
 # Configuration du plugin
 
 Dans la configuration du plugin, il faudra renseigner le ClientId et le Client Secret reçus permettant l'accès à l’API et sauvegarder.

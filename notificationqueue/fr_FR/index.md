@@ -68,7 +68,7 @@ Vous pouvez aussi choisir le comportement lorsqu'une notification avec le même 
 
 ## Délai de non-répétition
 
-Cela permet de supprimer la notification et donc de ne pas ajouter l'ajouter à la file; elle ne sera donc pas envoyée si le même message a déjà été envoyé durant les X dernières minutes.
+Cela permet de supprimer la notification et donc de ne pas l'ajouter à la file; elle ne sera donc pas envoyée si le même message a déjà été envoyé durant les X dernières minutes.
 
 # Quelques principes
 

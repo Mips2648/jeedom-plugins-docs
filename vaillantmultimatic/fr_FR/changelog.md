@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2023-01-25
+
+- Mise à jour de librairies internes
+
 ## 2022-11-21
 
 - Fix problème de connexion du démon au cloud Vaillant

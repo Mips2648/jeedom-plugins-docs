@@ -92,7 +92,7 @@ Plugin permettant de piloter un aspirateur robot de la marque iRobot.
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/linksys_icon.png">]({{site.baseurl}}/linksys/{{page.lang}})
 
-Ce plugin permet de se connecter aux tondeuses Worx Landroid modèles WIFI
+Plugin permettant de contrôler certains aspects de vos routeurs Linksys compatibles.
 
 - [Documentation]({{site.baseurl}}/linksys/{{page.lang}})
 - [Changelog]({{site.baseurl}}/linksys/{{page.lang}}/changelog)
@@ -235,7 +235,7 @@ Plugin permettant d'interfacer une VMC de la marque Zehnder - aussi connu sous S
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/worxLandroidS_icon.png">]({{site.baseurl}}/worxLandroidS/{{page.lang}})
 
-Ce plugin permet de se connecter aux tondeuses Worx Landroid modèles WIFI
+Ce plugin permet de se connecter aux tondeuses Worx Landroid modèles Wifi.
 
 - [Documentation]({{site.baseurl}}/worxLandroidS/{{page.lang}})
 - [Changelog]({{site.baseurl}}/worxLandroidS/{{page.lang}}/changelog)

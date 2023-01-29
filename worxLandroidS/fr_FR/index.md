@@ -7,7 +7,7 @@ pluginId: worxLandroidS
 
 # Description
 
-Ce plugin permet de se connecter aux tondeuses Worx Landroid modèles WIFI
+Ce plugin permet de se connecter aux tondeuses Worx Landroid modèles Wifi.
 
 # Installation
 

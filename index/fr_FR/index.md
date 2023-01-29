@@ -78,6 +78,26 @@ Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilemen
 - [Changelog]({{site.baseurl}}/influxdb/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3935" target="_blank">Market</a>
 
+# iRobot
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/kroomba_icon.png">]({{site.baseurl}}/kroomba/{{page.lang}})
+
+Plugin permettant de piloter un aspirateur robot de la marque iRobot.
+
+- [Documentation]({{site.baseurl}}/kroomba/{{page.lang}})
+- [Changelog]({{site.baseurl}}/kroomba/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=2776" target="_blank">Market</a>
+
+# Linksys
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/linksys_icon.png">]({{site.baseurl}}/linksys/{{page.lang}})
+
+Ce plugin permet de se connecter aux tondeuses Worx Landroid modèles WIFI
+
+- [Documentation]({{site.baseurl}}/linksys/{{page.lang}})
+- [Changelog]({{site.baseurl}}/linksys/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4090" target="_blank">Market</a>
+
 # Log Manager
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/logmanager_icon.png">]({{site.baseurl}}/logmanager/{{page.lang}})
@@ -110,16 +130,6 @@ Plugin permettant de faire passerelle entre du modbus TCP/IP et MQTT.
 - [Changelog]({{site.baseurl}}/modbus2mqtt/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=4309" target="_blank">Market</a>
 
-# ModBus TCP Server
-
-[<img width="77" src="{{site.market}}/filestore/market/plugin/images/modbustcp_icon.png">]({{site.baseurl}}/modbustcp/{{page.lang}})
-
-Plugin transformant votre Jeedom en seveur modbus TCP
-
-- [Documentation]({{site.baseurl}}/modbustcp/{{page.lang}})
-- [Changelog]({{site.baseurl}}/modbustcp/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=4320" target="_blank">Market</a>
-
 # My Audi
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/myaudi_icon.png">]({{site.baseurl}}/myaudi/{{page.lang}})
@@ -139,16 +149,6 @@ Plugin permettant de créer des commandes de notifications (commande de type act
 - [Documentation]({{site.baseurl}}/notificationqueue/{{page.lang}})
 - [Changelog]({{site.baseurl}}/notificationqueue/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3823" target="_blank">Market</a>
-
-# Roomba
-
-[<img width="77" src="{{site.market}}/filestore/market/plugin/images/kroomba_icon.png">]({{site.baseurl}}/kroomba/{{page.lang}})
-
-Plugin permettant de piloter un aspirateur robot de la marque iRobot.
-
-- [Documentation]({{site.baseurl}}/kroomba/{{page.lang}})
-- [Changelog]({{site.baseurl}}/kroomba/{{page.lang}}/changelog)
-- <a href="{{site.market}}/index.php?v=d&plugin_id=2776" target="_blank">Market</a>
 
 # Solaredge
 
@@ -230,3 +230,13 @@ Plugin permettant d'interfacer une VMC de la marque Zehnder - aussi connu sous S
 - [Documentation]({{site.baseurl}}/vmczehnder/{{page.lang}})
 - [Changelog]({{site.baseurl}}/vmczehnder/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3605" target="_blank">Market</a>
+
+# WorxLandroidS
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/worxLandroidS_icon.png">]({{site.baseurl}}/worxLandroidS/{{page.lang}})
+
+Ce plugin permet de se connecter aux tondeuses Worx Landroid modèles WIFI
+
+- [Documentation]({{site.baseurl}}/worxLandroidS/{{page.lang}})
+- [Changelog]({{site.baseurl}}/worxLandroidS/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=3396" target="_blank">Market</a>

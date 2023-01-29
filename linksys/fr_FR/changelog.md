@@ -5,23 +5,32 @@ lang: fr_FR
 pluginId: linksys
 ---
 
-# 07/02/2022
+# Beta
+
+# 2023-01-29
+
+- Reprise du plugin par @Mips
+- Mise à jour de la présentation des commandes pour Jeedom v4.3
+
+# Stable
+
+## 2022-02-07 par @hugoks3
 
 - Compatibilité 4.2
 
-# 19/02/2021
+## 2021-02-19 par @hugoks3
 
 - Ajout du contrôle des LEDs
 - Ajout du statut WAN
 - Ajout du contrôle de l'upgrade firmware
 
-# 03/02/2021
+## 2021-02-03 par @hugoks3
 
-- Première version publique (stable)
+- Première version stable
 
-# 22/11/2020
+## 2020-11-22 par @hugoks3
 
-- Première version publique (beta)
+- Première version beta
 
 # Documentation
 

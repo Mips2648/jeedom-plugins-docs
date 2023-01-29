@@ -7,8 +7,6 @@ pluginId: linksys
 
 # Beta
 
-# 2023-01-29
-
 - Reprise du plugin par @Mips
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
 

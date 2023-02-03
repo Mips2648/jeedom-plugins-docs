@@ -15,6 +15,11 @@ It is possible to get appliances information, to monitor them and execute some a
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 You must have a Miele account with at least one appliance compatible with Miele@Home linked to it and eventually <a href="https://www.miele.com/f/com/en/register_api.aspx" target="_blank">activate your access to the API</a>
 
+> **Important**
+>
+> It seems that for now the automatic activation is disabled by Miele (and I have no idea if it will stay that way or not).
+> As indicated on <a href="https://www.miele.com/developer/getinvolved.html" target="_blank">this page</a>, you must send an email to developer@miele.com and explain to them that you need an api key for a personal / DIY project to connect your Miele equipment to your home automation under Jeedom.
+
 # Plugin configuration
 
 In the configuration of the plugin, you will need to fill in the ClientId and the Client Secret received allowing access to the API and then save.
@@ -152,7 +157,7 @@ The action commands below will be present on the device if the action is support
 
 If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site. forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

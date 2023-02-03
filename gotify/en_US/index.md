@@ -26,9 +26,10 @@ In the configuration of the plugin it will be necessary to setup the URL of the 
 http://yourdomain.com:32768
 ```
 
-# Device configuration
+# Devices configuration
 
 After creating new device, the usual options are available.
+
 It will also be needed to setup the token of the application which you will have previously created in Gotify (do not mix with the client token).
 So one Jeedom device matches one Gotify application.
 
@@ -44,7 +45,7 @@ It is possible to create several send commands with different priorities (see Go
 
 If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site. forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

@@ -23,7 +23,7 @@ Dans la page de configuration du plugin, vous pouvez modifier les options suivan
 - Le topic de base sous lequel le plugin va publier les informations (voir configuration des équipements). Par défaut le plugin publiera sous le topic *modbus2mqtt*; vous n'avez pas besoin de modifier si cela vous convient
 - Le port d'écoute du démon du plugin. Ne modifiez cette valeur que si vous comprenez le fonctionnement et uniquement si vous avez un conflit avec un autre plugin.
 
-# Configuration de l'équipement
+# Configuration des équipements
 
 Le plugin se trouve dans le menu Plugins > Protocole domotique.
 Après avoir créé un nouvel équipement, les options habituelles sont disponibles.

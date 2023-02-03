@@ -19,7 +19,7 @@ Dans la page de configuration du plugin, vous pouvez modifier les options suivan
 
 - Le port d'écoute du démon du plugin. Ne modifiez cette valeur que si vous comprenez le fonctionnement et uniquement si vous avez un conflit avec un autre plugin.
 
-# Configuration de l'équipement
+# Configuration des équipements
 
 Le plugin se trouve dans le menu Plugins > Protocole domotique.
 

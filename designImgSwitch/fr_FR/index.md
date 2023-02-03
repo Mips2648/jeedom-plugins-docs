@@ -17,7 +17,7 @@ Vous devrez aussi installer et configurer le plugin Météo officiel (weather) s
 
 Il n'y a aucune configuration à effectuer au niveau du plugin.
 
-# Configuration de l'équipement
+# Configuration des équipements
 
 Le plugin se trouve dans le menu Plugins > Météo.
 Après avoir créé un nouvel équipement, les options habituelles sont disponibles.

@@ -60,7 +60,7 @@ Si vous le port db9 n'est pas présent, il existe aussi des adaptateurs de borni
 
 Il n'y a pas de configuration supplémentaire à effectuer ici, le plugin utilisera le cron5 pour rafraichir les données de la VMC toutes les 5 minutes et le cron pour vérifier le(s) démon(s) distant(s) chaque minute.
 
-# Configuration de l'équipement
+# Configuration des équipements
 
 ## Création de l'équipement dans votre Jeedom
 

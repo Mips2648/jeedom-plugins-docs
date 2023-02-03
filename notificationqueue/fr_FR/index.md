@@ -20,9 +20,10 @@ Chaque file peut aussi être configurée pour ajouter un délai avant envoi, un 
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
+
 Il n'y a aucune configuration à faire sur le plugin.
 
-# Configuration de l'équipement
+# Configuration des équipements
 
 Le plugin se trouve dans le menu Plugins > Communication.
 Après avoir créé un nouvel équipement, les options habituelles sont disponibles.

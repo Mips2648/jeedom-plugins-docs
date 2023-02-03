@@ -26,9 +26,10 @@ Dans la configuration du plugin il faudra renseigner l'URL du server Gotify sous
 http://yourdomain.com:32768
 ```
 
-# Configuration de l'équipement
+# Configuration des équipements
 
 Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
+
 Il faudra également renseigner le token de l'application que vous aurez précédemment créé dans Gotify (à ne pas confondre avec le token client).
 Donc un équipement Jeedom correspond à une application Gotify.
 

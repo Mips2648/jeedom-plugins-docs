@@ -18,7 +18,7 @@ La purge des logs est également gérée par la config générale de Jeedom.
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
-# Configuration de l'équipement
+# Configuration des équipements
 
 Le plugin se trouve dans le menu Plugins > Programmation.
 Après avoir créé un nouvel équipement, les options habituelles sont disponible.

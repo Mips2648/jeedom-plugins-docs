@@ -5,7 +5,17 @@ lang: en_US
 pluginId: modbus2mqtt
 ---
 
-# 2022-11-11
+# Beta
+
+N/A
+
+# Stable
+
+## 2023-01-30
+
+- Fix: Unable to remove some commands from device in some cases
+
+## 2022-11-11
 
 - First version
 

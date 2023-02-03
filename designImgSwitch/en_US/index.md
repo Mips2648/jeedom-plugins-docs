@@ -17,9 +17,10 @@ You will also need to install and configure the official weather plugin if you w
 
 There is no configuration to perform at the plugin level.
 
-# Device configuration
+# Devices configuration
 
-The plugin is in the Plugins > Weather menu.
+The plugin is in the Plugins → Weather menu.
+
 After creating new device, the usual options are available.
 
 Then select the designs for which you want to change the background image according to the weather and choose the weather device to use.
@@ -51,7 +52,7 @@ An info command ** Phase of the day ** having one of the following values: _Day_
 
 If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site. forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

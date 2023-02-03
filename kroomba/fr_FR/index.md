@@ -44,7 +44,7 @@ Avant de commencer:
 - Couper toute application iRobot sur Android ou iOS. Attention : l'utilisation simultanée de l'application iRobot peut provoquer des blocages de communication entre le plugin et le robot
 - S'assurer que le robot est sur sa base et pas "endormi" (appuyer brièvement sur "Clean" pour le réveiller si nécessaire).
 
-Depuis la page de configuration du plugin cliquer sur le bouton *Découverte* et entrez vos identifiants dans la fenêtre qui s’ouvre. Vous pouvez éventuellement renseigner l'adresse IP du robot, c'est utile **et nécessaire** si le robot ne se trouve pas sur le même sous-réseau que Jeedom car le processus de découverte utilise un message broadcast pour trouver les robots.
+Depuis la page de configuration des équipements, cliquer sur le bouton *Découverte* et entrez vos identifiants dans la fenêtre qui s’ouvre. Vous pouvez éventuellement renseigner l'adresse IP du robot, c'est utile **et nécessaire** si le robot ne se trouve pas sur le même sous-réseau que Jeedom car le processus de découverte utilise un message broadcast pour trouver les robots.
 
 ![Découverte](../images/discovery.png "Découverte")
 

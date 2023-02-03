@@ -23,9 +23,10 @@ In the plugin configuration page, you can change the following options:
 - The base topic under which the plugin will publish the information (see device configuration). By default the plugin will publish under the topic *modbus2mqtt*; you don't need to modify if it suits you
 - The listening port of the plugin daemon. Only change this value if you understand how it works and only if you have a conflict with another plugin.
 
-# Device configuration
+# Devices configuration
 
-The plugin can be found in the Plugins > Home automation protocol menu.
+The plugin can be found in the Plugins → Home automation protocol menu.
+
 After creating new device, the usual options are available.
 
 Each device corresponds to a gateway composed of a modbus client and a MQTT client. The device will therefore connect to the modbus device configured to read and write the defined registers and will connect to your MQTT broker to publish and receive the corresponding messages.
@@ -82,7 +83,7 @@ If you have configured a topic to be able to write a value in a register, a corr
 
 If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site. forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

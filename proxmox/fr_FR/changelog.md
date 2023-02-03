@@ -7,7 +7,8 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Changement sur le nommage des équipements de type *stockages* pour éviter les conflits dans le cas d'utilisation avec un cluster de noeuds.
+- Le champ *Nom de l'équipement* est désormais en lecteur seule car le nom de l'équipement est défini par le processus de synchronisation et ne peut donc pas être modifié.
 
 # Stable
 

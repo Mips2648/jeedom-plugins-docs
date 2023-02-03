@@ -57,6 +57,12 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
+    source_file_dir: linksys/fr_FR/
+    translation_files_expression: 'linksys/<lang>/'
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
     source_file_dir: logmanager/fr_FR/
     translation_files_expression: 'logmanager/<lang>/'
   - filter_type: dir

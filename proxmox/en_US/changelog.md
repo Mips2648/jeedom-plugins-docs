@@ -7,7 +7,8 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Change to the naming of *storage* type equipment to avoid conflicts when used with a cluster of nodes.
+- The *Device name* field is now read-only because the device name is defined by the synchronization process and therefore cannot be modified.
 
 # Stable
 

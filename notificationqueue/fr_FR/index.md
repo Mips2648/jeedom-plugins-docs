@@ -21,7 +21,7 @@ Chaque file peut aussi être configurée pour ajouter un délai avant envoi, un 
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
-Il n'y a aucune configuration à faire sur le plugin.
+Il n'y a aucune configuration à effectuer au niveau du plugin.
 
 # Configuration des équipements
 

@@ -20,11 +20,13 @@ Each queue can also be configured to add a delay before sending, an expiration o
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
-There is no configuration to do on the plugin.
 
-# Device configuration
+There is no configuration to perform at the plugin level.
 
-The plugin is in the Plugins > Communication menu.
+# Devices configuration
+
+The plugin is in the Plugins → Communication menu.
+
 After creating new device, the usual options are available.
 
 You can create several devices to organize your different communications according to your preferences.
@@ -120,7 +122,7 @@ The widget will be the default of the core with the default display of commands 
 
 If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site. forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

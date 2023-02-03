@@ -22,7 +22,7 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 Le plugin se trouve dans le menu Plugins → Programmation.
 
-Après avoir créé un nouvel équipement, les options habituelles sont disponible.
+Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
 
 Un équipement correspond à un log, le nom de l'équipement sera utilisé comme nom du fichier log.
 

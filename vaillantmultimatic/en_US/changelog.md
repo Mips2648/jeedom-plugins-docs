@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2023-01-25
+
+- Update of internal libraries
+
 ## 2022-11-21
 
 - Fix Vaillant cloud connection problem

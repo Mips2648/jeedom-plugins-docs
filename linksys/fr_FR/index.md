@@ -12,14 +12,14 @@ Plugin permettant de contrôler certains aspects de vos routeurs Linksys compati
 Ce qui est disponible:
 
 - Modèle et firmware
-- Status du Réseaux Invités et du Contrôle Parental
+- Statut du réseaux invités et du contrôle parental
 - Nombre d'équipements connectés au routeur par type de connexion
 - Activer/Désactiver le contrôle parental
 - Activer/Désactiver le réseau invités
 - Reboot
 - Activer/Désactiver les LEDs du routeur
-- Contrôle du firmware upgrade
-- WAN status
+- Mise à jour du firmware
+- Statut WAN
 
 > **Important**
 >

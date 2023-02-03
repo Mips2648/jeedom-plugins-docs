@@ -21,7 +21,7 @@ Dans la page de configuration du plugin, vous pouvez modifier les options suivan
 
 # Configuration des équipements
 
-Le plugin se trouve dans le menu Plugins > Protocole domotique.
+Le plugin se trouve dans le menu Plugins → Protocole domotique.
 
 # Changelog
 

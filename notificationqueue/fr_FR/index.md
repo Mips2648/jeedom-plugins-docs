@@ -25,7 +25,8 @@ Il n'y a aucune configuration à faire sur le plugin.
 
 # Configuration des équipements
 
-Le plugin se trouve dans le menu Plugins > Communication.
+Le plugin se trouve dans le menu Plugins → Communication.
+
 Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
 
 Vous pouvez créer plusieurs équipements pour organiser vos différentes communications selon vos préférences.

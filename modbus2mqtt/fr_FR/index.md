@@ -25,7 +25,8 @@ Dans la page de configuration du plugin, vous pouvez modifier les options suivan
 
 # Configuration des équipements
 
-Le plugin se trouve dans le menu Plugins > Protocole domotique.
+Le plugin se trouve dans le menu Plugins → Protocole domotique.
+
 Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
 
 Chaque équipement correspond à une passerelle composée d'un client modbus et un client MQTT. L'équipement se connectera donc à l'équipement modbus configuré pour lire et écrire les registres définis et se connectera à votre broker MQTT pour y publier et recevoir les messages correspondant.

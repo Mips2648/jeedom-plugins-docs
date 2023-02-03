@@ -18,9 +18,10 @@ The purge of the logs is also managed by Jeedom's general config.
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 
-# Device configuration
+# Devices configuration
 
-The plugin is in the Plugins > Programming menu.
+The plugin can be found in the Plugins → Home automation protocol menu.
+
 After creating new device, the usual options are available.
 
 One device corresponds to one log, the name of the device will be used as the name of the log file.
@@ -72,7 +73,7 @@ The choice is made in the configuration of the device.
 
 If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site. forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

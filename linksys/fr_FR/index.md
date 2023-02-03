@@ -9,7 +9,7 @@ pluginId: linksys
 
 Plugin permettant de contrôler certains aspects de vos routeurs Linksys compatibles.
 
-Ce qui est disponible :
+Ce qui est disponible:
 
 - Modèle et firmware
 - Status du Réseaux Invités et du Contrôle Parental
@@ -22,21 +22,24 @@ Ce qui est disponible :
 - WAN status
 
 > **Important**
-> Le plugin a été testé avec un routeur Linksys Velop VLP01 et firmware 1.1.13.202617. Devrait fonctionner pour d'autres modèles également.
+>
+> Le plugin a été testé avec un routeur Linksys Velop et devrait fonctionner pour d'autres modèles également.
 
-# Configuration
+# Installation
 
-## Configuration du plugin
+Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
-Le plugin **Linksys** ne nécessite aucune configuration spécifique et doit seulement être activé après l'installation.
-
-Les données sont vérifiées toutes les 5 minutes.
+Il n'y a aucune configuration à faire sur le plugin.
 
 ## Configuration des équipements
 
-Pour accéder aux différents équipements **Linksys**, dirigez-vous vers le menu **Plugins → Communication → Linksys**.
+Le plugin se trouve dans le menu Plugins → Communication.
 
-Sur la page de l'équipement, renseignez l'adresse IP locale du routeur, l'identifiant du compte Admin (normalement 'admin'), et le mot de passe du compte Admin.
+Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
+
+Vous devrez ensuite renseigner l'adresse IP locale du routeur, l'identifiant du compte Admin (si différent de 'admin'), et le mot de passe.
+
+Vous pouvez également configurer la fréquence d'actualisation des données.
 
 # Credits
 

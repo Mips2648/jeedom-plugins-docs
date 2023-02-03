@@ -68,7 +68,7 @@ You will find more information here: <https://pve.proxmox.com/wiki/User_Manageme
 
 The following information must be entered in the plugin configuration:
 
-- IP address of your server (or one of them if you have multiple nodes)
+- IP address of your server (or of one of the nodes of the cluster if you have several). You can configure a list of IPs for each of the nodes of the same cluster, separated by a comma.
 - the port if different from the default port (8006)
 - a username and password
 - the authentication realm of the user, if different from "pve" (= "Proxmox VE authentication server", default realm for users created locally on Proxmox, see Proxmox documentation)

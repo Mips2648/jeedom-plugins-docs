@@ -12,7 +12,7 @@ Plugin to create a gateway between modbus TCP/IP and MQTT.
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
-This plugin requires the *MQTT Manager (MQTT2)* plugin to work. For now and as long as the *MQTT Manager (MQTT2)* plugin is in beta, it is necessary to install it manually.
+This plugin requires the *MQTT Manager (MQTT2)* plugin to work.
 
 # Plugin configuration
 

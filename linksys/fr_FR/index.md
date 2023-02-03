@@ -40,9 +40,9 @@ Sur la page de l'équipement, renseignez l'adresse IP locale du routeur, l'ident
 
 # Credits
 
-Ce plugin s'est inspiré des travaux suivants :
+Ce plugin a été initialement créé par @hugoks3.
 
-- [reujab](https://github.com/reujab) via sa librairie Go pour JNAP: [linksys](https://github.com/reujab/linksys)
+Ce plugin s'est inspiré du travail de [reujab](https://github.com/reujab) via sa librairie Go pour JNAP: [linksys](https://github.com/reujab/linksys)
 
 # Changelog
 

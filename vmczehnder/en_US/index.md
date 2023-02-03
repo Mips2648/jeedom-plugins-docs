@@ -60,7 +60,7 @@ If the db9 port is not present, there are also terminal block adapters to DB9 an
 
 There is no additional config to perform here, the plugin will use the cron5 to refresh the HRV-ERV data every 5min and the cron to check the remote(s) daemon(s) every minute.
 
-# Device configuration
+# Devices configuration
 
 ## Creating the device in Jeedom
 

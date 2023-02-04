@@ -7,11 +7,15 @@ pluginId: linksys
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-02-04
+
 - Reprise du plugin par @Mips
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
 - Ajout de la possibilité de configurer un cron personnalisé
-
-# Stable
 
 ## 2022-02-07 par @hugoks3
 

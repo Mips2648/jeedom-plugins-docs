@@ -57,7 +57,7 @@ Vous pouvez masquer les infos suivantes:
 ![alt text](../images/doc.png)
 ![alt text](../images/doc2.png)
 
-- le lancement de la coupe de la bordure n'est pas une fonction officielle et n'est pas dispo dans le plugin actuellement.
+- le lancement de la coupe de la bordure n'est pas une fonction officielle et n'est pas disponible dans le plugin actuellement.
 
 ## Informations utiles pour les scénarios
 
@@ -146,7 +146,7 @@ Un autre plugin worxLandroid est disponible pour les modèles M/L en version non
 - 12: Batterie faible
 - 13: Câble inversé
 - 14: Erreur charge batterie
-- 15: Delai recherche station dépassé
+- 15: Délai recherche station dépassé
 
 >Liste des codes statut:
 
@@ -174,15 +174,15 @@ Dans certains cas, le fait de réactualiser le code WIFI peut résoudre le probl
 (Faire comme si on voulait ajouter une nouvelle tondeuse sur l'appli mobile, appuyer 3 secondes sur le bouton OK de la tondeuse, renseigner le n° de série et le code WIFI correspondant)
 Worx limite volontairement le nombre d'interrogations de l'état de la tondeuse (limite non connue) donc trop de "refresh" pourrait stopper la communication avec le cloud amazon. D'après les tests, il s'agit d'une limite quotidienne.
 
-Une autre possibilité : le compte est bloqué, si aucune communication n'est possible pendant plus de 24hr alors, rendez vous sur votre compte worx <https://account.worxlandroid.com/login> puis dissocier la tondeuse et faites une nouvelle association.
+Une autre possibilité : le compte est bloqué, si aucune communication n'est possible pendant plus de 24hr alors, rendez vous sur votre compte Worx <https://account.worxlandroid.com/login> puis dissocier la tondeuse et faites une nouvelle association.
 
->Version mosquitto
-Les versions mosquitto 1.3.x et antérieures ne sont pas compatibles avec le plugin. Le script d'installation (dépendances) doit pouvoir installer une version plus récente, toutefois il se peut que certaines distributions ne soient pas prises en compte.
+>Version Mosquitto
+Les versions Mosquitto 1.3.x et antérieures ne sont pas compatibles avec le plugin. Le script d'installation (dépendances) doit pouvoir installer une version plus récente, toutefois il se peut que certaines distributions ne soient pas prises en compte.
 Dans ce cas là, vous pouvez tenter de la mettre à jour manuellement et si possible m'informer afin que je puisse mettre à jour le script d'installation.
 
 ## Fonctionnement détaillé
 
-Connexion vers des api worx pour récupérer: les infos utilisateurs, le certificat et les paramètres tondeuses:
+Connexion vers des api Worx pour récupérer: les infos utilisateurs, le certificat et les paramètres tondeuses:
 <https://api.worxlandroid.com:443/api/v2>
 
 Connexion au broker Mosquitto en fonction des liens et paramètres récupérés à partir des API précédentes

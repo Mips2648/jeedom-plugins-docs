@@ -31,7 +31,7 @@ Plugin permettant de changer automatiquement l'image de fond de vos design en fo
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/fullup_icon.png">]({{site.baseurl}}/fullup/{{page.lang}})
 
-Plugin permettant la lecture des donées des jauges connectées <a href="https://fullup.be/" target="_blank">Fullup</a>.
+Plugin permettant la lecture des données des jauges connectées <a href="https://fullup.be/" target="_blank">Fullup</a>.
 
 - [Documentation]({{site.baseurl}}/fullup/{{page.lang}})
 - [Changelog]({{site.baseurl}}/fullup/{{page.lang}}/changelog)
@@ -165,7 +165,7 @@ Plugin permettant la lecture des données d'un onduleur de panneaux photovoltaï
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/portainer_icon.png">]({{site.baseurl}}/portainer/{{page.lang}})
 
 Plugin permettant la connexion à un serveur [portainer.io](https://www.portainer.io/portainer-ce/) qui est une solution de gestion de containers sous docker qui peut elle même s'installer très facilement dans un container.
-Via ce plugin, il est possible de récupérer dans jeedom tous les dockers configurés sous [portainer.io](https://www.portainer.io/portainer-ce/) ainsi que tous leurs containers.
+Via ce plugin, il est possible de récupérer dans Jeedom tous les dockers configurés sous [portainer.io](https://www.portainer.io/portainer-ce/) ainsi que tous leurs containers.
 
 Le plugin dispose également d'une page santé et d'un panel dédié affichant un aperçu de tous les containers et permettant d'effectuer toutes les actions de base, similaire à la page "Containers" sur [portainer.io](https://www.portainer.io/portainer-ce/).
 

@@ -368,7 +368,7 @@ Pour cela, je conseille la configuration suivante:
 
 ![Jeedom Connect](../images/jeedomConnect.png "Jeedom Connect")
 
-- la commande **URL dernière capture** de la caméra (celle qui retourne une info texte commençant par http pointant sur votre jeedom, pas celle donnant l'image Arlo) pour la config _Commande Url Snapshot_ du widget
+- la commande **URL dernière capture** de la caméra (celle qui retourne une info texte commençant par http pointant sur votre Jeedom, pas celle donnant l'image Arlo) pour la config _Commande Url Snapshot_ du widget
 - les commandes **Démarrer enregistrement**, **Arrêter enregistrement** et **Enregistrement** pour les configs _Enregistrer_, _Arrêter enregistrement_ et _Info Enregistrement_ du widget
 - Dans la config _Dossier des enregistrements_, vous devez y copier le chemin affiché dans la page de configuration de la caméra Arlo comme visible sur cette capture:
 

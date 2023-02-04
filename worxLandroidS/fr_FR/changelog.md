@@ -22,7 +22,7 @@ pluginId: worxLandroidS
 
 ## 08/06/2020 par @sebsst
 
-- correction de l'image landroid rouge
+- correction de l'image Landroid rouge
 - après les mises à jour vous devez éventuellement enregistrer l'équipement et peut-être  réinitialiser les données du cloud (configuration du plugin). erreur execcmd / cmd=>getId().
 - attention la tondeuse doit être connectée, sinon le plugin ne pourra pas se mettre correctement à jour
 
@@ -33,16 +33,16 @@ pluginId: worxLandroidS
 
 ## 29/05/2020 par @sebsst
 
-- ajout information en cas de non communication avec la tondeuse + 24 hr (dissocier et associer à nouveau sur le compte worx)
+- ajout information en cas de non communication avec la tondeuse + 24 hr (dissocier et associer à nouveau sur le compte Worx)
 - modif saisie des temps.
-- ajout historique bouton santé du plugin (reinitialisez les données cloud pour activer la modif)
+- ajout historique bouton santé du plugin (réinitialisez les données cloud pour activer la modif)
 - ajout information sur l'inclinaison (latérale et frontale) et la direction
 - tentative de suppression erreur 500 si la communication n'est pas possible avec la tondeuse
 
 ## 23/05/2020 par @sebsst
 
 - correction du chemin des images
-- modification de backgound color pour V3
+- modification de background color pour V3
 
 ## 10/05/2020 par @sebsst
 
@@ -63,8 +63,8 @@ pluginId: worxLandroidS
 
 ## 08/05/2019 par @sebsst
 
-- Ajout d'une info (virtualInfo) pour concatener plusieurs infos du plugin séparé par des virgules pour l'utilisation du widget worklandroid. Le widget est dispo sur le market des widgets. Recherche équipement pour récupérer l'info d'un autre équipement.
-- remplacement des infos planning/xxxx/xxx par planning_xxxxx_xxxx suite à un changement du core jeedom
+- Ajout d'une info (virtualInfo) pour concaténer plusieurs infos du plugin séparé par des virgules pour l'utilisation du widget Worx Landroid. Le widget est disponible sur le market des widgets. Recherche équipement pour récupérer l'info d'un autre équipement.
+- remplacement des infos planning/xxxx/xxx par planning_xxxxx_xxxx suite à un changement du core Jeedom
 
 ## 28/04/2019 par @sebsst
 
@@ -96,12 +96,12 @@ Exemples :
 
 ## 14/09/2018 par @sebsst
 
-- Correction de l'affichage sur mobile si le format du widget choisi est le "standard" jeedom.
+- Correction de l'affichage sur mobile si le format du widget choisi est le "standard" Jeedom.
 ("Utiliser le widget préconfiguré" est décoché)
 
 ## 11/09/2018 par @sebsst
 
-- Ajout du paramètre type de tondeuses: Landroid version S / landroid version M (firmware 5.x)
+- Ajout du paramètre type de tondeuses: Landroid version S / Landroid version M (firmware 5.x)
 (en cas de soucis vous pouvez cocher réinitialiser les paramètres dans la configuration du plugin et sauvegarder)
 - Ajout de la fonction "pause"
 
@@ -113,7 +113,7 @@ Exemples :
 ## 03/07/2018 par @sebsst
 
 - Ajout message création équipement
-- Message si version mosquitto non compatible
+- Message si version Mosquitto non compatible
 - correction bug affichage zone de départ
 
 ## 25/06/2018 par @sebsst
@@ -123,13 +123,13 @@ Exemples :
 
 ## 16/06/2018 par @sebsst
 
-- modification du script d'installation pour tenter de résoudre les problème de version de mosquitto (version mini 1.4.1)
-- Installation version mosquitto 1.5 si version mosquitto 1.3
+- modification du script d'installation pour tenter de résoudre les problème de version de Mosquitto (version mini 1.4.1)
+- Installation version Mosquitto 1.5 si version Mosquitto 1.3
 
 ## 14/06/2018 par @sebsst
 
 - Corrections des fonctions démarrer/arrêter.
-- Modifications timeout si le serveur mosquitto n'envoie aucun message
+- Modifications timeout si le serveur Mosquitto n'envoie aucun message
 - changement du délai pluie manquant dans certains cas
 
 ## 09/06/2018 par @sebsst
@@ -151,17 +151,14 @@ Autres modifications:
 Modification des fréquences de mise à jour des infos:
 
 - Toutes les 2 minutes pendant la tonte
-- Toutes les 30 minutes en dehors des periodes de tonte
+- Toutes les 30 minutes en dehors des périodes de tonte
 - sur demande ou envoi de mise à jour du planning de fonctionnement.
 
 ## 04/06/2018 par @sebsst
 
-- Changement délai daemon et autres paramètres de connexion au serveur worx
-
-## 01/06/2018 par @sebsst
-
+- Changement délai daemon et autres paramètres de connexion au serveur Worx
 - Ajustement design widget
-- remplacement id client mosquitto
+- remplacement id client Mosquitto
 
 ## Mai 2018 par @sebsst
 

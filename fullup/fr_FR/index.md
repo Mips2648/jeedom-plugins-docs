@@ -7,7 +7,7 @@ pluginId: fullup
 
 # Description
 
-Plugin permettant la lecture des donées des jauges connectées <a href="https://fullup.be/" target="_blank">Fullup</a>. Le plugin rafraîchit les données toutes les heures via un cron.
+Plugin permettant la lecture des données des jauges connectées <a href="https://fullup.be/" target="_blank">Fullup</a>. Le plugin rafraîchit les données toutes les heures via un cron.
 
 # Configuration
 

@@ -7,11 +7,15 @@ pluginId: linksys
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-02-04
+
 - Taken over of the plugin by @Mips
 - Update of the presentation of commands for Jeedom v4.3
 - Add possibility to configure a custom cron
-
-# Stable
 
 ## 2022-02-07 by @hugoks3
 

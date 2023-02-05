@@ -42,7 +42,7 @@ pluginId: worxLandroidS
 
 ## 2019-05-08 par @sebsst
 
-- Ajout d'une info (virtualInfo) pour concaténer plusieurs infos du plugin séparé par des virgules pour l'utilisation du widget Worx Landroid. Le widget est disponible sur le market des widgets. Recherche équipement pour récupérer l'info d'un autre équipement.
+- Ajout d'une info (virtualInfo) pour concaténer plusieurs infos du plugin séparé par des virgules pour l'utilisation du widget Worx Landroid.
 - remplacement des infos planning/xxxx/xxx par planning_xxxxx_xxxx suite à un changement du core Jeedom
 
 ## 2019-04-28 par @sebsst

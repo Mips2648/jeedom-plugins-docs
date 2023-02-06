@@ -59,7 +59,7 @@ Vous pouvez masquer les infos suivantes:
 
 - le lancement de la coupe de la bordure n'est pas une fonction officielle et n'est pas disponible dans le plugin actuellement.
 
-## Informations utiles pour les scénarios
+# Informations utiles pour les scénarios
 
 Pour les scénarios, il peut être intéressant d'utiliser les actions 'on_today' et 'off_today' empêcher le démarrage un jour férié.
 Penser à mettre off le matin et remettre à on avant minuit pour récupérer les horaires précédents
@@ -78,12 +78,12 @@ Format attendu: numéro jour;heure départ;durée en minutes;bordure Exemples :
 1;10:00;120;1 => lundi, démarrage à 10:00 pendant 120 minutes, coupe la bordure
 0;08:00;300;0 => dimanche, démarrage à 08:00 pendant 300 minutes, ne coupe pas la bordure
 
-## Widget
+# Widget
 
 Un widget (workAndroid) est disponible sur le market pour un affichage avec des images. Pour cela Il est possible d'utiliser l'info virtualInfo: cocher afficher dans la liste des commandes, sélectionner le widget dans la configuration avancée.
 (Recherche équipement pour récupérer l'info d'un autre équipement)
 
-## FAQ
+# FAQ
 
 >A quelle fréquence, les données sont-elles réactualisées?
 

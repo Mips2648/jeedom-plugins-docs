@@ -7,15 +7,19 @@ pluginId: influxdb
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-02-06
+
 - Ajout d'un nouveau mode d'export: *Historique* qui permet d'exporter chaque nuit tout l'historique de la veille
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
 - Fix: le cron n'était pas correctement supprimé lors de la désinstallation du plugin
 
-# Stable
-
 ## 2022-02-09
 
-- Ajout d'une nouvelle option pour le choix de la valeur du timestamp envoyé, 3 options possibles: heure d'envoi, heure collecte jeedom, heure valeur jeedom (voir documentation)
+- Ajout d'une nouvelle option pour le choix de la valeur du timestamp envoyé, 3 options possibles: heure d'envoi, heure collecte Jeedom, heure valeur Jeedom (voir documentation)
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
 
 ## 2022-01-25
@@ -28,12 +32,12 @@ pluginId: influxdb
 - Ajout de commandes compteurs totaux et journalier du nombre de mesures envoyées par équipement
 - Ajout de configuration avancée pour définir les timeouts et le nombre de tentatives d'envoi
 - Tri des équipements et des commandes dans les écrans de sélection par objet/pièce
-- Dorénavant les mesures seront envoyées avec comme timestamp leur date valeur de jeedom au lieu de l'heure d'envoi
+- Dorénavant les mesures seront envoyées avec comme timestamp leur date valeur de Jeedom au lieu de l'heure d'envoi
 - Fix: Dans la sélection d'équipement par objet il n'était pas possible de chercher/sélectionner les équipements sans objet/pièce
 
 ## 2021-10-26
 
-- Fix: le point n'était pas envoyé à influx lorsqu'il avait la valeur _0_
+- Fix: le point n'était pas envoyé à influx lorsqu'il avait la valeur *0*
 
 ## 2021-10-04
 
@@ -67,7 +71,7 @@ pluginId: influxdb
 
 - Ajout de la possibilité de définir un nom de mesure et de clé personnalisé pour chaque commande (à configurer dans la liste des commandes)
 - Ajout d'une configuration sur l'équipement permettant de choisir les tags à envoyer avec chaque point
-- Ajout des tags (en option) "Nom de la commande" (_CommandName_) et "Type générique de la commande" (_GenericType_)
+- Ajout des tags (en option) "Nom de la commande" (*CommandName*) et "Type générique de la commande" (*GenericType*)
 
 ## 2020-05-03
 

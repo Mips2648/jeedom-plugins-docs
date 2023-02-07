@@ -164,7 +164,7 @@ For the widget to work well you must perform the following configurations:
 If you have named your file other than *home.png* or if you want to test another capture, encode the file name in the *imgFile* parameter
 5. The other parameters are optional:
 
-![Configuration widget](../images/config_widget.png "Configuration widget")
+![Widget configuration](../images/config_widget.png "Widget configuration")
 
 Save and you should see the mini-map with position history on the widget:
 

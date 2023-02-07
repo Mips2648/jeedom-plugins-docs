@@ -71,7 +71,7 @@ N/A
 
 - Added possibility to define a personalized name of measurement and key for each command (to be configured in the list of commands)
 - Added a configuration on the device allowing to choose the tags to send with each point
-- Added tags (in option) "Command name" (*CommandName*) and "Generic type of command" (*GenericType*)
+- Add tags (optional) "Command name" (*CommandName*) and "Generic type of command" (*GenericType*)
 
 ## 2020-05-03
 

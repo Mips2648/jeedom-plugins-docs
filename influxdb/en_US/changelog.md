@@ -7,11 +7,15 @@ pluginId: influxdb
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-02-06
+
 - Add a new export mode: *History* which allows you to export all the history of the day before each night
 - Update of the presentation of commands for Jeedom v4.3
 - Fix: cron was not properly deleted when uninstalling the plugin
-
-# Stable
 
 ## 2022-02-09
 
@@ -28,12 +32,12 @@ pluginId: influxdb
 - Add total and daily counter commands for the number of measurements sent by device
 - Add advanced configuration to set timeouts and number of send retries
 - Sorting device and commands in selection screens by object/room
-- From now on the measurements will be sent with their jeedom value date as timestamp instead of the time of sending
+- From now on the measurements will be sent with their Jeedom value date as timestamp instead of the time of sending
 - Fix: In the device selection by item it was not possible to search/select device without items/parts
 
 ## 2021-10-26
 
-- Fix: the measure was not correctly sent to influx if it has the value _0_
+- Fix: the measure was not correctly sent to influx if it has the value *0*
 
 ## 2021-10-04
 
@@ -67,7 +71,7 @@ pluginId: influxdb
 
 - Added possibility to define a personalized name of measurement and key for each command (to be configured in the list of commands)
 - Added a configuration on the device allowing to choose the tags to send with each point
-- Add tags (optional) "Command name" (_CommandName_) and "Generic type of command" (_GenericType_)
+- Added tags (in option) "Command name" (*CommandName*) and "Generic type of command" (*GenericType*)
 
 ## 2020-05-03
 

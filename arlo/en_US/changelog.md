@@ -249,7 +249,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 It is recommended to launch the installation of dependencies after installing this update even if they are already *OK*.
 
-- Add support for Arlo Q
+- Add support of Arlo Q
 - Adapt charging status on the widget when the camera is lugged to the sector: display of a plug instead of a battery
 - Fix issues with dependency compatibility
 - Fix dependencies compatibility issues on *Debian Jessie*: if you are under Jessie, you must reinstall the dependencies even if they are already *OK*

@@ -7,7 +7,7 @@ pluginId: linksys
 
 # Beta
 
-N/A
+- Ajout commande **Type WAN**
 
 # Stable
 

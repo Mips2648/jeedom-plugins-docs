@@ -164,7 +164,7 @@ For the widget to work well you must perform the following configurations:
 If you have named your file other than *home.png* or if you want to test another capture, encode the file name in the *imgFile* parameter
 5. The other parameters are optional:
 
-![Configuration widget](../images/config_widget.png "Configuration widget")
+![Widget configuration](../images/config_widget.png "Widget configuration")
 
 Save and you should see the mini-map with position history on the widget:
 
@@ -276,7 +276,7 @@ Save and you should see the mini-map with position history on the widget:
 - *OFF* - Mower is turned off.
 - *STOPPED* - Mower is stopped and requires manual action.
 - *ERROR*, *FATAL_ERROR*, *ERROR_AT_POWER_UP* - An error has occurred, check value of **Error**. Mower requires manual action.
-- *NOT_APPLICABLE* - Manuel action needed.
+- *NOT_APPLICABLE*
 - *UNKNOWN*
 
 ## Activity description of Husqvarna Automower
@@ -298,7 +298,7 @@ Save and you should see the mini-map with position history on the widget:
 
 If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site. forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

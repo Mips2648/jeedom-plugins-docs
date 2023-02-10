@@ -9,6 +9,7 @@ pluginId: proxmox
 
 - Change to the naming of *storage* type equipment to avoid conflicts when used with a cluster of nodes.
 - The *Device name* field is now read-only because the device name is defined by the synchronization process and therefore cannot be modified.
+- Add info commands **Number of tasks in error** and**Errors** on the *Node* devices; the number of hours to take into account for verification is configured per device.
 
 # Stable
 

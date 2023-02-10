@@ -152,7 +152,7 @@ It is necessary to launch the installation of dependencies after installing this
 - Migration of daemon in python3
 - Adapting permissions: non-admin users can view the streaming and media library.
 - Improved management of options for visibility of commands (mainly battery, movement, etc.) on the cameras widget
-- Added support for the Arlo Video Doorbell
+- Add support of the Arlo Video Doorbell
 - Optimizations of dependencies
 
 ## 2020-03-30
@@ -171,7 +171,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 ## 2020-02-14
 
-- Fixe un problème d'affichage sur le mode 'Planning'
+- Fix a display problem in the 'Planning' mode
 - Support plugins [Rocket.Chat]({{site.market}}/index.php?v=d&p=market&author={{site.author}}&categorie=communication), [Notification queue]({{site.market}}/index.php?v=d&p=market&author={{site.author}}&categorie=communication) et [Gotify]({{site.market}}/index.php?v=d&p=market&author={{site.author}}&categorie=communication) on top of Mail and Telegram to send notifications
 
 ## 2020-02-06
@@ -187,7 +187,7 @@ It is necessary to launch the installation of dependencies after installing this
 ## 2019-12-28
 
 - Fix a streaming issue with Arlo Q and Arlo Qs cameras
-- Add support for Arlo Pro3
+- Add support of Arlo Pro3
 - Add support of siren integrated in Arlo Pro3 & Arlo Ultra
 
 ## 2019-12-01
@@ -229,13 +229,13 @@ It is necessary to launch the installation of dependencies after installing this
 
 ## 2019-06-26
 
-- Add support for Arlo Go
+- Add support of Arlo Go
 - Add generic type on commands to prepare the integration with Jeedom mobile app
 
 ## 2019-06-21
 
-- Add support for Arlo Lights
-- Add support for Arlo Doorbells
+- Add support of Arlo Lights
+- Add support of Arlo Doorbells
 
 ## 2019-06-10
 
@@ -249,7 +249,7 @@ It is necessary to launch the installation of dependencies after installing this
 
 It is recommended to launch the installation of dependencies after installing this update even if they are already *OK*.
 
-- Add support for Arlo Q
+- Add support of Arlo Q
 - Adapt charging status on the widget when the camera is lugged to the sector: display of a plug instead of a battery
 - Fix issues with dependency compatibility
 - Fix dependencies compatibility issues on *Debian Jessie*: if you are under Jessie, you must reinstall the dependencies even if they are already *OK*

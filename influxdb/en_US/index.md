@@ -107,12 +107,11 @@ A **point** in InfluxDB represents a single data record that has 4 components: a
 Below the relation implemented by the plugin between InfluxDB concepts and Jeedom concepts:
 
 Jeedom | InfluxDB | Description
-
-- | - | -
+--- | --- | ---
 Command name | Measurement | A measurement in InfluxDB is conceptually similar to a SQL table.
-Command value date | Timestamp | This is the timestamp information of the data.
+Value date | Timestamp | It's the timestamp of the data
 Device name | Field(key) | A field key is similar to a column name in a SQL table.
-Command value | Field(value) | This is the data.
+Command value | Field(value) | It is the value of the point.
 
 ## Tags
 
@@ -122,8 +121,7 @@ The following tags can be associated with each point sent, they must be selected
 This list can be amended if you need more:
 
 Tag(key) | Tag(value)
-
-- | -
+--- | ---
 Plugin | plugin name
 Object | Object/room name in Jeedom or "None"
 CommandName | command name

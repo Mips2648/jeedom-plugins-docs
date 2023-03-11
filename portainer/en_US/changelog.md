@@ -7,7 +7,7 @@ pluginId: portainer
 
 # Beta
 
-n/a
+- Add information about the latest available version of Portainer.io to the health page (required portainer.io >= 2.17) + message in the message center
 
 # Stable
 

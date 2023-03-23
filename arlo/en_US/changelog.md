@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Fix on Arlo Baby mode change following a change in behavior at Arlo
 
 # Stable
 

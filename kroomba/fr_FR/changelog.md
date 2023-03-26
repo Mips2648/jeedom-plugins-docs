@@ -11,6 +11,10 @@ N/A
 
 # Stable
 
+## 2023-03-26
+
+- Fix & optimisations mineures
+
 ## 2022-11-21
 
 > **Important**

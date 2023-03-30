@@ -147,6 +147,13 @@ Ainsi que des commandes suivantes pour chacune des valves (où X aura donc une v
 - **Retour à la base** Retourne à la base pendant le nombre de minute donnée en option de la commande, reprend la programmation ensuite
 - **Annulation et retour à la base** commande action, la tondeuse redémarrera lors de la prochaine tâche
 - **Stop et retour à la base** commande action, la tondeuse ne redémarrera pas pour la prochaine tâche
+- **Temps utilisation des lames** commande info numérique
+- **Cycles de charge** commande info numérique
+- **Collisions** commande info numérique
+- **Temps total de chargement** commande info numérique
+- **Temps total de coupe** commande info numérique
+- **Temps total de fonctionnement** commande info numérique
+- **Temps total de recherche** commande info numérique
 
 # Widget Positions
 

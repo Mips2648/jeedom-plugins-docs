@@ -7,10 +7,14 @@ pluginId: gardena
 
 # Beta
 
-- Ajout des commandes infos statistiques pour les robots Husqvarna (voir documentation pour la liste)
-- Fix mineur: évite un double re-démarrage du démon dans certains cas lorsque la connexion socket a été interrompue
+N/A
 
 # Stable
+
+## 2023-04-05
+
+- Ajout des commandes infos statistiques pour les robots Husqvarna (voir documentation pour la liste)
+- Fix mineur: évite un double re-démarrage du démon dans certains cas lorsque la connexion socket a été interrompue
 
 ## 2022-10-17
 

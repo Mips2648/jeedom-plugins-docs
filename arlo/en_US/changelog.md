@@ -8,6 +8,7 @@ pluginId: arlo
 # Beta
 
 - Fix on Arlo Baby mode change following a change in behavior at Arlo
+- Compatibility Jeedom v4.4
 
 # Stable
 

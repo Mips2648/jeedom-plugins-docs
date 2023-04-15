@@ -7,9 +7,14 @@ pluginId: gardena
 
 # Beta
 
-- Minor fix: Avoid double restart of the daemon in some cases when socket connection was broken
+N/A
 
 # Stable
+
+## 2023-04-05
+
+- Add statistics info commands for Husqvarna robots (see documentation for the list)
+- Minor fix: Avoid double restart of the daemon in some cases when socket connection was broken
 
 ## 2022-10-17
 

@@ -7,7 +7,7 @@ pluginId: modbus2mqtt
 
 # Beta
 
-N/A
+- Compatibility Jeedom v4.4
 
 # Stable
 

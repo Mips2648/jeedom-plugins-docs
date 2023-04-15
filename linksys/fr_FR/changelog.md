@@ -8,6 +8,7 @@ pluginId: linksys
 # Beta
 
 - Ajout commande **Type WAN**
+- Compatibilité Jeedom v4.4
 
 # Stable
 

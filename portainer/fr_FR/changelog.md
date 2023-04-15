@@ -8,6 +8,7 @@ pluginId: portainer
 # Beta
 
 - Ajout d'information sur la dernière version disponible de Portainer.io dans la page santé (requis portainer.io >= 2.17) + message dans le centre de messages
+- Compatibilité Jeedom v4.4
 
 # Stable
 

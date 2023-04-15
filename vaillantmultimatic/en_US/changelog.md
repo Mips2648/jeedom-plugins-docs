@@ -7,7 +7,7 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-n/a
+- Compatibility Jeedom v4.4
 
 # Stable
 

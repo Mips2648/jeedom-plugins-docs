@@ -7,7 +7,7 @@ pluginId: kroomba
 
 # Beta
 
-N/A
+- Compatibility Jeedom v4.4
 
 # Stable
 

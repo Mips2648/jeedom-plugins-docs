@@ -8,6 +8,7 @@ pluginId: arlo
 # Beta
 
 - Fix sur changement de mode de la Arlo Baby suite à un changement de comportement chez Arlo
+- Amélioration des champs password
 - Compatibilité Jeedom v4.4
 
 # Stable

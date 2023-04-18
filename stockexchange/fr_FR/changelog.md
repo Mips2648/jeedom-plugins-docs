@@ -8,6 +8,7 @@ pluginId: stockexchange
 # Beta
 
 - Compatibilité Jeedom v4.4
+- Ajout des liens vers la documentation en beta
 
 # Stable
 

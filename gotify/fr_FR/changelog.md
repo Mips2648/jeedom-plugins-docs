@@ -7,7 +7,9 @@ pluginId: gotify
 
 # Beta
 
-n/a
+- Mise à jour de la page de configuration des équipements
+- Amélioration des champs password
+- Ajout des liens vers la documentation en beta
 
 # Stable
 

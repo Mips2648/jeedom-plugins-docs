@@ -7,6 +7,9 @@ pluginId: vmczehnder
 
 # Beta
 
+- Mise à jour page liste des équipements
+- Amélioration des champs password
+- Mise à jour gestion des dépendances v4.2
 - Compatibilité Jeedom v4.4
 
 # Stable

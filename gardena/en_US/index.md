@@ -147,6 +147,13 @@ As well as the following commands for each of the valves (where X will therefore
 - **Return to base** Return to the charging station for the number of minutes given as an option of the command, then resume schedule
 - **Cancel and go back to charging station** action command, the mower will start at next schedule
 - **Stop and go back to charging station** action command, the mower will ignore next schedule
+- **Blade use time** numeric info command
+- **Charge cycle** numeric info command
+- **Collisions** numeric info command
+- **Total charging time** numeric info command
+- **Total mowing time** numeric info command
+- **Total working time** numeric info command
+- **Total search time** numeric info command
 
 # Positions widget
 

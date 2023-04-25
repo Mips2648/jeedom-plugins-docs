@@ -48,15 +48,15 @@ Le dashboard affiche:
 
 Vous pouvez choisir d'afficher ou masquer les infos via la liste des commandes de l'équipement.
 
-![alt text](../images/doc.png)
-![alt text](../images/doc2.png)
-
 Il faut éviter d'envoyer plusieurs demandes de changement de planning sur des jours différents à des intervalles rapides. En effet le changement n'est enregistré dans le plugin qu'à la réponse du serveur. Tout le planning est envoyé à chaque fois et par conséquent on pourrait perdre la précédente demande.
 Donc soit il faut attendre l'actualisation de l'info dans l'équipement, soit il faut mettre une temporisation.
 
 # Widget
 
 Un widget pré-configuré est disponible dans le plugin; vous pouvez activer ce widget dans la page de configuration de l'équipement.
+
+![alt text](../images/doc.png)
+![alt text](../images/doc2.png)
 
 # Annexes
 

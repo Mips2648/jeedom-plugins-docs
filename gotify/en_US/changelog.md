@@ -7,7 +7,9 @@ pluginId: gotify
 
 # Beta
 
-n/a
+- Update device configuration screen
+- Improve password fields
+- Add links to documentation in beta
 
 # Stable
 

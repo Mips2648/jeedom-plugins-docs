@@ -9,6 +9,14 @@ pluginId: worxLandroidS
 
 - Taken over of the plugin by @Mips
 - Update of the presentation of commands for Jeedom v4.3
+- Compatibility Jeedom v4.4
+- Add the activity report (which replaces the health page)
+- Add information about the mower: model, year of production, cutting width
+- Replace the zones & schedules tabs with a “My lawn” tab in which we find:
+  - Information générale
+  - Multi-zone setup
+  - Manual schedule
+  - Auto-schedule (if supported by your model)
 
 # Stable
 

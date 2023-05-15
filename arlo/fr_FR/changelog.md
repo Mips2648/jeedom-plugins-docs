@@ -7,11 +7,19 @@ pluginId: arlo
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-05-15
+
 - Fix sur changement de mode de la Arlo Baby suite à un changement de comportement chez Arlo
 - Amélioration des champs password
 - Compatibilité Jeedom v4.4
+- Exclusion des captures & vidéos sauvées localement du backup jeedom pour réduire la taille de ceux-ci
+- Mise à jour des dépendances pour résoudre un blocage lors de la connexion au démarrage du démon
 
-# Stable
+> En principe les dépendances seront réinstallées automatiquement lors de la mise à jour du plugin. Si ce n'est pas le cas veuillez les relancer manuellement.
 
 ## 2022-11-11
 

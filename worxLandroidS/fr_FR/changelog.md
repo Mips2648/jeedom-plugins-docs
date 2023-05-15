@@ -13,7 +13,7 @@ pluginId: worxLandroidS
 - Ajout du rapport d’activité (qui remplace la page santé)
 - Ajout d’info concernant la tondeuse: modèle, année production, largeur de coupe
 - Remplacement des onglets zones & horaires par un onglet « Ma pelouse » dans lequel on retrouve:
-  - information générale
+  - Information générale
   - Configuration multi-zone
   - Programmation manuelle
   - Auto-programmation (si supporté par votre modèle)

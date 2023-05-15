@@ -9,6 +9,14 @@ pluginId: worxLandroidS
 
 - Reprise du plugin par @Mips
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
+- Compatibilité Jeedom v4.4
+- Ajout du rapport d’activité (qui remplace la page santé)
+- Ajout d’info concernant la tondeuse: modèle, année production, largeur de coupe
+- Remplacement des onglets zones & horaires par un onglet « Ma pelouse » dans lequel on retrouve:
+  - information générale
+  - Configuration multi-zone
+  - Programmation manuelle
+  - Auto-programmation (si supporté par votre modèle)
 
 # Stable
 

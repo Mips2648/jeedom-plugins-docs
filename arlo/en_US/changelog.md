@@ -11,13 +11,14 @@ N/A
 
 # Stable
 
-## 2023-05-15
+## 2023-05-17
 
 - Fix on Arlo Baby mode change following a change in behavior at Arlo
 - Improve password fields
 - Compatibility Jeedom v4.4
-- Exclusion of captures & videos saved locally from the jeedom backup to reduce their size
+- Exclusion of captures & videos saved locally from the Jeedom backup to reduce their size
 - Update dependencies to resolve a connection issue when the daemon starts
+- Change on dependency management to avoid potential conflicts with other plugins
 
 > In principle, dependencies will be reinstalled automatically when the plugin is updated. If this is not the case please reinstall them manually.
 

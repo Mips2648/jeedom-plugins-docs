@@ -18,6 +18,15 @@ pluginId: worxLandroidS
   - Programmation manuelle
   - Auto-programmation (si supporté par votre modèle)
 
+## 2023-05-17
+
+- Modification du comportement de la commande **Zone de travail**: à présent la configuration de la répartition entre les zones n'est plus modifiée mais l'ordre est modifiée pour que le prochain départ corresponde à la zone sélectionnée
+- Fix sur le widget: les commandes additionnelles ne s'affichaient pas
+
+## Avril 2023
+
+Voir les détails ici <https://community.jeedom.com/t/version-beta-avril-2023/105197>
+
 # Stable
 
 ## 2020-11-21 par @sebsst

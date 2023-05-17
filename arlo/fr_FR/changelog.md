@@ -11,13 +11,14 @@ N/A
 
 # Stable
 
-## 2023-05-15
+## 2023-05-17
 
 - Fix sur changement de mode de la Arlo Baby suite à un changement de comportement chez Arlo
 - Amélioration des champs password
 - Compatibilité Jeedom v4.4
-- Exclusion des captures & vidéos sauvées localement du backup jeedom pour réduire la taille de ceux-ci
+- Exclusion des captures & vidéos sauvées localement du backup Jeedom pour réduire la taille de ceux-ci
 - Mise à jour des dépendances pour résoudre un blocage lors de la connexion au démarrage du démon
+- Modification sur la gestion des dépendances pour éviter des conflits potentiels avec d'autres plugins
 
 > En principe les dépendances seront réinstallées automatiquement lors de la mise à jour du plugin. Si ce n'est pas le cas veuillez les relancer manuellement.
 

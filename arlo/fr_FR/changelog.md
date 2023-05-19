@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-N/A
+- Fix enregistrement cloud
 
 # Stable
 

@@ -7,9 +7,13 @@ pluginId: modbus2mqtt
 
 # Beta
 
-- Compatibilité Jeedom v4.4
+N/A
 
 # Stable
+
+## 2023-05-20
+
+- Compatibilité Jeedom v4.4
 
 ## 2023-01-30
 

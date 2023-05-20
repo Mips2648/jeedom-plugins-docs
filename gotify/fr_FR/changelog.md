@@ -7,11 +7,15 @@ pluginId: gotify
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-05-20
+
 - Mise à jour de la page de configuration des équipements
 - Amélioration des champs password
 - Ajout des liens vers la documentation en beta
-
-# Stable
 
 ## 2022-10-17
 

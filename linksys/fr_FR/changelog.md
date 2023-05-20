@@ -7,11 +7,13 @@ pluginId: linksys
 
 # Beta
 
+N/A
+
+# Stable
+
 - Ajout commande **Type WAN**
 - Amélioration des champs password
 - Compatibilité Jeedom v4.4
-
-# Stable
 
 ## 2023-02-04
 

@@ -7,10 +7,14 @@ pluginId: kroomba
 
 # Beta
 
-- Compatibilité Jeedom v4.4
-- Fix crash démon si le nom du robot contenait un caractère spécial
+N/A
 
 # Stable
+
+## 2023-05-20
+
+- Compatibilité Jeedom v4.4
+- Fix crash démon si le nom du robot contenait un caractère spécial
 
 ## 2023-03-26
 

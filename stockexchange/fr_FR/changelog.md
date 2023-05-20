@@ -7,10 +7,14 @@ pluginId: stockexchange
 
 # Beta
 
-- Compatibilité Jeedom v4.4
-- Ajout des liens vers la documentation en beta
+N/A
 
 # Stable
+
+## 2023-05-20
+
+- Compatibilité Jeedom v4.4
+- Ajout des liens vers la documentation en beta
 
 ## 2022-10-17
 

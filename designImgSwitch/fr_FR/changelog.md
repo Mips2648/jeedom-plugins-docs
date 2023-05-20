@@ -7,9 +7,13 @@ pluginId: designImgSwitch
 
 # Beta
 
-n/a
+N/A
 
 # Stable
+
+## 2023-05-20
+
+- Ajout des liens vers la documentation en beta
 
 ## 2022-10-17
 

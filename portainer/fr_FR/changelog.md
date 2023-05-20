@@ -7,12 +7,16 @@ pluginId: portainer
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-05-20
+
 - Ajout d'information sur la dernière version disponible de Portainer.io dans la page santé (requis portainer.io >= 2.17) + message dans le centre de messages
 - Amélioration des champs password
 - Compatibilité Jeedom v4.4
 - Ajout des liens vers la documentation en beta
-
-# Stable
 
 ## 2022-10-17
 

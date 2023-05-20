@@ -7,14 +7,18 @@ pluginId: proxmox
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-05-20
+
 - Changement sur le nommage des équipements de type *stockages* pour éviter les conflits dans le cas d'utilisation avec un cluster de noeuds.
 - Le champ *Nom de l'équipement* est désormais en lecteur seule car le nom de l'équipement est défini par le processus de synchronisation et ne peut donc pas être modifié.
 - Ajout des commandes info **Nombre de tâches en erreur** et **Erreurs** sur les équipements *Noeud*; le nombre d'heure à prendre en compte pour la vérification se configure par équipement.
 - Amélioration des champs password
 - Compatibilité Jeedom v4.4
 - Ajout des liens vers la documentation en beta
-
-# Stable
 
 ## 2022-10-17
 

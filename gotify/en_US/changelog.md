@@ -7,11 +7,15 @@ pluginId: gotify
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-05-20
+
 - Update device configuration screen
 - Improve password fields
 - Add links to documentation in beta
-
-# Stable
 
 ## 2022-10-17
 

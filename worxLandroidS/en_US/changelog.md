@@ -13,10 +13,19 @@ pluginId: worxLandroidS
 - Add the activity report (which replaces the health page)
 - Add information about the mower: model, year of production, cutting width
 - Replace the zones & schedules tabs with a “My lawn” tab in which we find:
-  - Information générale
+  - General information
   - Multi-zone setup
   - Manual schedule
   - Auto-schedule (if supported by your model)
+
+## 2023-05-17
+
+- Change behavior of command **Working zone**: from now the configuration of the zones are not modified anymore but the order will so the next start will match the selected zone
+- Fix on widget: additional commands were not displayed
+
+## April 2023
+
+See details here <https://community.jeedom.com/t/version-beta-avril-2023/105197>
 
 # Stable
 

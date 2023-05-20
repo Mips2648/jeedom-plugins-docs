@@ -7,11 +7,15 @@ pluginId: vaillantmultimatic
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-05-20
+
 - Improve password fields
 - Compatibility Jeedom v4.4
 - Add links to documentation in beta
-
-# Stable
 
 ## 2023-01-25
 

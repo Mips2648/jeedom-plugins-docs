@@ -7,9 +7,13 @@ pluginId: arlo
 
 # Beta
 
-- Fix enregistrement cloud
+N/A
 
 # Stable
+
+## 2023-05-22
+
+- Fix enregistrement cloud
 
 ## 2023-05-17
 

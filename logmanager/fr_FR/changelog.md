@@ -7,9 +7,13 @@ pluginId: logmanager
 
 # Beta
 
-n/a
+N/A
 
 # Stable
+
+## 2023-05-22
+
+- Ajout des liens vers la documentation en beta
 
 ## 2022-10-17
 

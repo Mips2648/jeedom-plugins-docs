@@ -23,7 +23,7 @@ Vous devez attendre la fin de l'installation des dépendances pour permettre la 
 Une fois la sauvegarde des identifiants effectuée, le démon va démarrer et découvrir automatiquemnt vos tondeuses. Pour chacune d'elle, un nouvel équipement va être créé automatiquement.
 
 L'arrêt du daemon permet de stopper la connexion avec la tondeuse.
-En cas d'arrêt prolongé de la tondeuse, en cas d'hivernage par exemple, vous pouvez désactiver le démon (et la gestion automatique) ou désavtiver complétement le plugin.
+En cas d'arrêt prolongé de la tondeuse, en cas d'hivernage par exemple, vous pouvez désactiver le démon (et la gestion automatique) ou désactiver complétement le plugin.
 
 # Utilisation
 

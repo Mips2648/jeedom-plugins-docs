@@ -53,7 +53,7 @@ Donc soit il faut attendre l'actualisation de l'info dans l'équipement, soit il
 
 # Widget
 
-Un widget pré-configuré est disponible dans le plugin; vous pouvez activer ce widget dans la page de configuration de l'équipement.
+Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce widget dans la page de configuration de l'équipement.
 
 ![alt text](../images/doc.png)
 ![alt text](../images/doc2.png)

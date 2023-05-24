@@ -7,9 +7,13 @@ pluginId: gardena
 
 # Beta
 
-- Modification sur la gestion des dépendances pour éviter des conflits potentiels avec d'autres plugins
+N/A
 
 # Stable
+
+## 2023-05-24
+
+- Modification sur la gestion des dépendances pour éviter des conflits potentiels avec d'autres plugins
 
 ## 2023-04-05
 

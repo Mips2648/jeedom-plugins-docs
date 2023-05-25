@@ -46,13 +46,16 @@ For v2, you must configure the URL in the form `https://server.my`, the access t
 
 You can also choose how data must be sent, by default with auto-refresh. This configuration can be changed anytime without impact.
 
+![Send mode](../images/mode.png "Mode")
+
 - _Auto-refresh_: the plugin will send all selected measurements at the selected schedule in one call, by default every minute.
 This is the recommended way of working, it's the most optimal and do not add extra load on your Jeedom and at the same time it allows to have measurements every minute.
 - _Real time_: the plugin will send measurement one by one each time there is a change of value, potentially several calls in the second for the same command (depending devices/commands). This mode might induce an important load on your installation depending your hardware and number of selected commands while most of the time an update by minute is more than enough to get useful statistics.
+- _History_: allows you to export each night all the history of the day before 
 
 It is possible to have multiple connectors to the same database each configured with different mode and different commands if you want to have some commands send in real time while optimizing the load for others
 
-In _Auto-refresh_ mode, you can choose the value that will be sent as the timestamp of the measurement:
+In _Auto-refresh_ mode, you can choose the schedule and the value that will be sent as the timestamp of the measurement:
 
 - _Send time_, default value and historical plugin behavior
 - _Value date_

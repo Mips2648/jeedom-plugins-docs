@@ -46,13 +46,16 @@ Pour la v2, vous devez configurer l'url sous la forme `https://server.my`, le to
 
 Vous pouvez aussi choisir le mode d'envoi, par défaut en auto-actualisation. Ce mode peut être changé à tout moment sans aucun impact.
 
+![Mode d'envoi](../images/mode.png "Mode")
+
 - _Auto-actualisation_: le plugin enverra toutes les mesures sélectionnées selon la programmation choisie en un seul appel, par défaut chaque minute.
 C'est le mode de fonctionnement recommandé, il est plus optimal et ne provoque quasi aucune charge sur votre Jeedom tout en permettant d'avoir des mesures toutes les minutes.
 - _Temps réel_: le plugin enverra les mesures une par une à chaque changement de valeur, potentiellement plusieurs appels par seconde pour la même commande (tout dépend de vos équipements/commandes). Ce mode peut provoquer une charge conséquente sur Jeedom en fonction de votre matériel et du nombre de commandes sélectionnées alors que bien souvent un mise à jour d'InfluxDB par minute suffit amplement pour avoir des statistiques utiles.
+- _Historique_: permet d'exporter chaque nuit tout l'historique de la veille
 
 Il est parfaitement possible d'avoir plusieurs équipements connectés à la même base de donnée configurés chacun avec un mode différent et des commandes différentes si vous voulez avoir certaines commandes envoyées en temps réel tout en optimisant la charge pour les autres.
 
-En mode _Auto-actualisation_, vous pouvez choisir la valeur qui sera envoyée comme timestamp de la mesure:
+En mode _Auto-actualisation_, vous pouvez choisir la programmation ainsi que la valeur qui sera envoyée comme timestamp de la mesure:
 
 - _Heure d'envoi_, valeur par défaut et comportement historique du plugin
 - _Date valeur de la commande_

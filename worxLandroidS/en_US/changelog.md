@@ -18,6 +18,13 @@ pluginId: worxLandroidS
   - Manual schedule
   - Auto-schedule (if supported by your model)
 
+## 2023-06-04
+
+- Add the command **Define distribution of zones** of type action/message. The percentage of zones must be provided (in steps of 10%). For example:
+  - `100` or `100,0,0,0` => 100% on zone 1
+  - `0,0,0,100` => 100% on zone 4
+  - `20,30,20,30` => 20% zone 1, 30% zone 2 ...
+
 ## 2023-05-17
 
 - Change behavior of command **Working zone**: from now the configuration of the zones are not modified anymore but the order will so the next start will match the selected zone

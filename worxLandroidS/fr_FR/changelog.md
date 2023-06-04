@@ -18,6 +18,13 @@ pluginId: worxLandroidS
   - Programmation manuelle
   - Auto-programmation (si supporté par votre modèle)
 
+## 2023-06-04
+
+- Ajout de la commande **Définir répartition des zones** de type action/message. Il faut passer le pourcentage des zones (par palier de 10%). Par exemple:
+  - `100` ou `100,0,0,0` => tout sur la zone 1
+  - `0,0,0,100` => tout sur la zone 4
+  - `20,30,20,30` => 20% zone 1, 30% zone 2 …
+
 ## 2023-05-17
 
 - Modification du comportement de la commande **Zone de travail**: à présent la configuration de la répartition entre les zones n'est plus modifiée mais l'ordre est modifiée pour que le prochain départ corresponde à la zone sélectionnée

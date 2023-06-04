@@ -7,9 +7,13 @@ pluginId: arlo
 
 # Beta
 
-- Fix cloud recording
+- Adapt the media library for mobile browsing
 
 # Stable
+
+## 2023-05-22
+
+- Fix cloud recording
 
 ## 2023-05-17
 

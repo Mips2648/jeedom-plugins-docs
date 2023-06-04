@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-N/A
+- Adaptation de la galerie média pour la navigation sur mobile
 
 # Stable
 

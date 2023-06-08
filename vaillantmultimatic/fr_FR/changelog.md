@@ -11,6 +11,10 @@ N/A
 
 # Stable
 
+## 2023-06-06
+
+- Mise à jour de librairies internes
+
 ## 2023-05-20
 
 - Amélioration des champs password

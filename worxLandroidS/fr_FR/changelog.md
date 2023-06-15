@@ -18,6 +18,10 @@ pluginId: worxLandroidS
   - Programmation manuelle
   - Auto-programmation (si supporté par votre modèle)
 
+## 2023-06-14
+
+- Ajout vérification & validation de la configuration du plugin
+
 ## 2023-06-04
 
 - Ajout de la commande **Définir répartition des zones** de type action/message. Il faut passer le pourcentage des zones (par palier de 10%). Par exemple:

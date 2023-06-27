@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-N/A
+- Fix un crash du démon avec les tondeuses Husqvarna sans module GPS
 
 # Stable
 

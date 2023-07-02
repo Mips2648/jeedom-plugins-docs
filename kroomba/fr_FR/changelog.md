@@ -7,7 +7,10 @@ pluginId: kroomba
 
 # Beta
 
-N/A
+- Ajout des commandes infos suivantes sur les Braava: **Type de lingette**, **Couvercle ouvert**, **Réservoir présent**, **Niveau réservoir**
+- Ajout des commandes pour configurer les préférences de nettoyage (sur les modèles compatibles, testé sur Braava jet m6):
+  - **Quantité de liquide** par défaut: *Eco*, *Standard*, *Ultra*
+  - **Chevauchement** du chemin de lavage par défaut: *Un peu*, *Plus*, *Beaucoup*
 
 # Stable
 

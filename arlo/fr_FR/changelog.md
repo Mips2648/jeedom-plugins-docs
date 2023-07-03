@@ -7,12 +7,16 @@ pluginId: arlo
 
 # Beta
 
+N/A
+
+# Stable
+
+## 2023-07-03
+
 - Adaptation de la bibliothèque de média pour la navigation sur mobile
 - Refonte & amélioration importante de l'authentification à Arlo:
   - Sauvegarde de la session pour réutilisation lors d'une reconnexion: à présent la reconnexion à Arlo lors d'un redémarrage du démon sera quasi instantanée (si la session précédente était toujours valide) car il n'y aura plus besoin de s'authentifier (donc on ne doit plus attendre le code unique par mail, on ne doit plus passer par cloudflare etc)
   - Ajout de méthodes de connexions alternatives dans le cas ou la connexion est bloquée par cloudflare (mais cela ne fonctionne pas à 100%)
-
-# Stable
 
 ## 2023-05-22
 

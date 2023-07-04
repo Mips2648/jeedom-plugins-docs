@@ -11,6 +11,7 @@ pluginId: kroomba
 - Ajout des commandes pour configurer les préférences de nettoyage (sur les modèles compatibles, testé sur Braava jet m6):
   - **Quantité de liquide** par défaut: *Eco*, *Standard*, *Ultra*
   - **Chevauchement** du chemin de lavage par défaut: *Un peu*, *Plus*, *Beaucoup*
+- Amélioration: le démon ne se connectera plus aux robots dont l'équipement correspondant est désactivé dans Jeedom
 
 # Stable
 

@@ -18,6 +18,10 @@ pluginId: worxLandroidS
   - Programmation manuelle
   - Auto-programmation (si supporté par votre modèle)
 
+## 2023-07-06
+
+- Ajout de la gestion du module ACS: état actuel, commandes activation & désactivation
+
 ## 2023-06-14
 
 - Ajout vérification & validation de la configuration du plugin

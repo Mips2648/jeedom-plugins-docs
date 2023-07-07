@@ -56,11 +56,10 @@ Donc soit il faut attendre l'actualisation de l'info dans l'équipement, soit il
 Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce widget dans la page de configuration de l'équipement.
 
 ![alt text](../images/doc.png)
-![alt text](../images/doc2.png)
 
 # Annexes
 
-## Liste des codes erreur:
+## Liste des codes erreur
 
 - 1: Bloquée
 - 2: Soulevée
@@ -78,7 +77,7 @@ Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce 
 - 14: Erreur charge batterie
 - 15: Délai recherche station dépassé
 
-##  Liste des codes statut:
+## Liste des codes statut
 
 - 0: Inactive
 - 1: Sur la base
@@ -101,7 +100,7 @@ Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce 
 
 > A quelle fréquence, les données sont-elles réactualisées?
 
-Les données sont disponibles en temps réel. Il n'y a pas de délai fixe, cela dépend donc si la tondeuse envoi des informations ou pas; 
+Les données sont disponibles en temps réel. Il n'y a pas de délai fixe, cela dépend donc si la tondeuse envoi des informations ou pas;
 Cela sera plusieurs fois par minute pendant la tonte et peut-être aucune mise à jour pendant la nuit...
 
 > quels sont les modèles compatibles?

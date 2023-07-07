@@ -7,9 +7,14 @@ pluginId: myaudi
 
 # Beta
 
-- Add links to documentation in beta
+N/A
 
 # Stable
+
+## 2023-06-08
+
+- Add links to documentation in beta
+- Change login URL
 
 ## 2021-11-04
 

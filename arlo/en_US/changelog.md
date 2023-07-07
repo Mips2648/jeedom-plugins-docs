@@ -7,9 +7,16 @@ pluginId: arlo
 
 # Beta
 
-- Adapt the media library for mobile browsing
+N/A
 
 # Stable
+
+## 2023-07-03
+
+- Adapt the media library for mobile browsing
+- Redesign & huge improvement of Arlo authentication
+  - Saving the session for reuse when reconnecting: now reconnecting to Arlo when the daemon is restarted will be almost instantaneous (if the previous session was still valid) because there will no longer be a need to authenticate (so you no longer have to wait for the unique code by email, you no longer have to go through cloudflare etc)
+  - Add alternatives connections methods in case of connection is blocked by cloudflare (but this does not work 100% of the time)
 
 ## 2023-05-22
 

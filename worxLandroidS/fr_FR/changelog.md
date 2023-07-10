@@ -18,9 +18,14 @@ pluginId: worxLandroidS
   - Programmation manuelle
   - Auto-programmation (si supporté par votre modèle)
 
+## 2023-07-10
+
+- Ajout de la gestion du module *Off Limits*: état actuel, commandes activation & désactivation des Zones interdites et des Shortcut
+- Ajout de la gestion du module *Find My Landroid*: état actuel
+
 ## 2023-07-06
 
-- Ajout de la gestion du module ACS: état actuel, commandes activation & désactivation
+- Ajout de la gestion du module *ACS*: état actuel, commandes activation & désactivation
 
 ## 2023-06-14
 

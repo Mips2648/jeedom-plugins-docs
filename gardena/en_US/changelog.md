@@ -7,9 +7,13 @@ pluginId: gardena
 
 # Beta
 
-N/A
+- Improve daemon log
 
 # Stable
+
+## 2023-06-30
+
+- Fix a demon crash with Husqvarna lawnmowers without GPS module
 
 ## 2023-05-24
 

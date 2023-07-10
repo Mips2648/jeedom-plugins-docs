@@ -18,6 +18,14 @@ pluginId: worxLandroidS
   - Manual schedule
   - Auto-schedule (if supported by your model)
 
+## 2023-07-06
+
+- Add management of ACS module: current state, activation & deactivation commands
+
+## 2023-06-14
+
+- Add check & verification of plugin configuration
+
 ## 2023-06-04
 
 - Add the command **Define distribution of zones** of type action/message. The percentage of zones must be provided (in steps of 10%). For example:

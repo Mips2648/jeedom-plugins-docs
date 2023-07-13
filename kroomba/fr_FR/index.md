@@ -54,6 +54,22 @@ Ensuite attendez cela prend entre 15s et 30s, vous verrez des notifications à l
 >
 > Lorsque la procédure de découverte est terminée, vous pouvez à nouveau utiliser votre application mobile iRobot si nécessaire.
 
+# Nettoyage par pièce ou par zone
+
+Lors de la découverte du robot, les commandes de bases correspondantes au robot seront créés. Vous aurez une commande **Démarrer** qui permet de lancer un nettoyage complet, de toute les pièces. Mais le plugin permet également de lancer le nettoyage d'une pièce ou d'une zone spécifique (sur les modèles compatibles).
+
+Pour cela il y a quelques étapes à suivre afin que les commandes correspondantes soient créés sur l'équipement:
+
+Il faut donc:
+
+- avoir créer les pièces ou zones dans l'app officielle.
+- que la connexion entre le plugin et le robot soit opérationnelle (démon démarré, que les infos remontent sur Jeedom...)
+- depuis l'app officielle, lancer une première fois le nettoyage dans la pièce ou la zone voulue et dans les secondes qui suivent, le plugin devrait détecter la nouvelle région et créera une commande action correspondante sur l'équipement correspondant au robot.
+- (optionnelle: vous pouvez renvoyer le robot sur la base)
+- pour l'instant il est impossible de remonter le nom de la région automatiquement, la commande aura donc un nom obscur mais vous pouvez la renommer comme bon vous semble. Faites le maintenant avant de lancer une nouvelle tâche pour détecter la pièce suivante sinon vous ne saurez plus quelle commande correspond à quelle pièce.
+
+A présent vous pouvez utiliser ces commandes comme tout autre commande Jeedom (il ne faut pas utiliser la commande **Démarrer** en plus)
+
 # Liste des états connus et correspondance sur le widget
 
 | Valeur commande *Etat*                         | Signification      |

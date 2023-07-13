@@ -54,6 +54,22 @@ Then wait it takes between 15s and 30s, you will see notifications on the screen
 >
 > When the discovery process is complete, you can use your iRobot mobile app again if needed.
 
+# Cleaning by room or zone
+
+When the robot is discovered, the basic commands corresponding to the robot will be created. You will have a **Start** command that allows you to start a complete cleaning of all the rooms. But the plugin also allows you to start cleaning of a specific room or area (on compatible models).
+
+To do this, there are a few steps to follow so that the corresponding commands are created on the device:
+
+It is therefore necessary to:
+
+- have created the rooms or zones in the official app.
+- that the connection between the plugin and the robot is operational (daemon started, the information goes back to Jeedom...)
+- From the official app, start cleaning in the desired room or area and in the following seconds, the plugin should detect the new region and create a corresponding action command on the device corresponding to the robot.
+- (optional: you can return the robot to the base)
+- For now it is impossible to get the name of the region automatically, so the command will have an obscure name but you can rename it as you wish. Do it now before starting a new task to detect the next room otherwise you will no longer know which command corresponds to which room.
+
+Now you can use these commands like any other Jeedom command (you should not use the **Start** command on top)
+
 # List of known states and correspondence on the widget
 
 | Command value *State*                         | Meaning      |
@@ -86,3 +102,7 @@ At a minimum, you will need to provide:
 - a screenshot of the Jeedom health page
 - all available plugin logs
 - depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
+
+# Do you like the plugin?
+
+<a href="https://www.buymeacoffee.com/mips2648" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>

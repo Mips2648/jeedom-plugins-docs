@@ -7,6 +7,7 @@ pluginId: kroomba
 
 # Beta
 
+- Add clean by room 
 - Add the following info commands to Braava: **Wipe type**, **Cover open**, **Tank present**, **Tank Level**
 - Add commands to configure cleaning preferences (on compatible model, tested on Braava jet m6):
   - **Liquid quantity** by default: *Eco*, *Standard*, *Ultra*

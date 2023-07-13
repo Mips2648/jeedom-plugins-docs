@@ -18,9 +18,14 @@ pluginId: worxLandroidS
   - Manual schedule
   - Auto-schedule (if supported by your model)
 
+## 2023-07-10
+
+- Add management of *Off Limits* module: current state, activation & deactivation
+- Add management of *Find My Landroid* module: current state
+
 ## 2023-07-06
 
-- Add management of ACS module: current state, activation & deactivation commands
+- Add management of *ACS* module: current state, activation & deactivation commands
 
 ## 2023-06-14
 

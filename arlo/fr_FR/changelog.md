@@ -9,6 +9,7 @@ pluginId: arlo
 
 - Fix pour l'enregistrement cloud qui démarre plus lentement qu'avant (dû au cloud Arlo)
 - Fix l'enregistrement & le streaming local
+- Fix l'option de durée ne s'affichait pas sur la commande "Enregistrement" dans les scénarios
 
 # Stable
 

@@ -7,8 +7,7 @@ pluginId: arlo
 
 # Beta
 
-- Fix for cloud recording that starts slower than before (due to Arlo cloud)
-- Fix local recording & streaming
+N/A
 
 # Stable
 

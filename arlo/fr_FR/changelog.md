@@ -11,11 +11,12 @@ N/A
 
 # Stable
 
-## 2023-07-17
+## 2023-07-19
 
 - Fix pour l'enregistrement cloud qui démarre plus lentement qu'avant (dû au cloud Arlo)
 - Fix l'enregistrement & le streaming local
 - Fix l'option de durée ne s'affichait pas sur la commande "Enregistrement" dans les scénarios
+- Fix un problème de dépendance sur pi3 sous Buster
 
 ## 2023-07-03
 

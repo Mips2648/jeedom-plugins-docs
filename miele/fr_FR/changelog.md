@@ -7,7 +7,7 @@ pluginId: miele
 
 # Beta
 
-n/a
+- Mise à jour de l'API Miele@Home pour la prise en charge de nouveau modèles
 
 # Stable
 

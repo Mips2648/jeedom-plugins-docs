@@ -7,7 +7,7 @@ pluginId: fullup
 
 # Beta
 
-n/a
+- Ajout du support de l'application _Total_; voir configuration du plugin
 
 # Stable
 

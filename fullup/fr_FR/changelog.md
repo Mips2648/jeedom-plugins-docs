@@ -8,6 +8,7 @@ pluginId: fullup
 # Beta
 
 - Ajout du support de l'application _Total_; voir configuration du plugin
+- Amélioration des champs password
 
 # Stable
 

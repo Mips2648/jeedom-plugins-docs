@@ -7,7 +7,7 @@ pluginId: notificationqueue
 
 # Beta
 
-n/a
+- Nouvelle option pour choisir comment détecter une notification en doublon: message identique (comportement par défaut et avant cette mise à jour), titre identique, message & titre identique
 
 # Stable
 

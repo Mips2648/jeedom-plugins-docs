@@ -17,7 +17,7 @@ In order to use the plugin, you must download, install and activate it like any 
 
 There is normally no configuration to perform but if necessary, in the plugin configuration page, you can change the following options:
 
-- Le topic contenant les config des équipements à découvrir
+- The topic containing the configurations of the device to discover
 - Le topic contenant les différentes données qui correspondront à des commandes sous Jeedom
 
 # Devices configuration

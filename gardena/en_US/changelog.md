@@ -7,9 +7,15 @@ pluginId: gardena
 
 # Beta
 
-- Improve daemon log
+n/a
 
 # Stable
+
+## 2023-08-21
+
+- Improve daemon log
+- Fix the commands **Start manual** & **Back to home** for Husqvarna robots: the time received as a command parameter was interpreted in hours instead of minutes
+- Internal change in dependency management
 
 ## 2023-06-30
 

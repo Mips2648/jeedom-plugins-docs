@@ -17,6 +17,7 @@ pluginId: worxLandroidS
   - Multi-zone setup
   - Manual schedule
   - Auto-schedule (if supported by your model)
+- Add support for the Landroid Vision model
 
 ## 2023-07-10
 

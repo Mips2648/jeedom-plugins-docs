@@ -15,14 +15,18 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 # Configuration du plugin
 
-Dans la configuration du plugin, vous devez spécifier votre nom d'utilisateur et votre mot de passer utilisés sur l'application Hydrao.
+Dans la configuration du plugin, vous devez spécifier votre nom d'utilisateur et votre mot de passe utilisés sur l'application Hydrao ainsi que la clé API. Pour obtenir votre clé API, vous devez contacter le support d'Hydrao directement.
 
 Vous pouvez également configuré combien de douches dans le passé doivent être synchroniser avec Jeedom, cela est surtout utile lors de la première synchronisation, plus d'information ci-dessous.
 
 # Les équipements
 
 Dès que la configuration du plugin est correcte, le plugin synchronisera vos pommeaux de douche.
-Il effectuera une synchronisation chaque heure via le cronHourly et vous pouvez faire un refresh manuel via la commande correspondante sur l'équipement.
+Il effectuera une synchronisation toutes les 2 heures et vous pouvez faire un refresh manuel via la commande correspondante sur l'équipement.
+
+> **Attention**
+>
+> Hydrao limite fortement le nombre d'appel API, si vous recevez cette erreur dans le log ´Login failed: (429) - response received: {"message":"Limit Exceeded"}´ je vous invite à les contacter directement pour leur demander d'augmenter la limite.
 
 Le plugin créera une équipement *Pommeau* par pommeau activé sur votre compte. Chaque équipement *Pommeau* aura les commandes info décrites ci-dessous donnant l'information sur la *dernière douche connue* mais les douches précédentes qui n'auraient pas déjà été synchronisées avec Jeedom seront synchronisées également et insérées dans l'historique de la commande sous Jeedom, avec l'heure connue par Hydrao. Le nombre maximum de douche à synchroniser dans le passée est à choisir dans la configuration du plugin.
 

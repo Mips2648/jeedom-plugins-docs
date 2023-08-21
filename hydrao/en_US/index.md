@@ -21,8 +21,8 @@ You can also configure how many showers in the past should be synchronized with 
 
 # Devices
 
-Dès que la configuration du plugin est correcte, le plugin synchronisera vos pommeaux de douche.
-Il effectuera une synchronisation toutes les 2 heures et vous pouvez faire un refresh manuel via la commande correspondante sur l'équipement.
+As soon as the plugin configuration is correct, the plugin will synchronize your shower heads.
+It will synchronize every 2 hours and you can do a manual refresh via the corresponding command on the device.
 
 > **Attention**
 >

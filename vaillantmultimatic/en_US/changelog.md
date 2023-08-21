@@ -7,7 +7,7 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-N/A
+- Internal change in dependency management
 
 # Stable
 

@@ -7,11 +7,15 @@ pluginId: gardena
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2023-08-21
+
 - Amélioration du log du démon
 - Fix les commandes **Démarrage mode manuel** & **Retour à la base** pour les robots Husqvarna: la durée reçue en paramètre de la commande était interprétée en heures au lieu de minutes
 - Modification interne de la gestion de dépendances
-
-# Stable
 
 ## 2023-06-30
 

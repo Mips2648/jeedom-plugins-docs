@@ -15,14 +15,18 @@ In order to use the plugin, you must download, install and activate it like any 
 
 # Plugin configuration
 
-In the plugin configuration, you need to specify your username and password used on the Hydrao application.
+Dans la configuration du plugin, vous devez spécifier votre nom d'utilisateur et votre mot de passe utilisés sur l'application Hydrao ainsi que la clé API. Pour obtenir votre clé API, vous devez contacter le support d'Hydrao directement.
 
 You can also configure how many showers in the past should be synchronized with Jeedom, this is especially useful when synchronizing for the first time, more information below.
 
 # Devices
 
-As soon as the plugin configuration is correct, the plugin will synchronize your shower heads.
-It will synchronize every hour via CronHourly and you can do a manual refresh via the corresponding command on the equipment.
+Dès que la configuration du plugin est correcte, le plugin synchronisera vos pommeaux de douche.
+Il effectuera une synchronisation toutes les 2 heures et vous pouvez faire un refresh manuel via la commande correspondante sur l'équipement.
+
+> **Attention**
+>
+> Hydrao limite fortement le nombre d'appel API, si vous recevez cette erreur dans le log  ́Login failed: (429) - response received: {"message":"Limit Exceeded"} ́ je vous invite à les contacter directement pour leur demander d'augmenter la limite.
 
 The plugin will create one *Shower* device for each shower activated on your account. Each *Shower* device will have the info commands described below giving information on the *last known shower* but the previous showers that have not already been synchronized with Jeedom will also be synchronized and inserted in the command history under Jeedom, with the time known by Hydrao. The maximum number of showers to be synchronized in the past is to be chosen in the configuration of the plugin.
 

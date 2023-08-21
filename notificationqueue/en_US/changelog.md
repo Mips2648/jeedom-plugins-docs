@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2023-08-21
+
+- New option to choose how to detect a duplicate notification: identical message (default behavior and before this update), identical title or identical message & title
+
 ## 2022-10-17
 
 - From now on expired messages will be removed from the queue over time (and not only if a condition is true).

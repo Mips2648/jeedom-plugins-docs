@@ -7,11 +7,15 @@ pluginId: arlo
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2023-08-21
+
 - Modification interne de la gestion de dépendances
 - Adaptation de l'url dernière capture lors de la première synchro pour éviter un problème d'accès (CSP)
 - Bloque le démon dans le cas où aucun serveur d'authentification Arlo n'est trouvé
-
-# Stable
 
 ## 2023-07-19
 

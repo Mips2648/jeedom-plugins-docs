@@ -130,6 +130,16 @@ Plugin to create a gateway between modbus TCP/IP and MQTT.
 - [Changelog]({{site.baseurl}}/modbus2mqtt/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=4309" target="_blank">Market</a>
 
+# ModBus 2 MQTT
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/MQTTDiscovery_icon.png">]({{site.baseurl}}/MQTTDiscovery/{{page.lang}})
+
+Plugin for automatic discovery of MQTT device.
+
+- [Documentation]({{site.baseurl}}/MQTTDiscovery/{{page.lang}})
+- [Changelog]({{site.baseurl}}/MQTTDiscovery/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4429" target="_blank">Market</a>
+
 # My Audi
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/myaudi_icon.png">]({{site.baseurl}}/myaudi/{{page.lang}})

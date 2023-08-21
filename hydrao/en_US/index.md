@@ -15,7 +15,7 @@ In order to use the plugin, you must download, install and activate it like any 
 
 # Plugin configuration
 
-Dans la configuration du plugin, vous devez spécifier votre nom d'utilisateur et votre mot de passe utilisés sur l'application Hydrao ainsi que la clé API. Pour obtenir votre clé API, vous devez contacter le support d'Hydrao directement.
+In the plugin configuration, you must specify your username and password used on the Hydrao application as well as the API key. To get your API key, you need to contact Hydrao support directly.
 
 You can also configure how many showers in the past should be synchronized with Jeedom, this is especially useful when synchronizing for the first time, more information below.
 

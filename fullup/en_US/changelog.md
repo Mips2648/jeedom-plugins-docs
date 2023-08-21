@@ -7,8 +7,7 @@ pluginId: fullup
 
 # Beta
 
-- Added support for the _Total_ application; see plugin configuration
-- Improve password fields
+n/a
 
 # Stable
 

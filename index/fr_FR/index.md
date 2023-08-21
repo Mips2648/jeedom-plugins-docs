@@ -130,7 +130,7 @@ Plugin permettant de faire passerelle entre du modbus TCP/IP et MQTT.
 - [Changelog]({{site.baseurl}}/modbus2mqtt/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=4309" target="_blank">Market</a>
 
-# ModBus 2 MQTT
+# MQTT Discovery
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/MQTTDiscovery_icon.png">]({{site.baseurl}}/MQTTDiscovery/{{page.lang}})
 

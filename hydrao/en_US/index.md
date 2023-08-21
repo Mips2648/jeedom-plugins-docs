@@ -26,7 +26,7 @@ It will synchronize every 2 hours and you can do a manual refresh via the corres
 
 > **Attention**
 >
-> Hydrao limite fortement le nombre d'appel API, si vous recevez cette erreur dans le log  ́Login failed: (429) - response received: {"message":"Limit Exceeded"} ́ je vous invite à les contacter directement pour leur demander d'augmenter la limite.
+> Hydrao severely limits the number of API calls, if you receive this error in the log ́ ́Login failed: (429) - response received: {"message”: “Limit Exceeded"} ́  I invite you to contact them directly to ask them to increase the limit.
 
 The plugin will create one *Shower* device for each shower activated on your account. Each *Shower* device will have the info commands described below giving information on the *last known shower* but the previous showers that have not already been synchronized with Jeedom will also be synchronized and inserted in the command history under Jeedom, with the time known by Hydrao. The maximum number of showers to be synchronized in the past is to be chosen in the configuration of the plugin.
 

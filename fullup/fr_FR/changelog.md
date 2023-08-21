@@ -7,10 +7,14 @@ pluginId: fullup
 
 # Beta
 
-- Ajout du support de l'application _Total_; voir configuration du plugin
-- Amélioration des champs password
+n/a
 
 # Stable
+
+# 2023-08-21
+
+- Ajout du support de l'application _Total_; voir configuration du plugin
+- Amélioration des champs password
 
 ## 2022-10-17
 

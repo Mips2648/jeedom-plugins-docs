@@ -15,7 +15,7 @@ In order to use the plugin, you must download, install and activate it like any 
 
 # Plugin configuration
 
-Il n'y a normalement aucune configuration à effectuer mais si besoin, dans la page de configuration du plugin, vous pouvez modifier les options suivantes:
+There is normally no configuration to perform but if necessary, in the plugin configuration page, you can change the following options:
 
 - Le topic contenant les config des équipements à découvrir
 - Le topic contenant les différentes données qui correspondront à des commandes sous Jeedom

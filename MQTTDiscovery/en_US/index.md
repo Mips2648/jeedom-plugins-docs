@@ -1,0 +1,41 @@
+---
+layout: default
+title: MQTT Discovery documentation 
+lang: en_US
+pluginId: MQTTDiscovery
+---
+
+# Description
+
+Plugin pour découverte automatique d'équipement MQTT
+
+# Installation
+
+In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
+
+# Plugin configuration
+
+Il n'y a normalement aucune configuration à effectuer mais si besoin, dans la page de configuration du plugin, vous pouvez modifier les options suivantes:
+
+- Le topic contenant les config des équipements à découvrir
+- Le topic contenant les différentes données qui correspondront à des commandes sous Jeedom
+
+# Devices configuration
+
+The plugin can be found in the Plugins → Home automation protocol menu.
+
+# Changelog
+
+[See the changelog](./changelog)
+
+# Support
+
+If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+
+At a minimum, you will need to provide:
+
+- a screenshot of the Jeedom health page
+- all available plugin logs
+- depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...

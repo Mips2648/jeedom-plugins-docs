@@ -7,7 +7,7 @@ pluginId: modbus2mqtt
 
 # Beta
 
-N/A
+- Fix a dependency issue on Debian 11 / Python 3.9
 
 # Stable
 

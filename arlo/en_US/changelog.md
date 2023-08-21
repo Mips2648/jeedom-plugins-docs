@@ -7,9 +7,18 @@ pluginId: arlo
 
 # Beta
 
-N/A
+- Internal change in dependency management
+- Adaptation of the Last captured URL during the first sync to avoid an access problem (CSP)
+- Block the daemon if no Arlo authentication server is found
 
 # Stable
+
+## 2023-07-19
+
+- Fix for cloud recording that starts slower than before (due to Arlo cloud)
+- Fix local recording & streaming
+- Fix: the duration option did not appear on the “Record” command in scenarios
+- Fix a dependency problem on pi3 under Buster
 
 ## 2023-07-03
 

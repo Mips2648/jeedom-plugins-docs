@@ -17,6 +17,7 @@ pluginId: worxLandroidS
   - Configuration multi-zone
   - Programmation manuelle
   - Auto-programmation (si supporté par votre modèle)
+- Ajout du support du modèle Landroid Vision
 
 ## 2023-07-10
 

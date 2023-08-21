@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Description
 
-Plugin pour découverte automatique d'équipement MQTT
+Plugin for automatic discovery of MQTT device.
 
 # Installation
 

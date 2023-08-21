@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+# 2023-08-21
+
+- Added support for the _Total_ application; see plugin configuration
+- Improve password fields
+
 ## 2022-10-17
 
 - Update of the presentation of commands for Jeedom v4.3

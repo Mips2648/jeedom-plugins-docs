@@ -7,9 +7,13 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-- Modification interne de la gestion de dépendances
+n/a
 
 # Stable
+
+## 2023-08-21
+
+- Modification interne de la gestion de dépendances
 
 ## 2023-06-06
 

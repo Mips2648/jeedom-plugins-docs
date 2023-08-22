@@ -7,14 +7,18 @@ pluginId: kroomba
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2023-08-21
+
 - Add clean by room 
 - Add the following info commands to Braava: **Wipe type**, **Cover open**, **Tank present**, **Tank Level**
 - Add commands to configure cleaning preferences (on compatible model, tested on Braava jet m6):
   - **Liquid quantity** by default: *Eco*, *Standard*, *Ultra*
   - **Overlap** of the default wash path: *Somewhat*, *More*, *A lot*
 - Improvement: the daemon will no longer connect to robots whose corresponding device is disabled in Jeedom
-
-# Stable
 
 ## 2023-05-20
 

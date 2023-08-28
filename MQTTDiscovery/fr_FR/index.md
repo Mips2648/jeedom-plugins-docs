@@ -11,9 +11,16 @@ Plugin pour découverte automatique d'équipement MQTT.
 
 Le plugin se base sur le principe du "MQTT Auto Discovery" qui existe sous home assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom.
 
-Cela permet d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipement](https://compatible.openmqttgateway.com/index.php/devices/) ou l'équivalent [Theengs gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via le plugin, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag bluetooth tel que les nuts.
+Cela permet d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipement](https://compatible.openmqttgateway.com/index.php/devices/) ou l'équivalent [Theengs gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via le plugin, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts.
 
-Mais donc cela ne se limite pas à ça puisque tous équipements compatibles "MQTT Auto Discovery" sera gérable via le plugin.
+Mais donc cela ne se limite pas à ça puisque tous équipements compatibles "MQTT Auto Discovery" sera gérable via le plugin. Par exemple, ce plugin a été testé avec succès avec zwavejs-ui et zigbee2mqtt.
+
+> **Important**
+>
+> Ce plugin n'a pas vocation à remplacer des plugins de protocoles dédiés à, zwavejs-ui et zigbee2mqtt par exemple; les plugins existants sur le market géreront bien mieux ces protocoles sous Jeedom.
+> Aucune options spécifiques ne sera développée pour gérer plus en détail ceux-ci, ce n'est pas le but du plugin qui implémente uniquement la découverte automatique.
+> Les tests effectués avec ces zwavejs-ui et zigbee2mqtt sont réalisés uniquement parce que cela me permet de valider à grande échelle le comportement du plugin mais absolument pas pour gérer les spécificités de ces protocoles.
+> Donc ce plugin peut évidement être utilisé pour créer facilement les équipements nécessaires à ces protocoles mais uniquement dans le cadre d'une utilisation en mode avancée, en sachant que vous gérer absolument tout le reste avec les outils mis à disposition par ces programmes.
 
 # Installation
 
@@ -81,6 +88,30 @@ TheengsGW_venv/bin/python3 -m pip install TheengsGateway
 Le plugin se trouve dans le menu Plugins → Protocole domotique.
 
 Il n'y a aucune configuration spécifique.
+
+Lorsque le plugin recevra les informations sur le topic de découverte, il créera les équipements et les commandes manquantes automatiquement.
+
+Dans la liste des commandes, vous verrez le topic MQTT correspondant ainsi que la valeur du json si relevant. Il est possible d'encoder un path s'il faut aller chercher une valeur dans un sous noeud.
+En principe vous n'aurez pas à modifier ces configurations, elles sont accessibles uniquement pour gérer les cas limites si le plugin n'a pas effectué la configuration automatiquement.
+
+# Fonctionnement de la découverte automatique
+
+La découverte automatique va publier les configurations de ce qui s'appellent des *composants*/*Entité*, chaque composant correspond à une catégorie, un type de commande. Par exemple: *sensor*, *switch*, *light*, *button*...
+
+Le plugin lit ces configurations et pour chaque composant va créer la ou les commandes Jeedom correspondantes, chacune sous leur équipement respectif.
+
+## Composant pris en charge
+
+Tous les composants ne sont pas encore entièrement ni complètement intégré. Si votre matériel a besoin du support d'un composant qui n'est pas encore reconnu, n'hésitez pas à un faire la demande en créant un post sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+- binary_sensor
+- button
+- light
+  - brightness
+- number
+- sensor
+- switch
+- text
 
 # Changelog
 

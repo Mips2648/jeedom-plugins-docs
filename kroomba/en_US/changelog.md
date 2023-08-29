@@ -7,7 +7,7 @@ pluginId: kroomba
 
 # Beta
 
-- Mise à jour des commandes régions/pièces dans le cas où les identifiants de cartes sont modifiés par iRobot. Aucune idée de quand ni pourquoi cela se produit et un premier manuel de la pièce sera nécessaire pour que le plugin mette à jour la commande.
+- Update region/part commands in the event that card IDs are changed by iRobot. No idea when or why this is happening and a new manual launch will be required for the plugin to update the command.
 
 # Stable
 

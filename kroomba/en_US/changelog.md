@@ -19,7 +19,7 @@ pluginId: kroomba
   - **Liquid quantity** by default: *Eco*, *Standard*, *Ultra*
   - **Overlap** of the default wash path: *Somewhat*, *More*, *A lot*
 - Improvement: the daemon will no longer connect to robots whose corresponding device is disabled in Jeedom
-- Nettoyage de code et suppression de dépendances inutiles
+- Clean up code and remove unnecessary dependencies
 
 ## 2023-05-20
 

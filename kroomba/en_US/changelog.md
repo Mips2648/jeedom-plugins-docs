@@ -7,9 +7,13 @@ pluginId: kroomba
 
 # Beta
 
-- Update region/part commands in the event that card IDs are changed by iRobot. No idea when or why this is happening and a new manual launch will be required for the plugin to update the command.
+n/a
 
 # Stable
+
+## 2023-08-30
+
+- Update region/part commands in the event that card IDs are changed by iRobot. No idea when or why this is happening and a new manual launch will be required for the plugin to update the command.
 
 ## 2023-08-21
 

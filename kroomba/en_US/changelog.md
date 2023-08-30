@@ -7,7 +7,7 @@ pluginId: kroomba
 
 # Beta
 
-n/a
+- Update region/part commands in the event that card IDs are changed by iRobot. No idea when or why this is happening and a new manual launch will be required for the plugin to update the command.
 
 # Stable
 
@@ -19,6 +19,7 @@ n/a
   - **Liquid quantity** by default: *Eco*, *Standard*, *Ultra*
   - **Overlap** of the default wash path: *Somewhat*, *More*, *A lot*
 - Improvement: the daemon will no longer connect to robots whose corresponding device is disabled in Jeedom
+- Clean up code and remove unnecessary dependencies
 
 ## 2023-05-20
 

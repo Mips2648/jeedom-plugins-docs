@@ -7,6 +7,12 @@ pluginId: worxLandroidS
 
 # Beta
 
+n/a
+
+## 2023-08-31
+
+Passage en stable des changements en cours en beta depuis avril, voir ci-dessous pour tous les détails par date, mais voici un résumé:
+
 - Reprise du plugin par @Mips
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
 - Compatibilité Jeedom v4.4

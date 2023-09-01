@@ -9,6 +9,8 @@ pluginId: worxLandroidS
 
 n/a
 
+# Stable
+
 ## 2023-08-31
 
 Passage en stable des changements en cours en beta depuis avril, voir ci-dessous pour tous les détails par date, mais voici un résumé:
@@ -53,8 +55,6 @@ Passage en stable des changements en cours en beta depuis avril, voir ci-dessous
 ## Avril 2023
 
 Voir les détails ici <https://community.jeedom.com/t/version-beta-avril-2023/105197>
-
-# Stable
 
 ## 2020-11-21 par @sebsst
 

@@ -101,7 +101,7 @@ If everything goes well, the daemon/service will start sending information about
 
 # Configuration change
 
-Si vous changez le port série à utiliser, vous devez, après avoir sauvegardé l'équipement, renvoyer la configuration. Pour ce faire, vous pouvez cliquer sur le bouton **Configurer le service & redémarrer**
+If you change the serial port to use, you must, after saving the device, resend the configuration. To do this, you can click on the **Configure the service & restart button**
 
 # HRV configuration
 

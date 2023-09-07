@@ -7,10 +7,17 @@ pluginId: vmczehnder
 
 # Beta
 
+- Réécriture complète du plugin qui se base à présent sur mqtt pour les échanges entre Jeedom et le pi distant branché à la VMC
 - Mise à jour page liste des équipements
 - Amélioration des champs password
 - Mise à jour gestion des dépendances v4.2
 - Compatibilité Jeedom v4.4
+
+> **Important**
+>
+> Le plugin et le démon distant nécessité au minium Debian Buster pour fonctionner, y compris donc pour le pi distant branché à la VMC.
+>
+> Le plugin nécessite une installation fonctionnelle du plugin "MQTT Manager (MQTT2)", si ce plugin n'est pas encore présent sur votre système, il sera installé automatiquement avec la mise à jour mais vous devrez finaliser sa configuration (voir documentation de *MQTT Manager*).
 
 # Stable
 

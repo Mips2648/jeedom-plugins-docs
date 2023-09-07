@@ -18,12 +18,14 @@ Les modèles suivant devraient être compatibles mais ils n'ont pas tous été t
 
 ## Pré-requis
 
-Vous aurez besoin d'un Raspberry pi (pas besoin d'un modèle puissant, un pi zéro w suffit, ou un vieux modèle si vous en avez un qui traîne) ou de tout autre système tournant sous debian (pas testé avec d'autres distributions).
+Vous aurez besoin d'un Raspberry pi (pas besoin d'un modèle puissant, un pi zéro w suffit, ou un vieux modèle si vous en avez un qui traîne) ou de tout autre système tournant sous Debian Buster minimum (pas testé avec d'autres distributions).
 Si votre Jeedom est proche de la VMC, vous pouvez l'utiliser mais je conseille de séparer les 2 rôles.
 La suite de la documentation suppose que vous avez un pi, différent de Jeedom.
 
 Vous devez installer votre Raspberry pi, le connecter au réseau avec une IP fixe et activer ssh.
-Ce Raspberry hébergera un démon qui assurera la connection entre la VMC (via sont interface série, voir ci-dessous) et le plugin (via TCP). La connexion SSH servant à la gestion du démon.
+Ce Raspberry hébergera un démon qui assurera la connection entre la VMC (via son interface série, voir ci-dessous) et le plugin (via MQTT). La connexion SSH servant à l'installation et la configuration du démon distant.
+
+Le plugin nécessite une installation fonctionnelle du plugin "MQTT Manager (MQTT2)", si ce plugin n'est pas encore présent sur votre système, il sera installé automatiquement mais vous devrez finaliser sa configuration (voir documentation de *MQTT Manager*).
 
 A ce stade, il est recommandé de déjà mettre à jour votre pi (apt-get update, apt-get upgrade) afin d'accélérer l'installation du démon plus tard (voir ci-dessous).
 
@@ -58,7 +60,7 @@ Si vous le port db9 n'est pas présent, il existe aussi des adaptateurs de borni
 >
 > Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
-Il n'y a pas de configuration supplémentaire à effectuer ici, le plugin utilisera le cron5 pour rafraichir les données de la VMC toutes les 5 minutes et le cron pour vérifier le(s) démon(s) distant(s) chaque minute.
+Il n'y a pas de configuration supplémentaire à effectuer ici.
 
 # Configuration des équipements
 
@@ -68,51 +70,58 @@ Il n'y a pas de configuration supplémentaire à effectuer ici, le plugin utilis
 - Cliquez sur "Ajouter" et donnez un nom;
 - Vous arriverez sur la page de configuration de l'équipement sur laquelle vous pouvez configurer les options habituelles dans Jeedom (n'oubliez pas d'activer votre nouvel équipement).
 
-![Configuration équipement](../images/equip_config.png "Configuration équipement")
+![Configuration équipement](../images/eqlogic_config.png "Configuration équipement")
 
 ## Connectivité entre le plugin et le pi (configuration ssh)
 
 Vous devez ensuit renseigner l'adresse IP du Raspberry précédemment installé et connecté à la VMC, le port ssh (si différent du port par défaut), l'utilisateur (si autre que "pi") et son mot de passe.
 
-Sauvez votre équipement et si la configuration est correcte vous pouvez passer à l'étape suivante.
+**sauvegardez** votre équipement et si la configuration est correcte vous pouvez passer à l'étape suivante.
 
 ## Installation & configuration du démon
 
-Ouvrez la configuration du démon et lancer l'installation, la première installation peut prendre plusieurs minutes (surtout si le pi n'était pas à jour avant).
+# Première installation
+
+En principe, après la sauvegarde de l'équipement, la liste déroulante *Port série VMC* devrait contenir la liste des périphérique USB détecté sur le pi. Si ce n'est pas le cas:
+
+- Vérifiez les informations de connexion: ip, utilisateur, mot de passe
+- Vérifiez que vous avez correctement branché l'adaptateur USB sur le pi.
+
+Sélectionnez le port correcte et **sauvegardez** l'équipement.
+
+Vous pouvez à présent cliquer sur le bouton **Installer, configurer & redémarrer le service**. Cela va prendre un peu de temps donc patientez, vous allez recevoir régulièrement des notifications sur l'avancement.
 
 L'installation va:
 
 - copier les fichiers nécessaires sur le pi (via SSH);
 - installer les dépendances;
+- démarrer le service distant
 
-![Configuration démon](../images/daemon_config.png "Configuration démon")
+Si tout se passe correctement, le démon/service va commencer à envoyer les informations sur la VMC et le *statut* passera à *OK*
 
-Si l'installation s'est bien déroulée, vous devriez voir la liste des "devices" (usb) connectés à votre pi, vous devez sélectionner le device connecté à la VMC et éventuellement sélectionné celui connecté au CCEase (optionnel).
-Il n'est pas recommandé de changer la configuration des ports TCP, ne faite cela que si vous savez ce que vous faites et que vous avez un problème avec l'utilisation de ces ports là; Ces ports seront utilisés par le démon distant installé sur le Raspberry lui-même connecté à la VMC, pas sur Jeedom (sauf si c'est le même équipement).
+# Changement de configuration
 
-Sauvez la configuration.
-
-## Démarrage du démon
-
-Vous pouvez à présent démarrer le démon et activer la gestion automatique.
-
-Si tout se déroule bien, le statut devrait passer au vert. Si pas patientez quelques minutes si l'installation n'est pas finie (surveillez le log), le démon sera démarré automatiquement dès que possible.
+Si vous changez le port série à utiliser, vous devez, après avoir sauvegardé l'équipement, renvoyer la configuration. Pour ce faire, vous pouvez cliquer sur le bouton **Configurer le service & redémarrer**
 
 # Configuration de la VMC
 
-L'action recharger la configuration permet de lire la configuration depuis la VMC qui peut ensuite être consultée via le bouton _Configuration_
+L'action recharger la configuration permet de lire la configuration depuis la VMC qui peut ensuite être consultée via l'onglet *Configuration*.
+Il n'est normalement pas nécessaire d'effectuer cette action, la config est mise à jour automatiquement à chaque démarrage du service.
+
 L'écran présente un résumé des information de la VMC, les compteurs d'utilisation ainsi que la configuration des vitesses de ventilation.
 
 # Commandes
 
-Toutes les commandes créées se trouvent évidemment dans l'onglet "Commandes".
-Là aussi se trouve un bouton pour recréer les commandes manquantes sur votre équipement. Il n'y a aucun risque à effectuer cette actions, une commande existante ne sera jamais remplacée ni écrasée.
+Toutes les commandes créées se trouvent évidemment dans l'onglet *Commandes*.
+Vous y trouverez un bouton pour recréer les commandes manquantes sur votre équipement. Il n'y a aucun risque à effectuer cette actions, une commande existante ne sera jamais remplacée ni écrasée.
 
 En plus des commandes d'info (vitesse de ventilation actuelle, température mesurées...) et de la commande de rafraîchissement de ces infos, il existe:
 
 - une commande pour chaque vitesse de ventilation (0-absent, 1-lente, 2-moyenne, 3-rapide) pour définir la vitesse de ventilation correspondante.
 Vous pouvez utiliser ces commandes dans vos scénarios pour par exemple diminuer la vitesse en cas d'absence, de vacances ou pendant la nuit ou l'augmenter en cas d'augmentation de l'humidité dans la salle de bain et/ou la cuisine (via capteurs séparés).
-- une commande pour définir la température de confort, acceptant une valeur entre 0 et 40 (°C). La température de confort détermine l'utilisation ou non du bypass par la VMC (afin de refroidir la maison en cas de surchauffe, cf. manuel de la VMC). Il n'est pas recommandé de changer souvent cette valeur, la VMC se chargera de la gestion une fois la température définie et cette température est probablement déjà définie correctement dans votre installation.
+- une commande pour définir la température de confort, acceptant une valeur entre 12°C et 28°C. La température de confort détermine l'utilisation ou non du bypass par la VMC (afin de refroidir la maison en cas de surchauffe, cf. manuel de la VMC). Il n'est pas recommandé de changer souvent cette valeur, la VMC se chargera de la gestion une fois la température définie et cette température est probablement déjà définie correctement dans votre installation.
+
+La commande *Connecté* correspond à l'état du démon distant.
 
 # Rendement
 

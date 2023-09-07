@@ -89,7 +89,7 @@ In principle, after saving the device, the*VMC serial port* drop-down list shoul
 
 Select the correct port and **save** the device.
 
-Vous pouvez à présent cliquer sur le bouton **Installer, configurer & redémarrer le service**. Cela va prendre un peu de temps donc patientez, vous allez recevoir régulièrement des notifications sur l'avancement.
+You can now click on the **Install, configure & restart the service** button. This will take some time so be patient, you will receive regular notifications on the progress.
 
 The installation will:
 

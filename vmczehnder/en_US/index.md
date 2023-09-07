@@ -85,7 +85,7 @@ You must then enter the IP address of the Raspberry previously installed and con
 In principle, after saving the device, the*VMC serial port* drop-down list should contain the list of USB devices detected on the pi. If it is not the case:
 
 - Check login details: ip, user, password
-- Vérifiez que vous avez correctement branché l'adaptateur USB sur le pi.
+- Check that you have plugged the USB adapter into the pi properly.
 
 Sélectionnez le port correcte et **sauvegardez** l'équipement.
 

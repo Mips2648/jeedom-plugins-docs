@@ -105,21 +105,21 @@ If you change the serial port to use, you must, after saving the device, resend 
 
 # HRV configuration
 
-L'action recharger la configuration permet de lire la configuration depuis la VMC qui peut ensuite être consultée via l'onglet *Configuration*.
-Il n'est normalement pas nécessaire d'effectuer cette action, la config est mise à jour automatiquement à chaque démarrage du service.
+The reload configuration action allows you to read the configuration from the VMC, which can then be viewed via the *Configuration* tab.
+It is not normally necessary to perform this action, the configuration is updated automatically each time the service is started.
 
-L'écran présente un résumé des information de la VMC, les compteurs d'utilisation ainsi que la configuration des vitesses de ventilation.
+The screen shows a summary of VMC information, usage counters, and fan speed configuration.
 
 # Commands
 
-Toutes les commandes créées se trouvent évidemment dans l'onglet *Commandes*.
-Vous y trouverez un bouton pour recréer les commandes manquantes sur votre équipement. Il n'y a aucun risque à effectuer cette actions, une commande existante ne sera jamais remplacée ni écrasée.
+All created commands are obviously in the *Commands* tab.
+There is a button to recreate the missing commands on your device if needed. There is no risk to perform this action, an existing command will never be replaced.
 
 On top of the information commands (current fan speed, measured temperature, etc.) and the refresh command for these information, there are:
 
 - a command for each fan speed (0-absent, 1-low, 2-medium, 3-high) to set the corresponding speed.
 You can use these commands in your scenarios for example to reduce speed in case of absence, vacation or at night or increase it in case of increased humidity in the bathroom and/or kitchen ( via separate sensors).
-- une commande pour définir la température de confort, acceptant une valeur entre 12°C et 28°C. La température de confort détermine l'utilisation ou non du bypass par la VMC (afin de refroidir la maison en cas de surchauffe, cf. manuel de la VMC). Il n'est pas recommandé de changer souvent cette valeur, la VMC se chargera de la gestion une fois la température définie et cette température est probablement déjà définie correctement dans votre installation.
+- a command to set the comfort temperature, accepting a value between 12°C and 28°C. The comfort temperature determines whether or not the bypass is used by the VMC (to cool the house in case of overheating, see the VMC manual). It is not recommended to change this value often, the VMC will handle the management once the temperature is set and this temperature is probably already set correctly in your installation.
 
 The *Connected* command corresponds to the status of the remote daemon.
 

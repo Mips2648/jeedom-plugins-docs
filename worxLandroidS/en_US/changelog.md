@@ -9,7 +9,7 @@ pluginId: worxLandroidS
 
 ## 2023-09-05
 
-- Fix sur les commandes activation et désactivation des modules additionnels
+- Fix on the activation and deactivation commands of additional modules
 
 # Stable
 

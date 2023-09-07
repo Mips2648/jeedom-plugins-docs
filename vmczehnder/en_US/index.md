@@ -18,12 +18,14 @@ The following models should be compatible but they have not all been tested:
 
 ## Prerequisites
 
-You will need a Raspberry pi (no need for a powerful model, a zero w is enough, or an old model if you have one) or any other system running under debian (not tested with others distributions).
+You will need a Raspberry pi (no need for a powerful model, a zero w is enough, or an old model if you have one) or any other system running under Debian Buster minimum (not tested with others distributions).
 If your Jeedom is close to the HRV, you can use it but I advise to separate the 2 roles.
 The rest of the documentation assumes that you have a pi, different from Jeedom.
 
 You must install your Raspberry pi, connect it to the network with a fixed IP and enable ssh.
-This Raspberry will host a daemon that will provide a connection between the HRV-ERV (via its serial interface, see below) and the plugin (via TCP). The SSH connection is used to manage the daemon.
+This Raspberry will host a daemon that will provide a connection between the HRV-ERV (via its serial interface, see below) and the plugin (via TCP). The SSH connection is used to install and configure the daemon.
+
+The plugin requires a functional installation of the “MQTT Manager (MQTT2)” plugin, if this plugin is not yet present on your system, it will be installed automatically but you will have to finalize its configuration (see*MQTT Manager* documentation).
 
 At this point, it is recommended to update your pi (apt-get update, apt-get upgrade) in order to speed up the installation of the daemon later (see below).
 
@@ -58,7 +60,7 @@ If the db9 port is not present, there are also terminal block adapters to DB9 an
 >
 > In order to use the plugin you have to download,install and activate it as any other Jeedom plugin.
 
-There is no additional config to perform here, the plugin will use the cron5 to refresh the HRV-ERV data every 5min and the cron to check the remote(s) daemon(s) every minute.
+There is no additional configuration to do here.
 
 # Devices configuration
 
@@ -68,51 +70,58 @@ There is no additional config to perform here, the plugin will use the cron5 to 
 - Click "Add" and choose a name.
 - You will land on the configuration of your newly created device on witch you can setup usual Jeedom options (don't forget to activate your new device).
 
-![Device configuration](../images/equip_config.png "Device configuration")
+![Device configuration](../images/eqlogic_config.png "Device configuration")
 
 ## Connectivity between plugin and pi (ssh configuration)
 
 You must then enter the IP address of the Raspberry previously installed and connected to the HRV, the port ssh (if different from the default port), the user (if other than "pi") and its password.
 
-Save the change and if the configuration is correct you can proceed to next step.
+**sauvegardez** votre équipement et si la configuration est correcte vous pouvez passer à l'étape suivante.
 
 ## Daemon installation & configuration
 
-You can now start the installation of the daemon and its dependencies, the first installation can take several minutes (especially if the pi was not up to date before).
+# Première installation
+
+En principe, après la sauvegarde de l'équipement, la liste déroulante *Port série VMC* devrait contenir la liste des périphérique USB détecté sur le pi. Si ce n'est pas le cas:
+
+- Vérifiez les informations de connexion: ip, utilisateur, mot de passe
+- Vérifiez que vous avez correctement branché l'adaptateur USB sur le pi.
+
+Sélectionnez le port correcte et **sauvegardez** l'équipement.
+
+Vous pouvez à présent cliquer sur le bouton **Installer, configurer & redémarrer le service**. Cela va prendre un peu de temps donc patientez, vous allez recevoir régulièrement des notifications sur l'avancement.
 
 The installation will:
 
 - copy the necessary files to the pi (via SSH)
 - install the dependencies
+- démarrer le service distant
 
-![Daemon configuration](../images/daemon_config.png "Daemon configuration")
+Si tout se passe correctement, le démon/service va commencer à envoyer les informations sur la VMC et le *statut* passera à *OK*
 
-If the previous step went well, you should see the list of "devices" (usb) connected to your pi, you must select the device connected to the HRV and possibly select the one connected to the CCEease (optional).
-It is not recommended to change the configuration of the TCP ports, only do this if you know what you are doing and you have a problem with usage of these ports; These ports will be used by the remote daemon, on the Raspberry connected to the VMC, not on Jeedom (except it's the same device).
+# Changement de configuration
 
-Save the configuration.
-
-## Starting the daemon
-
-You can now start the daemon and enable automatic management.
-
-If all goes well, the status should go green. If not please wait a few minutes if the installation is not finished (monitor the log), the daemon will be started automatically as soon as possible.
+Si vous changez le port série à utiliser, vous devez, après avoir sauvegardé l'équipement, renvoyer la configuration. Pour ce faire, vous pouvez cliquer sur le bouton **Configurer le service & redémarrer**
 
 # HRV configuration
 
-The reload configuration action is used to read the configuration from the HRV which can then be consulted via the _Configuration_ button
-The screen presents a summary of the ventilation information, the usage counters as well as the configuration of the ventilation speeds.
+L'action recharger la configuration permet de lire la configuration depuis la VMC qui peut ensuite être consultée via l'onglet *Configuration*.
+Il n'est normalement pas nécessaire d'effectuer cette action, la config est mise à jour automatiquement à chaque démarrage du service.
+
+L'écran présente un résumé des information de la VMC, les compteurs d'utilisation ainsi que la configuration des vitesses de ventilation.
 
 # Commands
 
-All created commands are obviously in the "Commands" tab.
-There is a button to recreate the missing commands on your device if needed. There is no risk to perform this action, an existing command will never be replaced.
+Toutes les commandes créées se trouvent évidemment dans l'onglet *Commandes*.
+Vous y trouverez un bouton pour recréer les commandes manquantes sur votre équipement. Il n'y a aucun risque à effectuer cette actions, une commande existante ne sera jamais remplacée ni écrasée.
 
 On top of the information commands (current fan speed, measured temperature, etc.) and the refresh command for these information, there are:
 
 - a command for each fan speed (0-absent, 1-low, 2-medium, 3-high) to set the corresponding speed.
 You can use these commands in your scenarios for example to reduce speed in case of absence, vacation or at night or increase it in case of increased humidity in the bathroom and/or kitchen ( via separate sensors).
-- a command to set the comfort temperature, accepting a value between 0 and 40 (° C). The comfort temperature determines whether or not the bypass is used by the VMC (to cool the house in case of overheating, see the VMC manual). It is not recommended to change this value often, the VMC will handle the management once the temperature is set and this temperature is probably already set correctly in your installation.
+- une commande pour définir la température de confort, acceptant une valeur entre 12°C et 28°C. La température de confort détermine l'utilisation ou non du bypass par la VMC (afin de refroidir la maison en cas de surchauffe, cf. manuel de la VMC). Il n'est pas recommandé de changer souvent cette valeur, la VMC se chargera de la gestion une fois la température définie et cette température est probablement déjà définie correctement dans votre installation.
+
+The *Connected* command corresponds to the status of the remote daemon.
 
 # Efficiency
 

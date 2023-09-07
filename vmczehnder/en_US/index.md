@@ -80,7 +80,7 @@ You must then enter the IP address of the Raspberry previously installed and con
 
 ## Daemon installation & configuration
 
-# Première installation
+# First installation
 
 En principe, après la sauvegarde de l'équipement, la liste déroulante *Port série VMC* devrait contenir la liste des périphérique USB détecté sur le pi. Si ce n'est pas le cas:
 

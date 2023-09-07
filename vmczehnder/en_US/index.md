@@ -99,7 +99,7 @@ The installation will:
 
 If everything goes well, the daemon/service will start sending information about the VMC and the *status* will change to *OK*
 
-# Changement de configuration
+# Configuration change
 
 Si vous changez le port série à utiliser, vous devez, après avoir sauvegardé l'équipement, renvoyer la configuration. Pour ce faire, vous pouvez cliquer sur le bouton **Configurer le service & redémarrer**
 

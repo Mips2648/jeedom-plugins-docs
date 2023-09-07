@@ -7,7 +7,7 @@ pluginId: vmczehnder
 
 # Beta
 
-- Réécriture complète du plugin qui se base à présent sur mqtt pour les échanges entre Jeedom et le pi distant branché à la VMC
+- Complete rewrite of the plugin, which is now based on mqtt for exchanges between Jeedom and the remote pi connected to the VMC.
 - Update devices list screen
 - Improve password fields
 - Update dependencies management to v4.2

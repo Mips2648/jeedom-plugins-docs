@@ -87,7 +87,7 @@ In principle, after saving the device, the*VMC serial port* drop-down list shoul
 - Check login details: ip, user, password
 - Check that you have plugged the USB adapter into the pi properly.
 
-Sélectionnez le port correcte et **sauvegardez** l'équipement.
+Select the correct port and **save** the device.
 
 Vous pouvez à présent cliquer sur le bouton **Installer, configurer & redémarrer le service**. Cela va prendre un peu de temps donc patientez, vous allez recevoir régulièrement des notifications sur l'avancement.
 

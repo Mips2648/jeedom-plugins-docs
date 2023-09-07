@@ -97,7 +97,7 @@ The installation will:
 - install the dependencies
 - start remote service
 
-Si tout se passe correctement, le démon/service va commencer à envoyer les informations sur la VMC et le *statut* passera à *OK*
+If everything goes well, the daemon/service will start sending information about the VMC and the *status* will change to *OK*
 
 # Changement de configuration
 

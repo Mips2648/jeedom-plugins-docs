@@ -15,9 +15,9 @@ pluginId: vmczehnder
 
 > **Important**
 >
-> Le plugin et le démon distant nécessité au minimum Debian Buster pour fonctionner, y compris donc pour le pi distant branché à la VMC.
+> The plugin and the remote daemon require at least Debian Buster to work, including for the remote pi connected to the VMC.
 >
-> Le plugin nécessite une installation fonctionnelle du plugin "MQTT Manager (MQTT2)", si ce plugin n'est pas encore présent sur votre système, il sera installé automatiquement avec la mise à jour mais vous devrez finaliser sa configuration (voir documentation de *MQTT Manager*).
+> The plugin requires a functional installation of the "MQTT Manager (MQTT2)" plugin, if this plugin is not yet present on your system, it will be installed automatically with the update but you will need to finalize its configuration (see *MQTT documentation Manager*).
 
 # Stable
 

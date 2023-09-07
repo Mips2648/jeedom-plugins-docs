@@ -7,6 +7,16 @@ pluginId: worxLandroidS
 
 # Beta
 
+## 2023-09-05
+
+- Fix on the activation and deactivation commands of additional modules
+
+# Stable
+
+## 2023-08-31
+
+Stable release of the changes that have been underway in beta since April, see below for all the details by date, but here is a summary:
+
 - Taken over of the plugin by @Mips
 - Update of the presentation of commands for Jeedom v4.3
 - Compatibility Jeedom v4.4
@@ -47,8 +57,6 @@ pluginId: worxLandroidS
 ## April 2023
 
 See details here <https://community.jeedom.com/t/version-beta-avril-2023/105197>
-
-# Stable
 
 ## 2020-11-21 par @sebsst
 

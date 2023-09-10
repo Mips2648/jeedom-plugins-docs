@@ -7,8 +7,7 @@ pluginId: worxLandroidS
 
 # Beta
 
-## 2023-09-05
-
+- Encryption du nom d'utilisateur et du mot de passe en base de données
 - Fix sur les commandes activation et désactivation des modules additionnels
 
 # Stable

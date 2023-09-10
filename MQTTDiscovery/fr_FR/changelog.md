@@ -5,7 +5,15 @@ lang: fr_FR
 pluginId: MQTTDiscovery
 ---
 
-# 2023-08-xx
+# Beta
+
+## 2023-09-07
+
+- Fix sur light/brightness
+
+# Stable
+
+# 2023-10-xx
 
 - Première version
 

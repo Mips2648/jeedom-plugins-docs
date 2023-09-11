@@ -17,7 +17,7 @@ Mais donc cela ne se limite pas à ça puisque tous équipements compatibles "MQ
 
 > **Important**
 >
-> Ce plugin n'a pas vocation à remplacer des plugins de protocoles dédiés à, zwavejs-ui et zigbee2mqtt par exemple; les plugins existants sur le market géreront bien mieux ces protocoles sous Jeedom.
+> Ce plugin n'a pas vocation à remplacer des plugins de protocoles dédiés à zwavejs-ui et zigbee2mqtt par exemple; les plugins existants sur le market géreront bien mieux ces protocoles sous Jeedom.
 > Aucune options spécifiques ne sera développée pour gérer plus en détail ceux-ci, ce n'est pas le but du plugin qui implémente uniquement la découverte automatique.
 > Les tests effectués avec ces zwavejs-ui et zigbee2mqtt sont réalisés uniquement parce que cela me permet de valider à grande échelle le comportement du plugin mais absolument pas pour gérer les spécificités de ces protocoles.
 > Donc ce plugin peut évidement être utilisé pour créer facilement les équipements nécessaires à ces protocoles mais uniquement dans le cadre d'une utilisation en mode avancée, en sachant que vous gérer absolument tout le reste avec les outils mis à disposition par ces programmes.
@@ -25,15 +25,33 @@ Mais donc cela ne se limite pas à ça puisque tous équipements compatibles "MQ
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
+Il faut ensuite installer les dépendances.
 
-Le plugin *MQTT Manager (mqtt2)* est requis et sera installé automatiquement s'il n'est pas encore installé sur votre Jeedom.
+Vous devez avoir déjà installé un broker MQTT, soit par vous-même, soit par l'intermédiaire d'un autre plugin Jeedom.
+
+Si le plugin *MQTT Manager (mqtt2)* est installé, la configuration pour se connecter au broker géré par ce plugin pourra être récupérée automatiquement.
 
 # Configuration du plugin
 
-Il n'y a normalement aucune configuration à effectuer mais si besoin, dans la page de configuration du plugin, vous pouvez modifier les options suivantes:
+## Accès au broker MQTT
 
-- Le topic contenant les config des équipements à découvrir, par défaut `homeassistant`.
-- Le topic contenant les différentes données qui correspondront à des commandes sous Jeedom, par défaut `home`
+Il faut configurer l'adresse IP du broker, le port, un nom d'utilisateur et son mot de passe.
+Si le plugin *MQTT Manager (mqtt2)* est installé, vous verrez un bouton pour effectuer cette configuration automatiquement.
+
+## Auto-découverte
+
+Le topic contenant les config des équipements à découvrir, par défaut `homeassistant`, peut éventuellement être modifié si nécessaire.
+
+Il faudra ensuite configurer la liste des topics racines pour lesquels vous voulez remonter les équipements. Par exemple, pour les équipements gérés par *Open MQTT Gateway* ou *Theengs gateway* cela sera le topic `home` par défaut.
+
+Après le premier démarrage du démon et donc après la première séance de découverte, vous verrez également la liste des topics possibles mais non-configurés, il est possible des les ajouter directement.
+
+# Démon
+
+Pour finir, vous pouvez configurer les infos suivantes (optionnelles):
+
+- *Cycle* définit la fréquence d'envoi, en secondes, des informations vers Jeedom: une valeur numérique entre `0.5` et `10`
+- *Port socket interne* définit le port sur lequel écoute le démon. Ne changez pas cette valeur sans avoir posé la question sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
 # Installation des antennes
 
@@ -106,6 +124,7 @@ Tous les composants ne sont pas encore entièrement ni complètement intégré. 
 
 - binary_sensor
 - button
+- cover
 - light
   - brightness
 - number

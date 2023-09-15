@@ -7,7 +7,7 @@ pluginId: notificationqueue
 
 # Beta
 
-n/a
+- Possibilité d'ajouter de multiple conditions d'envoi et pour chacune d'elles des commandes de notifications différentes. Cela permet d'envoyer vos notifications sur différents "canaux" en fonction de conditions que vous définissez.
 
 # Stable
 

@@ -70,6 +70,8 @@ Il faut donc:
 
 A présent vous pouvez utiliser ces commandes comme tout autre commande Jeedom (il ne faut pas utiliser la commande **Démarrer** en plus)
 
+Il arrive que les identifiants de cartes soient modifiés par iRobot (probablement dès qu'une modification de la carte est effectuée). Lorsque cela se produit il faut relancer un nettoyage manuel de la pièce pour que le plugin mette à jour la commande.
+
 # Liste des états connus et correspondance sur le widget
 
 | Valeur commande *Etat*                         | Signification      |

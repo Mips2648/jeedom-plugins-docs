@@ -53,59 +53,32 @@ Pour finir, vous pouvez configurer les infos suivantes (optionnelles):
 - *Cycle* définit la fréquence d'envoi, en secondes, des informations vers Jeedom: une valeur numérique entre `0.5` et `10`
 - *Port socket interne* définit le port sur lequel écoute le démon. Ne changez pas cette valeur sans avoir posé la question sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
-# Installation des antennes
+# Détections de devices Bluetooth
+
+Un des premiers objectifs de ce plugin est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant *Open MQTT Gateway* ou *Theengs gateway*. Dans les 2 cas, il faudra installer l'outils et le configurer pour se connecter au même broker Mosquitto que celui utilisé par le plugin.
 
 ## Installation de Open MQTT Gateway
 
-Je ne vais pas documenter ici la procédure complète, tout est déjà expliqué en détail ici: <https://docs.openmqttgateway.com/>.
+Tout est déjà expliqué en détail ici: <https://docs.openmqttgateway.com/>.
 
 Vous trouverez également de l'aide sur [community]({{site.forum}}).
 
 ## Installation de Theengs gateway
 
-Dans la version (beta) actuelle, le plugin ne prend pas encore en charge l'installation et la gestion des antennes (monotoring, démarrage...) mais cela va être implémenté avant la sortie en stable pour plus de facilité.
-
-Pour installer manuellement, toutes les explications nécessaires sont disponibles ici: <https://gateway.theengs.io/install/install.html>.
-
-En résumé, pour l'installation sur pi (Debian), je vous recommande de l'installer dans un environnement virtuel (venv) si vous avez plusieurs applications installées sur celui-ci pour éviter les conflits éventuels:
-
-```bash
-mkdir TheengsGW_venv
-
-apt install python3-venv -y
-python3 -m venv ./TheengsGW_venv/
-
-TheengsGW_venv/bin/python3 -m pip install --upgrade pip wheel
-
-TheengsGW_venv/bin/python3 -m pip install TheengsGateway
-```
+Toutes les explications nécessaires sont disponibles ici: <https://gateway.theengs.io/install/install.html>.
 
 > **Important**
 >
 > En fonction de la puissance de la machine et des autres processus en cours, l'installation peut prendre jusqu'à 1h. C'est parfaitement normal.
 > Pensez à couper l'antenne du plugin blea si vous vous serviez du pi pour blea. Celui-ci étant fort consommateur de resources, il ralentira fortement l'installation.
 >
-> Les 2 plugins ne peuvent pas utiliser le bluetooth en même temps, vous devez avoir 2 clés / puces bluetooth différentes ou n'utiliser que l'un des deux simultanément.
-
-Ensuite pour exécuter:
-
-```bash
-TheengsGW_venv/bin/python3 -m TheengsGateway -H "192.168.xxxxx" -u "<user>" -p "<password>"`
-```
-
-l'ip est celle du broker (ip de jeedom si broker installé en local) et le user et mot de passe du broker qu’on trouve dans la config de *MQTT Manager (mqtt2)*.
-
-sans environnement virtuel:
-
-```bash
-TheengsGW_venv/bin/python3 -m pip install TheengsGateway
-```
+> Les 2 process (antenne BLEA & Theengs gateway) ne peuvent pas utiliser le bluetooth en même temps, vous devez avoir 2 clés / puces bluetooth différentes ou n'utiliser que l'un des deux à la fois.
 
 # Configuration des équipements
 
 Le plugin se trouve dans le menu Plugins → Protocole domotique.
 
-Il n'y a aucune configuration spécifique.
+Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour les équipements disposant d'une info *rssi* (typiquement les équipements bluetooth). Pour ceux là, il y aura une commande supplémentaire *Présent* et il sera possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tel que les nuts.
 
 Lorsque le plugin recevra les informations sur le topic de découverte, il créera les équipements et les commandes manquantes automatiquement.
 

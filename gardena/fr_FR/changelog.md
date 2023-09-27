@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Ajout des descriptions pour des nouveaux codes d'erreur pour les robots Husqvarna
 
 # Stable
 

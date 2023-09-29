@@ -7,7 +7,7 @@ pluginId: onduleursolaredge
 
 # Beta
 
-n/a
+- fix un problème avec la commande *Date de mise à jour*
 
 # Stable
 

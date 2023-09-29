@@ -13,7 +13,7 @@ Le plugin se base sur le principe du "MQTT Auto Discovery" qui existe sous home 
 
 Cela permet d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipement](https://compatible.openmqttgateway.com/index.php/devices/) ou l'équivalent [Theengs gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via le plugin, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts.
 
-Mais donc cela ne se limite pas à ça puisque tous équipements compatibles "MQTT Auto Discovery" sera gérable via le plugin. Par exemple, ce plugin a été testé avec succès avec zwavejs-ui et zigbee2mqtt.
+Mais donc cela ne se limite pas à ça puisque tous les équipements compatibles "MQTT Auto Discovery" seront gérables via le plugin. Par exemple, ce plugin a été testé avec succès avec zwavejs-ui et zigbee2mqtt.
 
 > **Important**
 >

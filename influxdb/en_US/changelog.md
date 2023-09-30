@@ -7,7 +7,7 @@ pluginId: influxdb
 
 # Beta
 
-N/A
+- Internal change in dependency management
 
 # Stable
 

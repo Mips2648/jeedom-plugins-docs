@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-N/A
+- Modification interne de la gestion de dépendances
 
 # Stable
 

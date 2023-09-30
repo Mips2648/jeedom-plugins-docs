@@ -7,9 +7,13 @@ pluginId: logmanager
 
 # Beta
 
-- Ajout d'une option pour afficher le log chronologiquement sur le widget
+n/a
 
 # Stable
+
+## 2023-09-30
+
+- Ajout d'une option pour afficher le log chronologiquement sur le widget
 
 ## 2023-05-22
 

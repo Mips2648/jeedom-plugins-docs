@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2023-10-02
+
+- Possibility to add multiple sending conditions and for each of them different notification commands. This allows your notifications to be sent across different “channels” based on conditions that you define.
+
 ## 2023-08-21
 
 - New option to choose how to detect a duplicate notification: identical message (default behavior and before this update), identical title or identical message & title

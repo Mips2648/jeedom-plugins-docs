@@ -70,6 +70,8 @@ It is therefore necessary to:
 
 Now you can use these commands like any other Jeedom command (you should not use the **Start** command on top)
 
+Sometimes card IDs are changed by iRobot (probably as soon as a card change is made). When this occurs, you must restart manual cleaning of the room for the plugin to update the command.
+
 # List of known states and correspondence on the widget
 
 | Command value *State*                         | Meaning      |

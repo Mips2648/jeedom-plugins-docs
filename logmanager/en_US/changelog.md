@@ -7,9 +7,13 @@ pluginId: logmanager
 
 # Beta
 
-N/A
+n/a
 
 # Stable
+
+## 2023-09-30
+
+- Added an option to display the log in chronological order on the widget
 
 ## 2023-05-22
 

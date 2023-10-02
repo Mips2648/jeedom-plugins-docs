@@ -7,11 +7,14 @@ pluginId: worxLandroidS
 
 # Beta
 
-## 2023-09-05
-
-- Fix on the activation and deactivation commands of additional modules
+n/a
 
 # Stable
+
+# 2023-10-02
+
+- Encrypt username and password in database
+- Fix on the activation and deactivation commands of additional modules
 
 ## 2023-08-31
 

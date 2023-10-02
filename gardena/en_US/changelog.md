@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2023-10-02
+
+- Descriptions for new error codes for Husqvarna robots have been added
+
 ## 2023-08-21
 
 - Improve daemon log

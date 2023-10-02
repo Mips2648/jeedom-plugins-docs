@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2023-10-02
+
+- fix a problem with the command *Update date*
+
 ## 2022-10-17
 
 - Added battery charge percentage on "Power & Flow" device

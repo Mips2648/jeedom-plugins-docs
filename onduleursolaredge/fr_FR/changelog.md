@@ -7,9 +7,13 @@ pluginId: onduleursolaredge
 
 # Beta
 
-- fix un problème avec la commande *Date de mise à jour*
+n/a
 
 # Stable
+
+## 2023-10-02
+
+- fix un problème avec la commande *Date de mise à jour*
 
 ## 2022-10-17
 

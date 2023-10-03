@@ -39,6 +39,7 @@ On top of the general parameters, it will therefore be necessary to configure th
 - *Refresh*: delay in seconds between each read/write operation on the modbus device
 - *Offset* This offset is applied to every register address.
 - *Batch*: number of contiguous registers to read during each read operation (between 1 and 100 inclusive). If 1 then each register will be read separately.
+- *Word order*: Only for 32-bit or 64-bit numbers, choose between *Big-Endian* (the default) and *Little-Endian*
 
 ## MQTT settings
 
@@ -57,11 +58,11 @@ So you need to specify:
 
 - the address
 - the register table (*holding* or *input* for the moment only, evolution to be considered according to requests)
-- Type: signed 16-bit integer or unsigned 16-bit integer for the moment, evolution to consider according to the requests.
+- the type: signed or unsigned integer on 16 bits, 32 bits or 64 bits.
 - Scale: the read value will be multiplied by this value before being published
 - the MQTT topic for publishing the value (so modbus -> MQTT)
-- option *Publish only if change* allows to publish on MQTT only if the value has changed, if unchecked the value will be published after each read operation
-- *retain* option to publish with *retain* option or not
+- option *Only if change* allows to publish on MQTT only if the value has changed, if unchecked the value will be published after each read operation
+- *Retain* option to publish with *retain* flag or not
 - possibly the writing topic: any info published on this topic will be written on the corresponding modbus register (thus MQTT -> modbus); typically if necessary you can put `power\set` or `power_set` for example.
 
 ## Commands creation

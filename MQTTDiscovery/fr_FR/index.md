@@ -69,7 +69,9 @@ Vous trouverez également de l'aide sur [community]({{site.forum}}).
 
 ## Installation de Theengs gateway
 
-Toutes les explications nécessaires sont disponibles ici: <https://gateway.theengs.io/install/install.html>.
+Toutes les explications nécessaires pour installer une antenne manuellement sont disponibles ici: <https://gateway.theengs.io/install/install.html>.
+
+Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Theengs gateway</a> disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
 
 > **Important**
 >

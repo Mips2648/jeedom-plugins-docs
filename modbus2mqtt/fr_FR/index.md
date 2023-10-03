@@ -37,8 +37,9 @@ En plus des paramètres généraux il faudra donc configurer les paramètres sp�
 
 - *IP* et *Port* de votre équipement modbus TCP
 - *Actualisation*: délai en secondes entre chaque opérations de lecture/écriture sur l'équipement modbus
-- *Décalage* (offset) à appliquer sur les adresses des registres
-- *Lot*: nombre de registres contigus à lire lors de chaque opération de lecture (entre 1 et 100 inclus). Si 1 alors chaque registre sera lû séparément.
+- *Offset* décalage à appliquer sur les adresses des registres
+- *Longueur du batch*: nombre de registres contigus à lire lors de chaque opération de lecture (entre 1 et 100 inclus). Si 1 alors chaque registre sera lû séparément.
+- *Ordre des mots*: Uniquement pour les nombres sur 32-bit ou 64-bit, choix entre *Big-endian* (le défaut) et *Little-endian*
 
 ## Paramètre MQTT
 
@@ -57,11 +58,11 @@ Vous devez donc spécifier:
 
 - l'adresse
 - la table de registre (*holding* ou *input* pour l'instant uniquement, évolution à envisager selon les demandes)
-- le type: entier 16 bits signé ou entier 16 bits non-signé pour l'instant, évolution à envisager selon les demandes.
+- le type: entier signé ou non-signé sur 16 bits, 32 bits ou 64 bits.
 - la mise à l'échelle: la valeur lue sera multiplié par cette valeur avant d'être publiée
 - le topic MQTT de publication de la valeur (donc modbus -> MQTT)
-- option *Publication seulement si changement* permet de ne publier sur MQTT que si la valeur à changée, si décoché la valeur sera publiée lors de chaque lecture
-- option *retain* pour publier avec l'option *retain* ou non
+- option *Seulement si changement* permet de ne publier sur MQTT que si la valeur a changée, si décoché la valeur sera publiée lors de chaque lecture
+- option *Retain* pour publier avec l'option *retain* ou non
 - éventuellement le topic d'écriture: toute info publiée sur ce topic sera écrite sur le registre modbus correspondant (donc MQTT -> modbus); typiquement si besoin vous pourrez y mettre `power\set` ou `power_set` par exemple.
 
 ## Création des commandes

@@ -7,7 +7,8 @@ pluginId: modbus2mqtt
 
 # Beta
 
-n/a
+- Ajout du support des entiers signés et non-signés sur 32bits & 64 bits pour les registres
+- Ajout d'une nouvelle option pour inverser les mots si nécessaire (pour les nombres sur 32bits & 64 bits)
 
 # Stable
 

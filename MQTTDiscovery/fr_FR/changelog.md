@@ -10,6 +10,7 @@ pluginId: MQTTDiscovery
 ## 2023-09-30
 
 - Ajout d'une configuration pour désactiver la découverte automatique
+- Ajout du type *alarm_control_panel*
 
 ## 2023-09-11
 
@@ -24,9 +25,7 @@ pluginId: MQTTDiscovery
 
 # Stable
 
-# 2023-10-xx
-
-- Première version
+n/a
 
 # Documentation
 

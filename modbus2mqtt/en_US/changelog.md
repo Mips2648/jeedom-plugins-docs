@@ -7,7 +7,8 @@ pluginId: modbus2mqtt
 
 # Beta
 
-n/a
+- Add support for signed and unsigned integers on 32-bit & 64-bit
+- Add a new option to reverse words if necessary (for 32-bit & 64-bit numbers)
 
 # Stable
 

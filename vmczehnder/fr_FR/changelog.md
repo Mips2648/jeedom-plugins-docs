@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2023-10-03
+
+- Fix un problème potentiel lors de l'installation de des dépendances
+- Fix un problème potentiel en cas de connexion au broker MQTT sans utilisateur et mot de passe
+
 ## 2023-09-30
 
 - Réécriture complète du plugin qui se base à présent sur mqtt pour les échanges entre Jeedom et le pi distant branché à la VMC

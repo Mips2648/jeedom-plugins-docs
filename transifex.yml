@@ -15,6 +15,12 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
+    source_file_dir: fail2ban/fr_FR/
+    translation_files_expression: 'fail2ban/<lang>/'
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
     source_file_dir: fullup/fr_FR/
     translation_files_expression: 'fullup/<lang>/'
   - filter_type: dir
@@ -125,6 +131,12 @@ filters:
     source_language: fr
     source_file_dir: stockexchange/fr_FR/
     translation_files_expression: 'stockexchange/<lang>/'
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
+    source_file_dir: tgw/fr_FR/
+    translation_files_expression: 'tgw/<lang>/'
   - filter_type: dir
     file_format: GITHUBMARKDOWN
     source_file_extension: md

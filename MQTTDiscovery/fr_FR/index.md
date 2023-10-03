@@ -46,6 +46,10 @@ Il faudra ensuite configurer la liste des topics racines pour lesquels vous voul
 
 Après le premier démarrage du démon et donc après la première séance de découverte, vous verrez également la liste des topics possibles mais non-configurés, il est possible des les ajouter directement.
 
+> **Important**
+>
+> Après chaque changement de configuration, il est nécessaire de redémarrer le démon pour que les changements soient pris en compte.
+
 # Démon
 
 Pour finir, vous pouvez configurer les infos suivantes (optionnelles):
@@ -91,10 +95,13 @@ La découverte automatique va publier les configurations de ce qui s'appellent d
 
 Le plugin lit ces configurations et pour chaque composant va créer la ou les commandes Jeedom correspondantes, chacune sous leur équipement respectif.
 
+Lorsque tout vos équipements ont été découvert, vous pouvez désactiver la découverte pour éviter que le plugin ne créé des équipements que vous ne voulez pas.
+
 ## Composant pris en charge
 
 Tous les composants ne sont pas encore entièrement ni complètement intégré. Si votre matériel a besoin du support d'un composant qui n'est pas encore reconnu, n'hésitez pas à un faire la demande en créant un post sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
+- alarm_control_panel
 - binary_sensor
 - button
 - cover

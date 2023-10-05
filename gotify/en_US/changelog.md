@@ -7,7 +7,7 @@ pluginId: gotify
 
 # Beta
 
-- Encrypting sensitive configuration data (token) in the database
+- Encrypt sensitive configuration data (token) in the database
 
 # Stable
 

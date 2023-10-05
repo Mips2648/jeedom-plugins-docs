@@ -7,6 +7,8 @@ pluginId: fail2ban
 
 # Description
 
+Plugin to monitor fail2ban. It allows you to retrieve all the instant information from a local or remote fail2ban instance (via SSH) but it also keeps daily counters of blocked IPs as well as a counter by country of origin of the IP address.
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

@@ -7,6 +7,8 @@ pluginId: tgw
 
 # Description
 
+Plugin to easily install and configure antennas running Theengs gateway that allows you to listen to Bluetooth devices (BLEA) and use them in Jeedom via the MQTT Discovery plugin
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

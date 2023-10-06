@@ -31,7 +31,9 @@ Plugin permettant de changer automatiquement l'image de fond de vos design en fo
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/fail2ban_icon.png">]({{site.baseurl}}/fail2ban/{{page.lang}})
 
-Plugin pour monitorer fail2ban. Il permet de remonter toutes les infos instantanées d'une instance de fail2ban locale ou distante (via SSH) mais il garde également des compteurs journaliers des ip bloquées ainsi qu'un compteur par pays d'origine de l'adresse ip.
+Plugin pour monitorer fail2ban. Il permet de remonter toutes les infos instantanées d'une instance de fail2ban locale ou distante (via SSH) mais il garde également des compteurs journaliers des ip bloquées ainsi qu'un compteur par pays d'origine de l'adresse ip (pays récupéré par géolocalisation de l'adresse IP).
+
+Il permet également de bannir et de débannir une adresse ip.
 
 - [Documentation]({{site.baseurl}}/fail2ban/{{page.lang}})
 - [Changelog]({{site.baseurl}}/fail2ban/{{page.lang}}/changelog)

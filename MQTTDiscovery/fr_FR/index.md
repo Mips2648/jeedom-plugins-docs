@@ -78,13 +78,13 @@ Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d
 > En fonction de la puissance de la machine et des autres processus en cours, l'installation peut prendre jusqu'à 1h. C'est parfaitement normal.
 > Pensez à couper l'antenne du plugin blea si vous vous serviez du pi pour blea. Celui-ci étant fort consommateur de resources, il ralentira fortement l'installation.
 >
-> Les 2 process (antenne BLEA & Theengs gateway) ne peuvent pas utiliser le bluetooth en même temps, vous devez avoir 2 clés / puces bluetooth différentes ou n'utiliser que l'un des deux à la fois.
+> Les 2 process (antenne BLEA & Theengs gateway) ne peuvent pas utiliser le Bluetooth en même temps, vous devez avoir 2 clés / puces Bluetooth différentes ou n'utiliser que l'un des deux à la fois.
 
 # Configuration des équipements
 
 Le plugin se trouve dans le menu Plugins → Protocole domotique.
 
-Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour les équipements disposant d'une info *rssi* (typiquement les équipements bluetooth). Pour ceux là, il y aura une commande supplémentaire *Présent* et il sera possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tel que les nuts.
+Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour les équipements disposant d'une info *rssi* (typiquement les équipements Bluetooth). Pour ceux là, il y aura une commande supplémentaire *Présent* et il sera possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tel que les nuts.
 
 Lorsque le plugin recevra les informations sur le topic de découverte, il créera les équipements et les commandes manquantes automatiquement.
 

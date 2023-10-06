@@ -5,7 +5,13 @@ lang: fr_FR
 pluginId: fail2ban
 ---
 
-# 2023-12-xx
+# Beta
+
+## 2023-10-06
+
+- Ajout d'une commande **Dernière IP bannie** par jail
+
+## 2023-10-01
 
 Première version
 

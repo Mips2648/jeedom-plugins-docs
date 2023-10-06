@@ -43,6 +43,7 @@ Après la sauvegarde de l'équipement, si la configuration est correcte et que l
 - **Echec total** info donnant le nombre de tentative en échec au total
 - **Banni** info donnant le nombre d'IP bannie actuellement
 - **Total banni** info donnant le nombre d'IP bannie au total
+- **Dernière IP bannie** info donnant la dernière IP bannie
 - **Liste des IP bannies** info donnant la liste des ips bannies actuellement
 - **Liste des IP bannies sur la journée** info donnant la liste des ips bannies sur la journée
 

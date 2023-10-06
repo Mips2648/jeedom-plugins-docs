@@ -7,9 +7,7 @@ pluginId: fail2ban
 
 # Description
 
-Plugin to monitor fail2ban. It allows you to retrieve all the instant information from a local or remote fail2ban instance (via SSH) but it also keeps daily counters of blocked IP as well as a counter by country of origin of the IP address (country fetch via IP geolocation).
-
-It also allows you to ban and unban an IP address.
+Plugin to monitor fail2ban. It allows you to retrieve all the instant information from a local or remote fail2ban instance (via SSH) but it also keeps daily counters of blocked IP as well as a counter by country of origin of the IP address.
 
 # Installation
 

@@ -45,7 +45,7 @@ Si le plugin *MQTT Manager (mqtt2)* est installé, vous verrez un bouton pour ef
 ## Auto-découverte
 
 La première option permet de créer automatiquement les équipements qui seront découverts. Cela peut être très pratique si vous avez beaucoup d'équipements mais cela va potentiellement créer beaucoup d'équipements, y compris peut-être des équipements dont vous n'avez pas besoin donc à utiliser avec parcimonie.
-Il existe la possibilité choisir manuellement les équipements à créer (la création sera ensuite automatique), voir le paragraphe sur la configuration des équipements pour plus de détails.
+Il existe une autre option pour choisir manuellement les équipements à créer (la création sera ensuite automatique), voir le paragraphe sur la configuration des équipements pour plus de détails.
 
 ![discovery_config](../images/discovery_config.png)
 
@@ -57,6 +57,10 @@ Le topic contenant les config des équipements à découvrir, par défaut `homea
 
 Il faudra ensuite configurer la liste des topics racines pour lesquels vous voulez remonter les équipements. Par exemple, pour les équipements gérés par *Open MQTT Gateway* ou *Theengs gateway* cela sera le topic `home` par défaut.
 
+> **Important**
+>
+> Le nom du topic est sensible à la casse, faites attention de configurer le nom en tenant compte des majuscules et minuscules.
+
 Après le premier démarrage du démon et donc après la première séance de découverte, vous verrez également la liste des topics possibles mais non-configurés que le démon a trouvé, il est possible des les ajouter directement.
 
 Donc si vous ne savez pas exactement ce qu'il faut configurer:
@@ -66,7 +70,7 @@ Donc si vous ne savez pas exactement ce qu'il faut configurer:
 - actualisez la page si cela n'a pas été fait
 - une liste de topic possible vous sera proposé => ajoutez celui qui concerne vos appareils
 
-exemple, le plugin me propose le topic *zwave* que je peux ajouter simplement en cliquant sur le "+" (ne pas oublier de Sauvegarder et redémarrer le démon lorsque vous avez fini):
+exemple, le plugin me propose le topic *zwave* que je peux ajouter simplement en cliquant sur le "+" (ne pas oublier de *Sauvegarder* et *(Re)Démarrer* le démon lorsque vous avez fini):
 
 ![topic_config](../images/topic_config.png)
 
@@ -103,7 +107,7 @@ Dans le cas où la création automatique est active, le plugin créera les équi
 
 > **Important**
 >
-> La création automatique ne sera effectuée que pour les *nouveaux* équipements découverts après l'activation de l'option ou après un redémarrage du démon.
+> La création automatique ne sera effectuée que pour les **nouveaux** équipements découverts après l'activation de l'option ou après un redémarrage du démon.
 > Un équipement découvert lorsque l'option de création automatique était désactivée ne sera pas automatiquement créé (sauf si le démon est redémarré) mais il est évidement possible de l'ajouter "manuellement".
 
 # Configuration des équipements

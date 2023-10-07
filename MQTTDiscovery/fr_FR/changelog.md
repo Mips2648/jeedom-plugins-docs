@@ -7,9 +7,16 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-07
+
+- Ajout de l'identifiant, fabricant et modèle de l'équipement dans la page config
+- Ajout d'une nouvelle fonction listant tous les équipements découverts mais pas encore créés avec possibilité de les ajouter un par un au choix sans devoir activer la création automatique
+- Ajout d'une notification sur la page des équipements lorsque des nouveaux équipements ont été découvert
+- Fix un bug sur le parsing de certains devices
+
 ## 2023-09-30
 
-- Ajout d'une configuration pour désactiver la découverte automatique
+- Ajout d'une configuration pour désactiver la création automatique des équipements découverts
 - Ajout du type *alarm_control_panel*
 
 ## 2023-09-11

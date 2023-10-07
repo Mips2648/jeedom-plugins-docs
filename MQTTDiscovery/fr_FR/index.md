@@ -33,6 +33,10 @@ Si le plugin *MQTT Manager (mqtt2)* est installé, la configuration pour se conn
 
 # Configuration du plugin
 
+> **Important**
+>
+> Après chaque changement de configuration, il est nécessaire de redémarrer le démon pour que les changements soient pris en compte.
+
 ## Accès au broker MQTT
 
 Il faut configurer l'adresse IP du broker, le port, un nom d'utilisateur et son mot de passe.
@@ -40,15 +44,31 @@ Si le plugin *MQTT Manager (mqtt2)* est installé, vous verrez un bouton pour ef
 
 ## Auto-découverte
 
+La première option permet de créer automatiquement les équipements qui seront découverts. Cela peut être très pratique si vous avez beaucoup d'équipements mais cela va potentiellement créer beaucoup d'équipements, y compris peut-être des équipements dont vous n'avez pas besoin donc à utiliser avec parcimonie.
+Il existe la possibilité choisir manuellement les équipements à créer (la création sera ensuite automatique), voir le paragraphe sur la configuration des équipements pour plus de détails.
+
+![discovery_config](../images/discovery_config.png)
+
 Le topic contenant les config des équipements à découvrir, par défaut `homeassistant`, peut éventuellement être modifié si nécessaire.
-
-Il faudra ensuite configurer la liste des topics racines pour lesquels vous voulez remonter les équipements. Par exemple, pour les équipements gérés par *Open MQTT Gateway* ou *Theengs gateway* cela sera le topic `home` par défaut.
-
-Après le premier démarrage du démon et donc après la première séance de découverte, vous verrez également la liste des topics possibles mais non-configurés, il est possible des les ajouter directement.
 
 > **Important**
 >
-> Après chaque changement de configuration, il est nécessaire de redémarrer le démon pour que les changements soient pris en compte.
+> Ne modifiez pas la configuration du topic racine de découverte sans savoir, en principe vous n'aurez jamais besoin de modifier cela.
+
+Il faudra ensuite configurer la liste des topics racines pour lesquels vous voulez remonter les équipements. Par exemple, pour les équipements gérés par *Open MQTT Gateway* ou *Theengs gateway* cela sera le topic `home` par défaut.
+
+Après le premier démarrage du démon et donc après la première séance de découverte, vous verrez également la liste des topics possibles mais non-configurés que le démon a trouvé, il est possible des les ajouter directement.
+
+Donc si vous ne savez pas exactement ce qu'il faut configurer:
+
+- démarrez le démon
+- attendez 1 minute
+- actualisez la page si cela n'a pas été fait
+- une liste de topic possible vous sera proposé => ajoutez celui qui concerne vos appareils
+
+exemple, le plugin me propose le topic *zwave* que je peux ajouter simplement en cliquant sur le "+" (ne pas oublier de Sauvegarder et redémarrer le démon lorsque vous avez fini):
+
+![topic_config](../images/topic_config.png)
 
 # Démon
 
@@ -56,6 +76,10 @@ Pour finir, vous pouvez configurer les infos suivantes (optionnelles):
 
 - *Cycle* définit la fréquence d'envoi, en secondes, des informations vers Jeedom: une valeur numérique entre `0.5` et `10`
 - *Port socket interne* définit le port sur lequel écoute le démon. Ne changez pas cette valeur sans avoir posé la question sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+> **Important**
+>
+> Ne modifiez pas ces informations dans un premier temps, en principe ce n'est pas nécessaire.
 
 # Détections de devices Bluetooth
 
@@ -80,13 +104,34 @@ Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d
 >
 > Les 2 process (antenne BLEA & Theengs gateway) ne peuvent pas utiliser le Bluetooth en même temps, vous devez avoir 2 clés / puces Bluetooth différentes ou n'utiliser que l'un des deux à la fois.
 
-# Configuration des équipements
+# Gestion des équipements
 
 Le plugin se trouve dans le menu Plugins → Protocole domotique.
 
-Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour les équipements disposant d'une info *rssi* (typiquement les équipements Bluetooth). Pour ceux là, il y aura une commande supplémentaire *Présent* et il sera possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tel que les nuts.
+Sur la partie haute, vous verrez le panneau de gestion, comme sur tous plugins Jeedom
 
-Lorsque le plugin recevra les informations sur le topic de découverte, il créera les équipements et les commandes manquantes automatiquement.
+![devices_panel](../images/devices_panel.png)
+
+Le premier bouton vous permet de lister les équipements découverts mais pas encore créés (si l'auto-création n'était pas active au moment de leur découverte). Cela laisse le choix de sélectionner manuellement les équipements à créer (la création de l'équipement et de ses commandes reste automatique).
+
+En cliquant sur ce bouton, une nouvelle fenêtre va s'ouvrir:
+
+![devices_discovered](../images/devices_discovered.png)
+
+Il suffit de cliquer sur le bouton "Ajouter" de l'équipement voulu et ensuite de cliquer sur le bouton "Recharger" pour que l'équipement et ses commandes soient créés.
+
+Le dernier bouton vous permet de visualiser le statut de la création automatique et de l'activer ou la désactiver directement depuis cette page, il s'agit de la même configuration que celle visible dans la configuration du plugin.
+
+Dans le cas où la création automatique est active, le plugin créera les équipements et les commandes manquantes automatiquement dès qu'il recevra les informations sur le topic de découverte (par défaut `homeassistant`).
+
+> **Important**
+>
+> La création automatique ne sera effectuée que pour les *nouveaux* équipements découverts après l'activation de l'option ou après un redémarrage du démon.
+> Un équipement découvert lorsque l'option de création automatique était désactivée ne sera pas automatiquement créé (sauf si le démon est redémarré) mais il est évidement possible de l'ajouter "manuellement".
+
+# Configuration des équipements
+
+Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour les équipements disposant d'une info *rssi* (typiquement les équipements Bluetooth). Pour ceux là, il y aura une commande supplémentaire *Présent* et il sera possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tels que les nuts.
 
 Dans la liste des commandes, vous verrez le topic MQTT correspondant ainsi que la valeur du json si relevant. Il est possible d'encoder un path s'il faut aller chercher une valeur dans un sous noeud.
 En principe vous n'aurez pas à modifier ces configurations, elles sont accessibles uniquement pour gérer les cas limites si le plugin n'a pas effectué la configuration automatiquement.

@@ -125,6 +125,21 @@ Le plugin lit ces configurations et pour chaque composant va créer la ou les co
 
 Lorsque tout vos équipements ont été découvert, vous pouvez désactiver la découverte pour éviter que le plugin ne créé des équipements que vous ne voulez pas.
 
+## Composant pris en charge
+
+Tous les composants ne sont pas encore entièrement ni complètement intégré. Si votre matériel a besoin du support d'un composant qui n'est pas encore reconnu, n'hésitez pas à un faire la demande en créant un post sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+- alarm_control_panel
+- binary_sensor
+- button
+- cover
+- light
+  - brightness
+- number
+- sensor
+- switch
+- text
+
 # Détections de devices Bluetooth
 
 Un des premiers objectifs de ce plugin est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant *Open MQTT Gateway* ou *Theengs gateway*. Dans les 2 cas, il faudra installer l'outils et le configurer pour se connecter au même broker Mosquitto que celui utilisé par le plugin.
@@ -147,21 +162,6 @@ Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d
 > Pensez à couper l'antenne du plugin blea si vous vous serviez du pi pour blea. Celui-ci étant fort consommateur de resources, il ralentira fortement l'installation.
 >
 > Les 2 process (antenne BLEA & Theengs gateway) ne peuvent pas utiliser le Bluetooth en même temps, vous devez avoir 2 clés / puces Bluetooth différentes ou n'utiliser que l'un des deux à la fois.
-
-## Composant pris en charge
-
-Tous les composants ne sont pas encore entièrement ni complètement intégré. Si votre matériel a besoin du support d'un composant qui n'est pas encore reconnu, n'hésitez pas à un faire la demande en créant un post sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
-
-- alarm_control_panel
-- binary_sensor
-- button
-- cover
-- light
-  - brightness
-- number
-- sensor
-- switch
-- text
 
 # Changelog
 

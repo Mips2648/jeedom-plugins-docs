@@ -70,7 +70,7 @@ exemple, le plugin me propose le topic *zwave* que je peux ajouter simplement en
 
 ![topic_config](../images/topic_config.png)
 
-# Démon
+## Démon
 
 Pour finir, vous pouvez configurer les infos suivantes (optionnelles):
 
@@ -80,29 +80,6 @@ Pour finir, vous pouvez configurer les infos suivantes (optionnelles):
 > **Important**
 >
 > Ne modifiez pas ces informations dans un premier temps, en principe ce n'est pas nécessaire.
-
-# Détections de devices Bluetooth
-
-Un des premiers objectifs de ce plugin est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant *Open MQTT Gateway* ou *Theengs gateway*. Dans les 2 cas, il faudra installer l'outils et le configurer pour se connecter au même broker Mosquitto que celui utilisé par le plugin.
-
-## Installation de Open MQTT Gateway
-
-Tout est déjà expliqué en détail ici: <https://docs.openmqttgateway.com/>.
-
-Vous trouverez également de l'aide sur [community]({{site.forum}}).
-
-## Installation de Theengs gateway
-
-Toutes les explications nécessaires pour installer une antenne manuellement sont disponibles ici: <https://gateway.theengs.io/install/install.html>.
-
-Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Theengs gateway</a> disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
-
-> **Important**
->
-> En fonction de la puissance de la machine et des autres processus en cours, l'installation peut prendre jusqu'à 1h. C'est parfaitement normal.
-> Pensez à couper l'antenne du plugin blea si vous vous serviez du pi pour blea. Celui-ci étant fort consommateur de resources, il ralentira fortement l'installation.
->
-> Les 2 process (antenne BLEA & Theengs gateway) ne peuvent pas utiliser le Bluetooth en même temps, vous devez avoir 2 clés / puces Bluetooth différentes ou n'utiliser que l'un des deux à la fois.
 
 # Gestion des équipements
 
@@ -143,6 +120,29 @@ La découverte automatique va publier les configurations de ce qui s'appellent d
 Le plugin lit ces configurations et pour chaque composant va créer la ou les commandes Jeedom correspondantes, chacune sous leur équipement respectif.
 
 Lorsque tout vos équipements ont été découvert, vous pouvez désactiver la découverte pour éviter que le plugin ne créé des équipements que vous ne voulez pas.
+
+# Détections de devices Bluetooth
+
+Un des premiers objectifs de ce plugin est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant *Open MQTT Gateway* ou *Theengs gateway*. Dans les 2 cas, il faudra installer l'outils et le configurer pour se connecter au même broker Mosquitto que celui utilisé par le plugin.
+
+## Installation de Open MQTT Gateway
+
+Tout est déjà expliqué en détail ici: <https://docs.openmqttgateway.com/>.
+
+Vous trouverez également de l'aide sur [community]({{site.forum}}).
+
+## Installation de Theengs gateway
+
+Toutes les explications nécessaires pour installer une antenne manuellement sont disponibles ici: <https://gateway.theengs.io/install/install.html>.
+
+Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Theengs gateway</a> disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
+
+> **Important**
+>
+> En fonction de la puissance de la machine et des autres processus en cours, l'installation peut prendre jusqu'à 1h. C'est parfaitement normal.
+> Pensez à couper l'antenne du plugin blea si vous vous serviez du pi pour blea. Celui-ci étant fort consommateur de resources, il ralentira fortement l'installation.
+>
+> Les 2 process (antenne BLEA & Theengs gateway) ne peuvent pas utiliser le Bluetooth en même temps, vous devez avoir 2 clés / puces Bluetooth différentes ou n'utiliser que l'un des deux à la fois.
 
 ## Composant pris en charge
 

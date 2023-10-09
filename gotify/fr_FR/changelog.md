@@ -7,9 +7,13 @@ pluginId: gotify
 
 # Beta
 
-- Encryption des données de configuration sensibles (token) en base de données
+n/a
 
 # Stable
+
+## 2023-10-09
+
+- Encryption des données de configuration sensibles (token) en base de données
 
 ## 2023-05-20
 

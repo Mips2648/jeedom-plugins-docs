@@ -28,7 +28,7 @@ But so it's not limited to that since all “MQTT Auto Discovery” compatible d
 
 To find out, check the documentation of the hardware, program, or gateway you want to use if there is a mention of “MQTT Discovery” for Home Assistant (again, you don't need to have Home Assistant installed).
 
-Another way is to connect to your broker using MQTT Explorer (for example) and see if you see a `homeassistant` topic. If yes, you should find information about your device in the sub-topics. In case of doubt, you can always ask the question on [community] ({{site.forum}} /tags/plugin- {{page.pluginId}}).
+Another way is to connect to your broker using MQTT Explorer (for example) and see if you see a `homeassistant` topic. If yes, you should find information about your device in the sub-topics. In case of doubt, you can always ask the question on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
 ## List of known possible integrations
 

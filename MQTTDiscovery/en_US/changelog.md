@@ -7,9 +7,16 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-07
+
+- Add the identifier, manufacturer and model of the device in the configuration page
+- Addition of a new function listing all devices discovered but not yet created, with the possibility of adding them one by one to without having to activate automatic creation
+- Add a notification on the device page when new device has been discovered
+- Fix a parsing bug on some devices
+
 ## 2023-09-30
 
-- Add a configuration to disable autodiscovery
+- Add a configuration to disable the automatic creation of discovered devices
 - Add the *alarm_control_panel* type
 
 ## 2023-09-11

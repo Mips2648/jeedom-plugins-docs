@@ -27,6 +27,18 @@ Plugin to automatically change the background image of your design according to 
 - [Changelog]({{site.baseurl}}/designImgSwitch/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3819" target="_blank">Market</a>
 
+# fail2ban
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/fail2ban_icon.png">]({{site.baseurl}}/fail2ban/{{page.lang}})
+
+Plugin to monitor fail2ban. It allows you to retrieve all the instant information from a local or remote fail2ban instance (via SSH) but it also keeps daily counters of blocked IP as well as a counter by country of origin of the IP address (country fetch via IP geolocation).
+
+It also allows you to ban and unban an IP address.
+
+- [Documentation]({{site.baseurl}}/fail2ban/{{page.lang}})
+- [Changelog]({{site.baseurl}}/fail2ban/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4439" target="_blank">Market</a>
+
 # Fullup
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/fullup_icon.png">]({{site.baseurl}}/fullup/{{page.lang}})
@@ -134,7 +146,8 @@ Plugin to create a gateway between modbus TCP/IP and MQTT.
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/MQTTDiscovery_icon.png">]({{site.baseurl}}/MQTTDiscovery/{{page.lang}})
 
-Plugin for automatic discovery of MQTT device.
+Plugin for automatic discovery of MQTT device on the principle of 'MQTT Auto Discovery' which exists under home assistant.
+This allows to use the excellent [Open MQTT Gateway] project (https://docs.openmqttgateway.com/) to be used on esp32 or the equivalent [Theengs gateway] (https://gateway.theengs.io/) on pi. It is becoming very easy to manage the presence of Bluetooth tags such as nuts or to integrate a large list of BLEA compatible hardware.
 
 - [Documentation]({{site.baseurl}}/MQTTDiscovery/{{page.lang}})
 - [Changelog]({{site.baseurl}}/MQTTDiscovery/{{page.lang}}/changelog)
@@ -217,6 +230,16 @@ Plugin to retrieve stock or index quotation as well as exchange rate between two
 - [Documentation]({{site.baseurl}}/stockexchange/{{page.lang}})
 - [Changelog]({{site.baseurl}}/stockexchange/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3841" target="_blank">Market</a>
+
+# Theengs gateway
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/tgw_icon.png">]({{site.baseurl}}/fail2ban/{{page.lang}})
+
+Plugin to easily install and configure antennas running Theengs gateway that allows you to listen to Bluetooth devices (BLEA) and use them in Jeedom via the MQTT Discovery plugin
+
+- [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
+- [Changelog]({{site.baseurl}}/tgw/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Market</a>
 
 # Vaillant multiMATIC
 

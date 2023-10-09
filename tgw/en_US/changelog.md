@@ -5,7 +5,14 @@ lang: en_US
 pluginId: tgw
 ---
 
-# 2023-12-xx
+# Beta
+
+## 2023-10-10
+
+- Add health information of antennas in the Jeedom health page
+- Add antenna status in device table display mode
+
+## 2023-10-08
 
 First version
 

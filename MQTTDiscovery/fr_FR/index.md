@@ -55,7 +55,7 @@ Le topic contenant les config des équipements à découvrir, par défaut `homea
 >
 > Ne modifiez pas la configuration du topic racine de découverte sans savoir, en principe vous n'aurez jamais besoin de modifier cela.
 
-Il faudra ensuite configurer la liste des topics racines pour lesquels vous voulez remonter les équipements. Par exemple, pour les équipements gérés par *Open MQTT Gateway* ou *Theengs gateway* cela sera le topic `home` par défaut.
+Il faudra ensuite configurer la liste des topics racines pour lesquels vous voulez remonter les équipements. Par exemple, pour les équipements gérés par *Open MQTT Gateway* ou *Theengs Gateway* cela sera le topic `home` par défaut.
 
 > **Important**
 >
@@ -142,7 +142,7 @@ Tous les composants ne sont pas encore entièrement ni complètement intégré. 
 
 # Détections de devices Bluetooth
 
-Un des premiers objectifs de ce plugin est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant *Open MQTT Gateway* ou *Theengs gateway*. Dans les 2 cas, il faudra installer l'outils et le configurer pour se connecter au même broker Mosquitto que celui utilisé par le plugin.
+Un des premiers objectifs de ce plugin est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant *Open MQTT Gateway* ou *Theengs Gateway*. Dans les deux cas, il faudra installer l'outils et le configurer pour se connecter au même broker Mosquitto que celui utilisé par le plugin.
 
 ## Installation de Open MQTT Gateway
 
@@ -150,18 +150,18 @@ Tout est déjà expliqué en détail ici: <https://docs.openmqttgateway.com/>.
 
 Vous trouverez également de l'aide sur [community]({{site.forum}}).
 
-## Installation de Theengs gateway
+## Installation de Theengs Gateway
 
 Toutes les explications nécessaires pour installer une antenne manuellement sont disponibles ici: <https://gateway.theengs.io/install/install.html>.
 
-Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Theengs gateway</a> disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
+Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Theengs Gateway</a> disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
 
 > **Important**
 >
 > En fonction de la puissance de la machine et des autres processus en cours, l'installation peut prendre jusqu'à 1h. C'est parfaitement normal.
 > Pensez à couper l'antenne du plugin blea si vous vous serviez du pi pour blea. Celui-ci étant fort consommateur de resources, il ralentira fortement l'installation.
 >
-> Les 2 process (antenne BLEA & Theengs gateway) ne peuvent pas utiliser le Bluetooth en même temps, vous devez avoir 2 clés / puces Bluetooth différentes ou n'utiliser que l'un des deux à la fois.
+> Les deux process (antenne BLEA & Theengs Gateway) ne peuvent pas utiliser le Bluetooth en même temps, vous devez avoir 2 clés / puces Bluetooth différentes ou n'utiliser que l'un des deux à la fois.
 
 # Changelog
 

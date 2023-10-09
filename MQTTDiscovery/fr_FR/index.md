@@ -9,7 +9,7 @@ pluginId: MQTTDiscovery
 
 Plugin pour découverte automatique d'équipement MQTT.
 
-Le plugin se base sur le principe du "MQTT Auto Discovery" qui existe sous home assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom.
+Le plugin se base sur le principe du "MQTT Auto Discovery" qui existe sous Home Assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom. Il n'est évidement inutile d'installer Home Assistant, Jeedom suffit.
 
 Cela permet d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipements](https://compatible.openmqttgateway.com/index.php/devices/) ou l'équivalent [Theengs Gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via le plugin, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts.
 
@@ -21,6 +21,25 @@ Mais donc cela ne se limite pas à ça puisque tous les équipements compatibles
 > Aucune options spécifiques ne sera développée pour gérer plus en détail ceux-ci, ce n'est pas le but du plugin qui implémente uniquement la découverte automatique.
 > Les tests effectués avec ces zwavejs-ui et zigbee2mqtt sont réalisés uniquement parce que cela me permet de valider à grande échelle le comportement du plugin mais absolument pas pour gérer les spécificités de ces protocoles.
 > Donc ce plugin peut évidement être utilisé pour créer facilement les équipements nécessaires à ces protocoles mais uniquement dans le cadre d'une utilisation en mode avancée, en sachant que vous gérer absolument tout le reste avec les outils mis à disposition par ces programmes.
+
+# Compatibilité
+
+## Est-ce que ce plugin va fonctionner pour mon cas?
+
+Pour le savoir, vérifiez dans la documentation du matériel, programme ou passerelle que vous voulez utiliser s'il est fait mention de "MQTT Discovery" pour Home Assistant (encore une fois pas besoin d'avoir installé Home Assistant).
+
+Un autre moyen est de vous connecter à votre broker à l'aide de MQTT Explorer (par exemple) et de regarder si vous voyez un topic `homeassistant`. Si oui, vous devriez repérer des infos qui concernent votre matériel dans les sous-topics de celui-ci. En cas de doute, vous pouvez toujours poser la question sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+
+## Liste des intégrations possibles connues
+
+Cette liste est loin d'être exhaustive, cela serait impossible tellement il en existe. Cependant cela peut donner des idées
+
+- [Open MQTT Gateway](https://docs.openmqttgateway.com/)
+- [Theengs Gateway](https://gateway.theengs.io/)
+- [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT)
+- Nuki Smart lock pro (option à activer dans la configuration de la serrure)
+- [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
+- [zigbee2mqtt](https://www.zigbee2mqtt.io/)
 
 # Installation
 

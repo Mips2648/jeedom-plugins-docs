@@ -9,7 +9,7 @@ pluginId: tgw
 
 ## 2023-10-10
 
-- Ajout des informations de santés dans antennes dans la page santé Jeedom
+- Ajout des informations de santés des antennes dans la page santé Jeedom
 - Ajout du statut de l'antenne en mode affichage tableau des équipements
 
 ## 2023-10-08

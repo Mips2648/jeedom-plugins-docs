@@ -28,6 +28,8 @@ Si vous ne savez pas ou en cas de doute, utilisez la configuration automatique.
 
 # Les équipements
 
+Le plugin se trouve dans le menu Plugins → Programmation.
+
 Chaque équipement correspondra à une antenne Theengs. Donc vous devez commencer par ajouter un équipement et donner un nom.
 Dans la configuration de l'équipement, vous verrez les paramètres habituels communs à tous les équipements Jeedom.
 
@@ -42,22 +44,28 @@ Ensuite la première chose à faire est de choisir si c'est une antenne locale o
 
 Par défaut l'interface Bluetooth utilisée sera *hci0*, si nécessaire vous pouvez changer cette configuration.
 
-Ensuite il faut procéder à l'installation de l'antenne en cliquant sur le bouton *Installer l'antenne*:
-
+Sur la partie droite de l'écran vous verrez le statut de l'installation ainsi que le statut du service:
 ![Actions](../images/actions.png)
+
+Lorsque vous avez configuré la section *Authentification*, vous devez Sauvegarder l'équipement et ensuite vous pouvez procéder à l'installation de l'antenne en cliquant sur le bouton *Installer l'antenne*.
 
 > **Important**
 >
-> Cette étape peut être très longue (1h ou plus sur un pi0). Il est très important de patienter et de ne pas lancer de multiple fois l'installation.
+> Cette étape peut être très longue (1h ou plus sur un pi0). Il est très important de patienter et de ne pas lancer de multiple fois l'installation sur une même antenne.
+> Par contre vous pouvez parfaitement lancer l'installation de plusieurs antennes en parallèle.
+
+Le statut de l'installation passera à *En cours* et pour finir à *OK*. Le log d'installation sera visible dans le menu Analyse → Protocole Logs et sera nommé `tgw_[eqLogicID]_update` y compris pendant l'installation donc il est toujours possible de suivre en détails l'avancement de l'installation.
 
 ## Configuration et démarrage
 
-Vous pouvez à présent cliquer sur le bouton *Configurer le service et redémarrer*, cela ne devrait prendre que quelques secondes
+Lorsque le statut de l'installation passe à *OK*, vous pouvez cliquer sur le bouton *Configurer le service et redémarrer*, cela ne devrait prendre que quelques secondes.
 
 Cette étape va écrire le fichier de configuration et créer le service *TheengsGateway* sur l'hôte distant.
 Si vous changer un paramètre de l'équipement ou les informations de connexion au broker dans la configuration du plugin, il sera nécessaire de refaire cette étape.
 
 Le service sera configuré pour un démarrage automatique à chaque reboot du système ou en cas d'échec.
+
+En cas de besoin, un dernier bouton permet de (Re)Démarrer le service, ce bouton a la même fonction que la commande **Redémarrer** décrite ci-dessous.
 
 # Les commandes
 

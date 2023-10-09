@@ -36,6 +36,7 @@ In the device configuration, you will see the usual settings that are common to 
 ## Installing the antenna
 
 Then the first thing to do is to choose if it is a local or remote (via SSH) antenna and in the case of a remote antenna you must provide the connection information:
+
 ![auth](../images/auth.png)
 
 > **Important**
@@ -45,6 +46,7 @@ Then the first thing to do is to choose if it is a local or remote (via SSH) ant
 By default the Bluetooth interface used will be *hci0*, if necessary you can change this configuration.
 
 On the right side of the screen you will see the status of the installation as well as the status of the service:
+
 ![Actions](../images/actions.png)
 
 Once you have configured the *Authentication* section, you need to Save the device and then you can proceed to the installation of the antenna by clicking on the *Install Antenna* button.

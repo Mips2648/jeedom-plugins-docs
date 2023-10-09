@@ -36,6 +36,7 @@ Dans la configuration de l'équipement, vous verrez les paramètres habituels co
 ## Installation de l'antenne
 
 Ensuite la première chose à faire est de choisir si c'est une antenne locale ou distante (via SSH) et dans le cas d'une antenne distante il faut fournir les informations de connexions:
+
 ![auth](../images/auth.png)
 
 > **Important**
@@ -45,6 +46,7 @@ Ensuite la première chose à faire est de choisir si c'est une antenne locale o
 Par défaut l'interface Bluetooth utilisée sera *hci0*, si nécessaire vous pouvez changer cette configuration.
 
 Sur la partie droite de l'écran vous verrez le statut de l'installation ainsi que le statut du service:
+
 ![Actions](../images/actions.png)
 
 Lorsque vous avez configuré la section *Authentification*, vous devez Sauvegarder l'équipement et ensuite vous pouvez procéder à l'installation de l'antenne en cliquant sur le bouton *Installer l'antenne*.

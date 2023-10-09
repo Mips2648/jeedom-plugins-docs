@@ -99,7 +99,7 @@ En cliquant sur ce bouton, une nouvelle fenêtre va s'ouvrir:
 
 ![devices_discovered](../images/devices_discovered.png)
 
-Il suffit de cliquer sur le bouton "Ajouter" de l'équipement voulu et ensuite de cliquer sur le bouton "Recharger" pour que l'équipement et ses commandes soient créés.
+Il suffit de cliquer sur le bouton "Ajouter" de l'équipement voulu et ensuite de cliquer sur le bouton "Fermer et terminer la création des équipements nouvellement ajoutés" pour que l'équipement et ses commandes soient créés.
 
 Le dernier bouton vous permet de visualiser le statut de la création automatique et de l'activer ou la désactiver directement depuis cette page, il s'agit de la même configuration que celle visible dans la configuration du plugin.
 

@@ -7,18 +7,18 @@ pluginId: tgw
 
 # Description
 
-Plugin pour installer et configurer facilement des antennes tournant sous *Theengs gateway* qui permet de capter des périphérique Bluetooth (BLEA) et les remonter vers Jeedom pour être intégré via le plugin MQTT Discovery
+Plugin pour installer et configurer facilement des antennes tournant sous *Theengs gateway* qui permet de capter des périphériques Bluetooth (BLEA) et les remonter vers Jeedom pour être intégré via le plugin MQTT Discovery.
 
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
-Ce plugin nécessite le plugin *MQTT Manager (MQTT2)* pour fonctionner, cela permet de récupérer l'état des antennes.
+Ce plugin nécessite le plugin *MQTT Manager (MQTT2)* pour fonctionner, cela permet de récupérer l'état des antennes et de faciliter la configuration de celles-ci.
 
 # Configuration du plugin
 
-Avant de commencer, assurez-vous d'avoir installer et configurer le plugin *MQTT Manager (MQTT2)*, voir documentation de ce plugin.
+Avant de commencer, assurez-vous d'avoir installé et configuré le plugin *MQTT Manager (MQTT2)*, voir documentation de ce plugin.
 
-Il faudra ensuite configurer les informations de connexions au broker MQTT que les antennes vont utilisées, vous pouvez par défaut récupérer la configuration de *MQTT Manager (MQTT2)* en cliquant sur le bouton correspondant mais vous avez aussi la possibilité de vérifier et corriger si nécessaire l'adresse du broker (attention, cela doit être le même broker que sous MQTT2) et vous pouvez modifier le nom d'utilisateur et le mot de passe que les antennes utiliseront, c'est utile si vous voulez configurer des identifiants différents pour vos antennes et pour Jeedom.
+Il faudra ensuite configurer les informations de connexions au broker MQTT que les antennes vont utiliser, vous pouvez par défaut récupérer la configuration de *MQTT Manager (MQTT2)* en cliquant sur le bouton correspondant mais vous avez aussi la possibilité de vérifier et corriger si nécessaire l'adresse du broker (attention, cela doit être le même broker que sous MQTT2) et vous pouvez modifier le nom d'utilisateur et le mot de passe que les antennes utiliseront, c'est utile si vous voulez configurer des identifiants différents pour vos antennes et pour Jeedom (mais c'est tout à fait optionnelle).
 
 Si vous ne savez pas ou en cas de doute, utilisez la configuration automatique.
 
@@ -49,7 +49,7 @@ Sur la partie droite de l'écran vous verrez le statut de l'installation ainsi q
 
 ![Actions](../images/actions.png)
 
-Lorsque vous avez configuré la section *Authentification*, vous devez Sauvegarder l'équipement et ensuite vous pouvez procéder à l'installation de l'antenne en cliquant sur le bouton *Installer l'antenne*.
+Lorsque vous avez configuré la section *Authentification*, vous devez sauvegarder l'équipement et ensuite vous pouvez procéder à l'installation de l'antenne en cliquant sur le bouton *Installer l'antenne*.
 
 > **Important**
 >
@@ -67,7 +67,7 @@ Le statut de l'installation passera à *En cours* et pour finir à *OK*. Le log 
 Lorsque le statut de l'installation passe à *OK*, vous pouvez cliquer sur le bouton *Configurer le service et redémarrer*, cela ne devrait prendre que quelques secondes.
 
 Cette étape va écrire le fichier de configuration et créer le service *TheengsGateway* sur l'hôte distant.
-Si vous changer un paramètre de l'équipement ou les informations de connexion au broker dans la configuration du plugin, il sera nécessaire de refaire cette étape.
+Si vous changez un paramètre de l'équipement ou les informations de connexion au broker dans la configuration du plugin, il sera nécessaire de refaire cette étape.
 
 Le service sera configuré pour un démarrage automatique à chaque reboot du système ou en cas d'échec.
 

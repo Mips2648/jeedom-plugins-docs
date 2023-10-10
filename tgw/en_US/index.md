@@ -7,18 +7,18 @@ pluginId: tgw
 
 # Description
 
-Plugin to easily install and configure antennas running *Theengs gateway* that allows you to listen to Bluetooth devices (BLEA) and use them in Jeedom via the MQTT Discovery plugin
+Plugin to easily install and configure antennas running *Theengs gateway* that allows you to listen to Bluetooth devices (BLEA) and use them in Jeedom via the MQTT Discovery plugin.
 
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
-This plugin requires the *MQTT Manager (MQTT2)* plugin to work, this allows to get status of antennas
+This plugin requires the *MQTT Manager (MQTT2)* plugin to work, this allows to get status of antennas and to easily configure them.
 
 # Plugin configuration
 
 Before starting, make sure you have installed and configured the *MQTT Manager (MQTT2)* plugin, see plugin documentation.
 
-You will then have to configure the connection information to the MQTT broker that the antennas will use, you can by default retrieve the configuration of*MQTT Manager (MQTT2) * by clicking on the corresponding button but you can also check and correct the broker's address if necessary (note, it must be the same broker as under MQTT2) and you can change the username and password that the antennas will use, it's useful if you want to use different identifiers for yours antennas & Jeedom.
+You will then have to configure the connection information to the MQTT broker that the antennas will use, you can by default retrieve the configuration of*MQTT Manager (MQTT2) * by clicking on the corresponding button but you can also check and correct the broker's address if necessary (note, it must be the same broker as under MQTT2) and you can change the username and password that the antennas will use, it's useful if you want to use different identifiers for yours antennas & Jeedom (but this is totally optional).
 
 If you don't know or are in doubt, use automatic configuration.
 
@@ -49,7 +49,7 @@ On the right side of the screen you will see the status of the installation as w
 
 ![Actions](../images/actions.png)
 
-Once you have configured the *Authentication* section, you need to Save the device and then you can proceed to the installation of the antenna by clicking on the *Install Antenna* button.
+Once you have configured the *Authentication* section, you need to save the device and then you can proceed to the installation of the antenna by clicking on the *Install Antenna* button.
 
 > **Important**
 >

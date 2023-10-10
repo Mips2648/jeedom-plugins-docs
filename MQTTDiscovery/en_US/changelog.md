@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-10
+
+- Add possibility of having custom images on devices (one image per model)
+
 ## 2023-10-07
 
 - Add the identifier, manufacturer and model of the device in the configuration page

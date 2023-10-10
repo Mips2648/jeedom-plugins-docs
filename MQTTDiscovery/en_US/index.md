@@ -175,13 +175,6 @@ All the explanations needed to install an antenna manually are available here: <
 
 You can also use the plugin <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Theengs Gateway</a> available on the market which simplifies the task, see [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
 
-> **Important**
->
-> Depending on the power of the machine and other processes taking place, installation may take up to 1 hour. This is perfectly normal.
-> Remember to stop the antenna of the blea plugin if you were using the pi for blea. As this consumes a lot of resources, it will significantly slow down the installation.
->
-> The two processes (BLEA antenna & Theengs Gateway) cannot use Bluetooth at the same time, you must have 2 different Bluetooth keys / chips or only use one of the two at a time.
-
 # Changelog
 
 [See the changelog](./changelog)

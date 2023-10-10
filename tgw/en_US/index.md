@@ -53,8 +53,12 @@ Once you have configured the *Authentication* section, you need to Save the devi
 
 > **Important**
 >
-> This step can be very long (1 hour or more on a pi0). It is very important to be patient and not launch the installation multiple times on the same antenna.
+> This step can be very long (1 hour or more on a ft0). It is very important to be patient and not launch the installation multiple times on the same antenna.
 > On the other hand, you can perfectly launch the installation of several antennas in parallel.
+>
+> Remember to stop the antenna of the BLEA plugin if you were using the pi for BLEA. As this consumes a lot of resources, it will slow down the installation accordingly.
+>
+> Both processes (BLEA Antenna & Theengs Gateway) cannot use the Bluetooth at the same time, it is highly recommended to have 2 different Bluetooth keys/chips or only use one of them at a time.
 
 The installation status will change to *Ongoing* and finally to *OK*. The installation log will be visible even during the installation in the Analysis → Logs menu and will be named `tgw_[eqLogicID]_update` so it is always possible to follow the progress of the installation in detail.
 

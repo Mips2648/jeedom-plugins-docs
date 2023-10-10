@@ -9,7 +9,7 @@ pluginId: MQTTDiscovery
 
 ## 2023-10-10
 
-- Ajout de la possibilité d'avoir des images personnalisées sur les équipements (une image par modèle).
+- Ajout de la possibilité d'avoir des images personnalisées sur les équipements (une image par modèle)
 
 ## 2023-10-07
 

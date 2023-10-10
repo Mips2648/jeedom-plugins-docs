@@ -175,13 +175,6 @@ Toutes les explications nécessaires pour installer une antenne manuellement son
 
 Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Theengs Gateway</a> disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
 
-> **Important**
->
-> En fonction de la puissance de la machine et des autres processus en cours, l'installation peut prendre jusqu'à 1h. C'est parfaitement normal.
-> Pensez à couper l'antenne du plugin blea si vous vous serviez du pi pour blea. Celui-ci étant fort consommateur de resources, il ralentira fortement l'installation.
->
-> Les deux process (antenne BLEA & Theengs Gateway) ne peuvent pas utiliser le Bluetooth en même temps, vous devez avoir 2 clés / puces Bluetooth différentes ou n'utiliser que l'un des deux à la fois.
-
 # Changelog
 
 [Voir le changelog](./changelog)

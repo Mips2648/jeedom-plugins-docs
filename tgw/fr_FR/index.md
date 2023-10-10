@@ -55,6 +55,10 @@ Lorsque vous avez configuré la section *Authentification*, vous devez Sauvegard
 >
 > Cette étape peut être très longue (1h ou plus sur un pi0). Il est très important de patienter et de ne pas lancer de multiple fois l'installation sur une même antenne.
 > Par contre vous pouvez parfaitement lancer l'installation de plusieurs antennes en parallèle.
+>
+> Pensez à couper l'antenne du plugin BLEA si vous vous serviez du pi pour BLEA. Celui-ci étant fort consommateur de resources, il ralentira d'autant l'installation.
+>
+> Les deux process (antenne BLEA & Theengs Gateway) ne peuvent pas utiliser le Bluetooth en même temps, il est fortement recommandé d'avoir 2 clés / puces Bluetooth différentes ou de n'utiliser que l'un des deux à la fois.
 
 Le statut de l'installation passera à *En cours* et pour finir à *OK*. Le log d'installation sera visible dans le menu Analyse → Logs y compris pendant l'installation et sera nommé `tgw_[eqLogicID]_update` donc il est toujours possible de suivre en détails l'avancement de l'installation.
 

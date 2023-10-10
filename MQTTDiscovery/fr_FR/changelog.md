@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-10
+
+- Ajout de la possibilité d'avoir des images personnalisées sur les équipements (une image par modèle).
+
 ## 2023-10-07
 
 - Ajout de l'identifiant, fabricant et modèle de l'équipement dans la page config

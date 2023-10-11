@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-10-11
+
+- Ajout d'une deuxième contrôle pour vérifier si l'installation est toujours en cours
+
 ## 2023-10-10
 
 - Ajout des informations de santés des antennes dans la page santé Jeedom

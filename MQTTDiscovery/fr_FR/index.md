@@ -152,6 +152,7 @@ Tous les composants ne sont pas encore entièrement ni complètement intégré. 
 - binary_sensor
 - button
 - cover
+- device_tracker
 - light
   - brightness
 - number

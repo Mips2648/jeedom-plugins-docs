@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-12
+
+- Prise en charge des *device_tracker* pour compatibilité avec les "Tile" qui remonte un peu différemment que les Nuts
+
 ## 2023-10-10
 
 - Ajout de la possibilité d'avoir des images personnalisées sur les équipements (une image par modèle)

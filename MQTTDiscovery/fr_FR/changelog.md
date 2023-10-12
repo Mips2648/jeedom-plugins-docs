@@ -10,6 +10,7 @@ pluginId: MQTTDiscovery
 ## 2023-10-12
 
 - Prise en charge des *device_tracker* pour compatibilité avec les "Tile" qui remonte un peu différemment que les Nuts
+- Ajout de filtres dans la fenêtre d'ajout manuel d'équipement pour permettre la recherche
 
 ## 2023-10-10
 

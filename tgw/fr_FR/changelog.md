@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-10-12
+
+- Ajout de l'installation du package système bluez lors de l'installation de l'antenne au cas où celui-ci ne serait pas déjà installé
+
 ## 2023-10-11
 
 - Ajout d'une deuxième contrôle pour vérifier si l'installation est toujours en cours

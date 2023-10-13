@@ -67,7 +67,10 @@ Le statut de l'installation passera à *En cours* et pour finir à *OK*. Le log 
 Lorsque le statut de l'installation passe à *OK*, vous pouvez cliquer sur le bouton *Configurer le service et redémarrer*, cela ne devrait prendre que quelques secondes.
 
 Cette étape va écrire le fichier de configuration et créer le service *TheengsGateway* sur l'hôte distant.
-Si vous changez un paramètre de l'équipement ou les informations de connexion au broker dans la configuration du plugin, il sera nécessaire de refaire cette étape.
+
+> **Important**
+>
+> Si vous changez un paramètre de l'équipement ou les informations de connexion au broker dans la configuration du plugin, il sera nécessaire de refaire la configuration du service **après** avoir sauvé l'équipement.
 
 Le service sera configuré pour un démarrage automatique à chaque reboot du système ou en cas d'échec.
 

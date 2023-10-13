@@ -7,6 +7,12 @@ pluginId: tgw
 
 # Beta
 
+## 2023-10-13
+
+- Amélioration de la vérification de l'état de l'installation
+- Ajout de la possibilité de vérifier manuellement le statut de de l'installation
+- Ajout d'une action pour désinstaller le service et l'antenne si nécessaire
+
 ## 2023-10-12
 
 - Ajout de l'installation du package système bluez lors de l'installation de l'antenne au cas où celui-ci ne serait pas déjà installé

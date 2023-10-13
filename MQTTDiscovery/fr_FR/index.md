@@ -159,6 +159,7 @@ Tous les composants ne sont pas encore entièrement ni complètement intégré. 
 - sensor
 - switch
 - text
+- update
 
 # Détections de devices Bluetooth
 

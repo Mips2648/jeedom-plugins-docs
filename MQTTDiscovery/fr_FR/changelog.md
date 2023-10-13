@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-14
+
+- Prise en charge du type *update* qui permet d'avoir des commandes infos **Version installée**, **Dernière version** et une commande action **Firmware Update** pour lancer la mise à jour du matériel pour les appareils supportant cette fonctionnalité (par exemple OMG)
+
 ## 2023-10-12
 
 - Prise en charge des *device_tracker* pour compatibilité avec les "Tile" qui remonte un peu différemment que les Nuts

@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-10-14
+
+- Ajout de la configuration du niveau de log de l'antenne
+
 ## 2023-10-13
 
 - Amélioration de la vérification de l'état de l'installation

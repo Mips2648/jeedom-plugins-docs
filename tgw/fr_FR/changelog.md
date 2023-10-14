@@ -10,6 +10,8 @@ pluginId: tgw
 ## 2023-10-14
 
 - Ajout de la configuration du niveau de log de l'antenne
+- Ajout de résumé de la config actuelle de l'antenne
+- Récupération automatique des logs du service (chaque minute) sur Jeedom
 
 ## 2023-10-13
 

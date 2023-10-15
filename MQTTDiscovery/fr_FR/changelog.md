@@ -7,6 +7,11 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-15
+
+- Fix pour le type *cover* (les volets par exemple): création des commandes open/close/stop même si pas de retour d'état
+- Modification de la visibilité et du template par défaut lors de la création sur certaines commandes
+
 ## 2023-10-14
 
 - Prise en charge du type *update* qui permet d'avoir des commandes infos **Version installée**, **Dernière version** et une commande action **Firmware Update** pour lancer la mise à jour du matériel pour les appareils supportant cette fonctionnalité (par exemple OMG)

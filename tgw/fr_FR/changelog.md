@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-10-15
+
+- Affichage de la liste des interfaces Bluetooth disponibles (avec leur adresse MAC) dans la page de configuration de l'antenne
+
 ## 2023-10-14
 
 - Ajout de la configuration du niveau de log de l'antenne

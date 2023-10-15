@@ -9,7 +9,7 @@ pluginId: MQTTDiscovery
 
 ## 2023-10-15
 
-- Fix pour le type *cover* (les volets par exemple): création des commandes open/close/stop même si pas de retour d'état
+- Changement de comportement pour le type *cover* (les volets par exemple): création des commandes open/close/stop même si pas de retour d'état
 - Modification de la visibilité et du template par défaut lors de la création sur certaines commandes
 
 ## 2023-10-14

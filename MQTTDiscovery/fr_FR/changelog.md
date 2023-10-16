@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-16
+
+- Ajout d'un bouton dans la page de configuration de l'équipement pour voir la configuration brute de celui-ci ainsi que d'un bouton pour copier facilement celle-ci afin de me la partager si nécessaire
+
 ## 2023-10-15
 
 - Changement de comportement pour le type *cover* (les volets par exemple): création des commandes open/close/stop même si pas de retour d'état

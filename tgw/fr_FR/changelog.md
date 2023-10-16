@@ -10,6 +10,7 @@ pluginId: tgw
 ## 2023-10-15
 
 - Affichage de la liste des interfaces Bluetooth disponibles (avec leur adresse MAC) dans la page de configuration de l'antenne
+- Modification de l'écran de configuration du plugin
 
 ## 2023-10-14
 

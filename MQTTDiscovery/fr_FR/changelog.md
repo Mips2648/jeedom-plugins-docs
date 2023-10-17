@@ -10,6 +10,7 @@ pluginId: MQTTDiscovery
 ## 2023-10-16
 
 - Ajout d'un bouton dans la page de configuration de l'équipement pour voir la configuration brute de celui-ci ainsi que d'un bouton pour copier facilement celle-ci afin de me la partager si nécessaire
+- Réorganisation des données du plugins: en principe les images personnalisées ont été déplacées à l'endroit voulu, si ce n'est pas le cas, veuillez créer un post sur Community
 
 ## 2023-10-15
 

@@ -7,7 +7,8 @@ pluginId: worxLandroidS
 
 # Beta
 
-n/a
+- Amélioration technique sur le démon: passage en full asyncio
+- Modification sur la gestion des dépendances pour éviter des conflits potentiels avec d'autres plugins
 
 # Stable
 

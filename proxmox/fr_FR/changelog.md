@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-- Modification interne de la gestion de dépendances
+- Ajout d'une commande **Supprimer snapshot** sur VM et LXC
 
 # Stable
 

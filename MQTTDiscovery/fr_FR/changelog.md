@@ -7,6 +7,11 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-18
+
+- Ajout d'une commande **rssi** par gateway fournissant l'info. La commande **rssi** principale garde la comportement actuel: c'est la dernière valeur reçue toute antenne confondue et la gestion de présence se base sur celle-ci
+- Réorganisation interne du code qui devrait être complètement transparente
+
 ## 2023-10-16
 
 - Ajout d'un bouton dans la page de configuration de l'équipement pour voir la configuration brute de celui-ci ainsi que d'un bouton pour copier facilement celle-ci afin de me la partager si nécessaire

@@ -37,7 +37,7 @@ Cette liste est loin d'être exhaustive, cela serait impossible tellement il en 
 - [Open MQTT Gateway](https://docs.openmqttgateway.com/)
 - [Theengs Gateway](https://gateway.theengs.io/)
 - [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT)
-- Nuki Smart lock pro (option à activer dans la configuration de la serrure)
+- [Nuki Smart Lock 3.0 Pro](https://support.nuki.io/hc/fr/articles/12947926779409-MQTT-support)
 - [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
 - [zigbee2mqtt](https://www.zigbee2mqtt.io/)
 

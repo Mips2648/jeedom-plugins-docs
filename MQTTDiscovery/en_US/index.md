@@ -37,7 +37,7 @@ This list is far from exhaustive, it would be impossible as there are so many of
 - [Open MQTT Gateway](https://docs.openmqttgateway.com/)
 - [Theengs Gateway](https://gateway.theengs.io/)
 - [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT)
-- Nuki Smart lock pro (option to be activated in the configuration)
+- [Nuki Smart Lock 3.0 Pro](https://support.nuki.io/hc/en-us/articles/12947926779409-MQTT-support)
 - [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
 - [zigbee2mqtt](https://www.zigbee2mqtt.io/)
 
@@ -152,12 +152,14 @@ Not all components are fully or completely integrated yet. If your hardware need
 - binary_sensor
 - button
 - cover
+- device_tracker
 - light
   - brightness
 - number
 - sensor
 - switch
 - text
+- update
 
 # Bluetooth device detections
 

@@ -7,11 +7,12 @@ pluginId: worxLandroidS
 
 # Beta
 
-n/a
+- Technical improvement on the daemon: transition to full asyncio
+- Change on dependency management to avoid potential conflicts with other plugins
 
 # Stable
 
-# 2023-10-02
+## 2023-10-02
 
 - Encrypt username and password in database
 - Fix on the activation and deactivation commands of additional modules

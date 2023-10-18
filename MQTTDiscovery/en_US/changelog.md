@@ -7,6 +7,25 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-16
+
+- Added a button in the device configuration page to see the raw configuration of the device as well as a button to easily copy it to share it with me if necessary
+- Reorganization of plugin data: in principle the custom images have been moved to the desired location, if not, please create a post on Community
+
+## 2023-10-15
+
+- Behavior change for the *cover* type (panes for example): creation of open/close/stop commands even if there is no status feedback
+- Change the visibility and the default template on creation of some commands
+
+## 2023-10-14
+
+- Support for the type *update* which allows you to have info commands **Installed version**, **Latest version** and a **Firmware Update** action command to start updating the hardware for devices supporting this feature (for example OMG)
+
+## 2023-10-12
+
+- *device_tracker* support for compatibility with “Tiles”
+- Add filters to the manual addition of device window to allow searching
+
 ## 2023-10-10
 
 - Add possibility of having custom images on devices (one image per model)

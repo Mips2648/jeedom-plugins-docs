@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-10-20
+
+- Modification de l'installation des antennes pour assurer la compatibilité avec Debian 12. Il n'est pas obligatoire de réinstaller immédiatement après la mise à jour du plugin les antennes existantes mais je vous conseille de prévoir cela lorsque c'est possible pour vous. Il suffit de cliquer sur le bouton "Installer l'antenne" et le plugin se chargera de nettoyer l'installation précédente et réinstaller l'antenne.
+
 ## 2023-10-15
 
 - Affichage de la liste des interfaces Bluetooth disponibles (avec leur adresse MAC) dans la page de configuration de l'antenne

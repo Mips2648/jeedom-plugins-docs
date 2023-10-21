@@ -189,7 +189,7 @@ Ces antennes vont capter les appareils qui émettent en Bluetooth et envoyer les
 
 - [Theengs gateway](https://gateway.theengs.io/) à installer localement ou en distant sur une machine sous Debian (un pi ou autre, aucune importance):
   - soit manuellement en suivant leur documentation
-  - soit via le plugin Jeedom [Theengs Gateway]({{site.baseurl}}/tgw/{{page.lang}}) disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
+  - soit via le [plugin Jeedom Theengs Gateway]({{site.baseurl}}/tgw/{{page.lang}}) disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
 - [OpenMQTTGateway](https://docs.openmqttgateway.com/) à flasher sur un esp32, forcément en distant.
 
 Il est donc parfaitement possible d'avoir:

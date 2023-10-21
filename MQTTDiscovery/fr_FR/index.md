@@ -165,17 +165,56 @@ Tous les composants ne sont pas encore entièrement ni complètement intégré. 
 
 Un des premiers objectifs de ce plugin est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant *Open MQTT Gateway* ou *Theengs Gateway*. Dans les deux cas, il faudra installer l'outils et le configurer pour se connecter au même broker Mosquitto que celui utilisé par le plugin.
 
-## Installation de Open MQTT Gateway
+Nous allons voir ici une solution complète pour intégrer énormément d'équipements Bluetooth (BLEA) dans Jeedom et cela de façon entièrement automatisée.
 
-Tout est déjà expliqué en détail ici: <https://docs.openmqttgateway.com/>.
+Il n'y a besoin d'aucune connaissance technique (autre que de savoir utiliser Jeedom) et il n'y aura besoin d'effectuer aucune configuration manuellement même si à tout moment vous pourrez décider de prendre en charge manuellement tout ou partie de la solution (car "pourquoi faire simple lorsque l'on peut faire compliqué?").
 
-Vous trouverez également de l'aide sur [community]({{site.forum}}).
+## Comment cela fonctionne?
 
-## Installation de Theengs Gateway
+Voici un schéma qui illustre le fonctionnement et les interactions entre chaque composant de la solution:
 
-Toutes les explications nécessaires pour installer une antenne manuellement sont disponibles ici: <https://gateway.theengs.io/install/install.html>.
+![flow](../images/schema.png)
 
-Vous pouvez également utiliser le plugin <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Theengs Gateway</a> disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
+On peut y voir des capteurs (1), par exemple miFlora et nut, dont les émissions en Bluetooth sont captées par des antennes (2) avec Theengs Gateway ou OMG sur des esp32.
+
+Ces antennes sont connectées à votre réseau local via câble ou wifi et envoient les messages Bluetooth décodés via MQTT au broker (3) et finalement le broker envoie ces mêmes messages au plugin **MQTT Discovery** installé sur Jeedom (4).
+
+Il y a donc deux parties bien distinctes: les *antennes* qui transforment les messages Bluetooth en messages MQTT, et le plugin **MQTT Discovery** qui va transformer les messages MQTT en équipements et commandes utilisables sur Jeedom.
+
+### Les antennes
+
+Il peut y en avoir une seule (installée localement sur Jeedom ou sur un hôte distant) ou plusieurs (forcément installées sur des hôtes distants) pour couvrir le domicile si besoin.
+
+Ces antennes vont capter les appareils qui émettent en Bluetooth et envoyer les données via MQTT à Jeedom; deux options pour avoir des antennes, vous pouvez les combiner et les multiplier, tout est possible:
+
+- [Theengs gateway](https://gateway.theengs.io/) à installer localement ou en distant sur une machine sous Debian (un pi ou autre, aucune importance):
+  - soit manuellement en suivant leur documentation
+  - soit via le plugin Jeedom [Theengs Gateway]({{site.baseurl}}/tgw/{{page.lang}}) disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
+- [OpenMQTTGateway](https://docs.openmqttgateway.com/) à flasher sur un esp32, forcément en distant.
+
+Il est donc parfaitement possible d'avoir:
+
+- une seule antenne locale (=installée sur Jeedom), donc tournant à l'aide de Theengs gateway
+- une antenne locale et une autre sur un pi (avec Theengs gateway)
+- une ou plusieurs antennes sur pi et pas de locale
+- que des antennes OMG sur esp32
+- un mix d'antennes OMG et Theengs
+
+Toutes les combinaisons sont réalisables et tout est inter-compatible.
+
+### Les équipements sous Jeedom
+
+C'est ici qu'entre en jeu le plugin **MQTT Discovery** et si vous avez déjà effectué la configuration du plugin décrite ci-dessus, vous n'avez rien de plus à faire que d'ajouter les équipements voulus à votre Jeedom, le plugin se charge du reste.
+
+## Pourquoi la gestion des antennes n'est-elle pas intégrée à MQTT Discovery alors?
+
+Car ce sont bien deux rôles distincts et que **MQTT Discovery** ne s'occupe pas réellement de savoir d'où viennent les infos qu'il reçoit via MQTT et il n'est certainement pas limités aux équipements Bluetooth.
+
+Certains l'utilisent pour intégrer à Jeedom des équipements qui ne sont pas en Bluetooth et qui ne sont donc pas remontés par les passerelles *Theengs* ou *OMG* mais par d'autres connecteurs, ils n'ont donc peut-être même pas besoin de celles-ci.
+
+D'autres pourront décider d'installer leurs antennes eux-même ou de n'utiliser que des antennes sur esp32 avec OMG.
+
+C'est là que se trouve la force du système: chacun s'occupe de son travail de la façon la plus optimale possible et cela permet d'offrir une plus grande qualité et stabilité de l'ensemble. Le broker MQTT au milieu étant une brique technique servant à la communication entre les différentes parties.
 
 # Changelog
 

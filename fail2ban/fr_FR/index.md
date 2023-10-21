@@ -30,7 +30,7 @@ Dans la configuration de l'équipement, vous verrez les paramètres habituels co
 
 La première chose est de choisir le mode: *local* ou *SSH*. Le mode *local* permet de récupérer les informations de fail2ban installé sur la machine Jeedom alors que le mode *SSH* permet de se connecter sur une machine distante via SSH. Dans ce cas il faut saisir le nom d'hôte (ou l'adresse IP), le port (si différent que 22), le nom d'utilisateur (qui doit être dans le groupe sudoers) et son mot de passe.
 
-Vous pouvez également paramétrer à quelle fréquence les données doivent être actualisées.
+Vous pouvez également paramétrer à quelle fréquence les données doivent être actualisées, par défaut cela sera chaque 10 min.
 
 # Les commandes
 

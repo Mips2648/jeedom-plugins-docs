@@ -7,6 +7,10 @@ pluginId: fail2ban
 
 # Beta
 
+## 2023-10-21
+
+- Changement: cron par défaut à 10min
+
 ## 2023-10-06
 
 - Ajout d'une commande **Dernière IP bannie** par jail

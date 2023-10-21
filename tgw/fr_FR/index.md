@@ -11,6 +11,8 @@ Le but de ce plugin est de vous faciliter la tâche pour l'installation et la co
 
 Il offre une solution clé en main pour effectuer ce paramétrage.
 
+Je vous invite à consulter [cette documentation](https://mips2648.github.io/jeedom-plugins-docs/MQTTDiscovery/fr_FR/#tocAnchor-1-14) pour comprendre plus en détails comment utiliser ce plugin.
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

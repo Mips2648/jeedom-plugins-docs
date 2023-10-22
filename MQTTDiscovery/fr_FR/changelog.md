@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-22
+
+- Configuration du min & max pour les commandes **rssi**
+
 ## 2023-10-19
 
 - Réorganisation des logs

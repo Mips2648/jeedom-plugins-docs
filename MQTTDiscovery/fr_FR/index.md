@@ -7,26 +7,25 @@ pluginId: MQTTDiscovery
 
 # Description
 
-Plugin pour découverte automatique d'équipement MQTT.
+**MQTT Discovery** permet la découverte automatique d'équipement MQTT grâce au protocol "MQTT Discovery", aussi appelé "HA Discovery".
 
-Le plugin se base sur le principe du "MQTT Auto Discovery" qui existe sous Home Assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom. Il n'est évidement inutile d'installer Home Assistant, Jeedom suffit.
+Il se base sur le principe du "MQTT Auto Discovery" qui existe sous Home Assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom. Il est évidement inutile d'installer Home Assistant, Jeedom suffit.
 
-Cela permet d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipements](https://compatible.openmqttgateway.com/index.php/devices/) ou l'équivalent [Theengs Gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via le plugin, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts.
+Cela permet par exemple d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipements](https://compatible.openmqttgateway.com/index.php/devices/) ou l'équivalent [Theengs Gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via **MQTT Discovery**, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts.
 
-Mais donc cela ne se limite pas à ça puisque tous les équipements compatibles "MQTT Auto Discovery" seront gérables via le plugin. Par exemple, ce plugin a été testé avec succès avec zwavejs-ui et zigbee2mqtt.
+Mais cela ne se limite pas aux équipements Bluetooth puisque tous les équipements compatibles "MQTT Auto Discovery" seront reconnus et utilisables. Par exemple, ce plugin a été testé avec succès avec zwavejs-ui et zigbee2mqtt.
 
 > **Important**
 >
-> Ce plugin n'a pas vocation à remplacer des plugins de protocoles dédiés à zwavejs-ui et zigbee2mqtt par exemple; les plugins existants sur le market géreront bien mieux ces protocoles sous Jeedom.
-> Aucune options spécifiques ne sera développée pour gérer plus en détail ceux-ci, ce n'est pas le but du plugin qui implémente uniquement la découverte automatique.
-> Les tests effectués avec ces zwavejs-ui et zigbee2mqtt sont réalisés uniquement parce que cela me permet de valider à grande échelle le comportement du plugin mais absolument pas pour gérer les spécificités de ces protocoles.
-> Donc ce plugin peut évidement être utilisé pour créer facilement les équipements nécessaires à ces protocoles mais uniquement dans le cadre d'une utilisation en mode avancée, en sachant que vous gérer absolument tout le reste avec les outils mis à disposition par ces programmes.
+> **MQTT Discovery** n'a pas vocation à remplacer des plugins de protocoles dédiés à zwavejs-ui et zigbee2mqtt par exemple; les plugins existants sur le market géreront bien mieux ces protocoles sous Jeedom.
+> Aucune option spécifique ne sera développée pour gérer plus en détails ceux-ci, ce n'est pas le but du plugin qui implémente uniquement la découverte automatique.
+> Donc **MQTT Discovery** peut évidement être utilisé pour créer automatiquement les équipements nécessaires (comme on le ferait avec une autre intégration MQTT mais plus facilement) mais uniquement dans le cadre d'une utilisation en mode "avancée", en sachant que vous gérer tout le reste avec les outils mis à disposition par ces deux programmes.
 
 # Compatibilité
 
-## Est-ce que ce plugin va fonctionner pour mon cas?
+## Est-ce que MQTT Discovery va fonctionner dans mon cas?
 
-Pour le savoir, vérifiez dans la documentation du matériel, programme ou passerelle que vous voulez utiliser s'il est fait mention de "MQTT Discovery" pour Home Assistant (encore une fois pas besoin d'avoir installé Home Assistant).
+Pour le savoir, vérifiez dans la documentation de votre matériel, programme ou passerelle que vous voulez utiliser s'il est fait mention de "MQTT Discovery" ou "HA Discovery" pour Home Assistant (encore une fois pas besoin d'avoir installé Home Assistant).
 
 Un autre moyen est de vous connecter à votre broker à l'aide de MQTT Explorer (par exemple) et de regarder si vous voyez un topic `homeassistant`. Si oui, vous devriez repérer des infos qui concernent votre matériel dans les sous-topics de celui-ci. En cas de doute, vous pouvez toujours poser la question sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
@@ -48,7 +47,7 @@ Il faut ensuite installer les dépendances.
 
 Vous devez avoir déjà installé un broker MQTT, soit par vous-même, soit par l'intermédiaire d'un autre plugin Jeedom.
 
-Si le plugin *MQTT Manager (mqtt2)* est installé, la configuration pour se connecter au broker géré par ce plugin pourra être récupérée automatiquement.
+Le plugin *MQTT Manager (mqtt2)* n'est pas requis mais s'il est installé, la configuration pour se connecter au broker pourra être récupérée automatiquement.
 
 # Configuration du plugin
 
@@ -120,6 +119,8 @@ En cliquant sur ce bouton, une nouvelle fenêtre va s'ouvrir:
 
 Il suffit de cliquer sur le bouton "Ajouter" de l'équipement voulu et ensuite de cliquer sur le bouton "Fermer et terminer la création des équipements nouvellement ajoutés" pour que l'équipement et ses commandes soient créés.
 
+De retour sur le bandeau de gestion, vous verrez un bouton pour accéder à la configuration du plugin, à la documentation ainsi qu'aux derniers sujets à propos du plugin sur community.
+
 Le dernier bouton vous permet de visualiser le statut de la création automatique et de l'activer ou la désactiver directement depuis cette page, il s'agit de la même configuration que celle visible dans la configuration du plugin.
 
 Dans le cas où la création automatique est active, le plugin créera les équipements et les commandes manquantes automatiquement dès qu'il recevra les informations sur le topic de découverte (par défaut `homeassistant`).
@@ -163,7 +164,7 @@ Tous les composants ne sont pas encore entièrement ni complètement intégré. 
 
 # Détections de devices Bluetooth
 
-Un des premiers objectifs de ce plugin est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant *Open MQTT Gateway* ou *Theengs Gateway*. Dans les deux cas, il faudra installer l'outils et le configurer pour se connecter au même broker Mosquitto que celui utilisé par le plugin.
+Un des premiers objectifs de **MQTT Discovery** est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant les passerelles *Open MQTT Gateway* ou *Theengs Gateway*. Dans les deux cas, il faudra installer la passerelle et la configurer.
 
 Nous allons voir ici une solution complète pour intégrer énormément d'équipements Bluetooth (BLEA) dans Jeedom et cela de façon entièrement automatisée.
 
@@ -171,7 +172,7 @@ Il n'y a besoin d'aucune connaissance technique (autre que de savoir utiliser Je
 
 ## Comment cela fonctionne?
 
-Voici un schéma qui illustre le fonctionnement et les interactions entre chaque composant de la solution:
+Voici un schéma qui illustre le fonctionnement et les interactions entre chaque composants de la solution:
 
 ![flow](../images/schema.png)
 
@@ -200,7 +201,7 @@ Il est donc parfaitement possible d'avoir:
 - que des antennes OMG sur esp32
 - un mix d'antennes OMG et Theengs
 
-Toutes les combinaisons sont réalisables et tout est inter-compatible.
+Toutes les combinaisons sont réalisables et tout est inter-compatibles.
 
 ### Les équipements sous Jeedom
 
@@ -210,7 +211,7 @@ C'est ici qu'entre en jeu le plugin **MQTT Discovery** et si vous avez déjà ef
 
 Car ce sont bien deux rôles distincts et que **MQTT Discovery** ne s'occupe pas réellement de savoir d'où viennent les infos qu'il reçoit via MQTT et il n'est certainement pas limités aux équipements Bluetooth.
 
-Certains l'utilisent pour intégrer à Jeedom des équipements qui ne sont pas en Bluetooth et qui ne sont donc pas remontés par les passerelles *Theengs* ou *OMG* mais par d'autres connecteurs, ils n'ont donc peut-être même pas besoin de celles-ci.
+Certains l'utilisent pour intégrer à Jeedom des équipements qui ne sont pas en Bluetooth et qui ne sont donc pas remontés par les passerelles *Theengs* ou *OMG* mais par d'autres connecteurs ou passerelles, ils n'ont donc peut-être même pas besoin de celles-ci.
 
 D'autres pourront décider d'installer leurs antennes eux-même ou de n'utiliser que des antennes sur esp32 avec OMG.
 

@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-- Internal change in dependency management
+- Add a **Delete snapshot** command on VM and LXC
 
 # Stable
 

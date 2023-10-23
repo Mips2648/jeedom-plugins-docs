@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Description
 
-**MQTT Discovery** permet la découverte automatique d'équipement MQTT grâce au protocol "MQTT Discovery", aussi appelé "HA Discovery".
+**MQTT Discovery** permet la découverte automatique d'équipements grâce au protocol "MQTT Discovery", aussi appelé "HA Discovery".
 
 Il se base sur le principe du "MQTT Auto Discovery" qui existe sous Home Assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom. Il est évidement inutile d'installer Home Assistant, Jeedom suffit.
 

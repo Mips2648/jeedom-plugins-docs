@@ -7,24 +7,28 @@ pluginId: tgw
 
 # Description
 
-Plugin to easily install and configure antennas running *Theengs gateway* that allows you to listen to Bluetooth devices (BLEA) and use them in Jeedom via the MQTT Discovery plugin.
+The purpose of this plugin is to make it easier for you to install and configure antennas running on *Theengs gateway*, which allows to listen to Bluetooth devices (BLEA) and use them in Jeedom via the [MQTT Discovery]({{site.baseurl}}/MQTTDiscovery/{{page.lang}}).
+
+It offers a turnkey solution to perform this configuration.
+
+I invite you to consult [this documentation](https://mips2648.github.io/jeedom-plugins-docs/MQTTDiscovery/fr_FR/#tocAnchor-1-14) to understand in more detail how it works.
 
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
-This plugin requires the *MQTT Manager (MQTT2)* plugin to work, this allows to get status of antennas and to easily configure them.
+**Theengs gateway** requires the *MQTT Manager (MQTT2)* plugin to work, this allows to get status of antennas and to easily configure them.
 
 # Plugin configuration
 
 Before starting, make sure you have installed and configured the *MQTT Manager (MQTT2)* plugin, see plugin documentation.
 
-You will then have to configure the connection information to the MQTT broker that the antennas will use, you can by default retrieve the configuration of*MQTT Manager (MQTT2) * by clicking on the corresponding button but you can also check and correct the broker's address if necessary (note, it must be the same broker as under MQTT2) and you can change the username and password that the antennas will use, it's useful if you want to use different identifiers for yours antennas & Jeedom (but this is totally optional).
+You will then have to configure the connection information to the MQTT broker that the antennas will use, you can simply use the information that has already been configured by *MQTT Manager (MQTT2)* by choosing the corresponding option from the dropdown list but you can also configure a different username and password for the antennas but this is completely optional. Attention, in the latter case, the username and password configured here must have been created by you, **Theengs gateway** is not in charge of it.
 
-If you don't know or are in doubt, use automatic configuration.
+If you don't know or are in doubt, use configuration from *MQTT Manager (MQTT2)*.
 
 > **Important**
 >
-> The information configured here will only be used for antenna configuration. The plugin will always use *MQTT Manager (MQTT2)* to connect to the broker.
+> The information configured here will only be used for antenna configuration. The plugin **Theengs gateway** will always use *MQTT Manager (MQTT2)* to connect to the broker.
 
 # Devices
 

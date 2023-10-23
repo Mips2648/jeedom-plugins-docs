@@ -7,6 +7,20 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-10-22
+
+- Setting the min & max for **rssi** commands
+
+## 2023-10-19
+
+- Logs reorganization
+- Minor fix on the creation process during automatic discovery
+
+## 2023-10-18
+
+- Add a **rssi** command by gateway providing the info. The main **rssi** command maintains the current behavior: it is the last value received on all antennas and presence management is based on this value
+- Internal reorganization of the code which should be completely transparent
+
 ## 2023-10-16
 
 - Added a button in the device configuration page to see the raw configuration of the device as well as a button to easily copy it to share it with me if necessary

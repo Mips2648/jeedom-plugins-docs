@@ -45,7 +45,7 @@ Ensuite la première chose à faire est de choisir si c'est une antenne locale o
 
 > **Important**
 >
-> L'utilisateur configuré doit être dans le groupe sudoers.
+> L'utilisateur configuré doit être dans le groupe sudoers et avoir le droit de faire un sudo sans retaper le mot de passe.
 
 Par défaut l'interface Bluetooth utilisée sera *hci0*, si nécessaire vous pouvez changer cette configuration.
 

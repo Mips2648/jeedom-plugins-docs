@@ -76,6 +76,10 @@ Il n'y a pas de configuration supplémentaire à effectuer ici.
 
 Vous devez ensuit renseigner l'adresse IP du Raspberry précédemment installé et connecté à la VMC, le port ssh (si différent du port par défaut), l'utilisateur (si autre que "pi") et son mot de passe.
 
+> **Important**
+>
+> L'utilisateur configuré doit être dans le groupe sudoers et avoir le droit de faire un sudo sans retaper le mot de passe.
+
 **sauvegardez** votre équipement et si la configuration est correcte vous pouvez passer à l'étape suivante.
 
 ## Installation & configuration du démon

@@ -45,7 +45,7 @@ Then the first thing to do is to choose if it is a local or remote (via SSH) ant
 
 > **Important**
 >
-> The configured user must be in the sudoers group.
+> The configured user must be in the sudoers group and must have the permission to sudo without password confirmation
 
 By default the Bluetooth interface used will be *hci0*, if necessary you can change this configuration.
 

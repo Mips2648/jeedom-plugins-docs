@@ -132,7 +132,13 @@ Dans le cas où la création automatique est active, le plugin créera les équi
 
 # Configuration des équipements
 
-Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour les équipements disposant d'une info *rssi* (typiquement les équipements Bluetooth). Pour ceux là, il y aura une commande supplémentaire *Présent* et il sera possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tels que les nuts.
+Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour les équipements disposant d'une info *rssi* (typiquement les équipements Bluetooth). Pour ceux là, il y aura:
+
+- une commande **rssi** globale qui contient la dernière valeur reçue toutes antennes confondues,
+- une commande **rssi** par antenne ayant captée l'appareil,
+- une commande supplémentaire **Présent** de type info/binaire qui vaut 1 si l'appareil est considéré comme présent et 0 dans le cas contraire.
+
+Il est possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tels que les nuts. Un équipement est considéré comme présent si une valeur *rssi* a été reçue pendant les x dernières secondes.
 
 Dans la liste des commandes, vous verrez le topic MQTT correspondant ainsi que la valeur du json si relevant. Il est possible d'encoder un path s'il faut aller chercher une valeur dans un sous noeud.
 En principe vous n'aurez pas à modifier ces configurations, elles sont accessibles uniquement pour gérer les cas limites si le plugin n'a pas effectué la configuration automatiquement.

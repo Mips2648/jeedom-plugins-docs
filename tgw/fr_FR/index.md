@@ -45,7 +45,9 @@ Ensuite la première chose à faire est de choisir si c'est une antenne locale o
 
 > **Important**
 >
-> L'utilisateur configuré doit être dans le groupe sudoers et avoir le droit de faire un sudo sans retaper le mot de passe.
+> L'utilisateur configuré doit être dans le groupe *sudoers* et avoir le droit de faire un `sudo` sans confirmer son mot de passe.
+
+Si vous avez besoin d'aide pour la création et la configuration de cet utilisateur, [suivez ces étapes](#Comment créer un utilisateur sous Debian et lui donner les droits sudo)
 
 Par défaut l'interface Bluetooth utilisée sera *hci0*, si nécessaire vous pouvez changer cette configuration.
 
@@ -87,6 +89,48 @@ Chaque antenne dispose de 3 commandes:
 - **Online** commande info/binaire indiquant si l'antenne est en ligne ou non. "En ligne" veut dire connecté au broker et à l'écoute de périphérique Bluetooth.
 - **Redémarrer** action permettant de (re)démarrer l'antenne si nécessaire
 - **Stop** action permettant d'arrêter l'antenne si nécessaire
+
+# Comment créer un utilisateur sous Debian et lui donner les droits sudo
+
+Les étapes suivantes décrivent comment créer un utilisateur sous Debian (qui pourra être dédié au plugin), comment lui donner les droits *sudo* et lui permettre d'exécuter `sudo` sans devoir confirmer son mot de passe. Vous ne devez pas nécessairement suivre ces étapes si vous savez comment le faire ou si vous avez déjà un utilisateur correctement configuré.
+
+Les commandes suivantes supposent que vous allez effectuer les opérations avec un utilisateur ayant lui-même les droits *sudo*. Si vous les effectuées avec l'utilisateur *root* il ne faut bien-entendu pas taper la commande `sudo` en début de ligne.
+
+> **Important**
+>
+> Ne pas effectuer ces étapes sur la machine hébergeant Jeedom mais uniquement sur une antenne distante!
+
+## Création d'un utilisateur
+
+Connectez-vous sur votre machine en ligne de commande (ssh ou console) et tapez la commande suivante pour créer un utilisateur nommé *jeedom*
+
+```bash
+sudo adduser jeedom
+```
+
+## Ajout de l'utilisateur dans le group sudo
+
+Ensuite, ajoutez l'utilisateur dans le groupe *sudo*
+
+```bash
+usermod -aG sudo jeedom
+```
+
+## Executer sudo sans confirmation de mot de passe
+
+Editez le fichier de configuration avec la commande suivante
+
+```bash
+sudo visudo
+```
+
+A la fin du fichier, ajouter cette ligne:
+
+```text
+jeedom ALL=(ALL) NOPASSWD:ALL
+```
+
+Quittez en tapant les touches `ctrl+X` et confirmez la sauvegarde en tapant `O` ou `Y` suivant la langue de votre système (voir message dans le bas de l'écran)
 
 # Changelog
 

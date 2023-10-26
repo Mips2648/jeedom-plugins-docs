@@ -7,11 +7,15 @@ pluginId: worxLandroidS
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2023-10-26
+
 - Amélioration technique sur le démon: passage en full asyncio
 - Modification sur la gestion des dépendances pour éviter des conflits potentiels avec d'autres plugins
 - Changement de l'adresse du serveur d'authentification dû à un changement de Worx, cela résout le problème "AuthorizationError: Unauthorized"
-
-# Stable
 
 ## 2023-10-02
 

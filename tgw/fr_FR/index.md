@@ -47,7 +47,7 @@ Ensuite la première chose à faire est de choisir si c'est une antenne locale o
 >
 > L'utilisateur configuré doit être dans le groupe *sudoers* et avoir le droit de faire un `sudo` sans confirmer son mot de passe.
 
-Si vous avez besoin d'aide pour la création et la configuration de cet utilisateur, [suivez ces étapes](#comment-creer-un-utilisateur-sous-debian-et-lui-donner-les-droits-sudo)
+Si vous avez besoin d'aide pour la création et la configuration de cet utilisateur, [suivez ces étapes](#tocAnchor-1-8)
 
 Par défaut l'interface Bluetooth utilisée sera *hci0*, si nécessaire vous pouvez changer cette configuration.
 

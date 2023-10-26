@@ -108,6 +108,8 @@ Connectez-vous sur votre machine en ligne de commande (ssh ou console) et tapez 
 sudo adduser jeedom
 ```
 
+Vous devrez ensuite choisir son mot de passe, suivez les instructions à l'écran.
+
 ## Ajout de l'utilisateur dans le group sudo
 
 Ensuite, ajoutez l'utilisateur dans le groupe *sudo*

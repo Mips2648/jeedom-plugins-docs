@@ -7,6 +7,10 @@ pluginId: fail2ban
 
 # Beta
 
+## 2023-10-23
+
+- Update dependencies
+
 ## 2023-10-21
 
 - Change: default cron at 10min

@@ -22,7 +22,7 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 Avant de commencer, assurez-vous d'avoir installé et configuré le plugin *MQTT Manager (MQTT2)*, voir documentation de ce plugin.
 
-Il faudra ensuite configurer les informations de connexions au broker MQTT que les antennes vont utiliser, vous pouvez simplement utiliser les informations qui ont déjà été configurée par *MQTT Manager (MQTT2)* en choisissant l'option correspondante dans la liste déroulante mais vous avez aussi la possibilité de configurer un nom d'utilisateur et un mot de passe différents pour les antennes mais c'est tout à fait optionnelle. Attention, dans ce dernier cas, le nom d'utilisateur et mot de passe configuré ici doit avoir été créé par vos soins, ce n'est pas **Theengs gateway** qui s'en charge.
+Il faudra ensuite configurer les informations de connexions au broker MQTT que les antennes vont utiliser, vous pouvez simplement utiliser les informations qui ont déjà été configurée par *MQTT Manager (MQTT2)* en choisissant l'option correspondante dans la liste déroulante mais vous avez aussi la possibilité de configurer un nom d'utilisateur et un mot de passe différents pour les antennes mais c'est tout à fait optionnelle. Attention, dans ce dernier cas, le nom d'utilisateur et le mot de passe configurés ici doit avoir été créés par vos soins, ce n'est pas **Theengs gateway** qui s'en charge.
 
 Si vous ne savez pas ou en cas de doute, utilisez la configuration de *MQTT Manager (MQTT2)*.
 
@@ -62,7 +62,7 @@ Lorsque vous avez configuré la section *Authentification*, vous devez sauvegard
 > Cette étape peut être très longue (1h ou plus sur un pi0). Il est très important de patienter et de ne pas lancer de multiple fois l'installation sur une même antenne.
 > Par contre vous pouvez parfaitement lancer l'installation de plusieurs antennes en parallèle.
 >
-> Pensez à couper l'antenne du plugin BLEA si vous vous serviez du pi pour BLEA. Celui-ci étant fort consommateur de resources, il ralentira d'autant l'installation.
+> Pensez à couper l'antenne du plugin BLEA si vous vous serviez du pi pour BLEA. Celui-ci étant fort consommateur de ressources, il ralentira d'autant l'installation.
 >
 > Les deux process (antenne BLEA & Theengs Gateway) ne peuvent pas utiliser le Bluetooth en même temps, il est fortement recommandé d'avoir 2 clés / puces Bluetooth différentes ou de n'utiliser que l'un des deux à la fois.
 

@@ -7,9 +7,16 @@ pluginId: vmczehnder
 
 # Beta
 
-n/a
+## 2023-10-23
+
+- Update dependencies
 
 # Stable
+
+## 2023-10-03
+
+- Fix a potential problem when installing dependencies
+- Fix a potential problem when connecting to the MQTT broker without a user and password
 
 ## 2023-09-30
 

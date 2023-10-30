@@ -76,6 +76,10 @@ There is no additional configuration to do here.
 
 You must then enter the IP address of the Raspberry previously installed and connected to the HRV, the port ssh (if different from the default port), the user (if other than "pi") and its password.
 
+> **Important**
+>
+> The configured user must be in the sudoers group and must have the permission to sudo without password confirmation
+
 **Save** the device and if the configuration is correct you can proceed to next step.
 
 ## Daemon installation & configuration

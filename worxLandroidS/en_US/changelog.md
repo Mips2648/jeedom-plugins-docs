@@ -7,10 +7,15 @@ pluginId: worxLandroidS
 
 # Beta
 
-- Technical improvement on the daemon: transition to full asyncio
-- Change on dependency management to avoid potential conflicts with other plugins
+n/a
 
 # Stable
+
+## 2023-10-26
+
+- Technical improvement on the daemon: transition to full asyncio
+- Change on dependency management to avoid potential conflicts with other plugins
+- Change of the authentication address due to a change made by Worx, this solves the “AuthorizationError: Unauthorized” issue
 
 ## 2023-10-02
 

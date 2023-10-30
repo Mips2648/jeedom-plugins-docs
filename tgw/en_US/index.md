@@ -45,7 +45,9 @@ Then the first thing to do is to choose if it is a local or remote (via SSH) ant
 
 > **Important**
 >
-> The configured user must be in the sudoers group.
+> The configured user must be in the *sudoers* group and must have the permission to `sudo` without password confirmation
+
+If you need help creating and configuring this user, [follow these steps](#tocAnchor-1-8)
 
 By default the Bluetooth interface used will be *hci0*, if necessary you can change this configuration.
 
@@ -87,6 +89,50 @@ Each antenna has 3 commands:
 - **Online** info/binary command indicating whether the antenna is online or not. “Online” means connected to the broker and listening to the Bluetooth device.
 - **Restart** action to (re)start the antenna if necessary
 - **Stop** action to stop the antenna if necessary
+
+# How to create a user under Debian and give him sudo permission
+
+The following steps describe how to create a user under Debian (who can be dedicated to the plugin), how to give him *sudo* permission and allow him to run `sudo` without having to confirm his password. You don't necessarily have to follow these steps if you know how to do it or if you already have a user set up properly.
+
+The following commands assume that you are going to perform operations with a user who has the *sudo* rights itself. If you do them with the user *root* you should of course not type the `sudo` command at the beginning of the line.
+
+> **Important**
+>
+> Do not perform these steps on the machine hosting Jeedom but only on a remote antenna!
+
+## User creation
+
+Log in to your machine using the command line (ssh or console) and type the following command to create a user named *jeedom*
+
+```bash
+sudo adduser jeedom
+```
+
+You will then have to choose his password, follow the instructions on the screen.
+
+## Adding the user to the sudo group
+
+Then add the user to the *sudo* group
+
+```bash
+usermod -aG sudo jeedom
+```
+
+## Execute sudo without confirming the password
+
+Edit the configuration file with the following command
+
+```bash
+sudo visudo
+```
+
+At the end of the file, add this line:
+
+```text
+jeedom ALL=(ALL) NOPASSWD:ALL
+```
+
+Exit by typing the `Ctrl+x` keys and confirm the save by typing `O` or `Y` depending on the language of your system (see message at the bottom of the screen)
 
 # Changelog
 

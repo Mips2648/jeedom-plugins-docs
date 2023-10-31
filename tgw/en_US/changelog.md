@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-10-30
+
+- After configuration change, the antenna will be automatically restarted if useful and possible and if it was already started
+
 ## 2023-10-23
 
 - Update dependencies

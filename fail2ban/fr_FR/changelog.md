@@ -7,6 +7,11 @@ pluginId: fail2ban
 
 # Beta
 
+## 2023-11-01
+
+- Correction sur les commandes **Liste des IP bannies** qui n'étaient pas correctement vidées lorsque plus aucune IP n'étaient bannies
+- Modification du template par défaut pour les commandes info/numérique
+
 ## 2023-10-23
 
 - Mise à jour de dépendances

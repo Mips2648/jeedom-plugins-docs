@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-11-02
+
+- Ajout d'une option pour ajouter un message dans le centre de message lorsque l'antenne est hors ligne
+
 ## 2023-10-30
 
 - Lors d'un changement de configuration, l'antenne sera redémarrée automatiquement si utile et possible et si elle était déjà démarrée

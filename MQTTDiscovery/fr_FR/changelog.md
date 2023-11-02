@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-11-02
+
+- Amélioration sur le parsing des configurations pour certains équipements (prise en charge du "base topic" s'il est déclaré)
+
 ## 2023-10-22
 
 - Configuration du min & max pour les commandes **rssi**

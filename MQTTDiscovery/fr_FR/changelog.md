@@ -10,6 +10,7 @@ pluginId: MQTTDiscovery
 ## 2023-11-02
 
 - Amélioration sur le parsing des configurations pour certains équipements (prise en charge du "base topic" s'il est déclaré)
+- Changement sur la gestion de la présence: les commandes **rssi** seront forcées à -200 si plus de mise à jour de la commande (après le délai configuré)
 
 ## 2023-10-22
 

@@ -7,6 +7,12 @@ pluginId: tgw
 
 # Beta
 
+## 2023-11-05
+
+- Fix de la configuration de l'antenne lors de l'ajout d'un modèle à ignorer dont le nom était déjà dans une partie d'un nom de modèle déjà ignoré
+- Fix de la configuration de l'antenne dans le cas où la liste des modèles à ignorer était vide
+- Fix un bug d'affichage de la liste des modèle à ignorer
+
 ## 2023-11-02
 
 - Ajout d'une option pour ajouter un message dans le centre de message lorsque l'antenne est hors ligne

@@ -7,7 +7,7 @@ pluginId: kroomba
 
 # Beta
 
-n/a
+- Ajout des commandes **Activer sécurité enfant** et **Désactiver sécurité enfant**
 
 # Stable
 

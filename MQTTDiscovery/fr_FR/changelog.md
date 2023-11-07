@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2023-11-07
+
+- Prise en charge du type *lock* pour la gestion des serrures (ex: Nuki)
+
 ## 2023-11-02
 
 - Amélioration sur le parsing des configurations pour certains équipements (prise en charge du "base topic" s'il est déclaré)

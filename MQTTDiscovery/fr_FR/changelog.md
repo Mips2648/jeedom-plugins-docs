@@ -11,6 +11,7 @@ pluginId: MQTTDiscovery
 
 - Prise en charge du type *lock* pour la gestion des serrures (ex: Nuki)
 - Ajout d'une image par défaut pour la Nuki Smart Lock 3.0 Pro
+- Filtre les types de fichiers acceptés par le plugin lors de la sélection d'une image à envoyer pour un modèle d'équipement
 - Fix sur le bouton "Configuration" dans l'écran des appareils découverts
 
 ## 2023-11-02

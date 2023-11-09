@@ -11,7 +11,7 @@ pluginId: MQTTDiscovery
 
 Il se base sur le principe du "MQTT Auto Discovery" qui existe sous Home Assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom. Il est évidement inutile d'installer Home Assistant, Jeedom suffit.
 
-Cela permet par exemple d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipements](https://compatible.openmqttgateway.com/index.php/devices/) ou l'équivalent [Theengs Gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via **MQTT Discovery**, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts.
+Cela permet par exemple d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipements](https://compatible.openmqttgateway.com/index.php/devices/) ou l'équivalent [Theengs Gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via **MQTT Discovery**, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts ou tiles.
 
 Mais cela ne se limite pas aux équipements Bluetooth puisque tous les équipements compatibles "MQTT Auto Discovery" seront reconnus et utilisables. Par exemple, ce plugin a été testé avec succès avec zwavejs-ui et zigbee2mqtt.
 
@@ -31,7 +31,7 @@ Un autre moyen est de vous connecter à votre broker à l'aide de MQTT Explorer 
 
 ## Liste des intégrations possibles connues
 
-Cette liste est loin d'être exhaustive, cela serait impossible tellement il en existe. Cependant cela peut donner des idées
+Cette liste est loin d'être exhaustive, cela serait impossible tellement il en existe. Cependant cela peut donner des idées:
 
 - [Open MQTT Gateway](https://docs.openmqttgateway.com/)
 - [Theengs Gateway](https://gateway.theengs.io/)
@@ -138,9 +138,11 @@ Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour
 - une commande **rssi** par antenne ayant captée l'appareil,
 - une commande supplémentaire **Présent** de type info/binaire qui vaut 1 si l'appareil est considéré comme présent et 0 dans le cas contraire.
 
-Il est possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tels que les nuts. Un équipement est considéré comme présent si une valeur *rssi* a été reçue pendant les x dernières secondes.
+Il est possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tels que les nuts ou tiles. Un équipement est considéré comme présent si une valeur *rssi* a été reçue pendant les x dernières secondes.
 
-Dans la liste des commandes, vous verrez le topic MQTT correspondant ainsi que la valeur du json si relevant. Il est possible d'encoder un path s'il faut aller chercher une valeur dans un sous noeud.
+Sur la partie de droite, vous verrez des informations générales sur l'équipement (identifiant, configuration, fabricant, modèle ...) et vous avez la possibilité de télécharger une image à utiliser pour représenter l'équipement à la place du logo du plugin ou de l'image par défaut lorsque celle-ci existe. Le plugin gère une image par modèle et pas une image par équipement, il n'est donc pas possible d'avoir deux images différentes pour deux nuts.
+
+Dans la liste des commandes, vous verrez le topic MQTT correspondant à chaque commande ainsi que la valeur du json si relevant. Il est possible d'encoder un path s'il faut aller chercher une valeur dans un sous noeud.
 En principe vous n'aurez pas à modifier ces configurations, elles sont accessibles uniquement pour gérer les cas limites si le plugin n'a pas effectué la configuration automatiquement.
 
 # Fonctionnement de la découverte automatique

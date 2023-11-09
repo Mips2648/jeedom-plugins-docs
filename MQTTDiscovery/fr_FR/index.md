@@ -164,6 +164,7 @@ Tous les composants ne sont pas encore entièrement ni complètement intégré. 
 - device_tracker
 - light
   - brightness
+- lock
 - number
 - sensor
 - switch

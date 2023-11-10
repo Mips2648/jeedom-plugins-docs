@@ -7,6 +7,10 @@ pluginId: fail2ban
 
 # Beta
 
+n/a
+
+# Stable
+
 ## 2023-11-01
 
 - Correction sur les commandes **Liste des IP bannies** qui n'étaient pas correctement vidées lorsque plus aucune IP n'étaient bannies

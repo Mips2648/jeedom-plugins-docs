@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+n/a
+
+# Stable
+
 ## 2023-11-07
 
 - Prise en charge du type *lock* pour la gestion des serrures (ex: Nuki)
@@ -79,9 +83,9 @@ pluginId: MQTTDiscovery
 
 - Fix sur light/brightness
 
-# Stable
+## 2023-07-20
 
-n/a
+Première version
 
 # Documentation
 

@@ -7,18 +7,6 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-## 2023-11-07
-
-- Support *lock* type for lock management (e.g. Nuki)
-- Add a default image for the Nuki Smart Lock 3.0 Pro
-- Filters the types of files accepted by the plugin when selecting an image to send for a device model
-- Fix on the “Configuration” button in the discovered devices screen
-
-## 2023-11-02
-
-- Improvement in the parsing of configurations for certain device (support for the “base topic” if declared)
-- Change in presence management: **rssi** commands will be forced to -200 if no more update of the command (after the configured time limit)
-
 ## 2023-10-22
 
 - Setting the min & max for **rssi** commands

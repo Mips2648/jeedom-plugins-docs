@@ -11,6 +11,7 @@ pluginId: tgw
 
 - Ajout du bouton "Arrêter le service" dans la page de configuration de l'équipement (même fonction que la commande **Stop**)
 - Ajout de boutons pour voir les logs de l'antenne directement depuis la page de configuration de l'équipement
+- Fix sur la récupération de la liste des adaptateurs Bluetooth sur une antenne distante
 
 # Stable
 

@@ -7,20 +7,6 @@ pluginId: tgw
 
 # Beta
 
-## 2023-11-05
-
-- Fix antenna configuration when adding a model to ignore whose name was already in a part of an already ignored model name
-- Fix the antenna configuration in case the list of models to ignore was empty
-- Fix a bug in the display of models to ignore
-
-## 2023-11-02
-
-- Add an option to add a message to the message center when the antenna is offline
-
-## 2023-10-30
-
-- After configuration change, the antenna will be automatically restarted if useful and possible and if it was already started
-
 ## 2023-10-23
 
 - Update dependencies

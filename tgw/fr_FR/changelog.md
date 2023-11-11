@@ -7,7 +7,7 @@ pluginId: tgw
 
 # Beta
 
-## 2023-11-11
+## 2023-11-12
 
 - Ajout du bouton "Arrêter le service" dans la page de configuration de l'équipement (même fonction que la commande **Stop**)
 - Ajout de boutons pour voir les logs de l'antenne directement depuis la page de configuration de l'équipement
@@ -15,7 +15,7 @@ pluginId: tgw
 
 # Stable
 
-## 2023-11-05
+## 2023-11-06
 
 - Fix de la configuration de l'antenne lors de l'ajout d'un modèle à ignorer dont le nom était déjà dans une partie d'un nom de modèle déjà ignoré
 - Fix de la configuration de l'antenne dans le cas où la liste des modèles à ignorer était vide

@@ -7,7 +7,7 @@ pluginId: stockexchange
 
 # Beta
 
-N/A
+- Ajout du service "coinmarketcap"
 
 # Stable
 

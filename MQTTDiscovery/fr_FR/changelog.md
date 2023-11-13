@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-n/a
+- Réduction des logs inutiles
 
 # Stable
 

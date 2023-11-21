@@ -173,7 +173,7 @@ Tous les composants ne sont pas encore entièrement ni complètement intégré. 
 
 # Détections de devices Bluetooth
 
-Un des premiers objectifs de **MQTT Discovery** est de pouvoir remonter facilement les infos d'appareils Bluetooth compatibles qui seront captés par des antennes exécutant les passerelles *Open MQTT Gateway* ou *Theengs Gateway*. Dans les deux cas, il faudra installer la passerelle et la configurer.
+Un des premiers objectifs de **MQTT Discovery** est de pouvoir remonter facilement les infos [d'appareils Bluetooth compatibles](https://decoder.theengs.io/devices/devices.html) qui seront captés par des antennes exécutant les passerelles *Open MQTT Gateway* ou *Theengs Gateway*. Dans les deux cas, il faudra installer la passerelle et la configurer.
 
 Nous allons voir ici une solution complète pour intégrer énormément d'équipements Bluetooth (BLEA) dans Jeedom et cela de façon entièrement automatisée.
 

@@ -7,31 +7,32 @@ pluginId: MQTTDiscovery
 
 # Description
 
-**MQTT Discovery** allows the automatic discovery of MQTT devices thanks to the “MQTT Discovery” protocol, also called “HA Discovery”.
+Plugin for automatic discovery of MQTT device.
 
-It is based on the principle of “MQTT Auto Discovery” which exists under Home Assistant in order to automatically create devices and their commands under Jeedom. So if you have devices that are connected via MQTT and if they publish the information necessary for the “MQTT Auto Discovery” compatibility, these will be automatically recognized and integrated into Jeedom. There is obviously no point in installing Home Assistant, Jeedom is enough.
+The plugin is based on the principle of “MQTT Auto Discovery” which exists under Home Assistant in order to automatically create equipment and their controls under Jeedom. So if you have devices that are connected via MQTT and they publish the information necessary for “MQTT Auto Discovery” compatibility, these will be automatically recognized and integrated into Jeedom. There is obviously no point in installing Home Assistant, Jeedom is enough.
 
-This makes it possible to use the excellent project [Open MQTT Gateway](https://docs.openmqttgateway.com/) on esp32 which manages [a large number of devices](https://compatible.openmqttgateway.com/index.php/devices/) or the equivalent [Theengs gateway](https://gateway.theengs.io/) on pi for example, all these devices will be automatically supported under Jeedom via **MQTT Discovery**, with automatic “multi-antenna” management. It is becoming very easy to manage the presence of Bluetooth tags such as nuts or tiles.
+This makes it possible to use the excellent project [Open MQTT Gateway] (https://docs.openmqttgateway.com/) on esp32 which manages [a large number of devices](https://compatible.openmqttgateway.com/index.php/devices/) or the equivalent [Theengs gateway](https://gateway.theengs.io/) on pi for example, all these devices will be automatically supported under Jeedom via the plugin, with automatic “multi-antenna” management. It is becoming very easy to manage the presence of Bluetooth tags such as nuts.
 
-But so it's not limited to Bluetooth devices since all “MQTT Auto Discovery” compatible devices will be recognized and manageable. For example, this plugin has been successfully tested with zwavejs-ui and zigbee2mqtt.
+But so it's not limited to that since all “MQTT Auto Discovery” compatible devices will be manageable via the plugin. For example, this plugin has been successfully tested with zwavejs-ui and zigbee2mqtt.
 
 > **Important**
 >
-> **MQTT Discovery** is not intended to replace protocol plugins dedicated to zwavejs-ui and zigbee2mqtt for example; Existing plugins on the market will manage these protocols much better.
+> This plugin is not intended to replace protocol plugins dedicated to zwavejs-ui and zigbee2mqtt for example; Existing plugins on the market will manage these protocols much better.
 > No specific options will be developed to manage these in more detail, this is not the purpose of the plugin which only implements automatic discovery.
-> So **MQTT Discovery** can obviously be used to easily create the devices necessary (as you would do with another MQTT integration but more easily) but only in the context of use in "advanced" mode, knowing that you manage absolutely everything else with the tools made available by these two programs.
+> The tests carried out with these zwavejs-ui and zigbee2mqtt are carried out only because this allows me to validate the behavior of the plugin on a large scale but absolutely not to manage the specificities of these protocols.
+> So this plugin can obviously be used to easily create the devices necessary for these protocols but only in the context of use in advanced mode, knowing that you manage absolutely everything else with the tools made available by these programs.
 
 # Compatibility
 
-## Will MQTT Discovery work for me?
+## Will this plugin work for me?
 
-To find out, check the documentation of the hardware, program, or gateway you want to use if there is a mention of “MQTT Discovery” or "HA Discovery" for Home Assistant (again, you don't need to have Home Assistant installed).
+To find out, check the documentation of the hardware, program, or gateway you want to use if there is a mention of “MQTT Discovery” for Home Assistant (again, you don't need to have Home Assistant installed).
 
 Another way is to connect to your broker using MQTT Explorer (for example) and see if you see a `homeassistant` topic. If yes, you should find information about your device in the sub-topics. In case of doubt, you can always ask the question on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
 ## List of known possible integrations
 
-This list is far from exhaustive, it would be impossible as there are so many of them. However, it may give some ideas:
+This list is far from exhaustive, it would be impossible as there are so many of them. However, it may give some ideas.
 
 - [Open MQTT Gateway](https://docs.openmqttgateway.com/)
 - [Theengs Gateway](https://gateway.theengs.io/)
@@ -47,7 +48,7 @@ Then you need to install dependencies.
 
 You must have already installed an MQTT broker, either by yourself or through another Jeedom plugin.
 
-The *MQTT Manager (mqtt2)* plugin is not required but if it is installed, the configuration to connect to the broker can be retrieved automatically.
+If the*MQTT Manager (mqtt2)* plugin is installed, the configuration to connect to the broker managed by this plugin can be retrieved automatically.
 
 # Plugin configuration
 
@@ -119,8 +120,6 @@ By clicking on this button, a new window will open:
 
 Simply click on the “Add” button for the desired device and then click on the “Close and finish creating newly added device” button for the device and its commands to be created.
 
-Back on the management banner, you will see a button to access the plugin configuration, documentation and the latest topics about the plugin on community.
-
 The last button allows you to view the status of the automatic creation and to activate or deactivate it directly from this page, this is the same configuration as the one in the plugin configuration.
 
 In the event that automatic creation is active, the plugin will create missing devices and commands automatically as soon as it receives information on the discovery topic (by default `homeassistant`).
@@ -132,17 +131,9 @@ In the event that automatic creation is active, the plugin will create missing d
 
 # Devices configuration
 
-There is no specific configuration in most cases except for devices with a *rssi* info (typically Bluetooth devices). For those, there will be:
+There is no specific configuration in most cases except for devices with a *rssi* info (typically Bluetooth devices). For those, there will be an additional command *Present* and it will be possible to define in the device configuration the duration (in seconds) before considering the device as absent; this will be particularly useful for “trackers” such as nuts.
 
-- a global **rssi** command that contains the last value received whatever the antenna,
-- a **rssi** command per antenna that report the device,
-- an additional command **Present** of type info/binary which is equal to 1 if the device is considered present and 0 otherwise.
-
-It is possible to define in the device configuration the delay (in seconds) before considering the device absent; this will be especially useful for “trackers” such as nuts or tiles. A device is considered present if a *rssi* value has been received within the last x seconds.
-
-On the right side, you will see general information about the device (identifier, configuration, manufacturer, model...) and you can upload an image that will be used to represent the device instead of the plugin logo or the default image when it exists. The plugin manages one image per model and not one image per device, so it is not possible to have two different images for two nuts.
-
-In the list of commands, you will see the MQTT topic corresponding to each command as well as the value of the json if relevant. It is possible to encode a path if you have to search for a value in a subnode.
+In the list of commands, you will see the corresponding MQTT topic as well as the value of the json if relevant. It is possible to encode a path if you have to search for a value in a subnode.
 In principle, you will not have to modify these configurations, they are only accessible to manage borderline cases if the plugin did not perform the configuration automatically.
 
 # How automatic discovery works
@@ -164,7 +155,6 @@ Not all components are fully or completely integrated yet. If your hardware need
 - device_tracker
 - light
   - brightness
-- lock
 - number
 - sensor
 - switch
@@ -173,58 +163,19 @@ Not all components are fully or completely integrated yet. If your hardware need
 
 # Bluetooth device detections
 
-One of the first objectives of **MQTT Discovery** is to be able to easily retrieve information from compatible Bluetooth devices that will be decoded by antennas running *Open MQTT Gateway* or *Theengs Gateway*. In both cases, you will have to install the tool and configure it.
+One of the first objectives of this plugin is to be able to easily retrieve information from compatible Bluetooth devices that will be decoded by antennas runing *Open MQTT Gateway* or *Theengs Gateway*. In both cases, you will have to install the tool and configure it to connect to the same Mosquitto broker that the plugin uses.
 
-Here we will see a complete solution to integrate a lot of Bluetooth equipment (BLEA) into Jeedom in a fully automated way.
+## Open MQTT Gateway installation
 
-There is no need for any technical knowledge (other than knowing how to use Jeedom) and there will be no need to perform any configuration manually even if at any time you can decide to take care of all or part of the solution manually (because “why make it simple when you can make it complicated?”).
+Everything is already explained in detail here: <https://docs.openmqttgateway.com/>.
 
-## How does it work?
+You can also find help on [community]({{site.forum}}).
 
-Here is a diagram that illustrates how each component of the solution works and how they interact:
+## Theengs Gateway installation
 
-![flow](../images/schema.png)
+All the explanations needed to install an antenna manually are available here: <https://gateway.theengs.io/install/install.html>.
 
-We can see sensors (1), for example MiFlora and nut, whose Bluetooth emissions are received by antennas (2) with Theengs Gateway or OMG on esp32.
-
-These antennas are connected to your local network via cable or wifi and send the decoded Bluetooth messages via MQTT to the broker (3) and finally the broker sends these same messages to the **MQTT Discovery** plugin installed on Jeedom (4).
-
-So there are two very distinct parts: *antennas* that transform Bluetooth messages into MQTT messages, and the**MQTT Discovery** plugin that will transform MQTT messages into devices and commands that can be used on Jeedom.
-
-### Antennas
-
-There may be a single one (installed locally on Jeedom or on a remote host) or several (necessarily installed on remote hosts) to cover the home if necessary.
-
-These antennas will pick up devices that transmit Bluetooth and send the data via MQTT to Jeedom; two options to have antennas, you can combine and multiply them, everything is possible:
-
-- [Theengs gateway](https://gateway.theengs.io/) to be installed locally or remotely on a Debian machine (a pi or other, not important):
-  - either manually by following their documentation
-  - or via the [Jeedom plugin Theengs Gateway]({{site.baseurl}}/tgw/{{page.lang}}) available on the market which simplifies the task, see [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
-- [OpenMQTTGateway](https://docs.openmqttgateway.com/) to flash on an esp32, necessarily remotely.
-
-It is therefore perfectly possible to have:
-
-- a single local antenna (=installed on Jeedom), therefore using Theengs gateway
-- a local antenna and another on a pi (with Theengs gateway)
-- one or more antennas on pi and no local antenna
-- Only OMG antennas on esp32
-- a mix of OMG and Theengs antennas
-
-All combinations are possible and everything is inter-compatible.
-
-### The devices under Jeedom
-
-This is where the **MQTT Discovery** plugin comes into play and if you have already configured the plugin as described above, you don't have to do anything more than add the devices you whish to your Jeedom, the plugin does the rest.
-
-## So why isn't antenna management integrated into MQTT Discovery?
-
-Because these are very two distinct roles and that **MQTT Discovery** does not really care about where the information received via MQTT comes from and it is certainly not limited to Bluetooth devices.
-
-Some people use it to integrate devices that are not Bluetooth into Jeedom and are therefore not sent back by *Theengs* or *OMG* gateways but by other connectors or gateways, so they may not even need these.
-
-Others may decide to install their antennas themselves or to use only antennas on esp32 with OMG.
-
-This is where the strength of the system lies: everyone does their work in the most optimal way possible and this makes it possible to offer greater quality and overall stability. The MQTT broker in the middle is a technical brick used for communication between the different parties.
+You can also use the plugin <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Theengs Gateway</a> available on the market which simplifies the task, see [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
 
 # Changelog
 

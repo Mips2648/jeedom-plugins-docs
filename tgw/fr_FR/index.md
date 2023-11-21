@@ -7,7 +7,7 @@ pluginId: tgw
 
 # Description
 
-Le but de ce plugin est de vous faciliter la tâche pour l'installation et la configuration d'antennes tournant sous *Theengs gateway* qui permet de capter des périphériques Bluetooth (BLEA) et les remonter vers Jeedom pour être intégré via le plugin [MQTT Discovery]({{site.baseurl}}/MQTTDiscovery/{{page.lang}}).
+Le but de ce plugin est de vous faciliter la tâche pour l'installation et la configuration d'antennes tournant sous *Theengs gateway* qui permet de capter [des périphériques Bluetooth (BLE)](https://decoder.theengs.io/devices/devices.html) et les remonter vers Jeedom pour être intégré via le plugin [MQTT Discovery]({{site.baseurl}}/MQTTDiscovery/{{page.lang}}).
 
 Il offre une solution clé en main pour effectuer ce paramétrage.
 

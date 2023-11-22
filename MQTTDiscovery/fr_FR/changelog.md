@@ -10,6 +10,7 @@ pluginId: MQTTDiscovery
 - Réduction des logs inutiles
 - Ajout d'un bouton pour supprimer définitivement un équipement découvert, y compris sur le broker MQTT
 - Fix: certaines commandes "off" ne fonctionnaient pas correctement car leur configuration était incorrectement sauvegardée (cela dépendait du payload de la commande)
+- Ajout des images de différents modèles d'équipements
 
 # Stable
 

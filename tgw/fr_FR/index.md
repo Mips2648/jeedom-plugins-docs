@@ -15,7 +15,7 @@ Je vous invite à consulter [cette documentation](https://mips2648.github.io/jee
 
 > **Important**
 >
-> Ce plugin ne garanti pas que *Theengs gateway* fonctionnera sur votre machine, il y a beaucoup trop de paramètre qui peuvent influencer le bon fonctionnement: cela dépend de votre matériel, de la version de votre système, de la clé Bluetooth utilisée etc. Le plugin se charge uniquement d'installer l'application et vous permet de contrôler son état depuis Jeedom.
+> Ce plugin ne garantit pas que *Theengs gateway* fonctionnera sur votre machine, il y a beaucoup trop de paramètres qui peuvent influencer le bon fonctionnement: cela dépend de votre matériel, de la version de votre système, de la clé Bluetooth utilisée etc. Le plugin se charge uniquement d'installer l'application et vous permet de contrôler son état depuis Jeedom.
 
 # Installation
 

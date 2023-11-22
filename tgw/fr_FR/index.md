@@ -13,6 +13,10 @@ Il offre une solution clé en main pour effectuer ce paramétrage.
 
 Je vous invite à consulter [cette documentation](https://mips2648.github.io/jeedom-plugins-docs/MQTTDiscovery/fr_FR/#tocAnchor-1-14) pour comprendre plus en détails comment l'ensemble fonctionne.
 
+> **Important**
+>
+> Ce plugin ne garanti pas que *Theengs gateway* fonctionnera sur votre machine, il y a beaucoup trop de paramètre qui peuvent influencer le bon fonctionnement: cela dépend de votre matériel, de la version de votre système, de la clé Bluetooth utilisée etc. Le plugin se charge uniquement d'installer l'application et vous permet de contrôler son état depuis Jeedom.
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

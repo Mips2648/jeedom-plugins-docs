@@ -11,6 +11,8 @@ pluginId: MQTTDiscovery
 - Ajout d'un bouton pour supprimer définitivement un équipement découvert, y compris sur le broker MQTT
 - Fix: certaines commandes "off" ne fonctionnaient pas correctement car leur configuration était incorrectement sauvegardée (cela dépendait du payload de la commande)
 - Ajout des images de différents modèles d'équipements
+- Ajout de la configuration par défaut du type générique sur la commande (lorsque c'est possible)
+- Ajout de la remontée du statut de la batterie de l'équipement dans le core (lorsque c'est possible)
 
 # Stable
 

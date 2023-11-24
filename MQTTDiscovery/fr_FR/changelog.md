@@ -13,6 +13,7 @@ pluginId: MQTTDiscovery
 - Ajout des images de différents modèles d'équipements
 - Ajout de la configuration par défaut du type générique sur la commande (lorsque c'est possible)
 - Ajout de la remontée du statut de la batterie de l'équipement dans le core (lorsque c'est possible)
+- Ajout d'icône par défaut sur les commandes en fonction du type générique
 
 # Stable
 

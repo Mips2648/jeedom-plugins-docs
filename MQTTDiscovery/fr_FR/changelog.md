@@ -14,6 +14,7 @@ pluginId: MQTTDiscovery
 - Ajout de la configuration par défaut du type générique sur la commande (lorsque c'est possible)
 - Ajout de la remontée du statut de la batterie de l'équipement dans le core (lorsque c'est possible)
 - Ajout d'icône par défaut sur les commandes en fonction du type générique
+- Ajout de la possibilité de gestion de présence sur les devices Bluetooth non décodés (et donc qui ne remontent pas dans les devices découverts)
 
 # Stable
 

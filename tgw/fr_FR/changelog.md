@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-11-27
+
+- Ajout de la configuration logrotate pour les logs des antennes distantes
+
 ## 2023-11-12
 
 - Ajout du bouton "Arrêter le service" dans la page de configuration de l'équipement (même fonction que la commande **Stop**)

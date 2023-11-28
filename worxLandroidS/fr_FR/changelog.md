@@ -7,7 +7,7 @@ pluginId: worxLandroidS
 
 # Beta
 
-n/a
+- Changement mineur dans le script d'installation des dépendances
 
 # Stable
 

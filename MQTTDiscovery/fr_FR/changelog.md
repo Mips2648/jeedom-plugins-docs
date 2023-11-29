@@ -15,6 +15,7 @@ pluginId: MQTTDiscovery
 - Ajout de la remontée du statut de la batterie de l'équipement dans le core (lorsque c'est possible)
 - Ajout d'icône par défaut sur les commandes en fonction du type générique
 - Ajout de la possibilité de gestion de présence sur les devices Bluetooth non décodés (et donc qui ne remontent pas dans les devices découverts)
+- Fix: mise à jour des commandes info température des équipements Bluetooth lorsque la commande avait été découverte par OMG (si découverte par Theengs Gateway cela fonctionnait correctement)
 
 # Stable
 

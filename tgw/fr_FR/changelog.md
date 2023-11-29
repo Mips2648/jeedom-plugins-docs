@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-11-29
+
+- Fix pour gérer `localhost` dans la configuration (équivalent à `127.0.0.1`)
+
 ## 2023-11-27
 
 - Ajout de la configuration logrotate pour les logs des antennes distantes

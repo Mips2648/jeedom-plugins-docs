@@ -7,6 +7,10 @@ pluginId: tgw
 
 # Beta
 
+## 2023-12-02
+
+- Ajout d'une commande pour forcer le nettoyage des logs distant
+
 ## 2023-11-29
 
 - Fix pour gérer `localhost` dans la configuration (équivalent à `127.0.0.1`)

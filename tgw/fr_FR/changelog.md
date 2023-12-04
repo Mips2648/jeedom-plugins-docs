@@ -7,25 +7,18 @@ pluginId: tgw
 
 # Beta
 
-## 2023-12-02
+n/a
+
+# Stable
+
+## 2023-12-04
 
 - Ajout d'une commande pour forcer le nettoyage des logs distant
-
-## 2023-11-29
-
 - Fix pour gérer `localhost` dans la configuration (équivalent à `127.0.0.1`)
-
-## 2023-11-27
-
 - Ajout de la configuration logrotate pour les logs des antennes distantes
-
-## 2023-11-12
-
 - Ajout du bouton "Arrêter le service" dans la page de configuration de l'équipement (même fonction que la commande **Stop**)
 - Ajout de boutons pour voir les logs de l'antenne directement depuis la page de configuration de l'équipement
 - Fix sur la récupération de la liste des adaptateurs Bluetooth sur une antenne distante
-
-# Stable
 
 ## 2023-11-06
 

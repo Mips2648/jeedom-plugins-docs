@@ -2,7 +2,7 @@
 layout: default
 title: Documentation MQTT Discovery
 lang: fr_FR
-pluginId: MQTTDiscovery
+pluginId: mqttdiscovery
 ---
 
 # Description

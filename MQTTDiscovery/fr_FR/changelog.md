@@ -2,7 +2,7 @@
 layout: default
 title: Changelog MQTT Discovery
 lang: fr_FR
-pluginId: MQTTDiscovery
+pluginId: mqttdiscovery
 ---
 
 # Beta

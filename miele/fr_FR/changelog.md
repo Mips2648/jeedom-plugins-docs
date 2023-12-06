@@ -7,7 +7,6 @@ pluginId: miele
 
 # Beta
 
-- Mise à jour de l'API Miele@Home pour la prise en charge de nouveau modèles
 - Modification interne de la gestion de dépendances pour compatibilité Jeedom v4.4
 
 # Stable

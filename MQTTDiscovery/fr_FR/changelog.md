@@ -7,6 +7,12 @@ pluginId: mqttdiscovery
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2023-12-08
+
 - Réduction des logs inutiles
 - Ajout d'un bouton pour supprimer définitivement un équipement découvert, y compris sur le broker MQTT
 - Fix: certaines commandes "off" ne fonctionnaient pas correctement car leur configuration était incorrectement sauvegardée (cela dépendait du payload de la commande)
@@ -15,9 +21,8 @@ pluginId: mqttdiscovery
 - Ajout de la remontée du statut de la batterie de l'équipement dans le core (lorsque c'est possible)
 - Ajout d'icône par défaut sur les commandes en fonction du type générique
 - Ajout de la possibilité de gestion de présence sur les devices Bluetooth non décodés (et donc qui ne remontent pas dans les devices découverts)
+- Ajout possibilité de définir un nom de modèle personnalisé et par conséquent d'une image personnalisé par équipement (après avoir modifié le nom du modèle de l'équipement)
 - Fix: mise à jour des commandes info température des équipements Bluetooth lorsque la commande avait été découverte par OMG (si découverte par Theengs Gateway cela fonctionnait correctement)
-
-# Stable
 
 ## 2023-11-07
 

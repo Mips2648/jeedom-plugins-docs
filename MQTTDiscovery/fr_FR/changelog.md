@@ -11,7 +11,7 @@ n/a
 
 # Stable
 
-## 2023-12-08
+## 2023-12-09
 
 - Réduction des logs inutiles
 - Ajout d'un bouton pour supprimer définitivement un équipement découvert, y compris sur le broker MQTT

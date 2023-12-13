@@ -5,9 +5,9 @@ lang: en_US
 pluginId: hydrao
 ---
 
-# 2021-12-xx
+# 2023-11-10
 
-First version
+First stable release
 
 # Documentation
 

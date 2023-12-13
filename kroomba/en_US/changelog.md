@@ -7,7 +7,7 @@ pluginId: kroomba
 
 # Beta
 
-n/a
+- Add of **Activate child safety** and **Deactivate child safety** commands
 
 # Stable
 

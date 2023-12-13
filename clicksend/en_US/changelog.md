@@ -1,13 +1,19 @@
 ---
 layout: default
-title: Hydrao changelog
+title: ClickSend changelog 
 lang: en_US
-pluginId: hydrao
+pluginId: clicksend
 ---
 
-# 2023-11-10
+# Beta
 
-First stable release
+## 2023-12-13
+
+First version
+
+# Stable
+
+n/a
 
 # Documentation
 

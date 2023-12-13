@@ -9,6 +9,12 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
+    source_file_dir: clicksend/fr_FR/
+    translation_files_expression: 'clicksend/<lang>/'
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
     source_file_dir: designImgSwitch/fr_FR/
     translation_files_expression: 'designImgSwitch/<lang>/'
   - filter_type: dir

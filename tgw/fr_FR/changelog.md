@@ -7,9 +7,13 @@ pluginId: tgw
 
 # Beta
 
-- Fix mineur de la configuration de l'antenne qui pouvait parfois poser problème avec Theengs gateway >1.2 et/ou Debian 11
+n/a
 
 # Stable
+
+## 2023-12-15
+
+- Fix mineur de la configuration de l'antenne qui pouvait parfois poser problème avec Theengs gateway >1.2 et/ou Debian 11
 
 ## 2023-12-04
 

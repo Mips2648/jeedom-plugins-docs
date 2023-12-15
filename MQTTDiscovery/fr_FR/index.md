@@ -9,7 +9,7 @@ pluginId: mqttdiscovery
 
 **MQTT Discovery** permet la découverte automatique d'équipements grâce au protocol "MQTT Discovery", aussi appelé "HA Discovery".
 
-Il se base sur le principe du "MQTT Auto Discovery" qui existe sous Home Assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom. Il est évidement inutile d'installer Home Assistant, Jeedom suffit.
+Il se base sur le principe du "MQTT Auto Discovery" qui existe sous Home Assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom. Il est évidemment inutile d'installer Home Assistant, Jeedom suffit.
 
 Cela permet par exemple d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipements](https://compatible.openmqttgateway.com/index.php/devices/) ou l'équivalent [Theengs Gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via **MQTT Discovery**, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts ou tiles.
 
@@ -19,7 +19,7 @@ Mais cela ne se limite pas aux équipements Bluetooth puisque tous les équipeme
 >
 > **MQTT Discovery** n'a pas vocation à remplacer des plugins de protocoles dédiés à zwavejs-ui et zigbee2mqtt par exemple; les plugins existants sur le market géreront bien mieux ces protocoles sous Jeedom.
 > Aucune option spécifique ne sera développée pour gérer plus en détails ceux-ci, ce n'est pas le but du plugin qui implémente uniquement la découverte automatique.
-> Donc **MQTT Discovery** peut évidement être utilisé pour créer automatiquement les équipements nécessaires (comme on le ferait avec une autre intégration MQTT mais plus facilement) mais uniquement dans le cadre d'une utilisation en mode "avancée", en sachant que vous gérer tout le reste avec les outils mis à disposition par ces deux programmes.
+> Donc **MQTT Discovery** peut évidemment être utilisé pour créer automatiquement les équipements nécessaires (comme on le ferait avec une autre intégration MQTT mais plus facilement) mais uniquement dans le cadre d'une utilisation en mode "avancé", en sachant que vous gérez tout le reste avec les outils mis à disposition par ces deux programmes.
 
 # Compatibilité
 
@@ -87,7 +87,7 @@ Donc si vous ne savez pas exactement ce qu'il faut configurer:
 - démarrez le démon
 - attendez 1 minute
 - actualisez la page si cela n'a pas été fait
-- une liste de topic possible vous sera proposé => ajoutez celui qui concerne vos appareils
+- une liste de topic possible vous sera proposée => ajoutez celui qui concerne vos appareils
 
 exemple, le plugin me propose le topic *zwave* que je peux ajouter simplement en cliquant sur le "+" (ne pas oublier de *Sauvegarder* et *(Re)Démarrer* le démon lorsque vous avez fini):
 
@@ -133,30 +133,30 @@ Dans le cas où la création automatique est active, le plugin créera les équi
 
 # Configuration des équipements
 
-Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour les équipements disposant d'une info *rssi* (typiquement les équipements Bluetooth). Pour ceux là, il y aura:
+Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour les équipements disposant d'une info *rssi* (typiquement les équipements Bluetooth). Pour ceux-là, il y aura:
 
 - une commande **rssi** globale qui contient la dernière valeur reçue toutes antennes confondues,
-- une commande **rssi** par antenne ayant captée l'appareil,
+- une commande **rssi** par antenne ayant capté l'appareil,
 - une commande supplémentaire **Présent** de type info/binaire qui vaut 1 si l'appareil est considéré comme présent et 0 dans le cas contraire.
 
 Il est possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tels que les nuts ou tiles. Un équipement est considéré comme présent si une valeur *rssi* a été reçue pendant les x dernières secondes.
 
 Sur la partie de droite, vous verrez des informations générales sur l'équipement (identifiant, configuration, fabricant, modèle ...) et vous avez la possibilité de télécharger une image à utiliser pour représenter l'équipement à la place du logo du plugin ou de l'image par défaut lorsque celle-ci existe. Le plugin gère une image par modèle et pas une image par équipement, il n'est donc pas possible d'avoir deux images différentes pour deux nuts.
 
-Dans la liste des commandes, vous verrez le topic MQTT correspondant à chaque commande ainsi que la valeur du json si relevant. Il est possible d'encoder un path s'il faut aller chercher une valeur dans un sous noeud.
+Dans la liste des commandes, vous verrez le topic MQTT correspondant à chaque commande ainsi que la valeur du json s'y relevant. Il est possible d'encoder un path s'il faut aller chercher une valeur dans un sous noeud.
 En principe vous n'aurez pas à modifier ces configurations, elles sont accessibles uniquement pour gérer les cas limites si le plugin n'a pas effectué la configuration automatiquement.
 
 # Fonctionnement de la découverte automatique
 
-La découverte automatique va publier les configurations de ce qui s'appellent des *composants*/*Entité*, chaque composant correspond à une catégorie, un type de commande. Par exemple: *sensor*, *switch*, *light*, *button*...
+La découverte automatique va publier les configurations de ce qui s'appelle des *composants*/*Entité*, chaque composant correspond à une catégorie, un type de commande. Par exemple: *sensor*, *switch*, *light*, *button*...
 
 Le plugin lit ces configurations et pour chaque composant va créer la ou les commandes Jeedom correspondantes, chacune sous leur équipement respectif.
 
-Lorsque tout vos équipements ont été découvert, vous pouvez désactiver la découverte pour éviter que le plugin ne créé des équipements que vous ne voulez pas.
+Lorsque tout vos équipements ont été découverts, vous pouvez désactiver la découverte pour éviter que le plugin ne créé des équipements que vous ne voulez pas.
 
 ## Composant pris en charge
 
-Tous les composants ne sont pas encore entièrement ni complètement intégré. Si votre matériel a besoin du support d'un composant qui n'est pas encore reconnu, n'hésitez pas à un faire la demande en créant un post sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+Tous les composants ne sont pas encore entièrement ni complètement intégrés. Si votre matériel a besoin du support d'un composant qui n'est pas encore reconnu, n'hésitez pas à en faire la demande en créant un post sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
 
 - alarm_control_panel
 - binary_sensor
@@ -211,7 +211,7 @@ Il est donc parfaitement possible d'avoir:
 - que des antennes OMG sur esp32
 - un mix d'antennes OMG et Theengs
 
-Toutes les combinaisons sont réalisables et tout est inter-compatibles.
+Toutes les combinaisons sont réalisables et tout est inter-compatible.
 
 ### Les équipements sous Jeedom
 
@@ -219,7 +219,7 @@ C'est ici qu'entre en jeu le plugin **MQTT Discovery** et si vous avez déjà ef
 
 ## Pourquoi la gestion des antennes n'est-elle pas intégrée à MQTT Discovery alors?
 
-Car ce sont bien deux rôles distincts et que **MQTT Discovery** ne s'occupe pas réellement de savoir d'où viennent les infos qu'il reçoit via MQTT et il n'est certainement pas limités aux équipements Bluetooth.
+Car ce sont bien deux rôles distincts et que **MQTT Discovery** ne s'occupe pas réellement de savoir d'où viennent les infos qu'il reçoit via MQTT et il n'est certainement pas limité aux équipements Bluetooth.
 
 Certains l'utilisent pour intégrer à Jeedom des équipements qui ne sont pas en Bluetooth et qui ne sont donc pas remontés par les passerelles *Theengs* ou *OMG* mais par d'autres connecteurs ou passerelles, ils n'ont donc peut-être même pas besoin de celles-ci.
 

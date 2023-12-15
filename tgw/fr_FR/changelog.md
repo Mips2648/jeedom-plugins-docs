@@ -11,7 +11,7 @@ n/a
 
 # Stable
 
-## 2023-12-15
+## 2023-12-16
 
 - Fix mineur de la configuration de l'antenne qui pouvait parfois poser problème avec Theengs gateway >1.2 et/ou Debian 11
 

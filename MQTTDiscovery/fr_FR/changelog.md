@@ -7,7 +7,8 @@ pluginId: mqttdiscovery
 
 # Beta
 
-n/a
+- Prise en charge du type *select*
+- Prise en charge du type *device_automation*
 
 # Stable
 

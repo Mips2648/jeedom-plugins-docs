@@ -8,6 +8,8 @@ pluginId: worxLandroidS
 # Beta
 
 - Changement mineur dans le script d'installation des dépendances
+- Mise à jour des versions des dépendances
+- Compatibilité python3.9 / python3.7
 
 # Stable
 

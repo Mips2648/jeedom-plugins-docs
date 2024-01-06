@@ -10,6 +10,7 @@ pluginId: tgw
 - Ajout du numéro de version installée dans la page de configuration de l'équipement
 - Ajout de la dernière version disponible
 - Ajout d'un bouton pour mettre à jour l'antenne si dernière version > version installée
+- Ajout des paramètres optionnels: *Durée du scan* & *Délai entre 2 scans*
 
 # Stable
 

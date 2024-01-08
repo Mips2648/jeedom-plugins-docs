@@ -33,13 +33,14 @@ Un autre moyen est de vous connecter à votre broker à l'aide de MQTT Explorer 
 
 Cette liste est loin d'être exhaustive, cela serait impossible tellement il en existe. Cependant cela peut donner des idées:
 
-- [Open MQTT Gateway](https://docs.openmqttgateway.com/)
-- [Theengs Gateway](https://gateway.theengs.io/)
-- [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT)
-- [tydom2mqtt](https://fmartinou.github.io/tydom2mqtt/#/introduction/)
+- [MG iSMART](https://github.com/SAIC-iSmart-API/saic-python-mqtt-gateway), voir ce [tutoriel sur community](https://community.jeedom.com/t/tuto-integrer-sa-mg-dans-jeedom/118686)
+- [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT), voir [explication sur community](https://community.jeedom.com/t/myfox-et-jedom-4-4/111828/14)
 - [Nuki Smart Lock 3.0 Pro](https://support.nuki.io/hc/fr/articles/12947926779409-MQTT-support)
-- [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
+- [Open MQTT Gateway](https://docs.openmqttgateway.com/)
+- [Theengs Gateway](https://gateway.theengs.io/), voir ce [tutoriel sur community](https://community.jeedom.com/t/migration-de-blea-vers-mqttdiscovery-et-tgw/115358)
+- [tydom2mqtt](https://fmartinou.github.io/tydom2mqtt/#/introduction/)
 - [zigbee2mqtt](https://www.zigbee2mqtt.io/)
+- [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
 
 # Installation
 

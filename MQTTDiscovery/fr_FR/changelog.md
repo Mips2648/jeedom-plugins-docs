@@ -10,6 +10,7 @@ pluginId: mqttdiscovery
 - Prise en charge du type *select*
 - Prise en charge du type *device_automation*
 - Suppression du bouton "Dupliquer" un équipement qui n'avait pas de raison d'exister
+- Ajout d'un bouton pour supprimer les appareils inconnus de la liste des appareils découverts
 
 # Stable
 

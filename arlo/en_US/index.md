@@ -60,7 +60,7 @@ Before creating a new Arlo user, it is important to know the following informati
 
 - The plugin manages this via email with IMAP support only, so you will need a mailbox with IMAP access (it is sometimes blocked or not free so check before) and only supports authentication by _username_ /_password_ ; no MFA on the mail!
 - The plugin must have direct access to the Arlo user's mailbox, indeed the code for the TFA is requested by Arlo at each login! So if the daemon has to restart it must be able to retrieve the code itself.
-- the plugin will only read the mail coming from "do_not_reply@arlo.com"; so even though it is recommended to have a dedicated mailbox and not an alias of an existing mailbox, this shouldn't be a problem; it will flag the emails as "read" in the box when done (and will no longer try to read them on the next start)
+- the plugin will only read the mail coming from "<do_not_reply@arlo.com>"; so even though it is recommended to have a dedicated mailbox and not an alias of an existing mailbox, this shouldn't be a problem; it will flag the emails as "read" in the box when done (and will no longer try to read them on the next start)
 - the plugin will only search among the unread mails of the current day, in reverse chronological order (from the most recent to the oldest) and will skip all the mails sent before its last login.
 - the language of the email is not important: the search for the TFA code will work regardless of the language of the email.
 
@@ -384,9 +384,9 @@ Currently, it is not possible to view the live video stream from Jeedom Connect 
 
 # Support
 
-If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

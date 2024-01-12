@@ -7,6 +7,38 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+- *select* type support
+- *device_automation* type support
+- Removal of the “Duplicate” device button that had no reason to exist
+- Add button to remove unknown devices from the list of discovered devices
+
+# Stable
+
+## 2023-12-09
+
+- Reduce unnecessary logs
+- Add button to permanently delete discovered device, including on the MQTT broker
+- Fix: some “off” commands did not work properly because their configuration was saved incorrectly (this depended on the payload of the command)
+- Add images of different devices models
+- Add the default generic type configuration on the command (when possible)
+- Add the update of the status of the battery of the device in the core (when possible)
+- Add default icons on commands based on the generic type
+- Add the possibility of managing presence on Bluetooth devices that are not decoded (and therefore not visible in discovered devices)
+- Add the possibility to define a custom model name and therefore a custom image for each device (after changing the name of the device model)
+- Fix: update the temperature info commands for Bluetooth device when the command was discovered by OMG (if discovered by Theengs Gateway it worked correctly)
+
+## 2023-11-07
+
+- Support *lock* type for lock management (e.g. Nuki)
+- Add a default image for the Nuki Smart Lock 3.0 Pro
+- Filters the types of files accepted by the plugin when selecting an image to send for a device model
+- Fix on the “Configuration” button in the discovered devices screen
+
+## 2023-11-02
+
+- Improvement in the parsing of configurations for certain device (support for the “base topic” if declared)
+- Change in presence management: **rssi** commands will be forced to -200 if no more update of the command (after the configured time limit)
+
 ## 2023-10-22
 
 - Setting the min & max for **rssi** commands
@@ -67,9 +99,9 @@ pluginId: MQTTDiscovery
 
 - Fix on light/brightness
 
-# Stable
+## 2023-07-20
 
-n/a
+First version
 
 # Documentation
 

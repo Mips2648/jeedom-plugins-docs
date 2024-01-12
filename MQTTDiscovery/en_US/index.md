@@ -2,7 +2,7 @@
 layout: default
 title: MQTT Discovery documentation 
 lang: en_US
-pluginId: mqttdiscovery
+pluginId: MQTTDiscovery
 ---
 
 # Description
@@ -27,19 +27,20 @@ But so it's not limited to Bluetooth devices since all “MQTT Auto Discovery”
 
 To find out, check the documentation of the hardware, program, or gateway you want to use if there is a mention of “MQTT Discovery” or "HA Discovery" for Home Assistant (again, you don't need to have Home Assistant installed).
 
-Another way is to connect to your broker using MQTT Explorer (for example) and see if you see a `homeassistant` topic. If yes, you should find information about your device in the sub-topics. In case of doubt, you can always ask the question on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+Another way is to connect to your broker using MQTT Explorer (for example) and see if you see a `homeassistant` topic. If yes, you should find information about your device in the sub-topics. In case of doubt, you can always ask the question on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 ## List of known possible integrations
 
 This list is far from exhaustive, it would be impossible as there are so many of them. However, it may give some ideas:
 
-- [Open MQTT Gateway](https://docs.openmqttgateway.com/)
-- [Theengs Gateway](https://gateway.theengs.io/)
-- [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT)
-- [tydom2mqtt](https://fmartinou.github.io/tydom2mqtt/#/introduction/)
+- [MG iSMART](https://github.com/SAIC-iSmart-API/saic-python-mqtt-gateway), see [tutorial on community](https://community.jeedom.com/t/tuto-integrer-sa-mg-dans-jeedom/118686)
+- [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT), see [explanation on community](https://community.jeedom.com/t/myfox-et-jedom-4-4/111828/14)
 - [Nuki Smart Lock 3.0 Pro](https://support.nuki.io/hc/en-us/articles/12947926779409-MQTT-support)
-- [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
+- [Open MQTT Gateway](https://docs.openmqttgateway.com/)
+- [Theengs Gateway](https://gateway.theengs.io/), see [tutorial on community](https://community.jeedom.com/t/migration-de-blea-vers-mqttdiscovery-et-tgw/115358)
+- [tydom2mqtt](https://fmartinou.github.io/tydom2mqtt/#/introduction/)
 - [zigbee2mqtt](https://www.zigbee2mqtt.io/)
+- [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
 
 # Installation
 
@@ -98,7 +99,7 @@ For example, the plugin show me the topic *zwave* that I can simply  add by clic
 Finally, you can configure the following information (optional):
 
 - *Cycle* defines the frequency of sending information to Jeedom, in seconds: a numerical value between `0.5` and `10`
-- *Internal socket port* defines the port on which the daemon is listening. Do not change this value without asking the question on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+- *Internal socket port* defines the port on which the daemon is listening. Do not change this value without asking the question on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 > **Important**
 >
@@ -156,7 +157,7 @@ When all your devices have been discovered, you can deactivate discovery to prev
 
 ## Supported component
 
-Not all components are fully or completely integrated yet. If your hardware needs support for a component that is not yet recognized, do not hesitate to request it by creating a post on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+Not all components are fully or completely integrated yet. If your hardware needs support for a component that is not yet recognized, do not hesitate to request it by creating a post on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 - alarm_control_panel
 - binary_sensor
@@ -233,9 +234,9 @@ This is where the strength of the system lies: everyone does their work in the m
 
 # Support
 
-If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

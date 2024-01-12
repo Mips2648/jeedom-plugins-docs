@@ -60,7 +60,7 @@ Avant de créer un nouvel utilisateur Arlo, il est important de connaître les i
 
 - Le plugin gère celle-ci via email avec support IMAP uniquement, il faudra donc une boite mail avec un accès IMAP (il est parfois bloqué ou payant donc vérifiez avant) et ne supporte qu'une authentification par _nom d'utilisateur_/_mot de passe_; pas de MFA sur le mail!
 - Le plugin doit avoir un accès direct à la boite mail de l’utilisateur Arlo, en effet le code pour le TFA est demandé par Arlo à chaque login! Donc si le démon doit redémarrer il doit pouvoir récupérer lui même le code.
-- le plugin ne lira que le mail en provenance de "do_not_reply@arlo.com"; donc même s’il est recommandé d’avoir une boite mail dédié et pas un alias d’une boite existante, cela ne devrait pas être un problème; il notera les mails comme « lu » dans la boite une fois fait (et n’essaiera plus de les lire au prochain démarrage)
+- le plugin ne lira que le mail en provenance de "<do_not_reply@arlo.com>"; donc même s’il est recommandé d’avoir une boite mail dédié et pas un alias d’une boite existante, cela ne devrait pas être un problème; il notera les mails comme « lu » dans la boite une fois fait (et n’essaiera plus de les lire au prochain démarrage)
 - le plugin ne cherchera que parmi les mails non lu de la journée en cours, par ordre chronologique inverse (du plus récent au plus ancien) et passera tous les mails envoyés avant son dernier login.
 - la langue du mail n’a pas d’importance: la recherche du code TFA fonctionnera quelque soit la langue du mail.
 
@@ -384,9 +384,9 @@ Actuellement, il est impossible de consulter le flux vidéo en live depuis l'app
 
 # Support
 
-Si vous avez un problème, commencez par lire les derniers sujets en rapport avec le plugin sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+Si vous avez un problème, commencez par lire les derniers sujets en rapport avec le plugin sur [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
 Il faudra au minimum fournir:
 

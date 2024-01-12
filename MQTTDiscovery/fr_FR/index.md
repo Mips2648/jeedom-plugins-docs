@@ -2,7 +2,7 @@
 layout: default
 title: Documentation MQTT Discovery
 lang: fr_FR
-pluginId: mqttdiscovery
+pluginId: MQTTDiscovery
 ---
 
 # Description
@@ -27,7 +27,7 @@ Mais cela ne se limite pas aux équipements Bluetooth puisque tous les équipeme
 
 Pour le savoir, vérifiez dans la documentation de votre matériel, programme ou passerelle que vous voulez utiliser s'il est fait mention de "MQTT Discovery" ou "HA Discovery" pour Home Assistant (encore une fois pas besoin d'avoir installé Home Assistant).
 
-Un autre moyen est de vous connecter à votre broker à l'aide de MQTT Explorer (par exemple) et de regarder si vous voyez un topic `homeassistant`. Si oui, vous devriez repérer des infos qui concernent votre matériel dans les sous-topics de celui-ci. En cas de doute, vous pouvez toujours poser la question sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+Un autre moyen est de vous connecter à votre broker à l'aide de MQTT Explorer (par exemple) et de regarder si vous voyez un topic `homeassistant`. Si oui, vous devriez repérer des infos qui concernent votre matériel dans les sous-topics de celui-ci. En cas de doute, vous pouvez toujours poser la question sur [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 ## Liste des intégrations possibles connues
 
@@ -99,7 +99,7 @@ exemple, le plugin me propose le topic *zwave* que je peux ajouter simplement en
 Pour finir, vous pouvez configurer les infos suivantes (optionnelles):
 
 - *Cycle* définit la fréquence d'envoi, en secondes, des informations vers Jeedom: une valeur numérique entre `0.5` et `10`
-- *Port socket interne* définit le port sur lequel écoute le démon. Ne changez pas cette valeur sans avoir posé la question sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+- *Port socket interne* définit le port sur lequel écoute le démon. Ne changez pas cette valeur sans avoir posé la question sur [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 > **Important**
 >
@@ -157,7 +157,7 @@ Lorsque tout vos équipements ont été découverts, vous pouvez désactiver la 
 
 ## Composant pris en charge
 
-Tous les composants ne sont pas encore entièrement ni complètement intégrés. Si votre matériel a besoin du support d'un composant qui n'est pas encore reconnu, n'hésitez pas à en faire la demande en créant un post sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+Tous les composants ne sont pas encore entièrement ni complètement intégrés. Si votre matériel a besoin du support d'un composant qui n'est pas encore reconnu, n'hésitez pas à en faire la demande en créant un post sur [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 - alarm_control_panel
 - binary_sensor
@@ -234,9 +234,9 @@ C'est là que se trouve la force du système: chacun s'occupe de son travail de 
 
 # Support
 
-Si vous avez un problème, commencez par lire les derniers sujets en rapport avec le plugin sur [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+Si vous avez un problème, commencez par lire les derniers sujets en rapport avec le plugin sur [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
 Il faudra au minimum fournir:
 

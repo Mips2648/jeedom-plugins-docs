@@ -7,11 +7,15 @@ pluginId: tgw
 
 # Description
 
-The purpose of this plugin is to make it easier for you to install and configure antennas running on *Theengs gateway*, which allows to listen to Bluetooth devices (BLEA) and use them in Jeedom via the [MQTT Discovery]({{site.baseurl}}/MQTTDiscovery/{{page.lang}}).
+The purpose of this plugin is to make it easier for you to install and configure antennas running on *Theengs gateway*, which allows to listen to [Bluetooth devices (BLE)](https://decoder.theengs.io/devices/devices.html) and use them in Jeedom via the [MQTT Discovery]({{site.baseurl}}/MQTTDiscovery/{{page.lang}}).
 
 It offers a turnkey solution to perform this configuration.
 
 I invite you to consult [this documentation](https://mips2648.github.io/jeedom-plugins-docs/MQTTDiscovery/fr_FR/#tocAnchor-1-14) to understand in more detail how it works.
+
+> **Important**
+>
+> This plugin does not guarantee that *Theengs gateway* will work on your machine, there are too many parameters that can influence this: it depends on your hardware, the version of your system, the Bluetooth key used etc. The plugin is only responsible for installing the application and allows you to control its status from Jeedom.
 
 # Installation
 
@@ -140,9 +144,9 @@ Exit by typing the `Ctrl+x` keys and confirm the save by typing `O` or `Y` depen
 
 # Support
 
-If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tags/plugin-{{page.pluginId}}).
+If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tags/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
 At a minimum, you will need to provide:
 

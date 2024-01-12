@@ -135,6 +135,12 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
+    source_file_dir: SmartMeterP1/fr_FR/
+    translation_files_expression: 'SmartMeterP1/<lang>/'
+  - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
     source_file_dir: stockexchange/fr_FR/
     translation_files_expression: 'stockexchange/<lang>/'
   - filter_type: dir

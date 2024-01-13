@@ -7,9 +7,15 @@ pluginId: worxLandroidS
 
 # Beta
 
-- Minor change in the dependency installation script
+n/a
 
 # Stable
+
+## 2023-12-21
+
+- Minor change in the dependency installation script
+- Update dependencies
+- Python3.9/Python3.7 compatibility
 
 ## 2023-10-26
 

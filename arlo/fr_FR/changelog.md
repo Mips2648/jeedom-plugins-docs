@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Modification de la vérification des dépendances pour compatibilité Debian 12
 
 # Stable
 

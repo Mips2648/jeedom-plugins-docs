@@ -94,6 +94,9 @@ exemple, le plugin me propose le topic *zwave* que je peux ajouter simplement en
 
 ![topic_config](../images/topic_config.png)
 
+La dernière option permet de lister les équipements inconnus qui publient sur un des topics racines configurés.
+Si un équipement inconnus est ajouté (voir **Gestion des équipements** pour savoir comment), seul la gestion de présence sera possible; cela n'a donc d'intérêt que pour les équipements Bluetooth en principe et cela permet d'utiliser un tracker Bluetooth même s'il n'est pas décodée par *Open MQTT Gateway* ou *Theengs Gateway*.
+
 ## Démon
 
 Pour finir, vous pouvez configurer les infos suivantes (optionnelles):
@@ -121,9 +124,17 @@ En cliquant sur ce bouton, une nouvelle fenêtre va s'ouvrir:
 
 Il suffit de cliquer sur le bouton "Ajouter" de l'équipement voulu et ensuite de cliquer sur le bouton "Fermer et terminer la création des équipements nouvellement ajoutés" pour que l'équipement et ses commandes soient créés.
 
-De retour sur le bandeau de gestion, vous verrez un bouton pour accéder à la configuration du plugin, à la documentation ainsi qu'aux derniers sujets à propos du plugin sur community.
+Dans cet écran vous pouvez aussi visualiser l'ensemble de la configuration d'un appareil et aussi supprimer celui-ci de la liste si vous n'en avez pas besoin. Attention cette action supprime également l'information sur votre broker mqtt.
 
-Le dernier bouton vous permet de visualiser le statut de la création automatique et de l'activer ou la désactiver directement depuis cette page, il s'agit de la même configuration que celle visible dans la configuration du plugin.
+Le second bouton sur le bandeau de gestion, nommé "Equipements inconnus", ne sera visible que si vous avez activez l'option correspondante (voir **Configuration du plugin**) et il permet l'accès à un écran très similaire au précédent sauf qu'il n'y a pas de configuration.
+
+![devices_discovered](../images/devices_unknown.png)
+
+Lorsque vous avez ajouté un des équipements "inconnus" depuis cet écran, les commandes ne seront pas immédiatement créées. Il faudra attendre quelques secondes voir minutes que celui-ci émette une information afin que le plugin crée la commande correspondante.
+
+Le bouton suivant vous permet de visualiser le statut de la création automatique et de l'activer ou la désactiver directement depuis cette page, il s'agit de la même configuration que celle visible dans la configuration du plugin.
+
+De retour sur le bandeau de gestion, vous verrez un bouton pour accéder à la configuration du plugin, à la documentation ainsi qu'aux derniers sujets à propos du plugin sur community.
 
 Dans le cas où la création automatique est active, le plugin créera les équipements et les commandes manquantes automatiquement dès qu'il recevra les informations sur le topic de découverte (par défaut `homeassistant`).
 
@@ -142,18 +153,18 @@ Il n'y a aucune configuration spécifique dans la plupart des cas exceptés pour
 
 Il est possible de définir dans la configuration de l'équipement la durée (en secondes) avant de considérer l'équipement comme absent; cela sera particulièrement utile pour les "trackers" tels que les nuts ou tiles. Un équipement est considéré comme présent si une valeur *rssi* a été reçue pendant les x dernières secondes.
 
-Sur la partie de droite, vous verrez des informations générales sur l'équipement (identifiant, configuration, fabricant, modèle ...) et vous avez la possibilité de télécharger une image à utiliser pour représenter l'équipement à la place du logo du plugin ou de l'image par défaut lorsque celle-ci existe. Le plugin gère une image par modèle et pas une image par équipement, il n'est donc pas possible d'avoir deux images différentes pour deux nuts.
+Sur la partie de droite, vous verrez des informations générales sur l'équipement (identifiant, configuration, fabricant, modèle ...) et vous avez la possibilité de télécharger une image à utiliser pour représenter l'équipement à la place du logo du plugin ou de l'image par défaut lorsque celle-ci existe. Le plugin gère une image par modèle et pas une image par équipement, il n'est donc pas possible d'avoir deux images différentes pour deux nuts à moins de modifier manuellement l'identifiant du modèle configuré, ceci n'a aucun impact excepté pour l'image utilisée:
+
+![devices_discovered](../images/model.png)
 
 Dans la liste des commandes, vous verrez le topic MQTT correspondant à chaque commande ainsi que la valeur du json s'y relevant. Il est possible d'encoder un path s'il faut aller chercher une valeur dans un sous noeud.
 En principe vous n'aurez pas à modifier ces configurations, elles sont accessibles uniquement pour gérer les cas limites si le plugin n'a pas effectué la configuration automatiquement.
 
 # Fonctionnement de la découverte automatique
 
-La découverte automatique va publier les configurations de ce qui s'appelle des *composants*/*Entité*, chaque composant correspond à une catégorie, un type de commande. Par exemple: *sensor*, *switch*, *light*, *button*...
+La découverte automatique va publier la définition complète de ce qui s'appelle des *composants*/*Entité*, chaque composant correspond à une catégorie, un type de commande. Par exemple: *sensor*, *switch*, *light*, *button*...
 
-Le plugin lit ces configurations et pour chaque composant va créer la ou les commandes Jeedom correspondantes, chacune sous leur équipement respectif.
-
-Lorsque tout vos équipements ont été découverts, vous pouvez désactiver la découverte pour éviter que le plugin ne créé des équipements que vous ne voulez pas.
+Le plugin lit ces définitions et pour chaque composant va créer la ou les commandes Jeedom correspondantes, chacune sous leur équipement respectif, en configurant les valeurs min/max ou la liste de choix possible etc mais aussi l'icône par défaut sur la commande, le type générique de celle-ci etc.
 
 ## Composant pris en charge
 
@@ -163,11 +174,14 @@ Tous les composants ne sont pas encore entièrement ni complètement intégrés.
 - binary_sensor
 - button
 - cover
+- device_automation
 - device_tracker
 - light
   - brightness
 - lock
+- music_player
 - number
+- select
 - sensor
 - switch
 - text

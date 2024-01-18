@@ -21,6 +21,16 @@ Il n'y a aucune configuration à effectuer ici.
 
 Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
 
+Vous devrez également configurer le nom d'utilisateur et la clé API de celui-ci.
+
+## Commandes
+
+![commands](./../images/commands.png)
+
+Dans l'onglet commande vous verrez une commande **Rafraichir** qui permet d'actualiser le solde restant; cette information est également actualisée automatiquement chaque nuit et une commande info **Solde**.
+
+Vous pouvez ajouter des commandes pour envoyer des messages via le bouton *Ajouter une commande*. Il faudra donner un nom, choisir le type *SMS* ou *Appel (TTS)* et renseigner le numéro de téléphone au format international.
+
 # Changelog
 
 [Voir le changelog](./changelog)

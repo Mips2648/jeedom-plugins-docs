@@ -11,6 +11,7 @@ pluginId: MQTTDiscovery
 - *device_automation* type support
 - Removal of the “Duplicate” device button that had no reason to exist
 - Add button to remove unknown devices from the list of discovered devices
+- *music_player* type support
 
 # Stable
 

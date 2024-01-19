@@ -7,8 +7,6 @@ pluginId: clicksend
 
 # Beta
 
-## 2023-12-13
-
 First version
 
 # Stable

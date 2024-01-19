@@ -8,6 +8,7 @@ pluginId: influxdb
 # Beta
 
 - Internal change in dependency management for compatibility with Jeedom v4.4
+- Jeedom v4.2 required
 
 # Stable
 

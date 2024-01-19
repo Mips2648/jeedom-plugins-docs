@@ -164,7 +164,7 @@ In principle, you will not have to modify these configurations, they are only ac
 
 Automatic discovery will publish the complete definition of what are called *Components*/*Entity*, each component corresponds to a category, a type of command. For example: *sensor*, *switch*, *light*, *button*...
 
-The plugin reads these definitions and for each component will create the corresponding Jeedom command(s), each under their respective device, configuring the min/max values or the list of possible choices etc., but also the default icon on the command, the generic type of the command, etc.
+The plugin reads these definitions and for each component will create the corresponding Jeedom commands, each under their respective device, configuring the min/max values or the list of possible choices etc., but also the default icon on the command, the generic type of the command, etc.
 
 ## Supported component
 

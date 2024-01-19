@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Changed the dependency check for Debian 12 compatibility
 
 # Stable
 

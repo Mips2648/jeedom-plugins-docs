@@ -21,6 +21,16 @@ There is no additional configuration to do here.
 
 After creating new device, the usual options are available.
 
+You will also need to configure the username and API key of the user.
+
+## Commands
+
+![commands](./../images/commands.png)
+
+In the command tab you will see a **Refresh** command that allows you to update the remaining balance; this information is also updated automatically every night and a **Balance** info command.
+
+You can add commands to send messages via the *Add command* button. You will have to give a name, choose the type *SMS* or*Call (TTS)* and enter the telephone number in international format.
+
 # Changelog
 
 [See the changelog](./changelog)

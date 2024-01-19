@@ -94,6 +94,9 @@ For example, the plugin show me the topic *zwave* that I can simply  add by clic
 
 ![topic_config](../images/topic_config.png)
 
+The last option allows you to list unknown devices that publish on one of the configured root topics.
+If an unknown device is added (see **Devices Management** to find out how), only presence management will be possible; this is therefore only useful for Bluetooth device in principle and it allows you to use a Bluetooth tracker even if it is not decoded by *Open MQTT Gateway* or *Theengs Gateway*.
+
 ## Daemon
 
 Finally, you can configure the following information (optional):
@@ -121,9 +124,17 @@ By clicking on this button, a new window will open:
 
 Simply click on the “Add” button for the desired device and then click on the “Close and finish creating newly added device” button for the device and its commands to be created.
 
-Back on the management banner, you will see a button to access the plugin configuration, documentation and the latest topics about the plugin on community.
+In this screen you can also view the entire configuration of a device and also remove it from the list if you do not need it. Attention this action also deletes the information on your mqtt broker.
 
-The last button allows you to view the status of the automatic creation and to activate or deactivate it directly from this page, this is the same configuration as the one in the plugin configuration.
+The second button on the management panel, named “Unknown devices”, will only be visible if you have activated the corresponding option (see **Plugin configuration**) and it allows access to a screen very similar to the previous one except that there is no configuration.
+
+![devices_discovered](../images/devices_unknown.png)
+
+Once you have added one of the “unknown” devices from this screen, the commands will not be created immediately. You will have to wait a few seconds or even minutes for it to emit information so that the plugin creates the corresponding command.
+
+The next button allows you to view the status of the automatic creation and to activate or deactivate it directly from this page, this is the same configuration as the one in the plugin configuration.
+
+Back on the management banner, you will see a button to access the plugin configuration, documentation and the latest topics about the plugin on community.
 
 In the event that automatic creation is active, the plugin will create missing devices and commands automatically as soon as it receives information on the discovery topic (by default `homeassistant`).
 
@@ -142,18 +153,18 @@ There is no specific configuration in most cases except for devices with a *rssi
 
 It is possible to define in the device configuration the delay (in seconds) before considering the device absent; this will be especially useful for “trackers” such as nuts or tiles. A device is considered present if a *rssi* value has been received within the last x seconds.
 
-On the right side, you will see general information about the device (identifier, configuration, manufacturer, model...) and you can upload an image that will be used to represent the device instead of the plugin logo or the default image when it exists. The plugin manages one image per model and not one image per device, so it is not possible to have two different images for two nuts.
+On the right side, you will see general information about the device (identifier, configuration, manufacturer, model...) and you can upload an image to be used to represent the device instead of the plugin logo or the default image when it exists. The plugin manages one image per model and not one image per device, so it is not possible to have two different images for two nuts unless you manually modify the identifier of the configured model, this has no impact except for the image used:
+
+![devices_discovered](../images/model.png)
 
 In the list of commands, you will see the MQTT topic corresponding to each command as well as the value of the json if relevant. It is possible to encode a path if you have to search for a value in a subnode.
 In principle, you will not have to modify these configurations, they are only accessible to manage borderline cases if the plugin did not perform the configuration automatically.
 
 # How automatic discovery works
 
-Automatic discovery will publish the configurations of what are called *components*/*entity*, each component corresponds to a category, a type of command. For example: *sensor*, *switch*, *light*, *button*...
+Automatic discovery will publish the complete definition of what are called *Components*/*Entity*, each component corresponds to a category, a type of command. For example: *sensor*, *switch*, *light*, *button*...
 
-The plugin reads these configurations and for each component will create the corresponding Jeedom commands, each under their respective device.
-
-When all your devices have been discovered, you can deactivate discovery to prevent the plugin from creating devices that you do not want.
+The plugin reads these definitions and for each component will create the corresponding Jeedom commands, each under their respective device, configuring the min/max values or the list of possible choices etc., but also the default icon on the command, the generic type of the command, etc.
 
 ## Supported component
 
@@ -163,11 +174,14 @@ Not all components are fully or completely integrated yet. If your hardware need
 - binary_sensor
 - button
 - cover
+- device_automation
 - device_tracker
 - light
   - brightness
 - lock
+- music_player
 - number
+- select
 - sensor
 - switch
 - text

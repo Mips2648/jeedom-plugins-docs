@@ -17,6 +17,11 @@ In order to use the plugin, you must download, install and activate it like any 
 
 There are no dependencies to install, just make sure to start the daemon if it's not done automatically.
 
+# Plugin configuration
+
+In the plugin configuration, you can optionally configure a refresh period. By default it is 5 seconds.
+The shorter the delay, the more the load will increase on your Jeedom. It's up to you to configure according to your needs and what your box allows.
+
 # Devices
 
 The plugin can be found in the Plugins → Energy menu.
@@ -25,11 +30,11 @@ Each device will correspond to a gateway connected to a meter. So you have to st
 
 Below, fill in the IP address of your gateway and the port you configured.
 
-Activate the device and save and in the next few seconds the info commands should be updated.
+Activate the device and save and within seconds the commands should be updated.
 
 # Commands
 
-There are commands that are updated every 5 seconds giving:
+There are commands updated according to the frequency defined in the plugin configuration (5 seconds by default):
 
 - the energy taken and injected during peak hours and off-peak hours as well as the respective totals.
 - the power taken and injected from the grid as well as the net power, equal to the power taken - the power injected (which will be useful for your scenarios and integrations with other plugins)

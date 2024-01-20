@@ -95,7 +95,7 @@ exemple, le plugin me propose le topic *zwave* que je peux ajouter simplement en
 ![topic_config](../images/topic_config.png)
 
 La dernière option permet de lister les équipements inconnus qui publient sur un des topics racines configurés.
-Si un équipement inconnus est ajouté (voir **Gestion des équipements** pour savoir comment), seule la gestion de présence sera possible; cela n'a donc d'intérêt que pour les équipements Bluetooth en principe et cela permet d'utiliser un tracker Bluetooth même s'il n'est pas décodée par *Open MQTT Gateway* ou *Theengs Gateway*.
+Si un équipement inconnu est ajouté (voir **Gestion des équipements** pour savoir comment), seule la gestion de présence sera possible; cela n'a donc d'intérêt que pour les équipements Bluetooth en principe et cela permet d'utiliser un tracker Bluetooth même s'il n'est pas décodée par *Open MQTT Gateway* ou *Theengs Gateway*.
 
 ## Démon
 

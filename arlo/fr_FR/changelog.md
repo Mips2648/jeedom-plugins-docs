@@ -7,9 +7,18 @@ pluginId: arlo
 
 # Beta
 
-- Modification de la vérification des dépendances pour compatibilité Debian 12
+Attention, si vous êtes sur la version beta et que tout fonctionne pour vous, surtout concernant le changement de mode sur les caméras ou sur la base, alors installer dès à présent la version stable (ne pas désinstaller la beta avant).
+
+Une nouvelle beta sera publiée prochainement qui revoit complètement l'intégration avec Arlo et donc le démon et tout ne fonctionnera pas correctement dès la première version, vous allez rencontrer des problèmes si vous restez sur la version beta! Donc ne restez pas en beta sur une box de production sur laquelle vous avez absolument besoin que le plugin fonctionne!
+
+Au contraire, si vous avez acquis récemment des caméras Arlo et que le changement de mode (sur la base ou sur les caméras) ne fonctionne pas pour vous, si dans l'app officielle Arlo vous n'avez que 3 modes possibles *Activer en absence*, *Activer en présence* et *veille* alors la prochaine beta devrait vous être utile.
 
 # Stable
+
+## 2024-01-20
+
+- Modification de la vérification des dépendances pour compatibilité Debian 12
+- Permet l'affichage des commandes **On** et **Off** sur le widget caméra
 
 ## 2023-08-21
 

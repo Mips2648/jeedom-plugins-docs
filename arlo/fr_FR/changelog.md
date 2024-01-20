@@ -11,7 +11,7 @@ Attention, si vous êtes sur la version beta et que tout fonctionne pour vous, s
 
 Une nouvelle beta sera publiée prochainement qui revoit complètement l'intégration avec Arlo et donc le démon et tout ne fonctionnera pas correctement dès la première version, vous allez rencontrer des problèmes si vous restez sur la version beta! Donc ne restez pas en beta sur une box de production sur laquelle vous avez absolument besoin que le plugin fonctionne!
 
-Au contraire, si vous avez acquis récemment des caméras Arlo et que le changement de mode (sur la base ou sur les caméras) ne fonctionne pas pour vous, si dans l'app officielle Arlo vous n'avez que 3 modes possibles *Activer en absence*, *Activer en présence* et *veille* alors la prochaine beta devrait vous être utile.
+Au contraire, si vous avez acquis récemment des caméras Arlo et que le changement de mode (sur la base ou sur les caméras) ne fonctionne pas pour vous, si dans l'app officielle Arlo vous n'avez que 3 modes possibles *Activer en absence*, *Activer en présence* et *Veille* alors la prochaine beta devrait vous être utile.
 
 # Stable
 

@@ -8,6 +8,7 @@ pluginId: kroomba
 # Beta
 
 - Ajout des commandes **Activer sécurité enfant** et **Désactiver sécurité enfant**
+- Fix mineur d'une erreur lors de la déconnexion du démon
 
 # Stable
 

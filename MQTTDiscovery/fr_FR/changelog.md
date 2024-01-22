@@ -12,6 +12,7 @@ pluginId: MQTTDiscovery
 - Suppression du bouton "Dupliquer" un équipement qui n'avait pas de raison d'exister
 - Ajout d'un bouton pour supprimer les appareils inconnus de la liste des appareils découverts
 - Prise en charge du type *music_player*
+- Amélioration: commande info dont l'unité est en `%` auront leur valeur minimum et maximum configurée à 0 et 100 par défaut
 
 # Stable
 

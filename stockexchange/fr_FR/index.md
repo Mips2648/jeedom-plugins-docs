@@ -34,6 +34,11 @@ Vous devez ensuite choisir le type d'informations souhaitée:
 
 - Cotation boursière: le cours d'une action ou d'un indice (selon le service sélectionné)
 - Taux de change entre 2 devises (y compris crypto-monnaie)
+- Matières premières
+- Crypto Currency
+
+> **Attention**
+> Sauvegardez la configuration, y compris la clé API avant de continuer. Une clé API correcte sera nécessaire pour terminer la configuration, notamment la recherche des symboles.
 
 ## Cotation boursière & indice boursier
 
@@ -49,10 +54,15 @@ Le plugin offre une fonction de recherche dynamique, commencez simplement à tap
 
 ![Configuration devise](../images/config_currency.png "Configuration devise")
 
-## Matière première
+## Matières premières
 
 Pour ce type d'information, vous devez renseigner le symbole de la matière première.
 Le plugin offre une fonction de recherche dynamique, commencez simplement à taper le nom d'une matière première (minimum 3 caractères) ou le symbole voulu et une liste de possibilités sera proposée. Vous n'avez plus qu'à choisir parmi celles-ci.
+
+## Crypto Currency
+
+Pour ce type d'information, vous devez renseigner le symbole de la crypto-currency voulue et la devise de destination.
+Le plugin offre une fonction de recherche dynamique, commencez simplement à taper le nom d'une crypto-currency (minimum 3 caractères) ou le symbole voulu et une liste de possibilités sera proposée. Vous n'avez plus qu'à choisir parmi celles-ci.
 
 # Les commandes disponibles
 
@@ -74,12 +84,21 @@ Vous trouverez ci-dessous un aperçu des commandes les plus importantes disponib
 - **Offre**: le prix de l'offre
 - **Demande**: le prix de la demande
 
-## Matière première
+## Matières premières
 
 - **Prix**
 - **Devise**
 - **Unité**
 - **Date**
+
+## Crypto Currency
+
+- **Prix**
+- **Volume**
+- **Volume change** sur 24h
+- **Percent change** sur 1h, 24h, 7-30-60-90 jours
+- **Capitalisation de marché**
+- **Capitalisation Marché entièrement diluée**
 
 # Changelog
 

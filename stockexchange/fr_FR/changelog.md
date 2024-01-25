@@ -7,9 +7,13 @@ pluginId: stockexchange
 
 # Beta
 
-- Ajout du service "coinmarketcap"
+n/a
 
 # Stable
+
+## 2024-01-26
+
+- Ajout du service "coinmarketcap"
 
 ## 2023-05-20
 

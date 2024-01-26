@@ -10,6 +10,7 @@ pluginId: modbus2mqtt
 - Ajout du support des entiers signés et non-signés sur 32bits & 64 bits
 - Ajout d'une nouvelle option pour inverser les mots si nécessaire (pour les nombres sur 32bits & 64 bits)
 - Amélioration technique sur le démon: passage en full asyncio
+- Modification du script d'installation des dépendances pour la compatibilité Debian 12
 
 # Stable
 

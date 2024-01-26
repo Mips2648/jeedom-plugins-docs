@@ -13,7 +13,7 @@ n/a
 
 ## 2024-01-26
 
-- Ajout du service "coinmarketcap"
+- Ajout du service "coinmarketcap" pour la gestion des crypto-currencies
 
 ## 2023-05-20
 

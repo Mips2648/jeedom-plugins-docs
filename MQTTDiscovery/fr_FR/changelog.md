@@ -11,8 +11,9 @@ pluginId: MQTTDiscovery
 - Prise en charge du type *device_automation*
 - Suppression du bouton "Dupliquer" un équipement qui n'avait pas de raison d'exister
 - Ajout d'un bouton pour supprimer les appareils inconnus de la liste des appareils découverts
-- Prise en charge du type *music_player*
+- Prise en charge du type *music_player* (pour le support de la passerelle sonos2mqtt)
 - Amélioration: commande info dont l'unité est en `%` auront leur valeur minimum et maximum configurée à 0 et 100 par défaut
+- Fix sur la découverte d'un composant *Lock* lorsque celui-ci n'a pas de nom défini
 
 # Stable
 

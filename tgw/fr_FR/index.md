@@ -86,6 +86,21 @@ Le service sera configuré pour un démarrage automatique à chaque reboot du sy
 
 En cas de besoin, un dernier bouton permet de (Re)Démarrer le service, ce bouton a la même fonction que la commande **Redémarrer** décrite ci-dessous.
 
+## Paramètres optionnels
+
+Dans la config de l'équipement vous trouverez plusieurs paramètres optionnels qui permettent de modifier les paramètres de *Theengs gateway*. La plupart sont relativement évident à comprendre et donc ne demandent pas d'explication particulière mais si besoin n'hésitez pas à consulter la [documentation de Theengs gateway](https://gateway.theengs.io/use/use.html) ou [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+
+### Configuration du décodage des adresses MAC privées/aléatoires
+
+Cette configuration permet de décoder une adresse MAC privée aléatoire vers l'adresse MAC réelle et permet donc de faire de la détection de présence du dispositif.
+
+Pour cela, vous devez entrer l'adresse MAC publique et, en séparant par un espace, la "clé de résolution d'identité" (IRK - Identity Resolving Key) tel que vous pouvez le voir sur cet exemple:
+![MAC_IRK](../images/mac.png)
+
+Il est possible d'effectuer plusieurs configurations, une par ligne.
+
+Pour savoir comment obtenir cette IRK pour les appareils Apple, veuillez consulter [cette documentation](https://gateway.theengs.io/use/use.html#getting-identity-resolving-key-irk-for-apple-watch-iphone-and-ipad).
+
 # Les commandes
 
 Chaque antenne dispose de 3 commandes:
@@ -94,7 +109,7 @@ Chaque antenne dispose de 3 commandes:
 - **Redémarrer** action permettant de (re)démarrer l'antenne si nécessaire
 - **Stop** action permettant d'arrêter l'antenne si nécessaire
 
-# Comment créer un utilisateur sous Debian et lui donner les droits sudo
+# Annexe: comment créer un utilisateur sous Debian et lui donner les droits sudo
 
 Les étapes suivantes décrivent comment créer un utilisateur sous Debian (qui pourra être dédié au plugin), comment lui donner les droits *sudo* et lui permettre d'exécuter `sudo` sans devoir confirmer son mot de passe. Vous ne devez pas nécessairement suivre ces étapes si vous savez comment le faire ou si vous avez déjà un utilisateur correctement configuré.
 

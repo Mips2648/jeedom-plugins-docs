@@ -11,6 +11,7 @@ pluginId: tgw
 - Ajout de la dernière version disponible
 - Ajout d'un bouton pour mettre à jour l'antenne si dernière version > version installée
 - Ajout des paramètres optionnels: *Durée du scan* & *Délai entre 2 scans*
+- Ajout du paramètre optionnel pour le décodage des adresses MAC privées/aléatoires (voir documentation)
 
 # Stable
 

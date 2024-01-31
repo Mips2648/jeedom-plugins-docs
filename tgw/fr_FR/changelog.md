@@ -7,8 +7,8 @@ pluginId: tgw
 
 # Beta
 
-- Ajout du numéro de version installée dans la page de configuration de l'équipement
-- Ajout de la dernière version disponible
+- Ajout du numéro de version installée et de la dernière version disponible dans la page de configuration de l'équipement
+- Ajout d'un message si une nouvelle version est disponible
 - Ajout d'un bouton pour mettre à jour l'antenne si dernière version > version installée
 - Ajout des paramètres optionnels: *Durée du scan* & *Délai entre 2 scans*
 - Ajout du paramètre optionnel pour le décodage des adresses MAC privées/aléatoires (voir documentation)

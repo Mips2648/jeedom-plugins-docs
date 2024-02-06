@@ -90,11 +90,11 @@ En cas de besoin, un dernier bouton permet de (Re)Démarrer le service, ce bouto
 
 Dans la config de l'équipement vous trouverez plusieurs paramètres optionnels qui permettent de modifier les paramètres de *Theengs gateway*. La plupart sont relativement évident à comprendre et donc ne demandent pas d'explication particulière mais si besoin n'hésitez pas à consulter la [documentation de Theengs gateway](https://gateway.theengs.io/use/use.html) ou [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-### Configuration du décodage des adresses MAC privées/aléatoires
+### Configuration du décodage des adresses MAC aléatoires
 
-Cette configuration permet de décoder une adresse MAC privée aléatoire vers l'adresse MAC réelle et permet donc de faire de la détection de présence du dispositif.
+Cette configuration permet de décoder une adresse MAC aléatoire vers l'adresse MAC réelle et permet donc de faire de la détection de présence du dispositif.
 
-Pour cela, vous devez entrer l'adresse MAC publique et, en séparant par un espace, la "clé de résolution d'identité" (IRK - Identity Resolving Key) tel que vous pouvez le voir sur cet exemple:
+Pour cela, vous devez entrer l'adresse MAC réelle et, en séparant par un espace, la "clé de résolution d'identité" (IRK - Identity Resolving Key) tel que vous pouvez le voir sur cet exemple:
 ![MAC_IRK](../images/mac.png)
 
 Il est possible d'effectuer plusieurs configurations, une par ligne.

@@ -7,7 +7,7 @@ pluginId: tgw
 
 # Beta
 
-n/a
+- Fix: envoie le message d'antenne hors ligne uniquement si l'équipement est activé
 
 # Stable
 

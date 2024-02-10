@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Amélioration: distinction entre les 2 modèles de *Smart Sensor*: l'image & la liste des commandes créés sont adaptées en fonction du modèle.
 
 # Stable
 

@@ -7,8 +7,6 @@ pluginId: worxLandroidS
 
 # Beta
 
-Il est nécessaire de relancer l'installation des dépendances après l'installation de cette mise à jour même si elles sont déjà *OK*.
-
 - Nouvelle version des dépendances (paho-mqtt 2.0) et adaptation du démon en conséquence
 
 # Stable

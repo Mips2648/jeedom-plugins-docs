@@ -18,6 +18,7 @@ pluginId: MQTTDiscovery
 - Suppression du bouton "Dupliquer" un équipement qui n'avait pas de raison d'exister
 - Fix sur la découverte d'un composant *Lock* lorsque celui-ci n'a pas de nom défini
 - Fix action sur *cover* sur certain équipement
+- Nouvelle version des dépendances (paho-mqtt 2.0) et adaptation du démon en conséquence
 
 # Stable
 

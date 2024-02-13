@@ -7,10 +7,14 @@ pluginId: tgw
 
 # Beta
 
-- Fix: envoie le message d'antenne hors ligne uniquement si l'équipement est activé
-- Ajout du paramètre optionnel pour activer la publication des données avancées
+n/a
 
 # Stable
+
+## 2024-02-14
+
+- Fix: envoie le message d'antenne hors ligne uniquement si l'équipement est activé
+- Ajout du paramètre optionnel pour activer la publication des données avancées
 
 ## 2024-02-04
 

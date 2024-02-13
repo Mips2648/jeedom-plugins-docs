@@ -7,9 +7,13 @@ pluginId: worxLandroidS
 
 # Beta
 
-- Nouvelle version des dépendances (paho-mqtt 2.0) et adaptation du démon en conséquence
+n/a
 
 # Stable
+
+## 2024-02-14
+
+- Nouvelle version des dépendances (paho-mqtt 2.0) et adaptation du démon en conséquence
 
 ## 2023-12-21
 

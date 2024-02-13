@@ -7,6 +7,12 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-02-14
+
 - Prise en charge du type *select* (commande action liste)
 - Prise en charge du type *device_automation*
 - Prise en charge du type *music_player* (pour le support de la passerelle sonos2mqtt)
@@ -16,11 +22,9 @@ pluginId: MQTTDiscovery
 - Ajout d'un bouton pour purger tous les appareils découverts de la liste ainsi que sur le broker MQTT (pas les équipements créés bien entendu)
 - Ajout d'un bouton pour supprimer les appareils inconnus de la liste
 - Suppression du bouton "Dupliquer" un équipement qui n'avait pas de raison d'exister
-- Fix sur la découverte d'un composant *Lock* lorsque celui-ci n'a pas de nom défini
-- Fix action sur *cover* sur certain équipement
 - Nouvelle version des dépendances (paho-mqtt 2.0) et adaptation du démon en conséquence
-
-# Stable
+- Fix sur la découverte d'un composant *Lock* lorsque celui-ci n'a pas de nom défini
+- Fix action sur *cover* sur certains équipements
 
 ## 2023-12-09
 

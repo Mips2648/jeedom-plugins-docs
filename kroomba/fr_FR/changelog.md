@@ -7,11 +7,15 @@ pluginId: kroomba
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-02-16
+
 - Ajout des commandes **Activer sécurité enfant** et **Désactiver sécurité enfant**
 - Fix mineur d'une erreur lors de la déconnexion du démon
 - Nouvelle version des dépendances (paho-mqtt 2.0) et adaptation du démon en conséquence
-
-# Stable
 
 ## 2023-08-30
 

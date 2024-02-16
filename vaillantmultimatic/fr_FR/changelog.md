@@ -7,7 +7,12 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-n/a
+> **Attention**
+>
+> Cette version beta n'est pas compatible avec Debian 10 (Buster). Il faut être au minimum sous Debian 11 (Bullseye) / Python 3.9
+> Si vous êtes encore sous Debian 10, installez la version stable.
+
+- Ajout compatibilité avec sensoApp & myVaillant
 
 # Stable
 

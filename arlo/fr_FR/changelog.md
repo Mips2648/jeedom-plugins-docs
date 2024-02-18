@@ -15,6 +15,10 @@ Au contraire, si vous avez acquis récemment des caméras Arlo et que le changem
 
 Voir également [ce lien](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
 
+## 2024-02-19
+
+- Optimisation de la taille des backups
+
 ## 2024-02-06
 
 - Fix sur l'état des Pro 3 Floodlight
@@ -26,7 +30,6 @@ Voir également [ce lien](https://community.jeedom.com/t/nouvelle-version-pour-l
 ## 2024-01-27
 
 - Modifications importantes sur le démon pour compatibilité avec l'interface "Arlo V4". Voir [ce message sur community](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
-
 
 # Stable
 

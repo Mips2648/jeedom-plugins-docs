@@ -13,6 +13,7 @@ pluginId: vaillantmultimatic
 > Si vous êtes encore sous Debian 10, installez la version stable.
 
 - Ajout compatibilité avec sensoApp & myVaillant
+- Optimisation de la taille des backups
 
 # Stable
 

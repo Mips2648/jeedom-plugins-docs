@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-n/a
+- Optimisation de la taille des backups
 
 # Stable
 

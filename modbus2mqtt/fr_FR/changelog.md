@@ -7,7 +7,7 @@ pluginId: modbus2mqtt
 
 # Beta
 
-n/a
+- Optimisation de la taille des backups
 
 # Stable
 

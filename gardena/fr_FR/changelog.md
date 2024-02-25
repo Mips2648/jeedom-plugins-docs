@@ -7,10 +7,14 @@ pluginId: gardena
 
 # Beta
 
-- Amélioration: distinction entre les 2 modèles de *Smart Sensor*: l'image & la liste des commandes créés sont adaptées en fonction du modèle.
-- Optimisation de la taille des backups
+n/a
 
 # Stable
+
+## 2024-02-26
+
+- Amélioration: distinction entre les 2 modèles de *Smart Sensor*: l'image & la liste des commandes créés sont adaptées en fonction du modèle.
+- Optimisation de la taille des backups
 
 ## 2023-10-02
 

@@ -7,9 +7,13 @@ pluginId: kroomba
 
 # Beta
 
-- Optimisation de la taille des backups
+n/a
 
 # Stable
+
+## 2024-02-26
+
+- Optimisation de la taille des backups
 
 ## 2024-02-16
 

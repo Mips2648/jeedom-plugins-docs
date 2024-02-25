@@ -7,10 +7,14 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-- Optimisation de la taille des backups
-- Ajout de l'image de quelques modules zigbee
+n/a
 
 # Stable
+
+## 2024-02-25
+
+- Optimisation de la taille des backups
+- Ajout de l'image de quelques modules zigbee
 
 ## 2024-02-14
 

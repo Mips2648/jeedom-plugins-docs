@@ -10,6 +10,7 @@ pluginId: SmartMeterP1
 ## 2024-02-26
 
 - Ajout des puissances prélevées et injectées par phase
+- Permet la modification des sous-types des commandes pour permettre de configurer une "formule de calcul" (nécessite core >=4.4)
 
 ## 2024-02-01
 

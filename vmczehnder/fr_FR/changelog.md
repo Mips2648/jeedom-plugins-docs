@@ -7,11 +7,13 @@ pluginId: vmczehnder
 
 # Beta
 
-## 2023-10-23
-
-- Mise à jour de dépendances
+n/a
 
 # Stable
+
+## 2024-02-27
+
+- Mise à jour de dépendances
 
 ## 2023-10-03
 

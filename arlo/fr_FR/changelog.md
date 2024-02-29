@@ -15,6 +15,10 @@ Au contraire, si vous avez acquis récemment des caméras Arlo et que le changem
 
 Voir également [ce lien](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
 
+## 2024-02-30
+
+- Ajout du support de la Arlo Essential XL
+
 ## 2024-02-23
 
 - Restauration de la possibilité d'effectuer des enregistrements cloud

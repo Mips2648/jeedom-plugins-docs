@@ -10,7 +10,7 @@ pluginId: arlo
 Plugin permettant le contrôle des équipements de la gamme Arlo comme les caméras, la station de base et la sirène intégrée.
 Il est possible de contrôler le mode, l'activation et désactivation des caméras, visualiser le flux live des caméras, déclencher des captures et des enregistrements vidéos, déclencher la sirène...
 
-Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro, Pro2, Pro3, Pro4, Ultra, Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell et Video Doorbell...
+Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont supportés par le plugin: Arlo, Arlo Pro (toutes les versions), Ultra (toutes les versions), Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo security bridge & light, Arlo Doorbell et Video Doorbell...
 
 Voici un aperçu des possibilités du plugin:
 
@@ -120,50 +120,47 @@ Si vous rajoutez un nouvel équipement ou si vous modifiez les modes via l'appli
 
 Pour la plupart des équipements il n'y a pas de configuration spécifique, le nom de l'équipement sera celui défini dans le système Arlo, mais pensez à assigner le parent, la catégorie et à activer celui-ci.
 
-Pour les équipements de type caméra, il est possible de configurer une commande action du plugin Mail ou Telegram. Si celle-ci est configurée, le plugin enverra un message, incluant la capture, dès qu'une nouvelle capture est reçue.
+Pour les équipements de type caméra, il est possible de configurer une commande action/message (beaucoup de plugins compatibles). Si celle-ci est configurée, le plugin enverra un message, incluant la capture, dès qu'une nouvelle capture est reçue.
 
-# Les équipements compatibles
+# Les équipements
+
+> **Important**
+>
+> Il n'est pas recommandé d'utiliser des équipements sur batterie (sauf si recharge régulière par exemple via panneau solaire si ensoleillement suffisant) et connectés directement au wifi si aucune base n'est présente dans le système car leur batterie n'offre pas suffisamment d'autonomie pour remonter les événements à Jeedom. Si une base existe alors aucun problème même si certains équipements sont connectés au wifi directement.
 
 Il est possible que certaines commandes spécifiques à certains modèles ne soient pas (encore) disponibles, dans ce cas veuillez me contacter via le forum pour plus d'information.
 
-## La station de base pour Arlo pro, pro2, pro3 & ultra
-
-La station de base dispose d'une commande action par mode défini: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
-
-Le widget est celui par défaut de Jeedom:
-
-![Station de base](../images/widget_basestation.png "Station de base")
-
 > **Tip**
 >
-> En cas d'ajout d'une station de base, il est nécessaire de redémarrer le démon pour que les événements liés à cette station soient correctement reçus.
+> En cas d'ajout d'un équipement (hub, caméra, sonnette...), il est nécessaire de redémarrer le démon pour le bon fonctionnement sous Jeedom.
 
-## La sirène (intégrée à la station de base)
+## Changement de mode
 
-Cet équipement possède les commandes suivantes permettant le contrôle de la sirène:
+Selon votre installation et la configuration de votre compte sur Arlo vous avez la possibilité de choisir le mode de fonctionnement de vos équipements qui contrôle si ceux-ci vont détecter le son et/ou les mouvements ou s'ils sont désactivés.
+
+Il semble que pour les comptes créés jusque fin 2023, ceci est possible sur chaque équipements de type base/hub, c'est-à-dire: les bases, les caméras ou sonnettes autonomes comme Arlo Go, Arlo Q, Arlo Baby, Essential...
+Chacun de ces équipements disposent une commande action par mode défini: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
+
+Certains utilisateurs, à priori ceux ayant créés leur compte à partir de fin 2023, auront un équipement supplémentaire de type "emplacement" que vous avez également configuré dans votre app Arlo.
+Comme pour les équipements ci-dessus, une commande action par mode existant sera disponible. Si vous êtes dans ce cas, il ne sert à rien de modifier les modes sur les équipements, seul le mode de cet équipement "emplacement" est pris en compte et c'est donc celui-ci qui doit être utilisé.
+
+## Sirène
+
+Les équipements disposant d'une sirène intégrée (Hub, Essential, Pro, Ultra...) disposent des commandes suivantes permettant le contrôle de celle-ci:
 
 - **Etat Sirène**: Indique si la sirène est active
 - **Sirène On**: Pour déclencher manuellement la sirène
 - **Sirène Off**: Pour couper la sirène
 
-Le widget est également celui par défaut:
+## Lampe
 
-![Sirène](../images/widget_siren.png "Sirène")
+Les équipements disposant d'un éclairage intégré (Essential, Pro, Floodlight, Ultra...) disposent des commandes suivantes pour contrôler l'état de l'éclairage:
+
+- **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte
+- **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)
+- **Lampe Off**: Pour éteindre manuellement la lampe
 
 ## Les caméras
-
-Les modèles suivant sont actuellement reconnu par le plugin:
-
-- Baby
-- pro, pro2, pro3, ultra
-- Floodlight
-- Essential
-- Go
-- Arlo Q
-
-> **Tip**
->
-> Dans la majorité des cas lors d'un ajout d'une caméra ou d'un autre équipement Arlo, il est nécessaire de redémarrer le démon pour que les différents états et événements liés soient correctement remontés dans Jeedom.
 
 Les commandes suivantes sont disponibles sur tous les modèles:
 
@@ -203,13 +200,7 @@ Et en dessous un bouton pour prendre une capture instantanée et démarrer l'enr
 
 ![Caméra](../images/widget_camera.png "Caméra")
 
-## Arlo Q
-
-En plus des commandes communes à toutes les caméras, les Arlo Q disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
-
 ## Arlo Baby
-
-En plus des commandes communes à toutes les caméras, les Arlo Baby disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
 
 L'intégration de la Arlo Baby est complète, il est possible de gérer entièrement la caméra et toutes ses fonctions depuis le plugin: la veilleuse, la berceuse et de récupérer les informations des capteurs de qualité de l'air.
 
@@ -237,60 +228,15 @@ Voici un aperçu des commandes disponibles:
 
 ## Arlo Go
 
-En plus des commandes communes à toutes les caméras, les caméras Arlo Go disposent d'une commande action par mode défini comme pour la station de base: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif.
-
-De plus, les commandes suivantes sont également disponibles:
+Sur la Arlo GO, les commandes suivantes sont également disponibles:
 
 - **Nom du réseau**: Donne le nom du réseau mobile
 - **IP**: l'adresse IP actuelle
 - **Réseau actif**: indique le réseau actif actuel (wifi ou mobile)
 
-## Arlo Essential
-
-En plus des commandes communes à toutes les caméras, les caméras Arlo Essential disposent des commandes suivantes pour contrôler l'état de l'éclairage et de la sirène intégré:
-
-- **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte
-- **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)
-- **Lampe Off**: Pour éteindre manuellement la lampe
-- **Etat Sirène**: Indique si la sirène est active
-- **Sirène On**: Pour déclencher manuellement la sirène
-- **Sirène Off**: Pour couper la sirène
-
-De plus, cette caméra dispose des commandes suivantes pour activer ou désactiver la gestion des évènements, ce qui permet d'avoir les informations des détections de mouvements en temps réels.
-En effet, sur ce modèle, la remontée des infos en temps réel est désactivée par défaut car cela draine la batterie de la caméra trop rapidement mais avec ces commandes vous êtes libres de gérer cette fonctionnalité selon vos propres critères.
-
-- **Activer gestion des événements**
-- **Désactiver gestion des événements**
-- **Etat gestion des événements**
-
-## Arlo Essential Indoor
-
-En plus des commandes communes à toutes les caméras, les caméras Arlo Essential Indoor disposent des commandes suivantes pour contrôler l'état de la sirène intégrée:
-
-- **Etat Sirène**: Indique si la sirène est active
-- **Sirène On**: Pour déclencher manuellement la sirène
-- **Sirène Off**: Pour couper la sirène
-
-## Arlo Pro3, Pro3 Floodlight, Pro4 & Ultra
-
-En plus des commandes communes à toutes les caméras, les caméras Arlo Pro3, Pro3 Floodlight, Pro4 et Ultra disposent des commandes suivantes pour contrôler l'état de la sirène et de l'éclairage intégrés:
-
-- **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte
-- **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)
-- **Lampe Off**: Pour éteindre manuellement la lampe
-- **Etat Sirène**: Indique si la sirène est active
-- **Sirène On**: Pour déclencher manuellement la sirène
-- **Sirène Off**: Pour couper la sirène
-
 ## Arlo security bridge & light
 
-Comme pour la station de base (cf. ci-dessus), l'équipement bridge dispose d'une commande action par mode défini: activé, désactivé et chaque mode personnalisé ainsi que d'une commande info indiquant le mode actif mais également une command info "IP" et une "Signal".
-
-> **Tip**
->
-> En cas d'ajout d'un Arlo Bridge, il est nécessaire de redémarrer le démon pour que les événements liés au Bridge (et à toutes les lights connectées à celui-ci) soient correctement reçus.
-
-L'équipement "light" dispose lui des commandes suivantes:
+L'équipement "light" dispose des commandes suivantes:
 
 - **Etat lampe**: Indique si la lampe est actuellement allumée ou éteinte
 - **Lampe On**: Pour allumer manuellement la lampe (pendant le délai par défaut configurée dans l'app Arlo)
@@ -327,20 +273,6 @@ En plus des commandes ci-dessus, la Video Doorbell dispose de quelques commandes
 - **Arrêter enregistrement**: permet de d'arrêter un enregistrement local
 - **Démarrer enregistrement cloud**: permet de démarrer l'enregistrement dans le cloud Arlo
 - **Arrêter enregistrement cloud**: permet de stopper l'enregistrement dans le cloud Arlo
-
-### Arlo Video doorbell wire-free
-
-Je déconseille l'utilisation de cette sonnette de la gamme Arlo Essentials avec Jeedom sans l'avoir connectée à une base Arlo. En effet, malgré qu'elle soit relié à une source de courant pour se recharger la batterie ne tient pas la charge si on veut l'utiliser "normalement".
-
-Pour cette raison la gestion des événements est désactivées sur cette sonnette lorsqu'elle est le seul équipement dont vous disposez, les informations ne remonteront donc pas automatiquement sous Jeedom, c'est-à-dire principalement pas de détection de mouvement et pas d'information si quelqu'un sonne.
-
-Par contre, cette sonnette dispose d'une commande **Rafraichir** pour actualiser "manuellement" son état, vous êtes donc libre d'appeler cette commande lorsque vous en avez besoin ou régulièrement via scénario... A vous de trouver le compromis entre votre utilisation et l'autonomie de la batterie.
-
-Toutes les commandes actions fonctionneront normalement mais vous pourrez constater un petit délai supplémentaire de maximum 10s sur cette sonnette par rapport à un autre équipement. En effet, avant d'effectuer l'action, le plugin devra rétablir la connexion qui n'est pas maintenue en permanence pour économiser la batterie.
-
-Après avoir effectué l'action, le plugin restera connecté une trentaine de secondes à la sonnette avant de couper le lien, il se peut donc que pendant ce temps des informations remontent vers Jeedom.
-
-A chaque démarrage du démon le plugin rafraîchira également l'état une seule fois.
 
 # Visualisation du flux vidéo des caméras - live streaming
 

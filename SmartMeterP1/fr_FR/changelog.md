@@ -7,6 +7,10 @@ pluginId: SmartMeterP1
 
 # Beta
 
+## 2024-03-01
+
+- Suppression du cron du plugin lors de la désinstallation
+
 ## 2024-02-26
 
 - Ajout des puissances prélevées et injectées par phase

@@ -18,6 +18,7 @@ Voir également [ce lien](https://community.jeedom.com/t/nouvelle-version-pour-l
 ## 2024-03-01
 
 - Ajout du support de la Arlo Essential XL
+- Réduction de la taille du plugin
 
 ## 2024-02-23
 

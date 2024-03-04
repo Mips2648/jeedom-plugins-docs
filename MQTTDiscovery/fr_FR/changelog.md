@@ -7,7 +7,8 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-n/a
+- Ajout d'image
+- Prise en compte du dernier nom du module lors de la découverte (pratique si le nom est changé après l'inclusion par exemple)
 
 # Stable
 

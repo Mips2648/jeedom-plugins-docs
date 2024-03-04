@@ -7,7 +7,7 @@ pluginId: clicksend
 
 # Description
 
-Plugin pour intégrer la plateforme ClickSend
+Plugin pour intégrer la plateforme [ClickSend](https://www.clicksend.com) qui permet l'envoi de message texte (SMS) ou vocaux (TTS)
 
 # Installation
 
@@ -19,9 +19,12 @@ Il n'y a aucune configuration à effectuer ici.
 
 # Configuration des équipements
 
-Après avoir créé un nouvel équipement, les options habituelles sont disponibles.
+Commencez par créer une compte [ClickSend](https://www.clicksend.com) et assurez-vous de disposer de crédit sur celui-ci.
 
-Vous devrez également configurer le nom d'utilisateur et la clé API de celui-ci.
+Ensuite, dans la section Developers > API Credentials vous devez ajouter un nouveau "subaacount", choisir un nom d'utilisateur et générer une api key.
+
+Sous Jeedom, après avoir créé un nouvel équipement, les options habituelles sont disponibles.
+Vous devrez également configurer le nom d'utilisateur et la clé API de votre compte clicksend.
 
 ## Commandes
 

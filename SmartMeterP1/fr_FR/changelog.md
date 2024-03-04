@@ -7,6 +7,10 @@ pluginId: SmartMeterP1
 
 # Beta
 
+## 2024-03-03
+
+- Ajout d'une commande **Statut** donnant l'état de la connexion avec le module
+
 ## 2024-03-01
 
 - Suppression du cron du plugin lors de la désinstallation

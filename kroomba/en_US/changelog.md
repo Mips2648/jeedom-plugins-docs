@@ -7,9 +7,19 @@ pluginId: kroomba
 
 # Beta
 
-- Add of **Activate child safety** and **Deactivate child safety** commands
+n/a
 
 # Stable
+
+## 2024-02-26
+
+- Optimizing the size of backups
+
+## 2024-02-16
+
+- Add of **Activate child safety** and **Deactivate child safety** commands
+- Minor fix of an error on daemon disconnection
+- New version of the dependencies (paho-mqtt 2.0) and adaptation of the daemon accordingly
 
 ## 2023-08-30
 

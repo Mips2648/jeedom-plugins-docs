@@ -35,9 +35,10 @@ This list is far from exhaustive, it would be impossible as there are so many of
 
 - [MG iSMART](https://github.com/SAIC-iSmart-API/saic-python-mqtt-gateway), see [tutorial on community](https://community.jeedom.com/t/tuto-integrer-sa-mg-dans-jeedom/118686)
 - [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT), see [explanation on community](https://community.jeedom.com/t/myfox-et-jedom-4-4/111828/14)
-- [Nuki Smart Lock 3.0 Pro](https://support.nuki.io/hc/en-us/articles/12947926779409-MQTT-support)
-- [Open MQTT Gateway](https://docs.openmqttgateway.com/)
-- [Theengs Gateway](https://gateway.theengs.io/), see [tutorial on community](https://community.jeedom.com/t/migration-de-blea-vers-mqttdiscovery-et-tgw/115358)
+- [Nuki Smart Lock Pro (3 & 4)](https://support.nuki.io/hc/fr/articles/12947926779409-MQTT-support)
+- [Open MQTT Gateway](https://docs.openmqttgateway.com/): Bluetooth gateway on ESP
+- [Sonos2mqtt](https://sonos2mqtt.svrooij.io/), [see on community](https://community.jeedom.com/t/sonos2mqtt/119216)
+- [Theengs Gateway](https://gateway.theengs.io/): Bluetooth gateway under Debian, see this [tutorial on community](https://community.jeedom.com/t/migration-de-blea-vers-mqttdiscovery-et-tgw/115358)
 - [tydom2mqtt](https://fmartinou.github.io/tydom2mqtt/#/introduction/)
 - [zigbee2mqtt](https://www.zigbee2mqtt.io/)
 - [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)

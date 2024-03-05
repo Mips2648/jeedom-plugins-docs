@@ -25,7 +25,7 @@ pluginId: MQTTDiscovery
 - Prise en charge du type *music_player* (pour le support de la passerelle sonos2mqtt)
 - Ajout des commandes **Ouvrir**, **Fermer** et **Stop** sur le type *cover* (volet, store, rideau...)
 - Amélioration: commande info dont l'unité est en `%` auront leur valeur minimum et maximum configurée à 0 et 100 par défaut
-- Ajout de l'image pour les modules zigbee *Sonoff occupancy sensor (SNZB-06P)* et *Xiaomi Aqara curtain driver E1 (ZNCLBL01LM)*
+- Ajout de l'image pour les modules zigbee *Sonoff occupancy sensor (SNZB-06P)* et *Aqara curtain driver E1 (ZNCLBL01LM)*
 - Ajout d'un bouton pour purger tous les appareils découverts de la liste ainsi que sur le broker MQTT (pas les équipements créés bien entendu)
 - Ajout d'un bouton pour supprimer les appareils inconnus de la liste
 - Suppression du bouton "Dupliquer" un équipement qui n'avait pas de raison d'exister

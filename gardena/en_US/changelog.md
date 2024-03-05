@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2024-02-26
+
+- Improvement: distinction between the 2 models of *Smart Sensor*: the image & the list of commands created are adapted according to the model.
+- Optimizing the size of backups
+
 ## 2023-10-02
 
 - Descriptions for new error codes for Husqvarna robots have been added

@@ -7,9 +7,13 @@ pluginId: stockexchange
 
 # Beta
 
-- Add "coinmarketcap" service
+n/a
 
 # Stable
+
+## 2024-01-26
+
+- Add of the “coinmarketcap” service for managing cryptocurrencies
 
 ## 2023-05-20
 

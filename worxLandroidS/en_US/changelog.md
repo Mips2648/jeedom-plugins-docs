@@ -7,9 +7,13 @@ pluginId: worxLandroidS
 
 # Beta
 
-n/a
+- Optimizing the size of backups
 
 # Stable
+
+## 2024-02-14
+
+- New version of the dependencies (paho-mqtt 2.0) and adaptation of the daemon accordingly
 
 ## 2023-12-21
 

@@ -34,6 +34,11 @@ You must then choose the type of information you want:
 
 - Stock quotation; the price of an action or index (depending the selected service)
 - Exchange rate between 2 currencies (including cryptocurrency)
+- Commodities
+- Crypto Currency
+
+> **Warning**
+> Save the configuration including the API key before continuing. A correct API key will be required to complete the setup, including searching for symbols.
 
 ## Stock quotation & index
 
@@ -49,10 +54,15 @@ The plugin offers a dynamic search function, just start typing the name of a cur
 
 ![Configuration devise](../images/config_currency.png "Configuration devise")
 
-## Commodity
+## Commodities
 
 For this type of information, you must enter the symbol of the commodity.
 The plugin offers a dynamic search function, just start typing the name of a commodity (minimum 3 characters) or the desired symbol and a list of possibilities will be proposed. You just have to choose from these.
+
+## Crypto Currency
+
+For this type of information, you must enter the desired cryptocurrency symbol and the destination currency.
+The plugin offers a dynamic search function, simply start typing the name of a cryptocurrency (minimum 3 characters) or the desired symbol and a list of possibilities will be proposed. All you have to do is choose from these.
 
 # Available commands
 
@@ -74,12 +84,21 @@ Below is an overview of the most important commands available by type of informa
 - **Bid**: the bid price
 - **Ask**: the ask price
 
-## Commodity
+## Commodities
 
 - **Prize**
 - **Currency**
 - **Unit**
 - **Date**
+
+## Crypto Currency
+
+- **Prize**
+- **Volume**
+- **Volume change** on 24h
+- **Percent change** on 1h, 24h, 7-30-60-90 days
+- **Market capitalization**
+- **Fully diluted market capitalization**
 
 # Changelog
 

@@ -7,11 +7,21 @@ pluginId: modbus2mqtt
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-02-26
+
+- Optimizing the size of backups
+
+## 2024-02-14
+
 - Add support for signed and unsigned integers on 32-bit & 64-bit
 - Add a new option to reverse words if necessary (for 32-bit & 64-bit numbers)
 - Technical improvement on the daemon: transition to full asyncio
-
-# Stable
+- Modifying the dependency installation script for Debian 12 compatibility
+- New version of the dependencies (paho-mqtt 2.0) and adaptation of the daemon accordingly
 
 ## 2023-08-24
 

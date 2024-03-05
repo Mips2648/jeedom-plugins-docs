@@ -7,7 +7,7 @@ pluginId: clicksend
 
 # Description
 
-Plugin to integrate the ClickSend platform
+Plugin to integrate the [ClickSend platform](https://www.clicksend.com) which allows the sending of text messages (SMS) or voice messages (TTS)
 
 # Installation
 
@@ -19,9 +19,12 @@ There is no additional configuration to do here.
 
 # Devices configuration
 
-After creating new device, the usual options are available.
+Start by creating a [ClickSend account](https://www.clicksend.com) and make sure you have credit on it.
 
-You will also need to configure the username and API key of the user.
+Then, in the Developers > API Credentials section you need to add a new “subaacount”, choose a username and generate an api key.
+
+After creation of a new device , the usual options are available.
+You will also need to configure your clicksend account username and API key.
 
 ## Commands
 

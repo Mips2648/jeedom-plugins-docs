@@ -9,6 +9,7 @@ pluginId: MQTTDiscovery
 
 - Ajout d'image
 - Prise en compte du dernier nom du module lors de la découverte (pratique si le nom est changé après l'inclusion par exemple)
+- Fix du type *update* pour les équipements zigbee (via zigbee2mqtt)
 
 # Stable
 

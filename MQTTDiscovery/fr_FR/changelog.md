@@ -9,7 +9,7 @@ pluginId: MQTTDiscovery
 
 - Amélioration: la création des commandes des équipements après ajout est immédiate, il n'est plus nécessaire de redémarrer le démon
 - Amélioration: prise en compte du dernier nom du module lors de la découverte (pratique si le nom est changé après l'inclusion par exemple)
-- Ajout d'images
+- Ajout de l’image de quelques modules zigbee
 - Fix du type *update* pour les équipements zigbee (via zigbee2mqtt)
 
 # Stable

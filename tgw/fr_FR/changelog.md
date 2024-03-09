@@ -7,7 +7,8 @@ pluginId: tgw
 
 # Beta
 
-n/a
+- Ajout d'un redémarrage automatique de l'antenne en option
+- Mise à jour de dépendances
 
 # Stable
 

@@ -7,7 +7,8 @@ pluginId: modbus2mqtt
 
 # Beta
 
-n/a
+- Ajout d'une nouvelle option pour choisir le mode d'écriture: simple (fonction 06) au multi (fonction 16)
+- Ajout d'une nouvelle option pour configurer l'adresse du terminal esclave
 
 # Stable
 

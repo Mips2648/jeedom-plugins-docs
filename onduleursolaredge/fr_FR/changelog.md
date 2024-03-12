@@ -7,7 +7,7 @@ pluginId: onduleursolaredge
 
 # Beta
 
-n/a
+- Meilleur validation des dates / commandes de lever & coucher du soleil
 
 # Stable
 

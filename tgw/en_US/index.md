@@ -88,7 +88,7 @@ If necessary, a final button allows you to (Re)Start the service, this button ha
 
 ## Optional parameters
 
-In the device configuration you will find several optional parameters that allow you to modify the parameters of *Theengs gateway*. Most of them are relatively easy to understand and therefore do not require any particular explanation but if necessary do not hesitate to consult the [Theengs gateway documentation](https://gateway.theengs.io/use/use.html) or [community]({{site.forum}}} /tag/plugin-{{page.pluginId}}).
+In the device configuration you will find several optional parameters that allow you to modify the parameters of *Theengs gateway*. Most of them are relatively easy to understand and therefore do not require any particular explanation but if necessary do not hesitate to consult the [Theengs gateway documentation](https://gateway.theengs.io/use/use.html) or [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 ### Configuring the decoding of random MAC addresses
 

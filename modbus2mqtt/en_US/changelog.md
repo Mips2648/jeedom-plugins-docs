@@ -11,11 +11,6 @@ n/a
 
 # Stable
 
-## 2024-03-16
-
-- Add new option to choose the writing mode: simple (function 06) or multi (function 16)
-- Add new option to configure the address of the slave terminal
-
 ## 2024-02-26
 
 - Optimizing the size of backups

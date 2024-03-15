@@ -7,7 +7,7 @@ pluginId: onduleursolaredge
 
 # Beta
 
-n/a
+- Better validation of sunrise & sunset dates
 
 # Stable
 

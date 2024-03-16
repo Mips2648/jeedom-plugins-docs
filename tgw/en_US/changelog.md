@@ -7,12 +7,23 @@ pluginId: tgw
 
 # Beta
 
-- Adding the installed version number to the device configuration page
-- Addition of the latest available version
-- Add a button to update the antenna if latest version > installed version
-- Add optional parameters: *Scan duration* & *Delay between 2 scans*
+- Add automatic antenna restart as an option
+- Update dependencies
 
 # Stable
+
+## 2024-02-14
+
+- Fix: send antenna offline notification only if the device is activated
+- Add optional setting to enable publication of advanced data
+
+## 2024-02-04
+
+- Add the installed version number and the latest available version in the device configuration page
+- Add a message if a new version is available
+- Add a button to update the antenna if latest version > installed version
+- Add optional parameters: *Scan duration* & *Delay between 2 scans*
+- Add optional parameter for decoding private/random MAC addresses (see documentation)
 
 ## 2023-12-16
 

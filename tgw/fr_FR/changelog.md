@@ -7,10 +7,12 @@ pluginId: tgw
 
 # Beta
 
-- Ajout d'un redémarrage automatique de l'antenne en option
-- Mise à jour de dépendances
+n/a
 
 # Stable
+
+- Ajout d'un redémarrage automatique de l'antenne en option
+- Mise à jour de dépendances
 
 ## 2024-02-14
 

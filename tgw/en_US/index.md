@@ -86,6 +86,21 @@ The service will be configured to start automatically each time the system is re
 
 If necessary, a final button allows you to (Re)Start the service, this button has the same function as the **Restart** command described below.
 
+## Optional parameters
+
+In the device configuration you will find several optional parameters that allow you to modify the parameters of *Theengs gateway*. Most of them are relatively easy to understand and therefore do not require any particular explanation but if necessary do not hesitate to consult the [Theengs gateway documentation](https://gateway.theengs.io/use/use.html) or [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+
+### Configuring the decoding of random MAC addresses
+
+This configuration makes it possible to decode a random MAC address to the real MAC address and therefore makes it possible to detect the presence of the device.
+
+To do this, you must enter the real MAC address and, separated by a space, the “Identity Resolving Key” (IRK) as you can see in this example:
+![MAC_IRK](.. /images/mac.png)
+
+It is possible to do several configurations, one per line.
+
+To find out how to get this IRK for Apple devices, please see [this documentation](https://gateway.theengs.io/use/use.html#getting-identity-resolving-key-irk-for-apple-watch-iphone-and-ipad).
+
 # Commands
 
 Each antenna has 3 commands:
@@ -94,7 +109,7 @@ Each antenna has 3 commands:
 - **Restart** action to (re)start the antenna if necessary
 - **Stop** action to stop the antenna if necessary
 
-# How to create a user under Debian and give him sudo permission
+# Annex: how to create a user under Debian and give it sudo permission
 
 The following steps describe how to create a user under Debian (who can be dedicated to the plugin), how to give him *sudo* permission and allow him to run `sudo` without having to confirm his password. You don't necessarily have to follow these steps if you know how to do it or if you already have a user set up properly.
 

@@ -15,6 +15,11 @@ Au contraire, si vous avez acquis récemment des caméras Arlo et que le changem
 
 Voir également [ce lien](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
 
+## 2024-03-18
+
+- Ajout du support de la Video Doorbell 2
+- Amélioration du support de la Arlo Essential XL
+
 ## 2024-03-01
 
 - Ajout du support de la Arlo Essential XL

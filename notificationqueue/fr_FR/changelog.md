@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-03-18
+
+- Mise à jour de dépendances
+
 ## 2023-10-02
 
 - Possibilité d'ajouter de multiple conditions d'envoi et pour chacune d'elles des commandes de notifications différentes. Cela permet d'envoyer vos notifications sur différents "canaux" en fonction de conditions que vous définissez.

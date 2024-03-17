@@ -7,9 +7,13 @@ pluginId: proxmox
 
 # Beta
 
-- Ajout d'une commande **Supprimer snapshot** sur VM et LXC
+n/a
 
 # Stable
+
+## 2024-03-18
+
+- Ajout d'une commande **Supprimer snapshot** sur VM et LXC
 
 ## 2023-05-20
 

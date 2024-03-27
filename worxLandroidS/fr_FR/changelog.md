@@ -7,12 +7,13 @@ pluginId: worxLandroidS
 
 # Beta
 
-- Optimisation de la taille des backups
+- Suppression de l'image "Pause" sur le widget lorsque la tondeuse est en pause
 
 # Stable
 
-## 2024-02-14
+## 2024-02-23
 
+- Optimisation de la taille des backups
 - Nouvelle version des dépendances (paho-mqtt 2.0) et adaptation du démon en conséquence
 
 ## 2023-12-21
@@ -34,8 +35,6 @@ pluginId: worxLandroidS
 
 ## 2023-08-31
 
-Passage en stable des changements en cours en beta depuis avril, voir ci-dessous pour tous les détails par date, mais voici un résumé:
-
 - Reprise du plugin par @Mips
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
 - Compatibilité Jeedom v4.4
@@ -47,33 +46,16 @@ Passage en stable des changements en cours en beta depuis avril, voir ci-dessous
   - Programmation manuelle
   - Auto-programmation (si supporté par votre modèle)
 - Ajout du support du modèle Landroid Vision
-
-## 2023-07-10
-
 - Ajout de la gestion du module *Off Limits*: état actuel, commandes activation & désactivation des Zones interdites et des Shortcut
 - Ajout de la gestion du module *Find My Landroid*: état actuel
-
-## 2023-07-06
-
 - Ajout de la gestion du module *ACS*: état actuel, commandes activation & désactivation
-
-## 2023-06-14
-
 - Ajout vérification & validation de la configuration du plugin
-
-## 2023-06-04
-
 - Ajout de la commande **Définir répartition des zones** de type action/message. Il faut passer le pourcentage des zones (par palier de 10%). Par exemple:
   - `100` ou `100,0,0,0` => tout sur la zone 1
   - `0,0,0,100` => tout sur la zone 4
   - `20,30,20,30` => 20% zone 1, 30% zone 2 …
-
-## 2023-05-17
-
 - Modification du comportement de la commande **Zone de travail**: à présent la configuration de la répartition entre les zones n'est plus modifiée mais l'ordre est modifiée pour que le prochain départ corresponde à la zone sélectionnée
 - Fix sur le widget: les commandes additionnelles ne s'affichaient pas
-
-## Avril 2023
 
 Voir les détails ici <https://community.jeedom.com/t/version-beta-avril-2023/105197>
 

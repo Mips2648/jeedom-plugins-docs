@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-03-28
+
+- Petite modification pour garder la compatibilité Debian 10 => Planifiez une migration vers Debian 11
+
 ## 2024-02-26
 
 - Amélioration: distinction entre les 2 modèles de *Smart Sensor*: l'image & la liste des commandes créés sont adaptées en fonction du modèle.

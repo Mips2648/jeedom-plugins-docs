@@ -1,21 +1,20 @@
 ---
 layout: default
-title: Documentation Vaillant multiMATIC
+title: Documentation myVaillant
 lang: fr_FR
 pluginId: vaillantmultimatic
 ---
 
 # Description
 
-Plugin permettant de se connecter à un système Vaillant multiMATIC via sa passerelle internet (VR900, VR920, VR921).
-Il est possible de remonter dans Jeedom l'état de tous les équipements connectés et de les contrôler: définir le mode (On, Off, Auto...), définir les températures de consigne, activer un mode rapide, activer une marche forcée...
+Plugin permettant de se connecter à un système myVaillant via sa passerelle internet (VR900, VR920, VR921).
+Il est possible de remonter dans Jeedom l'état de tous les équipements connectés et de les contrôler: définir le mode (On, Off, Auto...), définir les températures de consigne, activer une marche forcée...
 
 Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont également gérés.
 
 > **Important**
 >
-> Le plugin devrait fonctionner avec toutes les passerelles (VR900, VR920, VR921) et le régulateur VRC700, compatible avec l'application multiMATIC uniquement.
-> Le régulateur VRC720, appelé "sensoCOMFORT" ou "sensoHOME" par exemple, n'est pas compatible car il fonctionne avec l'application sensoAPP.
+> Le plugin devrait fonctionner avec toutes les passerelles (VR900, VR920, VR921 ...) et régulateurs (VRC700, VRC720 ...) compatible avec l'application myVaillant.
 
 # Installation
 
@@ -24,10 +23,9 @@ Il faut ensuite installer les dépendances.
 
 # Configuration du plugin
 
-Il est fortement recommandé de créer un utilisateur dédié à Jeedom via l'App mobile officielle.
-Pour se faire, ouvrez l'application, allez de le menu _réglage_ puis _Accès_ et suivez les étapes pour créer un nouvel utilisateur.
+Vous devez renseigner le nom d'utilisateur et son mot de passe dans la configuration du plugin ainsi que votre pays et la marque de votre système (Bullex, Saunier Duval ou Vaillant)
 
-Il ne vous reste plus qu'à renseigner le nom d'utilisateur et son mot de passe dans la configuration du plugin et vous pouvez ensuite lancer le démon.
+![config](../images/config.png)
 
 Vous avez également la possibilité de configurer la fréquence de mise à jour des informations, en minute.
 
@@ -41,13 +39,13 @@ Dès que les dépendances seront installées et la configuration du plugin sera 
 
 > **Tip**
 >
-> Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement jeedom ne correspond plus à aucun équipement en votre possession, veuillez le supprimer manuellement.
+> Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement Jeedom ne correspond plus à aucun équipement en votre possession, veuillez le supprimer manuellement.
 
-Des équipements de différents types seront créés en fonction de ce qui existent dans votre système. Les équipements possibles sont: la passerelle elle-même, le multiMatic qui contrôle votre production d'eau chaude et le circulateur, un équipement pour gérer la ventilation, un équipement par zone de chauffage et si vous avez des équipements de la gamme ambiSENSE, un équipement par pièce et un équipement par vanne et par thermostat.
+Des équipements de différents types seront créés en fonction de ce qui existent dans votre système. Les équipements possibles sont: la passerelle elle-même, le contrôleur de votre production d'eau chaude et le circulateur, un équipement pour gérer la ventilation, un équipement par zone de chauffage et si vous avez des équipements de la gamme ambiSENSE, un équipement par pièce et un équipement par vanne et par thermostat.
 
 > **Tip**
 >
-> Si votre système Vaillant multiMATIC ne dispose pas d'un des équipements listés ci-dessus il n'y aura donc pas d'équipement de ce type créé sous Jeedom, cela est normal. Cette documentation reprend simplement l'ensemble des possibilités.
+> Si votre système myVaillant ne dispose pas d'un des équipements listés ci-dessus il n'y aura donc pas d'équipement de ce type créé sous Jeedom, cela est normal. Cette documentation reprend simplement l'ensemble des possibilités.
 
 ## La passerelle
 
@@ -60,27 +58,21 @@ Le mode vacances aura également un impact global mais il est un peu particulier
 Voici un aperçu des commandes disponibles:
 
 - **Rafraichir** rafraîchit toutes les informations de tous les équipements
-- **Statut** commande info/string
 - **Online** commande info/binaire
-- **A jour** commande info/binaire indiquant si le système est à jour
-- **Mode rapide** il y a une commande info indiquant le mode rapide en cours (valeurs possibles: _Aucun_, _Boost ECS_, _Boost ventilation_, _Absence exceptionnelle_, _Présence exceptionnelle_, _Fête_, _Absence_, _Arrêt du système_) ainsi qu'une commande action correspondante à chaque mode pour l'activer.
 - **Date début vacances**, **Date fin vacances** & **Définir dates vacances** sont respectivement les commandes donnant la date de début et de fin de vacances enregistrées ainsi que la commande pour définir ces dates
 - **Consigne vacances** et **Définir consigne vacances** permettent de connaître et de définir la consigne de température appliquée lorsque le mode vacances est actif.
-- **Mode vacances actif**, **Mode vacances Off** sont les commandes permettant de connaître le statut et de désactiver le mode vacances.
-- Il existera également une commande info/numérique par sonde de température connectée au système, par exemple **Température extérieure**, **Température ECS ballon**, **Température de départ**, ...
+- **Mode vacances actif**, **Annuler mode vacances** sont les commandes permettant de connaître le statut et de désactiver le mode vacances.
+- **Température extérieure**, **Température de départ** sont des commandes info/numérique
 
 ## Eau chaude sanitaire
 
-Cet équipement reprend des informations sur la production d'eau chaude sanitaire ainsi que sur l'état de la circulation qui est indissociable de l'eau chaude sanitaire.
+Cet équipement reprend des informations sur la production d'eau chaude sanitaire.
 
-- **Rafraichir** rafraîchit les informations de l'équipement
 - **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _On_, _Off_
 - **Auto**, **On**, **Off**, commande action pour activer le mode correspondant
-- **Etat** donne l'état actuel: _On_ ou _Off_. Donc si le **Mode** est _Auto_, **Etat** permettra de connaître l'état réel.
-- **Consigne** donne la consigne appliquée actuellement (par exemple 5°C si l'**Etat** est _Off_)
-- **Consigne chauffe** et **Définir consigne chauffe** indique et permet de modifier la consigne voulue (lorsque l'**Etat** est _On_)
+- **Consigne** et **Définir consigne** indique et permet de modifier la consigne voulue
 - **Température** indique la température actuelle de l'eau
-- **Mode circulation** et **Etat circulation** donne les informations respective pour la circulation. Le mode n'est pas contrôlable, il est lié à la production d'eau chaude.
+- **Boost ECS actif**, **Boost ECS on** et **Boost ECS off** pour contrôler le mode boost de l'eau chaude sanitaire
 
 ## Ventilation
 
@@ -97,18 +89,17 @@ Cet équipement reprend des informations sur la production d'eau chaude sanitair
 Il y aura un équipement de type _Zone_ par zone de chauffage (par circuit) géré par votre system Vaillant.
 Chaque zone disposera des commandes suivantes:
 
-- **Rafraichir** rafraîchit les informations de la zone
 - **Actif** commande info binaire indiquant si la zone est active ou non
-- **Contrôle via les pièces** Important, commande info binaire indiquant si la zone est contrôlée par la gestion des pièces dans le cas où vous posséder des équipements de la gamme ambiSENSE. Si c'est le cas alors le contrôle sur la zone n'aura aucun effet: changer de mode ou changer la consigne n'influencera pas la chauffe; il faut utiliser les équipements de type _Pièce_ à la place, voir ci-dessous.
 - **Mode** retourne le mode actif, il peut avoir une des valeurs suivantes: _Auto_, _Jour_, _Nuit_, _Off_
 - **Auto**, **Jour**, **Nuit**, **Off**, commande action pour activer le mode correspondant
-- **Etat** donne l'état actuel: _Jour_, _Nuit_ ou _Off_. Donc si le **Mode** est _Auto_, **Etat** permettra de connaître l'état réel.
 - **Consigne** donne la consigne appliquée actuellement
-- **Consigne jour** et **Définir consigne jour** indique et permet de modifier la consigne utilisée en mode _Jour_
+- **Consigne jour** et **Définir consigne** indique et permet de modifier la consigne utilisée en mode _Jour_
 - **Consigne nuit** et **Définir consigne nuit** indique et permet de modifier la consigne utilisée en mode _Nuit_
 - **Température** indique la température actuelle de la zone
-- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcé l'application de cette consigne indépendamment du programme en cours. Ce mode sera actif pendant 6h avant de revenir au programme normal et la durée n'est pas modifiable.
+- **Activer température forcée** commande action/slider permettant de donner une consigne et d'activer le mode forcé, autrement dit de forcer l'application de cette consigne indépendamment du programme en cours. Ce mode sera actif pendant la durée configurée dans la commande **Durée mode forcé** avant de revenir au programme précédent.
 - **Annuler température forcée** commande action permettant d'annuler le mode forcé
+- **Durée mode forcé** contient la durée pendant laquelle le mode forcé sera actif _lors de la prochaine activation_
+- **Définir durée mode forcé** permet de modifier la durée pendant laquelle le mode forcé sera actif _lors de la prochaine activation_. Modifier cette durée n'a pas d'influence sur la durée restante si la température forcée était déjà activée, pour cela il faut à nouveau utiliser la commande **Activer température forcée**
 
 ## Les pièces
 
@@ -137,6 +128,7 @@ Ces équipements "techniques" n'ont aucune commande pour gérer le chauffage, to
 
 - **Batterie faible** commande info binaire indiquant si l'état de la batterie est faible. Il n'existe pas de remontée de l'état en pourcent.
 - **Hors portée** commande info binaire indiquant si l'équipement est hors portée du système (et que donc il ne communique plus avec la passerelle).
+- **rssi** commande info numérique indiquant la qualité du signal
 
 Le plugin remontera l'information _batterie_ dans l'équipement pour que le core puisse y accéder de façon standard (comme tous les autres équipements sous Jeedom) et que l'on puisse être notifié via les alertes prévues dans Jeedom mais comme l'information en pourcent n'existe pas réellement, les valeurs fictives suivantes seront définies:
 

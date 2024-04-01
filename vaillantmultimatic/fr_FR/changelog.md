@@ -9,10 +9,10 @@ pluginId: vaillantmultimatic
 
 > **Attention**
 >
-> Cette version beta n'est pas compatible avec Debian 10 (Buster). Il faut être au minimum sous Debian 11 (Bullseye) / Python 3.9
-> Si vous êtes encore sous Debian 10, installez la version stable.
+> Cette version nécessite de réinstaller les dépendances même si elles étaient déjà OK.
+> L'installation des dépendances peut prendre du temps selon la puissance de votre machine (jusqu'à 1h) et de votre version de Debian (très rapide sous Debian 12)
 
-- Ajout compatibilité avec sensoApp & myVaillant
+- Ajout compatibilité avec myVaillant: beaucoup de changement, n'oubliez de reconfigurer le plugin. Vos équipements seront migrés pour la plupart, il peut y avoir des cas pour lesquels ce n'est pas encore géré.
 - Optimisation de la taille des backups
 
 # Stable

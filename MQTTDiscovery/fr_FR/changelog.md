@@ -13,6 +13,7 @@ pluginId: MQTTDiscovery
 - Ajout d'un bouton pour ouvrir la configuration du module si l'url est fournie dans les informations de découvertes (par exemple vers la config du module sur zigbee2mqtt, vers omg)
 - Fix du type *update* pour les équipements zigbee (via zigbee2mqtt)
 - Fix du type *device_automation* / *device trigger*; il est nécessaire de supprimer les commandes correspondantes et de redémarrer le démon pour les recréer correctement
+- Fix sur la vérification des dépendances
 
 # Stable
 

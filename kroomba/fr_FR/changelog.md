@@ -7,7 +7,9 @@ pluginId: kroomba
 
 # Beta
 
-n/a
+## 2024-04-03
+
+- Fix sur la vérification des dépendances
 
 # Stable
 

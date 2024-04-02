@@ -12,6 +12,7 @@ pluginId: vaillantmultimatic
 - Ajout des icônes des pièces
 - Ajout d'info sur le contrôleur
 - Fix sur le mode actif des zones
+- Fix sur la vérification des dépendances
 
 ## 2024-04-01
 

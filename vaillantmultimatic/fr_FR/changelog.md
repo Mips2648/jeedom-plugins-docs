@@ -7,10 +7,20 @@ pluginId: vaillantmultimatic
 
 # Beta
 
+## 2024-04-03
+
+- Ajout des icônes des pièces
+- Ajout d'info sur le contrôleur
+- Fix sur le mode actif des zones
+
+## 2024-04-01
+
 > **Attention**
 >
 > Cette version nécessite de réinstaller les dépendances même si elles étaient déjà OK.
 > L'installation des dépendances peut prendre du temps selon la puissance de votre machine (jusqu'à 1h) et de votre version de Debian (très rapide sous Debian 12)
+
+Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-app-myvaillant/123431)
 
 - Ajout compatibilité avec myVaillant: beaucoup de changement, n'oubliez de reconfigurer le plugin. Vos équipements seront migrés pour la plupart, il peut y avoir des cas pour lesquels ce n'est pas encore géré.
 - Optimisation de la taille des backups

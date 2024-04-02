@@ -13,7 +13,7 @@ Cette nouvelle version beta revoit complètement l'intégration avec Arlo et don
 
 Au contraire, si vous avez acquis récemment des caméras Arlo et que le changement de mode (sur la base ou sur les caméras) ne fonctionne pas pour vous, si dans l'app officielle Arlo vous n'avez que 3 modes possibles *Activer en absence*, *Activer en présence* et *Veille* alors cette version devrait vous être utile.
 
-Voir également [ce lien](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
+Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
 
 ## 2024-03-18
 

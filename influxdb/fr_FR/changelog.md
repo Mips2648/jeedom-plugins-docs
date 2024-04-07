@@ -7,10 +7,14 @@ pluginId: influxdb
 
 # Beta
 
-- Modification interne de la gestion de dépendances pour compatibilité Jeedom v4.4
-- Jeedom v4.2 minimum requis
+n/a
 
 # Stable
+
+## 2024-04-07
+
+- Modification interne de la gestion de dépendances pour compatibilité Jeedom v4.4
+- Jeedom v4.2 minimum requis
 
 ## 2023-02-06
 

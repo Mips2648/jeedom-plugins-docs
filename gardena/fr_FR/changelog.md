@@ -7,11 +7,13 @@ pluginId: gardena
 
 # Beta
 
-## 2024-04-03
-
-- Fix sur la vérification des dépendances
+n/a
 
 # Stable
+
+## 2024-04-07
+
+- Fix sur la vérification des dépendances
 
 ## 2024-03-28
 

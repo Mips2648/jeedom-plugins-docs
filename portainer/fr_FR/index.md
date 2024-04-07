@@ -60,7 +60,13 @@ Sur les équipements de type EndPoint (Instance docker, agent portainer...), il 
 
 Sur les équipements de type Container, il existe les commandes info suivantes:
 
-- **Statut**
+- **Statut** les valeurs possibles sont: _created_, _running_, _paused_, _restarting_, _removing_, _exited_, _dead_
+- **Statut santé** les valeurs possibles sont: _none_, _starting_, _healthy_, _unhealthy_
+- **Running** info/binaire
+- **Paused** info/binaire
+- **Restarting** info/binaire
+- **Dead** info/binaire
+- **OOMKilled** info/binaire
 - **Adresse IP** du container
 - **Adresse MAC** du container
 - **Passerelle** gateway réseau

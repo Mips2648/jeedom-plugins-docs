@@ -7,7 +7,7 @@ pluginId: portainer
 
 # Beta
 
-- Ajout de commandes sur les équipements de type container: **Statut santé**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** (voir documentation)
+- Ajout de commandes sur les équipements de type container: **Statut santé**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(Voir documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 
 # Stable
 

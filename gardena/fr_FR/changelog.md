@@ -11,7 +11,7 @@ n/a
 
 # Stable
 
-## 2024-04-07
+## 2024-04-08
 
 - Fix sur la vérification des dépendances
 

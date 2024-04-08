@@ -11,7 +11,7 @@ n/a
 
 # Stable
 
-## 2024-04-07
+## 2024-04-08
 
 - Modification interne de la gestion de dépendances pour compatibilité Jeedom v4.4
 

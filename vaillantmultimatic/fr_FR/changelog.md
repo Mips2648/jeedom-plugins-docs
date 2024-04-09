@@ -7,7 +7,7 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-n/a
+- Fix migration & gestion des zones si plusieurs zones existent
 
 # Stable
 

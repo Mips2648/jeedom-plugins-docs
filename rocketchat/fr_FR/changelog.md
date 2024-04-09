@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-04-10
+
+- Mise à jour de dépendances
+
 ## 2022-10-17
 
 - Mise à jour de la présentation des commandes pour Jeedom v4.3

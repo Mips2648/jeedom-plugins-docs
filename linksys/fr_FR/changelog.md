@@ -11,6 +11,12 @@ N/A
 
 # Stable
 
+## 2024-04-10
+
+- Mise à jour de dépendances
+
+## 2023-05-20
+
 - Ajout commande **Type WAN**
 - Amélioration des champs password
 - Compatibilité Jeedom v4.4

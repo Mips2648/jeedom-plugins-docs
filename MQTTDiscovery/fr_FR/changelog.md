@@ -14,6 +14,7 @@ pluginId: MQTTDiscovery
 - Fix du type *update* pour les équipements zigbee (via zigbee2mqtt)
 - Fix du type *device_automation* / *device trigger*; il est nécessaire de supprimer les commandes correspondantes et de redémarrer le démon pour les recréer correctement
 - Fix sur la vérification des dépendances
+- Mise à jour de dépendances
 
 # Stable
 

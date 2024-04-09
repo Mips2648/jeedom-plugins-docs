@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-04-10
+
+- Mise à jour de dépendances
+
 ## 2023-11-01
 
 - Correction sur les commandes **Liste des IP bannies** qui n'étaient pas correctement vidées lorsque plus aucune IP n'étaient bannies

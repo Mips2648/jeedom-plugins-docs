@@ -7,7 +7,9 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+## 2024-04-10
+
+- Mise à jour de dépendances
 
 # Stable
 

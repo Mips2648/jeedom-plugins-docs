@@ -5,10 +5,13 @@ lang: fr_FR
 pluginId: worxLandroidS
 ---
 
+# Beta
+
 ## 2024-04-03
 
 - Suppression de l'image "Pause" sur le widget lorsque la tondeuse est en pause
 - Fix sur la vérification des dépendances
+- Mise à jour de dépendances
 
 # Stable
 

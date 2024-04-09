@@ -5,7 +5,17 @@ lang: fr_FR
 pluginId: hydrao
 ---
 
-# 2023-11-10
+# Beta
+
+n/a
+
+# Stable
+
+## 2024-04-10
+
+- Mise à jour de dépendances
+
+## 2023-11-10
 
 Première version stable
 

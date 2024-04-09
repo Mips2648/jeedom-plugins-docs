@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-04-10
+
+- Mise à jour de dépendances
+
 ## 2024-01-26
 
 - Ajout du service "coinmarketcap" pour la gestion des crypto-currencies

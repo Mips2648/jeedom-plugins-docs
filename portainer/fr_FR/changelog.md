@@ -7,6 +7,9 @@ pluginId: portainer
 
 # Beta
 
+## 2024-04-10
+
+- Mise à jour de dépendances
 - Ajout de commandes sur les équipements de type container: **Statut santé**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(Voir documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 
 # Stable

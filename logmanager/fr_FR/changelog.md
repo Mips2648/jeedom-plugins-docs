@@ -7,9 +7,13 @@ pluginId: logmanager
 
 # Beta
 
-- Bloque l'utilisation d'un nom de log qui correspond à un plugin installé sur Jeedom
+n/a
 
 # Stable
+
+## 2024-04-10
+
+- Bloque l'utilisation d'un nom de log qui correspond à un plugin installé sur Jeedom
 
 ## 2023-09-30
 

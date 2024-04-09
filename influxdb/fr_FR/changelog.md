@@ -11,10 +11,11 @@ n/a
 
 # Stable
 
-## 2024-04-08
+## 2024-04-10
 
 - Modification interne de la gestion de dépendances pour compatibilité Jeedom v4.4
 - Jeedom v4.2 minimum requis
+- Mise à jour de dépendances
 
 ## 2023-02-06
 

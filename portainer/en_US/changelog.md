@@ -7,7 +7,10 @@ pluginId: portainer
 
 # Beta
 
-N/A
+## 2024-04-10
+
+- Update dependencies
+- Add commands on container-type device: **Health status**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(See documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 
 # Stable
 

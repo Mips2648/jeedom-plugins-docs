@@ -7,6 +7,10 @@ pluginId: SmartMeterP1
 
 # Beta
 
+## 2024-04-10
+
+- Update dependencies
+
 ## 2024-03-03
 
 - Addition of a **Status** command giving the status of the connection with the module

@@ -7,9 +7,19 @@ pluginId: gardena
 
 # Beta
 
-n/a
+## 2024-04-10
+
+- Update dependencies
 
 # Stable
+
+## 2024-04-08
+
+- Fix on dependencies check
+
+## 2024-03-28
+
+- Small modification to keep compatibility with Debian 10 => Please plan a migration to Debian 11
 
 ## 2024-02-26
 

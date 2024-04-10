@@ -7,10 +7,15 @@ pluginId: influxdb
 
 # Beta
 
-- Internal change in dependency management for compatibility with Jeedom v4.4
-- Jeedom v4.2 required
+n/a
 
 # Stable
+
+## 2024-04-10
+
+- Internal change in dependency management for compatibility with Jeedom v4.4
+- Jeedom v4.2 required
+- Update dependencies
 
 ## 2023-02-06
 

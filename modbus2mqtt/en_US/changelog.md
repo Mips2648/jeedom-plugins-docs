@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2024-04-10
+
+- Fix on dependencies check
+- Update dependencies
+
 ## 2024-03-16
 
 - Add new option to choose the writing mode: simple (function 06) or multi (function 16)

@@ -7,9 +7,13 @@ pluginId: myaudi
 
 # Beta
 
-N/A
+n/a
 
 # Stable
+
+## 2024-04-10
+
+- Update dependencies
 
 ## 2023-06-08
 

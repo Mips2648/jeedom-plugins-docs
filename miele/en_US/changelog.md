@@ -7,9 +7,14 @@ pluginId: miele
 
 # Beta
 
-- Internal change in dependency management for compatibility with Jeedom v4.4
+n/a
 
 # Stable
+
+## 2024-04-10
+
+- Internal change in dependency management for compatibility with Jeedom v4.4
+- Update dependencies
 
 ## 2022-10-17
 

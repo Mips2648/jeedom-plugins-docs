@@ -7,12 +7,17 @@ pluginId: worxLandroidS
 
 # Beta
 
-- Optimizing the size of backups
+## 2024-04-03
+
+- Deleting the “Pause” image on the widget when the mower is paused
+- Fix on dependencies check
+- Update dependencies
 
 # Stable
 
-## 2024-02-14
+## 2024-02-23
 
+- Optimizing the size of backups
 - New version of the dependencies (paho-mqtt 2.0) and adaptation of the daemon accordingly
 
 ## 2023-12-21
@@ -34,8 +39,6 @@ pluginId: worxLandroidS
 
 ## 2023-08-31
 
-Stable release of the changes that have been underway in beta since April, see below for all the details by date, but here is a summary:
-
 - Taken over of the plugin by @Mips
 - Update of the presentation of commands for Jeedom v4.3
 - Compatibility Jeedom v4.4
@@ -47,33 +50,16 @@ Stable release of the changes that have been underway in beta since April, see b
   - Manual schedule
   - Auto-schedule (if supported by your model)
 - Add support for the Landroid Vision model
-
-## 2023-07-10
-
 - Add management of *Off Limits* module: current state, activation & deactivation
 - Add management of *Find My Landroid* module: current state
-
-## 2023-07-06
-
 - Add management of *ACS* module: current state, activation & deactivation commands
-
-## 2023-06-14
-
 - Add check & verification of plugin configuration
-
-## 2023-06-04
-
 - Add the command **Define distribution of zones** of type action/message. The percentage of zones must be provided (in steps of 10%). For example:
   - `100` or `100,0,0,0` => 100% on zone 1
   - `0,0,0,100` => 100% on zone 4
   - `20,30,20,30` => 20% zone 1, 30% zone 2 ...
-
-## 2023-05-17
-
 - Change behavior of command **Working zone**: from now the configuration of the zones are not modified anymore but the order will so the next start will match the selected zone
 - Fix on widget: additional commands were not displayed
-
-## April 2023
 
 See details here <https://community.jeedom.com/t/version-beta-avril-2023/105197>
 

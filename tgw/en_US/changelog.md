@@ -7,10 +7,18 @@ pluginId: tgw
 
 # Beta
 
-- Add automatic antenna restart as an option
-- Update dependencies
+n/a
 
 # Stable
+
+## 2024-04-11
+
+- Update dependencies
+
+## 2024-03-16
+
+- Add automatic antenna restart as an option
+- Update dependencies
 
 ## 2024-02-14
 

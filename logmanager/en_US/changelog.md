@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-04-10
+
+- Block the use of a log name that corresponds to a plugin installed on Jeedom
+
 ## 2023-09-30
 
 - Added an option to display the log in chronological order on the widget

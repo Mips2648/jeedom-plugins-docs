@@ -10,7 +10,7 @@ pluginId: arlo
 Plugin for controlling Arlo equipment such as cameras, base station and doorbells.
 It is possible to control the mode, the activation and deactivation of the cameras, view the live stream of the cameras, trigger video captures and recordings, trigger the siren ...
 
-All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro, Pro2, Pro3, Pro4, Ultra, Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo Doorbell and Video Doorbell...
+All current models supported by the Arlo application (web or mobile) are supported by the plugin: Arlo, Arlo Pro (all versions), Ultra (all versions), Arlo Floodlight, Arlo Essential, Arlo Q, Arlo Go, Arlo Baby, Arlo security bridge & light, Arlo Doorbell and Video Doorbell...
 
 Here is an overview of the possibilities of the plugin:
 
@@ -120,50 +120,47 @@ If you add a new device or change the modes via the Arlo application, it is reco
 
 For most of the devices there is no specific configuration, the name of the device will be the one defined in Arlo platform, but remember to assign the parent object, the category and activate it.
 
-For camera devices, it is possible to configure an action command of the Mail or Telegram plugin. If this one is configured, the plugin will send a message, including the snapshot, as soon as a new one is available.
+For camera-type equipment, it is possible to configure an action/message command (many compatible plugins). If it is configured, the plugin will send a message, including the capture, as soon as a new capture is received.
 
-# Compatible devices
+# Devices
+
+> **Important**
+>
+> It is not recommended to use device on battery (unless regularly charged for example via solar panel if sufficient sunshine) and connected directly to wifi if no base is present in the system because their battery does not offer enough autonomy to trace the events in Jeedom. If a base exists then no problem even if some devices are connected to wifi directly.
 
 It is possible that some specific commands to certain models are not (yet) available, in this case please contact me via the forum for more information.
 
-## The base station for Arlo pro, pro2, pro3 & ultra
-
-The base station has one action command by available mode: Activated, Deactivated and each custom mode and an info command for the active mode.
-
-The widget is Jeedom's default one:
-
-![Basestation](../images/widget_basestation.png "Basestation")
-
 > **Tip**
 >
-> When adding a base station, it is necessary to restart the daemon so the events related to this station are correctly received.
+> If you add a device (hub, camera, doorbell, etc.), it is necessary to restart the daemon for proper operation on Jeedom.
 
-## The siren (integrated in the base station)
+## Mode management
 
-This device has the following commands to control the siren:
+Depending on your installation and the configuration of your account on Arlo, you can choose the mode of operation of your device, which controls whether they will detect sound and/or movements or if they are deactivated.
+
+It seems that for accounts created until the end of 2023, this is possible on each base/hub type of equipment, i.e.: bases, cameras or autonomous doorbells such as Arlo Go, Arlo Q, Arlo Q, Arlo Q, Arlo Baby, Essential...
+Each of these devices has an action command for each defined mode: activated, deactivated and each custom mode as well as an info command indicating the active mode.
+
+Some users, presumably those who created their account from the end of 2023, will have additional “location” equipment that you also configured in your Arlo app.
+As for the above equipment, an action command by existing mode will be available. If you are in this case, there is no point in changing the modes on the equipment, only the mode of this equipment “location” is taken into account and it is therefore this that must be used.
+
+## Siren
+
+Devices with an integrated siren (Hub, Essential, Essential, Pro, Ultra...) has the following commands to control it:
 
 - **Siren status**: Indicates if the siren is active
 - **Siren On**: To manually turn on the siren
 - **Siren Off**: To turn off the siren
 
-The widget is also the default one:
+## Light
 
-![Siren](../images/widget_siren.png "Siren")
+Devices with integrated light (Essential, Pro, Floodlight, Ultra...) has the following commands to control the status of the light:
+
+- **Lamp status**: Indicates whether the lamp is currently on or off
+- **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)
+- **Lamp Off**: To manually turn off the lamp
 
 ## Cameras
-
-The following models are currently supported by the plugin:
-
-- Baby
-- pro, pro2, pro3, ultra
-- Floodlight
-- Essential
-- Go
-- Arlo Q
-
-> **Tip**
->
-> In the majority of cases when adding a camera or other Arlo device, it is necessary to restart the daemon so that the various states and related events are correctly reported to Jeedom.
 
 The following commands are available on all model:
 
@@ -203,13 +200,7 @@ And below a button to take a snapshot and start (local) video record
 
 ![Camera](../images/widget_camera.png "Camera")
 
-## Arlo Q
-
-On top of common commands to all cameras, the Arlo Q have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
-
 ## Arlo Baby
-
-On top of common commands to all cameras, the Arlo Baby have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
 
 The integration of the Arlo Baby is complete, it is possible to fully manage the camera and all of its functions from the plugin: the night light, the lullaby and retrieve information from the air quality sensors.
 
@@ -237,60 +228,15 @@ Here is an overview of the available commands:
 
 ## Arlo Go
 
-On top of common commands to all cameras, the Arlo Go have an action command for each existing mode as for the base station: enabled, disabled and each custom mode and also an info command indicating the active mode.
-
-On top, following commands are also available:
+On the Arlo GO, the following commands are also available:
 
 - **Network Name**: Gives the name of the mobile network
 - **IP**: current IP address
 - **Active network**: indicates the current active network (wifi or mobile)
 
-## Arlo Essential
-
-On top of common commands to all cameras, the Arlo Essential cameras have commands to control the integrated light and the integrated siren.
-
-- **Lamp status**: Indicates whether the lamp is currently on or off
-- **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)
-- **Lamp Off**: To manually turn off the lamp
-- **Siren status**: Indicates if the siren is active
-- **Siren On**: To manually turn on the siren
-- **Siren Off**: To turn off the siren
-
-On top, this camera has the following commands to enable or disable event handling, which provides real-time motion detection information.
-Indeed, on this model, real-time feedback is disabled by default because it drains the camera's battery too quickly, but with these commands you are free to manage this feature according to your own criteria.
-
-- **Enable event handling**
-- **Disable event handling**
-- **Event management status**
-
-## Arlo Essential Indoor
-
-On top of common commands to all cameras, the Arlo Essential indoor cameras have commands to control the integrated siren.
-
-- **Siren status**: Indicates if the siren is active
-- **Siren On**: To manually turn on the siren
-- **Siren Off**: To turn off the siren
-
-## Arlo Pro3, Pro3 Floodlight, Pro4 & Ultra
-
-On top of common commands to all cameras, the Arlo Pro3, Pro3 Floodlight, Pro4 and Ultra have commands to control the siren and the light integrated in the camera.
-
-- **Lamp status**: Indicates whether the lamp is currently on or off
-- **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)
-- **Lamp Off**: To manually turn off the lamp
-- **Siren status**: Indicates if the siren is active
-- **Siren On**: To manually turn on the siren
-- **Siren Off**: To turn off the siren
-
 ## Arlo security bridge & light
 
-As for the base station (see above), the bridge device has an action command by defined mode: activated, deactivated and each personalized mode as well as an info command indicating the active mode but also a info command &quot;IP&quot; and a &quot;Signal&quot;.
-
-> **Tip**
->
-> When adding a Arlo bridge, it is necessary to restart the daemon so the events related to this bridge (and all connected lights) are correctly received.
-
-The &quot;light&quot; device has the following commands:
+The "light" device has the following commands:
 
 - **Lamp status**: Indicates whether the lamp is currently on or off
 - **Lamp On**: To turn on the lamp manually (during the default delay set in the Arlo app)
@@ -327,20 +273,6 @@ In addition to the above commands, the Video Doorbell has some of the commands c
 - **Stop record**: to stop recording video
 - **Start cloud record**: to start recording a video in Arlo cloud
 - **Stop cloud record**: to stop recording video in Arlo cloud
-
-### Arlo Video doorbell wire-free
-
-I do not recommend using this doorbell from the Arlo Essentials range with Jeedom without having connected it to an Arlo hub. Indeed, although it is connected to power to recharge it the battery does not hold the charge if you want to use it "normally".
-
-For this reason, event management is disabled on this doorbell when it is the only device you have, the information will therefore not be updated automatically under Jeedom, i.e. mainly no motion detection and no information if someone rings.
-
-Nevertheless, this doorbell has a **Refresh** command to update its status "manually", so you are free to call this command when you need it or regularly via scenario... You have to find the compromise between your use and battery life.
-
-All the action commands will work normally but you may notice a small additional delay of maximum 10s on this doorbell compared to another device. Indeed, before performing the action, the plugin will have to reestablish the connection which is not maintained permanently to save battery.
-
-After performing the action, the plugin will remain connected to the doorbell for about 30 seconds before cutting the link, so information may be sent back to Jeedom during this time.
-
-Each time the daemon is started, the plugin will also refresh the state once.
 
 # Viewing the video stream from the cameras - live streaming
 

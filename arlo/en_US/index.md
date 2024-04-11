@@ -141,8 +141,8 @@ Depending on your installation and the configuration of your account on Arlo, yo
 It seems that for accounts created until the end of 2023, this is possible on each base/hub type of equipment, i.e.: bases, cameras or autonomous doorbells such as Arlo Go, Arlo Q, Arlo Q, Arlo Q, Arlo Baby, Essential...
 Each of these devices has an action command for each defined mode: activated, deactivated and each custom mode as well as an info command indicating the active mode.
 
-Some users, presumably those who created their account from the end of 2023, will have additional “location” equipment that you also configured in your Arlo app.
-As for the above equipment, an action command by existing mode will be available. If you are in this case, there is no point in changing the modes on the equipment, only the mode of this equipment “location” is taken into account and it is therefore this that must be used.
+Some users, presumably those who created their account from the end of 2023, will have additional “location” device that you also configured in your Arlo app.
+As for the above equipment, an action command by existing mode will be available. If you are in this case, there is no point in changing the modes on the equipment, only the mode of this device “location” is taken into account and it is therefore this that must be used.
 
 ## Siren
 

@@ -7,15 +7,25 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-> **Attention**
->
-> This beta version is not compatible with Debian 10 (Buster). You must be at least running Debian 11 (Bullseye) / Python 3.9
-> If you are still on Debian 10, install the stable version.
-
-- Added compatibility with SensoApp & MyVaillant
-- Optimizing the size of backups
+- Fix migration & zone management if several zones exist
 
 # Stable
+
+## 2024-04-08
+
+> **Attention**
+>
+> This version is no longer compatible with the vaillantMULTIMATIC system but only myVaillant. If you have not yet migrated to myVaillant, do not install this version of the plugin.
+
+- Add compatibility with myVaillant: a lot of changes, don't forget to reconfigure the plugin. Most of your equipment will be migrated, there may be cases where this is not yet managed. See also [this topic on community](https://community.jeedom.com/t/nouvelle-app-myvaillant/123431)
+- Optimizing the size of backups
+- Add room icons
+- Add controller info
+
+> **Attention**
+>
+> This version requires reinstalling dependencies even if they were already OK.
+> Installing dependencies can take time depending on the power of your machine (up to 1 hour) and your version of Debian (very fast under Debian 12)
 
 ## 2023-08-21
 

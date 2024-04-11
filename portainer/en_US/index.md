@@ -60,7 +60,13 @@ On device of type EndPoint (docker instance, portainer agent...), there are the 
 
 On device of type Container, there are the following info commands:
 
-- **Status**
+- **Status** possible values are: _created_, _running_, _paused_, _restarting_, _removing_, _exited_, _dead_
+- **Health status** possible values are: _none_, _starting_, _healthy_, _unhealthy_
+- **Running** info/binary
+- **Paused** info/binary
+- **Restarting** info/binary
+- **Dead** info/binary
+- **OOMKilled** info/binary
 - **IP address** of container
 - **MAC address** of container
 - **Gateway** network gateway

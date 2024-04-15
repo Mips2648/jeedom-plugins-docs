@@ -5,19 +5,23 @@ lang: fr_FR
 pluginId: vaillantmultimatic
 ---
 
+> **Attention**
+>
+> Ce plugin n'est plus compatible avec le système vaillantMULTIMATIC mais uniquement myVaillant. Si vous n'avez pas encore migré sur myVaillant, n'installez pas cette version du plugin.
+
 # Beta
 
-- Fix migration & gestion des zones si plusieurs zones existent
+n/a
 
 # Stable
 
+## 2024-04-15
+
+- Fix migration des zones si plusieurs zones existent
+
 ## 2024-04-08
 
-> **Attention**
->
-> Cette version n'est plus compatible avec le système vaillantMULTIMATIC mais uniquement myVaillant. Si vous n'avez pas encore migré sur myVaillant, n'installez pas cette version du plugin.
-
-- Ajout compatibilité avec myVaillant: beaucoup de changement, n'oubliez de reconfigurer le plugin. Vos équipements seront migrés pour la plupart, il peut y avoir des cas pour lesquels ce n'est pas encore géré. Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-app-myvaillant/123431)
+- Ajout compatibilité avec myVaillant et retire la compatibilité avec vaillantMULTIMATIC: beaucoup de changements, n'oubliez de reconfigurer le plugin. Vos équipements seront migrés pour la plupart, il peut y avoir des cas pour lesquels ce n'est pas encore géré. Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-app-myvaillant/123431)
 - Optimisation de la taille des backups
 - Ajout des icônes des pièces
 - Ajout d'info sur le contrôleur

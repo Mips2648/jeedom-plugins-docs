@@ -7,11 +7,14 @@ pluginId: kroomba
 
 # Beta
 
-## 2024-04-10
-
-- Mise à jour de dépendances
+n/a
 
 # Stable
+
+## 2024-04-16
+
+- Mise à jour de dépendances
+- Mise à jour de la version python minimum pour compatibilité Debian 12. Une réinstallation des dépendances sera nécessaire si vous avez encore Debian 10.
 
 ## 2024-04-08
 

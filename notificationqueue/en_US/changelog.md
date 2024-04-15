@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-03-18
+
+- Update dependencies
+
 ## 2023-10-02
 
 - Possibility to add multiple sending conditions and for each of them different notification commands. This allows your notifications to be sent across different “channels” based on conditions that you define.

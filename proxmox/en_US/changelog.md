@@ -7,9 +7,17 @@ pluginId: proxmox
 
 # Beta
 
-- Add a **Delete snapshot** command on VM and LXC
+n/a
 
 # Stable
+
+## 2024-04-11
+
+- Update dependencies
+
+## 2024-03-18
+
+- Add a **Delete snapshot** command on VM and LXC
 
 ## 2023-05-20
 

@@ -11,6 +11,12 @@ N/A
 
 # Stable
 
+## 2024-04-10
+
+- Update dependencies
+
+## 2023-05-20
+
 - Add **WAN type** command
 - Improve password fields
 - Compatibility Jeedom v4.4

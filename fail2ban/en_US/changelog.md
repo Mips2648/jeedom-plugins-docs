@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-04-10
+
+- Update dependencies
+
 ## 2023-11-01
 
 - Correction on **List of banned IPs** commands that were not properly emptied when no more IPs were banned

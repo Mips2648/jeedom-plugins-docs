@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- La case à cocher *Activer* est désormais en lecteur seule car mis à jour lors de la synchronisation
 
 # Stable
 

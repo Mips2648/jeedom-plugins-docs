@@ -99,7 +99,7 @@ Le panel est très complet, il offre une vue globale de toute les ressources pro
 
 Dès que la configuration du plugin sera terminée, le démon devrait démarrer et essaiera de se connecter à Proxmox selon le délai configuré afin de synchroniser les informations.
 
-Tous les équipements auxquels le plugin a accès seront automatiquement créés dans Jeedom, il n'est pas possible de créer un équipement manuellement.
+Tous les équipements auxquels le plugin a accès seront automatiquement créés dans Jeedom et activé, il n'est pas possible de créer un équipement manuellement. Le nom des équipements n'est pas modifiable sous Jeedom, il correspondra toujours au nom sous Proxmox. Un équipement ne sera jamais supprimé automatiquement mais il sera désactivé.
 
 Il est possible de faire une synchronisation manuelle via le bouton dans la page des équipements.
 

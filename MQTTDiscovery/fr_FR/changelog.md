@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+## 2024-05-07
+
+- Modification interne du démon
+
 - Amélioration: la création des commandes des équipements après ajout est immédiate, il n'est plus nécessaire de redémarrer le démon
 - Amélioration: prise en compte du dernier nom du module lors de la découverte (pratique si le nom est changé après l'inclusion par exemple)
 - Amélioration: les images de tous les modules zigbee (compatible zigbee2mqtt) seront récupérées automatiquement par le plugin

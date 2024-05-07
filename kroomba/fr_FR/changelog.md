@@ -7,7 +7,9 @@ pluginId: kroomba
 
 # Beta
 
-n/a
+## 2024-05-07
+
+- Modification interne du démon
 
 # Stable
 

@@ -23,7 +23,7 @@ Si votre Jeedom est proche de la VMC, vous pouvez l'utiliser mais je conseille d
 La suite de la documentation suppose que vous avez un pi, différent de Jeedom.
 
 Vous devez installer votre Raspberry pi, le connecter au réseau avec une IP fixe et activer ssh.
-Ce Raspberry hébergera un démon qui assurera la connection entre la VMC (via son interface série, voir ci-dessous) et le plugin (via MQTT). La connexion SSH servant à l'installation et la configuration du démon distant.
+Ce Raspberry hébergera un démon qui assurera la connexion entre la VMC (via son interface série, voir ci-dessous) et le plugin (via MQTT). La connexion SSH servant à l'installation et la configuration du démon distant.
 
 Le plugin nécessite une installation fonctionnelle du plugin "MQTT Manager (MQTT2)", si ce plugin n'est pas encore présent sur votre système, il sera installé automatiquement mais vous devrez finaliser sa configuration (voir documentation de *MQTT Manager*).
 
@@ -84,7 +84,7 @@ Vous devez ensuit renseigner l'adresse IP du Raspberry précédemment installé 
 
 ## Installation & configuration du démon
 
-# Première installation
+### Première installation
 
 En principe, après la sauvegarde de l'équipement, la liste déroulante *Port série VMC* devrait contenir la liste des périphérique USB détecté sur le pi. Si ce n'est pas le cas:
 
@@ -103,7 +103,7 @@ L'installation va:
 
 Si tout se passe correctement, le démon/service va commencer à envoyer les informations sur la VMC et le *statut* passera à *OK*
 
-# Changement de configuration
+### Changement de configuration
 
 Si vous changez le port série à utiliser, vous devez, après avoir sauvegardé l'équipement, renvoyer la configuration. Pour ce faire, vous pouvez cliquer sur le bouton **Configurer le service & redémarrer**
 

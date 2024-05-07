@@ -189,7 +189,7 @@ Sauvez et vous devriez voir la mini-carte avec l'historique des positions sur la
 - *WATERING_CANCELED* - Arrosage annulé
 - *MASTER_VALVE* - La valve principale n'est pas connectée
 - *WATERING_DURATION_TOO_SHORT* - Durée d'arrosage trop courte, arrosage annulé
-- *VALVE_BROKEN* - La connection électrique avec la valve est interrompue
+- *VALVE_BROKEN* - La connexion électrique avec la valve est interrompue
 - *FROST_PREVENTS_STARTING* - Le givre empêche l'ouverture de la valve
 - *LOW_BATTERY_PREVENTS_STARTING* - Batterie faible, impossible d'ouvrir la valve
 - *VALVE_POWER_SUPPLY_FAILED* - Problème d'alimentation électrique, impossible d'ouvrir la valve

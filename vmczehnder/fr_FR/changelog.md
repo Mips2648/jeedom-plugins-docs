@@ -62,7 +62,7 @@ n/a
 ## 2020-01-29
 
 - Add compatibility with Jeedom mobile App: it's now possible to control fan speed via the app
-- Improve connection with remote daemon
+- Amélioration de la connexion avec le démon distant
 - fix error message on connection error
 
 ## 2019-08-03

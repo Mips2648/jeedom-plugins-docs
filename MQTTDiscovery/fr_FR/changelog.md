@@ -7,9 +7,11 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-## 2024-05-07
+n/a
 
-- Modification interne du démon
+# Stable
+
+## 2024-05-14
 
 - Amélioration: la création des commandes des équipements après ajout est immédiate, il n'est plus nécessaire de redémarrer le démon
 - Amélioration: prise en compte du dernier nom du module lors de la découverte (pratique si le nom est changé après l'inclusion par exemple)
@@ -19,8 +21,7 @@ pluginId: MQTTDiscovery
 - Fix du type *device_automation* / *device trigger*; il est nécessaire de supprimer les commandes correspondantes et de redémarrer le démon pour les recréer correctement
 - Fix sur la vérification des dépendances
 - Mise à jour de dépendances
-
-# Stable
+- Modification interne du démon
 
 ## 2024-02-25
 

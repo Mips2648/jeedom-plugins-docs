@@ -7,9 +7,13 @@ pluginId: gardena
 
 # Beta
 
-## 2024-04-10
+## 2024-05-14
 
-- Mise à jour de dépendances
+- Importante réécriture du code du démon: il devrait être encore plus stable, plus rapide et consommer un peu moins de ressources en moyenne
+- Ajout de commande info & action **Durée par défaut** sur tous les équipements (Gardena & Husqvarna) qui ont des commandes actions permettant de spécifier une durée: précédemment la durée par défaut était codé en dur si non précisé lors de l'utilisation d'une de ces commandes, à présent le plugin prendra la valeur de cette nouvelle commande **Durée par défaut**
+- Pour les tondeuses *Husqvarna*: ajout de commandes action **Démarrage zone xxx** (une par zone existante)
+- Mise à jour de dépendances interne
+- Cette version nécessite la mise à jour des dépendances, en principe cela sera fait automatiquement lors de l'update
 
 # Stable
 

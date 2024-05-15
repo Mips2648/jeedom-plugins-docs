@@ -7,6 +7,10 @@ pluginId: gardena
 
 # Beta
 
+## 2024-05-15
+
+- Fix intégration Husqvarna Automower
+
 ## 2024-05-14
 
 - Importante réécriture du code du démon: il devrait être encore plus stable, plus rapide et consommer un peu moins de ressources en moyenne

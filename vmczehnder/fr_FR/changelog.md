@@ -7,7 +7,7 @@ pluginId: vmczehnder
 
 # Beta
 
-n/a
+- Compatibilité du service distant avec Debian 12
 
 # Stable
 

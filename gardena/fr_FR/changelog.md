@@ -9,7 +9,7 @@ pluginId: gardena
 
 ## 2024-05-18
 
-- Ajout gestion des zones d'exclusions. Par zone, un switch "actif/inactif" sera créé, donc 3 commandes: une info binaire et 2 actions (on/off)
+- Pour les tondeuses *Husqvarna*: ajout gestion des zones d'exclusions. Par zone, un switch "actif/inactif" sera créé, donc 3 commandes, une info binaire et 2 actions (on/off)
 
 ## 2024-05-15
 

@@ -7,6 +7,10 @@ pluginId: gardena
 
 # Beta
 
+## 2024-05-19
+
+- Ajout d'une tâche de rafraîchissement automatique des tondeuses *Husqvarna* supportant la fonction **zones d'exclusions**
+
 ## 2024-05-18
 
 - Pour les tondeuses *Husqvarna*: ajout **gestion des zones d'exclusions**. Par zone, un switch "actif/inactif" sera créé, donc 3 commandes, une info binaire et 2 actions (on/off)

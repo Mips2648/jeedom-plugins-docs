@@ -7,7 +7,9 @@ pluginId: influxdb
 
 # Beta
 
-n/a
+## 2024-05-22
+
+- Amélioration des champs password
 
 # Stable
 

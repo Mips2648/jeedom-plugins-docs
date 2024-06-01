@@ -11,7 +11,11 @@ n/a
 
 # Stable
 
-# 2023-08-21
+## 2024-06-01
+
+- Mise à jour de dépendances
+
+## 2023-08-21
 
 - Ajout du support de l'application _Total_; voir configuration du plugin
 - Amélioration des champs password

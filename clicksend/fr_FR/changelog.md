@@ -7,11 +7,13 @@ pluginId: clicksend
 
 # Beta
 
-## 2024-05-21
-
-- Mise à jour de dépendances
+n/a
 
 # Stable
+
+## 2024-06-01
+
+- Mise à jour de dépendances
 
 ## 2024-04-29
 

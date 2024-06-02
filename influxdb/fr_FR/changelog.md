@@ -7,10 +7,6 @@ pluginId: influxdb
 
 # Beta
 
-## 2024-06-01
-
-- Ajout d'une commande action **RAZ dernière erreur** qui permet d'effacer la **Date dernière erreur** et la **Description dernière erreur**
-
 ## 2024-05-22
 
 - Amélioration des champs password

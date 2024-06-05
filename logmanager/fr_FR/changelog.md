@@ -7,7 +7,12 @@ pluginId: logmanager
 
 # Beta
 
-n/a
+## 2024-06-05
+
+- Adaptation de la tuile pour Jeedom v4.4
+- Ajout de la colorisation des logs
+- Formatage des logs pour avoir une police à espacement fixe
+- Ajout de la possibilité d'avoir les commandes de l'équipement affichées sur la tuile également lorsque le contenu du log est affiché
 
 # Stable
 

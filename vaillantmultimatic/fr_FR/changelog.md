@@ -11,12 +11,16 @@ pluginId: vaillantmultimatic
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-06-11
+
 ## 2024-05-14
 
 - Modification interne du démon
 - Mise à jour de dépendances
-
-# Stable
 
 ## 2024-04-15
 

@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-06-11
+
+- Ajout de commandes infos température additionnelles pour les équipements ayant plus d'une sonde de température (ex: les appareils combinés)
+
 ## 2024-04-10
 
 - Modification interne de la gestion de dépendances pour compatibilité Jeedom v4.4

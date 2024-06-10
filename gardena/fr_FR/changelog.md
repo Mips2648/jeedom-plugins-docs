@@ -7,27 +7,19 @@ pluginId: gardena
 
 # Beta
 
-## 2024-05-19
+n/a
 
-- Ajout d'une tâche de rafraîchissement automatique des tondeuses *Husqvarna* supportant la fonction **zones d'exclusions**
+# Stable
 
-## 2024-05-18
-
-- Pour les tondeuses *Husqvarna*: ajout **gestion des zones d'exclusions**. Par zone, un switch "actif/inactif" sera créé, donc 3 commandes, une info binaire et 2 actions (on/off)
-
-## 2024-05-15
-
-- Fix intégration Husqvarna Automower
-
-## 2024-05-14
+## 2024-06-11
 
 - Importante réécriture du code du démon: il devrait être encore **plus stable**, **plus rapide** et consommer un peu **moins de ressources** en moyenne
 - Ajout de commande info & action **Durée par défaut** sur tous les équipements (Gardena & Husqvarna) qui ont des commandes actions permettant de spécifier une durée: précédemment la durée par défaut était codé en dur si non précisée lors de l'utilisation d'une de ces commandes, à présent le plugin prendra la valeur de cette nouvelle commande **Durée par défaut**
 - Pour les tondeuses *Husqvarna*: ajout de commandes action **Démarrage zone xxx** (une par zone existante)
+- Pour les tondeuses *Husqvarna*: ajout **gestion des zones d'exclusions**. Par zone, un switch "actif/inactif" sera créé, donc 3 commandes, une info binaire et 2 actions (on/off)
+- Ajout d'une tâche de rafraîchissement automatique des tondeuses *Husqvarna* supportant la fonction **zones d'exclusions**
 - Mise à jour de dépendances interne
 - Cette version **nécessite la mise à jour des dépendances**, en principe cela sera fait automatiquement lors de l'update
-
-# Stable
 
 ## 2024-04-08
 

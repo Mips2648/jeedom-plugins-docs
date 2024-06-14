@@ -7,7 +7,11 @@ pluginId: tgw
 
 # Beta
 
-n/a
+## 2024-06-14
+
+> **Attention**
+>
+> Importante modification sur la gestion des antennes qui nécessite de désinstaller et réinstaller celles-ci. Si vous ne voulez pas être impacté dans l'immédiat, ne mettez pas à jour et installez la version stable!
 
 # Stable
 

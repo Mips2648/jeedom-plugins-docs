@@ -7,7 +7,9 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-n/a
+## 2024-06-15
+
+- Ajout du type *vacuum*
 
 # Stable
 

@@ -12,6 +12,8 @@ pluginId: tgw
 > **Attention**
 >
 > Importante modification sur la gestion des antennes qui nécessite de désinstaller et réinstaller celles-ci. Si vous ne voulez pas être impacté dans l'immédiat, ne mettez pas à jour et installez la version stable!
+>
+> L'installation d'antenne sur **Debian Buster (10) n'est plus supportée**. Pour installer une antenne, il est obligatoire d'avoir une machine sous Debian Bullseye (11) ou Debian Bookworm (12). Ceci ne concerne pas le plugin lui-même, donc cela ne concerne pas la machine sur laquelle tourne Jeedom mais uniquement les antennes. Donc si votre Jeedom tourne sous Buster, vous ne pourrez pas installer d'antenne en local mais uniquement distante.
 
 # Stable
 

@@ -136,7 +136,7 @@ Vous devrez ensuite choisir son mot de passe, suivez les instructions à l'écra
 Ensuite, ajoutez l'utilisateur dans le groupe *sudo*
 
 ```bash
-usermod -aG sudo jeedom
+sudo usermod -aG sudo jeedom
 ```
 
 ## Executer sudo sans confirmation de mot de passe

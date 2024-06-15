@@ -7,7 +7,8 @@ pluginId: proxmox
 
 # Beta
 
-- La case à cocher *Activer* est désormais en lecteur seule car mis à jour lors de la synchronisation
+- La case à cocher *Activer* est désormais en lecture seule car mis à jour lors de la synchronisation
+- Fix pour Debian 12 si la config Proxmox est incorrecte et que par conséquent le plugin n'a pas accès à l'entièreté de l'information à laquelle il essaye d'accéder
 
 # Stable
 

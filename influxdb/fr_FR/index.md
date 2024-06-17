@@ -11,6 +11,10 @@ Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilemen
 
 Le plugin permet également d'exporter l'historique des commandes Jeedom vers InfluxDB.
 
+> **Attention**
+>
+> Le plugin supporte les version de influxDB >= 1.8 ou >= 2.0. Les anciennes version influxDBv1 < 1.8 ne sont pas supportée.
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
@@ -24,16 +28,16 @@ Il n'y a pas de configuration particulière à faire, le plugin utilise éventue
 Un équipement Jeedom correspond à un connecteur InfluxDB.
 
 Chaque connecteur va se connecter et envoyer les données à une et une seule instance influxDB mais vous pouvez avoir autant de connecteur que nécessaire.
-Le plugin gère InfluxDB v1 et v2, le principe de base entre les deux reste identique mais la façon de se connecter change.
+Le plugin gère InfluxDB v1.8+ et v2, le principe de base entre les deux reste identique mais la façon de se connecter change.
 
-## InfluxDB v1
+## InfluxDB v1.8+
 
 Pour chaque connecteur, vous devez configurer l'adresse IP de votre serveur InfluxDB, un utilisateur, un mot de passe ainsi que le nom de la base de donnée.
 Vous avez la possibilité d'activer ou non https.
 
 ![InfluxDB v1](../images/influxV1.png "InfluxDB v1")
 
-## InfluxDB v2
+## InfluxDB v2.0+
 
 Pour la v2, vous devez configurer l'url sous la forme `https://server.my`, le token d'accès, l'organisation et le bucket de destination (voir documentation de influxDB)
 

@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-06-21
+
+- Correction d'un bug sur le cronDaily
+
 ## 2024-06-01
 
 - Mise à jour de dépendances

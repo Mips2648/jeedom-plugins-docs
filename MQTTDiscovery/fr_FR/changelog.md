@@ -10,6 +10,7 @@ pluginId: MQTTDiscovery
 ## 2024-06-15
 
 - Ajout du type *vacuum*
+- Fix un problème avec certaines images d'équipement qui ne s'affichaient pas
 
 # Stable
 

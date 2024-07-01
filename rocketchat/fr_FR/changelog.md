@@ -7,10 +7,14 @@ pluginId: rocketchat
 
 # Beta
 
-- Mise à jour du démon
-- Mise à jour de dépendances
+n/a
 
 # Stable
+
+## 2024-07-02
+
+- Mise à jour du démon
+- Mise à jour de dépendances
 
 ## 2024-04-10
 

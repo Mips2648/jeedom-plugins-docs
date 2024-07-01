@@ -7,9 +7,13 @@ pluginId: myaudi
 
 # Beta
 
-- Compatibilité Debian 12 (nécessite Jeedom 4.4.7)
+n/a
 
 # Stable
+
+## 2024-07-01
+
+- Compatibilité Debian 12 (nécessite Jeedom 4.4.8)
 
 ## 2024-04-10
 

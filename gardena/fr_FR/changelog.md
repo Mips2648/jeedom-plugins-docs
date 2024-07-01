@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2024-07-02
+
+- Fix mineur
+- Mise à jour de dépendances
+
 ## 2024-06-11
 
 - Importante réécriture du code du démon: il devrait être encore **plus stable**, **plus rapide** et consommer un peu **moins de ressources** en moyenne

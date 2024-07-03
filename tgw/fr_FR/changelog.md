@@ -7,7 +7,9 @@ pluginId: tgw
 
 # Beta
 
-n/a
+## 2024-07-04
+
+- Mise à jour de dépendances
 
 # Stable
 

@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-n/a
+- Fix sur les commandes infos pour le type *vacuum*
 
 # Stable
 

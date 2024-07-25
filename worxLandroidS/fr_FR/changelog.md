@@ -8,6 +8,7 @@ pluginId: worxLandroidS
 # Beta
 
 - Ajout des codes erreur et état ainsi que les descriptions pour les modèles Landroid Vision
+- Mise à jour de dépendances
 
 # Stable
 

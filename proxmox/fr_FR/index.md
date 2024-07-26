@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Description
 
-Plugin permettant la gestion d'un serveur Proxmox.
+Plugin permettant la gestion d'un serveur (un noeud) Proxmox ou d'un cluster (plusieurs noeuds dans le même cluster) Proxmox, autrement dit **un et un seul** *datacenter* Proxmox.
 Il est possible de récupérer toutes les ressources (noeuds, vms, stockage...) et toutes leurs propriétés (statut, mémoire, CPU, disque, adresse IP, temps d'activité, list des snapshots...)
 Le plugin permet aussi de démarrer et arrêter les VMs et les containers ainsi que de prendre des snapshots et des backups.
 Il dispose également d'une page santé spécifique résumant l'ensemble des informations de vos équipements.

@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-07-01
+
+- Debian 12 compatibility (requires Jeedom 4.4.8)
+
 ## 2024-04-10
 
 - Update dependencies

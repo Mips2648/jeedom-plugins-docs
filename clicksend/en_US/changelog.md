@@ -7,11 +7,21 @@ pluginId: clicksend
 
 # Beta
 
-First version
+n/a
 
 # Stable
 
-n/a
+## 2024-06-21
+
+- Fix bug on cronDaily
+
+## 2024-06-01
+
+- Update dependencies
+
+## 2024-04-29
+
+- First version
 
 # Documentation
 

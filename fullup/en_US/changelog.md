@@ -11,7 +11,11 @@ n/a
 
 # Stable
 
-# 2023-08-21
+## 2024-06-01
+
+- Update dependencies
+
+## 2023-08-21
 
 - Added support for the _Total_ application; see plugin configuration
 - Improve password fields

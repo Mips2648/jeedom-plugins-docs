@@ -7,11 +7,24 @@ pluginId: gardena
 
 # Beta
 
-## 2024-04-10
-
-- Update dependencies
+n/a
 
 # Stable
+
+## 2024-07-02
+
+- Minor fix
+- Update dependencies
+
+## 2024-06-11
+
+- Important rewrite of the daemon code: it should be even **more stable**, **faster** and consume a little **fewer resources** on average
+- Add info & action command **Default duration** on all devices (Gardena & Husqvarna) that have action commands to specify a duration: previously the default duration was hard-coded if not specified when using one of these commands, now the plugin will take the value of this new command **Default duration**
+- For *Husqvarna* mowers: add of **Start zone xxx** action commands (one per existing zone)
+- For *Husqvarna* mowers: add **management of exclusion zones**. Per zone, an “active/inactive” switch will be created, so 3 commands, one binary info and 2 actions (on/off)
+- Add an automatic refresh task for *Husqvarna* mowers supporting the **exclusion zones** feature
+- Update of internal dependencies
+- This version **requires the dependencies to be update**, in principle this will be done automatically during the update
 
 ## 2024-04-08
 

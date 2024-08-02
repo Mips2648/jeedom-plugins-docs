@@ -5,19 +5,30 @@ lang: en_US
 pluginId: vaillantmultimatic
 ---
 
+> **Attention**
+>
+> This plugin is no longer compatible with the vaillantMULTIMATIC system but only myVaillant. If you have not yet migrated to myVaillant, do not install this version of the plugin.
+
 # Beta
 
-- Fix migration & zone management if several zones exist
+## 2024-07-29
+
+- Update dependencies
 
 # Stable
 
+## 2024-06-11
+
+- Internal modification of daemon
+- Update dependencies
+
+## 2024-04-15
+
+- Fix migration of zones if several zones exist
+
 ## 2024-04-08
 
-> **Attention**
->
-> This version is no longer compatible with the vaillantMULTIMATIC system but only myVaillant. If you have not yet migrated to myVaillant, do not install this version of the plugin.
-
-- Add compatibility with myVaillant: a lot of changes, don't forget to reconfigure the plugin. Most of your equipment will be migrated, there may be cases where this is not yet managed. See also [this topic on community](https://community.jeedom.com/t/nouvelle-app-myvaillant/123431)
+- Add compatibility with myVaillant and remove compatibility with vaillantMULTIMATIC: a lot of changes, don't forget to reconfigure the plugin. Most of your equipment will be migrated, there may be cases where this is not yet managed. See also [this topic on community](https://community.jeedom.com/t/nouvelle-app-myvaillant/123431)
 - Optimizing the size of backups
 - Add room icons
 - Add controller info

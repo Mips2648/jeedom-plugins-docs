@@ -84,7 +84,7 @@ You must then enter the IP address of the Raspberry previously installed and con
 
 ## Daemon installation & configuration
 
-# First installation
+### First installation
 
 In principle, after saving the device, the*VMC serial port* drop-down list should contain the list of USB devices detected on the pi. If it is not the case:
 
@@ -103,7 +103,7 @@ The installation will:
 
 If everything goes well, the daemon/service will start sending information about the VMC and the *status* will change to *OK*
 
-# Configuration change
+### Configuration change
 
 If you change the serial port to use, you must, after saving the device, resend the configuration. To do this, you can click on the **Configure the service & restart button**
 

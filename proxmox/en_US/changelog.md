@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2024-07-02
+
+- The *Active* check box is now read-only because it is updated during synchronization
+- Fix for Debian 12 if the Proxmox configuration is incorrect and therefore the plugin does not have access to all the information it is trying to access
+
 ## 2024-04-11
 
 - Update dependencies

@@ -11,6 +11,10 @@ Plugin to connect to InfluxDB. It allows to easily send information by simply se
 
 The plugin also allows you to export Jeedom order history to InfluxDB.
 
+> **Attention**
+>
+> The plugin supports influxDB versions >= 1.8 or >= 2.0. Older influxDBv1 versions < 1.8 are not supported.
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
@@ -24,16 +28,16 @@ There is no particular configuration to do, the plugin may use cronDaily to rese
 A Jeedom device correspond to one InfluxDB connection
 
 Each connector will connect and send data to one and only one influxDB instance, but you can have as many connectors as you need.
-The plugin manages InfluxDB v1 and v2, the basic principle between the two remains the same but the way to connect changes between the two.
+The plugin manages InfluxDB v1.8+ and v2, the basic principle between the two remains the same but the way to connect changes between the two.
 
-## InfluxDB v1
+## InfluxDB v1.8+
 
 For each connector, you have to configure the IP address of InfluxDB server, a user, a password and the database name.
 You have the option to enable or not https.
 
 ![InfluxDB v1](../images/influxV1.png "InfluxDB v1")
 
-## InfluxDB v2
+## InfluxDB v2.0+
 
 For v2, you must configure the URL in the form `https://server.my`, the access token, the organization and the destination bucket (see influxDB documentation)
 

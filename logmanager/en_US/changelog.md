@@ -11,6 +11,13 @@ n/a
 
 # Stable
 
+## 2024-06-11
+
+- Adapt widget for Jeedom v4.4
+- Add logs colorization
+- Formatting logs to have a monospaced font
+- Add the possibility to have the commands of the device displayed on the tile also when the log content is displayed
+
 ## 2024-04-10
 
 - Block the use of a log name that corresponds to a plugin installed on Jeedom

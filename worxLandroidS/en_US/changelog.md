@@ -7,13 +7,17 @@ pluginId: worxLandroidS
 
 # Beta
 
-## 2024-04-03
-
-- Deleting the “Pause” image on the widget when the mower is paused
-- Fix on dependencies check
+- Add error and status codes as well as descriptions for Landroid Vision models
 - Update dependencies
 
 # Stable
+
+## 2024-06-11
+
+- Deleting the “Pause” image on the widget when the mower is paused
+- Fix on dependencies check
+- Update daemon
+- Update dependencies
 
 ## 2024-02-23
 

@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2024-06-01
+
+- Compatibility with Debian 12 for remote service
+- Update dependencies
+
 ## 2024-04-10
 
 - Update dependencies

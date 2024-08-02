@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2024-07-02
+
+- Update daemon
+- Update dependencies
+
 ## 2024-04-10
 
 - Update dependencies

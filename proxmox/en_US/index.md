@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Description
 
-Plugin allowing the management of a Proxmox server.
+Plugin allowing the management of a Proxmox server (a node) or a Proxmox cluster (several nodes in the same cluster), in other words **one and only one** Proxmox *datacenter*.
 It is possible to get all resources (nodes, vm, lxc, storage) and all their properties (status, memory, CPU, disk, IP address, up time, snapshots list...).
 The plugin can also start, stop vm and containers and take snapshots and backups.
 It also has a specific health page summarizing all the information of your devices.
@@ -99,7 +99,7 @@ The panel provide a lot of information, it offers a global view of all proxmox r
 
 As soon as the plugin configuration is complete, the daemon should start and will try to connect to Proxmox according to the configured delay in order to synchronize the information.
 
-All resources to which the plugin has access will be automatically created in Jeedom, it is not possible to manually create a device.
+All resources to which the plugin has access will be automatically created in Jeedom and activated, it is not possible to create device manually. The name of the device cannot be modified under Jeedom, it will always correspond to the name under Proxmox. A device will never be automatically deleted but it will be deactivated.
 
 It is possible to do a manual synchronization via the button in the device page.
 

@@ -7,7 +7,14 @@ pluginId: influxdb
 
 # Beta
 
-n/a
+## 2024-06-18
+
+> **Attention**
+>
+> The plugin no longer supports InfluxDB versions < 1.8, you must have influxDB version >= 1.8 or >= 2.0. Update your InfluxDB before updating the plugin (see official InfluxDB documentation for the procedure)
+
+- Improve password fields
+- End of support for InfluxDB versions < 1.8 mainly to ensure the compatibility of the plugin with Debian 12 and PHP 8
 
 # Stable
 

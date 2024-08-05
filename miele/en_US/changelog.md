@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2024-06-11
+
+- Add additional temperature information commands for device with more than one temperature probe (e.g. combined devices)
+
 ## 2024-04-10
 
 - Internal change in dependency management for compatibility with Jeedom v4.4

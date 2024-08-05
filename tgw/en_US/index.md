@@ -16,6 +16,8 @@ I invite you to consult [this documentation](https://mips2648.github.io/jeedom-p
 > **Important**
 >
 > This plugin does not guarantee that *Theengs gateway* will work on your machine, there are too many parameters that can influence this: it depends on your hardware, the version of your system, the Bluetooth key used etc. The plugin is only responsible for installing the application and allows you to control its status from Jeedom.
+>
+> Antenna installation on **Debian Buster (10) is no longer supported**. To install an antenna, it is mandatory to have a machine running **Debian Bullseye (11) or Debian Bookworm (12)** (or raspbian equivalent for raspberry). This does not concern the plugin itself, so it does not concern the machine on which Jeedom runs but only the antennas. So if your Jeedom runs under Buster it is ok but you will not be able to install an antenna locally but only remotely.
 
 # Installation
 
@@ -134,7 +136,7 @@ You will then have to choose his password, follow the instructions on the screen
 Then add the user to the *sudo* group
 
 ```bash
-usermod -aG sudo jeedom
+sudo usermod -aG sudo jeedom
 ```
 
 ## Execute sudo without confirming the password

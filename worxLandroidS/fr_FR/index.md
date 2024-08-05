@@ -76,6 +76,28 @@ Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce 
 - 13: Câble inversé
 - 14: Erreur charge batterie
 - 15: Délai recherche station dépassé
+- 16: Verrouillée
+- 17: battery temperature error
+- 18: dummy model
+- 19: battery trunk open timeout
+- 20: wire sync
+- 21: msg num
+- 100: charging station docking error
+- 101: hbi error
+- 102: ota error
+- 103: map error
+- 104: excessive slope
+- 105: unreachable zone
+- 106: unreachable charging station
+- 108: insufficient sensor data
+- 109: training start disallowed
+- 110: Erreur caméra
+- 111: mapping exploration required
+- 112: mapping exploration failed
+- 113: rfid reader error
+- 114: headlight error
+- 115: missing charging station
+- 116: blade height adjustment blocked
 
 ## Liste des codes statut
 
@@ -88,13 +110,20 @@ Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce 
 - 6: Recherche du câble
 - 7: En cours de tonte
 - 8: Soulevée
-- 9: Coincée
+- 9: Bloquée
 - 10: Lames bloquées
 - 11: Debug
-- 12: Remote control
+- 12: Contrôle à distance
+- 13: digital fence escape
 - 30: Retour à la base
 - 31: Création des zones de tonte
 - 32: Coupe la bordure
+- 33: Départ vers zone de tonte
+- 34: Pause
+- 103: Recherche de la zone
+- 104: Recherche de la base
+- 110: border crossing
+- 111: Découverte de la pelouse
 
 # FAQ
 

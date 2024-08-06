@@ -7,6 +7,9 @@ pluginId: portainer
 
 # Beta
 
+- Optimisations
+- Ajout de traductions
+
 ## 2024-04-10
 
 - Mise à jour de dépendances

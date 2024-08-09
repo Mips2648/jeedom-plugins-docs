@@ -7,7 +7,7 @@ pluginId: gotify
 
 # Beta
 
-n/a
+- Traduction complète du plugin en *en_US*, *de_DE*, *es_ES*
 
 # Stable
 

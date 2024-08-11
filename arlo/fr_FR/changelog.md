@@ -15,6 +15,10 @@ Au contraire, si vous avez acquis récemment des caméras Arlo et que le changem
 
 Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
 
+## 2024-08-11
+
+- Traduction complète du plugin en *en_US*, *de_DE*, *es_ES*
+
 ## 2024-05-15
 
 - Modification interne du démon

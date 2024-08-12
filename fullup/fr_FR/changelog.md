@@ -7,7 +7,7 @@ pluginId: fullup
 
 # Beta
 
-n/a
+- Traduction complète du plugin en *en_US*, *de_DE*, *es_ES*, *it_IT*, *pt_PT*
 
 # Stable
 
@@ -17,7 +17,7 @@ n/a
 
 ## 2023-08-21
 
-- Ajout du support de l'application _Total_; voir configuration du plugin
+- Ajout du support de l'application *Total*; voir configuration du plugin
 - Amélioration des champs password
 
 ## 2022-10-17
@@ -32,7 +32,7 @@ n/a
 
 - Nouvelle présentation de la liste des objets
 - Amélioration de la mise en page de la configuration de l'équipement et des commandes
-- Ajout d'une configuration pour sélectionner l'application: pour l'instant _Q8 Mazout_ ou _Fullup_
+- Ajout d'une configuration pour sélectionner l'application: pour l'instant *Q8 Mazout* ou *Fullup*
 - Optimisation interne
 
 ## 2020-08-24

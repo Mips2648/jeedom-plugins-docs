@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Traduction complète du plugin en *en_US*, *de_DE*, *es_ES*, *it_IT*, *pt_PT*
 
 # Stable
 

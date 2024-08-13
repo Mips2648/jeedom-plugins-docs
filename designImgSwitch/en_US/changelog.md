@@ -7,7 +7,7 @@ pluginId: designImgSwitch
 
 # Beta
 
-N/A
+- Full translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 # Stable
 
@@ -37,11 +37,11 @@ N/A
 ## 2020-08-09
 
 - Fixed an issue on updating the design based on the day / night change
-- Add an info command _Phase of the day_
+- Add an info command *Phase of the day*
 
 ## 2020-05-31
 
-- Add an info command _Condition_
+- Add an info command *Condition*
 
 ## 2020-03-30
 

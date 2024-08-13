@@ -7,6 +7,11 @@ pluginId: SmartMeterP1
 
 # Beta
 
+- Mise à jour de dépendances
+- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+
+# Stable
+
 ## 2024-04-10
 
 - Mise à jour de dépendances
@@ -27,10 +32,6 @@ pluginId: SmartMeterP1
 ## 2024-02-01
 
 Première version
-
-# Stable
-
-n/a
 
 # Documentation
 

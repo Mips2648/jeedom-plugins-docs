@@ -8,7 +8,7 @@ pluginId: fail2ban
 # Beta
 
 - Mise à jour de dépendances
-- Traduction complète du plugin en *en_US*, *de_DE*, *es_ES*, *it_IT*, *pt_PT*
+- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 # Stable
 

@@ -8,11 +8,8 @@ pluginId: portainer
 # Beta
 
 - Optimisations
-- Ajout de traductions
-
-## 2024-04-10
-
 - Mise à jour de dépendances
+- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 - Ajout de commandes sur les équipements de type container: **Statut santé**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(Voir documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 
 # Stable

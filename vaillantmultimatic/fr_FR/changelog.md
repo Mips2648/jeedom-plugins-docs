@@ -11,9 +11,8 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-## 2024-07-29
-
 - Mise à jour de dépendances
+- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 # Stable
 

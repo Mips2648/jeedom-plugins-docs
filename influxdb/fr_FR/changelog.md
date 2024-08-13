@@ -15,7 +15,8 @@ pluginId: influxdb
 
 - Amélioration des champs password
 - Arrêt du support des versions influxDB < 1.8 principalement pour assurer la compatibilité du plugin avec Debian 12 et PHP 8
-- Traduction complète du plugin en *en_US*, *de_DE*, *es_ES*, *it_IT*, *pt_PT*
+- Mise à jour de dépendances
+- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 # Stable
 

@@ -17,7 +17,7 @@ Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle
 
 ## 2024-08-11
 
-- Traduction complète du plugin en *en_US*, *de_DE*, *es_ES*, *it_IT*, *pt_PT*
+- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 ## 2024-05-15
 

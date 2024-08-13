@@ -7,7 +7,8 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Mise à jour de dépendances
+- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 # Stable
 

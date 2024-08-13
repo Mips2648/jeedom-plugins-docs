@@ -7,9 +7,8 @@ pluginId: tgw
 
 # Beta
 
-## 2024-07-04
-
 - Update dependencies
+- Full translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 # Stable
 

@@ -7,7 +7,8 @@ pluginId: linksys
 
 # Beta
 
-N/A
+- Update dependencies
+- Full translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 # Stable
 

@@ -7,7 +7,7 @@ pluginId: designImgSwitch
 
 # Beta
 
-- Full translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 # Stable
 

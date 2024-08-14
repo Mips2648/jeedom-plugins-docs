@@ -7,13 +7,48 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-- *select* type support
-- *device_automation* type support
-- Removal of the “Duplicate” device button that had no reason to exist
-- Add button to remove unknown devices from the list of discovered devices
-- *music_player* type support
+- Fix on info commands for type *vacuum*.
+- Translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 # Stable
+
+## 2024-07-02
+
+- Adding the *vacuum* type
+- Fixed a problem with some device images not being displayed
+- Update dependencies
+
+## 2024-05-14
+
+- Improved: creation of equipment commands after addition is immediate, no need to restart the daemon
+- Improvement: last module name taken into account during discovery (useful if the name is changed after inclusion, for example).
+- Improved: images of all zigbee modules (zigbee2mqtt compatible) will be automatically retrieved by the plugin.
+- Add a button to open the module configuration if the url is provided in the discovery information (e.g. to the module config on zigbee2mqtt, to omg)
+- fix of *update* type for zigbee devices (via zigbee2mqtt)
+- Fix of type *device_automation* / *device trigger*; it is necessary to delete the corresponding commands and restart the daemon to recreate them correctly.
+- Fix on dependencies check
+- Update dependencies
+- Internal modification of daemon
+
+## 2024-02-25
+
+- Optimizing the size of backups
+- Add of the image of some zigbee modules
+
+## 2024-02-14
+
+- *select* type support (action/list command)
+- *device_automation* type support
+- *music_player* type support (to support sonos2mqtt gateway)
+- Add **Open**, **Close** and **Stop** commands to the *cover* type (shutter, blind, curtain...).
+- Improvement: command info whose unit is `%` will have their minimum and maximum values set to 0 and 100 by default.
+- Add image for zigbee modules *Sonoff occupancy sensor (SNZB-06P)* and *Aqara curtain driver E1 (ZNCLBL01LM)*.
+- Add a button to purge all discovered devices from the list and from the MQTT broker (not created devices, of course).
+- Add a button to remove unknown devices from the list
+- Removal of the “Duplicate” device button that had no reason to exist
+- New version of the dependencies (paho-mqtt 2.0) and adaptation of the daemon accordingly
+- Fix on discovering a *Lock* component when it has no defined name
+- Fix action on*cover* on some devices
 
 ## 2023-12-09
 

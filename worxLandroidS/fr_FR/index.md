@@ -48,9 +48,6 @@ Le dashboard affiche:
 
 Vous pouvez choisir d'afficher ou masquer les infos via la liste des commandes de l'équipement.
 
-Il faut éviter d'envoyer plusieurs demandes de changement de planning sur des jours différents à des intervalles rapides. En effet le changement n'est enregistré dans le plugin qu'à la réponse du serveur. Tout le planning est envoyé à chaque fois et par conséquent on pourrait perdre la précédente demande.
-Donc soit il faut attendre l'actualisation de l'info dans l'équipement, soit il faut mettre une temporisation.
-
 # Widget
 
 Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce widget dans la page de configuration de l'équipement.
@@ -135,15 +132,6 @@ Cela sera plusieurs fois par minute pendant la tonte et peut-être aucune mise �
 > quels sont les modèles compatibles?
 
 Il n'est pas possible de lister tous les modèles compatibles; en principe tous les modèles équipés d'une connexion wifi, compatible avec le cloud Worx seront compatible avec le plugin.
-
-> La communication avec la tondeuse est perdue
-
-Il peut arriver par moment de perdre la connexion avec la tondeuse, y compris avec l'application mobile.
-Dans certains cas, le fait de réactualiser le code WIFI peut résoudre le problème.
-(Faire comme si on voulait ajouter une nouvelle tondeuse sur l'appli mobile, appuyer 3 secondes sur le bouton OK de la tondeuse, renseigner le n° de série et le code WIFI correspondant)
-Worx limite volontairement le nombre d'interrogations de l'état de la tondeuse (limite non connue) donc trop de "refresh" pourrait stopper la communication avec le cloud. D'après les tests, il s'agit d'une limite quotidienne.
-
-Une autre possibilité : le compte est bloqué, si aucune communication n'est possible pendant plus de 24hr alors, rendez vous sur votre compte Worx <https://account.worxlandroid.com/login> puis dissocier la tondeuse et faites une nouvelle association.
 
 # Changelog
 

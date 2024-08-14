@@ -8,7 +8,7 @@ pluginId: MQTTDiscovery
 # Beta
 
 - Fix sur les commandes infos pour le type *vacuum*
-- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 # Stable
 

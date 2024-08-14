@@ -9,7 +9,7 @@ pluginId: worxLandroidS
 
 - Ajout des codes erreur et état ainsi que les descriptions pour les modèles Landroid Vision
 - Mise à jour de dépendances
-- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 # Stable
 

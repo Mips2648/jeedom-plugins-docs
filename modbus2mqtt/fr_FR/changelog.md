@@ -9,7 +9,7 @@ pluginId: modbus2mqtt
 
 - Mise à jour du démon
 - Mise à jour de dépendances
-- Traduction complète du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 # Stable
 

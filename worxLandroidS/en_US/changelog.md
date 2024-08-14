@@ -9,6 +9,7 @@ pluginId: worxLandroidS
 
 - Add error and status codes as well as descriptions for Landroid Vision models
 - Update dependencies
+- Full translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 # Stable
 

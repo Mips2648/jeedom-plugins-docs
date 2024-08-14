@@ -7,7 +7,7 @@ pluginId: miele
 
 # Beta
 
-n/a
+- Full translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 # Stable
 

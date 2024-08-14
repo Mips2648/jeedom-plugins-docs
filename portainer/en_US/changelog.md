@@ -9,7 +9,7 @@ pluginId: portainer
 
 - Optimizations
 - Update dependencies
-- Full translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Translation of the plugin into English, German, Spanish, Italian and Portuguese
 - Add commands on container-type device: **Health status**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(See documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 
 # Stable

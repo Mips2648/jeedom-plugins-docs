@@ -66,8 +66,8 @@ Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce 
 - 3: Câble non trouvé
 - 4: En dehors des limites
 - 5: Délai pluie
-- 6: Close door to mow
-- 7: Close door to go home
+- 6: Fermez le capot pour tondre
+- 7: Fermez le capot pour retourner sur la base
 - 8: Moteur lames bloqué
 - 9: Moteur roues bloqué
 - 10: Timeout après blocage
@@ -77,27 +77,27 @@ Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce 
 - 14: Erreur charge batterie
 - 15: Délai recherche station dépassé
 - 16: Verrouillée
-- 17: battery temperature error
-- 18: dummy model
-- 19: battery trunk open timeout
-- 20: wire sync
+- 17: Erreur de température de la batterie
+- 18: Modèle factice
+- 19: Délai d'ouverture du coffre de la batterie dépassé
+- 20: Recherche du câble
 - 21: msg num
-- 100: charging station docking error
-- 101: hbi error
-- 102: ota error
-- 103: map error
-- 104: excessive slope
-- 105: unreachable zone
-- 106: unreachable charging station
-- 108: insufficient sensor data
-- 109: training start disallowed
+- 100: Erreur d'amarrage à la station de recharge
+- 101: Erreur hbi
+- 102: Erreur OTA
+- 103: Erreur carte
+- 104: Pente excessive
+- 105: Zone inaccessible
+- 106: Station de recharge inaccessible
+- 108: Données des capteurs insuffisantes
+- 109: Démarrage entrainement refusé
 - 110: Erreur caméra
-- 111: mapping exploration required
-- 112: mapping exploration failed
-- 113: rfid reader error
-- 114: headlight error
-- 115: missing charging station
-- 116: blade height adjustment blocked
+- 111: Exploration cartographique requise
+- 112: L'exploration cartographique a échoué
+- 113: Erreur du lecteur rfid
+- 114: Erreur de phare
+- 115: Station de recharge manquante
+- 116: Réglage de la hauteur de la lame bloqué
 
 ## Liste des codes statut
 
@@ -114,7 +114,7 @@ Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce 
 - 10: Lames bloquées
 - 11: Debug
 - 12: Contrôle à distance
-- 13: digital fence escape
+- 13: Sortie de clôture numérique
 - 30: Retour à la base
 - 31: Création des zones de tonte
 - 32: Coupe la bordure
@@ -122,7 +122,7 @@ Un widget pré-configuré est disponible dans le plugin; Vous pouvez activer ce 
 - 34: Pause
 - 103: Recherche de la zone
 - 104: Recherche de la base
-- 110: border crossing
+- 110: Traversée de limite
 - 111: Découverte de la pelouse
 
 # FAQ

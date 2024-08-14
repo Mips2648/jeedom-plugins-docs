@@ -11,7 +11,7 @@ pluginId: MQTTDiscovery
 
 It is based on the principle of “MQTT Auto Discovery” which exists under Home Assistant in order to automatically create devices and their commands under Jeedom. So if you have devices that are connected via MQTT and if they publish the information necessary for the “MQTT Auto Discovery” compatibility, these will be automatically recognized and integrated into Jeedom. There is obviously no point in installing Home Assistant, Jeedom is enough.
 
-This makes it possible to use the excellent project [Open MQTT Gateway](https://docs.openmqttgateway.com/) on esp32 which manages [a large number of devices](https://compatible.openmqttgateway.com/index.php/devices/) or the equivalent [Theengs gateway](https://gateway.theengs.io/) on pi for example, all these devices will be automatically supported under Jeedom via **MQTT Discovery**, with automatic “multi-antenna” management. It is becoming very easy to manage the presence of Bluetooth tags such as nuts or tiles.
+This makes it possible to use the excellent project [Open MQTT Gateway](https://docs.openmqttgateway.com/) on esp32 which manages [a large number of devices](https://decoder.theengs.io/devices/devices.html) or the equivalent [Theengs gateway](https://gateway.theengs.io/) on pi for example, all these devices will be automatically supported under Jeedom via **MQTT Discovery**, with automatic “multi-antenna” management. It is becoming very easy to manage the presence of Bluetooth tags such as nuts or tiles.
 
 But so it's not limited to Bluetooth devices since all “MQTT Auto Discovery” compatible devices will be recognized and manageable. For example, this plugin has been successfully tested with zwavejs-ui and zigbee2mqtt.
 
@@ -62,6 +62,12 @@ The *MQTT Manager (mqtt2)* plugin is not required but if it is installed, the co
 
 You need to configure the broker's IP address, port, username, and password.
 If the *MQTT Manager (mqtt2)* plugin is installed, you will see a button to perform this configuration automatically.
+
+> **Tip**
+>
+> There is absolutely no need to have *MQTT Manager (mqtt2)* installed or maintained. **MQTT Discovery** does not depend on *MQTT Manager (mqtt2)*, messages never transit via this plugin. **MQTT Discovery** has no impact on the configuration of *MQTT Manager (mqtt2)* and vice versa.
+>
+> This feature is only present to prevent you from having to manually fill in connection information.
 
 ## Auto-discovery
 
@@ -167,9 +173,9 @@ Automatic discovery will publish the complete definition of what are called *Com
 
 The plugin reads these definitions and for each component will create the corresponding Jeedom commands, each under their respective device, configuring the min/max values or the list of possible choices etc., but also the default icon on the command, the generic type of the command, etc.
 
-## Supported component
+## Supported components/entities
 
-Not all components are fully or completely integrated yet. If your hardware needs support for a component that is not yet recognized, do not hesitate to request it by creating a post on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+Not all components/entities are fully or completely integrated yet. If your hardware needs support for a component that is not yet recognized, feel free to request it by creating a post on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 - alarm_control_panel
 - binary_sensor
@@ -187,6 +193,7 @@ Not all components are fully or completely integrated yet. If your hardware need
 - switch
 - text
 - update
+- vacuum
 
 # Bluetooth device detections
 
@@ -232,6 +239,12 @@ All combinations are possible and everything is inter-compatible.
 ### The devices under Jeedom
 
 This is where the **MQTT Discovery** plugin comes into play and if you have already configured the plugin as described above, you don't have to do anything more than add the devices you whish to your Jeedom, the plugin does the rest.
+
+### Unknown equipment
+
+If your device is unrecognized or poorly recognized, it will not be displayed in the list of discovered equipment, but may be visible in the list of unknown equipment (see **Equipment management** for more information), for which only the presence information will exist.
+
+To find out why it is not recognized, please first check the [list of compatible devices](https://decoder.theengs.io/devices/devices.html) and, if necessary, ask your question on the [Open MQTT Gateway / Theengs Gateway community](https://community.openmqttgateway.com/).
 
 ## So why isn't antenna management integrated into MQTT Discovery?
 

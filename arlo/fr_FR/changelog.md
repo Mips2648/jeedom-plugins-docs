@@ -15,6 +15,10 @@ Au contraire, si vous avez acquis récemment des caméras Arlo et que le changem
 
 Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
 
+## 2024-08-16
+
+- - Ajout du support de la Arlo Essential Indoor 2
+
 ## 2024-08-11
 
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais

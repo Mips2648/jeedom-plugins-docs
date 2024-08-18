@@ -7,10 +7,14 @@ pluginId: fullup
 
 # Beta
 
-- Mise à jour de dépendances
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+n/a
 
 # Stable
+
+## 2024-08-19
+
+- Mise à jour de dépendances
+- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 ## 2024-06-01
 

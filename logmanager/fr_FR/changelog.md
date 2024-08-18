@@ -7,9 +7,13 @@ pluginId: logmanager
 
 # Beta
 
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+n/a
 
 # Stable
+
+## 2024-08-19
+
+- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 ## 2024-06-11
 

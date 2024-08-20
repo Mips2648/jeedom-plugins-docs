@@ -7,9 +7,13 @@ pluginId: clicksend
 
 # Beta
 
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+n/a
 
 # Stable
+
+## 2024-08-21
+
+- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 
 ## 2024-06-21
 

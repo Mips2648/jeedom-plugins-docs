@@ -15,6 +15,10 @@ On the contrary, if you've recently acquired Arlo cameras and mode switching (on
 
 See also [this topic on community](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
 
+## 2024-08-16
+
+- - Added support for Arlo Essential Indoor 2
+
 ## 2024-08-11
 
 - Translation of the plugin into English, German, Spanish, Italian and Portuguese

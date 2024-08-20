@@ -7,10 +7,14 @@ pluginId: gotify
 
 # Beta
 
-- Update dependencies
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+n/a
 
 # Stable
+
+## 2024-08-19
+
+- Update dependencies
+- Translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 ## 2023-10-09
 

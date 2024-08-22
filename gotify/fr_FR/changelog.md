@@ -7,7 +7,7 @@ pluginId: gotify
 
 # Beta
 
-n/a
+- Suppression de l'option pour ne pas vérifier le certificat hôte de Gotify, cette option n'était plus active depuis presque 4 ans
 
 # Stable
 

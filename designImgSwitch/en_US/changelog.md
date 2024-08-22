@@ -7,9 +7,14 @@ pluginId: designImgSwitch
 
 # Beta
 
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+n/a
 
 # Stable
+
+## 2024-08-19
+
+- Integration with *Weather* plugin removed
+- Translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 ## 2023-05-20
 

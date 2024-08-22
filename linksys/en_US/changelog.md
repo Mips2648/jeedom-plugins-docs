@@ -7,10 +7,14 @@ pluginId: linksys
 
 # Beta
 
-- Update dependencies
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+n/a
 
 # Stable
+
+## 2024-08-19
+
+- Update dependencies
+- Translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 ## 2024-04-10
 

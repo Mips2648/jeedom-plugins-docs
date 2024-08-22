@@ -23,9 +23,9 @@ The plugin is in the Plugins → Weather menu.
 
 After creating new device, the usual options are available.
 
-Then select the designs for which you want to change the background image according to the weather and choose the weather device to use.
+Select the designs for which you want to change the background image according to weather conditions.
 
-In case of manual configuration, it is necessary to provide info commands that will give the time of sunrise and sunset in Jeedom format (HHMM) as well as to specify the conditions for each of the weather situations so that the plugin can deduce the background image to use.
+It is necessary to provide info commands that will give the time of sunrise and sunset in Jeedom (HHMM) format, and to encode the conditions for each weather situation so that the plugin can deduce the background image to use.
 
 Background images are customizable via the device configuration screen.
 

@@ -7,7 +7,11 @@ pluginId: influxdb
 
 # Beta
 
-## 2024-06-18
+n/a
+
+# Stable
+
+## 2024-08-28
 
 > **Attention**
 >
@@ -17,8 +21,6 @@ pluginId: influxdb
 - Arrêt du support des versions influxDB < 1.8 principalement pour assurer la compatibilité du plugin avec Debian 12 et PHP 8
 - Mise à jour de dépendances
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
-
-# Stable
 
 ## 2024-04-10
 

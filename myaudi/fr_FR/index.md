@@ -20,10 +20,6 @@ Plugin permettant la connexion à la plateforme MyAudi permettant de récupérer
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
-> **Important**
->
-> Il est indispensable d'être sous Debian 10 Buster minimum pour faire fonctionner le plugin.
-
 # Configuration du plugin
 
 Dans la configuration du plugin il faudra renseigner le nom d'utilisateur et le mot de passe.

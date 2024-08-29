@@ -9,14 +9,21 @@ pluginId: fullup
 
 Plugin getting data from <a href="https://fullup.be/" target="_blank"> Fullup </a>connected gauges. The plugin fetch data every hour via a cron.
 
-# Configuration
+# Supported versions
 
-## Installation
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
 
-In order to use the plugin, you must download it, install and activate it like any Jeedom plugin.
+# Installation
+
+In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 
 > **Tip**
 > the plugin uses a "cron hourly" to update the data every hour, you can choose to disable it and update your equipment manually or by other means but it is not necessary to do it more frequently.
+
+# Configuration
 
 ## Creating a dedicated user to the plugin in the Fullup application
 

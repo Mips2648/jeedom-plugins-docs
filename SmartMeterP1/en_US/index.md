@@ -11,6 +11,13 @@ This plugin allows you to connect to [this gateway](https://www.domohab.be/categ
 
 This works for both 3-phase and single-phase meters.
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

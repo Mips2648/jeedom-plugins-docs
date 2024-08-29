@@ -11,6 +11,13 @@ Plugin allowing connection to a Rocket.chat server. Rocket.chat is a collaborati
 The plugin take in charge the ask (in scenarios), interactions and sending of attachments (ex: camera image).
 The advantage of this solution is that it can be hosted at your home (a docker is enough), so your data remains in your possession.
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

@@ -11,9 +11,17 @@ Plugin to connect to InfluxDB. It allows to easily send information by simply se
 
 The plugin also allows you to export Jeedom order history to InfluxDB.
 
+# Supported versions
+
 > **Attention**
 >
 > The plugin supports influxDB versions >= 1.8 or >= 2.0. Older influxDBv1 versions < 1.8 are not supported.
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+| InfluxDB  | v1.8+ & v2                  |
 
 # Installation
 

@@ -20,10 +20,6 @@ Plugin to connect to the MyAudi platform allowing to retrieve cars which are com
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 
-> **Important**
->
-> It is essential to be under Debian 10 Buster minimum to run the plugin.
-
 # Plugin configuration
 
 In the configuration of the plugin it will be necessary to setup the username and password.

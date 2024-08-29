@@ -10,6 +10,13 @@ pluginId: miele
 Plugin allowing to integrate all appliances compatible with Miel@Home.
 It is possible to get appliances information, to monitor them and execute some actions (depending the appliance).
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

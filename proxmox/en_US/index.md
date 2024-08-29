@@ -12,6 +12,14 @@ It is possible to get all resources (nodes, vm, lxc, storage) and all their prop
 The plugin can also start, stop vm and containers and take snapshots and backups.
 It also has a specific health page summarizing all the information of your devices.
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+| Proxmox   | >= 8.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

@@ -36,11 +36,14 @@ Here is an overview of the possibilities of the plugin:
 >
 > It is not recommended to use Essentials or Wire-free cameras and doorbells if no base exists in the system, except if they have power supply (from grid or from a solar panel if sufficient sunlight) because their battery does not provide sufficient autonomy. If a base exists then no problem.
 
-# Installation
+# Supported versions
 
-> **Important**
->
-> It is essential to be under Debian 10 Buster or Debian 11 Bullseye to use the plugin.
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
+# Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 Then you need to install dependencies.

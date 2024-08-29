@@ -12,6 +12,13 @@ With this plugin, it is possible to retrieve in Jeedom all dockers servers confi
 
 The plugin has also a health page and a dedicated panel displaying an overview of all containers and allowing you to perform all basic actions, similar to the "Containers" page on [portainer.io] (https://www.portainer.io/portainer-ce/).
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

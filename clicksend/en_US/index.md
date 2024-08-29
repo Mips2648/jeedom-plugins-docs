@@ -9,6 +9,13 @@ pluginId: clicksend
 
 Plugin to integrate the [ClickSend platform](https://www.clicksend.com) which allows the sending of text messages (SMS) or voice messages (TTS)
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

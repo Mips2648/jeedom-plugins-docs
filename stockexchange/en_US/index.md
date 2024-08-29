@@ -10,6 +10,13 @@ pluginId: stockexchange
 Plugin to retrieve stock or index quotation as well as exchange rate between two currencies (including cryptocurrency such as bitcoin) and commodities prices.
 Most of the time all data are available in real time but refresh frequency depends on the service used.
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

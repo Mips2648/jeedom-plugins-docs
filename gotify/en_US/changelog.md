@@ -7,7 +7,7 @@ pluginId: gotify
 
 # Beta
 
-n/a
+- Removed the option not to check the Gotify host certificate, which had been inactive for almost 4 years.
 
 # Stable
 

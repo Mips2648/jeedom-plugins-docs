@@ -14,6 +14,13 @@ It is possible to access device data, monitor them and perform actions (dependin
 >
 > Whatever the device (Gardena and Husqvarna) you need internet connectivity. This plugin will not work with any other local connection technology, such as, but not only, bluetooth.
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
@@ -45,7 +52,7 @@ A **Refresh** command exists to request an additional manual refresh for Husqvar
 
 > **Tip**
 >
-> The plugin will never delete a device in your Jeedom. If a jeedom device does not correspond to any device in your possession, please delete it manually.
+> The plugin will never delete a device in your Jeedom. If a jeedom device does not correspond to any appliance in your possession, please delete it manually.
 
 In the device configuration page, there is a button to create the missing commands on it (in case you have deleted a command by mistake for example).
 
@@ -138,7 +145,7 @@ As well as the following commands for each of the valves (where X will therefore
 - **Cutting height** and **Cutting height adjustment** to know and define the cutting height (between 1 and 9)
 - **Headlight** and **Headlight adjustment** allowing to know and define the lighting mode of the headlights, possible values: *ALWAYS_ON*, *ALWAYS_OFF*, *EVENING_ONLY*, *EVENING_AND_NIGHT*
 - **Last report time** and **Next start time** the values are timestamp in milliseconds (for easier use in a scenario) and will be displayed in date/time format on the widget
-- **Programming restriction** giving the reason for the exception on normal programming
+- **Schedule restriction** giving the reason for the exception on normal schedule
 - **Error code** & **Error description** gives the code and description of the error if applicable
 - **Remaining time** info command giving the remaining time of activity; valid only after having used commands **Start manual mode** or **Return to base**
 - **Start mode manual** Starts and mows the grass for the time (in minutes) given as an option on the command

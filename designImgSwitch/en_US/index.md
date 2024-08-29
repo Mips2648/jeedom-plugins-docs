@@ -10,6 +10,13 @@ pluginId: designImgSwitch
 Plugin to automatically change the background image of your design according to the weather.
 Weather as well as sunrise and sunset information will be obtained either from the official Weather plugin (automatic integration) or from commands of your choice with manual configuration.
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

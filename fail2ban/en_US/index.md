@@ -11,6 +11,13 @@ Plugin to monitor fail2ban. It allows you to retrieve all the instant informatio
 
 It also allows you to ban and unban an IP address.
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

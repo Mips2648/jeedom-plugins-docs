@@ -14,6 +14,13 @@ The following models should be compatible but they have not all been tested:
 - ComfoD 250/350/450/550
 - WHR 920/930/950/960
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Hardware installation
 
 ## Prerequisites

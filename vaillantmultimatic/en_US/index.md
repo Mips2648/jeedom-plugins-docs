@@ -16,6 +16,17 @@ The valves and thermostats of the ambiSENSE range connected to the system are al
 >
 > The plugin should work with all gateways (VR900, VR920, VR921...) and regulators (VRC700, VRC720...) compatible with the myVaillant application.
 
+# Supported versions
+
+> **Attention**
+>
+> This plugin is no longer compatible with the vaillantMULTIMATIC system but only myVaillant. If you have not yet migrated to myVaillant, do not install this version of the plugin.
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

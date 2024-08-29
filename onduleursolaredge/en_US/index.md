@@ -16,15 +16,22 @@ Following information are available, others can be retrieved depending the deman
 - Energy details of the last quarter (purchase, production, consumption, self-consumption)
 - Power details of the last quarter (purchase, production, consumption, self-consumption)
 
-# Configuration
+# Supported versions
 
-## Installation
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
+# Installation
 
 > **Tip**
 >
 > In order to use the plugin you have to download,install and activate it as any other Jeedom plugin.
 
 In the plugin configuration, it is possible to provide commands to get sunrise and sunset time as provided by the *Weather* or *Héliotrope* plugin. This will allow to pause the task that get data between those time as there isn't any solar energy production overnight ;-). If no command is provided, the task will run all day, from midnight to 23h59. You can also specify hard-coded value, format hhmm, e.g. 400 for 4h00 and 2200 for 22h00
+
+# Configuration
 
 ## Solaredge API access activation
 

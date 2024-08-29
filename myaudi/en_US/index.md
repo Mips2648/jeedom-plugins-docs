@@ -9,6 +9,13 @@ pluginId: myaudi
 
 Plugin to connect to the MyAudi platform allowing to retrieve cars which are compatible.
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
@@ -22,7 +29,7 @@ In order to use the plugin, you must download, install and activate it like any 
 In the configuration of the plugin it will be necessary to setup the username and password.
 You can also enter a Google Maps API key which will be used to display the map with the location of the vehicle on the widget.
 
-# The devices
+# Devices
 
 As soon as the daemon starts, if your username and password are correct, the plugin will automatically create the vehicles linked to your account.
 It is possible to synchronize manually via the devices page.

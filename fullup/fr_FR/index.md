@@ -9,14 +9,21 @@ pluginId: fullup
 
 Plugin permettant la lecture des données des jauges connectées <a href="https://fullup.be/" target="_blank">Fullup</a>. Le plugin rafraîchit les données toutes les heures via un cron.
 
-# Configuration
+# Versions supportées
 
-## Installation
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
+# Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
 > **Tip**
 > le plugin utilise le "cron hourly" pour actualiser les données toutes les heures, vous pouvez choisir de le désactiver et d'actualiser vos équipements manuellement ou via un autre moyen mais il n'est pas nécessaire de le faire plus fréquemment.
+
+# Configuration
 
 ## Création d'un utilisateur dédié au plugin dans l'application Fullup
 

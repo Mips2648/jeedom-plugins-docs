@@ -12,6 +12,14 @@ Il est possible de récupérer toutes les ressources (noeuds, vms, stockage...) 
 Le plugin permet aussi de démarrer et arrêter les VMs et les containers ainsi que de prendre des snapshots et des backups.
 Il dispose également d'une page santé spécifique résumant l'ensemble des informations de vos équipements.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+| Proxmox   | >= 8.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

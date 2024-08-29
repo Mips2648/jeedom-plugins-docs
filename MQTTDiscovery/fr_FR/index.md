@@ -21,6 +21,13 @@ Mais cela ne se limite pas aux équipements Bluetooth puisque tous les équipeme
 > Aucune option spécifique ne sera développée pour gérer plus en détails ceux-ci, ce n'est pas le but du plugin qui implémente uniquement la découverte automatique.
 > Donc **MQTT Discovery** peut évidemment être utilisé pour créer automatiquement les équipements nécessaires (comme on le ferait avec une autre intégration MQTT mais plus facilement) mais uniquement dans le cadre d'une utilisation en mode "avancé", en sachant que vous gérez tout le reste avec les outils mis à disposition par ces deux programmes.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Compatibilité
 
 ## Est-ce que MQTT Discovery va fonctionner dans mon cas?

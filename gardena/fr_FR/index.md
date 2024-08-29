@@ -14,6 +14,13 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 >
 > Quelque soit le matériel (Gardena et Husqvarna) il faut une connectivité internet. Ce plugin ne fonctionnera pas avec tout autre technologie de connexion locale, comme par exemple mais pas uniquement, le bluetooth.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

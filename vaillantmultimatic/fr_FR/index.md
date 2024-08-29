@@ -16,6 +16,17 @@ Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont é
 >
 > Le plugin devrait fonctionner avec toutes les passerelles (VR900, VR920, VR921 ...) et régulateurs (VRC700, VRC720 ...) compatible avec l'application myVaillant.
 
+# Versions supportées
+
+> **Attention**
+>
+> Ce plugin n'est plus compatible avec le système vaillantMULTIMATIC mais uniquement myVaillant. Si vous n'avez pas encore migré sur myVaillant, n'installez pas cette version du plugin.
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

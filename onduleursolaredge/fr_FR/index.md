@@ -16,15 +16,22 @@ Les informations suivantes sont récupérables, d'autres pourraient être rajout
 - Détails des consommations d'énergie du dernier quart d'heure (achat, production, consommation, auto-consommation)
 - Détails de puissance du dernier quart d'heure (achat, production, consommation, auto-consommation)
 
-# Configuration
+# Versions supportées
 
-## Installation
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
+# Installation
 
 > **Tip**
 >
 > Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
 Sur la page de configuration du plugin, il est possible de renseigner des commandes pour l'heure du lever et l'heure du coucher du soleil tel que fournit par le plugin *Météo* ou *Héliotrope*. Ceci permettra de mettre en pause la récupération des données entre ces heures car il y a généralement peu de production solaire la nuit ;-). Si aucune commande n'est fournie, la tâche tournera toute la journée, de minuit à 23h59. Vous pouvez également entrer des heures en "dur", format hhmm, par exemple 400 pour 4h00 et 2200 pour 22h00.
+
+# Configuration
 
 ## Activation de l'accès API Solaredge
 

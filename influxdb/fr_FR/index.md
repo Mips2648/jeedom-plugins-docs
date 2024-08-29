@@ -11,9 +11,17 @@ Plugin permettant la connexion à une DB InfluxDB. Il permet d'envoyer facilemen
 
 Le plugin permet également d'exporter l'historique des commandes Jeedom vers InfluxDB.
 
+# Versions supportées
+
 > **Attention**
 >
 > Le plugin supporte les version de influxDB >= 1.8 ou >= 2.0. Les anciennes version influxDBv1 < 1.8 ne sont pas supportée.
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+| InfluxDB  | v1.8+ & v2                  |
 
 # Installation
 

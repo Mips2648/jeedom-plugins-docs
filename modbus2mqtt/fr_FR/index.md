@@ -9,6 +9,13 @@ pluginId: modbus2mqtt
 
 Plugin permettant de faire passerelle entre du modbus TCP/IP et MQTT.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

@@ -25,6 +25,13 @@ Ce qui est disponible:
 >
 > Le plugin a été testé avec un routeur Linksys Velop et devrait fonctionner pour d'autres modèles également.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

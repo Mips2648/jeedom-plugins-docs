@@ -10,6 +10,13 @@ pluginId: stockexchange
 Plugin permettant de récupérer les cours de bourse d'une action ou d'un indice mais également le taux de change entre deux devises (y compris crypto-monnaie comme le bitcoin) ainsi que les matières premières.
 Toutes les données sont généralement disponibles en temps réel mais la fréquence d'actualisation dépend du service utilisé.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

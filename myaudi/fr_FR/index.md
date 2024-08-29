@@ -9,6 +9,13 @@ pluginId: myaudi
 
 Plugin permettant la connexion à la plateforme MyAudi permettant de récupérer les voitures de la marque qui sont compatibles.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

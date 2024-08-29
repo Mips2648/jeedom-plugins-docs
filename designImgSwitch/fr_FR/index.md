@@ -10,6 +10,13 @@ pluginId: designImgSwitch
 Plugin permettant de changer automatiquement l'image de fond de vos design en fonction de la météo.
 Les informations de météo ainsi que de lever et coucher du soleil seront obtenues soit du plugin Météo officiel (intégration automatique) soit depuis des commandes de votre choix avec configuration manuelle.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

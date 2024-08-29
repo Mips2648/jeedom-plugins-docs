@@ -12,6 +12,13 @@ Via ce plugin, il est possible de récupérer dans jeedom tous les dockers confi
 
 Le plugin dispose également d'une page santé et d'un panel dédié affichant un aperçu de tous les containers et permettant d'effectuer toutes les actions de base, similaire à la page "Containers" sur [portainer.io](https://www.portainer.io/portainer-ce/).
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

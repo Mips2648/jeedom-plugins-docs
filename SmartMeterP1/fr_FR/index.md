@@ -11,6 +11,13 @@ Ce plugin permet de se connecter à [cette passerelle](https://www.domohab.be/ca
 
 Cela fonctionne aussi bien pour les compteurs tri-phasé que mono-phasé.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

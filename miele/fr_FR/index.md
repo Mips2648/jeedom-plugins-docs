@@ -10,6 +10,13 @@ pluginId: miele
 Plugin permettant d'intégrer tous les appareils de la gamme Miele@Home.
 Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaines actions (en fonction de l'appareil).
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

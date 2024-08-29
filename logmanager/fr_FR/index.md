@@ -14,6 +14,13 @@ Cela permet d'organiser vos logs de scénario selon vos préférences, de par ex
 La consultation des logs se fait via l'interface standard de Jeedom.
 La purge des logs est également gérée par la config générale de Jeedom.
 
+# Versions supportées
+
+| Composant | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.

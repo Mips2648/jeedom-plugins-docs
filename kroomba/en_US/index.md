@@ -16,6 +16,13 @@ This plugin allows the automatic detection and pairing of Roomba & Braava robots
 
 It includes a desktop widget.
 
+# Supported versions
+
+| Component | Version                     |
+|-----------|-----------------------------|
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.2                      |
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

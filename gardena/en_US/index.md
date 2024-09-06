@@ -27,8 +27,6 @@ In order to use the plugin, you must download, install and activate it like any 
 
 > **Important**
 >
-> It is essential to be under Debian 10 Buster minimum to make the plugin work.
->
 > If you tried to install the "Gardena Smart System" plugin, it is necessary to deactivate it before activating this one. Indeed, a problem in the "Gardena Smart System" plugin creates a conflict with this plugin which risks making Jeedom unavailable. This problem must be solved in the other plugin, it is unfortunately impossible for me to avoid it.
 
 # Plugin configuration

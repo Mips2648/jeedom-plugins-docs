@@ -10,6 +10,7 @@ pluginId: modbus2mqtt
 - Update daemon
 - Update dependencies
 - Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Fix: terminal address (slave id) was not correctly taken into account
 
 # Stable
 

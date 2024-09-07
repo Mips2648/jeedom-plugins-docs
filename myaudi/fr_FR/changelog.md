@@ -7,7 +7,11 @@ pluginId: myaudi
 
 # Beta
 
-n/a
+> **Important**
+>
+> Nouveau plugin, complètement réécrit.
+> Les anciens équipements seront supprimé, aucune migration.
+> Vérifiez la configuration du plugin, installez les dépendances et lancez le démon.
 
 # Stable
 

@@ -36,17 +36,10 @@ Dans la page de l'équipement vous pouvez configurer la fréquence d'actualisati
 
 Pour l'instant les commandes suivantes sont disponibles:
 
-- Température extérieur
 - Kilométrage
 - Prochaine vidange huile en jours et en km
 - Prochain entretien en jours et en km
-- Niveau de l'huile (en L et en %)
-- Avertissement du niveau d'huile bas et changement d'huile
-- Niveau du réservoir
-- Autonomie totale (en km)
-- Autonomie AdBlue (en km)
-- Statut d'ouverture et de verrouillage des portes
-- Localisation du véhicule (latitude et longitude)
+- Niveau du réservoir & autonomie
 
 # Widget
 

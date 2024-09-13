@@ -7,6 +7,7 @@ pluginId: modbus2mqtt
 
 # Beta
 
+- Ajout d'une nouvelle option pour inverser l'ordre dans un octet
 - Mise à jour du démon
 - Mise à jour de dépendances
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais

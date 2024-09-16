@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2024-09-16
+
+- Mise à jour de dépendances
+- Version Debian 11 minimum requise
+
 ## 2024-08-21
 
 - Mise à jour de dépendances

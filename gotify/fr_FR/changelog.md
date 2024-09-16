@@ -7,9 +7,14 @@ pluginId: gotify
 
 # Beta
 
-- Suppression de l'option pour ne pas vérifier le certificat hôte de Gotify, cette option n'était plus active depuis presque 4 ans
+n/a
 
 # Stable
+
+## 2024-09-16
+
+- Suppression de l'option pour ne pas vérifier le certificat hôte de Gotify, cette option n'était plus active depuis presque 4 ans
+- Version Debian 11 minimum requise
 
 ## 2024-08-19
 

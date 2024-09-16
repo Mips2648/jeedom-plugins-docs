@@ -7,12 +7,17 @@ pluginId: portainer
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-09-16
+
 - Optimisations
 - Mise à jour de dépendances
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 - Ajout de commandes sur les équipements de type container: **Statut santé**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(Voir documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
-
-# Stable
+- Version Debian 11 minimum requise
 
 ## 2023-05-20
 

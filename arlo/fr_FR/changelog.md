@@ -22,6 +22,7 @@ Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 - Réduction de la taille du plugin
 - Optimisation de la taille des backups
+- Version Debian 11 minimum requise
 
 ## 2024-01-20
 

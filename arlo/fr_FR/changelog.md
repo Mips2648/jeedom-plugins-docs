@@ -7,62 +7,21 @@ pluginId: arlo
 
 # Beta
 
-Attention, si vous êtes sur la version beta et que tout fonctionne pour vous, surtout concernant le changement de mode sur les caméras ou sur la base, alors installer dès à présent la version stable (ne pas désinstaller la beta avant).
-
-Cette nouvelle version beta revoit complètement l'intégration avec Arlo et donc il y a un risque que tout ne fonctionne pas correctement dès la première version, vous risquez de rencontrer des problèmes si vous restez sur la version beta! Donc ne restez pas en beta sur une box de production sur laquelle vous avez absolument besoin que le plugin fonctionne!
-
-Au contraire, si vous avez acquis récemment des caméras Arlo et que le changement de mode (sur la base ou sur les caméras) ne fonctionne pas pour vous, si dans l'app officielle Arlo vous n'avez que 3 modes possibles *Activer en absence*, *Activer en présence* et *Veille* alors cette version devrait vous être utile.
-
-Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
-
-## 2024-08-16
-
-- - Ajout du support de la Arlo Essential Indoor 2
-
-## 2024-08-11
-
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
-
-## 2024-05-15
-
-- Modification interne du démon
-- Mise à jour de dépendances
-
-## 2024-04-03
-
-- Fix sur la vérification des dépendances
-
-## 2024-03-18
-
-- Ajout du support de la Video Doorbell 2
-- Amélioration du support de la Arlo Essential XL
-
-## 2024-03-01
-
-- Ajout du support de la Arlo Essential XL
-- Réduction de la taille du plugin
-
-## 2024-02-23
-
-- Restauration de la possibilité d'effectuer des enregistrements cloud
-
-## 2024-02-19
-
-- Optimisation de la taille des backups
-
-## 2024-02-06
-
-- Fix sur l'état des Pro 3 Floodlight
-
-## 2024-02-02
-
-- Fix commande prendre une capture sur les sonnettes ne fonctionnait pas
-
-## 2024-01-27
-
-- Modifications importantes sur le démon pour compatibilité avec l'interface "Arlo V4". Voir [ce message sur community](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
+n/a
 
 # Stable
+
+## 2024-09-16
+
+- Cette nouvelle version revoit complètement l'intégration avec Arlo pour compatibilité avec l'interface "Arlo V4" (en beta depuis 6 mois).
+Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-version-pour-la-compatibilite-arlo-v4/119611)
+- Ajout du support de la Arlo Essential Indoor 2
+- Ajout du support de la Video Doorbell 2
+- Ajout du support de la Arlo Essential XL
+- Amélioration du support de la Arlo Essential XL
+- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Réduction de la taille du plugin
+- Optimisation de la taille des backups
 
 ## 2024-01-20
 

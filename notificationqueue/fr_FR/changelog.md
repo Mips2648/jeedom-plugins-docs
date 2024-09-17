@@ -7,9 +7,14 @@ pluginId: notificationqueue
 
 # Beta
 
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+n/a
 
 # Stable
+
+## 2024-09-16
+
+- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Version Debian 11 minimum requise
 
 ## 2024-03-18
 

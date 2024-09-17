@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Correction d'un bug sur la commande **Etat Planning**
 
 # Stable
 

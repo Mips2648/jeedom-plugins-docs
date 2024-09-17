@@ -11,7 +11,7 @@ n/a
 
 # Stable
 
-## 2024-06-16
+## 2024-09-16
 
 - Mise à jour de dépendances
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais

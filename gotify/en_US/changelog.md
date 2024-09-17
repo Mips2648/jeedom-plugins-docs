@@ -7,9 +7,14 @@ pluginId: gotify
 
 # Beta
 
-- Removed the option not to check the Gotify host certificate, which had been inactive for almost 4 years.
+n/a
 
 # Stable
+
+## 2024-09-16
+
+- Removed the option not to check the Gotify host certificate, which had been inactive for almost 4 years.
+- Debian 11 or higher required
 
 ## 2024-08-19
 

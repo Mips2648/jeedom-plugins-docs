@@ -7,9 +7,13 @@ pluginId: onduleursolaredge
 
 # Beta
 
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+n/a
 
 # Stable
+
+## 2024-09-16
+
+- Translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 ## 2024-03-18
 

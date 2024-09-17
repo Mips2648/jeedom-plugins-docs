@@ -7,6 +7,7 @@ pluginId: worxLandroidS
 
 # Beta
 
+- Amélioration de l'intégration des modèles Landroid Vision
 - Ajout des codes erreur et état ainsi que les descriptions pour les modèles Landroid Vision
 - Mise à jour de dépendances
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais

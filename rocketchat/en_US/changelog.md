@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2024-09-16
+
+- Update dependencies
+- Debian 11 or higher required
+
 ## 2024-08-21
 
 - Update dependencies

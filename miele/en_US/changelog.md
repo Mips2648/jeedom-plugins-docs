@@ -7,9 +7,14 @@ pluginId: miele
 
 # Beta
 
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+n/a
 
 # Stable
+
+## 2024-09-16
+
+- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Debian 11 or higher required
 
 ## 2024-06-11
 

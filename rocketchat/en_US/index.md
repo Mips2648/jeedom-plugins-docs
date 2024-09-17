@@ -24,10 +24,6 @@ In order to use the plugin, you must download, install and activate it like any 
 You need to already have a Rocket.Chat server installed, solutions to have this are fully documented on their website.
 On it, please create a user with the `bot` role.
 
-> **Important**
->
-> It is essential to be under Debian 10 Buster minimum to run the plugin.
-
 # Plugin configuration
 
 In the plugin configuration you have to provide server URL with the format `https://IP_SERVER:3000` as well as the username and the password of your bot.

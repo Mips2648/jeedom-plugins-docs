@@ -7,12 +7,17 @@ pluginId: portainer
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-09-16
+
 - Optimizations
 - Update dependencies
 - Translation of the plugin into English, German, Spanish, Italian and Portuguese
 - Add commands on container-type device: **Health status**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(See documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
-
-# Stable
+- Debian 11 or higher required
 
 ## 2023-05-20
 

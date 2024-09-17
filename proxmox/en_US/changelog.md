@@ -7,15 +7,10 @@ pluginId: proxmox
 
 # Beta
 
-n/a
-
-# Stable
-
-## 2024-06-16
-
 - Update dependencies
 - Translation of the plugin into English, German, Spanish, Italian and Portuguese
-- Debian 11 or higher required
+
+# Stable
 
 ## 2024-07-02
 

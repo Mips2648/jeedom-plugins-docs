@@ -16,6 +16,8 @@ n/a
 > **Attention**
 >
 > The plugin no longer supports InfluxDB versions < 1.8, you must have influxDB version >= 1.8 or >= 2.0. Update your InfluxDB before updating the plugin (see official InfluxDB documentation for the procedure)
+>
+> You need Debian 11 Bullseye or higher to run the plugin. If you're running Debian 10, don't install the update.
 
 - Improve password fields
 - End of support for InfluxDB versions < 1.8 mainly to ensure the compatibility of the plugin with Debian 12 and PHP 8

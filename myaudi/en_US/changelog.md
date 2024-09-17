@@ -7,7 +7,11 @@ pluginId: myaudi
 
 # Beta
 
-n/a
+> **Important**
+>
+> New plugin, completely rewritten.
+> Old equipment will be removed, no migration.
+> Check plugin configuration, install dependencies and run daemon.
 
 # Stable
 

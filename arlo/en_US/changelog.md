@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Fixed a bug on command **Schedule state**.
 
 # Stable
 

@@ -8,6 +8,7 @@ pluginId: arlo
 # Beta
 
 - Correction d'un bug sur la commande **Etat Planning**
+- Correction d'un crash démon si le nom d'utilisateur mail n'est pas une adresse email
 
 # Stable
 

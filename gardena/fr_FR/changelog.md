@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Mise à jour de dépendances
 
 # Stable
 

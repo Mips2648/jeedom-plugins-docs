@@ -7,6 +7,7 @@ pluginId: gardena
 
 # Beta
 
+- Augmentation du timeout lors de la connexion car les serveurs Husqvarna semble mettre un peu plus de temps à répondre
 - Mise à jour de dépendances
 
 # Stable

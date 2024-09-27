@@ -97,5 +97,6 @@ Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pa
 Il faudra au minimum fournir:
 
 - une capture d'écran de la page santé Jeedom
-- tous les logs disponibles du plugin
+- une capture d'écran de la page de config du plugin
+- tous les logs disponibles du plugin collés dans un `Texte préformaté` (bouton `</>` sur community), pas de fichiers!
 - selon les cas, une capture d'écran de l'erreur rencontrée, une capture d'écran de la configuration posant problème...

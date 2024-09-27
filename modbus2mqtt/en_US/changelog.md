@@ -8,6 +8,8 @@ pluginId: modbus2mqtt
 # Beta
 
 - Add a new option to reverse the order in a byte
+- Added support for 32-bit float numbers
+- Remove option to choose the writing mode: this is determined automatically according to the type.
 - Update daemon
 - Update dependencies
 - Translation of the plugin into English, German, Spanish, Italian and Portuguese

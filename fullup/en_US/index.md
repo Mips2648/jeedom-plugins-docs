@@ -98,5 +98,6 @@ If despite this you do not find an answer to your question, do not hesitate to c
 At a minimum, you will need to provide:
 
 - a screenshot of the Jeedom health page
-- all available plugin logs
+- a screenshot of the plugin's configuration page
+- all available plugin logs pasted into a `Preformatted Text` (button `</>` on community), no files!
 - depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...

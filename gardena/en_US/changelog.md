@@ -7,7 +7,8 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Increased connection timeout as Husqvarna servers seem to take a little longer to respond
+- Update dependencies
 
 # Stable
 

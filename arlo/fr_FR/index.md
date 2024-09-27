@@ -69,8 +69,9 @@ Avant de créer un nouvel utilisateur Arlo, il est important de connaître les i
 
 > **Tip**
 >
-> Dorénavant pour pouvoir vous connecter sur une boite mail gmail (Google), vous devez créer un _mot de passe d’application_, qui n’imposera pas le MFA pour se connecter, l'activation de l'option "applications non sécurisées" n'étant plus permise.
-> Plus de détails sur la procédure ici: <https://community.jeedom.com/t/google-applications-moins-securisees-mot-de-passe-dapplication/85617>
+> Dorénavant pour pouvoir vous connecter sur une boite mail gmail (Google) ou Microsoft, vous devez créer un _mot de passe d’application_, qui n’imposera pas le MFA pour se connecter, l'activation de l'option "applications non sécurisées" n'étant plus permise.
+> Plus de détails sur la procédure pour Google ici: <https://community.jeedom.com/t/google-applications-moins-securisees-mot-de-passe-dapplication/85617>.
+> Pour les comptes Microsoft (outlook, hotmail...), lisez ceci <https://support.microsoft.com/en-us/account-billing/how-to-get-and-use-app-passwords-5896ed9b-4263-e681-128a-a6f2979a7944>
 
 Après avoir créé une boite mail pour le plugin, vous pouvez passer à l'étape suivante.
 

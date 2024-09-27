@@ -7,9 +7,14 @@ pluginId: arlo
 
 # Beta
 
-- Fixed a bug on command **Schedule state**.
+n/a
 
 # Stable
+
+## 2024-09-23
+
+- Fixed a bug on command **Schedule state**.
+- Fix daemon crash if mail username is not an email address
 
 ## 2024-09-16
 

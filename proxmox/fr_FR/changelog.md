@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Ajout de la possibilité de configurer au niveau du plugin les timeout de connexion et de requête à Proxmox & diminution des timeouts par défaut à 5s et 10s respectivement.
 
 # Stable
 

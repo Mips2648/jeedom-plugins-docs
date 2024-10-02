@@ -76,7 +76,7 @@ Vous trouverez plus d'information ici: <https://pve.proxmox.com/wiki/User_Manage
 
 Il faut saisir les informations suivantes dans la configuration du plugin:
 
-- adresse IP de votre serveur (ou d'un des noeuds du cluster si vous en avez plusieurs). Vous pouvez configurer une liste d'IP vers chacun des noeuds d'un même cluster, séparée par une virgule.
+- adresse IP de votre serveur (ou d'un des noeuds du cluster si vous en avez plusieurs). Vous pouvez configurer une liste d'IP vers chacun des noeuds **d'un même cluster / datacenter**, séparée par une virgule.
 - le port si différent du port par défaut (8006)
 - un nom d'utilisateur et son mot de passe
 - le royaume d'authentification de l'utilisateur, si différent de "pve" (="Proxmox VE authentication server", royaume par défaut pour les utilisateurs créés localement sur Proxmox, voir documentation de Proxmox)

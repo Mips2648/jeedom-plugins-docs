@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Amélioration du support des modèles Arlo Essential
 
 # Stable
 

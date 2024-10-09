@@ -7,7 +7,7 @@ pluginId: clicksend
 
 # Beta
 
-n/a
+- Mise à jour de dépendances
 
 # Stable
 

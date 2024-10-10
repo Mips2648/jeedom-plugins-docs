@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Reduced timeouts for Proxmox requests
 
 # Stable
 

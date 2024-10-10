@@ -7,7 +7,7 @@ pluginId: fail2ban
 
 # Beta
 
-n/a
+- Update dependencies
 
 # Stable
 

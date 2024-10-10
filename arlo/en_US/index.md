@@ -71,6 +71,7 @@ Before creating a new Arlo user, it is important to know the following informati
 >
 > From now on, to be able to connect to a gmail (Google) mailbox, you must create an _application password_, which will not require MFA to connect, activating the "unsecured applications" option does not being permitted anymore.
 > More details on the procedure here: <https://community.jeedom.com/t/google-applications-moins-securisees-mot-de-passe-dapplication/85617>
+> For Microsoft accounts (outlook, hotmail...) read this <https://support.microsoft.com/en-us/account-billing/how-to-get-and-use-app-passwords-5896ed9b-4263-e681-128a-a6f2979a7944>
 
 After creating an email box for the plugin, you can go to the next step.
 

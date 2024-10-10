@@ -13,6 +13,9 @@ pluginId: myaudi
 > Les anciens équipements seront supprimé, aucune migration.
 > Vérifiez la configuration du plugin, installez les dépendances et lancez le démon.
 
+- Mise à jour de dépendances
+- Jeedom v4.4 requis
+
 # Stable
 
 ## 2024-08-19

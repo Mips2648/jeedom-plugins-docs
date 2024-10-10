@@ -20,7 +20,7 @@ Le plugin permet également d'exporter l'historique des commandes Jeedom vers In
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 | InfluxDB  | v1.8+ & v2                  |
 
 # Installation

@@ -16,7 +16,7 @@ Il permet également de bannir et de débannir une adresse ip.
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Installation
 

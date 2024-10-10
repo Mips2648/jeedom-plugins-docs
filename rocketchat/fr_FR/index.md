@@ -16,7 +16,7 @@ L'avantage de cette solution est de pouvoir être hébergée chez vous (un docke
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Installation
 

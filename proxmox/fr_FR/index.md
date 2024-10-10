@@ -17,7 +17,7 @@ Il dispose également d'une page santé spécifique résumant l'ensemble des inf
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 | Proxmox   | >= 8.2                      |
 
 # Installation

@@ -7,9 +7,14 @@ pluginId: clicksend
 
 # Beta
 
-- Mise à jour de dépendances
+n/a
 
 # Stable
+
+## 2024-10-11
+
+- Mise à jour de dépendances
+- Jeedom v4.4 requis
 
 ## 2024-08-21
 

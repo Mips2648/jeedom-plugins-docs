@@ -25,7 +25,7 @@ Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont é
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Installation
 

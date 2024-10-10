@@ -17,7 +17,7 @@ L'avantage de ce système est de pouvoir être hébergé chez vous (un conteneur
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Installation
 

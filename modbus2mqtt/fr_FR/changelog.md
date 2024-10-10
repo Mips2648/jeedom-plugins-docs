@@ -14,6 +14,7 @@ pluginId: modbus2mqtt
 - Mise à jour de dépendances
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 - Fix: l'adresse du terminal (slave id) n'était pas correctement pris en compte
+- Jeedom v4.4 requis
 
 # Stable
 

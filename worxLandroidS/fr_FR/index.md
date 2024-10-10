@@ -14,7 +14,7 @@ Ce plugin permet de se connecter aux tondeuses Worx Landroid modèles Wifi.
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Installation
 

@@ -8,6 +8,8 @@ pluginId: proxmox
 # Beta
 
 - Diminution des timeouts lors des requêtes à Proxmox
+- Mise à jour de dépendances
+- Jeedom v4.4 requis
 
 # Stable
 

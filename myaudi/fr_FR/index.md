@@ -14,7 +14,7 @@ Plugin permettant la connexion à la plateforme MyAudi permettant de récupérer
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Installation
 

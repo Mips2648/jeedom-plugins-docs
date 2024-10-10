@@ -14,7 +14,7 @@ Plugin permettant de faire passerelle entre du modbus TCP/IP et MQTT.
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Installation
 

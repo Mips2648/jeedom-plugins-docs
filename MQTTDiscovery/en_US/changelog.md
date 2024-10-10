@@ -9,7 +9,10 @@ pluginId: MQTTDiscovery
 
 - Added "schema json" support for the *light* type: supports bulbs with brightness variation, color temperature, color selection, effects, transitions.
 - Fix on info commands for type *vacuum*.
+- Fix on the creation of list commands that did not contain the list of options in some cases
+- Fix on *EMS-ESP* integration due to a mix of 2 different syntax not supported by the plugin
 - Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Update dependencies
 
 # Stable
 

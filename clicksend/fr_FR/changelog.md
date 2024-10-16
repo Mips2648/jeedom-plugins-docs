@@ -11,7 +11,7 @@ n/a
 
 # Stable
 
-## 2024-10-11
+## 2024-10-17
 
 - Mise à jour de dépendances
 - Jeedom v4.4 requis

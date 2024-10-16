@@ -7,10 +7,12 @@ pluginId: vmczehnder
 
 # Beta
 
-- Mise à jour de dépendances
-- Jeedom v4.4 requis
+n/a
 
 # Stable
+
+- Mise à jour de dépendances
+- Jeedom v4.4 requis
 
 ## 2024-09-16
 

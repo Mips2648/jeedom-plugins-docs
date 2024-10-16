@@ -12,9 +12,13 @@ pluginId: vaillantmultimatic
 # Beta
 
 - Mise à jour de dépendances
-- Jeedom v4.4 requis
 
 # Stable
+
+## 2024-10-11
+
+- Mise à jour de dépendances
+- Jeedom v4.4 requis
 
 ## 2024-09-16
 

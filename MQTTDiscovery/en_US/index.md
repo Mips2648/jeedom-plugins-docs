@@ -26,7 +26,7 @@ But so it's not limited to Bluetooth devices since all “MQTT Auto Discovery”
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Compatibility
 

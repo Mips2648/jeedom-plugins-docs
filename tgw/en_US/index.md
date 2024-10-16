@@ -26,7 +26,7 @@ I invite you to consult [this documentation](https://mips2648.github.io/jeedom-p
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Installation
 

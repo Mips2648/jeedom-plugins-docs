@@ -11,6 +11,9 @@ n/a
 
 # Stable
 
+- Update dependencies
+- Jeedom v4.4 required
+
 ## 2024-09-16
 
 - Update dependencies

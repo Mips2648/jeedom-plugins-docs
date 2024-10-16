@@ -8,6 +8,8 @@ pluginId: arlo
 # Beta
 
 - Improved support for Arlo Essential models
+- Update dependencies
+- Jeedom v4.4 required
 
 # Stable
 

@@ -7,12 +7,19 @@ pluginId: worxLandroidS
 
 # Beta
 
-- Improved integration of Landroid Vision models
-- Add error and status codes as well as descriptions for Landroid Vision models
 - Update dependencies
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
 
 # Stable
+
+## 2024-10-11
+
+- Improved integration of Landroid Vision models
+- Add error and status codes as well as descriptions for Landroid Vision models
+- Fix daemon startup problem on new Jeedom installations
+- Update dependencies
+- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Jeedom v4.4 required
+- Debian 11 required
 
 ## 2024-06-11
 

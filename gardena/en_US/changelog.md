@@ -9,6 +9,7 @@ pluginId: gardena
 
 - Increased connection timeout as Husqvarna servers seem to take a little longer to respond
 - Update dependencies
+- Jeedom v4.4 required
 
 # Stable
 

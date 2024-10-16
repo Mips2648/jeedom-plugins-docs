@@ -17,7 +17,7 @@ It also has a specific health page summarizing all the information of your devic
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 | Proxmox   | >= 8.2                      |
 
 # Installation

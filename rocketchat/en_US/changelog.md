@@ -7,9 +7,14 @@ pluginId: rocketchat
 
 # Beta
 
-- Update dependencies
+n/a
 
 # Stable
+
+## 2024-10-17
+
+- Update dependencies
+- Jeedom v4.4 required
 
 ## 2024-09-16
 

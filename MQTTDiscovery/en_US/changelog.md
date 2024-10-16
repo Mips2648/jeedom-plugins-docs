@@ -13,6 +13,7 @@ pluginId: MQTTDiscovery
 - Fix on *EMS-ESP* integration due to a mix of 2 different syntax not supported by the plugin
 - Translation of the plugin into English, German, Spanish, Italian and Portuguese
 - Update dependencies
+- Jeedom v4.4 required
 
 # Stable
 

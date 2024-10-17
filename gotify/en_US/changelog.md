@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2024-10-17
+
+- Update dependencies
+- Jeedom v4.4 required
+
 ## 2024-09-16
 
 - Removed the option not to check the Gotify host certificate, which had been inactive for almost 4 years.

@@ -13,6 +13,9 @@ pluginId: myaudi
 > Old equipment will be removed, no migration.
 > Check plugin configuration, install dependencies and run daemon.
 
+- Update dependencies
+- Jeedom v4.4 required
+
 # Stable
 
 ## 2024-08-19

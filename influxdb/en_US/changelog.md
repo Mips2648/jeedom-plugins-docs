@@ -7,7 +7,8 @@ pluginId: influxdb
 
 # Beta
 
-n/a
+- Update dependencies
+- Jeedom v4.4 required
 
 # Stable
 

@@ -19,7 +19,7 @@ The following models should be compatible but they have not all been tested:
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 
 # Hardware installation
 

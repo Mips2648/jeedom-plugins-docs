@@ -20,7 +20,7 @@ The plugin also allows you to export Jeedom order history to InfluxDB.
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.4                      |
 | InfluxDB  | v1.8+ & v2                  |
 
 # Installation

@@ -9,6 +9,8 @@ pluginId: modbus2mqtt
 
 - Ajout d'une nouvelle option pour inverser l'ordre dans un octet
 - Ajout du support des nombres flottants sur 32bits
+- Ajout d'une option pour configurer le timeout des requêtes modbus
+- Ajout d'une option pour configurer le délai entre 2 lectures
 - suppression de l'option pour choisir le mode d'écriture: c'est déterminé automatiquement en fonction du type.
 - Mise à jour du démon
 - Mise à jour de dépendances

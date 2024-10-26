@@ -8,6 +8,7 @@ pluginId: proxmox
 # Beta
 
 - Diminution des timeouts lors des requêtes à Proxmox
+- Correction d'une erreur dans le cas où l'un des noeuds d'un cluster est déconnecté (dans le cas d'une installation avec de multiples noeuds)
 - Mise à jour de dépendances
 - Jeedom v4.4 requis
 

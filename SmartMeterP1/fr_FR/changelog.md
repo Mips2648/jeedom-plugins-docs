@@ -7,7 +7,7 @@ pluginId: SmartMeterP1
 
 # Beta
 
-n/a
+- Correction du décodage pour compatibilité avec les compteurs Suisse
 
 # Stable
 

@@ -8,6 +8,7 @@ pluginId: arlo
 # Beta
 
 - Amélioration du support des modèles Arlo Essential
+- Fix un possible blocage du démon en cas d'échec d'actualisation du mode
 - Mise à jour de dépendances
 - Jeedom v4.4 requis
 

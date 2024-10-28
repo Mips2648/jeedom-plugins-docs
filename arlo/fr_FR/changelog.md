@@ -9,6 +9,7 @@ pluginId: arlo
 
 - Amélioration du support des modèles Arlo Essential
 - Fix un possible blocage du démon en cas d'échec d'actualisation du mode
+- Limite la version d'une dépendance (cryptography) pour garder la compatibilité avec les pi3 installé en 32bits. Attention, la compatibilité avec les systèmes 32bits sera supprimée lors d'une prochaine version!
 - Mise à jour de dépendances
 - Jeedom v4.4 requis
 

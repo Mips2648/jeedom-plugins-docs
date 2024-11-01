@@ -25,7 +25,7 @@ Il faut ensuite installer les dépendances.
 
 # Configuration du plugin
 
-Dans la configuration du plugin, vous pouvez éventuellement configurer le cycle qui défini le délai entre chaque remontée d'information à Jeedom. Par défaut il est de 1 seconde.
+Dans la configuration du plugin, vous pouvez éventuellement configurer le cycle qui défini le délai entre chaque remontée d'information à Jeedom.
 Cette valeur devrait convenir pour la plupart mais vous pouvez l'augmenter si nécessaire. Il est inutile de descendre en dessous de 1s puisque le compteur ne retourne les infos que chaque seconde.
 
 Démarrez ou redémarrez le démon.

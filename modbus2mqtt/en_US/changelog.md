@@ -10,7 +10,7 @@ pluginId: modbus2mqtt
 - Add a new option to reverse the order in a byte
 - Added support for 32-bit float numbers
 - Add option to configure modbus request timeout
-- Add option to set delay between 2 readings
+- Add option to set delay between 2 reads
 - Remove option to choose the writing mode: this is determined automatically according to the type.
 - Update daemon
 - Update dependencies

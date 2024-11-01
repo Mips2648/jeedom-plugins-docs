@@ -43,6 +43,10 @@ Here is an overview of the possibilities of the plugin:
 | Debian    | Bullseye(11) & Bookworm(12) |
 | Jeedom    | >= 4.4                      |
 
+> **Important**
+>
+> Compatibility with 32bit systems (Rasbian 32bit on pi3) will be removed in a future version.
+
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.

@@ -21,13 +21,14 @@ Cela fonctionne aussi bien pour les compteurs tri-phasé que mono-phasé.
 # Installation
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
-
-Il n'y a aucune dépendance à installer, assurez-vous juste de démarrer le démon si ce n'est pas fait automatiquement.
+Il faut ensuite installer les dépendances.
 
 # Configuration du plugin
 
-Dans la configuration du plugin, vous pouvez éventuellement configurer une délai d'actualisation. Par défaut il est de 5 secondes.
-Plus le délai est court, plus la charge augmentera sur votre Jeedom. A vous de configurer selon vos besoins et ce que votre box permet.
+Dans la configuration du plugin, vous pouvez éventuellement configurer le cycle qui défini le délai entre chaque remontée d'information à Jeedom. Par défaut il est de 1 seconde.
+Cette valeur devrait convenir pour la plupart mais vous pouvez l'augmenter si nécessaire. Il est inutile de descendre en dessous de 1s puisque le compteur ne retourne les infos que chaque seconde.
+
+Démarrez ou redémarrez le démon.
 
 # Les équipements
 
@@ -36,13 +37,13 @@ Le plugin se trouve dans le menu Plugins → Energie.
 Chaque équipement correspondra à une passerelle connectée à un compteur. Donc vous devez commencer par ajouter un équipement et donner un nom.
 Dans la configuration de l'équipement, vous verrez les paramètres habituels communs à tous les équipements Jeedom.
 
-En dessous, complétez l'adresse IP de votre passerelle et le port que vous avez configuré.
+En dessous, complétez l'adresse IP de votre passerelle et le port que vous avez configuré, par défaut 8088.
 
 Activez l'équipement et sauvegardez et dans les secondes qui suivent les commandes devraient être mises à jour.
 
 # Les commandes
 
-Il y a des commandes actualisées selon la fréquence définie dans la configuration du plugin (5 secondes par défaut):
+Il y a des commandes actualisées selon la fréquence définie dans la configuration du plugin:
 
 - l'énergie prélevée et injectée pendant les heures pleines et les heures creuses ainsi que les sommes respectives.
 - la puissance prélevée et injectée instantanée ainsi que la puissance nette, égale à la puissance prélevée - la puissance injectée (qui sera utile pour vos scénarios et intégrations avec d'autres plugins)

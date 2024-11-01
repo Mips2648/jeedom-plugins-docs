@@ -8,6 +8,7 @@ pluginId: SmartMeterP1
 # Beta
 
 - Correction du décodage pour compatibilité avec les compteurs Suisse
+- Migration du démon PHP vers un démon Python pour améliorer la performance: une actualisation chaque seconde est à présent possible avec une charge plus faible que l'ancien démon (configuré à 5s)
 
 # Stable
 

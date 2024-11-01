@@ -21,13 +21,14 @@ This works for both 3-phase and single-phase meters.
 # Installation
 
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
-
-There are no dependencies to install, just make sure to start the daemon if it's not done automatically.
+Then you need to install dependencies.
 
 # Plugin configuration
 
-In the plugin configuration, you can optionally configure a refresh period. By default it is 5 seconds.
-The shorter the delay, the more the load will increase on your Jeedom. It's up to you to configure according to your needs and what your box allows.
+In the plugin configuration, you can configure the cycle that defines the delay between each information feedback to Jeedom. The default value is 1 second.
+This value should suit most installation, but you can increase it if necessary. There's no point in going below 1s, as the counter only returns information every second.
+
+Start or restart the daemon.
 
 # Devices
 
@@ -35,13 +36,13 @@ The plugin can be found in the Plugins → Energy menu.
 
 Each device will correspond to a gateway connected to a meter. So you have to start by adding device and giving a name.In the device configuration, you will see the usual settings that are common to all Jeedom device.
 
-Below, fill in the IP address of your gateway and the port you configured.
+Below, fill in the IP address of your gateway and the port you've configured, by default 8088.
 
 Activate the device and save and within seconds the commands should be updated.
 
 # Commands
 
-There are commands updated according to the frequency defined in the plugin configuration (5 seconds by default):
+Commands are updated according to the frequency defined in the plugin configuration:
 
 - the energy taken and injected during peak hours and off-peak hours as well as the respective totals.
 - the power taken and injected from the grid as well as the net power, equal to the power taken - the power injected (which will be useful for your scenarios and integrations with other plugins)

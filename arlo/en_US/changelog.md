@@ -8,6 +8,8 @@ pluginId: arlo
 # Beta
 
 - Improved support for Arlo Essential models
+- Fix possible daemon hangup in case of mode update failure
+- Limits the version of a dependency (cryptography) to maintain compatibility with pi3 installed in 32bits. Please note that compatibility with 32-bit systems will be removed in a future version!
 - Update dependencies
 - Jeedom v4.4 required
 

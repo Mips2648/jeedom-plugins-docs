@@ -21,7 +21,7 @@ I invite you to consult [this documentation](https://mips2648.github.io/jeedom-p
 
 > **Important**
 >
-> Antenna installation on **Debian Buster (10) is no longer supported**. To install an antenna, it is mandatory to have a machine running **Debian Bullseye (11) or Debian Bookworm (12)** (or raspbian equivalent for raspberry). This does not concern the plugin itself, so it does not concern the machine on which Jeedom runs but only the antennas. So if your Jeedom runs under Buster it is ok but you will not be able to install an antenna locally but only remotely.
+> Antenna installation on **Debian Buster (10) is no longer supported**. To install an antenna, it is mandatory to have a machine running **Debian Bullseye (11) or Debian Bookworm (12)** (or raspbian equivalent for raspberry).
 
 | Component | Version                     |
 |-----------|-----------------------------|

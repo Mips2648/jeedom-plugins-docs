@@ -7,7 +7,8 @@ pluginId: SmartMeterP1
 
 # Beta
 
-n/a
+- Fix data decoding for compatibility with Swiss counters
+- Migrating the PHP daemon to a Python daemon to improve performance
 
 # Stable
 

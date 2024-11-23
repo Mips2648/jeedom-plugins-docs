@@ -7,6 +7,7 @@ pluginId: arlo
 
 # Beta
 
+- Ajout du support de la Video Doorbell HD & 2k
 - Correction d'un bug sur la commande **Etat Planning**
 
 # Stable

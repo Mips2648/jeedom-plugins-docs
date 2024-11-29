@@ -7,7 +7,7 @@ pluginId: rocketchat
 
 # Beta
 
-n/a
+- Update dependencies
 
 # Stable
 

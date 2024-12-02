@@ -160,3 +160,7 @@ At a minimum, you will need to provide:
 - a screenshot of the plugin's configuration page
 - all available plugin logs pasted into a `Preformatted Text` (button `</>` on community), no files!
 - depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
+
+# Do you like the plugin?
+
+<a href="https://www.buymeacoffee.com/mips2648" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>

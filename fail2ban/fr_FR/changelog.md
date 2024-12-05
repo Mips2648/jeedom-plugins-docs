@@ -7,7 +7,8 @@ pluginId: fail2ban
 
 # Beta
 
-n/a
+- Mise à jour de dépendances
+- Jeedom v4.5 requis
 
 # Stable
 

@@ -17,9 +17,8 @@ Mais cela ne se limite pas aux équipements Bluetooth puisque tous les équipeme
 
 > **Important**
 >
-> **MQTT Discovery** n'a pas vocation à remplacer des plugins de protocoles dédiés à zwavejs-ui et zigbee2mqtt par exemple; les plugins existants sur le market géreront bien mieux ces protocoles sous Jeedom.
-> Aucune option spécifique ne sera développée pour gérer plus en détails ceux-ci, ce n'est pas le but du plugin qui implémente uniquement la découverte automatique.
-> Donc **MQTT Discovery** peut évidemment être utilisé pour créer automatiquement les équipements nécessaires (comme on le ferait avec une autre intégration MQTT mais plus facilement) mais uniquement dans le cadre d'une utilisation en mode "avancé", en sachant que vous gérez tout le reste avec les outils mis à disposition par ces deux programmes.
+> Aucune option spécifique ne sera développée pour gérer en détails des passerelles telles que zwavejs-ui et zigbee2mqtt, ce n'est pas le but du plugin qui implémente uniquement la découverte automatique des équipements.
+> Donc **MQTT Discovery** peut évidemment être utilisé pour créer automatiquement les équipements nécessaires (comme on le ferait avec une autre intégration MQTT mais plus facilement) mais uniquement dans le cadre d'une utilisation en mode "avancé", en sachant que vous gérez tout le reste avec les outils mis à disposition par les passerelles correspondantes.
 
 # Versions supportées
 
@@ -205,7 +204,9 @@ Tous les composants/entités ne sont pas encore entièrement ni complètement in
 
 # Intégrations
 
-## Equipements Bluetooth
+Je vais détailler ci-dessous quelques cas d'intégrations possibles
+
+## Bluetooth via les passerelles *Open MQTT Gateway* ou *Theengs Gateway*
 
 Un des premiers objectifs de **MQTT Discovery** est de pouvoir remonter facilement les infos [d'appareils Bluetooth compatibles](https://decoder.theengs.io/devices/devices.html) qui seront captés par des antennes exécutant les passerelles *Open MQTT Gateway* ou *Theengs Gateway*. Dans les deux cas, il faudra installer la passerelle et la configurer.
 
@@ -267,7 +268,20 @@ D'autres pourront décider d'installer leurs antennes eux-même ou de n'utiliser
 
 C'est là que se trouve la force du système: chacun s'occupe de son travail de la façon la plus optimale possible et cela permet d'offrir une plus grande qualité et stabilité de l'ensemble. Le broker MQTT au milieu étant une brique technique servant à la communication entre les différentes parties.
 
-## Zigbee
+## Zigbee via *zigbee2mqtt*
+
+[Zigbee2mqtt](https://www.zigbee2mqtt.io/guide/getting-started/) prend en charge intégralement le protocole MQTT Discovery, ce qui facilite son intégration avec le plugin.
+Après avoir installée [zigbee2mqtt](https://www.zigbee2mqtt.io/guide/installation/) sur la platforme de votre choix, il vous suffit d'activer l'intégration *MQTT Discovery*. Vous pouvez le faire soit directement dans [le fichier de config de zigbee2mqtt](https://www.zigbee2mqtt.io/guide/configuration/homeassistant.html), soit via l'interface, pour obtenir la configuration suivante:
+
+![zigbee2mqtt_discovery](../images/zigbee2mqtt_discovery.png)
+
+Je recommande fortement de laisser la valeur `homeassistant` comme topic de découverte et de désactiver les intégrations legacy qui ne sont pas utilisées.
+
+Comme pour les autres intégrations, vous n'avez rien de plus à faire que d'ajouter les équipements voulus à votre Jeedom, le plugin se charge du reste.
+
+> **Important**
+>
+> L'association de nouveaux modules ou la configuration de ceux-ci ne seront pas gérés par **MQTT Discovery** (à moins que les infos existent dans la découverte). Les opérations "avancées" seront toujours à effectuer dans l'interface de zigbee2mqtt.
 
 # Changelog
 

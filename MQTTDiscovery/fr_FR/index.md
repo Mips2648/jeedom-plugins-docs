@@ -271,6 +271,7 @@ C'est là que se trouve la force du système: chacun s'occupe de son travail de 
 ## Zigbee
 
 [Zigbee2mqtt](https://www.zigbee2mqtt.io/guide/getting-started/) prend en charge intégralement le protocole MQTT Discovery, ce qui facilite son intégration avec le plugin.
+
 Après avoir installée [zigbee2mqtt](https://www.zigbee2mqtt.io/guide/installation/) sur la platforme de votre choix, il vous suffit d'activer l'intégration *MQTT Discovery*. Vous pouvez le faire soit directement dans [le fichier de config de zigbee2mqtt](https://www.zigbee2mqtt.io/guide/configuration/homeassistant.html), soit via l'interface, pour obtenir la configuration suivante:
 
 ![zigbee2mqtt_discovery](../images/zigbee2mqtt_discovery.png)

@@ -11,7 +11,9 @@ Le but de ce plugin est de vous faciliter la tâche pour l'installation et la co
 
 Il offre une solution clé en main pour effectuer ce paramétrage.
 
-Je vous invite à consulter [cette documentation](https://mips2648.github.io/jeedom-plugins-docs/MQTTDiscovery/fr_FR/#tocAnchor-1-14) pour comprendre plus en détails comment l'ensemble fonctionne.
+Il n'est évidement pas obligatoire d'utiliser ce plugin, vous êtes libres d'installer [Theengs gateway](https://gateway.theengs.io/install/install.html) par vos propres moyens. Une alternative encore plus simple est d'acheter la passerelle que l'équipe de Theengs propose, [voir le sujet ici](https://community.jeedom.com/t/theengs-bridge-nouvelle-version/128348).
+
+Je vous invite également à consulter [cette documentation](https://mips2648.github.io/jeedom-plugins-docs/MQTTDiscovery/fr_FR/#tocAnchor-1-14) pour comprendre plus en détails comment l'ensemble fonctionne.
 
 > **Important**
 >

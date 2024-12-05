@@ -11,7 +11,7 @@ pluginId: MQTTDiscovery
 
 Il se base sur le principe du "MQTT Auto Discovery" qui existe sous Home Assistant afin de créer automatiquement des équipements et leurs commandes sous Jeedom. Donc si vous avez des appareils qui sont connectés via MQTT et que ceux-ci publient les infos nécessaires pour la compatibilité "MQTT Auto Discovery", ceux-ci seront automatiquement reconnus et intégrés à Jeedom. Il est évidemment inutile d'installer Home Assistant, Jeedom suffit.
 
-Cela permet par exemple d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipements](https://decoder.theengs.io/devices/devices.html) ou l'équivalent [Theengs Gateway](https://gateway.theengs.io/) sur pi par exemple, tout ces équipements seront automatiquement supportés sous Jeedom via **MQTT Discovery**, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts ou tiles.
+Cela permet par exemple d'utiliser l'excellent projet [Open MQTT Gateway](https://docs.openmqttgateway.com/) sur esp32 qui gère [un nombre important d'équipements](https://decoder.theengs.io/devices/devices.html) ou l'équivalent [Theengs Gateway](https://gateway.theengs.io/) sur pi par exemple, tous ces équipements seront automatiquement supportés sous Jeedom via **MQTT Discovery**, avec la gestion automatique "multi-antenne". Il devient très facile de faire de la gestion de présence de tag Bluetooth tel que les nuts ou tiles.
 
 Mais cela ne se limite pas aux équipements Bluetooth puisque tous les équipements compatibles "MQTT Auto Discovery" seront reconnus et utilisables. Par exemple, ce plugin a été testé avec succès avec zwavejs-ui et zigbee2mqtt.
 
@@ -226,12 +226,13 @@ Il y a donc deux parties bien distinctes: les *antennes* qui transforment les me
 
 Il peut y en avoir une seule (installée localement sur Jeedom ou sur un hôte distant) ou plusieurs (forcément installées sur des hôtes distants) pour couvrir le domicile si besoin.
 
-Ces antennes vont capter les appareils qui émettent en Bluetooth et envoyer les données via MQTT à Jeedom; deux options pour avoir des antennes, vous pouvez les combiner et les multiplier, tout est possible:
+Ces antennes vont capter les appareils qui émettent en Bluetooth et envoyer les données via MQTT à Jeedom; plusieurs options pour avoir des antennes, vous pouvez les combiner et les multiplier, tout est possible:
 
 - [Theengs gateway](https://gateway.theengs.io/) à installer localement ou en distant sur une machine sous Debian (un pi ou autre, aucune importance):
   - soit manuellement en suivant leur documentation
   - soit via le [plugin Jeedom Theengs Gateway]({{site.baseurl}}/tgw/{{page.lang}}) disponible sur le market qui permet de simplifier la tâche, voir [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
 - [OpenMQTTGateway](https://docs.openmqttgateway.com/) à flasher sur un esp32, forcément en distant.
+- ou encore plus simple, le [Theengs Bridge](https://community.jeedom.com/t/theengs-bridge-nouvelle-version/128348).
 
 Il est donc parfaitement possible d'avoir:
 

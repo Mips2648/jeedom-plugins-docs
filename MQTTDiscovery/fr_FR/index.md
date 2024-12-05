@@ -187,6 +187,7 @@ Tous les composants/entités ne sont pas encore entièrement ni complètement in
 - alarm_control_panel
 - binary_sensor
 - button
+- climate
 - cover
 - device_automation
 - device_tracker
@@ -202,7 +203,9 @@ Tous les composants/entités ne sont pas encore entièrement ni complètement in
 - update
 - vacuum
 
-# Détections de devices Bluetooth
+# Intégrations
+
+## Equipements Bluetooth
 
 Un des premiers objectifs de **MQTT Discovery** est de pouvoir remonter facilement les infos [d'appareils Bluetooth compatibles](https://decoder.theengs.io/devices/devices.html) qui seront captés par des antennes exécutant les passerelles *Open MQTT Gateway* ou *Theengs Gateway*. Dans les deux cas, il faudra installer la passerelle et la configurer.
 
@@ -210,7 +213,7 @@ Nous allons voir ici une solution complète pour intégrer énormément d'équip
 
 Il n'y a besoin d'aucune connaissance technique (autre que de savoir utiliser Jeedom) et il n'y aura besoin d'effectuer aucune configuration manuellement même si à tout moment vous pourrez décider de prendre en charge manuellement tout ou partie de la solution (car "pourquoi faire simple lorsque l'on peut faire compliqué?").
 
-## Comment cela fonctionne?
+### Comment cela fonctionne?
 
 Voici un schéma qui illustre le fonctionnement et les interactions entre chaque composants de la solution:
 
@@ -254,7 +257,7 @@ Si votre équipement n'est pas ou mal reconnu, il ne sera pas affiché dans la l
 
 Pour savoir pourquoi il n'est pas reconnu, veuillez d'abord vérifier la [liste des équipements compatibles](https://decoder.theengs.io/devices/devices.html) et si besoin, posez votre question sur le [community de Open MQTT Gateway / Theengs Gateway](https://community.openmqttgateway.com/).
 
-## Pourquoi la gestion des antennes n'est-elle pas intégrée à MQTT Discovery alors?
+### Pourquoi la gestion des antennes n'est-elle pas intégrée à MQTT Discovery alors?
 
 Car ce sont bien deux rôles distincts et que **MQTT Discovery** ne s'occupe pas réellement de savoir d'où viennent les infos qu'il reçoit via MQTT et il n'est certainement pas limité aux équipements Bluetooth.
 
@@ -263,6 +266,8 @@ Certains l'utilisent pour intégrer à Jeedom des équipements qui ne sont pas e
 D'autres pourront décider d'installer leurs antennes eux-même ou de n'utiliser que des antennes sur esp32 avec OMG.
 
 C'est là que se trouve la force du système: chacun s'occupe de son travail de la façon la plus optimale possible et cela permet d'offrir une plus grande qualité et stabilité de l'ensemble. Le broker MQTT au milieu étant une brique technique servant à la communication entre les différentes parties.
+
+## Zigbee
 
 # Changelog
 

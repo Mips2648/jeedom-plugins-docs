@@ -206,7 +206,7 @@ Tous les composants/entités ne sont pas encore entièrement ni complètement in
 
 Je vais détailler ci-dessous quelques cas d'intégrations possibles
 
-## Bluetooth via les passerelles *Open MQTT Gateway* ou *Theengs Gateway*
+## Bluetooth
 
 Un des premiers objectifs de **MQTT Discovery** est de pouvoir remonter facilement les infos [d'appareils Bluetooth compatibles](https://decoder.theengs.io/devices/devices.html) qui seront captés par des antennes exécutant les passerelles *Open MQTT Gateway* ou *Theengs Gateway*. Dans les deux cas, il faudra installer la passerelle et la configurer.
 
@@ -268,7 +268,7 @@ D'autres pourront décider d'installer leurs antennes eux-même ou de n'utiliser
 
 C'est là que se trouve la force du système: chacun s'occupe de son travail de la façon la plus optimale possible et cela permet d'offrir une plus grande qualité et stabilité de l'ensemble. Le broker MQTT au milieu étant une brique technique servant à la communication entre les différentes parties.
 
-## Zigbee via *zigbee2mqtt*
+## Zigbee
 
 [Zigbee2mqtt](https://www.zigbee2mqtt.io/guide/getting-started/) prend en charge intégralement le protocole MQTT Discovery, ce qui facilite son intégration avec le plugin.
 Après avoir installée [zigbee2mqtt](https://www.zigbee2mqtt.io/guide/installation/) sur la platforme de votre choix, il vous suffit d'activer l'intégration *MQTT Discovery*. Vous pouvez le faire soit directement dans [le fichier de config de zigbee2mqtt](https://www.zigbee2mqtt.io/guide/configuration/homeassistant.html), soit via l'interface, pour obtenir la configuration suivante:

@@ -9,6 +9,7 @@ pluginId: MQTTDiscovery
 
 - Prise en charge du type *climate* / *HVAC*
 - Ajout du support "schema json" pour le type *light*: supporte les ampoules avec variation de la luminosité, température des couleurs, choix des couleurs, effets, transitions.
+- Ajout des commandes **Etat**, **On** et **Off** sur le type *light* utilisant le *default schema*
 - Fix sur les commandes infos pour le type *vacuum*
 - Fix sur la création des commandes listes qui ne contenait pas la liste des options dans certains cas
 - Fix sur l'intégration *EMS-ESP* dû à un mix de 2 syntaxes différentes qui n'était pas supporté par le plugin

@@ -23,34 +23,21 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 # Configuration du plugin
 
 Dans la configuration du plugin il faudra renseigner le nom d'utilisateur et le mot de passe.
-Vous pouvez aussi renseigner une clé API Google Maps qui sera utilisée pour afficher la carte avec la localisation du véhicule sur le widget.
 
 # Les équipements
 
 Dès que le démon démarre, si votre nom d'utilisateur et mot de passe sont correctes, le plugin va créer automatiquement les véhicules liés à votre compte.
-Il est possible de faire une synchronisation manuelle via la page des équipements.
 
-Dans la page de l'équipement vous pouvez configurer la fréquence d'actualisation des données.
+Les infos sont actualisées toutes les 10 minutes.
 
 # Les commandes
 
-Pour l'instant les commandes suivantes sont disponibles:
+Pour l'instant les commandes infos suivantes sont disponibles:
 
 - Kilométrage
 - Prochaine vidange huile en jours et en km
 - Prochain entretien en jours et en km
 - Niveau du réservoir & autonomie
-
-# Widget
-
-Dans la configuration avancée de la commande _Localisation_ vous pouvez configurer les options suivantes:
-
-- **showMap:** 0 pour ne pas afficher la carte, 1 pour afficher la carte
-- **mapWidth:** largeur de la carte, par défaut 240
-- **mapHeight:** hauteur de la carte, par défaut 180
-- **showCoordinates:** si la carte est affichée, par défaut n'affiche pas les coordonnées (latitude et longitude). 1 pour les afficher.
-
-![Paramètres localisation](../images/location.png "Paramètres localisation")
 
 # Changelog
 

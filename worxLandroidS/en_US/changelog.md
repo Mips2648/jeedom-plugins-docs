@@ -8,6 +8,7 @@ pluginId: worxLandroidS
 # Beta
 
 - Update dependencies
+- Icon update
 
 # Stable
 

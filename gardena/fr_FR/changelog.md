@@ -10,6 +10,7 @@ pluginId: gardena
 - Augmentation du timeout lors de la connexion car les serveurs Husqvarna semble mettre un peu plus de temps à répondre
 - Compatibilité API Husqvarna v2
 - Mise à jour de dépendances
+- Mise à jour de l'icône
 - Jeedom v4.4 requis
 
 # Stable

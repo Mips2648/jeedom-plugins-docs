@@ -14,6 +14,7 @@ pluginId: modbus2mqtt
 - suppression de l'option pour choisir le mode d'écriture: c'est déterminé automatiquement en fonction du type.
 - Mise à jour du démon
 - Mise à jour de dépendances
+- Mise à jour de l'icône
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 - Fix: l'adresse du terminal (slave id) n'était pas correctement pris en compte
 - Jeedom v4.4 requis

@@ -14,6 +14,7 @@ pluginId: myaudi
 > Vérifiez la configuration du plugin, installez les dépendances et lancez le démon.
 
 - Mise à jour de dépendances
+- Mise à jour de l'icône
 - Jeedom v4.4 requis
 
 # Stable

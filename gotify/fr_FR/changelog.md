@@ -7,7 +7,8 @@ pluginId: gotify
 
 # Beta
 
-n/a
+- Mise à jour de dépendances
+- Mise à jour de l'icône
 
 # Stable
 

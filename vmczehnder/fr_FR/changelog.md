@@ -12,6 +12,7 @@ n/a
 # Stable
 
 - Mise à jour de dépendances
+- Mise à jour de l'icône
 - Jeedom v4.4 requis
 
 ## 2024-09-16

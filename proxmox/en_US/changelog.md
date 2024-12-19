@@ -10,6 +10,7 @@ pluginId: proxmox
 - Reduced timeouts for Proxmox requests
 - Fix an error when one of the nodes in a cluster is disconnected (in the case of an installation with multiple nodes).
 - Update dependencies
+- Icon update
 - Jeedom v4.4 required
 
 # Stable

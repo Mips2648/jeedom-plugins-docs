@@ -23,34 +23,21 @@ In order to use the plugin, you must download, install and activate it like any 
 # Plugin configuration
 
 In the configuration of the plugin it will be necessary to setup the username and password.
-You can also enter a Google Maps API key which will be used to display the map with the location of the vehicle on the widget.
 
 # Devices
 
 As soon as the daemon starts, if your username and password are correct, the plugin will automatically create the vehicles linked to your account.
-It is possible to synchronize manually via the devices page.
 
-In device configuration page you can configure auto-refresh frequency.
+Information are updated every 10 minutes.
 
 # Commands
 
-For the moment the following commands are available:
+For the moment, the following info commands are available:
 
 - Mileage
 - Next oil change in days and km
 - Next maintenance in days and km
 - Tank level & autonomy
-
-# Widget
-
-In the advanced configuration of the _Location_ command you can configure the following options:
-
-- **showMap:** 0 to not display the map, 1 to display the map
-- **mapWidth:** map width, default 240
-- **mapHeight:** map height, default 180
-- **showCoordinates:** if the map is displayed, by default does not display the coordinates (latitude and longitude). 1 to display them.
-
-![location setting](../images/location.png "Location setting")
 
 # Changelog
 

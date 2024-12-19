@@ -7,7 +7,7 @@ pluginId: logmanager
 
 # Beta
 
-n/a
+- Icon update
 
 # Stable
 

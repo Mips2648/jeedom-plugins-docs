@@ -8,7 +8,9 @@ pluginId: gardena
 # Beta
 
 - Increased connection timeout as Husqvarna servers seem to take a little longer to respond
+- Husqvarna v2 API compatibility
 - Update dependencies
+- Icon update
 - Jeedom v4.4 required
 
 # Stable

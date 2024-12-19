@@ -7,13 +7,20 @@ pluginId: arlo
 
 # Beta
 
+- Added support for Video Doorbell HD & 2k
+- Fixed a bug on command **Schedule state**.
+- Update dependencies
+- Icon update
+
+# Stable
+
+## 2024-11-16
+
 - Improved support for Arlo Essential models
 - Fix possible daemon hangup in case of mode update failure
 - Limits the version of a dependency (cryptography) to maintain compatibility with pi3 installed in 32bits. Please note that compatibility with 32-bit systems will be removed in a future version!
 - Update dependencies
 - Jeedom v4.4 required
-
-# Stable
 
 ## 2024-09-23
 

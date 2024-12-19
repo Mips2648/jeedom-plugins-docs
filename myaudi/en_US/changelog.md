@@ -14,6 +14,7 @@ pluginId: myaudi
 > Check plugin configuration, install dependencies and run daemon.
 
 - Update dependencies
+- Icon update
 - Jeedom v4.4 required
 
 # Stable

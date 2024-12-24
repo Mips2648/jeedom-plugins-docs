@@ -7,11 +7,15 @@ pluginId: tgw
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-12-25
+
 - Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
-
-# Stable
 
 ## 2024-06-16
 

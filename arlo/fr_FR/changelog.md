@@ -7,12 +7,16 @@ pluginId: arlo
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-12-25
+
 - Ajout du support de la Video Doorbell HD & 2k
 - Correction d'un bug sur la commande **Etat Planning**
 - Mise à jour de dépendances
 - Mise à jour de l'icône
-
-# Stable
 
 ## 2024-11-16
 

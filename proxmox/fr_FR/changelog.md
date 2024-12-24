@@ -7,13 +7,17 @@ pluginId: proxmox
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-12-25
+
 - Diminution des timeouts lors des requêtes à Proxmox
 - Correction d'une erreur dans le cas où l'un des noeuds d'un cluster est déconnecté (dans le cas d'une installation avec de multiples noeuds)
 - Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
-
-# Stable
 
 ## 2024-09-16
 

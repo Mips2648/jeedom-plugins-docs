@@ -7,10 +7,14 @@ pluginId: onduleursolaredge
 
 # Beta
 
-- Mise à jour de dépendances
-- Mise à jour de l'icône
+n/a
 
 # Stable
+
+## 2024-12-25
+
+- Mise à jour de dépendances
+- Mise à jour de l'icône
 
 ## 2024-10-17
 

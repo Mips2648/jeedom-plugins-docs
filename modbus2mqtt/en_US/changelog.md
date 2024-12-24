@@ -14,6 +14,7 @@ pluginId: modbus2mqtt
 - Remove option to choose the writing mode: this is determined automatically according to the type.
 - Update daemon
 - Update dependencies
+- Icon update
 - Translation of the plugin into English, German, Spanish, Italian and Portuguese
 - Fix: terminal address (slave id) was not correctly taken into account
 - Jeedom v4.4 required

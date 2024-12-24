@@ -11,7 +11,9 @@ The purpose of this plugin is to make it easier for you to install and configure
 
 It offers a turnkey solution to perform this configuration.
 
-I invite you to consult [this documentation](https://mips2648.github.io/jeedom-plugins-docs/MQTTDiscovery/fr_FR/#tocAnchor-1-14) to understand in more detail how it works.
+You are free to install [Theengs gateway](https://gateway.theengs.io/install/install.html) on your own. An even simpler alternative is to purchase the gateway offered by the Theengs team, [see topic here](https://community.jeedom.com/t/theengs-bridge-nouvelle-version/128348).
+
+I also invite you to consult [this documentation](https://mips2648.github.io/jeedom-plugins-docs/MQTTDiscovery/fr_FR/#tocAnchor-1-15) for a more detailed understanding of how the system works.
 
 > **Important**
 >

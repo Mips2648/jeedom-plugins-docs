@@ -7,7 +7,7 @@ pluginId: designImgSwitch
 
 # Beta
 
-n/a
+- Icon update
 
 # Stable
 

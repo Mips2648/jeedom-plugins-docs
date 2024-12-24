@@ -7,7 +7,7 @@ pluginId: notificationqueue
 
 # Beta
 
-n/a
+- Icon update
 
 # Stable
 

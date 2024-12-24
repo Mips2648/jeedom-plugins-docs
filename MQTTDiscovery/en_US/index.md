@@ -11,15 +11,14 @@ pluginId: MQTTDiscovery
 
 It is based on the principle of “MQTT Auto Discovery” which exists under Home Assistant in order to automatically create devices and their commands under Jeedom. So if you have devices that are connected via MQTT and if they publish the information necessary for the “MQTT Auto Discovery” compatibility, these will be automatically recognized and integrated into Jeedom. There is obviously no point in installing Home Assistant, Jeedom is enough.
 
-This makes it possible to use the excellent project [Open MQTT Gateway](https://docs.openmqttgateway.com/) on esp32 which manages [a large number of devices](https://decoder.theengs.io/devices/devices.html) or the equivalent [Theengs gateway](https://gateway.theengs.io/) on pi for example, all these devices will be automatically supported under Jeedom via **MQTT Discovery**, with automatic “multi-antenna” management. It is becoming very easy to manage the presence of Bluetooth tags such as nuts or tiles.
+This makes it possible, for example, to use the excellent [Open MQTT Gateway](https://docs.openmqttgateway.com/) project on esp32, which manages [a large number of devices](https://decoder.theengs.io/devices/devices.html), or the equivalent [Theengs Gateway](https://gateway.theengs.io/) on pi for example, all of which will be automatically supported in Jeedom via **MQTT Discovery**, with automatic "multi-antenna" management. This makes it very easy to manage the presence of Bluetooth tags such as nuts or tiles.
 
 But so it's not limited to Bluetooth devices since all “MQTT Auto Discovery” compatible devices will be recognized and manageable. For example, this plugin has been successfully tested with zwavejs-ui and zigbee2mqtt.
 
 > **Important**
 >
-> **MQTT Discovery** is not intended to replace protocol plugins dedicated to zwavejs-ui and zigbee2mqtt for example; Existing plugins on the market will manage these protocols much better.
-> No specific options will be developed to manage these in more detail, this is not the purpose of the plugin which only implements automatic discovery.
-> So **MQTT Discovery** can obviously be used to easily create the devices necessary (as you would do with another MQTT integration but more easily) but only in the context of use in "advanced" mode, knowing that you manage absolutely everything else with the tools made available by these two programs.
+> No specific options will be developed to manage gateways such as zwavejs-ui and zigbee2mqtt in detail, as this is not the aim of the plugin, which only implements automatic device discovery.
+> So **MQTT Discovery** can of course be used to automatically create the necessary equipment (as you would with any other MQTT integration, but more easily), but only when used in "advanced" mode, in the knowledge that you manage everything else with the tools provided by the corresponding gateways.
 
 # Supported versions
 
@@ -187,6 +186,7 @@ Not all components/entities are fully or completely integrated yet. If your hard
 - alarm_control_panel
 - binary_sensor
 - button
+- climate
 - cover
 - device_automation
 - device_tracker
@@ -202,7 +202,11 @@ Not all components/entities are fully or completely integrated yet. If your hard
 - update
 - vacuum
 
-# Bluetooth device detections
+# Integrations
+
+Here are a few examples of possible integrations
+
+## Bluetooth
 
 One of the first objectives of **MQTT Discovery** is to be able to easily retrieve information from [compatible Bluetooth devices](https://decoder.theengs.io/devices/devices.html) that will be decoded by antennas running *Open MQTT Gateway* or *Theengs Gateway*. In both cases, you will have to install the tool and configure it.
 
@@ -210,7 +214,7 @@ Here we will see a complete solution to integrate a lot of Bluetooth equipment (
 
 There is no need for any technical knowledge (other than knowing how to use Jeedom) and there will be no need to perform any configuration manually even if at any time you can decide to take care of all or part of the solution manually (because “why make it simple when you can make it complicated?”).
 
-## How does it work?
+### How does it work?
 
 Here is a diagram that illustrates how each component of the solution works and how they interact:
 
@@ -226,12 +230,13 @@ So there are two very distinct parts: *antennas* that transform Bluetooth messag
 
 There may be a single one (installed locally on Jeedom or on a remote host) or several (necessarily installed on remote hosts) to cover the home if necessary.
 
-These antennas will pick up devices that transmit Bluetooth and send the data via MQTT to Jeedom; two options to have antennas, you can combine and multiply them, everything is possible:
+These antennas will pick up devices transmitting via Bluetooth and send the data via MQTT to Jeedom; there are several options for antennas, you can combine and multiply them, anything is possible:
 
 - [Theengs gateway](https://gateway.theengs.io/) to be installed locally or remotely on a Debian machine (a pi or other, not important):
   - either manually by following their documentation
   - or via the [Jeedom plugin Theengs Gateway]({{site.baseurl}}/tgw/{{page.lang}}) available on the market which simplifies the task, see [Documentation]({{site.baseurl}}/tgw/{{page.lang}})
 - [OpenMQTTGateway](https://docs.openmqttgateway.com/) to flash on an esp32, necessarily remotely.
+- or even simpler, the [Theengs Bridge](https://community.jeedom.com/t/theengs-bridge-nouvelle-version/128348).
 
 It is therefore perfectly possible to have:
 
@@ -253,7 +258,7 @@ If your device is unrecognized or poorly recognized, it will not be displayed in
 
 To find out why it is not recognized, please first check the [list of compatible devices](https://decoder.theengs.io/devices/devices.html) and, if necessary, ask your question on the [Open MQTT Gateway / Theengs Gateway community](https://community.openmqttgateway.com/).
 
-## So why isn't antenna management integrated into MQTT Discovery?
+### So why isn't antenna management integrated into MQTT Discovery?
 
 Because these are very two distinct roles and that **MQTT Discovery** does not really care about where the information received via MQTT comes from and it is certainly not limited to Bluetooth devices.
 
@@ -262,6 +267,22 @@ Some people use it to integrate devices that are not Bluetooth into Jeedom and a
 Others may decide to install their antennas themselves or to use only antennas on esp32 with OMG.
 
 This is where the strength of the system lies: everyone does their work in the most optimal way possible and this makes it possible to offer greater quality and overall stability. The MQTT broker in the middle is a technical brick used for communication between the different parties.
+
+## Zigbee
+
+[Zigbee2mqtt](https://www.zigbee2mqtt.io/guide/getting-started/) fully supports the MQTT Discovery protocol, making it easy to integrate with the plugin.
+
+Once you've installed [zigbee2mqtt](https://www.zigbee2mqtt.io/guide/installation/) on the platform of your choice, all you need to do is enable *MQTT Discovery* integration. You can do this either directly in [zigbee2mqtt config file](https://www.zigbee2mqtt.io/guide/configuration/homeassistant.html), or via the interface, to obtain the following configuration:
+
+![zigbee2mqtt_discovery](../images/zigbee2mqtt_discovery.png)
+
+I strongly recommend leaving `homeassistant` as the discovery topic and disabling legacy integrations that are not used.
+
+As with the other integrations, all you have to do is add the equipment you want to your Jeedom, and the plugin takes care of the rest.
+
+> **Important**
+>
+> Associating new modules or configuring them will not be handled by **MQTT Discovery** (unless the info exists in Discovery). Advanced" operations will always be carried out in the zigbee2mqtt interface.
 
 # Changelog
 

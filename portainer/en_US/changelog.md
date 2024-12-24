@@ -7,7 +7,8 @@ pluginId: portainer
 
 # Beta
 
-n/a
+- Update dependencies
+- Icon update
 
 # Stable
 

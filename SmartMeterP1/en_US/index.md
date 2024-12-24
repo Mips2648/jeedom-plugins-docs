@@ -25,8 +25,8 @@ Then you need to install dependencies.
 
 # Plugin configuration
 
-In the plugin configuration, you can configure the cycle that defines the delay between each information feedback to Jeedom. The default value is 1 second.
-This value should suit most installation, but you can increase it if necessary. There's no point in going below 1s, as the counter only returns information every second.
+In the plugin configuration, you can optionally set the cycle that defines the delay between each feedback to Jeedom.
+The default value should be suitable for most people, but you can adapt it if necessary. There's no need to go below 1s, as the counter only returns information every second.
 
 Start or restart the daemon.
 
@@ -71,3 +71,7 @@ At a minimum, you will need to provide:
 - a screenshot of the plugin's configuration page
 - all available plugin logs pasted into a `Preformatted Text` (button `</>` on community), no files!
 - depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
+
+# Do you like the plugin?
+
+<a href="https://www.buymeacoffee.com/mips2648" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>

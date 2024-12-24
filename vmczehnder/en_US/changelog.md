@@ -11,6 +11,8 @@ n/a
 
 # Stable
 
+## 2024-12-25
+
 - Update dependencies
 - Icon update
 - Jeedom v4.4 required

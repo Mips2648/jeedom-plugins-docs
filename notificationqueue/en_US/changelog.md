@@ -7,9 +7,13 @@ pluginId: notificationqueue
 
 # Beta
 
-- Icon update
+n/a
 
 # Stable
+
+## 2024-12-25
+
+- Icon update
 
 ## 2024-09-16
 

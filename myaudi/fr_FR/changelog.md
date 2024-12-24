@@ -7,6 +7,12 @@ pluginId: myaudi
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-12-25
+
 > **Important**
 >
 > Nouveau plugin, complètement réécrit.
@@ -16,8 +22,6 @@ pluginId: myaudi
 - Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
-
-# Stable
 
 ## 2024-08-19
 

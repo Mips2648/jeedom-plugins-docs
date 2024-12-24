@@ -7,9 +7,13 @@ pluginId: notificationqueue
 
 # Beta
 
-- Mise à jour de l'icône
+n/a
 
 # Stable
+
+## 2024-12-25
+
+- Mise à jour de l'icône
 
 ## 2024-09-16
 

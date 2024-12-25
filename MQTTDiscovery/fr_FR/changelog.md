@@ -7,6 +7,12 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-12-26
+
 - Prise en charge du type *climate* / *HVAC*
 - Ajout du support "schema json" pour le type *light*: supporte les ampoules avec variation de la luminosité, température des couleurs, choix des couleurs, effets, transitions.
 - Ajout des commandes **Etat**, **On** et **Off** sur le type *light* utilisant le *default schema*
@@ -17,8 +23,6 @@ pluginId: MQTTDiscovery
 - Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
-
-# Stable
 
 ## 2024-07-02
 

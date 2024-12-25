@@ -7,6 +7,12 @@ pluginId: modbus2mqtt
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-12-26
+
 - Ajout d'une nouvelle option pour inverser l'ordre dans un octet
 - Ajout du support des nombres flottants sur 32bits
 - Ajout d'une option pour configurer le timeout des requêtes modbus
@@ -18,8 +24,6 @@ pluginId: modbus2mqtt
 - Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
 - Fix: l'adresse du terminal (slave id) n'était pas correctement pris en compte
 - Jeedom v4.4 requis
-
-# Stable
 
 ## 2024-04-10
 

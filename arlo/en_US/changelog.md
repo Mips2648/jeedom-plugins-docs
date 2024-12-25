@@ -7,12 +7,16 @@ pluginId: arlo
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-12-25
+
 - Added support for Video Doorbell HD & 2k
 - Fixed a bug on command **Schedule state**.
 - Update dependencies
 - Icon update
-
-# Stable
 
 ## 2024-11-16
 

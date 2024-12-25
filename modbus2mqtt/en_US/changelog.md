@@ -7,6 +7,12 @@ pluginId: modbus2mqtt
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2024-12-26
+
 - Add a new option to reverse the order in a byte
 - Added support for 32-bit float numbers
 - Add option to configure modbus request timeout
@@ -18,8 +24,6 @@ pluginId: modbus2mqtt
 - Translation of the plugin into English, German, Spanish, Italian and Portuguese
 - Fix: terminal address (slave id) was not correctly taken into account
 - Jeedom v4.4 required
-
-# Stable
 
 ## 2024-04-10
 

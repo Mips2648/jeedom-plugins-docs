@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Ajout du support de la Arlo Pro 5
 
 # Stable
 

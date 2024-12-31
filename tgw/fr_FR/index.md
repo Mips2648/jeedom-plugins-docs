@@ -18,6 +18,8 @@ Je vous invite également à consulter [cette documentation](https://mips2648.gi
 > **Important**
 >
 > Ce plugin ne garantit pas que *Theengs gateway* fonctionnera sur votre machine, il y a beaucoup trop de paramètres qui peuvent influencer le bon fonctionnement: cela dépend de votre matériel, de la version de votre système, de la clé Bluetooth utilisée etc. Le plugin se charge uniquement d'installer l'application et vous permet de contrôler son état depuis Jeedom.
+>
+> La gestion Bluetooth sur la box Jeedom Smart cause de sérieux problèmes, la plupart des installations d'antenne locale seront non-fonctionnelles: l'installation fonctionne et le service démarre mais le Bluetooth se fige après un certain temps. Cela n'est dû ni au plugin ni à l'application *Theengs gateway*. Le plugin peut évidemment être utilisé sur une Smart pour installer une antenne distante.
 
 # Versions supportées
 

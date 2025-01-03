@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-n/a
+- Fix mineur sur la gestion des topics découverts
 
 # Stable
 

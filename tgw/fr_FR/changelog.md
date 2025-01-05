@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2025-01-05
+
+- Fix un problème sur la détection de la version de Theengs Decoder (si >=1.8.3)
+
 ## 2024-12-25
 
 - Mise à jour de dépendances

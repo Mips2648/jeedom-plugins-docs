@@ -136,10 +136,10 @@ Les commandes suivantes supposent que vous allez effectuer les opérations avec 
 
 ## Création d'un utilisateur
 
-Connectez-vous sur votre machine en ligne de commande (ssh ou console) et tapez la commande suivante pour créer un utilisateur nommé *jeedom*
+Connectez-vous sur votre machine en ligne de commande (ssh ou console) et tapez la commande suivante pour créer un utilisateur nommé *tgw-user*
 
 ```bash
-sudo adduser jeedom
+sudo adduser tgw-user
 ```
 
 Vous devrez ensuite choisir son mot de passe, suivez les instructions à l'écran.
@@ -149,7 +149,7 @@ Vous devrez ensuite choisir son mot de passe, suivez les instructions à l'écra
 Ensuite, ajoutez l'utilisateur dans le groupe *sudo*
 
 ```bash
-sudo usermod -aG sudo jeedom
+sudo usermod -aG sudo tgw-user
 ```
 
 ## Executer sudo sans confirmation de mot de passe
@@ -163,7 +163,7 @@ sudo visudo
 A la fin du fichier, ajouter cette ligne:
 
 ```text
-jeedom ALL=(ALL) NOPASSWD:ALL
+tgw-user ALL=(ALL) NOPASSWD:ALL
 ```
 
 Quittez en tapant les touches `ctrl+X` et confirmez la sauvegarde en tapant `O` ou `Y` suivant la langue de votre système (voir message dans le bas de l'écran)

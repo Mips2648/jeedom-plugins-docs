@@ -8,6 +8,7 @@ pluginId: MQTTDiscovery
 # Beta
 
 - Fix mineur sur la gestion des topics découverts
+- Fix une erreur lors de la création de commande action si plusieurs commandes portent le même nom
 
 # Stable
 

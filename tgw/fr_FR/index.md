@@ -114,7 +114,7 @@ Pour cela, vous devez entrer l'adresse MAC réelle et, en séparant par un espac
 
 Il est possible d'effectuer plusieurs configurations, une par ligne.
 
-Pour savoir comment obtenir cette IRK pour les appareils Apple, veuillez consulter [cette documentation](https://gateway.theengs.io/use/use.html#getting-identity-resolving-key-irk-for-apple-watch-iphone-and-ipad).
+Pour savoir comment obtenir cette IRK pour les appareils Apple, veuillez consulter [cette documentation](https://gateway.theengs.io/use/use.html#getting-identity-resolving-key-irk-for-apple-watch-iphone-ipad-and-airpods).
 
 # Les commandes
 

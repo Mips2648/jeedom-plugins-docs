@@ -7,7 +7,8 @@ pluginId: myaudi
 
 # Beta
 
-n/a
+- Mise à jour de dépendances
+- Meilleur gestion des erreurs dans le démon
 
 # Stable
 

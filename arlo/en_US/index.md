@@ -34,7 +34,7 @@ Here is an overview of the possibilities of the plugin:
 
 > **Important**
 >
-> It is not recommended to use Essentials or Wire-free cameras and doorbells if no base exists in the system, except if they have power supply (from grid or from a solar panel if sufficient sunlight) because their battery does not provide sufficient autonomy. If a base exists then no problem.
+> It is not recommended to use cameras and doorbells from the Essentials or Wire-free range (i.e. all cameras connected directly via wifi) if no base station is present in the system, unless they are permanently powered (from the mains or via a solar panel if there is sufficient sunlight), as their battery does not offer sufficient autonomy. If there is a base station, then no problem.
 
 # Supported versions
 

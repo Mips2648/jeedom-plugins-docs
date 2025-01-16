@@ -17,7 +17,9 @@ I also invite you to consult [this documentation](https://mips2648.github.io/jee
 
 > **Important**
 >
-> This plugin does not guarantee that *Theengs gateway* will work on your machine, there are too many parameters that can influence this: it depends on your hardware, the version of your system, the Bluetooth key used etc. The plugin is only responsible for installing the application and allows you to control its status from Jeedom.
+> This plugin doesn't guarantee that *Theengs gateway* will work on your machine, as there are far too many parameters that can influence the behavior: it depends on your hardware, your system version, the Bluetooth key you're using, etc. The plugin only installs the application and lets you check its status from Jeedom.
+>
+> Bluetooth management on the Jeedom Smart box causes serious problems, and most local antenna installations will be non-functional: the installation works and the service starts up, but Bluetooth freezes after a while. This is not due to the plugin or the *Theengs gateway* application. The plugin can of course be used on a Smart to install a remote antenna.
 
 # Supported versions
 
@@ -112,7 +114,7 @@ To do this, you must enter the real MAC address and, separated by a space, the â
 
 It is possible to do several configurations, one per line.
 
-To find out how to get this IRK for Apple devices, please see [this documentation](https://gateway.theengs.io/use/use.html#getting-identity-resolving-key-irk-for-apple-watch-iphone-and-ipad).
+To find out how to get this IRK for Apple devices, please see [this documentation](https://gateway.theengs.io/use/use.html#getting-identity-resolving-key-irk-for-apple-watch-iphone-ipad-and-airpods).
 
 # Commands
 
@@ -134,10 +136,10 @@ The following commands assume that you are going to perform operations with a us
 
 ## User creation
 
-Log in to your machine using the command line (ssh or console) and type the following command to create a user named *jeedom*
+Log in to your machine using the command line (ssh or console) and type the following command to create a user named *tgw-user*
 
 ```bash
-sudo adduser jeedom
+sudo adduser tgw-user
 ```
 
 You will then have to choose his password, follow the instructions on the screen.
@@ -147,7 +149,7 @@ You will then have to choose his password, follow the instructions on the screen
 Then add the user to the *sudo* group
 
 ```bash
-sudo usermod -aG sudo jeedom
+sudo usermod -aG sudo tgw-user
 ```
 
 ## Execute sudo without confirming the password
@@ -161,7 +163,7 @@ sudo visudo
 At the end of the file, add this line:
 
 ```text
-jeedom ALL=(ALL) NOPASSWD:ALL
+tgw-user ALL=(ALL) NOPASSWD:ALL
 ```
 
 Exit by typing the `Ctrl+x` keys and confirm the save by typing `O` or `Y` depending on the language of your system (see message at the bottom of the screen)

@@ -7,7 +7,7 @@ pluginId: tgw
 
 # Beta
 
-n/a
+- Fix sur la notification des mises à jour de Theengs Decoder
 
 # Stable
 

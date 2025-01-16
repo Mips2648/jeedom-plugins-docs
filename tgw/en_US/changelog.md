@@ -11,10 +11,6 @@ n/a
 
 # Stable
 
-## 2025-01-05
-
-- Fix a problem with Theengs Decoder version detection (if >=1.8.3)
-
 ## 2024-12-25
 
 - Update dependencies

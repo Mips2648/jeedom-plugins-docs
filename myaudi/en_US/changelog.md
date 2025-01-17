@@ -7,7 +7,8 @@ pluginId: myaudi
 
 # Beta
 
-n/a
+- Update dependencies
+- Better error handling in the daemon
 
 # Stable
 

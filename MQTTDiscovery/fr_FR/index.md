@@ -248,6 +248,10 @@ Il est donc parfaitement possible d'avoir:
 
 Toutes les combinaisons sont réalisables et tout est inter-compatible.
 
+> **Tip**
+>
+> Un avantage pour les antennes sous *OpenMQTTGateway*, que ca soit en DIY ou via le *Theengs Bridge*, c'est qu'elles vont être automatiquement disponnibles comme une équipement de **MQTT Discovery** car elles publient également les infos de découvertes pour elle-même et par conséquent vous pourrez les gérer intégralement depuis Jeedom. Ce na sera pas le cas pour les antennes sous **Theengs gateway** mais vous pourrez les gérer via le [plugin Jeedom Theengs Gateway]({{site.baseurl}}/tgw/{{page.lang}}) si elles sont installées à l'aide du plugin.
+
 ### Les équipements sous Jeedom
 
 C'est ici qu'entre en jeu le plugin **MQTT Discovery** et si vous avez déjà effectué la configuration du plugin décrite ci-dessus, vous n'avez rien de plus à faire que d'ajouter les équipements voulus à votre Jeedom, le plugin se charge du reste.

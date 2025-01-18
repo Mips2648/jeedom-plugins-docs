@@ -11,7 +11,7 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-n/a
+- Update dependencies
 
 # Stable
 

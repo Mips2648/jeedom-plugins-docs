@@ -7,6 +7,7 @@ pluginId: myaudi
 
 # Beta
 
+- Fix sur la récupération des données de maintenance du véhicule
 - Mise à jour de dépendances
 - Meilleur gestion des erreurs dans le démon
 

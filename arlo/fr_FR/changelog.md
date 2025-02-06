@@ -14,6 +14,7 @@ n/a
 ## 2025-02-06
 
 - Ajout du support de la Arlo Pro 5
+- Mise à jour de dépendances
 - Fix en urgence pour contourner un blocage de la connexion arrivé dans le nuit du 05/02 au 06/02
 
 ## 2024-12-25

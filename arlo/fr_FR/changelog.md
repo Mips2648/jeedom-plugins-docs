@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Stop le démon si la connexion avec Arlo n'est pas possible
 
 # Stable
 

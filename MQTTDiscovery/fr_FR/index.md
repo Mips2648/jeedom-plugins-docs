@@ -45,7 +45,7 @@ Cette liste est loin d'être exhaustive, cela serait impossible tellement il en 
 - [Open MQTT Gateway](https://docs.openmqttgateway.com/): passerelle Bluetooth sur ESP
 - [Sonos2mqtt](https://sonos2mqtt.svrooij.io/), [voir sur community](https://community.jeedom.com/t/sonos2mqtt/119216)
 - [Theengs Gateway](https://gateway.theengs.io/): passerelle Bluetooth sous Debian, voir ce [tutoriel sur community](https://community.jeedom.com/t/migration-de-blea-vers-mqttdiscovery-et-tgw/115358)
-- [tydom2mqtt](https://fmartinou.github.io/tydom2mqtt/#/introduction/)
+- [tydom2mqtt](https://tydom2mqtt.github.io/tydom2mqtt/#/introduction/)
 - [zigbee2mqtt](https://www.zigbee2mqtt.io/)
 - [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
 

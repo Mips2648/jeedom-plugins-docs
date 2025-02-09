@@ -10,6 +10,7 @@ pluginId: SmartMeterP1
 - Correction du décodage pour compatibilité avec les compteurs Suisse
 - Ajout des codes 1.6.0 (maximum de la puissance moyenne prélevée sur un quart d’heure depuis le début du mois) & 2.6.0 (maximum de la puissance moyenne injectée sur un quart d’heure depuis le début du mois), cette dernière info ne sera pas présente pour tout le monde, cela dépend si le compteur la fourni ou pas.
 - Migration du démon PHP vers un démon Python pour améliorer la performance
+- Ajout d'un heartbeat interne au démon
 - Mise à jour de dépendances
 - Mise à jour de l'icône
 

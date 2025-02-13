@@ -7,9 +7,14 @@ pluginId: arlo
 
 # Beta
 
-- Stop le démon si la connexion avec Arlo n'est pas possible
+n/a
 
 # Stable
+
+## 2025-02-13
+
+- Stop le démon si la connexion avec Arlo n'est pas possible
+- Mise à jour des headers utilisés lors de l'authentification
 
 ## 2025-02-06
 

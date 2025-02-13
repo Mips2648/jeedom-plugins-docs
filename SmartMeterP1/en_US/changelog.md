@@ -10,6 +10,7 @@ pluginId: SmartMeterP1
 - Fix data decoding for compatibility with Swiss counters
 - Addition of codes 1.6.0 (maximum average power withdrawn over a quarter of an hour since the start of the month) & 2.6.0 (maximum average power injected over a quarter of an hour since the start of the month), the latter information will not be present for everyone, depending on whether the meter provides it or not.
 - Migrating the PHP daemon to a Python daemon to improve performance
+- Adding an internal heartbeat to the daemon
 - Update dependencies
 - Icon update
 

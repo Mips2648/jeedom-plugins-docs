@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Fix to stop trying to create resources without a name (this can happen as a result of a problem on your Proxmox servers).
 
 # Stable
 

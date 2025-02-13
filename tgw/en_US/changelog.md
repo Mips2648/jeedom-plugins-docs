@@ -8,6 +8,7 @@ pluginId: tgw
 # Beta
 
 - Fix on Theengs Decoder update notification
+- Service deactivation if Jeedom device is disabled
 
 # Stable
 

@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Amélioration sur le processus de login et suppression de warning dans le log
 
 # Stable
 

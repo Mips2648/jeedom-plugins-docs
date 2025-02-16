@@ -45,7 +45,7 @@ This list is far from exhaustive, it would be impossible as there are so many of
 - [Open MQTT Gateway](https://docs.openmqttgateway.com/): Bluetooth gateway on ESP
 - [Sonos2mqtt](https://sonos2mqtt.svrooij.io/), [see on community](https://community.jeedom.com/t/sonos2mqtt/119216)
 - [Theengs Gateway](https://gateway.theengs.io/): Bluetooth gateway under Debian, see this [tutorial on community](https://community.jeedom.com/t/migration-de-blea-vers-mqttdiscovery-et-tgw/115358)
-- [tydom2mqtt](https://fmartinou.github.io/tydom2mqtt/#/introduction/)
+- [tydom2mqtt](https://tydom2mqtt.github.io/tydom2mqtt/#/introduction/)
 - [zigbee2mqtt](https://www.zigbee2mqtt.io/)
 - [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
 
@@ -247,6 +247,10 @@ It is therefore perfectly possible to have:
 - a mix of OMG and Theengs antennas
 
 All combinations are possible and everything is inter-compatible.
+
+> **Tip**
+>
+> An advantage for antennas under *OpenMQTTGateway*, whether DIY or via the *Theengs Bridge*, is that they will be automatically available as a device of **MQTT Discovery** because they also publish discovery info for themselves, so you'll be able to manage them entirely from Jeedom. This will not be the case for **Theengs gateway** antennas, but you will be able to manage them via the [Jeedom Theengs Gateway plugin]({{site.baseurl}}/tgw/{{page.lang}}) if they are installed using the plugin.
 
 ### The devices under Jeedom
 

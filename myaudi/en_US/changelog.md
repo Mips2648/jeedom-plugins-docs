@@ -7,6 +7,7 @@ pluginId: myaudi
 
 # Beta
 
+- Fix on vehicle maintenance data
 - Update dependencies
 - Better error handling in the daemon
 

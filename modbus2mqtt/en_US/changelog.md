@@ -7,7 +7,7 @@ pluginId: modbus2mqtt
 
 # Beta
 
-n/a
+- Update dependencies
 
 # Stable
 

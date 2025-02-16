@@ -7,9 +7,20 @@ pluginId: arlo
 
 # Beta
 
-- Added support of Arlo Pro 5
+n/a
 
 # Stable
+
+## 2025-02-13
+
+- Stop daemon if connection to Arlo is not possible
+- Updating headers used for authentication
+
+## 2025-02-06
+
+- Added support of Arlo Pro 5
+- Update dependencies
+- Emergency fix to bypass a connection issue that occurred during the night of 05/02 to 06/02
 
 ## 2024-12-25
 

@@ -17,6 +17,16 @@ Tous les modèles actuels supportés par l'application Arlo (web ou mobile) sont
 - [Changelog]({{site.baseurl}}/arlo/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3708" target="_blank">Market</a>
 
+# Clicksend
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/clicksend_icon.png">]({{site.baseurl}}/clicksend/{{page.lang}})
+
+Plugin pour intégrer la plateforme [ClickSend](https://www.clicksend.com) qui permet l'envoi de message texte (SMS) ou vocaux (TTS)
+
+- [Documentation]({{site.baseurl}}/clicksend/{{page.lang}})
+- [Changelog]({{site.baseurl}}/clicksend/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4468" target="_blank">Market</a>
+
 # Design Image
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/designImgSwitch_icon.png">]({{site.baseurl}}/designImgSwitch/{{page.lang}})
@@ -241,12 +251,12 @@ Plugin pour installer et configurer facilement des antennes tournant sous Theeng
 - [Changelog]({{site.baseurl}}/tgw/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Market</a>
 
-# Vaillant multiMATIC
+# My Vaillant
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/vaillantmultimatic_icon.png">]({{site.baseurl}}/vaillantmultimatic/{{page.lang}})
 
-Plugin permettant de se connecter à un système Vaillant multiMATIC via sa passerelle internet.
-Il est possible de remonter dans Jeedom l'état de tous les équipements connectés et de les contrôler: définir le mode (On, Off, Auto...), définir les températures de consigne, activer un mode rapide, activer une marche forcée...
+Plugin permettant de se connecter à un système myVaillant via sa passerelle internet (VR900, VR920, VR921).
+Il est possible de remonter dans Jeedom l'état de tous les équipements connectés et de les contrôler: définir le mode (On, Off, Auto...), définir les températures de consigne, activer une marche forcée...
 
 Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont également gérés.
 

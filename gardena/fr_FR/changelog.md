@@ -9,6 +9,7 @@ pluginId: gardena
 
 - Augmentation du timeout lors de la connexion car les serveurs Husqvarna semble mettre un peu plus de temps à répondre
 - Compatibilité API Husqvarna v2
+- Pour les tondeuses *Husqvarna*: ajout d'une commande action **RAZ utilisation des lames** qui permet de réinitialiser le temps d'utilisation des lames
 - Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis

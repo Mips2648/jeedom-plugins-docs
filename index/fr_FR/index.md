@@ -231,6 +231,18 @@ Le plugin gère le ask (dans les scénarios), les interactions et l'envoi de pi�
 - [Changelog]({{site.baseurl}}/rocketchat/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3902" target="_blank">Market</a>
 
+# SmartMeterP1
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/SmartMeterP1_icon.png">]({{site.baseurl}}/SmartMeterP1/{{page.lang}})
+
+Ce plugin permet de se connecter à [cette passerelle](https://www.domohab.be/categorie-produit/passerelle/) connectée à votre compteur afin de récupérer toutes les infos transmises par celui-ci via le port P1.
+
+Cela fonctionne aussi bien pour les compteurs tri-phasé que mono-phasé.
+
+- [Documentation]({{site.baseurl}}/SmartMeterP1/{{page.lang}})
+- [Changelog]({{site.baseurl}}/SmartMeterP1/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4190" target="_blank">Market</a>
+
 # Stock exchange
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/stockexchange_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})

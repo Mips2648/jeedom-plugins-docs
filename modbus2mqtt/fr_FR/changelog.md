@@ -7,6 +7,7 @@ pluginId: modbus2mqtt
 
 # Beta
 
+- Ajout de la gestion des tables *Coil status* & *Input status*
 - Mise à jour de dépendances
 
 # Stable

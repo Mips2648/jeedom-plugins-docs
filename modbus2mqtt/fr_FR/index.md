@@ -64,7 +64,7 @@ Exemple:
 Vous devez donc spécifier:
 
 - l'adresse
-- la table de registre (*holding* ou *input* pour l'instant uniquement, évolution à envisager selon les demandes)
+- la table de registre
 - le type: entier signé ou non-signé sur 16 bits, 32 bits ou 64 bits.
 - la mise à l'échelle: la valeur lue sera multiplié par cette valeur avant d'être publiée
 - le topic MQTT de publication de la valeur (donc modbus -> MQTT)

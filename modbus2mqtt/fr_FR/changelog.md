@@ -8,6 +8,7 @@ pluginId: modbus2mqtt
 # Beta
 
 - Ajout de la gestion des tables *Coil status* & *Input status*
+- Migration vers pymodbus 3.8 => suppression de l'option pour inverser l'ordre dans un octet
 - Mise à jour de dépendances
 
 # Stable

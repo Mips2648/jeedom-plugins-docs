@@ -7,11 +7,15 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-02-24
+
 - Mise à jour de dépendances
 - Fix mineur sur la gestion des topics découverts
 - Fix une erreur lors de la création de commande action si plusieurs commandes portent le même nom
-
-# Stable
 
 ## 2024-12-26
 

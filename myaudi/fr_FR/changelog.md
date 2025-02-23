@@ -7,11 +7,15 @@ pluginId: myaudi
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-02-24
+
 - Fix sur la récupération des données de maintenance du véhicule
 - Mise à jour de dépendances
 - Meilleur gestion des erreurs dans le démon
-
-# Stable
 
 ## 2024-12-25
 

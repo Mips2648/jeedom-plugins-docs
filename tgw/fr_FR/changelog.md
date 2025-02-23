@@ -7,10 +7,14 @@ pluginId: tgw
 
 # Beta
 
-- Fix sur la notification des mises à jour de Theengs Decoder
-- Désactivation du service si l'équipement Jeedom est désactivé
+n/a
 
 # Stable
+
+## 2025-02-24
+
+- Fix sur la notification des mises à jour de Theengs Decoder
+- Désactivation du service si l'équipement Jeedom est désactivé
 
 ## 2025-01-05
 

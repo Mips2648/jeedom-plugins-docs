@@ -7,10 +7,14 @@ pluginId: arlo
 
 # Beta
 
-- Amélioration sur le processus de login et suppression de warning dans le log
-- Fix sur l'enregistrement & le streaming local
+n/a
 
 # Stable
+
+## 2025-02-24
+
+- Amélioration sur le processus de login et suppression de warning dans le log
+- Fix sur l'enregistrement & le streaming local
 
 ## 2025-02-13
 

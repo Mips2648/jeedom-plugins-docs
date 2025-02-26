@@ -7,7 +7,8 @@ pluginId: kroomba
 
 # Beta
 
-n/a
+- Modification interne du démon
+- Modification sur la sauvegarde des configurations pour avant d'éviter les doublons potientiels dans le cas où votre robot n'a pas une IP fixe
 
 # Stable
 

@@ -9,6 +9,8 @@ pluginId: kroomba
 
 - Modification interne du démon
 - Modification sur la sauvegarde des configurations pour avant d'éviter les doublons potientiels dans le cas où votre robot n'a pas une IP fixe
+- Ajout de la méthode "locale" pour la découverte des robots en plus de la méthode existante via le cloud (les robots sont toujours contrôlés en local ensuite)
+- Mise à jour de dépendances
 
 # Stable
 

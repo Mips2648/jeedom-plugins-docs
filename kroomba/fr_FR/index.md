@@ -51,11 +51,16 @@ Avant de commencer:
 - Couper toute application iRobot sur Android ou iOS. Attention : l'utilisation simultanée de l'application iRobot peut provoquer des blocages de communication entre le plugin et le robot
 - S'assurer que le robot est sur sa base et pas "endormi" (appuyer brièvement sur "Clean" pour le réveiller si nécessaire).
 
-Depuis la page de configuration des équipements, cliquer sur le bouton *Découverte* et entrez vos identifiants dans la fenêtre qui s’ouvre. Vous pouvez éventuellement renseigner l'adresse IP du robot, c'est utile **et nécessaire** si le robot ne se trouve pas sur le même sous-réseau que Jeedom car le processus de découverte utilise un message broadcast pour trouver les robots.
+Depuis la page de configuration des équipements, cliquer sur le bouton *Découverte*. Il existe deux méthodes pour découvrir vos robots et récupérer le mot de passe nécessaire au plugin pour qu'il puisse ensuite contrôler le robot en local:
+
+- Via le cloud, *uniquement pour la synchronisation initiale*: Saisissez l'adresse eMail et le mot de passe de votre compte iRobot afin que le plugin se connecte au cloud pour récupérer la liste des robots configurés et leur mot de passe.
+- En local, *ne fonctionne pas avec tous les modèles*: Assurez-vous que les robots à découvrir sont sur la base de recharge et allumé (voyants verts allumés). Ensuite, appuyez et maintenez le bouton HOME de votre robot jusqu'à ce qu'il émette une série de tonalités (environ 2 secondes). Relâchez le bouton et le voyant WIFI devrait clignoter.
+
+Vous pouvez éventuellement renseigner l'adresse IP du robot, c'est utile **et nécessaire** si le robot ne se trouve pas sur le même sous-réseau que Jeedom car le processus de découverte utilise un message broadcast pour trouver les robots.
 
 ![Découverte](../images/discovery.png "Découverte")
 
-Ensuite attendez cela prend entre 15s et 30s, vous verrez des notifications à l'écran et le démon redémarrera tout seul à la fin du processus si cela a réussi. L’équipement sera ensuite créé (vous pouvez surveiller l’avancement via le log si nécessaire).
+Ensuite attendez cela prend entre 15s et 30s, vous verrez des notifications à l'écran et le démon se reconnectera tout seul à la fin du processus si cela a réussi. L’équipement sera ensuite créé (vous pouvez surveiller l’avancement via le log si nécessaire).
 
 > **Tip**
 >

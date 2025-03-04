@@ -10,6 +10,7 @@ pluginId: kroomba
 - Modification interne du démon
 - Modification sur la sauvegarde des configurations pour avant d'éviter les doublons potientiels dans le cas où votre robot n'a pas une IP fixe
 - Ajout de la méthode "locale" pour la découverte des robots en plus de la méthode existante via le cloud (les robots sont toujours contrôlés en local ensuite)
+- Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
 - Mise à jour de dépendances
 
 # Stable

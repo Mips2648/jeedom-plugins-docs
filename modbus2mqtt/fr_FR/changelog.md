@@ -9,6 +9,7 @@ pluginId: modbus2mqtt
 
 - Ajout de la gestion des tables *Coil status* & *Input status*
 - Migration vers pymodbus 3.8 => suppression de l'option pour inverser l'ordre dans un octet
+- Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
 - Mise à jour de dépendances
 
 # Stable

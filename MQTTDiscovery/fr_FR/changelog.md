@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-n/a
+- Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
 
 # Stable
 

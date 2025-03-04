@@ -7,7 +7,7 @@ pluginId: vmczehnder
 
 # Beta
 
-n/a
+- Correction sur la re-configuration du service qui ne fonctionnait pas dans certains cas
 
 # Stable
 

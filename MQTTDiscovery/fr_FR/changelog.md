@@ -8,6 +8,7 @@ pluginId: MQTTDiscovery
 # Beta
 
 - Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
+- Amélioration du nom donné automatiquement aux commandes lorsque celui-ci n'est pas défini dans la configuration: le nom devrait être plus court
 
 # Stable
 

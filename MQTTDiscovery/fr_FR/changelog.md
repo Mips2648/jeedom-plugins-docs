@@ -9,6 +9,8 @@ pluginId: MQTTDiscovery
 
 - Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
 - Amélioration du nom donné automatiquement aux commandes lorsque celui-ci n'est pas défini dans la configuration: le nom devrait être plus court
+- Modification sur la gestion des images des équipements
+- Gestion du *model_id* pour récupérer correctement les images des équipements sous zigbee2mqtt 2.x
 
 # Stable
 

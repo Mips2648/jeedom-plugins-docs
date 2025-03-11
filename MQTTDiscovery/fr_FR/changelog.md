@@ -11,6 +11,7 @@ pluginId: MQTTDiscovery
 - Amélioration du nom donné automatiquement aux commandes lorsque celui-ci n'est pas défini dans la configuration: le nom devrait être plus court
 - Modification sur la gestion des images des équipements
 - Gestion du *model_id* pour récupérer correctement les images des équipements sous zigbee2mqtt 2.x
+- Inversion de comportement de la propriété *Visible* sur les commandes: à présent la plupart des commandes ne sont pas visibles par défaut lors de la création, vous devez cocher *Visible* pour les afficher sur le widget
 
 # Stable
 

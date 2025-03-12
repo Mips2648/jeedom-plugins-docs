@@ -17,6 +17,16 @@ All current models supported by the Arlo application (web or mobile) are support
 - [Changelog]({{site.baseurl}}/arlo/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3708" target="_blank">Market</a>
 
+# Clicksend
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/clicksend_icon.png">]({{site.baseurl}}/clicksend/{{page.lang}})
+
+Plugin to integrate the [ClickSend platform](https://www.clicksend.com) which allows the sending of text messages (SMS) or voice messages (TTS)
+
+- [Documentation]({{site.baseurl}}/clicksend/{{page.lang}})
+- [Changelog]({{site.baseurl}}/clicksend/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4468" target="_blank">Market</a>
+
 # Design Image
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/designImgSwitch_icon.png">]({{site.baseurl}}/designImgSwitch/{{page.lang}})
@@ -221,6 +231,18 @@ The plugin take in charge the ask (in scenarios), interactions and sending of at
 - [Changelog]({{site.baseurl}}/rocketchat/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=3902" target="_blank">Market</a>
 
+# SmartMeterP1
+
+[<img width="77" src="{{site.market}}/filestore/market/plugin/images/SmartMeterP1_icon.png">]({{site.baseurl}}/SmartMeterP1/{{page.lang}})
+
+This plugin allows you to connect to [this gateway](https://www.domohab.be/categorie-produit/passerelle/) connected to your meter in order to retrieve all the information transmitted by it via the port P1.
+
+This works for both 3-phase and single-phase meters.
+
+- [Documentation]({{site.baseurl}}/SmartMeterP1/{{page.lang}})
+- [Changelog]({{site.baseurl}}/SmartMeterP1/{{page.lang}}/changelog)
+- <a href="{{site.market}}/index.php?v=d&plugin_id=4190" target="_blank">Market</a>
+
 # Stock exchange
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/stockexchange_icon.png">]({{site.baseurl}}/stockexchange/{{page.lang}})
@@ -241,12 +263,12 @@ Plugin to easily install and configure antennas running Theengs gateway that all
 - [Changelog]({{site.baseurl}}/tgw/{{page.lang}}/changelog)
 - <a href="{{site.market}}/index.php?v=d&plugin_id=4441" target="_blank">Market</a>
 
-# Vaillant multiMATIC
+# My Vaillant
 
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/vaillantmultimatic_icon.png">]({{site.baseurl}}/vaillantmultimatic/{{page.lang}})
 
-Plugin allowing connection to a Vaillant multiMATIC system via its internet gateway.
-It is possible to report the status of all connected device in Jeedom and to control them: define the mode (On, Off, Auto ...), define the setpoint temperatures, activate a quick mode, activate forced mode ...
+Plugin allowing you to connect to a myVaillant system via its internet gateway (VR900, VR920, VR921).
+In Jeedom, it is possible to report the status of all connected device and to control them: define the mode (On, Off, Auto...), define the set temperatures, activate a forced operation...
 
 The valves and thermostats of the ambiSENSE range connected to the system are also managed.
 

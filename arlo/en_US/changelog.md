@@ -13,7 +13,7 @@ n/a
 
 ## 2025-02-24
 
-- Improved login process and log warning removal
+- Improved login process and remove warnings in log
 - Fix local recording & streaming
 
 ## 2025-02-13

@@ -7,11 +7,15 @@ pluginId: gardena
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-03-13
+
 - Fix sur les retours d'états suite à l'API Husqvarna Automower v2
 - Suppression compatibilité API Husqvarna Automower v1 (qui n'existe plus depuis le 1er mars)
 - Mise à jour de dépendances
-
-# Stable
 
 ## 2025-02-22
 

@@ -51,11 +51,16 @@ Before you start:
 - Shut down any iRobot app on Android or iOS. Warning: the simultaneous use of the iRobot application can cause communication blockages between the plugin and the robot
 - Make sure the robot is on its base and not "asleep" (briefly press "Clean" to wake it up if necessary).
 
-From the devices configuration page, click on the *Discovery* button and enter your credentials in the window that opens. You can optionally enter the robot's IP address, it is useful **and necessary** if the robot is not on the same subnet as Jeedom because the discovery process uses a broadcast message to find the robots.
+From the equipment configuration page, click on the *Discover* button. There are two ways to discover your robots and retrieve the password needed by the plugin to control the robot locally:
+
+- Via the cloud, *only for initial synchronization*: Enter the eMail address and password of your iRobot account so that the plugin can connect to the cloud to retrieve the list of configured robots and their passwords.
+- Locally, *does not work with all models*: Make sure the robots to be discovered are on the charging base and switched on (green lights on). Then press and hold your robot's HOME button until it emits a series of tones (approx. 2 seconds). Release the button and the WIFI LED should flash.
+
+You can optionally enter the robot's IP address, it is useful **and necessary** if the robot is not on the same subnet as Jeedom because the discovery process uses a broadcast message to find the robots.
 
 ![Discovery](../images/discovery.png "Discovery")
 
-Then wait it takes between 15s and 30s, you will see notifications on the screen and the daemon will restart on its own at the end of the process if it was successful. The device will then be created (you can monitor the progress via the log if necessary).
+Then wait for 15 to 30 seconds, you'll see on-screen notifications and the daemon will reconnect itself at the end of the process if successful. The device will then be created (you can monitor progress via the log if necessary).
 
 > **Tip**
 >

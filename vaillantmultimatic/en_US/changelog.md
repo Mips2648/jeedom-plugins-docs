@@ -11,9 +11,13 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-- Update dependencies
+n/a
 
 # Stable
+
+## 2025-02-24
+
+- Update dependencies
 
 ## 2024-12-25
 

@@ -7,13 +7,20 @@ pluginId: gardena
 
 # Beta
 
+- Husqvarna Automower v2 API status feedback fix
+- Removal of Husqvarna Automower v1 API compatibility (no longer available since March 1)
+- Update dependencies
+
+# Stable
+
+## 2025-02-22
+
 - Increased connection timeout as Husqvarna servers seem to take a little longer to respond
-- Husqvarna v2 API compatibility
+- Husqvarna Automower v2 API compatibility (will be required from March 1st)
+- For *Husqvarna* mowers: add an action command **RAZ blade usage** which resets the blade usage time.
 - Update dependencies
 - Icon update
 - Jeedom v4.4 required
-
-# Stable
 
 ## 2024-09-16
 

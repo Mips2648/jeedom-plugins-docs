@@ -64,7 +64,7 @@ Example:
 So you need to specify:
 
 - the address
-- the register table (*holding* or *input* for the moment only, evolution to be considered according to requests)
+- the register table
 - the type: signed or unsigned integer on 16 bits, 32 bits or 64 bits.
 - Scale: the read value will be multiplied by this value before being published
 - the MQTT topic for publishing the value (so modbus -> MQTT)

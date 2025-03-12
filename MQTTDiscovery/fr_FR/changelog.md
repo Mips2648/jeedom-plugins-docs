@@ -7,11 +7,12 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-- Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
-- Amélioration du nom donné automatiquement aux commandes lorsque celui-ci n'est pas défini dans la configuration: le nom devrait être plus court
-- Modification sur la gestion des images des équipements
+- Amélioration du nom donné automatiquement aux commandes lorsque celui-ci n'est pas défini dans la configuration: le nom devrait être plus court (surtout le cas sur zwave-js et zigbee2mqtt)
+- Inversion de comportement de la propriété *Visible* sur les commandes: à présent la plupart des commandes ne sont pas visibles par défaut lors de la création, vous devez cocher *Visible* pour les afficher sur le widget. Le but est d'avoir un widget plus facile à configurer avec seulement les informations et les commandes les plus pertinentes affichées par défaut au lieu de presque tout afficher.
+- Amélioration et traduction du nom des commandes lorsque celles-ci sont correctement catégorisées par la source (~= il existe un type générique associé à la commande)
+- Modification sur la gestion des images des équipements: la configuration précédente (et les images personnalisées) devrait être migrée mais il est possible que vous ayez des corrections manuelles à effectuer.
 - Gestion du *model_id* pour récupérer correctement les images des équipements sous zigbee2mqtt 2.x
-- Inversion de comportement de la propriété *Visible* sur les commandes: à présent la plupart des commandes ne sont pas visibles par défaut lors de la création, vous devez cocher *Visible* pour les afficher sur le widget
+- Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
 
 # Stable
 

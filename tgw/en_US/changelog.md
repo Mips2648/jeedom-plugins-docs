@@ -7,10 +7,14 @@ pluginId: tgw
 
 # Beta
 
-- Fix on Theengs Decoder update notification
-- Service deactivation if Jeedom device is disabled
+- Fix: it was no longer possible to deactivate a device that could no longer be reached via SSH
 
 # Stable
+
+## 2025-02-24
+
+- Fix on Theengs Decoder update notification
+- Service deactivation if Jeedom device is disabled
 
 ## 2025-01-05
 

@@ -7,11 +7,15 @@ pluginId: myaudi
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-02-24
+
 - Fix on vehicle maintenance data
 - Update dependencies
 - Better error handling in the daemon
-
-# Stable
 
 ## 2024-12-25
 

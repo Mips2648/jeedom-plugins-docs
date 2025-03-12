@@ -7,11 +7,19 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+- Adaptation of the mqtt clientID as "prefix-[random ID]" for easier monitoring
+- Improved automatic naming of commands when not defined in configuration: the name should be shorter
+- Modification to equipment image management
+- Management of *model_id* to correctly retrieve device images under zigbee2mqtt 2.x
+- Invert behaviour of the *Visible* property on controls: now most commands are not visible by default when created, you must check *Visible* to display them on the widget.
+
+# Stable
+
+## 2025-02-24
+
 - Update dependencies
 - Minor fix on the management of discovered topics
 - Fix an error when creating command action if several commands have the same name
-
-# Stable
 
 ## 2024-12-26
 

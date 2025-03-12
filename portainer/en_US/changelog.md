@@ -7,10 +7,14 @@ pluginId: portainer
 
 # Beta
 
-- Update dependencies
-- Icon update
+n/a
 
 # Stable
+
+## 2025-02-22
+
+- Update dependencies
+- Icon update
 
 ## 2024-09-16
 

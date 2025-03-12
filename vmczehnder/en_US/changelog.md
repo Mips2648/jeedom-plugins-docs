@@ -7,7 +7,8 @@ pluginId: vmczehnder
 
 # Beta
 
-n/a
+- Correction to service re-configuration, which was not working in some cases
+- Adaptation of the mqtt clientID as "prefix-[random ID]" for easier monitoring
 
 # Stable
 

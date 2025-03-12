@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2025-02-24
+
+- Improved login process and log warning removal
+- Fix local recording & streaming
+
 ## 2025-02-13
 
 - Stop daemon if connection to Arlo is not possible

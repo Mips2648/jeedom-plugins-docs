@@ -7,7 +7,8 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Masque sur les configurations clé et le secret d'application
+- Mise à jour de dépendances
 
 # Stable
 

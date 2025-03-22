@@ -7,11 +7,15 @@ pluginId: gardena
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-03-23
+
 - Fix pour l'API Husqvarna Automower v2 concernant les infos de positions GPS
 - Masque sur les configurations clé et le secret d'application
 - Mise à jour de dépendances
-
-# Stable
 
 ## 2025-03-13
 

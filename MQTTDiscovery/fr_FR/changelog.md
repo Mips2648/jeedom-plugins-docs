@@ -14,6 +14,8 @@ pluginId: MQTTDiscovery
 - Modification sur la gestion des images des équipements: la configuration précédente (et les images personnalisées) devrait être migrée mais il est possible que vous ayez des corrections manuelles à effectuer.
 - Gestion du *model_id* pour récupérer correctement les images des équipements sous zigbee2mqtt 2.x
 - Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
+- les nouvelles commandes info binaires créées depuis une entité *device_automation* auront à présent le paramètre "répétition des valeurs identiques" activé par défaut à la création (pas de changement sur les commandes existantes)
+- Ajout de traduction manquant sur certains noms de commandes
 
 # Stable
 

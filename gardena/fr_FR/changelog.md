@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Fix pour les tondeuse Husqvarna qui n'ont pas de *Zone de travail*
 
 # Stable
 

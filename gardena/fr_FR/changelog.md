@@ -7,13 +7,14 @@ pluginId: gardena
 
 # Beta
 
-- Fix pour les tondeuse Husqvarna qui n'ont pas de *Zone de travail*
+n/a
 
 # Stable
 
 ## 2025-03-23
 
 - Fix pour l'API Husqvarna Automower v2 concernant les infos de positions GPS
+- Fix pour les tondeuse Husqvarna qui n'ont pas de *Zone de travail*
 - Masque sur les configurations clé et le secret d'application
 - Mise à jour de dépendances
 

@@ -7,7 +7,7 @@ pluginId: clicksend
 
 # Beta
 
-- Petite correction sur l'appel api d'envoi de SMS
+- Correction mineure sur l'appel api d'envoi de SMS
 
 # Stable
 

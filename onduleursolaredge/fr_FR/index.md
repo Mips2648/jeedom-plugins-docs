@@ -35,6 +35,10 @@ Sur la page de configuration du plugin, il est possible de renseigner des comman
 
 ## Activation de l'accès API Solaredge
 
+> **Important**
+>
+> La procédure ci-dessous n'est plus valide. SolarEdge a modifié sont site de monitoring et les menus sont différents. Il faut contacter leur support pour leur demander la procédure pour obtenir une API key. Cette documentation sera mise à jour dès que la procédure sera connue.
+
 - Rendez-vous sur votre compte à l'adresse <https://monitoring.solaredge.com/> (vous devez vous connecter avec les identifiants reçu de votre fournisseur), vous devriez arriver sur votre Dashboard.
 - Ensuite, cliquez sur la section "Admin", en jaune dans la capture:
 

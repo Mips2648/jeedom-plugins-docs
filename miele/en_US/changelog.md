@@ -7,6 +7,7 @@ pluginId: miele
 
 # Beta
 
+- Improvement to create, if possible, only relevant commands for the type of device
 - Update dependencies
 - Icon update
 - Jeedom v4.4 required

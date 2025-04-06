@@ -35,6 +35,10 @@ In the plugin configuration, it is possible to provide commands to get sunrise a
 
 ## Solaredge API access activation
 
+> **Important**
+>
+> The procedure below is no longer valid. SolarEdge has modified their monitoring site and the menus are different. Please contact their support to ask for the procedure to obtain an API key. This documentation will be updated as soon as the procedure is known.
+
 - Browse to your Solaredge account at <https://monitoring.solaredge.com/> (You have to connect with your credentials provided by your provider), You should land on your Dashboard.
 - Then, click on "Admin" section, highlighted in yellow in the printscreen:
 

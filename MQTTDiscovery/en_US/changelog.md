@@ -7,11 +7,15 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-- Adaptation of the mqtt clientID as "prefix-[random ID]" for easier monitoring
-- Improved automatic naming of commands when not defined in configuration: the name should be shorter
-- Modification to equipment image management
+- Improvement of the name automatically given to commands when not defined in the configuration: the name should be shorter (especially the case with zwave-js and zigbee2mqtt).
+- Invert behavior of the *Visible* property on controls: now most controls are not visible by default when created, you need to check *Visible* to display them on the widget. The aim is to make the widget easier to configure, with only the most relevant information and commands displayed by default, rather than displaying almost everything.
+- Improvement and translation of command names when they are correctly categorized by the source (~= there is a generic type associated with the command).
+- Use default widget based on the generic type of command (where available).
+- Modification to device image management: the previous configuration (and custom images) should be migrated, but you may have to make manual corrections.
 - Management of *model_id* to correctly retrieve device images under zigbee2mqtt 2.x
-- Invert behaviour of the *Visible* property on controls: now most commands are not visible by default when created, you must check *Visible* to display them on the widget.
+- Adaptation of the mqtt clientID as "prefix-[random ID]" for easier monitoring
+- new binary info commands created from a *device_automation* entity will now have the "repeat identical values" parameter enabled by default on creation (no change to existing commands)
+- Added missing translation on some command names
 
 # Stable
 

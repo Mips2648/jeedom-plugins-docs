@@ -7,7 +7,8 @@ pluginId: influxdb
 
 # Beta
 
-n/a
+- Addition of an advanced parameter: *Total retry time* which sets the maximum total time send retries to Influx, regardless of the number of retries, timeouts and the time between retries.
+- PHP 8.4 compatibility
 
 # Stable
 

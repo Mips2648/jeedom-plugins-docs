@@ -7,13 +7,17 @@ pluginId: kroomba
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-04-03
+
 - Internal modification of daemon
-- Modification of configuration saving to avoid potential duplicates if your robot doesn't have a fixed IP address.
+- Modification to configuration saving to avoid potential duplication when your robot doesn't have a fixed IP address
 - Addition of a "local" method for discovering robots in addition to the existing method via the cloud (robots are still controlled locally afterwards)
 - Adaptation of the mqtt clientID as "prefix-[random ID]" for easier monitoring
 - Update dependencies
-
-# Stable
 
 ## 2025-02-24
 

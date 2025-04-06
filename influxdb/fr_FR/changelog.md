@@ -7,7 +7,8 @@ pluginId: influxdb
 
 # Beta
 
-n/a
+- Ajout d'un paramètre avancé : *Délai total pour les réessais* qui fixe le temps total maximum pour effectuer les tentatives d'envoi à Influx indépendamment du nombre de réessais, des timeouts et du délai entre chaque tentative.
+- Compatibilité PHP 8.4
 
 # Stable
 

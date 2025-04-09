@@ -23,7 +23,7 @@ n/a
 
 ## 2024-09-16
 
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 
 ## 2024-03-18
 

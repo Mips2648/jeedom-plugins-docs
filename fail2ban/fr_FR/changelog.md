@@ -24,7 +24,7 @@ n/a
 ## 2024-09-16
 
 - Mise à jour de dépendances
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Version Debian 11 minimum requise
 
 ## 2024-04-10

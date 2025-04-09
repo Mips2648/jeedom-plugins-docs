@@ -23,7 +23,7 @@ pluginId: clicksend
 
 ## 2024-08-21
 
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 
 ## 2024-06-21
 

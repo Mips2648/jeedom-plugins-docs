@@ -20,7 +20,7 @@ n/a
 ## 2024-08-19
 
 - Mise à jour de dépendances
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 
 ## 2024-04-10
 

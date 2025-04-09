@@ -33,7 +33,7 @@ pluginId: MQTTDiscovery
 - Fix sur les commandes infos pour le type *vacuum*
 - Fix sur la création des commandes listes qui ne contenait pas la liste des options dans certains cas
 - Fix sur l'intégration *EMS-ESP* dû à un mix de 2 syntaxes différentes qui n'était pas supporté par le plugin
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis

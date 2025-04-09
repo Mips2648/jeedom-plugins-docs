@@ -18,7 +18,7 @@ n/a
 ## 2024-08-19
 
 - Suppression de l'intégration avec le plugin *Weather*
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 
 ## 2023-05-20
 

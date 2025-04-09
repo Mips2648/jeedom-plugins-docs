@@ -22,7 +22,7 @@ n/a
 - Ajout des codes erreur et état ainsi que les descriptions pour les modèles Landroid Vision
 - Fix un problème de démarrage du démon sur les nouvelles installations Jeedom
 - Mise à jour de dépendances
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Jeedom v4.4 requis
 - Debian 11 requis
 

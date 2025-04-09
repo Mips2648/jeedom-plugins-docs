@@ -16,7 +16,7 @@ pluginId: miele
 
 ## 2024-09-16
 
-- Traduction du plugin en Anglais, Allemand, Espagnol, Italien, Portugais
+- Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Version Debian 11 minimum requise
 
 ## 2024-06-11

@@ -18,7 +18,7 @@ n/a
 ## 2024-08-19
 
 - Integration with *Weather* plugin removed
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Plugin translation in English, German, Spanish, Italian, Portuguese
 
 ## 2023-05-20
 

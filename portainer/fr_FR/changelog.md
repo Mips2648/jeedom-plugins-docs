@@ -7,7 +7,7 @@ pluginId: portainer
 
 # Beta
 
-n/a
+- Corrections sur le panel: Certaines traductions n'étaient pas apppliquées
 
 # Stable
 

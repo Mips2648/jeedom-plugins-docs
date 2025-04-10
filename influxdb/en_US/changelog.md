@@ -29,7 +29,7 @@ pluginId: influxdb
 - Improve password fields
 - End of support for InfluxDB versions < 1.8 mainly to ensure the compatibility of the plugin with Debian 12 and PHP 8
 - Update dependencies
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Plugin translation in English, German, Spanish, Italian, Portuguese
 
 ## 2024-04-10
 

@@ -24,7 +24,7 @@ pluginId: modbus2mqtt
 - Update daemon
 - Update dependencies
 - Icon update
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Plugin translation in English, German, Spanish, Italian, Portuguese
 - Fix: terminal address (slave id) was not correctly taken into account
 - Jeedom v4.4 required
 

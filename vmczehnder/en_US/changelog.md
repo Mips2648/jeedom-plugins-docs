@@ -21,7 +21,7 @@ pluginId: vmczehnder
 ## 2024-09-16
 
 - Update dependencies
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Plugin translation in English, German, Spanish, Italian, Portuguese
 - Debian 11 or higher required
 
 ## 2024-06-01

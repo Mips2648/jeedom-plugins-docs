@@ -55,7 +55,7 @@ See also [this topic on community](https://community.jeedom.com/t/nouvelle-versi
 - Video Doorbell 2 support added
 - Added support for Arlo Essential XL
 - Improved support for Arlo Essential XL
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Plugin translation in English, German, Spanish, Italian, Portuguese
 - Reduce the size of the plugin
 - Optimizing the size of backups
 - Debian 11 or higher required

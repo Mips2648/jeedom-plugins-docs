@@ -22,7 +22,7 @@ n/a
 - Add error and status codes as well as descriptions for Landroid Vision models
 - Fix daemon startup problem on new Jeedom installations
 - Update dependencies
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Plugin translation in English, German, Spanish, Italian, Portuguese
 - Jeedom v4.4 required
 - Debian 11 required
 

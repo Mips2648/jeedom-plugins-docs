@@ -7,7 +7,9 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Ajout des commandes d'utilisation du disque (valeur et pourcentage) sur les LXC
+- Réorganisation de la page santé et du panel
+- Corrections sur le panel: la plupart des traductions n'étaient pas apppliquées
 
 # Stable
 

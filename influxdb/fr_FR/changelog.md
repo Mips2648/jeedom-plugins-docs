@@ -22,7 +22,7 @@ pluginId: influxdb
 
 > **Attention**
 >
-> Le plugin ne supporte plus les version de influxDB < 1.8, vous devez avoir une version d'influxDB >= 1.8 ou >= 2.0. Mettez à jour votre influxDB avant la mise jour du plugin (voir documentation officielle d'influxDB pour connaître la procédure)
+> Le plugin ne supporte plus les versions de influxDB < 1.8, vous devez avoir une version d'influxDB >= 1.8 ou >= 2.0. Mettez à jour votre influxDB avant la mise jour du plugin (voir documentation officielle d'influxDB pour connaître la procédure)
 >
 > Il est indispensable d'être sous Debian 11 Bullseye minimum pour faire fonctionner le plugin. Si vous êtes sous Debian 10, n'installez pas la mise à jour
 

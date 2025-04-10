@@ -15,7 +15,7 @@ Le plugin permet également d'exporter l'historique des commandes Jeedom vers In
 
 > **Attention**
 >
-> Le plugin supporte les version de influxDB >= 1.8 ou >= 2.0. Les anciennes version influxDBv1 < 1.8 ne sont pas supportée.
+> Le plugin supporte les versions d'influxDB >= 1.8 ou >= 2.0. Les anciennes version influxDBv1 < 1.8 ne sont pas supportée.
 
 | Composant | Version                     |
 |-----------|-----------------------------|

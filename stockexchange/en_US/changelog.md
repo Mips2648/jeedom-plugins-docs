@@ -24,7 +24,7 @@ n/a
 ## 2024-08-21
 
 - Update dependencies
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Plugin translation in English, German, Spanish, Italian, Portuguese
 
 ## 2024-04-10
 

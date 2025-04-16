@@ -8,14 +8,15 @@ pluginId: MQTTDiscovery
 # Beta
 
 - Amélioration du nom donné automatiquement aux commandes lorsque celui-ci n'est pas défini dans la configuration: le nom devrait être plus court (surtout le cas sur zwave-js et zigbee2mqtt)
-- Inversion de comportement de la propriété *Visible* sur les commandes: à présent la plupart des commandes ne sont pas visibles par défaut lors de la création, vous devez cocher *Visible* pour les afficher sur le widget. Le but est d'avoir un widget plus facile à configurer avec seulement les informations et les commandes les plus pertinentes affichées par défaut au lieu de presque tout afficher.
+- Inversion de comportement concernant l'activation de la propriété *Visible* sur les commandes: à présent la plupart des commandes ne sont pas visibles par défaut lors de la création, vous devez cocher *Visible* pour les afficher sur le widget. Le but est d'avoir un widget plus facile à configurer avec seulement les informations et les commandes les plus pertinentes affichées par défaut au lieu de presque tout afficher.
 - Amélioration et traduction du nom des commandes lorsque celles-ci sont correctement catégorisées par la source (~= il existe un type générique associé à la commande)
 - Application d'un widget par défaut en fonction du type générique de la commande (lorsqu'il existe)
 - Modification sur la gestion des images des équipements: la configuration précédente (et les images personnalisées) devrait être migrée mais il est possible que vous ayez des corrections manuelles à effectuer.
 - Gestion du *model_id* pour récupérer correctement les images des équipements sous zigbee2mqtt 2.x
-- Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
+- Adaptation du client ID mqtt sous la forme "mqttdiscovery-[ID aléatoire]" afin de permettre un monitoring plus facile
 - les nouvelles commandes info binaires créées depuis une entité *device_automation* auront à présent le paramètre "répétition des valeurs identiques" activé par défaut à la création (pas de changement sur les commandes existantes)
 - Ajout de traduction manquant sur certains noms de commandes
+- Correction: dans certains cas la commande "off" d'un switch n'était pas créée.
 
 # Stable
 

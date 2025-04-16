@@ -7,7 +7,9 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Disk usage commands (value and percentage) added for LXC
+- Reorganization of the health page and panel
+- Panel corrections: some translations were not applied
 
 # Stable
 
@@ -26,7 +28,7 @@ n/a
 ## 2024-09-16
 
 - Update dependencies
-- Translation of the plugin into English, German, Spanish, Italian and Portuguese
+- Plugin translation in English, German, Spanish, Italian, Portuguese
 - Debian 11 or higher required
 
 ## 2024-07-02

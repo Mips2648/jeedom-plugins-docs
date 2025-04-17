@@ -7,12 +7,16 @@ pluginId: miele
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-04-18
+
 - Amélioration pour ne créer, si possible, que les commandes relevantes pour le type d'équipement
 - Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
-
-# Stable
 
 ## 2024-09-16
 

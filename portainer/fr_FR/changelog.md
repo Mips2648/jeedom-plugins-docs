@@ -7,9 +7,14 @@ pluginId: portainer
 
 # Beta
 
-- Corrections sur le panel: certaines traductions n'étaient pas apppliquées
+n/a
 
 # Stable
+
+## 2025-04-18
+
+- Corrections sur le panel: certaines traductions n'étaient pas apppliquées
+- Mise à jour de dépendances
 
 ## 2025-02-22
 

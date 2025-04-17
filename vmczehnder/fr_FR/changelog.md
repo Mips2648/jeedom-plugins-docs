@@ -7,10 +7,14 @@ pluginId: vmczehnder
 
 # Beta
 
-- Correction sur la re-configuration du service qui ne fonctionnait pas dans certains cas
-- Adaptation du client ID mqtt sous la forme "prefix-[ID aléatoire]" afin de permettre un monitoring plus facile
+n/a
 
 # Stable
+
+## 2025-04-18
+
+- Correction sur la re-configuration du service qui ne fonctionnait pas dans certains cas
+- Adaptation du client ID mqtt sous la forme "zehnder2mqtt-[ID aléatoire]" afin de permettre un monitoring plus facile
 
 ## 2024-12-25
 

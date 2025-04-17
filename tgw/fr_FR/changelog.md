@@ -7,9 +7,13 @@ pluginId: tgw
 
 # Beta
 
-- Fix: il n'était plus possible de désactiver un équipement qui n'est plus joignable via SSH
+n/a
 
 # Stable
+
+## 2025-04-18
+
+- Fix: il n'était plus possible de désactiver un équipement qui n'est plus joignable via SSH
 
 ## 2025-02-24
 

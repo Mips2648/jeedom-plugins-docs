@@ -7,9 +7,13 @@ pluginId: clicksend
 
 # Beta
 
-- Correction mineure sur l'appel api d'envoi de SMS
+n/a
 
 # Stable
+
+## 2025-04-18
+
+- Correction mineure sur l'appel api d'envoi de SMS
 
 ## 2024-12-25
 

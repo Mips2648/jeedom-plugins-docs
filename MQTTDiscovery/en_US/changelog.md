@@ -8,7 +8,7 @@ pluginId: MQTTDiscovery
 # Beta
 
 - Improvement of the name automatically given to commands when not defined in the configuration: the name should be shorter (especially the case with zwave-js and zigbee2mqtt).
-- Invert behavior of the *Visible* property on commands: now most controls are not visible by default when created, you need to check *Visible* to display them on the widget. The aim is to make the widget easier to configure, with only the most relevant information and commands displayed by default, rather than displaying almost everything.
+- Invert behavior of the *Visible* property on commands: now most commands are not visible by default when created, you need to check *Visible* to display them on the widget. The aim is to make the widget easier to configure, with only the most relevant information and commands displayed by default, rather than displaying almost everything.
 - Improvement and translation of command names when they are correctly categorized by the source (~= there is a generic type associated with the command).
 - Use default widget based on the generic type of command (where available).
 - Modification to device image management: the previous configuration (and custom images) should be migrated, but you may have to make manual corrections.

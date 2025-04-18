@@ -7,9 +7,14 @@ pluginId: portainer
 
 # Beta
 
-- Panel corrections: some translations were not applied
+n/a
 
 # Stable
+
+## 2025-04-18
+
+- Panel corrections: some translations were not applied
+- Update dependencies
 
 ## 2025-02-22
 

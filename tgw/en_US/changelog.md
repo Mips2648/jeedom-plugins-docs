@@ -7,9 +7,13 @@ pluginId: tgw
 
 # Beta
 
-- Fix: it was no longer possible to deactivate a device that could no longer be reached via SSH
+n/a
 
 # Stable
+
+## 2025-04-18
+
+- Fix: it was no longer possible to deactivate a device that could no longer be reached via SSH
 
 ## 2025-02-24
 

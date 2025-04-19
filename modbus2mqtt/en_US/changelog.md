@@ -7,12 +7,16 @@ pluginId: modbus2mqtt
 
 # Beta
 
-- Added management of *Coil status* & *Input status* tables
-- Migration to pymodbus 3.8 => deletion of the option to reverse the order in a byte
-- Adaptation of the mqtt clientID as "prefix-[random ID]" for easier monitoring
-- Update dependencies
+n/a
 
 # Stable
+
+## 2025-04-18
+
+- Added management of *Coil status* & *Input status* tables
+- Migration to pymodbus 3.8 => deletion of the option to reverse the order in a byte
+- Adaptation of the mqtt clientID as "modbus2mqtt-[random ID]" for easier monitoring
+- Update dependencies
 
 ## 2024-12-26
 

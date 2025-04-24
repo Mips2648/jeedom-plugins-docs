@@ -70,6 +70,9 @@ Il n'est pas recommandé de donner le rôle "Administrator" à l'utilisateur "Je
 | VM.PowerMgmt            |              |                |                  | requis             |                              |                 |
 | VM.Snapshot             |              |                |                  |                    | requis                       |                 |
 
+Pour limiter les accès à ce qui est strictement nécessaire, vous devez donc créer un nouveau rôle personnalisé (menu "Permissions" > "Roles"); donnez un nom et accordez les privilèges listés ci-dessus.
+Vous pourrez ensuite assigner ce rôle à l'utilisateur via le menu "Permissions" (à la place du rôle "Administrator" donc).
+
 Vous trouverez plus d'information ici: <https://pve.proxmox.com/wiki/User_Management>
 
 # Configuration du plugin
@@ -150,10 +153,6 @@ Les commandes actions suivantes sont également disponibles:
 | compress         | Compression backup                                                                                                                 | les valeurs possibles sont: `0`, `gzip`, `lzo`, `zstd`                                                                                                          | `lzo`                                                                |
 | mailnotification | Spécifie quand envoyer une notification                                                                                            | les valeurs possibles sont: `always`, `failure`                                                                                                                 | `always`                                                             |
 | remove           | Supprime les anciennes sauvegardes s'ils y en a plus que le maximum configuré pour le stockage choisi (voir configuration Proxmox) | les valeurs possibles sont: `0`, `1`                                                                                                                            | `1`                                                                  |
-
-> **Tip**
->
-> Le support du Zstandard (zstd) pour la compression est disponible à partir de la version 6.2 de Proxmox.
 
 ## Les stockages
 

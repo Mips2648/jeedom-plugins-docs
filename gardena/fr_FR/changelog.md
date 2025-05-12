@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Migration sur API v2 pour les équipements Gardena Smart System qui retourne de nouvelles valeurs pour les info *Activité* et *Erreur*
 
 # Stable
 

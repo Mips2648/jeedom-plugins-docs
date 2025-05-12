@@ -7,7 +7,7 @@ pluginId: kroomba
 
 # Beta
 
-n/a
+- Ajout de logs
 
 # Stable
 

@@ -7,7 +7,7 @@ pluginId: notificationqueue
 
 # Beta
 
-n/a
+- Update dependencies
 
 # Stable
 

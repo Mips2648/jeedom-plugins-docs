@@ -7,6 +7,7 @@ pluginId: worxLandroidS
 
 # Beta
 
+- Correction de la commande *Rafraichir* qui ne fonctionnait plus & suppression de la commande *Update* qui fonctionnait, elle, et réalisait la même action.
 - Mise à jour de dépendances
 
 # Stable

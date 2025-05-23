@@ -7,7 +7,7 @@ pluginId: worxLandroidS
 
 # Beta
 
-- Update dependencies
+n/a
 
 # Stable
 

@@ -9,6 +9,10 @@ pluginId: myaudi
 
 Plugin permettant la connexion à la plateforme MyAudi permettant de récupérer les voitures de la marque qui sont compatibles.
 
+> **Important**
+>
+> Attention, il n'est plus possible d'installer les dépendances de ce plugin pour l'instant car la librairie utilisée pour la connexion à My Audi connect a été retirée des dépots. Vous pouvez cependant continuer à utiliser le plugin si vous l'avez déjà installé.
+
 # Versions supportées
 
 | Composant | Version                     |

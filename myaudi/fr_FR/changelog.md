@@ -5,9 +5,13 @@ lang: fr_FR
 pluginId: myaudi
 ---
 
+> **Important**
+>
+> Attention, il n'est plus possible d'installer les dépendances de ce plugin pour l'instant car la librairie utilisée pour la connexion à My Audi connect a été retirée des dépots. Vous pouvez cependant continuer à utiliser le plugin si vous l'avez déjà installé.
+
 # Beta
 
-- Mise à jour de dépendances
+n/a
 
 # Stable
 

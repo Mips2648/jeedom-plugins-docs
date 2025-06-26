@@ -5,9 +5,13 @@ lang: en_US
 pluginId: myaudi
 ---
 
+> **Important**
+>
+> Please note that it is no longer possible to install this plugin's dependencies, as the library used to connect to My Audi connect has been removed from the repositories. However, you can continue to use the plugin if you have already installed it.
+
 # Beta
 
-- Update dependencies
+n/a
 
 # Stable
 

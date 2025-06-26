@@ -7,11 +7,15 @@ pluginId: worxLandroidS
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-06-27
+
 - Correction de la commande *Rafraichir* qui ne fonctionnait plus & suppression de la commande *Update* qui fonctionnait, elle, et réalisait la même action.
 - Correction: lorsqu'un problème de connexion aux serveurs Worx survenait, il pouvait arriver que le démon n'arrive pas à se reconnecter et qu'apès une dizaine de minute sans succès il n'essaye plus, que la connexion soit définitivement interrompue mais qu'il reste en statut OK.
 - Mise à jour de dépendances
-
-# Stable
 
 ## 2024-12-25
 

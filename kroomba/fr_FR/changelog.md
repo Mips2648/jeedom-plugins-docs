@@ -7,9 +7,13 @@ pluginId: kroomba
 
 # Beta
 
-- Ajout de logs
+n/a
 
 # Stable
+
+## 2025-06-27
+
+- Ajout de logs
 
 ## 2025-04-03
 

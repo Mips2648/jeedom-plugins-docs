@@ -11,9 +11,14 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-- Adaptation des commandes en fonctions du modèle du controlleur (VRC700 ou autres); si besoin vous devrez créer les commandes manquantes via le bouton correspondant dans la page de l'équipement
+n/a
 
 # Stable
+
+## 2025-06-27
+
+- Adaptation des commandes en fonctions du modèle du controlleur (VRC700 ou autres); si besoin vous devrez créer les commandes manquantes via le bouton correspondant dans la page de l'équipement
+- Mise à jour de dépendances
 
 ## 2025-02-24
 

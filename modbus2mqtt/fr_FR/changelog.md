@@ -7,9 +7,13 @@ pluginId: modbus2mqtt
 
 # Beta
 
-- Fix un problème au démarrage du démon qui pouvait survenir sous Debian 12
+n/a
 
 # Stable
+
+## 2025-06-27
+
+- Fix un problème au démarrage du démon qui pouvait survenir sous Debian 12
 
 ## 2025-04-18
 

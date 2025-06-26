@@ -7,6 +7,12 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-06-27
+
 - Improvement of the name automatically given to commands when not defined in the configuration: the name should be shorter (especially the case with zwave-js and zigbee2mqtt).
 - Invert behavior of the *Visible* property on commands: now most commands are not visible by default when created, you need to check *Visible* to display them on the widget. The aim is to make the widget easier to configure, with only the most relevant information and commands displayed by default, rather than displaying almost everything.
 - Improvement and translation of command names when they are correctly categorized by the source (~= there is a generic type associated with the command).
@@ -17,8 +23,6 @@ pluginId: MQTTDiscovery
 - new binary info commands created from a *device_automation* entity will now have the "repeat identical values" parameter enabled by default on creation (no change to existing commands)
 - Added missing translation on some command names
 - Fix: in some cases, the command "off" of a switch was not created.
-
-# Stable
 
 ## 2025-02-24
 

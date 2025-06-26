@@ -15,6 +15,11 @@ n/a
 
 # Stable
 
+## 2025-06-27
+
+- Adaptation of commands according to the controller model (VRC700 or others); if necessary, you will need to create the missing commands via the corresponding button
+- Update dependencies
+
 ## 2025-02-24
 
 - Update dependencies

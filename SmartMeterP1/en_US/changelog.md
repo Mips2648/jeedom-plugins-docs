@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2025-06-27
+
+- Update dependencies
+
 ## 2025-02-22
 
 - Fix data decoding for compatibility with Swiss counters

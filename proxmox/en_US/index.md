@@ -70,6 +70,9 @@ It is not recommended to give the "Administrator" role to the "Jeedom" user; the
 | VM.PowerMgmt            |              |                |                  | required             |                              |                 |
 | VM.Snapshot             |              |                |                  |                    | required                       |                 |
 
+To limit access to what is strictly necessary, you need to create a new custom role ("Permissions" > "Roles" menu); give it a name and grant the privileges listed above.
+You can then assign this role to the user via the "Permissions" menu (instead of the "Administrator" role).
+
 You will find more information here: <https://pve.proxmox.com/wiki/User_Management>
 
 # Plugin configuration
@@ -150,10 +153,6 @@ Les commandes actions suivantes sont également disponibles:
 | compress         | Backup compression                                                                                                                 | possible values are: `0`, `gzip`, `lzo`, `zstd`                                                                                                          | `lzo`                                                                |
 | mailnotification | Specifies when to send a notification                                                                                            | possible values are: `always`, `failure`                                                                                                                 | `always`                                                             |
 | remove           | Deletes old backups if there are more than the maximum configured for the chosen storage (see Proxmox configuration) | possible values are: `0`, `1`                                                                                                                            | `1`                                                                  |
-
-> **Tip**
->
-> Support of Zstandard (zstd) for compression is available from version 6.2 of Proxmox.
 
 ## The storages
 

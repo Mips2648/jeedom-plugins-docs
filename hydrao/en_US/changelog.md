@@ -7,7 +7,7 @@ pluginId: hydrao
 
 # Beta
 
-- Update dependencies
+n/a
 
 # Stable
 

@@ -17,7 +17,7 @@ n/a
 
 ## 2025-06-27
 
-- Adaptation of commands according to the controller model (VRC700 or others); if necessary, you will need to create the missing commands via the corresponding button
+- Adaptation of commands according to the controller model (VRC700 or others); if necessary, you will need to create the missing commands via the corresponding button in the device configuration page
 - Update dependencies
 
 ## 2025-02-24

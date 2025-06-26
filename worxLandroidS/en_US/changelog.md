@@ -11,6 +11,12 @@ n/a
 
 # Stable
 
+## 2025-06-27
+
+- Fix command *Refresh* which was no longer working & remove command *Update* which was working and performed the same action.
+- Fix: when there was a problem connecting to Worx servers, it could happen that the daemon failed to reconnect and, after ten minutes without success, it no longer tried, in that case the connection was definitively interrupted but the daemon remained in OK status.
+- Update dependencies
+
 ## 2024-12-25
 
 - Update dependencies

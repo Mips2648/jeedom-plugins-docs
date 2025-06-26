@@ -7,7 +7,8 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Limits retrieval of library videos/captures from the cloud to 1 day
+- Update dependencies
 
 # Stable
 

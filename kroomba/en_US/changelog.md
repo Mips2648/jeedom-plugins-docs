@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2025-06-27
+
+- Add logs
+
 ## 2025-04-03
 
 - Internal modification of daemon

@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2025-06-27
+
+- Fixes a problem with daemon startup that could occur under Debian 12
+
 ## 2025-04-18
 
 - Added management of *Coil status* & *Input status* tables

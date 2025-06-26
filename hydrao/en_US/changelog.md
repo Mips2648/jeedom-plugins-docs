@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2025-06-27
+
+- Update dependencies
+
 ## 2024-12-25
 
 - Update dependencies

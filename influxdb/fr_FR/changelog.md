@@ -7,7 +7,8 @@ pluginId: influxdb
 
 # Beta
 
-n/a
+- Modification sur l'intégration avec influxDB v1.8+: la politique de conservation des données par défaut n'est plus spécifiée, elle sera décidée par influxDB selon la configuration faite sur la base.
+- Mise à jour de dépendances
 
 # Stable
 

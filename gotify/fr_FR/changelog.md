@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2025-07-07
+
+- Mise à jour de dépendances
+
 ## 2024-12-25
 
 - Mise à jour de dépendances

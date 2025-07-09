@@ -7,7 +7,7 @@ pluginId: worxLandroidS
 
 # Beta
 
-n/a
+- Amélioration des tentatives de reconnexion en cas de déconnexion imprévue et d'indisponnibilité du cloud WorxLandroid
 
 # Stable
 

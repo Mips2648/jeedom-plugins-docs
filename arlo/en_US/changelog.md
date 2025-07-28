@@ -9,7 +9,6 @@ pluginId: arlo
 
 - Limits retrieval of library videos/captures from the cloud to 1 day
 - Update dependencies
-- PHP 8.4 compatibility
 
 # Stable
 

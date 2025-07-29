@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Ajout le choix d'inclure ou exclure la RAM (l'état de la VM) lors d'un snapshot d'une VM; **Attention**: vérifiez vos scénarios, le comportement par défaut a changé, la RAM est exclue par défaut
 
 # Stable
 

@@ -8,6 +8,7 @@ pluginId: worxLandroidS
 # Beta
 
 - Amélioration des tentatives de reconnexion en cas de déconnexion imprévue et d'indisponnibilité du cloud WorxLandroid
+- Correction d'un bug sur le *Rapport d'activité*
 
 # Stable
 

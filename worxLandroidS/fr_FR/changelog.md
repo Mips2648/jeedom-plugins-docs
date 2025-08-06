@@ -9,6 +9,7 @@ pluginId: worxLandroidS
 
 - Amélioration des tentatives de reconnexion en cas de déconnexion imprévue et d'indisponnibilité du cloud WorxLandroid
 - Correction d'un bug sur le *Rapport d'activité*
+- Mise à jour de dépendances
 
 # Stable
 

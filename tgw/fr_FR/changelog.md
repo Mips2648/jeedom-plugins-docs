@@ -9,6 +9,7 @@ pluginId: tgw
 
 - Ajout de la gestion des *bindkeys*, voir <https://gateway.theengs.io/use/use.html#reading-encrypted-advertisements>
 - Ouverture de la page des releases notes dans un nouvel onglet
+- Mise à jour de dépendances
 
 # Stable
 

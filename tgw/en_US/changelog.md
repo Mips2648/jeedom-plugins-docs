@@ -7,11 +7,15 @@ pluginId: tgw
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-08-11
+
 - Add *bindkeys* management, see <https://gateway.theengs.io/use/use.html#reading-encrypted-advertisements>
 - Opening the releases notes page in a new tab
 - Update dependencies
-
-# Stable
 
 ## 2025-04-18
 

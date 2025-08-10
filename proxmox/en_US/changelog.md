@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2025-08-11
+
+- Added the choice to include or exclude RAM (VM state) when taking snapshot on VM; **Warning**: check your scenarios, the default behavior has changed, RAM is now excluded by default
+- Update dependencies
+
 ## 2025-04-18
 
 - Disk usage commands (value and percentage) added for LXC

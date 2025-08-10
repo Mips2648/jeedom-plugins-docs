@@ -13,7 +13,7 @@ n/a
 
 ## 2025-08-11
 
-- Amélioration des tentatives de reconnexion en cas de déconnexion imprévue et d'indisponnibilité du cloud WorxLandroid
+- Amélioration des tentatives de reconnexion en cas de déconnexion imprévue ou d'indisponnibilité du cloud WorxLandroid
 - Correction d'un bug sur le *Rapport d'activité*
 - Mise à jour de dépendances
 

@@ -13,7 +13,7 @@ n/a
 
 ## 2025-08-11
 
-- Ajout le choix d'inclure ou exclure la RAM (l'état de la VM) lors d'un snapshot d'une VM; **Attention**: vérifiez vos scénarios, le comportement par défaut a changé, la RAM est exclue par défaut
+- Ajout le choix d'inclure ou exclure la RAM (l'état de la VM) lors d'un snapshot d'une VM; **Attention**: vérifiez vos scénarios, le comportement par défaut a changé, la RAM est exclue par défaut à présent
 - Mise à jour de dépendances
 
 ## 2025-04-18

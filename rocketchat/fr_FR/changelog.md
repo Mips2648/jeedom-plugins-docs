@@ -7,9 +7,13 @@ pluginId: rocketchat
 
 # Beta
 
-- Mise à jour de dépendances
+n/a
 
 # Stable
+
+## 2025-08-11
+
+- Mise à jour de dépendances
 
 ## 2025-04-18
 

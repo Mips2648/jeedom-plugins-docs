@@ -7,12 +7,16 @@ pluginId: arlo
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-08-11
+
 - Ajout du support de plusieurs nouveaux modèles de caméras
 - Limite à 1 jour la récupération des vidéos/captures de la bibliothèque depuis le cloud
 - Mise à jour de dépendances
 - Compatibilité PHP 8.4
-
-# Stable
 
 ## 2025-02-24
 

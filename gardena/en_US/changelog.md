@@ -7,10 +7,14 @@ pluginId: gardena
 
 # Beta
 
-- Migration to API v2 for Gardena Smart System equipment, which returns new values for *Activity* and *Error* info.
-- Update dependencies
+n/a
 
 # Stable
+
+## 2025-08-11
+
+- Migration to API v2 for Gardena Smart System equipment, which returns new values for *Activity* and *Error* info.
+- Update dependencies
 
 ## 2025-03-23
 

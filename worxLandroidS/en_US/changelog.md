@@ -11,12 +11,6 @@ n/a
 
 # Stable
 
-## 2025-08-11
-
-- Improved reconnection attempts in the event of unexpected disconnection or WorxLandroid cloud unavailability
-- Fixed bug in *Activity report*.
-- Update dependencies
-
 ## 2025-06-27
 
 - Fix command *Refresh* which was no longer working & remove command *Update* which was working and performed the same action.

@@ -7,9 +7,13 @@ pluginId: fail2ban
 
 # Beta
 
-- Update dependencies
+n/a
 
 # Stable
+
+## 2025-08-11
+
+- Update dependencies
 
 ## 2024-12-25
 

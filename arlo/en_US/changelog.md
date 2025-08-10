@@ -7,10 +7,16 @@ pluginId: arlo
 
 # Beta
 
-- Limits retrieval of library videos/captures from the cloud to 1 day
-- Update dependencies
+n/a
 
 # Stable
+
+## 2025-08-11
+
+- Support for several new camera models
+- Limits retrieval of library videos/captures from the cloud to 1 day
+- Update dependencies
+- PHP 8.4 compatibility
 
 ## 2025-02-24
 

@@ -11,6 +11,11 @@ n/a
 
 # Stable
 
+## 2025-08-11
+
+- Modification of integration with influxDB v1.8+: the default data retention policy is no longer specified, it will be decided by influxDB according to the configuration made on the database.
+- Update dependencies
+
 ## 2025-06-27
 
 - Addition of an advanced parameter: *Total retry time* which sets the maximum total time send retries to Influx, regardless of the number of retries, timeouts and the time between retries.

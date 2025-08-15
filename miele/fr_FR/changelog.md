@@ -7,7 +7,8 @@ pluginId: miele
 
 # Beta
 
-n/a
+- Ajout de log
+- Mise à jour de dépendances
 
 # Stable
 

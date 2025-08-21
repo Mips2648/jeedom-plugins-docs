@@ -54,7 +54,7 @@ n/a
 - Add compatibility with myVaillant and remove compatibility with vaillantMULTIMATIC: a lot of changes, don't forget to reconfigure the plugin. Most of your equipment will be migrated, there may be cases where this is not yet managed. See also [this topic on community](https://community.jeedom.com/t/nouvelle-app-myvaillant/123431)
 - Optimizing the size of backups
 - Add room icons
-- Add controller info
+- Add controller information
 
 > **Attention**
 >

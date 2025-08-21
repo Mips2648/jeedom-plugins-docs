@@ -24,21 +24,16 @@ Vous devez avoir un compte utilisateur Miele avec au moins un appareil compatibl
 
 # Configuration du plugin
 
-Dans la configuration du plugin, il faudra renseigner le ClientId et le Client Secret reçus permettant l'accès à l’API et sauvegarder.
-Vous pouvez ensuite cliquer sur le bouton _Lier Jeedom et Miele@Home_ et suivre les instructions: cela ouvrira un nouvel onglet sur le site de Miele dans lequel vous devrez vous connecter avec votre nom d'utilisateur et votre mot de passe Miele pour valider le lien.
+Dans la configuration du plugin, il faudra renseigner le _Client Id_ et le _Client Secret_ reçus permettant l'accès à l’API et sauvegarder.
+Il faut démarrer le démon et vous pouvez ensuite cliquer sur le bouton _Lier Jeedom et Miele@Home_ et suivre les instructions: cela ouvrira un nouvel onglet sur le site de Miele dans lequel vous devrez vous connecter avec votre nom d'utilisateur et votre mot de passe Miele pour valider le lien.
 
-Si tout c'est déroulé sans erreur, en revenant sur la page de configuration, vous pouvez cliquer sur le bouton _Rafraichir_ en face du statut si celui-ci est toujours indiqué comme _NOK_.
+Si tout c'est déroulé sans erreur, en revenant sur la page de configuration, vous devriez voir que le statut de la connexion est à présent _OK_.
 
 ![Configuration](../images/config.png "Configuration")
 
-Le plugin dispose de deux tâches:
-
-- **cron**: sert à synchroniser automatiquement chaque minute les équipements. Si vous désactivez cette tâche vous devrez rafraichir chaque équipement manuellement ou via scénario.
-- **cronDaily**: sert à rafraichir le token d'accès si nécessaire. Vous ne devriez pas désactiver ce cron.
-
 # Les équipements
 
-Dès que la configuration du plugin est correcte, le plugin synchronisera vos appareils chaque minute. Il créera les appareils manquants avec leurs commandes et mettra à jour l'état de tout les appareils connectés.
+Dès que l'authentification est réussie, le plugin synchronisera vos appareils. Il créera les appareils manquants avec leurs commandes et mettra à jour l'état de tout les appareils connectés. La mise à jour des commandes se fera ensuite en temps réel (tant que le démon est lancé)
 
 > **Tip**
 >
@@ -66,10 +61,6 @@ Chaque équipement Miele dispose des commandes suivantes, toutes ne sont pas for
 - **Porte** valeur binaire indiquant si la porte de l'appareil est ouverte
 - **Lumière** valeur binaire indiquant le statut de la lumière de l'appareil (si applicable)
 
-> **Tip**
->
-> Les informations de **Temps restant**, **Heure de démarrage** et **Temps écoulé** sont chacune disponible dans une commande type chaîne de caractère formatée pour l'affichage dans le widget et d'une autre en format numérique (hhmm) pour l'utilisation dans un scénario par exemple.
-
 ### Liste des valeurs pour l'info "Statut" = "Etat"
 
 - 1 = OFF
@@ -90,7 +81,7 @@ Chaque équipement Miele dispose des commandes suivantes, toutes ne sont pas for
 - 146 = SUPERCOOLING_SUPERFREEZING
 - 255 = NOT_CONNECTED
 
-### Listes des valeurs pour l'info "Programme"
+### Liste des valeurs pour l'info "Programme"
 
 Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 
@@ -99,7 +90,7 @@ Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 - Automatic program
 - Cleaning-/Care program
 
-### Listes des valeurs connues pour l'info "Phase"
+### Liste des valeurs connues pour l'info "Phase"
 
 Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 
@@ -116,7 +107,7 @@ Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 - PreHeat
 - Program Running
 
-## Les commandes de type infos spécifiques à certain appareils
+## Les commandes de type infos spécifiques à certains appareils
 
 - **Vitesse de rotation** pour les machines à laver, valeur numérique en rpm.
 - **Niveau de séchage** pour les sèches linge, voir ci-dessous pour la liste des valeurs possibles
@@ -141,7 +132,7 @@ Les commandes actions ci-dessous seront présentes sur les équipements si l'act
 - **Allumer**, **Eteindre**
 - **Démarrer**, l'appareil doit être en statut 4-Programmé et en attente de démarrage
 - **Arrêter**, l'appareil doit être en statut 4-Programmé et en attente de démarrage, 5-Fonctionnement ou 6-Pause
-- **Pause** ??
+- **Pause**
 - **Démarrer Freezing**, uniquement pour les appareils de type surgélateur, l'appareil doit être en statut 5-Fonctionnement
 - **Arrêter Freezing**, uniquement pour les appareils de type surgélateur, l'appareil doit être en mode Freezing
 - **Démarrer Cooling**, uniquement pour les appareils de type congélateur, l'appareil doit être en statut 5-Fonctionnement
@@ -164,6 +155,6 @@ Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pa
 Il faudra au minimum fournir:
 
 - une capture d'écran de la page santé Jeedom
-- une capture d'écran de la page de config du plugin
+- une capture d'écran de la page de configuration du plugin
 - tous les logs disponibles du plugin collés dans un `Texte préformaté` (bouton `</>` sur community), pas de fichiers!
 - selon les cas, une capture d'écran de l'erreur rencontrée, une capture d'écran de la configuration posant problème...

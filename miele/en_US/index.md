@@ -24,21 +24,16 @@ You must have a Miele account with at least one appliance compatible with Miele@
 
 # Plugin configuration
 
-In the configuration of the plugin, you will need to fill in the ClientId and the Client Secret received allowing access to the API and then save.
+In the configuration of the plugin, you will need to fill in the _Client Id_ and the _Client Secret_ received allowing access to the API and then save.
 You can then click on the _Link Jeedom and Miele@Home_ button and follow the instructions: this will open a new tab on the Miele website where you will need to log in with your Miele username and password to validate the link .
 
-If everything went without error, returning to the configuration page, you can click on the _Refresh_ button in front of the status if it is still indicated as _NOK_.
+If everything went smoothly, when you return to the configuration page, you should see that the connection status is now _OK_.
 
 ![Configuration](../images/config.png "Configuration")
 
-The plugin has two tasks:
-
-- **cron**: is used to automatically synchronize the devices every minute. If you deactivate this task you will have to refresh each device manually or via scenario.
-- **cronDaily**: is used to refresh the access token if necessary. You should not disable this cron.
-
 # Devices
 
-As soon as the plugin configuration is correct, the plugin will synchronize all your appliances every minute. It will create missing appliances and their commands and will update information of all connected appliances.
+As soon as authentication is successful, the plugin will synchronize your devices. It will create the missing devices with their commands and update the status of all connected devices. The commands will then be updated in real time (as long as the daemon is running).
 
 > **Tip**
 >
@@ -65,10 +60,6 @@ Each Miele device has the following commands, not all of them are applicable to 
 - **Error** binary value indicating if the device is in error
 - **Door** binary value indicating if the device door is open
 - **Light** binary value indicating the light status of the device (if applicable)
-
-> **Tip**
->
-> **Remaining time**, **Start time** and **Elapsed time** information are available as a string type command formatted for display in the widget and another as numeric format (hhmm) for use in scenario for example.
 
 ### List of values for the info "Status" = "State"
 
@@ -141,7 +132,7 @@ The action commands below will be present on the device if the action is support
 - **Power on**, **Power off**
 - **Start**, the device must be in 4-Programmed status and waiting to start
 - **Stop**, the device must be in 4-Programmed status and waiting to start, 5-Operating or 6-Pause
-- **Pause** ??
+- **Pause**
 - **Start Freezing**, only for freezer type devices, the device must be in 5-Operating status
 - **Stop Freezing**, only for freezer type devices, the device must be in Freezing mode
 - **Start Cooling**, only for freezer type devices, the device must be in 5-Operating status

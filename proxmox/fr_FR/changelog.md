@@ -13,41 +13,41 @@ n/a
 
 ## 2025-08-11
 
-- Ajout le choix d'inclure ou exclure la RAM (l'état de la VM) lors d'un snapshot d'une VM; **Attention**: vérifiez vos scénarios, le comportement par défaut a changé, la RAM est exclue par défaut à présent
-- Mise à jour de dépendances
+- Ajout du choix d'inclure ou d'exclure la RAM (l'état de la VM) lors d'un snapshot d'une VM ; **Attention** : vérifiez vos scénarios, le comportement par défaut a changé, la RAM est exclue par défaut à présent
+- Mise à jour des dépendances
 
 ## 2025-04-18
 
 - Ajout des commandes d'utilisation du disque (valeur et pourcentage) sur les LXC
 - Réorganisation de la page santé et du panel
-- Corrections sur le panel: certaines traductions n'étaient pas apppliquées
+- Corrections sur le panel : certaines traductions n'étaient pas appliquées
 
 ## 2025-02-24
 
-- Fix pour ne plus essayer de créer des ressources qui n'auraient pas de nom (cela peut arriver suite à un problème sur vos serveurs Proxmox)
+- Correction pour ne plus essayer de créer des ressources qui n'auraient pas de nom (cela peut arriver suite à un problème sur vos serveurs Proxmox)
 
 ## 2024-12-25
 
 - Diminution des timeouts lors des requêtes à Proxmox
-- Correction d'une erreur dans le cas où l'un des noeuds d'un cluster est déconnecté (dans le cas d'une installation avec de multiples noeuds)
-- Mise à jour de dépendances
+- Correction d'une erreur dans le cas où l'un des nœuds d'un cluster est déconnecté (dans le cas d'une installation avec de multiples nœuds)
+- Mise à jour des dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
 
 ## 2024-09-16
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Version Debian 11 minimum requise
 
 ## 2024-07-02
 
-- La case à cocher *Activer* est désormais en lecture seule car mis à jour lors de la synchronisation
-- Fix pour Debian 12 si la config Proxmox est incorrecte et que par conséquent le plugin n'a pas accès à l'entièreté de l'information à laquelle il essaye d'accéder
+- La case à cocher *Activer* est désormais en lecture seule car mise à jour lors de la synchronisation
+- Correction pour Debian 12 si la config Proxmox est incorrecte et que par conséquent le plugin n'a pas accès à l'intégralité de l'information à laquelle il essaye d'accéder
 
 ## 2024-04-11
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-03-18
 
@@ -55,9 +55,9 @@ n/a
 
 ## 2023-05-20
 
-- Changement sur le nommage des équipements de type *stockages* pour éviter les conflits dans le cas d'utilisation avec un cluster de noeuds.
-- Le champ *Nom de l'équipement* est désormais en lecteur seule car le nom de l'équipement est défini par le processus de synchronisation et ne peut donc pas être modifié.
-- Ajout des commandes info **Nombre de tâches en erreur** et **Erreurs** sur les équipements *Noeud*; le nombre d'heure à prendre en compte pour la vérification se configure par équipement.
+- Changement sur le nommage des équipements de type *stockages* pour éviter les conflits dans le cas d'utilisation avec un cluster de nœuds.
+- Le champ *Nom de l'équipement* est désormais en lecture seule car le nom de l'équipement est défini par le processus de synchronisation et ne peut donc pas être modifié.
+- Ajout des commandes info **Nombre de tâches en erreur** et **Erreurs** sur les équipements *Nœud* ; le nombre d'heures à prendre en compte pour la vérification se configure par équipement.
 - Amélioration des champs password
 - Compatibilité Jeedom v4.4
 - Ajout des liens vers la documentation en beta
@@ -72,7 +72,7 @@ n/a
 
 ## 2022-02-11
 
-- Amélioration: possibilité de configurer une liste d'IP, séparée par une virgule, dans la config du plugin (vers des noeuds différents d'un même cluster) pour assurer la résilience
+- Amélioration : possibilité de configurer une liste d'IP, séparée par une virgule, dans la config du plugin (vers des nœuds différents d'un même cluster) pour assurer la résilience
 - Changements mineurs de présentation des écrans de configuration
 
 ## 2021-12-27
@@ -86,9 +86,9 @@ n/a
 - Ajout de plus d'information de config sur les LXC
 - Ajout de commandes info sur les noeuds donnant le nombre de VM/LXC démarré et arrêté ([Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
-- Amélioration: Les équipements qui sont des templates de VM et de LXC ont une icône différente pour les identifier plus facilement
-- Amélioration: passage de la synchronisation en démon pour pouvoir augmenter la fréquence d'actualisation, celle-ci est paramétrable dans la configuration du plugin.
-- Amélioration: la commande **Mises à jour disponibles** est maintenant une commande info/numérique au lieu de info/binaire comme cela aurait dû être depuis le début, veuillez vérifier vos scénarios.
+- Amélioration : Les équipements qui sont des templates de VM et de LXC ont une icône différente pour les identifier plus facilement
+- Amélioration : passage de la synchronisation en démon pour pouvoir augmenter la fréquence d'actualisation, celle-ci est paramétrable dans la configuration du plugin.
+- Amélioration : la commande **Mises à jour disponibles** est maintenant une commande info/numérique au lieu de info/binaire comme cela aurait dû être depuis le début, veuillez vérifier vos scénarios.
 - Diverses améliorations de l'interface
 - bugfix mineurs
 
@@ -130,8 +130,8 @@ n/a
 - Ajout d'une commande **Liste des snapshots** sur VM et LXC
 - Ajout d'une commande donnant le pourcentage d'utilisation pour la mémoire, le disque et le swap sur tous les équipements concernés
 - suppression des commandes vmid et Noeud sur tous les équipements
-- Fixe: le statut *paused* est précisé correctement sur une VM ou un container en pause
-- Fixe: il est à présent possible de renommer l'équipement dans Jeedom avec un nom différent que celui dans Proxmox
+- Fixe : le statut *paused* est précisé correctement sur une VM ou un container en pause
+- Fixe : il est à présent possible de renommer l'équipement dans Jeedom avec un nom différent que celui dans Proxmox
 
 ## 2019-11-12
 

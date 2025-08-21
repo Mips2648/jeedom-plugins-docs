@@ -17,44 +17,44 @@ n/a
 
 ## 2025-06-27
 
-- Adaptation des commandes en fonctions du modèle du controlleur (VRC700 ou autres); si besoin vous devrez créer les commandes manquantes via le bouton correspondant dans la page de l'équipement
-- Mise à jour de dépendances
+- Adaptation des commandes en fonction du modèle du contrôleur (VRC700 ou autres) ; si besoin, vous devrez créer les commandes manquantes via le bouton correspondant dans la page de l'équipement
+- Mise à jour des dépendances
 
 ## 2025-02-24
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-12-25
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Mise à jour de l'icône
 
 ## 2024-10-11
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Jeedom v4.4 requis
 
 ## 2024-09-16
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Version Debian 11 minimum requise
 
 ## 2024-06-11
 
 - Modification interne du démon
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-04-15
 
-- Fix migration des zones si plusieurs zones existent
+- Correction de la migration des zones si plusieurs zones existent
 
 ## 2024-04-08
 
-- Ajout compatibilité avec myVaillant et retire la compatibilité avec vaillantMULTIMATIC: beaucoup de changements, n'oubliez de reconfigurer le plugin. Vos équipements seront migrés pour la plupart, il peut y avoir des cas pour lesquels ce n'est pas encore géré. Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-app-myvaillant/123431)
-- Optimisation de la taille des backups
+- Ajout de la compatibilité avec myVaillant et retrait de la compatibilité avec vaillantMULTIMATIC : beaucoup de changements, n'oubliez pas de reconfigurer le plugin. Vos équipements seront migrés pour la plupart, il peut y avoir des cas pour lesquels ce n'est pas encore géré. Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle-app-myvaillant/123431)
+- Optimisation de la taille des sauvegardes
 - Ajout des icônes des pièces
-- Ajout d'info sur le contrôleur
+- Ajout d'informations sur le contrôleur
 
 > **Attention**
 >

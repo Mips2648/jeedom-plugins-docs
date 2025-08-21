@@ -13,12 +13,12 @@ n/a
 
 ## 2024-12-25
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Mise à jour de l'icône
 
 ## 2024-10-17
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Jeedom v4.4 requis
 
 ## 2024-09-16
@@ -27,16 +27,16 @@ n/a
 
 ## 2024-03-18
 
-- Meilleur validation des dates / commandes de lever & coucher du soleil
+- Meilleure validation des dates / commandes de lever & coucher du soleil
 
 ## 2023-10-02
 
-- fix un problème avec la commande *Date de mise à jour*
+- Correction d'un problème avec la commande *Date de mise à jour*
 
 ## 2022-10-17
 
 - Ajout du pourcentage de charge de batterie sur l'équipement "Puissance & Flux"
-- Changement des heures de fonctionnement par défaut (si aucune configuration n'était réalisée): précédemment de 4h00 à 22h00 et à présent de 0h00 à 23h59. Vous pouvez adapter la configuration du plugin si nécessaire
+- Changement des heures de fonctionnement par défaut (si aucune configuration n'était réalisée) : précédemment de 4h00 à 22h00 et à présent de 0h00 à 23h59. Vous pouvez adapter la configuration du plugin si nécessaire
 - Prise en compte des multiples onduleurs dans l'affichage des détails du site
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
 

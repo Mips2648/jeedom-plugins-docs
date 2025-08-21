@@ -13,31 +13,31 @@ n/a
 
 ## 2024-12-25
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Mise à jour de l'icône
 
 ## 2024-10-17
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Jeedom v4.4 requis
 
 ## 2024-08-21
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 
 ## 2024-04-10
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-01-26
 
-- Ajout du service "coinmarketcap" pour la gestion des crypto-currencies
+- Ajout du service "coinmarketcap" pour la gestion des crypto-monnaies
 
 ## 2023-05-20
 
 - Compatibilité Jeedom v4.4
-- Ajout des liens vers la documentation en beta
+- Ajout des liens vers la documentation en bêta
 
 ## 2022-10-17
 
@@ -49,14 +49,14 @@ n/a
 
 ## 2021-07-27
 
-- Changement de l'api utilisée pour marketstack pour éviter le problème "incorrect data received:null"
+- Changement de l'API utilisée pour marketstack pour éviter le problème "incorrect data received:null"
 - Optimisation interne
 
 ## 2021-05-12
 
 - Nouvelle présentation de la liste des objets
 - Amélioration de la mise en page de la configuration de l'équipement et des commandes
-- Fix: recherche de symbole avec le service marketstack
+- Correction : recherche de symbole avec le service marketstack
 
 ## 2020-08-23
 

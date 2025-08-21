@@ -13,50 +13,50 @@ n/a
 
 ## 2025-04-18
 
-- Correction sur la re-configuration du service qui ne fonctionnait pas dans certains cas
-- Adaptation du client ID mqtt sous la forme "zehnder2mqtt-[ID aléatoire]" afin de permettre un monitoring plus facile
+- Correction sur la reconfiguration du service qui ne fonctionnait pas dans certains cas
+- Adaptation du client ID MQTT sous la forme "zehnder2mqtt-[ID aléatoire]" afin de permettre un monitoring plus facile
 
 ## 2024-12-25
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
 
 ## 2024-09-16
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Version Debian 11 minimum requise
 
 ## 2024-06-01
 
 - Compatibilité du service distant avec Debian 12
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-04-10
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-02-27
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2023-10-03
 
-- Fix un problème potentiel lors de l'installation de des dépendances
-- Fix un problème potentiel en cas de connexion au broker MQTT sans utilisateur et mot de passe
+- Correction d'un problème potentiel lors de l'installation des dépendances
+- Correction d'un problème potentiel en cas de connexion au broker MQTT sans utilisateur et mot de passe
 
 ## 2023-09-30
 
-- Réécriture complète du plugin qui se base à présent sur mqtt pour les échanges entre Jeedom et le pi distant branché à la VMC
-- Mise à jour page liste des équipements
-- Amélioration des champs password
-- Mise à jour gestion des dépendances v4.2
+- Réécriture complète du plugin qui se base à présent sur MQTT pour les échanges entre Jeedom et le Pi distant branché à la VMC
+- Mise à jour de la page liste des équipements
+- Amélioration des champs de mot de passe
+- Mise à jour de la gestion des dépendances v4.2
 - Compatibilité Jeedom v4.4
 
 > **Important**
 >
-> Le plugin et le démon distant nécessité au minimum Debian Buster pour fonctionner, y compris donc pour le pi distant branché à la VMC.
+> Le plugin et le démon distant nécessitent au minimum Debian Buster pour fonctionner, y compris donc pour le Pi distant branché à la VMC.
 >
 > Le plugin nécessite une installation fonctionnelle du plugin "MQTT Manager (MQTT2)", si ce plugin n'est pas encore présent sur votre système, il sera installé automatiquement avec la mise à jour mais vous devrez finaliser sa configuration (voir documentation de *MQTT Manager*).
 

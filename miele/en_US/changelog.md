@@ -7,7 +7,15 @@ pluginId: miele
 
 # Beta
 
-n/a
+> **Warning**
+>
+> Major update of the plugin : the entire Miele@Home API implementation has been rewritten in Python, and the plugin now uses a daemon instead of cron. It will be necessary to redo the link between Jeedom and Miele@Home and to log in again via the plugin's configuration page after this update.
+
+- Major plugin update: implementation of a Python daemon to connect to the Miele@Home API and removal of crons
+- Real-time status feedback (previously you had to wait for the cron minute)
+- Add an action command **Mode** on compatible appliances (fridge, freezer, wine cabinet)
+- Added an action command **Start program** on compatible appliances (washing machine, tumble dryer, dishwasher, oven, coffee machine, vacuum cleaner).
+- Update dependencies
 
 # Stable
 

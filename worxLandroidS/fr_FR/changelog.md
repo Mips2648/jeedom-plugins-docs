@@ -13,27 +13,27 @@ n/a
 
 ## 2025-08-11
 
-- Amélioration des tentatives de reconnexion en cas de déconnexion imprévue ou d'indisponnibilité du cloud WorxLandroid
+- Amélioration des tentatives de reconnexion en cas de déconnexion imprévue ou d'indisponibilité du cloud WorxLandroid
 - Correction d'un bug sur le *Rapport d'activité*
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2025-06-27
 
-- Correction de la commande *Rafraichir* qui ne fonctionnait plus & suppression de la commande *Update* qui fonctionnait, elle, et réalisait la même action.
-- Correction: lorsqu'un problème de connexion aux serveurs Worx survenait, il pouvait arriver que le démon n'arrive pas à se reconnecter et qu'apès une dizaine de minute sans succès il n'essaye plus, que la connexion soit définitivement interrompue mais qu'il reste en statut OK.
-- Mise à jour de dépendances
+- Correction de la commande *Rafraîchir* qui ne fonctionnait plus & suppression de la commande *Update* qui fonctionnait, elle, et réalisait la même action.
+- Correction : lorsqu'un problème de connexion aux serveurs Worx survenait, il pouvait arriver que le démon n'arrive pas à se reconnecter et qu'après une dizaine de minutes sans succès il n'essaye plus, que la connexion soit définitivement interrompue mais qu'il reste en statut OK.
+- Mise à jour des dépendances
 
 ## 2024-12-25
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Mise à jour de l'icône
 
 ## 2024-10-11
 
 - Amélioration de l'intégration des modèles Landroid Vision
 - Ajout des codes erreur et état ainsi que les descriptions pour les modèles Landroid Vision
-- Fix un problème de démarrage du démon sur les nouvelles installations Jeedom
-- Mise à jour de dépendances
+- Correction d'un problème de démarrage du démon sur les nouvelles installations Jeedom
+- Mise à jour des dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Jeedom v4.4 requis
 - Debian 11 requis
@@ -41,9 +41,9 @@ n/a
 ## 2024-06-11
 
 - Suppression de l'image "Pause" sur le widget lorsque la tondeuse est en pause
-- Fix sur la vérification des dépendances
+- Correction sur la vérification des dépendances
 - Mise à jour du démon
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-02-23
 

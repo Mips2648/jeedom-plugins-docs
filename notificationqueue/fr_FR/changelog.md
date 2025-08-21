@@ -13,7 +13,7 @@ n/a
 
 ## 2025-06-27
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-12-25
 
@@ -26,19 +26,19 @@ n/a
 
 ## 2024-03-18
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2023-10-02
 
-- Possibilité d'ajouter de multiple conditions d'envoi et pour chacune d'elles des commandes de notifications différentes. Cela permet d'envoyer vos notifications sur différents "canaux" en fonction de conditions que vous définissez.
+- Possibilité d'ajouter de multiples conditions d'envoi et pour chacune d'elles des commandes de notifications différentes. Cela permet d'envoyer vos notifications sur différents "canaux" en fonction de conditions que vous définissez.
 
 ## 2023-08-21
 
-- Nouvelle option pour choisir comment détecter une notification en doublon: message identique (comportement par défaut et avant cette mise à jour), titre identique ou message & titre identiques
+- Nouvelle option pour choisir comment détecter une notification en doublon : message identique (comportement par défaut et avant cette mise à jour), titre identique ou message & titre identiques
 
 ## 2022-10-17
 
-- Dorénavant les messages expirés seront supprimés de la queue au fur et à mesure (et pas uniquement si une condition est vrai).
+- Dorénavant les messages expirés seront supprimés de la queue au fur et à mesure (et pas uniquement si une condition est vraie).
 - Mise à jour de la présentation des commandes pour Jeedom v4.3
 
 ## 2020-11-29
@@ -54,7 +54,7 @@ n/a
 
 ## 2020-06-16
 
-- Ajout d'une option pour configurer un délai pendant lequel la notification sera gardée dans la file même si la condition est vrai
+- Ajout d'une option pour configurer un délai pendant lequel la notification sera gardée dans la file même si la condition est vraie
 - Ajout d'une commande pour déclencher manuellement la vérification de la condition et l'envoi des messages si celle-ci est valide
 - Ajout d'une commande pour forcer l'envoi immédiat de tous les messages sans tenir compte de la condition (mais en tenant compte du délai d'envoi)
 

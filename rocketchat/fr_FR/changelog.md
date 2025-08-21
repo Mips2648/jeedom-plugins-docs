@@ -13,40 +13,40 @@ n/a
 
 ## 2025-08-11
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2025-04-18
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-12-25
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Mise à jour de l'icône
 
 ## 2024-10-17
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Jeedom v4.4 requis
 
 ## 2024-09-16
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Version Debian 11 minimum requise
 
 ## 2024-08-21
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 
 ## 2024-07-02
 
 - Mise à jour du démon
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-04-10
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2022-10-17
 
@@ -54,11 +54,11 @@ n/a
 
 ## 2022-09-19
 
-- Ajout d'un option pour envoyer des fichiers locaux directement depuis un scénario, voir documentation.
+- Ajout d'une option pour envoyer des fichiers locaux directement depuis un scénario, voir documentation.
 
 ## 2022-05-17
 
-- Changement de l'API utilisée pour envoi des messages pour fixer le problème de date incorrecte (messages envoyés à la date du 1/01/1979)
+- Changement de l'API utilisée pour l'envoi des messages pour fixer le problème de date incorrecte (messages envoyés à la date du 1/01/1979)
 
 ## 2022-03-28
 
@@ -88,7 +88,7 @@ n/a
 
 ## 2020-03-20
 
-- Il n'est plus nécessaire de mentionner le bot pour les interactions dans une conversion directe / message privé.
+- Il n'est plus nécessaire de mentionner le bot pour les interactions dans une conversation directe / message privé.
 - Vérification de la configuration avant le démarrage du démon
 - Vérification de l'état du démon avant l'utilisation d'une commande
 

@@ -13,30 +13,30 @@ n/a
 
 ## 2025-06-27
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2025-02-22
 
-- Correction du décodage pour compatibilité avec les compteurs Suisse
-- Ajout des codes 1.6.0 (maximum de la puissance moyenne prélevée sur un quart d’heure depuis le début du mois) & 2.6.0 (maximum de la puissance moyenne injectée sur un quart d’heure depuis le début du mois), cette dernière info ne sera pas présente pour tout le monde, cela dépend si le compteur la fourni ou pas.
+- Correction du décodage pour compatibilité avec les compteurs suisses
+- Ajout des codes 1.6.0 (maximum de la puissance moyenne prélevée sur un quart d’heure depuis le début du mois) & 2.6.0 (maximum de la puissance moyenne injectée sur un quart d’heure depuis le début du mois), cette dernière info ne sera pas présente pour tout le monde, cela dépend si le compteur la fournit ou pas.
 - Migration du démon PHP vers un démon Python pour améliorer la performance
 - Ajout d'un heartbeat interne au démon
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Mise à jour de l'icône
 
 ## 2024-10-17
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Jeedom v4.4 requis
 
 ## 2024-08-21
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 
 ## 2024-04-10
 
-- Mise à jour de dépendances
+- Mise à jour des dépendances
 
 ## 2024-03-03
 

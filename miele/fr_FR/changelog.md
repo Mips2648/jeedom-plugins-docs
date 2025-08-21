@@ -7,15 +7,22 @@ pluginId: miele
 
 # Beta
 
-- Ajout de log
-- Mise à jour de dépendances
+> **Attention**
+>
+> Refonte importante du plugin, toute l'implémentation de l'API Miele@Home a été réécrite en Python et le plugin utilise à présent un démon au lieu de cron. Il sera nécessaire de refaire le lien entre Jeedom et Miele@Home et de vous identifier à nouveau via la page de configuration du plugin après cette mise à jour.
+
+- Refonte du plugin : implémentation d'un démon Python pour se connecter à l'API Miele@Home et suppression des crons
+- Retour d'état en temps réel (précédemment il fallait attendre le cron minute)
+- Ajout d'une commande action **Mode** sur les appareils compatibles (réfrigérateur, congélateur, armoire à vin)
+- Ajout d'une commande action **Démarrer programme** sur les appareils compatibles (machine à laver, sèche-linge, lave-vaisselle, four, machine à café, robot aspirateur)
+- Mise à jour des dépendances
 
 # Stable
 
 ## 2025-04-18
 
-- Amélioration pour ne créer, si possible, que les commandes relevantes pour le type d'équipement
-- Mise à jour de dépendances
+- Amélioration pour ne créer, si possible, que les commandes pertinentes pour le type d'équipement
+- Mise à jour des dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
 
@@ -26,12 +33,12 @@ pluginId: miele
 
 ## 2024-06-11
 
-- Ajout de commandes infos température additionnelles pour les équipements ayant plus d'une sonde de température (ex: les appareils combinés)
+- Ajout de commandes infos température additionnelles pour les équipements ayant plus d'une sonde de température (ex : les appareils combinés)
 
 ## 2024-04-10
 
-- Modification interne de la gestion de dépendances pour compatibilité Jeedom v4.4
-- Mise à jour de dépendances
+- Modification interne de la gestion des dépendances pour compatibilité Jeedom v4.4
+- Mise à jour des dépendances
 
 ## 2022-10-17
 
@@ -39,22 +46,22 @@ pluginId: miele
 
 ## 2022-03-10
 
-- Fix d'un crash  lors de la synchronisation des informations de consommation suite à un changement de comportement de l'API Miele@Home
+- Correction d'un crash lors de la synchronisation des informations de consommation suite à un changement de comportement de l'API Miele@Home
 
 ## 2022-02-22
 
-- Ajout des commandes **Consommation eau** et **Consommation énergie** sur les appareils supportant cette fonctionnalité (voir documentation), il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir ces nouvelles commandes
+- Ajout des commandes **Consommation eau** et **Consommation énergie** sur les appareils supportant cette fonctionnalité (voir documentation), il faut créer les commandes manquantes sur l'équipement si vous souhaitez avoir ces nouvelles commandes
 
 ## 2021-12-20
 
-- Ajout des commandes **Définir niveau de ventilation** et **Définir couleurs** sur les Hôtes
-- Ajout des commandes **Allumer** et **Eteindre** sur les appareils supportant cette fonctionnalité (il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir ces nouvelles commandes)
-- Fix dû à un changement de comportement de l'API Miele@Home
+- Ajout des commandes **Définir niveau de ventilation** et **Définir couleurs** sur les hôtes
+- Ajout des commandes **Allumer** et **Éteindre** sur les appareils supportant cette fonctionnalité (il faut créer les commandes manquantes sur l'équipement si vous souhaitez avoir ces nouvelles commandes)
+- Correction due à un changement de comportement de l'API Miele@Home
 
 ## 2021-11-13
 
 - Mise à jour de l'API Miele@Home
-- Ajout d'une commande info **Nom du programme** qui retournera le nom du programme en cours sur les appareils supportant cette fonctionnalité (il faut créer les commandes manquantes sur l'équipement si vous souhaiter avoir cette nouvelle commande)
+- Ajout d'une commande info **Nom du programme** qui retournera le nom du programme en cours sur les appareils supportant cette fonctionnalité (il faut créer les commandes manquantes sur l'équipement si vous souhaitez avoir cette nouvelle commande)
 - Changement du mode d'authentification pour plus de sécurité
 - Nouvelle présentation de la liste des objets dans la configuration de l'équipement
 - Amélioration de la mise en page de la configuration de l'équipement et des commandes
@@ -66,7 +73,7 @@ pluginId: miele
 
 ## 2020-05-04
 
-- Fix un problème de dépendances sur Jeedom Smart
+- Correction d'un problème de dépendances sur Jeedom Smart
 
 ## 2020-04-13
 
@@ -78,7 +85,7 @@ pluginId: miele
 
 - Ajout des icônes par défaut sur certaines commandes actions
 - Affichage des unités dans l'écran des commandes
-- Ajout possibilité d'inverser les valeurs binaires
+- Ajout de la possibilité d'inverser les valeurs binaires
 
 ## 2020-04-03
 

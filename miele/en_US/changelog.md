@@ -15,7 +15,10 @@ pluginId: miele
 - Real-time status feedback (previously you had to wait for the cron minute)
 - Add an action command **Mode** on compatible appliances (fridge, freezer, wine cabinet)
 - Added an action command **Start program** on compatible appliances (washing machine, tumble dryer, dishwasher, oven, coffee machine, vacuum cleaner).
+- Added a binary command **State** which provides information on whether the device is on or off. The **On** and **Off** commands are linked to it.
+- Rename the old command **Status** to **Status description** to avoid conflict with the new command and better match its actual content.
 - Update dependencies
+- Python 3.11 required, it will be installed automatically if necessary.
 
 # Stable
 

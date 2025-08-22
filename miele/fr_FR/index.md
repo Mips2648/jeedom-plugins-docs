@@ -22,6 +22,8 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 Vous devez avoir un compte utilisateur Miele avec au moins un appareil compatible Miele@Home lié et enfin <a href="https://www.miele.com/f/com/en/register_api.aspx" target="_blank">activer l'accès à l'API</a>
 
+L'installation ou la mise à jour des dépendances s'effectue normalement de façon automatique. Si ce n'est pas le cas, vous pouvez lancer l'installation manuellement. Python 3.11 minimum est requis: il sera installé automatiquement si besoin, mais cela peut prendre du temps sur une petite configuration. Veuillez patienter et ne pas interrompre l'installation.
+
 # Configuration du plugin
 
 Dans la configuration du plugin, il faudra renseigner le _Client Id_ et le _Client Secret_ reçus permettant l'accès à l’API et sauvegarder.

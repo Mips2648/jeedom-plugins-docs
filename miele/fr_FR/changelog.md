@@ -16,6 +16,7 @@ pluginId: miele
 - Ajout d'une commande action **Mode** sur les appareils compatibles (réfrigérateur, congélateur, armoire à vin)
 - Ajout d'une commande action **Démarrer programme** sur les appareils compatibles (machine à laver, sèche-linge, lave-vaisselle, four, machine à café, robot aspirateur)
 - Mise à jour des dépendances
+- Python 3.11 requis, il sera installé automatiquement si nécessaire.
 
 # Stable
 

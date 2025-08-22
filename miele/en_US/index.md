@@ -49,7 +49,7 @@ In the device configuration page, there is a button to create the missing comman
 
 Each Miele device has the following commands, not all of them are applicable to all appliances:
 
-- **Status** & **Status description** indicates the (digital) device status and its description respectively (see below for list of possible statuses).
+- **Status** & **Status description** indicates the (numeric) device status and its description respectively (see below for list of possible statuses).
 - **State**: command info/binary indicating whether the device is on or off.
 - **Program type** display ongoing program (see below for a list of known values)
 - **Program name** gives the name of the program running on devices supporting this feature.

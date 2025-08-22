@@ -22,6 +22,8 @@ It is possible to get appliances information, to monitor them and execute some a
 In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 You must have a Miele account with at least one appliance compatible with Miele@Home linked to it and eventually <a href="https://www.miele.com/f/com/en/register_api.aspx" target="_blank">activate your access to the API</a>
 
+Dependencies are normally installed or updated automatically. If this is not the case, you can run the installation manually. Python 3.11 minimum is required: it will be installed automatically if necessary, but this may take some time on a small configuration. Please be patient and do not interrupt the installation.
+
 # Plugin configuration
 
 In the configuration of the plugin, you will need to fill in the _Client Id_ and the _Client Secret_ received allowing access to the API and then save.
@@ -47,21 +49,22 @@ In the device configuration page, there is a button to create the missing comman
 
 Each Miele device has the following commands, not all of them are applicable to all appliances:
 
-- **State** & **Status** gives the state of the device in string and numeric value respectively (see below for the list of possible states)
+- **Status** & **Status description** indicates the (digital) device status and its description respectively (see below for list of possible statuses).
+- **State**: command info/binary indicating whether the device is on or off.
 - **Program type** display ongoing program (see below for a list of known values)
 - **Program name** gives the name of the program running on devices supporting this feature.
 - **Phase** gives the current phase of the program
 - **Remaining time** gives the remaining time in hours and minutes before the end of the program.
-- **Start time**
+- **Start in** indicates the time until the next programmed start.
 - **Elapsed time** gives the elapsed time since the start of the program
 - **Program temperature** gives the target program temperature
 - **Temperature** gives the current temperature of the appliance (your oven is for example set to 180 ° C but only has 70 ° C)
 - **Notification** binary value indicating if a notification is active
 - **Error** binary value indicating if the device is in error
-- **Door** binary value indicating if the device door is open
+- **Door** binary value indicating whether a device door(s) is open
 - **Light** binary value indicating the light status of the device (if applicable)
 
-### List of values for the info "Status" = "State"
+### List of values for "Status" info
 
 - 1 = OFF
 - 2 = ON
@@ -129,7 +132,7 @@ This list is not exhaustive, there may be other values.
 
 The action commands below will be present on the device if the action is supported by the appliance. On top, to be able to perform an action, the appliance must be in a given status/state. For example, it is not possible to stop it if it was not started.
 
-- **Power on**, **Power off**
+- **On**, **Off**
 - **Start**, the device must be in 4-Programmed status and waiting to start
 - **Stop**, the device must be in 4-Programmed status and waiting to start, 5-Operating or 6-Pause
 - **Pause**

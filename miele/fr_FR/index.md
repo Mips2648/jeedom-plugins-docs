@@ -49,21 +49,22 @@ Dans la page de configuration d'un équipement, il existe un bouton pour créer 
 
 Chaque équipement Miele dispose des commandes suivantes, toutes ne sont pas forcément applicables à tous les appareils:
 
-- **Etat** & **Statut** donne l'état de l'appareil sous forme de chaîne de caractère et d'identifiant respectivement (voir ci-dessous pour la liste des états possibles)
+- **Statut** & **Description statut** indique l'état de l'appareil (numérique) et sa description respectivement (voir ci-dessous pour la liste des états possibles)
+- **Etat**: commande info/binaire indiquant si l'appareil est allumé ou éteint
 - **Type de programme** donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)
 - **Nom du programme** donne le nom du programme en cours sur les appareils supportant cette fonctionnalité.
 - **Phase** donne la phase en cours du programme
 - **Temps restant** donne le temps restant en heure et minute avant la fin du programme.
-- **Heure de démarrage**
+- **Démarrage dans** indique le temps avant le prochaine démarrage programmé
 - **Temps écoulé** donne le temps écoulé depuis le début du programme
 - **Température du programme** donne la température cible du programme
 - **Température** donne la température actuelle de l'appareil (votre four est par exemple réglé sur 180°C mais n'a que 70°C)
 - **Notification** valeur binaire indiquant si une notification est active
 - **Erreur** valeur binaire indiquant si l'appareil est en erreur
-- **Porte** valeur binaire indiquant si la porte de l'appareil est ouverte
+- **Porte** valeur binaire indiquant si une (des) porte(s) de l'appareil est ouverte
 - **Lumière** valeur binaire indiquant le statut de la lumière de l'appareil (si applicable)
 
-### Liste des valeurs pour l'info "Statut" = "Etat"
+### Liste des valeurs pour l'info "Statut"
 
 - 1 = OFF
 - 2 = ON
@@ -131,7 +132,7 @@ Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 
 Les commandes actions ci-dessous seront présentes sur les équipements si l'action est supportée par l'appareil. De plus, pour pouvoir effectuer une action il faut que l'appareil soit dans un statut/état donné. Il n'est par exemple pas possible de stopper celui-ci s'il n'était pas démarré.
 
-- **Allumer**, **Eteindre**
+- **On**, **Off**
 - **Démarrer**, l'appareil doit être en statut 4-Programmé et en attente de démarrage
 - **Arrêter**, l'appareil doit être en statut 4-Programmé et en attente de démarrage, 5-Fonctionnement ou 6-Pause
 - **Pause**

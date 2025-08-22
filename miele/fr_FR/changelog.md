@@ -15,6 +15,8 @@ pluginId: miele
 - Retour d'état en temps réel (précédemment il fallait attendre le cron minute)
 - Ajout d'une commande action **Mode** sur les appareils compatibles (réfrigérateur, congélateur, armoire à vin)
 - Ajout d'une commande action **Démarrer programme** sur les appareils compatibles (machine à laver, sèche-linge, lave-vaisselle, four, machine à café, robot aspirateur)
+- Ajout d'une commande **Etat** binaire qui donne l'information si l'appareil est allumé ou non. Les commandes **On** et **Off** y sont liés
+- Renommage de l'ancienne commande **Etat** en **Description statut** pour éviter le conflit avec la nouvelle commande et mieux correspondre à son contenu réel
 - Mise à jour des dépendances
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
 

@@ -27,21 +27,21 @@ L'installation ou la mise à jour des dépendances s'effectue normalement de fa�
 # Configuration du plugin
 
 Dans la configuration du plugin, il faudra renseigner le _Client Id_ et le _Client Secret_ reçus permettant l'accès à l’API et sauvegarder.
-Il faut démarrer le démon et vous pouvez ensuite cliquer sur le bouton _Lier Jeedom et Miele@Home_ et suivre les instructions: cela ouvrira un nouvel onglet sur le site de Miele dans lequel vous devrez vous connecter avec votre nom d'utilisateur et votre mot de passe Miele pour valider le lien.
+Démarrez le démon, puis cliquez sur le bouton Lier Jeedom et Miele@Home et suivez les instructions. Un nouvel onglet s'ouvrira sur le site de Miele, où vous devrez vous connecter avec vos identifiants Miele pour valider le lien.
 
-Si tout c'est déroulé sans erreur, en revenant sur la page de configuration, vous devriez voir que le statut de la connexion est à présent _OK_.
+Si tout s'est déroulé sans erreur, en revenant sur la page de configuration, vous devriez voir que le statut de la connexion est à présent _OK_.
 
 ![Configuration](../images/config.png "Configuration")
 
 # Les équipements
 
-Dès que l'authentification est réussie, le plugin synchronisera vos appareils. Il créera les appareils manquants avec leurs commandes et mettra à jour l'état de tout les appareils connectés. La mise à jour des commandes se fera ensuite en temps réel (tant que le démon est lancé)
+Dès que l'authentification est réussie, le plugin synchronisera vos appareils. Il créera les appareils manquants avec leurs commandes et mettra à jour l'état de tous les appareils connectés. La mise à jour des commandes se fera ensuite en temps réel (tant que le démon est lancé)
 
 > **Tip**
 >
-> Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement jeedom ne correspond plus à aucun appareil en votre possession, veuillez le supprimer manuellement.
+> Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement ne correspond plus à aucun appareil en votre possession, veuillez le supprimer manuellement.
 
-Dans la page de configuration d'un équipement, il existe un bouton pour créer les commandes manquantes sur celui-ci (dans le cas où vous auriez supprimé une commande par erreur par exemple).
+Dans la page de configuration d'un équipement, un bouton permet de recréer les commandes manquantes (utile si vous avez supprimé une commande par erreur).
 
 # Les commandes
 
@@ -49,20 +49,22 @@ Dans la page de configuration d'un équipement, il existe un bouton pour créer 
 
 Chaque équipement Miele dispose des commandes suivantes, toutes ne sont pas forcément applicables à tous les appareils:
 
-- **Statut** & **Description statut** indique l'état de l'appareil (numérique) et sa description respectivement (voir ci-dessous pour la liste des états possibles)
+- **Statut** & **Description statut**: indique l'état de l'appareil (numérique) et sa description respectivement (voir ci-dessous pour la liste des états possibles)
 - **Etat**: commande info/binaire indiquant si l'appareil est allumé ou éteint
-- **Type de programme** donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)
-- **Nom du programme** donne le nom du programme en cours sur les appareils supportant cette fonctionnalité.
-- **Phase** donne la phase en cours du programme
-- **Temps restant** donne le temps restant en heure et minute avant la fin du programme.
-- **Démarrage dans** indique le temps avant le prochaine démarrage programmé
-- **Temps écoulé** donne le temps écoulé depuis le début du programme
-- **Température du programme** donne la température cible du programme
-- **Température** donne la température actuelle de l'appareil (votre four est par exemple réglé sur 180°C mais n'a que 70°C)
-- **Notification** valeur binaire indiquant si une notification est active
-- **Erreur** valeur binaire indiquant si l'appareil est en erreur
-- **Porte** valeur binaire indiquant si une (des) porte(s) de l'appareil est ouverte
-- **Lumière** valeur binaire indiquant le statut de la lumière de l'appareil (si applicable)
+- **Type de programme**: donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)
+- **Nom du programme**: le nom du programme en cours sur les appareils supportant cette fonctionnalité.
+- **Phase**: la phase en cours du programme
+- **Temps restant**: le temps restant en heure et minute avant la fin du programme; format HHMM
+- **Démarrage dans**: le temps avant le prochain démarrage programmé; format HHMM
+- **Temps écoulé**: le temps écoulé depuis le début du programme; format HHMM
+- **Température du programme**: la température cible du programme
+- **Température**: la température actuelle de l'appareil (votre four est par exemple réglé sur 180°C mais n'a que 70°C)
+- **Notification**: valeur binaire indiquant si une notification est active
+- **Erreur**: valeur binaire indiquant si l'appareil est en erreur
+- **Porte**: valeur binaire indiquant si une (des) porte(s) de l'appareil est ouverte
+- **Lumière**: valeur binaire indiquant le statut de la lumière de l'appareil (si applicable)
+
+**Temps restant**, **Démarrage dans**, **Temps écoulé** sont donc des infos numériques au format HHMM directement utilisables dans un scénario par exemple (avec bloc _DANS_ ou _A_) mais si elles sont affichées dans un widget, le plugin se charge de les rendre lisibles et affichera la valeur sous la forme `hh:mm`, par exemple `01:30` ou `--:--` si la valeur est à 0; ce qui veut dire que l'info n'est pas pertinente dans l'état actuel de l'appareil, qu'il n'y a pas de programme en cours et qu'aucun programme n'est planifié.
 
 ### Liste des valeurs pour l'info "Statut"
 
@@ -115,7 +117,7 @@ Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 - **Vitesse de rotation** pour les machines à laver, valeur numérique en rpm.
 - **Niveau de séchage** pour les sèches linge, voir ci-dessous pour la liste des valeurs possibles
 - **Niveau de ventilation** pour les hottes, valeurs de 0 à 4
-- **Consommation eau** et **Consommation énergie** pour les machines à laver, les sèches linge et les laves-vaisselles
+- **Consommation eau** et **Consommation énergie** pour les machines à laver, les sèche-linges et les lave-vaisselles
 
 ### Liste des valeurs pour l'info "Niveau de séchage"
 
@@ -143,7 +145,7 @@ Les commandes actions ci-dessous seront présentes sur les équipements si l'act
 - **Allumer la lumière**
 - **Eteindre la lumière**
 - **Définir heure de démarrage**, l'appareil doit être en statut 4-Programmé et en attente de démarrage
-- **Définir niveau de ventilation** & **Définir couleurs**, pour les Hôtes
+- **Définir niveau de ventilation** & **Définir couleurs**, pour les Hottes
 
 # Changelog
 
@@ -151,7 +153,7 @@ Les commandes actions ci-dessous seront présentes sur les équipements si l'act
 
 # Support
 
-Si vous avez un problème, commencez par lire les derniers sujets en rapport avec le plugin sur [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+Si vous avez un problème, commencez par lire les derniers sujets en rapport avec le plugin sur [Community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pas à créer un nouveau sujet en n'oubliant pas de mettre le tag du plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
@@ -159,5 +161,5 @@ Il faudra au minimum fournir:
 
 - une capture d'écran de la page santé Jeedom
 - une capture d'écran de la page de configuration du plugin
-- tous les logs disponibles du plugin collés dans un `Texte préformaté` (bouton `</>` sur community), pas de fichiers!
+- tous les logs disponibles du plugin collés dans un bloc `Texte préformaté` (bouton `</>` sur Community), pas de fichiers!
 - selon les cas, une capture d'écran de l'erreur rencontrée, une capture d'écran de la configuration posant problème...

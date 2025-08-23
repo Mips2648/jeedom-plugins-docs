@@ -53,14 +53,13 @@ De plus, pour pouvoir effectuer une action il faut que l'appareil soit dans un s
 
 - **Rafraichir** : Rafraîchir les informations de l'appareil.
 - **Statut** & **Description statut** : indique l'état de l'appareil (numérique) et sa description respectivement (voir ci-dessous pour la liste des états possibles)
-- **Etat** : commande info/binaire indiquant si l'appareil est allumé ou éteint
 - **Erreur** : valeur binaire indiquant si l'appareil est en erreur
 
 ## Information & actions générales
 
 Vous trouverez ci-dessous les commandes disponibles sur différents appareils, selon qu'ils peuvent être allumés ou éteints, ou qu'ils disposent d'une porte ou d'un éclairage associé.
 
-- **Etat** : État binaire de l'appareil (allumé/éteint).
+- **Etat** : commande info/binaire indiquant si l'appareil est allumé ou éteint
 - **On** : Allumer l'appareil.
 - **Off** : Éteindre l'appareil.
 - **Notification** : valeur binaire indiquant si une notification est active
@@ -72,9 +71,9 @@ Vous trouverez ci-dessous les commandes disponibles sur différents appareils, s
 
 Ces commandes sont généralement présentes sur les lave-linge, sèche-linge, lave-vaisselle, machines à café, fours (traditionnels, vapeur, micro-ondes ou combinés), réfrigérateurs, congélateurs (ou combinés) et armoires à vin.
 
-- **Démarrer** : Démarrer l'appareil, l'appareil doit être en statut 4-Programmé et en attente de démarrage.
+- **Démarrer** : Démarrer l'appareil, l'appareil doit être en statut _4-Programmé et en attente de démarrage_.
 - **Pause** : Mettre l'appareil en pause.
-- **Arrêter** : Arrêter l'appareil, l'appareil doit être en statut 4-Programmé et en attente de démarrage, 5-Fonctionnement ou 6-Pause.
+- **Arrêter** : Arrêter l'appareil, l'appareil doit être en statut _4-Programmé et en attente de démarrage_, _5-Fonctionnement_ ou _6-Pause_.
 - **Type de programme** : donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)
 - **Nom du programme** : le nom du programme en cours sur les appareils supportant cette fonctionnalité.
 - **Phase** : la phase en cours du programme
@@ -110,7 +109,7 @@ Ces commandes sont généralement présentes sur les fours (traditionnels, vapeu
 
 ## Hotte
 
-- **Niveau de ventilation** : Valeurs de 1 à 4
+- **Niveau de ventilation** : Valeur de 1 à 4
 - **Définir niveau de ventilation** : Définir le niveau de ventilation (1 à 4)
 - **Définir couleurs** : Définir la couleur d'éclairage de l'appareil.
 

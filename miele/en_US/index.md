@@ -54,7 +54,7 @@ Each Miele device has the following commands, not all of them are applicable to 
 - **Program type**: indicates the current program (see below for a list of known possible values).
 - **Program name**: the name of the current program on devices supporting this feature.
 - **Phase**: the current phase of the program
-- **Time remaining**: the time remaining in hours and minutes before the end of the program; format HHMM
+- **Remaining time**: the time remaining in hours and minutes before the end of the program; format HHMM
 - **Start in**: time to next scheduled start; format HHMM
 - **Elapsed time**: time elapsed since program start; format HHMM
 - **Program temperature**: target program temperature

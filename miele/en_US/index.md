@@ -45,28 +45,85 @@ On the device configuration page, a button allows you to recreate missing comman
 
 # Commands
 
-## Info commands common to all appliances
+Below you'll find a description of all the commands that may exist on your device, depending on their type and functionality. It is normal that not all the commands described below are present on your device: this depends on each device, and the plugin handles this dynamically.
 
-Each Miele device has the following commands, not all of them are applicable to all appliances:
+On top, in order to perform an action, the device must be in a given status/state. For example, it is not possible to stop the device if it has not been started.
 
-- **Status** & **Status description**: indicates the (digital) device status and its description respectively (see below for list of possible statuses).
-- **State**: command info/binary indicating whether the device is on or off.
+## Common commands to all devices
+
+- **Refresh** : Refresh device information.
+- **Status** & **Status description** : indicates the device status (numeric) and its description respectively (see below for list of possible statuses).
+- **Error** : binary value indicating whether the device is in error.
+
+## General information & actions
+
+Below you'll find the commands available on different devices, depending on whether they can be switched on or off, or whether they have a door or light associated with them.
+
+- **State** : command info/binary indicating whether the device is on or off.
+- **On** : Switch on the device.
+- **Off**: Switch off the device.
+- **Notification** : binary value indicating if a notification is active
+- **Door** : binary value indicating whether one (or more) of the device's doors is open.
+- **Light** : binary value indicating device light status (if applicable)
+- **Turn on light** & **Turn off light**.
+
+## "Program" commands
+
+These commands are generally found on washing machines, tumble dryers, dishwashers, coffee machines, ovens (traditional, steam, microwave or combi), refrigerators, freezers (or combi) and wine cabinets.
+
+- **Start** : Start the device, the device must be in _4-Programmed and waiting to start_ status
+- **Pause** : Pause the device.
+- **Stop**: To stop the device, the device must be in status _4-Programmed and waiting to start_, _5-Operating_ or _6-Pause_.
 - **Program type**: indicates the current program (see below for a list of known possible values).
 - **Program name**: the name of the current program on devices supporting this feature.
 - **Phase**: the current phase of the program
 - **Remaining time**: the time remaining in hours and minutes before the end of the program; format HHMM
 - **Start in**: time to next scheduled start; format HHMM
 - **Elapsed time**: time elapsed since program start; format HHMM
+- **Start in**: command action to start the device within a given time (HHMM format).
+- **Start program**: Starts a specific program.
 - **Program temperature**: target program temperature
 - **Temperature**: the current temperature of the appliance (for example, your oven is set to 180°C but only 70°C).
-- **Notification**: binary value indicating if a notification is active
-- **Error**: binary value indicating whether the device is in error.
-- **Door**: binary value indicating whether one (or more) of the device's doors is open.
-- **Light**: binary value indicating device light status (if applicable)
 
 **Remaining time**, **Start in**, **Elapsed time** are therefore numerical info in HHMM format, directly usable in a scenario for example (with _IN_ or _AT_ block), but if they are displayed in a widget, the plugin takes care of making them readable and will display the value in the form `hh:mm`, for example `01:30` or `--:--` if the value is 0; this means that the info is not relevant to the current state of the device, that there is no program running and no program is scheduled.
 
-### List of values for "Status" info
+## "Temperature" commands
+
+These commands are generally found on ovens (traditional, steam, microwave or combi), fridges, freezers (or combi) and wine cabinets.
+
+- **Program 1 temperature**: Target temperature for program 1.
+- **Temperature 1** : Measured temperature 1.
+- **Program 2 temperature**: Target temperature for program 2.
+- **Temperature 2** : Measured temperature 2.
+- **Program 3 temperature**: Target temperature for program 3.
+- **Temperature 3** : Measured temperature 3.
+
+## Washing machine, tumble dryer, dishwasher
+
+- **Rotation speed** : Rotation speed per minute (rpm)
+- **Drying level** : See below for list of possible values
+- **Water consumption** : Current machine consumption in liters
+- **Energy consumption** : Current machine consumption in kWh
+- **Water forecast** : Water consumption forecast (in %).
+- **Energy forecast** : Energy consumption forecast (in %).
+
+## Hood
+
+- **Ventilation level** : Value from 1 to 4
+- **Set ventilation level** : Set ventilation level (1 to 4)
+- **Define colors**: Set the light color.
+
+## Fridge, freezer & wine cabinet
+
+- **Start Freezing** : Start super freezing mode.
+- **Stop Freezing** : Stop super freezing mode.
+- **Start Cooling** : Start supercooling mode.
+- **Stop Cooling** : Stop supercooling mode.
+- **Mode** : Select operating mode (Normal, Sabbath, Party, Holidays).
+
+# Possible values for info commands
+
+## Info command "Statut"
 
 - 1 = OFF
 - 2 = ON
@@ -86,7 +143,7 @@ Each Miele device has the following commands, not all of them are applicable to 
 - 146 = SUPERCOOLING_SUPERFREEZING
 - 255 = NOT_CONNECTED
 
-### List of values for "Program" info
+## Info command "Program"
 
 This list is not exhaustive, there may be other values.
 
@@ -95,11 +152,11 @@ This list is not exhaustive, there may be other values.
 - Automatic program
 - Cleaning-/Care program
 
-### Lists of known values for the "Phase" info
+## Info command "Phase"
 
-This list is not exhaustive, there may be other values.
+These lists are not exhaustive, other values may exist.
 
-#### Dishwasher
+### Dishwasher
 
 - Main Wash
 - Rinse
@@ -107,19 +164,14 @@ This list is not exhaustive, there may be other values.
 - Drying
 - Finished
 
-#### Oven & heated drawer
+### Oven and warming drawer
 
 - PreHeat
 - Program Running
 
-## Info commands specific to some appliances
+## Info command "Drying level"
 
-- **Rotation speed** for washing machines, numerical value in rpm.
-- **Drying level** for tumble dryers, see below for list of possible values
-- **Ventilation level** for hoods, values from 0 to 4
-- **Water consumption** and **Energy consumption** for washing machines, dryers and dishwashers
-
-### List of values for the info "Drying level"
+This list is not exhaustive, there may be other values.
 
 - No drying step
 - Extra dry
@@ -129,23 +181,6 @@ This list is not exhaustive, there may be other values.
 - Hand iron level 1
 - Hand iron level 2
 - Machine iron
-
-## Actions commands
-
-The action commands below will be present on the device if the action is supported by the appliance. On top, to be able to perform an action, the appliance must be in a given status/state. For example, it is not possible to stop it if it was not started.
-
-- **On**, **Off**
-- **Start**, the device must be in 4-Programmed status and waiting to start
-- **Stop**, the device must be in 4-Programmed status and waiting to start, 5-Operating or 6-Pause
-- **Pause**
-- **Start Freezing**, only for freezer type devices, the device must be in 5-Operating status
-- **Stop Freezing**, only for freezer type devices, the device must be in Freezing mode
-- **Start Cooling**, only for freezer type devices, the device must be in 5-Operating status
-- **Stop Cooling**, only for freezer type devices, the device must be in Cooling mode
-- **Switch on light**
-- **Switch off light**
-- **Set start time**, the device must be in 4-Programmed status and waiting to start
-- **Define ventilation level** & **Define colors**, for hoods
 
 # Changelog
 

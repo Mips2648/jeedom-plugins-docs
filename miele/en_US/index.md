@@ -26,8 +26,8 @@ Dependencies are normally installed or updated automatically. If this is not the
 
 # Plugin configuration
 
-In the configuration of the plugin, you will need to fill in the _Client Id_ and the _Client Secret_ received allowing access to the API and then save.
-You can then click on the _Link Jeedom and Miele@Home_ button and follow the instructions: this will open a new tab on the Miele website where you will need to log in with your Miele username and password to validate the link .
+In the plugin configuration, you'll need to enter the _Client Id_ and _Client Secret_ you've received to access the API, and save.
+Start the daemon, then click on the Link Jeedom and Miele@Home button and follow the instructions. A new tab will open on the Miele website, where you'll need to log in with your Miele credentials to validate the link.
 
 If everything went smoothly, when you return to the configuration page, you should see that the connection status is now _OK_.
 
@@ -39,9 +39,9 @@ As soon as authentication is successful, the plugin will synchronize your device
 
 > **Tip**
 >
-> The plugin will never delete a device in your Jeedom. If a jeedom device does not correspond to any appliance in your possession, please delete it manually.
+> The plugin will never delete a device in your Jeedom. If a device does not correspond to any appliance in your possession, please delete it manually.
 
-In the device configuration page, there is a button to create the missing commands on it (in case you have deleted a command by mistake for example).
+On the device configuration page, a button allows you to recreate missing commands (useful if you've deleted a command by mistake).
 
 # Commands
 
@@ -49,20 +49,22 @@ In the device configuration page, there is a button to create the missing comman
 
 Each Miele device has the following commands, not all of them are applicable to all appliances:
 
-- **Status** & **Status description** indicates the device status (numeric) and its description respectively (see below for list of possible statuses).
+- **Status** & **Status description**: indicates the (digital) device status and its description respectively (see below for list of possible statuses).
 - **State**: command info/binary indicating whether the device is on or off.
-- **Program type** display ongoing program (see below for a list of known values)
-- **Program name** gives the name of the program running on devices supporting this feature.
-- **Phase** gives the current phase of the program
-- **Remaining time** gives the remaining time in hours and minutes before the end of the program.
-- **Start in** indicates the time until the next programmed start.
-- **Elapsed time** gives the elapsed time since the start of the program
-- **Program temperature** gives the target program temperature
-- **Temperature** gives the current temperature of the appliance (your oven is for example set to 180 ° C but only has 70 ° C)
-- **Notification** binary value indicating if a notification is active
-- **Error** binary value indicating if the device is in error
-- **Door** binary value indicating whether a device door(s) is open
-- **Light** binary value indicating the light status of the device (if applicable)
+- **Program type**: indicates the current program (see below for a list of known possible values).
+- **Program name**: the name of the current program on devices supporting this feature.
+- **Phase**: the current phase of the program
+- **Time remaining**: the time remaining in hours and minutes before the end of the program; format HHMM
+- **Start in**: time to next scheduled start; format HHMM
+- **Elapsed time**: time elapsed since program start; format HHMM
+- **Program temperature**: target program temperature
+- **Temperature**: the current temperature of the appliance (for example, your oven is set to 180°C but only 70°C).
+- **Notification**: binary value indicating if a notification is active
+- **Error**: binary value indicating whether the device is in error.
+- **Door**: binary value indicating whether one (or more) of the device's doors is open.
+- **Light**: binary value indicating device light status (if applicable)
+
+**Remaining time**, **Start in**, **Elapsed time** are therefore numerical info in HHMM format, directly usable in a scenario for example (with _IN_ or _AT_ block), but if they are displayed in a widget, the plugin takes care of making them readable and will display the value in the form `hh:mm`, for example `01:30` or `--:--` if the value is 0; this means that the info is not relevant to the current state of the device, that there is no program running and no program is scheduled.
 
 ### List of values for "Status" info
 
@@ -113,7 +115,7 @@ This list is not exhaustive, there may be other values.
 ## Info commands specific to some appliances
 
 - **Rotation speed** for washing machines, numerical value in rpm.
-- **Drying level** for tumble dryers, see below for the list of possible values
+- **Drying level** for tumble dryers, see below for list of possible values
 - **Ventilation level** for hoods, values from 0 to 4
 - **Water consumption** and **Energy consumption** for washing machines, dryers and dishwashers
 
@@ -143,7 +145,7 @@ The action commands below will be present on the device if the action is support
 - **Switch on light**
 - **Switch off light**
 - **Set start time**, the device must be in 4-Programmed status and waiting to start
-- **Set ventilation step** & **Set colors**, for hoods
+- **Define ventilation level** & **Define colors**, for hoods
 
 # Changelog
 
@@ -151,7 +153,7 @@ The action commands below will be present on the device if the action is support
 
 # Support
 
-If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+If you have a problem, start by reading the latest plugin-related topics on [Community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
@@ -159,5 +161,5 @@ At a minimum, you will need to provide:
 
 - a screenshot of the Jeedom health page
 - a screenshot of the plugin's configuration page
-- all available plugin logs pasted into a `Preformatted Text` (button `</>` on community), no files!
+- all available plugin logs pasted into a `Preformatted Text` block (button `</>` on Community), no files!
 - depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...

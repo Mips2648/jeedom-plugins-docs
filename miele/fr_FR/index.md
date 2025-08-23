@@ -115,7 +115,7 @@ Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 ## Les commandes de type infos spécifiques à certains appareils
 
 - **Vitesse de rotation** pour les machines à laver, valeur numérique en rpm.
-- **Niveau de séchage** pour les sèches linge, voir ci-dessous pour la liste des valeurs possibles
+- **Niveau de séchage** pour les sèche-linges, voir ci-dessous pour la liste des valeurs possibles
 - **Niveau de ventilation** pour les hottes, valeurs de 0 à 4
 - **Consommation eau** et **Consommation énergie** pour les machines à laver, les sèche-linges et les lave-vaisselles
 

@@ -45,28 +45,86 @@ Dans la page de configuration d'un équipement, un bouton permet de recréer les
 
 # Les commandes
 
-## Les commandes de type infos communes à tous les appareils
+Ci-dessous, vous trouverez la description de toutes les commandes qui peuvent exister sur vos équipements, en fonction de leur type et de leur fonctionnalité. Il est normal que toutes les commandes décrites ci-dessous ne soient pas présentes sur vos équipements : cela dépend de chaque équipement, et le plugin gère cela dynamiquement.
 
-Chaque équipement Miele dispose des commandes suivantes, toutes ne sont pas forcément applicables à tous les appareils:
+De plus, pour pouvoir effectuer une action il faut que l'appareil soit dans un statut/état donné. Il n'est par exemple pas possible de stopper celui-ci s'il n'était pas démarré.
 
-- **Statut** & **Description statut**: indique l'état de l'appareil (numérique) et sa description respectivement (voir ci-dessous pour la liste des états possibles)
-- **Etat**: commande info/binaire indiquant si l'appareil est allumé ou éteint
-- **Type de programme**: donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)
-- **Nom du programme**: le nom du programme en cours sur les appareils supportant cette fonctionnalité.
-- **Phase**: la phase en cours du programme
-- **Temps restant**: le temps restant en heure et minute avant la fin du programme; format HHMM
-- **Démarrage dans**: le temps avant le prochain démarrage programmé; format HHMM
-- **Temps écoulé**: le temps écoulé depuis le début du programme; format HHMM
-- **Température du programme**: la température cible du programme
-- **Température**: la température actuelle de l'appareil (votre four est par exemple réglé sur 180°C mais n'a que 70°C)
-- **Notification**: valeur binaire indiquant si une notification est active
-- **Erreur**: valeur binaire indiquant si l'appareil est en erreur
-- **Porte**: valeur binaire indiquant si une (des) porte(s) de l'appareil est ouverte
-- **Lumière**: valeur binaire indiquant le statut de la lumière de l'appareil (si applicable)
+## Commandes communes à tous les appareils
+
+- **Rafraichir** : Rafraîchir les informations de l'appareil.
+- **Statut** & **Description statut** : indique l'état de l'appareil (numérique) et sa description respectivement (voir ci-dessous pour la liste des états possibles)
+- **Etat** : commande info/binaire indiquant si l'appareil est allumé ou éteint
+- **Erreur** : valeur binaire indiquant si l'appareil est en erreur
+
+## Information & actions générales
+
+Vous trouverez ci-dessous les commandes disponibles sur différents appareils, selon qu'ils peuvent être allumés ou éteints, ou qu'ils disposent d'une porte ou d'un éclairage associé.
+
+- **Etat** : État binaire de l'appareil (allumé/éteint).
+- **On** : Allumer l'appareil.
+- **Off** : Éteindre l'appareil.
+- **Notification** : valeur binaire indiquant si une notification est active
+- **Porte** : valeur binaire indiquant si une (des) porte(s) de l'appareil est ouverte
+- **Lumière** : valeur binaire indiquant le statut de la lumière de l'appareil (si applicable)
+- **Allumer la lumière** & **Eteindre la lumière**
+
+## Commandes "programme"
+
+Ces commandes sont généralement présentes sur les lave-linge, sèche-linge, lave-vaisselle, machines à café, fours (traditionnels, vapeur, micro-ondes ou combinés), réfrigérateurs, congélateurs (ou combinés) et armoires à vin.
+
+- **Démarrer** : Démarrer l'appareil, l'appareil doit être en statut 4-Programmé et en attente de démarrage.
+- **Pause** : Mettre l'appareil en pause.
+- **Arrêter** : Arrêter l'appareil, l'appareil doit être en statut 4-Programmé et en attente de démarrage, 5-Fonctionnement ou 6-Pause.
+- **Type de programme** : donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)
+- **Nom du programme** : le nom du programme en cours sur les appareils supportant cette fonctionnalité.
+- **Phase** : la phase en cours du programme
+- **Temps restant** : le temps restant en heure et minute avant la fin du programme; format HHMM
+- **Démarrage dans** : le temps avant le prochain démarrage programmé; format HHMM
+- **Temps écoulé** : le temps écoulé depuis le début du programme; format HHMM
+- **Démarrer dans** : Commande action pour démarrer l'appareil dans un délai donné (format HHMM).
+- **Démarrer programme** : Démarrer un programme spécifique.
+- **Température du programme** : la température cible du programme
+- **Température** : la température actuelle de l'appareil (votre four est par exemple réglé sur 180°C mais n'a que 70°C)
 
 **Temps restant**, **Démarrage dans**, **Temps écoulé** sont donc des infos numériques au format HHMM directement utilisables dans un scénario par exemple (avec bloc _DANS_ ou _A_) mais si elles sont affichées dans un widget, le plugin se charge de les rendre lisibles et affichera la valeur sous la forme `hh:mm`, par exemple `01:30` ou `--:--` si la valeur est à 0; ce qui veut dire que l'info n'est pas pertinente dans l'état actuel de l'appareil, qu'il n'y a pas de programme en cours et qu'aucun programme n'est planifié.
 
-### Liste des valeurs pour l'info "Statut"
+## Commandes "température"
+
+Ces commandes sont généralement présentes sur les fours (traditionnels, vapeur, micro-ondes ou combinés), réfrigérateurs, congélateurs (ou combinés) et armoires à vin.
+
+- **Température du programme 1** : Température cible du programme 1.
+- **Température 1** : Température mesurée 1.
+- **Température du programme 2** : Température cible du programme 2.
+- **Température 2** : Température mesurée 2.
+- **Température du programme 3** : Température cible du programme 3.
+- **Température 3** : Température mesurée 3.
+
+## Machine à laver, séche-linge, lave-vaisselle
+
+- **Vitesse de rotation** : Vitesse de rotation en tours par minute (rpm)
+- **Niveau de séchage** : Voir ci-dessous pour la liste des valeurs possibles
+- **Consommation eau** : Consommation actuelle de la machine en litre
+- **Consommation énergie** : Consommation actuelle de la machine en kWh
+- **Prévision eau** : Prévision de consommation d'eau (en %).
+- **Prévision énergie** : Prévision de consommation d'énergie (en %).
+
+## Hotte
+
+- **Niveau de ventilation** : Valeurs de 1 à 4
+- **Définir niveau de ventilation** : Définir le niveau de ventilation (1 à 4)
+- **Définir couleurs** : Définir la couleur d'éclairage de l'appareil.
+
+## Réfrigérateur, congélateur & armoire à vin
+
+- **Démarrer Freezing** : Démarrer le mode super congélation.
+- **Arrêter Freezing** : Arrêter le mode super congélation.
+- **Démarrer Cooling** : Démarrer le mode super refroidissement.
+- **Arrêter Cooling** : Arrêter le mode super refroidissement.
+- **Mode** : Sélectionner le mode de fonctionnement (Normal, Sabbat, Fête, Vacances).
+
+# Valeurs possibles des commandes infos
+
+## Commande info "Statut"
 
 - 1 = OFF
 - 2 = ON
@@ -86,7 +144,7 @@ Chaque équipement Miele dispose des commandes suivantes, toutes ne sont pas for
 - 146 = SUPERCOOLING_SUPERFREEZING
 - 255 = NOT_CONNECTED
 
-### Liste des valeurs pour l'info "Programme"
+## Commande info "Programme"
 
 Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 
@@ -95,11 +153,11 @@ Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 - Automatic program
 - Cleaning-/Care program
 
-### Liste des valeurs connues pour l'info "Phase"
+## Commande info "Phase"
 
-Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
+Ces listes ne sont pas exhaustives, il peut exister d'autres valeurs.
 
-#### Lave-vaisselle
+### Lave-vaisselle
 
 - Main Wash
 - Rinse
@@ -107,19 +165,14 @@ Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 - Drying
 - Finished
 
-#### Four & tiroir chauffant
+### Four et tiroir chauffant
 
 - PreHeat
 - Program Running
 
-## Les commandes de type infos spécifiques à certains appareils
+## Commande info "Niveau de séchage"
 
-- **Vitesse de rotation** pour les machines à laver, valeur numérique en rpm.
-- **Niveau de séchage** pour les sèche-linges, voir ci-dessous pour la liste des valeurs possibles
-- **Niveau de ventilation** pour les hottes, valeurs de 0 à 4
-- **Consommation eau** et **Consommation énergie** pour les machines à laver, les sèche-linges et les lave-vaisselles
-
-### Liste des valeurs pour l'info "Niveau de séchage"
+Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 
 - No drying step
 - Extra dry
@@ -129,23 +182,6 @@ Cette liste n'est pas exhaustive, il peut exister d'autres valeurs.
 - Hand iron level 1
 - Hand iron level 2
 - Machine iron
-
-## Les commandes actions
-
-Les commandes actions ci-dessous seront présentes sur les équipements si l'action est supportée par l'appareil. De plus, pour pouvoir effectuer une action il faut que l'appareil soit dans un statut/état donné. Il n'est par exemple pas possible de stopper celui-ci s'il n'était pas démarré.
-
-- **On**, **Off**
-- **Démarrer**, l'appareil doit être en statut 4-Programmé et en attente de démarrage
-- **Arrêter**, l'appareil doit être en statut 4-Programmé et en attente de démarrage, 5-Fonctionnement ou 6-Pause
-- **Pause**
-- **Démarrer Freezing**, uniquement pour les appareils de type surgélateur, l'appareil doit être en statut 5-Fonctionnement
-- **Arrêter Freezing**, uniquement pour les appareils de type surgélateur, l'appareil doit être en mode Freezing
-- **Démarrer Cooling**, uniquement pour les appareils de type congélateur, l'appareil doit être en statut 5-Fonctionnement
-- **Arrêter Cooling**, uniquement pour les appareils de type congélateur, l'appareil doit être en mode Cooling
-- **Allumer la lumière**
-- **Eteindre la lumière**
-- **Définir heure de démarrage**, l'appareil doit être en statut 4-Programmé et en attente de démarrage
-- **Définir niveau de ventilation** & **Définir couleurs**, pour les Hottes
 
 # Changelog
 

@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Beta
 
-n/a
+- Correction d'un bug sur la commande **Réglage hauteur de coupe**
 
 # Stable
 

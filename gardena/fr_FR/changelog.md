@@ -8,6 +8,7 @@ pluginId: gardena
 # Beta
 
 - Correction d'un bug sur la commande **Réglage hauteur de coupe**
+- Meilleur nettoyage de la mémoire utilisée lors d'une nouvelle synchronisation
 
 # Stable
 

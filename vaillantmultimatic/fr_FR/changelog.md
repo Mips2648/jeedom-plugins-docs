@@ -11,7 +11,7 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-n/a
+- Ajout d'une commande info **Pression d'eau** sur les systèmes disposant de cette info. Vous devez créer les commandes manquantes sur l'équipement *Système* si vous en avez besoin.
 
 # Stable
 

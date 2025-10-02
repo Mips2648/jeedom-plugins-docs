@@ -73,7 +73,7 @@ Voici un aperçu des commandes disponibles:
 - **Date début vacances**, **Date fin vacances** & **Définir dates vacances** sont respectivement les commandes donnant la date de début et de fin de vacances enregistrées ainsi que la commande pour définir ces dates
 - **Consigne vacances** et **Définir consigne vacances** permettent de connaître et de définir la consigne de température appliquée lorsque le mode vacances est actif.
 - **Mode vacances actif**, **Annuler mode vacances** sont les commandes permettant de connaître le statut et de désactiver le mode vacances.
-- **Température extérieure**, **Température de départ** sont des commandes info/numérique
+- **Température extérieure**, **Température de départ**, **Pression d'eau** sont des commandes info/numérique
 
 ## Eau chaude sanitaire
 

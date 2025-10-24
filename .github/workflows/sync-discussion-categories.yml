@@ -1,0 +1,48 @@
+name: Sync Discussion Categories
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  discussions: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies (jq and CLI)
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y jq
+          if ! command -v gh >/dev/null 2>&1; then
+            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+            sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+            sudo apt update -y
+            sudo apt install -y gh
+          fi
+
+      - name: Authenticate CLI
+        run: |
+          if [ -n "${{ secrets.DISCUSSIONS_TOKEN }}" ]; then
+            echo "${{ secrets.DISCUSSIONS_TOKEN }}" | gh auth login --with-token
+          else
+            echo "Using GITHUB_TOKEN (may be insufficient for discussion category write operations)."
+            echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+          fi
+
+      - name: Make script executable
+        run: chmod +x .github/scripts/sync-discussion-categories.sh
+
+      - name: Run sync script
+        env:
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+        run: bash .github/scripts/sync-discussion-categories.sh

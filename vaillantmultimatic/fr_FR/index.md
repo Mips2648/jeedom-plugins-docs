@@ -112,6 +112,14 @@ Chaque zone disposera des commandes suivantes:
 - **Durée mode forcé** contient la durée pendant laquelle le mode forcé sera actif _lors de la prochaine activation_
 - **Définir durée mode forcé** permet de modifier la durée pendant laquelle le mode forcé sera actif _lors de la prochaine activation_. Modifier cette durée n'a pas d'influence sur la durée restante si la température forcée était déjà activée, pour cela il faut à nouveau utiliser la commande **Activer température forcée**
 
+## Les circuits
+
+Il y aura un équipement de type _Circuit_ par circuit dans l'installation.
+Chaque circuit disposera des commandes suivantes:
+
+- **Etat**
+- **Temparature**
+
 ## Les pièces
 
 Lorsque vous avez des vannes et/ou des thermostats de la gamme ambiSENSE reliées au système, le plugin créera des équipements _Pièce_ correspondant aux pièces existantes dans l'app mobile.

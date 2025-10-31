@@ -73,7 +73,7 @@ Here is an overview of the available commands:
 - **Holiday start date**, **Holiday end date** & **Define holiday dates** are respectively the commands giving the start and end date of the recorded holiday as well as the command to define these dates
 - **Holiday setpoint** and **Define holiday setpoint** are used to find out and define the temperature setpoint applied when holiday mode is active.
 - **Holiday mode active**, **Cancel holiday mode** are the commands to know the status and to deactivate the holiday mode.
-- **Outside temperature**, **Starting temperature** are info/numeric commands
+- **Outdoor temperature**, **Flow temperature**, **Water pressure** are info/numeric commands
 
 ## Hot water
 
@@ -111,6 +111,14 @@ Each zone will have the following commands:
 - **Cancel forced temperature** action command to cancel forced mode
 - **Forced mode duration** contains the duration during which the forced mode will be active _during the next activation_
 - **Define forced mode duration** allows to modify the duration during which the forced mode will be active _during the next activation_. Modifying this duration has no influence on the remaining duration if the forced temperature was already activated, to do this you must again use the command **Activate forced temperature**
+
+## Circuits
+
+There will be one _Circuit_ device type per circuit in the system.
+Each circuit will have the following commands:
+
+- **Status**
+- **Temperature**
 
 ## Rooms
 

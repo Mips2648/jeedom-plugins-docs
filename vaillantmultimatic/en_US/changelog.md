@@ -11,7 +11,9 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-n/a
+- Add a command info **Water pressure** on systems with this info. You must create the missing commands on *System* device if you need it.
+- Add *Circuits* support. A new device will be created for each existing circuit in your installation with two command infos **Status** and **Temperature** for the moment.
+- Update dependencies
 
 # Stable
 

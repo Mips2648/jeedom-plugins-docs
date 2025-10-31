@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-- Possibilité de configurer des tags de ressources proxmox à éxclure, les équipements correspondant ne seront pas créé dans Jeedom
+- Possibilité de configurer des tags de ressources proxmox à exclure, les équipements correspondant ne seront pas créé dans Jeedom
 - Sauvegarde les tags définis sous proxmox sur les équipements Jeedom correspondant pour qu'ils puissent être utilisés dans la recherche sur le dashboard Jeedom
 
 # Stable

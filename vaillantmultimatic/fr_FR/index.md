@@ -118,7 +118,7 @@ Il y aura un équipement de type _Circuit_ par circuit dans l'installation.
 Chaque circuit disposera des commandes suivantes:
 
 - **Etat**
-- **Temparature**
+- **Température**
 
 ## Les pièces
 

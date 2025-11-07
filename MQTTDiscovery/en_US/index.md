@@ -37,8 +37,13 @@ Another way is to connect to your broker using MQTT Explorer (for example) and s
 
 ## List of known possible integrations
 
-This list is far from exhaustive, it would be impossible as there are so many of them. However, it may give some ideas:
+This list is far from exhaustive - there are so many that it would be impossible. However, it may give you some ideas:
 
+> **Note**
+>
+> This list presents, in alphabetical order, examples of integrations that have worked at one time or another. I do not guarantee that they will work or that they will be tested regularly. Feel free to try, but I can't be held responsible if it doesn't work.
+
+- [Chaudière Hargassner](https://community.jeedom.com/t/pilotage-chaudiere-hargassner-via-mqtt-discovery/142840)
 - [MG iSMART](https://github.com/SAIC-iSmart-API/saic-python-mqtt-gateway), see [tutorial on community](https://community.jeedom.com/t/tuto-integrer-sa-mg-dans-jeedom/118686)
 - [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT), see [explanation on community](https://community.jeedom.com/t/myfox-et-jedom-4-4/111828/14)
 - [Nuki Smart Lock Pro (3 & 4)](https://support.nuki.io/hc/fr/articles/12947926779409-MQTT-support)
@@ -48,6 +53,8 @@ This list is far from exhaustive, it would be impossible as there are so many of
 - [tydom2mqtt](https://tydom2mqtt.github.io/tydom2mqtt/#/introduction/)
 - [zigbee2mqtt](https://www.zigbee2mqtt.io/)
 - [zwave-js-ui](https://zwave-js.github.io/zwave-js-ui/#/)
+
+You can also find other applications compatible with MQTT Discovery on the [Home Assistant - Third-party tools](https://www.home-assistant.io/integrations/mqtt/#support-by-third-party-tools) website.
 
 # Installation
 

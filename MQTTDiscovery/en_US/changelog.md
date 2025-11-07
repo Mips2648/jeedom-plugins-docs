@@ -8,6 +8,7 @@ pluginId: MQTTDiscovery
 # Beta
 
 - Update dependencies
+- Add *step* management to command action cursor created for a *number* entity
 
 # Stable
 

@@ -11,11 +11,15 @@ pluginId: vaillantmultimatic
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2025-11-08
+
 - Ajout d'une commande info **Pression d'eau** sur les systèmes disposant de cette info. Vous devez créer les commandes manquantes sur l'équipement *Système* si vous en avez besoin.
 - Ajout de la gestion des *Circuits*. Un nouvel équipement par circuit existant sur votre installation sera créé avec pour l'instant la remontée de deux commande infos **Etat** et **Température**
 - Mise à jour des dépendances
-
-# Stable
 
 ## 2025-06-27
 

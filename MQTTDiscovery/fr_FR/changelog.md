@@ -7,10 +7,14 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-- Mise à jour de dépendances
-- Ajout de la gestion du *step* sur la commande action curseur créé pour une entité *number*
+n/a
 
 # Stable
+
+## 2025-11-30
+
+- Mise à jour de dépendances
+- Ajout de la gestion du *step* sur la commande action curseur créé pour une entité *number*
 
 ## 2025-06-27
 

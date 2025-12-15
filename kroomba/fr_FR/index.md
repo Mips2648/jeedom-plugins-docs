@@ -7,7 +7,7 @@ pluginId: kroomba
 
 # Description
 
-Plugin permettant de piloter exclusivement en local les robots aspirateurs et laveurs de sols de la marque iRobot.
+Plugin permettant de piloter **exclusivement en local** les robots aspirateurs et laveurs de sols de la marque iRobot.
 
 Le plugin a été testé avec succès sur beaucoup de modèles différents et la plupart des modèles wifi de la marque devraient être supportés, si vous avez un doute, testez par vous-même et vous serez fixé!
 Ce plugin ne fonctionne pas avec les anciens modèles d'aspirateurs robot Roomba munis d'une extension matérielle (type RooWifi ou Thinking Cleaner), il ne fonctionne qu'avec les modèles récents dotés d'une liaison Wifi.

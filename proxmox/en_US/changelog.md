@@ -7,10 +7,14 @@ pluginId: proxmox
 
 # Beta
 
-- Possibility of configuring proxmox resource tags to be excluded; the corresponding equipment will not be created in Jeedom.
-- Save tags defined under proxmox on the corresponding Jeedom devices so that they can be used in searches on the Jeedom dashboard
+n/a
 
 # Stable
+
+## 2025-11-08
+
+- Possibility of configuring proxmox resource tags to be excluded; the corresponding equipment will not be created in Jeedom.
+- Save tags defined under proxmox on the corresponding Jeedom devices so that they can be used in searches on the Jeedom dashboard
 
 ## 2025-08-11
 

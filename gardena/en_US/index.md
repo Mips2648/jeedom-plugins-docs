@@ -7,8 +7,7 @@ pluginId: gardena
 
 # Description
 
-Plugin to integrate all devices from Gardena Smart System (Water Control, sensor, irrigation control, power socket and Sileno mower) as well as Husqvarna Automower Connect robots.
-It is possible to access device data, monitor them and perform actions (depending on the device, see below for more details)
+Plugin that allows you to integrate all devices in the Gardena Smart System range (Water Control, sensor, irrigation control, power socket, and Sileno mower) as well as Husqvarna Automower Connect robots with internet connectivity (i.e., not Connect@Home models or any other models with Bluetooth connectivity only, for example).You can access device data, monitor devices, and perform certain actions (depending on the device; see below for more details).
 
 > **Important**
 >
@@ -170,11 +169,11 @@ For the widget to work well you must perform the following configurations:
 
 ![Advance configuration](../images/advance_config.png "Advance configuration")
 
-2. Take a snapshot of the mowing area (on Google Maps for example), name the file *home.png* for example and then copy the image to the *plugins/gardena/data/* folder on your Jeedom (via the file explorer integrated into Jeedom for example)
-3. Identify the geographical coordinates (latitude and longitude) of the lower left corner and the upper right corner of the area corresponding to the capture.
-4. Enter the coordinates taken above in the list of Widget Parameters: *latMin*, *longMin*, *latMax* and *longMax* are mandatory.
+1. Take a snapshot of the mowing area (on Google Maps for example), name the file *home.png* for example and then copy the image to the *plugins/gardena/data/* folder on your Jeedom (via the file explorer integrated into Jeedom for example)
+2. Identify the geographical coordinates (latitude and longitude) of the lower left corner and the upper right corner of the area corresponding to the capture.
+3. Enter the coordinates taken above in the list of Widget Parameters: *latMin*, *longMin*, *latMax* and *longMax* are mandatory.
 If you have named your file other than *home.png* or if you want to test another capture, encode the file name in the *imgFile* parameter
-5. The other parameters are optional:
+4. The other parameters are optional:
 
 ![Widget configuration](../images/config_widget.png "Widget configuration")
 

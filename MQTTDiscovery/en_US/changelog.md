@@ -7,10 +7,14 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-- Update dependencies
-- Add *step* management to command action cursor created for a *number* entity
+- Fix: command updates did not work in some cases when the configuration used MQTT wildcards (the *+* sign in the topic), particularly in the case of OMG's *RTL_433toMQTT* gateway.
 
 # Stable
+
+## 2025-11-30
+
+- Update dependencies
+- Add *step* management to command action cursor created for a *number* entity
 
 ## 2025-06-27
 

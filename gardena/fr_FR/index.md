@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Description
 
-Plugin permettant d'intégrer tous les appareils de la gamme Gardena Smart System (Water Control, sensor, irrigation control, power socket et Sileno mower) ainsi que les robots Husqvarna Automower Connect.
+Plugin permettant d'intégrer tous les appareils de la gamme Gardena Smart System (Water Control, sensor, irrigation control, power socket et Sileno mower) ainsi que les robots Husqvarna Automower Connect avec connectivé internet (donc pas les modèles Connect@Home ou tout autre modèle avec connectivité uniquement bluetooth par exemple).
 Il est possible d'accéder aux données des appareils, de les monitorer et d'effectuer certaine actions (en fonction de l'appareil, voir ci-dessous pour plus de détails)
 
 > **Important**
@@ -170,11 +170,11 @@ Pour que le widget fonctionne bien vous devez effectuer les configurations suiva
 
 ![Configuration avancée](../images/advance_config.png "Configuration avancée")
 
-2. Prenez une capture de la zone de tonte (sur Google Maps par exemple), nommez le fichier *maison.png* par exemple et ensuite copiez l’image dans le dossier *plugins/gardena/data/* sur votre Jeedom (via l'explorateur de fichier intégré à Jeedom par exemple)
-3. Identifiez les coordonnées géographiques (latitude et longitude) du coin inférieur gauche et du coin supérieur droit de la zone correspondante à la capture.
-4. Encodez les coordonnées prises ci-dessus dans la liste des Paramètres du widgets: *latMin*, *longMin*, *latMax* et *longMax* sont obligatoires.
+1. Prenez une capture de la zone de tonte (sur Google Maps par exemple), nommez le fichier *maison.png* par exemple et ensuite copiez l’image dans le dossier *plugins/gardena/data/* sur votre Jeedom (via l'explorateur de fichier intégré à Jeedom par exemple)
+2. Identifiez les coordonnées géographiques (latitude et longitude) du coin inférieur gauche et du coin supérieur droit de la zone correspondante à la capture.
+3. Encodez les coordonnées prises ci-dessus dans la liste des Paramètres du widgets: *latMin*, *longMin*, *latMax* et *longMax* sont obligatoires.
 Si vous avez nommé votre fichier autrement que *maison.png* ou si vous voulez tester une autre capture, encodez le nom du fichier dans le paramètre *imgFile*
-5. Les autres paramètres sont optionnels:
+4. Les autres paramètres sont optionnels:
 
 ![Configuration widget](../images/config_widget.png "Configuration widget")
 

@@ -11,9 +11,13 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-- Délai de rafraichissement de 15 minutes par défaut (modifiable dans la configuration)
+n/a
 
 # Stable
+
+## 2026-01-01
+
+- Délai de rafraichissement de 15 minutes par défaut (modifiable dans la configuration)
 
 ## 2025-11-08
 

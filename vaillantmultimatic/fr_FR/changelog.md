@@ -18,6 +18,7 @@ n/a
 ## 2026-01-01
 
 - Délai de rafraichissement de 15 minutes par défaut (modifiable dans la configuration)
+- Mise à jour de dépendances
 
 ## 2025-11-08
 

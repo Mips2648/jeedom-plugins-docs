@@ -7,9 +7,13 @@ pluginId: SmartMeterP1
 
 # Beta
 
-- Update dependencies
+n/a
 
 # Stable
+
+## 2026-01-01
+
+- Update dependencies
 
 ## 2025-06-27
 

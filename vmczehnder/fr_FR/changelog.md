@@ -18,28 +18,28 @@ n/a
 
 ## 2024-12-25
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
 
 ## 2024-09-16
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Version Debian 11 minimum requise
 
 ## 2024-06-01
 
 - Compatibilité du service distant avec Debian 12
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2024-04-10
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2024-02-27
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2023-10-03
 

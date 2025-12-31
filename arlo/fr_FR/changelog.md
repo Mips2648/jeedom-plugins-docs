@@ -102,7 +102,7 @@ Voir également [ce sujet sur community](https://community.jeedom.com/t/nouvelle
 - Amélioration des champs password
 - Compatibilité Jeedom v4.4
 - Exclusion des captures & vidéos sauvées localement du backup Jeedom pour réduire la taille de ceux-ci
-- Mise à jour des dépendances pour résoudre un blocage lors de la connexion au démarrage du démon
+- Mise à jour de dépendances pour résoudre un blocage lors de la connexion au démarrage du démon
 - Modification sur la gestion des dépendances pour éviter des conflits potentiels avec d'autres plugins
 
 > En principe les dépendances seront réinstallées automatiquement lors de la mise à jour du plugin. Si ce n'est pas le cas veuillez les relancer manuellement.

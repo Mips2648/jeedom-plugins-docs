@@ -19,37 +19,37 @@ pluginId: vaillantmultimatic
 
 - Ajout d'une commande info **Pression d'eau** sur les systèmes disposant de cette info. Vous devez créer les commandes manquantes sur l'équipement *Système* si vous en avez besoin.
 - Ajout de la gestion des *Circuits*. Un nouvel équipement par circuit existant sur votre installation sera créé avec pour l'instant la remontée de deux commande infos **Etat** et **Température**
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2025-06-27
 
 - Adaptation des commandes en fonction du modèle du contrôleur (VRC700 ou autres) ; si besoin, vous devrez créer les commandes manquantes via le bouton correspondant dans la page de l'équipement
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2025-02-24
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2024-12-25
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Mise à jour de l'icône
 
 ## 2024-10-11
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Jeedom v4.4 requis
 
 ## 2024-09-16
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Version Debian 11 minimum requise
 
 ## 2024-06-11
 
 - Modification interne du démon
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2024-04-15
 

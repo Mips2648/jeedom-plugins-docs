@@ -19,7 +19,7 @@ n/a
 ## 2025-08-11
 
 - Ajout du choix d'inclure ou d'exclure la RAM (l'état de la VM) lors d'un snapshot d'une VM ; **Attention** : vérifiez vos scénarios, le comportement par défaut a changé, la RAM est exclue par défaut à présent
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2025-04-18
 
@@ -35,13 +35,13 @@ n/a
 
 - Diminution des timeouts lors des requêtes à Proxmox
 - Correction d'une erreur dans le cas où l'un des nœuds d'un cluster est déconnecté (dans le cas d'une installation avec de multiples nœuds)
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
 
 ## 2024-09-16
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Version Debian 11 minimum requise
 
@@ -52,7 +52,7 @@ n/a
 
 ## 2024-04-11
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2024-03-18
 

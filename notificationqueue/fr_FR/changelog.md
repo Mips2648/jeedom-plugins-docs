@@ -13,7 +13,7 @@ n/a
 
 ## 2025-06-27
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2024-12-25
 
@@ -26,7 +26,7 @@ n/a
 
 ## 2024-03-18
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2023-10-02
 

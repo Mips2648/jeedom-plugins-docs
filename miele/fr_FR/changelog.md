@@ -18,7 +18,7 @@ pluginId: miele
 - Ajout d'une commande **Etat** binaire qui donne l'information si l'appareil est allumé ou non. Les commandes **On** et **Off** y sont liés
 - Renommage de l'ancienne commande **Etat** en **Description statut** pour éviter le conflit avec la nouvelle commande et mieux correspondre à son contenu réel
 - Adaptation des commandes **Temps restant**, **Démarrage dans** et **Temps écoulé**, voir documentation
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
 
 # Stable
@@ -26,7 +26,7 @@ pluginId: miele
 ## 2025-04-18
 
 - Amélioration pour ne créer, si possible, que les commandes pertinentes pour le type d'équipement
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Mise à jour de l'icône
 - Jeedom v4.4 requis
 
@@ -42,7 +42,7 @@ pluginId: miele
 ## 2024-04-10
 
 - Modification interne de la gestion des dépendances pour compatibilité Jeedom v4.4
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2022-10-17
 

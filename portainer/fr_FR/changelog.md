@@ -14,17 +14,17 @@ n/a
 ## 2025-04-18
 
 - Corrections sur le panel : certaines traductions n'étaient pas appliquées
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2025-02-22
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Mise à jour de l'icône
 
 ## 2024-09-16
 
 - Optimisations
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 - Ajout de commandes sur les équipements de type container : **Statut santé**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(Voir documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 - Version Debian 11 minimum requise

@@ -13,40 +13,40 @@ n/a
 
 ## 2025-08-11
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2025-04-18
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2024-12-25
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Mise à jour de l'icône
 
 ## 2024-10-17
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Jeedom v4.4 requis
 
 ## 2024-09-16
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Version Debian 11 minimum requise
 
 ## 2024-08-21
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
 
 ## 2024-07-02
 
 - Mise à jour du démon
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2024-04-10
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 
 ## 2022-10-17
 

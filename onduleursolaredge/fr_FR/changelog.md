@@ -13,12 +13,12 @@ n/a
 
 ## 2024-12-25
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Mise à jour de l'icône
 
 ## 2024-10-17
 
-- Mise à jour des dépendances
+- Mise à jour de dépendances
 - Jeedom v4.4 requis
 
 ## 2024-09-16

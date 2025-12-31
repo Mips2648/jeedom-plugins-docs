@@ -7,9 +7,14 @@ pluginId: kroomba
 
 # Beta
 
-- Meilleur validation de la présence du mot de passe lors de la découverte en mode cloud
+n/a
 
 # Stable
+
+## 2026-01-01
+
+- Meilleur validation de la présence du mot de passe lors de la découverte en mode cloud
+- Mise à jour de dépendances
 
 ## 2025-06-27
 

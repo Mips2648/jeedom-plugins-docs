@@ -7,9 +7,14 @@ pluginId: kroomba
 
 # Beta
 
-- Better validation of password presence during cloud discovery
+n/a
 
 # Stable
+
+## 2026-01-01
+
+- Better validation of password presence during cloud discovery
+- Update dependencies
 
 ## 2025-06-27
 

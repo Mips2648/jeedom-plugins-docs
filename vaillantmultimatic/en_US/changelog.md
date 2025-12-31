@@ -11,9 +11,14 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-- Default refresh interval of 15 minutes (can be changed in the configuration)
+n/a
 
 # Stable
+
+## 2026-01-01
+
+- Default refresh interval of 15 minutes (can be changed in the configuration)
+- Update dependencies
 
 ## 2025-11-08
 

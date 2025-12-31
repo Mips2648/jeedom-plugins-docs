@@ -7,10 +7,15 @@ pluginId: gardena
 
 # Beta
 
-- Fix a bug on the command **Cutting height** adjustment
-- Better cleaning of memory used during a new synchronization
+n/a
 
 # Stable
+
+## 2026-01-01
+
+- Fix a bug on the command **Cutting height** adjustment
+- Better cleaning of memory used during a new synchronization
+- Update dependencies
 
 ## 2025-08-11
 

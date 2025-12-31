@@ -7,9 +7,13 @@ pluginId: tgw
 
 # Beta
 
-- Fix an error in the antenna installation script
+n/a
 
 # Stable
+
+## 2026-01-01
+
+- Fix an error in the antenna installation script
 
 ## 2025-08-11
 

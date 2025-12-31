@@ -7,10 +7,15 @@ pluginId: gardena
 
 # Beta
 
-- Correction d'un bug sur la commande **Réglage hauteur de coupe**
-- Meilleur nettoyage de la mémoire utilisée lors d'une nouvelle synchronisation
+n/a
 
 # Stable
+
+## 2026-01-01
+
+- Correction d'un bug sur la commande **Réglage hauteur de coupe**
+- Meilleur nettoyage de la mémoire utilisée lors d'une nouvelle synchronisation
+- Mise à jour de dépendances
 
 ## 2025-08-11
 
@@ -135,7 +140,7 @@ pluginId: gardena
 ## 2021-10-04
 
 - Ajout de 3 commandes donnant la position GPS sur la tondeuse Husqvarna: **Latitude**, **Longitude** et **Position**
-- Mise à jour des dépendances: cette mise à jour nécessite de réinstaller les dépendances: cela devrait être fait automatiquement lors de la mise à jour du plugin.
+- Mise à jour de dépendances: cette mise à jour nécessite de réinstaller les dépendances: cela devrait être fait automatiquement lors de la mise à jour du plugin.
 
 ## 2021-08-22
 

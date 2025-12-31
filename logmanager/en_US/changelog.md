@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2026-01-01
+
+- Fix on chronological widget display for multiline logs
+
 ## 2025-06-27
 
 - Update dependencies

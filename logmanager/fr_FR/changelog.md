@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2026-01-01
+
+- Fix sur l'affichage dans le widget par ordre chronologique pour les logs multilignes
+
 ## 2025-06-27
 
 - Mise à jour de dépendances

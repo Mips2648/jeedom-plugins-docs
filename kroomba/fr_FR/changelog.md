@@ -11,7 +11,7 @@ n/a
 
 # Stable
 
-## 2026-01-01
+## 2026-01-02
 
 - Meilleur validation de la présence du mot de passe lors de la découverte en mode cloud
 - Mise à jour de dépendances

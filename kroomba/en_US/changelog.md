@@ -11,7 +11,7 @@ n/a
 
 # Stable
 
-## 2026-01-01
+## 2026-01-02
 
 - Better validation of password presence during cloud discovery
 - Update dependencies

@@ -7,9 +7,13 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-- Fix: command updates did not work in some cases when the configuration used MQTT wildcards (the *+* sign in the topic), particularly in the case of OMG's *RTL_433toMQTT* gateway.
+n/a
 
 # Stable
+
+## 2026-01-02
+
+- Fix: command updates did not work in some cases when the configuration used MQTT wildcards (the *+* sign in the topic), particularly in the case of OMG's *RTL_433toMQTT* gateway.
 
 ## 2025-11-30
 

@@ -196,5 +196,5 @@ Il faudra au minimum fournir:
 
 - une capture d'écran de la page santé Jeedom
 - une capture d'écran de la page de configuration du plugin
-- tous les logs disponibles du plugin collés dans un bloc `Texte préformaté` (bouton `</>` sur Community), pas de fichiers!
+- tous les logs disponibles du plugin, en niveau _INFO_, collés dans un bloc `Texte préformaté` (bouton `</>` sur Community), pas de fichiers!
 - selon les cas, une capture d'écran de l'erreur rencontrée, une capture d'écran de la configuration posant problème...

@@ -121,12 +121,12 @@ A **point** in InfluxDB represents a single data record that has 4 components: a
 
 Below the relation implemented by the plugin between InfluxDB concepts and Jeedom concepts:
 
-Jeedom | InfluxDB | Description
---- | --- | ---
-Command name | Measurement | A measurement in InfluxDB is conceptually similar to a SQL table.
-Command value date | Timestamp | It's the timestamp of the data
-Device name | Field(key) | A field key is similar to a column name in a SQL table.
-Command value | Field(value) | It is the value of the point.
+| Jeedom | InfluxDB | Description |
+| --- | --- | --- |
+| Command name | Measurement | A measurement in InfluxDB is conceptually similar to a SQL table. |
+| Command value date | Timestamp | It's the timestamp of the data |
+| Device name | Field(key) | A field key is similar to a column name in a SQL table. |
+| Command value | Field(value) | It is the value of the point. |
 
 ## Tags
 
@@ -135,12 +135,12 @@ Tags can be used in queries to filter result.
 The following tags can be associated with each point sent, they must be selected in the device configuration page.
 This list can be amended if you need more:
 
-Tag(key) | Tag(value)
---- | ---
-Plugin | plugin name
-Object | Object/room name in Jeedom or "None"
-CommandName | command name
-GenericType | generic type of command
+| Tag(key) | Tag(value) |
+| --- | --- |
+| Plugin | plugin name |
+| Object | Object/room name in Jeedom or "None" |
+| CommandName | command name |
+| GenericType | generic type of command |
 
 # Changelog
 
@@ -156,5 +156,5 @@ At a minimum, you will need to provide:
 
 - a screenshot of the Jeedom health page
 - a screenshot of the plugin's configuration page
-- all available plugin logs pasted into a `Preformatted Text` (button `</>` on community), no files!
+- all available plugin logs, at _INFO_ level, pasted into a `Preformatted Text` (button `</>` on community), no files!
 - depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...

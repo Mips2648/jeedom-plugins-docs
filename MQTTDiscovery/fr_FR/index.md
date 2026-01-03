@@ -121,7 +121,7 @@ Si un équipement inconnu est ajouté (voir **Gestion des équipements** pour sa
 
 Pour finir, vous pouvez configurer les infos suivantes (optionnelles):
 
-- *Cycle* définit la fréquence d'envoi, en secondes, des informations vers Jeedom: une valeur numérique entre `0.5` et `10`
+- *Cycle* définit la fréquence d'envoi, en secondes, des informations vers Jeedom: une valeur numérique entre `0.1` et `10`
 - *Port socket interne* définit le port sur lequel écoute le démon. Ne changez pas cette valeur sans avoir posé la question sur [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 > **Important**

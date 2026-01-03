@@ -8,6 +8,7 @@ pluginId: MQTTDiscovery
 # Beta
 
 - Protection contre les configurations incorrectes
+- Changement de la valeur du cycle d'envoi du démon par défaut de 1s à 0.5s et changement de la valeur minimum autorisée de 0.5s à 0.1s
 
 # Stable
 

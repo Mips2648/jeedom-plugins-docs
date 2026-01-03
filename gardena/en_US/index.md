@@ -315,5 +315,5 @@ At a minimum, you will need to provide:
 
 - a screenshot of the Jeedom health page
 - a screenshot of the plugin's configuration page
-- all available plugin logs pasted into a `Preformatted Text` (button `</>` on community), no files!
+- all available plugin logs, at *INFO* level, pasted into a `Preformatted Text` (button `</>` on community), no files!
 - depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...

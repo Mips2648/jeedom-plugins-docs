@@ -309,5 +309,7 @@ At a minimum, you will need to provide:
 
 - a screenshot of the Jeedom health page
 - a screenshot of the plugin's configuration page
-- all available plugin logs pasted into a `Preformatted Text` (button `</>` on community), no files!
+- all available plugin logs, at *INFO* level, pasted into a `Preformatted Text` (button `</>` on community), no files!
 - depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
+
+If the question concerns the discovery or commands of a device, then you'll need to provide the *Discovery info*: copy this info via the button on the device page and paste **without modification** into a `Preformatted text` block.

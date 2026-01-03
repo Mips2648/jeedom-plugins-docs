@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Beta
 
-n/a
+- Protection against incorrect configuration
 
 # Stable
 

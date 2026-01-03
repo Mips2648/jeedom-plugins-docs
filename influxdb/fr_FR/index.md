@@ -121,12 +121,12 @@ Un **point** dans InfluxDB représente une donnée caractérisée par 4 composan
 
 Ci-dessous le lien qui est fait par le plugin entre les concepts InfluxDB et les concepts Jeedom:
 
-Jeedom | InfluxDB | Description
---- | --- | ---
-Nom de la commande | Measurement | Une mesure dans InfluxDB est similaire à une table SQL.
-Date valeur de la commande | Timestamp | C'est l'information d'horodatage de la donnée.
-Nom de l'équipement | Field(key) | La clé d'un champ est similaire au nom d'une colonne dans une table SQL.
-Valeur de la commande | Field(value) | C'est la donnée du point.
+| Jeedom | InfluxDB | Description |
+| --- | --- | --- |
+| Nom de la commande | Measurement | Une mesure dans InfluxDB est similaire à une table SQL. |
+| Date valeur de la commande | Timestamp | C'est l'information d'horodatage de la donnée. |
+| Nom de l'équipement | Field(key) | La clé d'un champ est similaire au nom d'une colonne dans une table SQL. |
+| Valeur de la commande | Field(value) | C'est la donnée du point. |
 
 ## Les tags
 
@@ -135,12 +135,12 @@ Ils permettent de filtrer les résultats lors d'une recherche.
 Les tags suivant sont peuvent être associés à chaque point envoyé, il faut les sélectionner dans la page de configuration de l'équipement.
 Cette liste peut être complétée s'il vous en fallait d'autres:
 
-Tag(key) | Tag(value)
---- | ---
-Plugin | nom du plugin
-Object | nom de l'objet/pièce Jeedom ou "Aucun"
-CommandName | nom de la commande
-GenericType | type générique de la commande
+| Tag(key) | Tag(value) |
+| --- | --- |
+| Plugin | nom du plugin |
+| Object | nom de l'objet/pièce Jeedom ou "Aucun" |
+| CommandName | nom de la commande |
+| GenericType | type générique de la commande |
 
 # Changelog
 

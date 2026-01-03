@@ -311,3 +311,5 @@ Il faudra au minimum fournir:
 - une capture d'écran de la page de config du plugin
 - tous les logs disponibles du plugin, en niveau *INFO*, collés dans un `Texte préformaté` (bouton `</>` sur community), pas de fichiers!
 - selon les cas, une capture d'écran de l'erreur rencontrée, une capture d'écran de la configuration posant problème...
+
+Si la question concerne la découverte ou les commandes d'un équipement, alors il faudra fournir les *Info de découverte*: copiez ces infos via le bouton dans la page de l'équipement et collez **sans modification** dans un bloc `Texte préformaté`.

@@ -7,13 +7,13 @@ pluginId: logmanager
 
 # Beta
 
-n/a
+- Correction du nombre de lignes à afficher qui n'est pas respecté si inférieur à 200.
 
 # Stable
 
 ## 2026-01-01
 
-- Fix sur l'affichage dans le widget par ordre chronologique pour les logs multilignes
+- Correction de l'affichage dans le widget par ordre chronologique pour les logs multilignes
 
 ## 2025-06-27
 

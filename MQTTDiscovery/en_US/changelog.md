@@ -8,6 +8,7 @@ pluginId: MQTTDiscovery
 # Beta
 
 - Protection against incorrect configuration
+- Change default daemon send cycle value from 1s to 0.5s and change minimum allowed value from 0.5s to 0.1s
 
 # Stable
 

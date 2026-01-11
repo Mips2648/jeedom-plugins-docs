@@ -121,7 +121,7 @@ If an unknown device is added (see **Devices Management** to find out how), only
 
 Finally, you can configure the following information (optional):
 
-- *Cycle* defines the frequency of sending information to Jeedom, in seconds: a numerical value between `0.5` and `10`
+- *Cycle* defines the frequency, in seconds, at which information is sent to Jeedom: a numerical value between `0.1` and `10`.
 - *Internal socket port* defines the port on which the daemon is listening. Do not change this value without asking the question on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
 > **Important**

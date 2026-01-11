@@ -7,9 +7,13 @@ pluginId: logmanager
 
 # Beta
 
-- Correction du nombre de lignes à afficher qui n'est pas respecté si inférieur à 200.
+n/a
 
 # Stable
+
+## 2026-01-12
+
+- Correction du nombre de lignes à afficher qui n'est pas respecté si inférieur à 200.
 
 ## 2026-01-01
 

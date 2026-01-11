@@ -17,7 +17,7 @@ n/a
 
 ## 2026-01-01
 
-- Fix on chronological widget display for multiline logs
+- Fix on chronological widget display for multi lines logs
 
 ## 2025-06-27
 

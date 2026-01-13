@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Correction sur la lecture du mode d'un équipement de type *location* qui provoque une erreur lorsque la connexion avec le cloud n'est plus active
 
 # Stable
 

@@ -7,7 +7,7 @@ pluginId: worxLandroidS
 
 # Beta
 
-n/a
+- Correction d'un warning sous php 8
 
 # Stable
 

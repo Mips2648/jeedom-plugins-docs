@@ -7,7 +7,7 @@ pluginId: fail2ban
 
 # Beta
 
-n/a
+- Ajout des dépendances pour installer fail2ban-client
 
 # Stable
 

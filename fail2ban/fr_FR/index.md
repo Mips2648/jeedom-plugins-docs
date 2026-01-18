@@ -11,7 +11,9 @@ Plugin pour monitorer fail2ban. Il permet de remonter toutes les infos instantan
 
 Il permet également de bannir et de débannir une adresse ip.
 
-Ce plugin ne permet pas d'installer ni de configurer fail2ban sur le système.
+> **Important**
+>
+> Ce plugin ne permet pas d'installer ni de configurer fail2ban sur le système.
 
 # Versions supportées
 

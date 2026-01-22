@@ -16,6 +16,10 @@ Ce plugin permet la détection et l'appairage automatique des robots Roomba & Br
 
 Il comporte un Widget desktop.
 
+> **Important**
+>
+> De nouveaux modèles de robots arrivent, la série x05, avec une nouvelle application *Roomba Home*. Ces modèles ne sont, pour l'instant, pas compatible avec le plugin et je n'ai aucune idée si ca le sera à l'avenir.
+
 # Versions supportées
 
 | Composant | Version                     |

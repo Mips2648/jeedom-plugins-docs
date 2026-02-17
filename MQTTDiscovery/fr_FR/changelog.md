@@ -10,6 +10,7 @@ pluginId: MQTTDiscovery
 - Protection contre les configurations incorrectes
 - Changement de la valeur du cycle d'envoi du démon par défaut de 1s à 0.5s et changement de la valeur minimum autorisée de 0.5s à 0.1s
 - Adaptation pour gérer les configurations d'équipements de type *Cover* sans *state_topic*
+- Jeedom v4.5 requis
 
 # Stable
 

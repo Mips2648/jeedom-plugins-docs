@@ -48,7 +48,7 @@ Elle permet aussi à chacun de savoir à tout moment où créer une branche et s
 
 ## Cas d’usage concrets
 
-### 1. Nouveau développement
+### 1. Nouveau développement ou correction/modification non-urgente
 
 > **Tip**
 >
@@ -56,7 +56,7 @@ Elle permet aussi à chacun de savoir à tout moment où créer une branche et s
 
 ```mermaid
 flowchart TD
-A[Début : Nouveau dev] --> B["Créer une branche feature depuis develop nommée 'feat-[name]'"]
+A[Début : Nouveau dev] --> B["Créer une branche feature depuis develop nommée 'feat-[name]' ou 'fix-[name]'"]
 B --> C["Développer la fonctionnalité (en local)"]
 C --> D[Commits réguliers + push]
 D --> E[Créer une Pull Request vers develop]
@@ -64,7 +64,7 @@ E --> F[Revue de code]
 F -->|Validée| G[Fusion dans develop]
 F -->|Modifications demandées| C
 G --> H[Tests d'intégration sur develop]
-H --> I["Suppresion de la branche 'feat-[name]'"]
+H --> I["Suppresion de la branche 'feat-[name]' ou 'fix-[name]'"]
 I --> Z[Fin]
 ```
 
@@ -77,17 +77,17 @@ I --> Z[Fin]
 ```mermaid
 flowchart TD
 
-A[Nouvelle release] --> B["Créer une branche release depuis develop nommée 'v[x.y]'"]
+A[Nouvelle release] --> B["Créer une branche release depuis develop nommée 'rel-v[x.y]'"]
 B --> C[Test intégration]
 C --> D{Correction nécessaire?}
-D -->|Non| X["Créer une Pull Request de 'v[x.y]' vers master"]
+D -->|Non| X["Créer une Pull Request de 'rel-v[x.y]' vers master"]
 
-D -->|Oui| E["Créer une branche 'fix-[name]' depuis la release v[x.y]"]
+D -->|Oui| E["Créer une branche 'fix-[name]' depuis la release 'rel-v[x.y]'"]
 E --> F[Implémenter le fix + commit]
-F --> G["Créer une Pull Request vers v[x.y]"]
+F --> G["Créer une Pull Request vers 'rel-v[x.y]'"]
 G --> H[Revue de code]
 H -->|Modifications demandées| F
-H -->|Validée| J["Fusion dans v[x.y]"]
+H -->|Validée| J["Fusion dans 'rel-v[x.y]'"]
 J -->K["Créer une Pull Request vers develop"]
 K -->L["Fusion dans develop"]
 L-->C

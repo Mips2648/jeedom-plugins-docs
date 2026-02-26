@@ -42,15 +42,17 @@ Les branches **release** permettent d’effectuer les ajustements pré-release (
 
 Gitflow est particulièrement adapté aux équipes nombreuses. Même si le “noyau” de développeur sur le core Jeedom est petit, les développeurs tiers sont potentiellement nombreux et pas forcément au courant des conventions que les autres développeurs suivent.
 
-La standardisation et la structure GitFlow permet de forcer la discipline nécessaire et elle garantit que tout changement fait sera systématiquement revu par d’autres développeurs (de l'équipep principale)
+La standardisation et la structure GitFlow permet de forcer la discipline nécessaire et elle garantit que tout changement fait sera systématiquement revu par d’autres développeurs (de l'équipe principale)
 
 Elle permet aussi à chacun de savoir à tout moment où créer une branche et sur quelle branche fusionner les changements.
 
 ## Cas d’usage concrets
 
-### Nouveau développement
+### 1. Nouveau développement
 
-Ce flow sera le même que l’on soit un développeur membre, dans ce cas la branche peut être créé directement dans le repo jeedom/core, ou un développeur tiers, dans ce cas la branche sera créée dans un fork du projet.
+> **Tip**
+>
+> Ce flow sera le même que l’on soit un développeur membre de l'organisation, dans ce cas la branche peut être créé directement dans le repo jeedom/core, ou un développeur tiers, dans ce cas la branche sera créée dans un fork du projet.
 
 ```mermaid
 flowchart TD
@@ -66,7 +68,11 @@ H --> I["Suppresion de la branche 'feat-[name]'"]
 I --> Z[Fin]
 ```
 
-### Nouvelle release
+### 2. Nouvelle release
+
+> **Tip**
+>
+> Ce flow est, en principe, réservé aux membres de l'organisation. Les développeurs tiers ne peuvent pas initier une nouvelle release.
 
 ```mermaid
 flowchart TD
@@ -95,12 +101,16 @@ Pour mitiger l’impact, on peut éventuellement adapter le flow en faisant un s
 
 On remarque aussi que les numéros de version de **release** sont bien sous la forme x.y (ex: 4.5, 4.6), donc major.minor. Le processus de **release** n’est pas le processus pour les (hot)fix (4.5.3, 4.5.4 etc).
 
-### Les corrections
+### 3. Les corrections
 
 Il faut distinguer 2 cas:
 
 - soit c’est un fix non-urgent, qui peut potentiellement attendre plusieurs semaines/mois avant d’arriver en production => on utilise le flow “Nouveau développement” mais en nommant la branche “fix-[name]” au lieu de “feat-[name]”
 - soit c’est un “hot”fix, c’est “urgent” et dans ce cas, voir ci-dessous
+
+> **Tip**
+>
+> Ce flow sera le même que l’on soit un développeur membre de l'organisation, dans ce cas la branche peut être créé directement dans le repo jeedom/core, ou un développeur tiers, dans ce cas la branche sera créée dans un fork du projet.
 
 ```mermaid
 flowchart TD

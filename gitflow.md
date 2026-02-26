@@ -55,7 +55,7 @@ Ce flow sera le même que l’on soit un développeur membre, dans ce cas la bra
 ```mermaid
 flowchart TD
 A[Début : Nouveau dev] --> B["Créer une branche feature depuis develop nommée 'feat-[name]'"]
-B --> C[Développer la fonctionnalité (en local)]
+B --> C["Développer la fonctionnalité (en local)"]
 C --> D[Commits réguliers + push]
 D --> E[Créer une Pull Request vers develop]
 E --> F[Revue de code]
@@ -94,7 +94,7 @@ Pour mitiger l’impact, on peut éventuellement adapter le flow en faisant un s
 
 On remarque aussi que les numéros de version de **release** sont bien sous la forme x.y (ex: 4.5, 4.6), donc major.minor. Le processus de **release** n’est pas le processus pour les (hot)fix (4.5.3, 4.5.4 etc).
 
-### Fix
+### Les corrections
 
 Il faut distinguer 2 cas:
 

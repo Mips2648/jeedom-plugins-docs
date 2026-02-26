@@ -63,6 +63,7 @@ F -->|Validée| G[Fusion dans develop]
 F -->|Modifications demandées| C
 G --> H[Tests d'intégration sur develop]
 H --> I["Suppresion de la branche 'feat-[name]'"]
+I --> Z[Fin]
 ```
 
 ### Nouvelle release

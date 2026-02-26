@@ -15,7 +15,7 @@ Gitflow repose sur deux branches principales :
 
 Gitflow définit également deux types de branches de support :
 
-- Les branches **release** servent à finaliser une version ou corriger des bugs mineurs avant une mise en production. Elles sont généralement créées à partir de **develop**. Une fois stabilisées, elles sont fusionnées dans **master**. Attention, il ne faut plus ajouter de nouvelles fonctionnalités dans la branche **release** mais uniquement des corrections ou des changement en préparation de la release telle que par exemple la mise à jour du numéro de version.
+- Les branches **release** servent à finaliser une version ou corriger des bugs mineurs avant une mise en production. Elles sont généralement créées à partir de **develop**. Une fois stabilisées, elles sont fusionnées dans **master**. Attention, il ne faut plus ajouter de nouvelles fonctionnalités dans les branches **release** mais uniquement des corrections ou des changement en préparation de la release telle que par exemple la mise à jour du numéro de version.
 - Les branches **hotfix** sont destinées aux correctifs *urgents*. Elles sont créées à partir de **master** et, une fois le correctif prêt, elles sont fusionnées à la fois dans **master** et dans **develop** afin de garantir que la correction soit présente dans les futures versions.
 
 ### Vue générale
@@ -28,8 +28,8 @@ Gitflow définit également deux types de branches de support :
 
 Le modèle Gitflow définit un flux de travail structuré pour:
 
-- gérer les fonctionnalités et fix non-urgent: branches **develop**: feature et fix non urgent
-- les releases: branche **release**
+- gérer les fonctionnalités et fix non-urgent: branches **develop**: feature et fix
+- les releases: branches **release**
 - et les correctifs urgents: branches **hotfix**
 
 ### Développement parallèle & gestion des releases
@@ -96,10 +96,10 @@ X --> Y[Fusion dans master + tag version]
 Y --> Z["🎉 Release publiée avec succès ! 🎉"]
 ```
 
-Comme on peut le voir, les corrections en mode *release* sont plus “lourdes” à réaliser car il va falloir à chaque fois faire un PR dans la branche **release** en cours et dans la branch **develop** ensuite pour ne pas perdre la trace des fix.
-Pour mitiger l’impact, on peut éventuellement adapter le flow en faisant un seul PR & merge back de la branch **release** vers **develop** à la fin du processus (attention, ca augmente le risque de conflit) mais idéalement, il faut avoir testé chaque intégration le plus complétement possible dans **develop** avant de commencer le processus de *release*.
+Comme on peut le voir, les corrections en mode *release* sont plus “lourdes” à réaliser car il va falloir à chaque fois faire un PR dans la branche **release** en cours et dans la branche **develop** ensuite pour ne pas perdre la trace des fix.
+Pour mitiger l’impact, on peut éventuellement adapter le flow en faisant un seul PR & merge back de la branche **release** vers **develop** à la fin du processus (attention, ca augmente le risque de conflit) mais idéalement, il faut avoir testé chaque intégration le plus complétement possible dans **develop** avant de commencer le processus de *release*.
 
-On remarque aussi que les numéros de version de **release** sont bien sous la forme x.y (ex: 4.5, 4.6), donc major.minor. Le processus de **release** n'est pas le processus pour les (hot)fix (4.5.3, 4.5.4 etc). Voir [plus d'information sur le semantic versioning](https://semver.org/)
+On remarque aussi que les numéros de version de **release** sont bien sous la forme x.y (ex: 4.5, 4.6), donc *major.minor*. Le processus de **release** n'est pas le processus pour les (hot)fix (4.5.3, 4.5.4 etc). Voir [plus d'information sur le semantic versioning](https://semver.org/)
 
 ### 3. Les corrections
 

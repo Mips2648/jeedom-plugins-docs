@@ -3,27 +3,45 @@
 ## Structure générale du modèle GitFlow
 
 La structure GitFlow est un standard d’organisation de repo git, comme l’est “Trunk-based”, l’autre grand standard qui se démarque.
+
 Gitflow repose sur deux branches principales :
-La branche master sert de référence pour les versions destinées à la production. Elle peut être taguée à différents moments pour identifier des versions ou des releases. Les autres branches ne sont fusionnées dans master qu’après validation et tests complets.
-La branche develop est l’environnement de travail quotidien, où les fonctionnalités en cours de développement sont intégrées. Lorsqu’une nouvelle fonctionnalité est ajoutée, on crée une branche de courte durée à partir de develop (une branche feature). Une fois la fonctionnalité revue et validée, elle est fusionnée dans develop.
-Attention: jamais aucun commit directement dans une de ses deux branches
+
+- La branche **master** sert de référence pour les versions destinées à la production. Elle peut être taguée à différents moments pour identifier des versions ou des releases. Les autres branches ne sont fusionnées dans **master** qu’après validation et tests complets.
+- La branche **develop** est l’environnement de travail quotidien, où les fonctionnalités en cours de développement sont intégrées. Lorsqu’une nouvelle fonctionnalité est ajoutée, on crée une branche de courte durée à partir de **develop** (une branche feature). Une fois la fonctionnalité revue et validée, elle est fusionnée dans **develop**.
+
+> **Important**
+>
+> Jamais aucun commit directement dans une de ses deux branches
+
 Gitflow définit également deux types de branches de support :
-Les branches release servent à finaliser une version ou corriger des bugs mineurs avant une mise en production. Elles sont généralement créées à partir de develop. Une fois stabilisées, elles sont fusionnées dans master.
-Les branches hotfix sont destinées aux correctifs urgents. Elles sont créées à partir de main et, une fois le correctif prêt, elles sont fusionnées à la fois dans master et dans develop afin de garantir que la correction soit présente dans les futures versions.
+
+- Les branches **release** servent à finaliser une version ou corriger des bugs mineurs avant une mise en production. Elles sont généralement créées à partir de **develop**. Une fois stabilisées, elles sont fusionnées dans **master**.
+- Les branches **hotfix** sont destinées aux correctifs urgents. Elles sont créées à partir de **master** et, une fois le correctif prêt, elles sont fusionnées à la fois dans **master** et dans **develop** afin de garantir que la correction soit présente dans les futures versions.
+
+![gitflow](gitflow.png)
 
 ## Avantages du modèle Gitflow
 
-Workflow clair et prévisible
-Le modèle Gitflow définit un flux de travail structuré pour
-gérer les fonctionnalités et fix non-urgent: branches develop, feature et fix
-les releases: branche “release”
-et les correctifs urgents: branches hotfix
-Développement parallèle & gestion des releases
+### Workflow clair et prévisible
+
+Le modèle Gitflow définit un flux de travail structuré pour:
+
+- gérer les fonctionnalités et fix non-urgent: branches **develop**, feature et fix
+- les releases: branche “release”
+- et les correctifs urgents: branches hotfix
+
+### Développement parallèle & gestion des releases
+
 Gitflow permet aux développeurs de travailler en parallèle sur différentes fonctionnalités (branche feature) sans être bloqué par les tâches des autres développeurs, y compris pendant la préparation d’un release.
-Les branches release permettent d’effectuer les ajustements pré-release (corrections, documentation, tâches spécifiques à la version) sans perturber le développement continu sur develop.
-Standardisation et discipline
+
+Les branches release permettent d’effectuer les ajustements pré-release (corrections, documentation, tâches spécifiques à la version) sans perturber le développement continu sur **develop**.
+
+### Standardisation et discipline
+
 Gitflow est particulièrement adapté aux équipes nombreuses; Même si le “noyau” de développeur sur le core est petit, les développeurs tiers sont potentiellement nombreux et pas forcément au courant des conventions que les autres développeurs suivent.
+
 La standardisation et la structure GitFlow permet de forcer la discipline nécessaire et elle garantit que tout changement fait sera systématiquement revu par d’autres développeurs.
+
 Elle permet aussi à chacun de savoir à tout moment où créer une branche et sur quelle branche fusionner les changements.
 
 ## Cas d’usage concrets
@@ -49,8 +67,8 @@ G --> H[Tests d'intégration sur develop]
 
 ### Nouvelle release
 
-Comme on peut le voir, les fix en mode release sont plus “lourds” à faire car il va falloir à chaque fois faire un PR dans la branche release en cours et dans la branch develop ensuite pour ne pas perdre la trace des fix
-Pour mitiger l’impact, on peut éventuellement adapter le flow en faisant un seul PR & merge back de la branch release vers develop à la fin du processus (attention, ca augmente le risque de conflit) mais idéalement, il faut avoir tester le mieux possible avant de commencer le processus de releas.
+Comme on peut le voir, les fix en mode release sont plus “lourds” à faire car il va falloir à chaque fois faire un PR dans la branche release en cours et dans la branch **develop** ensuite pour ne pas perdre la trace des fix
+Pour mitiger l’impact, on peut éventuellement adapter le flow en faisant un seul PR & merge back de la branch release vers **develop** à la fin du processus (attention, ca augmente le risque de conflit) mais idéalement, il faut avoir tester le mieux possible avant de commencer le processus de releas.
 
 On remarque aussi que les numéros de version de release sont bien sous la forme x.y (ex: 4.5, 4.6), donc major.minor. Le processus de release n’est pas le processus pour les (hot)fix (4.5.3, 4.5.4 etc).
 

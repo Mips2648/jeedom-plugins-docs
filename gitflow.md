@@ -96,10 +96,10 @@ X --> Y[Fusion dans master + tag version]
 Y --> Z["🎉 Release publiée avec succès ! 🎉"]
 ```
 
-Comme on peut le voir, les corrections en mode *release* sont plus “lourdes” à réaliser car il va falloir à chaque fois faire un PR dans la branche **release** en cours et dans la branch **develop** ensuite pour ne pas perdre la trace des fix
+Comme on peut le voir, les corrections en mode *release* sont plus “lourdes” à réaliser car il va falloir à chaque fois faire un PR dans la branche **release** en cours et dans la branch **develop** ensuite pour ne pas perdre la trace des fix.
 Pour mitiger l’impact, on peut éventuellement adapter le flow en faisant un seul PR & merge back de la branch **release** vers **develop** à la fin du processus (attention, ca augmente le risque de conflit) mais idéalement, il faut avoir testé chaque intégration le plus complétement possible dans **develop** avant de commencer le processus de *release*.
 
-On remarque aussi que les numéros de version de **release** sont bien sous la forme x.y (ex: 4.5, 4.6), donc major.minor. Le processus de **release** n’est pas le processus pour les (hot)fix (4.5.3, 4.5.4 etc).
+On remarque aussi que les numéros de version de **release** sont bien sous la forme x.y (ex: 4.5, 4.6), donc major.minor. Le processus de **release** n'est pas le processus pour les (hot)fix (4.5.3, 4.5.4 etc). Voir [plus d'information sur le semantic versioning](https://semver.org/)
 
 ### 3. Les corrections
 

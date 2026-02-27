@@ -4,7 +4,7 @@
 
 La structure GitFlow est un standard d’organisation de repo git, comme l’est “Trunk-based”, l’autre grand standard qui se démarque.
 
-Gitflow repose sur deux branches principales :
+Gitflow repose sur deux branches principales:
 
 - La branche **master** sert de référence pour les versions destinées à la production. Elle peut être taguée à différents moments pour identifier des versions ou des releases. Les autres branches ne sont fusionnées dans **master** qu’après validation et tests complets.
 - La branche **develop** est l’environnement de travail quotidien, où les fonctionnalités en cours de développement sont intégrées. Lorsqu’une nouvelle fonctionnalité est ajoutée, on crée une branche de courte durée à partir de **develop** (une branche feature). Une fois la fonctionnalité revue et validée, elle est fusionnée dans **develop**.
@@ -13,9 +13,9 @@ Gitflow repose sur deux branches principales :
 >
 > Jamais aucun commit directement dans une de ses deux branches
 
-Gitflow définit également deux types de branches de support :
+Gitflow définit également deux types de branches de support:
 
-- Les branches **release** servent à finaliser une version ou corriger des bugs mineurs avant une mise en production. Elles sont généralement créées à partir de **develop**. Une fois stabilisées, elles sont fusionnées dans **master**. Attention, il ne faut plus ajouter de nouvelles fonctionnalités dans les branches **release** mais uniquement des corrections ou des changement en préparation de la release telle que par exemple la mise à jour du numéro de version.
+- Les branches **release** servent à finaliser une version ou corriger des bugs mineurs avant une mise en production. Elles sont généralement créées à partir de **develop**. Une fois stabilisées, elles sont fusionnées dans **master**. Attention, il ne faut plus ajouter de nouvelles fonctionnalités dans les branches **release** mais uniquement des corrections ou des changements en préparation de la release telle que par exemple la mise à jour du numéro de version.
 - Les branches **hotfix** sont destinées aux correctifs *urgents*. Elles sont créées à partir de **master** et, une fois le correctif prêt, elles sont fusionnées à la fois dans **master** et dans **develop** afin de garantir que la correction soit présente dans les futures versions.
 
 ### Vue générale
@@ -28,7 +28,7 @@ Gitflow définit également deux types de branches de support :
 
 Le modèle Gitflow définit un flux de travail structuré pour:
 
-- gérer les fonctionnalités et fix non-urgent: branches **develop**: feature et fix
+- gérer les fonctionnalités et fix non-urgent: branches **develop**, feature et fix
 - les releases: branches **release**
 - et les correctifs urgents: branches **hotfix**
 
@@ -50,13 +50,17 @@ Elle permet aussi à chacun de savoir à tout moment où créer une branche et s
 
 ### 1. Nouveau développement ou correction/modification non-urgente
 
+Ajout d'une fonctionnalité ou correction non urgente, développée sur une branche courte puis fusionnée dans `develop`.  
+**Règles de nommage**: `feat-[sujet-court]` ou `fix-[sujet-court]`.  
+**Durée typique**: 2-7 jours pour un fix, 1-4 semaines pour une feature.
+
 > **Tip**
 >
 > Ce flow sera le même que l’on soit un développeur membre de l'organisation, dans ce cas la branche peut être créé directement dans le repo jeedom/core, ou un développeur tiers, dans ce cas la branche sera créée dans un fork du projet.
 
 ```mermaid
 flowchart TD
-A[Début : Nouveau dev] --> B["Créer une branche feature depuis develop nommée 'feat-[name]' ou 'fix-[name]'"]
+A[Début: Nouveau dev] --> B["Créer une branche feature depuis develop nommée 'feat-[name]' ou 'fix-[name]'"]
 B --> C["Développer la fonctionnalité (en local)"]
 C --> D[Commits réguliers + push]
 D --> E[Créer une Pull Request vers develop]
@@ -69,6 +73,10 @@ I --> Z[Fin]
 ```
 
 ### 2. Nouvelle release
+
+Préparation d'une version majeure/mineure à partir de `develop`, stabilisation, puis fusion dans `master` avec tag.  
+**Règle de nommage**: `rel-vx.y`.  
+**Durée typique**: < 1 semaine.
 
 > **Tip**
 >
@@ -97,7 +105,7 @@ Y --> Z["🎉 Release publiée avec succès ! 🎉"]
 ```
 
 Comme on peut le voir, les corrections en mode *release* sont plus “lourdes” à réaliser car il va falloir à chaque fois faire un PR dans la branche **release** en cours et dans la branche **develop** ensuite pour ne pas perdre la trace des fix.
-Pour mitiger l’impact, on peut éventuellement adapter le flow en faisant un seul PR & merge back de la branche **release** vers **develop** à la fin du processus (attention, ca augmente le risque de conflit) mais idéalement, il faut avoir testé chaque intégration le plus complétement possible dans **develop** avant de commencer le processus de *release*.
+Pour mitiger l'impact, on peut éventuellement adapter le flow en faisant un seul PR & merge back de la branche **release** vers **develop** à la fin du processus (attention, ça augmente le risque de conflit) mais idéalement, il faut avoir testé chaque intégration le plus complètement possible dans **develop** avant de commencer le processus de *release*.
 
 On remarque aussi que les numéros de version de **release** sont bien sous la forme x.y (ex: 4.5, 4.6), donc *major.minor*. Le processus de **release** n'est pas le processus pour les (hot)fix (4.5.3, 4.5.4 etc). Voir [plus d'information sur le semantic versioning](https://semver.org/)
 
@@ -107,6 +115,9 @@ Il faut distinguer 2 cas:
 
 - soit c’est un fix non-urgent, qui peut potentiellement attendre plusieurs semaines/mois avant d’arriver en production => on utilise le flow “Nouveau développement” mais en nommant la branche “fix-[name]” au lieu de “feat-[name]”
 - soit c’est un “hot”fix, c’est “urgent” et dans ce cas, voir ci-dessous
+
+**Règle de nommage**: `hotfix-[sujet-court]`.  
+**Durée typique**: 1-2 jours.
 
 > **Tip**
 >
@@ -126,3 +137,20 @@ G -->H["Fusion dans develop"]
 H -->I["Supprimer la branche 'hotfix-[name]'"]
 I -->Z[Fin]
 ```
+
+## Règles de nommage des branches
+
+Le nom des branches doit être en minuscules, mots séparés par `-`, pas d'espaces, pas d'accents, pas de caractères spécials.
+
+| Type | Règle de nommage | Exemples | Durée typique | Branche de fusion |
+| --- | --- | --- | --- | --- |
+| Feature | `feat-[sujet-court]` | `feat-widget-config`, `feat-multi-gateway` | 1-4 semaines | `develop` |
+| Fix non urgent | `fix-[sujet-court]` | `fix-timeout-retry`, `fix-i18n-labels` | 2-7 jours | `develop` |
+| Release | `rel-vx.y` (version major.minor) | `rel-v4.6`, `rel-v5.0` | < 1 semaine | `master` |
+| Correctif lors d'une release | `fix-[sujet-court]` (depuis `rel-vx.y`) | `fix-restore-backup` (depuis `rel-v4.6`) | < 1 jour | `rel-vx.y` |
+| Hotfix (urgent) | `hotfix-[sujet-court]` | `hotfix-check-date`, `hotfix-null-tags` | 1-2 jours | `master` |
+
+Recommandations:
+
+- Nom court et explicite (3 à 5 mots max)
+- Utiliser des termes fonctionnels, pas des tickets seuls (éviter feat-1234)

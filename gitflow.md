@@ -147,10 +147,45 @@ Le nom des branches doit être en minuscules, mots séparés par `-`, pas d'espa
 | Feature | `feat-[sujet-court]` | `feat-widget-config`, `feat-multi-gateway` | 1-4 semaines | `develop` | `develop` |
 | Fix non urgent | `fix-[sujet-court]` | `fix-timeout-retry`, `fix-i18n-labels` | 2-7 jours | `develop` | `develop` |
 | Release | `rel-vx.y` (version major.minor) | `rel-v4.6`, `rel-v5.0` | < 1 semaine | `develop` | `master` |
-| Correctif lors d'une release | `fix-[sujet-court]` | `fix-restore-backup` | < 1 jour | `rel-vx.y` | `rel-vx.y`, `develop` |
-| Hotfix (urgent) | `hotfix-[sujet-court]` | `hotfix-check-date`, `hotfix-null-tags` | 1-2 jours | `master` | `master`, `develop` |
+| Correctif lors d'une release | `fix-[sujet-court]` | `fix-restore-backup` | < 1 jour | `rel-vx.y` | `rel-vx.y` & `develop` |
+| Hotfix (urgent) | `hotfix-[sujet-court]` | `hotfix-check-date`, `hotfix-null-tags` | 1-2 jours | `master` | `master` & `develop` |
 
 Recommandations:
 
 - Nom court et explicite (3 à 5 mots max)
 - Utiliser des termes fonctionnels, pas des tickets seuls (éviter feat-1234)
+
+## Pré-conditions et validations de Pull Request
+
+Avant de créer une Pull Request, l'auteur doit vérifier :
+
+### Pré-conditions avant ouverture de PR
+
+- ✅ Code testé localement sans erreur
+- ✅ Documentation à jour
+- ✅ Branche à jour avec celle de destination (rebase/merge si nécessaire)
+- ✅ Commits bien structurés avec messages clairs
+- ✅ Pas de commits de merge ou "work in progress"
+
+### Checklist de revue de code
+
+Le reviewer doit vérifier:
+
+| Aspect | Vérification |
+| --- | --- |
+| **Logique métier** | Le changement résout le problème/ajoute la fonctionnalité attendue |
+| **Architecture** | Le code suit les conventions et patterns du projet |
+| **Performance** | Pas de régression de performance, pas de boucles inefficaces |
+| **Sécurité** | Pas de vulnérabilité, entrées validées, authentification vérifiée |
+| **Documentation** | Commentaires pertinents, docs à jour si nécessaire |
+| **Compatibilité** | Pas de breaking change non documenté |
+| **Merge** | Branche source propre, pas de conflits |
+
+### Approbation et merge
+
+- **Feature**: minimum 2 approbation requise
+- **Fix non urgent**: minimum 1 approbation requise
+- **Release**: minimum 2 approbations requises
+- **Hotfix**: minimum 1 approbation requise (urgence)
+- Après approbation, la branche peut être fusionnée par le reviewer ou l'auteur
+- Après merge, supprimer la branche source

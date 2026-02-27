@@ -183,9 +183,9 @@ Le reviewer doit vérifier:
 
 ### Approbation et merge
 
-- **Feature**: minimum 2 approbation requise
+- **Feature**: minimum 2 approbations requises
 - **Fix non urgent**: minimum 1 approbation requise
 - **Release**: minimum 2 approbations requises
-- **Hotfix**: minimum 1 approbation requise (urgence)
+- **Hotfix**: minimum 1 approbation requise
 - Après approbation, la branche peut être fusionnée par le reviewer ou l'auteur
 - Après merge, supprimer la branche source

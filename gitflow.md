@@ -142,13 +142,13 @@ I -->Z[Fin]
 
 Le nom des branches doit être en minuscules, mots séparés par `-`, pas d'espaces, pas d'accents, pas de caractères spécials.
 
-| Type | Règle de nommage | Exemples | Durée typique | Branche de fusion |
-| --- | --- | --- | --- | --- |
-| Feature | `feat-[sujet-court]` | `feat-widget-config`, `feat-multi-gateway` | 1-4 semaines | `develop` |
-| Fix non urgent | `fix-[sujet-court]` | `fix-timeout-retry`, `fix-i18n-labels` | 2-7 jours | `develop` |
-| Release | `rel-vx.y` (version major.minor) | `rel-v4.6`, `rel-v5.0` | < 1 semaine | `master` |
-| Correctif lors d'une release | `fix-[sujet-court]` (depuis `rel-vx.y`) | `fix-restore-backup` (depuis `rel-v4.6`) | < 1 jour | `rel-vx.y` |
-| Hotfix (urgent) | `hotfix-[sujet-court]` | `hotfix-check-date`, `hotfix-null-tags` | 1-2 jours | `master` |
+| Type | Règle de nommage | Exemples | Durée typique | Source | Destination(s) |
+| --- | --- | --- | --- | --- | --- |
+| Feature | `feat-[sujet-court]` | `feat-widget-config`, `feat-multi-gateway` | 1-4 semaines | `develop` | `develop` |
+| Fix non urgent | `fix-[sujet-court]` | `fix-timeout-retry`, `fix-i18n-labels` | 2-7 jours | `develop` | `develop` |
+| Release | `rel-vx.y` (version major.minor) | `rel-v4.6`, `rel-v5.0` | < 1 semaine | `develop` | `master` |
+| Correctif lors d'une release | `fix-[sujet-court]` | `fix-restore-backup` | < 1 jour | `rel-vx.y` | `rel-vx.y`, `develop` |
+| Hotfix (urgent) | `hotfix-[sujet-court]` | `hotfix-check-date`, `hotfix-null-tags` | 1-2 jours | `master` | `master`, `develop` |
 
 Recommandations:
 

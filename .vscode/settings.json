@@ -47,5 +47,8 @@
         "Worx",
         "worxLandroidS",
         "zehnder"
-    ]
+    ],
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    }
 }

@@ -7,6 +7,7 @@ pluginId: arlo
 
 # Beta
 
+- Support des images d’équipement personnalisées (Jeedom 4.5)
 - Correction sur la lecture du mode d'un équipement de type *location* qui provoque une erreur lorsque la connexion avec le cloud n'est plus active
 
 # Stable

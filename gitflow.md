@@ -127,11 +127,11 @@ Il faut distinguer 2 cas:
 flowchart TD
 
 A[Début Hotfix] --> B["Créer une branche 'hotfix-[name]' depuis master"]
-B --> C[Implémenter le fix + commit]
+B --> C[Commit du fix + mettre à jour la version (x.y.Z) ]
 C --> D["Créer une Pull Request vers master"]
 D --> E[Revue de code]
 E -->|Modifications demandées| C
-E -->|Validée| F["Fusion dans master + tag version"]
+E -->|Validée| F["Fusion dans master + tag version (x.y.z)"]
 F -->G["Créer une Pull Request de 'hotfix-[name]' vers develop"]
 G -->H["Fusion dans develop"]
 H -->I["Supprimer la branche 'hotfix-[name]'"]

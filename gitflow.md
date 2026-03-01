@@ -127,7 +127,7 @@ Il faut distinguer 2 cas:
 flowchart TD
 
 A[Début Hotfix] --> B["Créer une branche 'hotfix-[name]' depuis master"]
-B --> C[Commit du fix + mettre à jour la version (x.y.Z) ]
+B --> C["Commit du fix + mettre à jour la version (x.y.Z)"]
 C --> D["Créer une Pull Request vers master"]
 D --> E[Revue de code]
 E -->|Modifications demandées| C

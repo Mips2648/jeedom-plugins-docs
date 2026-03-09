@@ -8,6 +8,7 @@ pluginId: worxLandroidS
 # Beta
 
 - Correction d'un warning sous php 8
+- Support des images d’équipement personnalisées (Jeedom 4.5)
 
 # Stable
 

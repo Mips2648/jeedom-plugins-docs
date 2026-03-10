@@ -7,7 +7,8 @@ pluginId: influxdb
 
 # Beta
 
-n/a
+- Fixes a rare bug under Debian 12/php 8
+- Update dependencies
 
 # Stable
 

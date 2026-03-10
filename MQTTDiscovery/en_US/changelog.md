@@ -7,8 +7,13 @@ pluginId: MQTTDiscovery
 
 # Beta
 
+- Support for customized device images (Jeedom 4.5)
+- Standardization of Bluetooth commands update
 - Protection against incorrect configuration
 - Change default daemon send cycle value from 1s to 0.5s and change minimum allowed value from 0.5s to 0.1s
+- Adapted to manage *Cover* device configurations without *state_topic*.
+- Adaptation to manage *Cover* type equipment configurations with the opening percentage reversed (which is therefore a closing percentage).
+- Jeedom v4.5 required
 
 # Stable
 

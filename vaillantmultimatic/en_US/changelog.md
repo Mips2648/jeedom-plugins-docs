@@ -11,7 +11,7 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-- Support for customizeddevice images (Jeedom 4.5)
+- Support for customized device images (Jeedom 4.5)
 - Update dependencies
 
 # Stable

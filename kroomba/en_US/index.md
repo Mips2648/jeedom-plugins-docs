@@ -15,6 +15,10 @@ This plugin allows the automatic detection and pairing of Roomba & Braava robots
 
 It includes a desktop widget.
 
+> **Important**
+>
+> New robot models arrive, the x05 series, with a new *Roomba Home* application. These models are currently not compatible with the plugin, and I have no idea whether they will be in the future.
+
 # Supported versions
 
 | Component | Version                     |

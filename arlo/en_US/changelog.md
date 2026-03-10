@@ -7,7 +7,9 @@ pluginId: arlo
 
 # Beta
 
-n/a
+- Support for customized device images (Jeedom 4.5)
+- Correction to the reading of the mode of a device of type *location* which causes an error when the connection with the cloud is no longer active
+- Update dependencies
 
 # Stable
 

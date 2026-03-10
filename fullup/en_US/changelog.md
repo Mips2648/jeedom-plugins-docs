@@ -7,7 +7,7 @@ pluginId: fullup
 
 # Beta
 
-n/a
+- Support for customized device images (Jeedom 4.5)
 
 # Stable
 

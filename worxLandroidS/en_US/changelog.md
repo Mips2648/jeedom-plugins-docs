@@ -7,7 +7,8 @@ pluginId: worxLandroidS
 
 # Beta
 
-n/a
+- Fix warning under php 8
+- Support for customized device images (Jeedom 4.5)
 
 # Stable
 

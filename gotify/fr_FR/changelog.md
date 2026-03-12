@@ -7,7 +7,7 @@ pluginId: gotify
 
 # Beta
 
-n/a
+- Jeedom v4.5 requis
 
 # Stable
 

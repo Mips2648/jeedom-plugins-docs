@@ -15,7 +15,7 @@ Les informations de météo ainsi que de lever et coucher du soleil seront obten
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.3                      |
 
 # Installation
 

@@ -25,7 +25,7 @@ Il comporte un Widget desktop.
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 

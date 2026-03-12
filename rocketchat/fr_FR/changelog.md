@@ -8,6 +8,7 @@ pluginId: rocketchat
 # Beta
 
 - Mise à jour de dépendances
+- Jeedom v4.5 requis
 
 # Stable
 

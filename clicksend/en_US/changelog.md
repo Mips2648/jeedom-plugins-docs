@@ -8,6 +8,7 @@ pluginId: clicksend
 # Beta
 
 - Update dependencies
+- Jeedom v4.5 required
 
 # Stable
 

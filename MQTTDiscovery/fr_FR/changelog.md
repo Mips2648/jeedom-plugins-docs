@@ -17,6 +17,10 @@ pluginId: MQTTDiscovery
 
 # Stable
 
+## 2026-03-12
+
+- Strictement **aucun** changement, ni correction, ni changement mineur, ni traduction, rien.
+
 ## 2026-01-02
 
 - Correction: la mise à jour des commandes ne fonctionnaient pas dans certains cas lorsque la config utilise des wildcards mqtt (signe *+* dans le topic), nottament le cas de la passerelle *RTL_433toMQTT* d'OMG.

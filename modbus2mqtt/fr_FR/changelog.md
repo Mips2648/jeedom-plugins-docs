@@ -8,6 +8,7 @@ pluginId: modbus2mqtt
 # Beta
 
 - Support des images d’équipement personnalisées (Jeedom 4.5)
+- Mise à jour de dépendances
 
 # Stable
 

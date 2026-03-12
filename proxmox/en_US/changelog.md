@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Beta
 
-n/a
+- Update dependencies
 
 # Stable
 

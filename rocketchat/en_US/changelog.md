@@ -8,6 +8,7 @@ pluginId: rocketchat
 # Beta
 
 - Update dependencies
+- Python 3.11 required, it will be installed automatically if necessary.
 - Jeedom v4.5 required
 
 # Stable

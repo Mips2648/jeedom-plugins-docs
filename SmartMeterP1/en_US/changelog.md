@@ -7,7 +7,7 @@ pluginId: SmartMeterP1
 
 # Beta
 
-n/a
+- Update dependencies
 
 # Stable
 

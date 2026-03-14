@@ -21,7 +21,7 @@ Following information are available, others can be retrieved depending the deman
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 

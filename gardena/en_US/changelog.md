@@ -8,6 +8,7 @@ pluginId: gardena
 # Beta
 
 - Update dependencies
+- Python 3.11 required, it will be installed automatically if necessary.
 
 # Stable
 

@@ -7,8 +7,9 @@ pluginId: arlo
 
 # Beta
 
-- Support des images d’équipement personnalisées (Jeedom 4.5)
 - Correction sur la lecture du mode d'un équipement de type *location* qui provoque une erreur lorsque la connexion avec le cloud n'est plus active
+- Correction: il manquait certaines commandes (par exemple la gestion de la sirène ou du spot) pour les caméras qui sont reliées directement au wifi
+- Support des images d’équipement personnalisées (Jeedom 4.5)
 - Mise à jour de dépendances
 - Ajout de log
 

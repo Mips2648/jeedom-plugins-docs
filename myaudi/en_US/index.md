@@ -18,7 +18,7 @@ Plugin to connect to the MyAudi platform allowing to retrieve cars which are com
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 

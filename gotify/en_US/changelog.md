@@ -7,9 +7,13 @@ pluginId: gotify
 
 # Beta
 
-n/a
+- Jeedom v4.5 required
 
 # Stable
+
+## 2025-07-07
+
+- Update dependencies
 
 ## 2024-12-25
 

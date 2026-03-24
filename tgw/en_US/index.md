@@ -30,7 +30,7 @@ I also invite you to consult [this documentation](https://mips2648.github.io/jee
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 

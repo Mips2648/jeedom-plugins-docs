@@ -13,6 +13,7 @@ pluginId: MQTTDiscovery
 - Changement de la valeur du cycle d'envoi du démon par défaut de 1s à 0.5s et changement de la valeur minimum autorisée de 0.5s à 0.1s
 - Adaptation pour gérer les configurations d'équipements de type *Cover* sans *state_topic*
 - Adaptation pour gérer les configurations d'équipements de type *Cover* avec le pourcentage d'ouverture inversé (qui est donc un pourcentage de fermeture)
+- Correction de la configuration par défaut des commandes de type *moisture* qui étaient configurées comme des commandes de types *temperature* (ne s'applique que si le type générique est reçu dans les infos de découvertes)
 - Jeedom v4.5 requis
 
 # Stable

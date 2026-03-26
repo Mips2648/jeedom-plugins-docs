@@ -7,7 +7,8 @@ pluginId: kroomba
 
 # Beta
 
-n/a
+- Update dependencies
+- Jeedom v4.5 required
 
 # Stable
 

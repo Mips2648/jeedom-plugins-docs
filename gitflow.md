@@ -75,7 +75,7 @@ I --> Z[Fin]
 ### 2. Nouvelle release
 
 Préparation d'une version majeure/mineure à partir de `develop`, stabilisation, puis fusion dans `master` avec tag.  
-**Règle de nommage**: `rel-vx.y`.  
+**Règle de nommage**: `rel/x.y`.  
 **Durée typique**: < 1 semaine.
 
 > **Tip**
@@ -85,17 +85,17 @@ Préparation d'une version majeure/mineure à partir de `develop`, stabilisation
 ```mermaid
 flowchart TD
 
-A[Nouvelle release] --> B["Créer une branche release depuis develop nommée 'rel-v[x.y]'"]
+A[Nouvelle release] --> B["Créer une branche release depuis develop nommée 'rel/[x.y]'"]
 B --> C[Test intégration]
 C --> D{Correction nécessaire?}
-D -->|Non| X["Créer une Pull Request de 'rel-v[x.y]' vers master"]
+D -->|Non| X["Créer une Pull Request de 'rel/[x.y]' vers master"]
 
-D -->|Oui| E["Créer une branche 'fix/[name]' depuis la release 'rel/v[x.y]'"]
+D -->|Oui| E["Créer une branche 'fix/[name]' depuis la release 'rel/[x.y]'"]
 E --> F[Implémenter le fix + commit]
-F --> G["Créer une Pull Request vers 'rel-v[x.y]'"]
+F --> G["Créer une Pull Request vers 'rel/[x.y]'"]
 G --> H[Revue de code]
 H -->|Modifications demandées| F
-H -->|Validée| J["Fusion dans 'rel-v[x.y]'"]
+H -->|Validée| J["Fusion dans 'rel/[x.y]'"]
 J -->K["Créer une Pull Request vers develop"]
 K -->L["Fusion dans develop"]
 L-->C
@@ -146,8 +146,8 @@ Le nom des branches doit être en minuscules, mots séparés par `-`, pas d'espa
 | --- | --- | --- | --- | --- | --- |
 | Feature | `feat/[sujet-court]` | `feat/widget-config`, `feat/multi-gateway` | 1-4 semaines | `develop` | `develop` |
 | Fix non urgent | `fix/[sujet-court]` | `fix/timeout-retry`, `fix/i18n-labels` | 2-7 jours | `develop` | `develop` |
-| Release | `rel/vx.y` (version major.minor) | `rel/v4.6`, `rel/v5.0` | < 1 semaine | `develop` | `master` |
-| Correctif lors d'une release | `fix/[sujet-court]` | `fix/restore-backup` | < 1 jour | `rel/vx.y` | `rel/vx.y` & `develop` |
+| Release | `rel/x.y` (version major.minor) | `rel/4.6`, `rel/5.0` | < 1 semaine | `develop` | `master` |
+| Correctif lors d'une release | `fix/[sujet-court]` | `fix/restore-backup` | < 1 jour | `rel/x.y` | `rel/x.y` & `develop` |
 | Hotfix (urgent) | `hotfix/[sujet-court]` | `hotfix/check-date`, `hotfix/null-tags` | 1-2 jours | `master` | `master` & `develop` |
 
 Recommandations:

@@ -51,7 +51,7 @@ Elle permet aussi à chacun de savoir à tout moment où créer une branche et s
 ### 1. Nouveau développement ou correction/modification non-urgente
 
 Ajout d'une fonctionnalité ou correction non urgente, développée sur une branche courte puis fusionnée dans `develop`.  
-**Règles de nommage**: `feat-[sujet-court]` ou `fix-[sujet-court]`.  
+**Règles de nommage**: `feat/[sujet-court]` ou `fix/[sujet-court]`.  
 **Durée typique**: 2-7 jours pour un fix, 1-4 semaines pour une feature.
 
 > **Tip**
@@ -60,7 +60,7 @@ Ajout d'une fonctionnalité ou correction non urgente, développée sur une bran
 
 ```mermaid
 flowchart TD
-A[Début: Nouveau dev] --> B["Créer une branche feature depuis develop nommée 'feat-[name]' ou 'fix-[name]'"]
+A[Début: Nouveau dev] --> B["Créer une branche feature depuis develop nommée 'feat/[name]' ou 'fix/[name]'"]
 B --> C["Développer la fonctionnalité (en local)"]
 C --> D[Commits réguliers + push]
 D --> E[Créer une Pull Request vers develop]
@@ -68,7 +68,7 @@ E --> F[Revue de code]
 F -->|Validée| G[Fusion dans develop]
 F -->|Modifications demandées| C
 G --> H[Tests d'intégration sur develop]
-H --> I["Suppresion de la branche 'feat-[name]' ou 'fix-[name]'"]
+H --> I["Suppresion de la branche 'feat/[name]' ou 'fix/[name]'"]
 I --> Z[Fin]
 ```
 
@@ -90,7 +90,7 @@ B --> C[Test intégration]
 C --> D{Correction nécessaire?}
 D -->|Non| X["Créer une Pull Request de 'rel-v[x.y]' vers master"]
 
-D -->|Oui| E["Créer une branche 'fix-[name]' depuis la release 'rel-v[x.y]'"]
+D -->|Oui| E["Créer une branche 'fix/[name]' depuis la release 'rel/v[x.y]'"]
 E --> F[Implémenter le fix + commit]
 F --> G["Créer une Pull Request vers 'rel-v[x.y]'"]
 G --> H[Revue de code]
@@ -113,10 +113,10 @@ On remarque aussi que les numéros de version de **release** sont bien sous la f
 
 Il faut distinguer 2 cas:
 
-- soit c’est un fix non-urgent, qui peut potentiellement attendre plusieurs semaines/mois avant d’arriver en production => on utilise le flow “Nouveau développement” mais en nommant la branche “fix-[name]” au lieu de “feat-[name]”
+- soit c’est un fix non-urgent, qui peut potentiellement attendre plusieurs semaines/mois avant d’arriver en production => on utilise le flow “Nouveau développement” mais en nommant la branche “fix/[name]” au lieu de “feat/[name]”
 - soit c’est un “hot”fix, c’est “urgent” et dans ce cas, voir ci-dessous
 
-**Règle de nommage**: `hotfix-[sujet-court]`.  
+**Règle de nommage**: `hotfix/[sujet-court]`.  
 **Durée typique**: 1-2 jours.
 
 > **Tip**
@@ -126,15 +126,15 @@ Il faut distinguer 2 cas:
 ```mermaid
 flowchart TD
 
-A[Début Hotfix] --> B["Créer une branche 'hotfix-[name]' depuis master"]
+A[Début Hotfix] --> B["Créer une branche 'hotfix/[name]' depuis master"]
 B --> C["Commit du fix + mettre à jour la version (x.y.z)"]
 C --> D["Créer une Pull Request vers master"]
 D --> E[Revue de code]
 E -->|Modifications demandées| C
 E -->|Validée| F["Fusion dans master + tag version (x.y.z)"]
-F -->G["Créer une Pull Request de 'hotfix-[name]' vers develop"]
+F -->G["Créer une Pull Request de 'hotfix/[name]' vers develop"]
 G -->H["Fusion dans develop"]
-H -->I["Supprimer la branche 'hotfix-[name]'"]
+H -->I["Supprimer la branche 'hotfix/[name]'"]
 I -->Z[Fin]
 ```
 

@@ -7,9 +7,11 @@ pluginId: arlo
 
 # Beta
 
-- Support for customized device images (Jeedom 4.5)
 - Correction to the reading of the mode of a device of type *location* which causes an error when the connection with the cloud is no longer active
+- Correction: some commands (e.g. siren or spotlight management) were missing for cameras connected directly to wifi.
+- Support for customized device images (Jeedom 4.5)
 - Update dependencies
+- Add log
 
 # Stable
 

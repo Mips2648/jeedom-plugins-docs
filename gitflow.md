@@ -51,7 +51,7 @@ Elle permet aussi à chacun de savoir à tout moment où créer une branche et s
 ### 1. Nouveau développement ou correction/modification non-urgente
 
 Ajout d'une fonctionnalité ou correction non urgente, développée sur une branche courte puis fusionnée dans `develop`.  
-**Règles de nommage**: `feat-[sujet-court]` ou `fix-[sujet-court]`.  
+**Règles de nommage**: `feat/[sujet-court]` ou `fix/[sujet-court]`.  
 **Durée typique**: 2-7 jours pour un fix, 1-4 semaines pour une feature.
 
 > **Tip**
@@ -60,7 +60,7 @@ Ajout d'une fonctionnalité ou correction non urgente, développée sur une bran
 
 ```mermaid
 flowchart TD
-A[Début: Nouveau dev] --> B["Créer une branche feature depuis develop nommée 'feat-[name]' ou 'fix-[name]'"]
+A[Début: Nouveau dev] --> B["Créer une branche feature depuis develop nommée 'feat/[name]' ou 'fix/[name]'"]
 B --> C["Développer la fonctionnalité (en local)"]
 C --> D[Commits réguliers + push]
 D --> E[Créer une Pull Request vers develop]
@@ -68,14 +68,14 @@ E --> F[Revue de code]
 F -->|Validée| G[Fusion dans develop]
 F -->|Modifications demandées| C
 G --> H[Tests d'intégration sur develop]
-H --> I["Suppresion de la branche 'feat-[name]' ou 'fix-[name]'"]
+H --> I["Suppresion de la branche 'feat/[name]' ou 'fix/[name]'"]
 I --> Z[Fin]
 ```
 
 ### 2. Nouvelle release
 
 Préparation d'une version majeure/mineure à partir de `develop`, stabilisation, puis fusion dans `master` avec tag.  
-**Règle de nommage**: `rel-vx.y`.  
+**Règle de nommage**: `rel/x.y`.  
 **Durée typique**: < 1 semaine.
 
 > **Tip**
@@ -85,17 +85,17 @@ Préparation d'une version majeure/mineure à partir de `develop`, stabilisation
 ```mermaid
 flowchart TD
 
-A[Nouvelle release] --> B["Créer une branche release depuis develop nommée 'rel-v[x.y]'"]
+A[Nouvelle release] --> B["Créer une branche release depuis develop nommée 'rel/[x.y]'"]
 B --> C[Test intégration]
 C --> D{Correction nécessaire?}
-D -->|Non| X["Créer une Pull Request de 'rel-v[x.y]' vers master"]
+D -->|Non| X["Créer une Pull Request de 'rel/[x.y]' vers master"]
 
-D -->|Oui| E["Créer une branche 'fix-[name]' depuis la release 'rel-v[x.y]'"]
+D -->|Oui| E["Créer une branche 'fix/[name]' depuis la release 'rel/[x.y]'"]
 E --> F[Implémenter le fix + commit]
-F --> G["Créer une Pull Request vers 'rel-v[x.y]'"]
+F --> G["Créer une Pull Request vers 'rel/[x.y]'"]
 G --> H[Revue de code]
 H -->|Modifications demandées| F
-H -->|Validée| J["Fusion dans 'rel-v[x.y]'"]
+H -->|Validée| J["Fusion dans 'rel/[x.y]'"]
 J -->K["Créer une Pull Request vers develop"]
 K -->L["Fusion dans develop"]
 L-->C
@@ -113,10 +113,10 @@ On remarque aussi que les numéros de version de **release** sont bien sous la f
 
 Il faut distinguer 2 cas:
 
-- soit c’est un fix non-urgent, qui peut potentiellement attendre plusieurs semaines/mois avant d’arriver en production => on utilise le flow “Nouveau développement” mais en nommant la branche “fix-[name]” au lieu de “feat-[name]”
+- soit c’est un fix non-urgent, qui peut potentiellement attendre plusieurs semaines/mois avant d’arriver en production => on utilise le flow “Nouveau développement” mais en nommant la branche “fix/[name]” au lieu de “feat/[name]”
 - soit c’est un “hot”fix, c’est “urgent” et dans ce cas, voir ci-dessous
 
-**Règle de nommage**: `hotfix-[sujet-court]`.  
+**Règle de nommage**: `hotfix/[sujet-court]`.  
 **Durée typique**: 1-2 jours.
 
 > **Tip**
@@ -126,15 +126,15 @@ Il faut distinguer 2 cas:
 ```mermaid
 flowchart TD
 
-A[Début Hotfix] --> B["Créer une branche 'hotfix-[name]' depuis master"]
+A[Début Hotfix] --> B["Créer une branche 'hotfix/[name]' depuis master"]
 B --> C["Commit du fix + mettre à jour la version (x.y.z)"]
 C --> D["Créer une Pull Request vers master"]
 D --> E[Revue de code]
 E -->|Modifications demandées| C
 E -->|Validée| F["Fusion dans master + tag version (x.y.z)"]
-F -->G["Créer une Pull Request de 'hotfix-[name]' vers develop"]
+F -->G["Créer une Pull Request de 'hotfix/[name]' vers develop"]
 G -->H["Fusion dans develop"]
-H -->I["Supprimer la branche 'hotfix-[name]'"]
+H -->I["Supprimer la branche 'hotfix/[name]'"]
 I -->Z[Fin]
 ```
 
@@ -146,8 +146,8 @@ Le nom des branches doit être en minuscules, mots séparés par `-`, pas d'espa
 | --- | --- | --- | --- | --- | --- |
 | Feature | `feat/[sujet-court]` | `feat/widget-config`, `feat/multi-gateway` | 1-4 semaines | `develop` | `develop` |
 | Fix non urgent | `fix/[sujet-court]` | `fix/timeout-retry`, `fix/i18n-labels` | 2-7 jours | `develop` | `develop` |
-| Release | `rel/vx.y` (version major.minor) | `rel/v4.6`, `rel/v5.0` | < 1 semaine | `develop` | `master` |
-| Correctif lors d'une release | `fix/[sujet-court]` | `fix/restore-backup` | < 1 jour | `rel/vx.y` | `rel/vx.y` & `develop` |
+| Release | `rel/x.y` (version major.minor) | `rel/4.6`, `rel/5.0` | < 1 semaine | `develop` | `master` |
+| Correctif lors d'une release | `fix/[sujet-court]` | `fix/restore-backup` | < 1 jour | `rel/x.y` | `rel/x.y` & `develop` |
 | Hotfix (urgent) | `hotfix/[sujet-court]` | `hotfix/check-date`, `hotfix/null-tags` | 1-2 jours | `master` | `master` & `develop` |
 
 Recommandations:

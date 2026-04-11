@@ -7,6 +7,12 @@ pluginId: miele
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2026-04-12
+
 > **Attention**
 >
 > Refonte importante du plugin, toute l'implémentation de l'API Miele@Home a été réécrite en Python et le plugin utilise à présent un démon au lieu de cron. Il sera nécessaire de refaire le lien entre Jeedom et Miele@Home et de vous identifier à nouveau via la page de configuration du plugin après cette mise à jour.
@@ -20,8 +26,6 @@ pluginId: miele
 - Adaptation des commandes **Temps restant**, **Démarrage dans** et **Temps écoulé**, voir documentation
 - Mise à jour de dépendances
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
-
-# Stable
 
 ## 2025-04-18
 

@@ -9,6 +9,7 @@ pluginId: gardena
 
 - Mise à jour de dépendances
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
+- Ajout des commandes **Hauteur de coupe**, **Type de coupe**, **Progression**, date **Dernier achèvement**, et date **Dernier abandon** par zone pour les Husqvarna Automower
 
 # Stable
 

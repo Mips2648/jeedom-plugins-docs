@@ -15,6 +15,7 @@ pluginId: MQTTDiscovery
 - Adaptation pour gérer les configurations d'équipements de type *Cover* avec le pourcentage d'ouverture inversé (qui est donc un pourcentage de fermeture)
 - Correction de la configuration par défaut des commandes de type *moisture* qui étaient configurées comme des commandes de types *temperature* (ne s'applique que si le type générique est reçu dans les infos de découvertes)
 - Jeedom v4.5 requis
+- Mise à jour de dépendances
 
 # Stable
 

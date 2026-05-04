@@ -7,7 +7,7 @@ pluginId: logmanager
 
 # Beta
 
-n/a
+- Update dependencies
 
 # Stable
 

@@ -9,8 +9,8 @@ pluginId: gardena
 
 - Mise à jour de dépendances
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
-- Ajout des commandes info **Hauteur de coupe**, **Type de coupe**, **Progression**, date **Dernier achèvement**, et date **Dernier abandon** par zone pour les Husqvarna Automower
-- Ajout d'une commande info **Restriction externe** qui donne la raison de la restriction de programmation
+- Ajout des commandes info **Hauteur de coupe**, **Type de coupe**, **Progression**, date **Dernier achèvement**, et date **Dernier abandon** par zone pour les Husqvarna Automower.
+- Ajout d'une commande info **Restriction externe** qui donne la raison de la restriction de programmation. Veuillez utiliser le bouton *Créer les commandes manquantes* sur la page de l'équipement pour la rajouter.
 
 # Stable
 
@@ -154,7 +154,7 @@ pluginId: gardena
 ## 2021-07-12
 
 - Ajout d'un cron configurable pour l'actualisation des tondeuses Husqvarna dans la config du plugin.
-- Ajout de la possibilité de choisir le temps de pause (en minute) avec la commande *Pause programmation*. Pour avoir cette option il faut supprimer la commande existante sur l'équipement (ne pas supprimer l'équipement), sauver et ensuite utiliser la fonction *Créer les commandes manquantes* pour que la commande soit recréé avec la bonne configuration. Il faudra adapter les scénarios avec la nouvelle commande.
+- Ajout de la possibilité de choisir le temps de pause (en minute) avec la commande **Pause programmation**. Pour avoir cette option il faut supprimer la commande existante sur l'équipement (ne pas supprimer l'équipement), sauver et ensuite utiliser la fonction *Créer les commandes manquantes* pour que la commande soit recréé avec la bonne configuration. Il faudra adapter les scénarios avec la nouvelle commande.
 - Déplacement du plugin dans la catégorie "Nature".
 
 ## 2021-03-14
@@ -170,7 +170,7 @@ pluginId: gardena
 
 ## 2020-08-29
 
-- Ajout d'une commande **Dernière erreur** sur les Gardena Smart Socket, Water Control et Irrigation Control: Veuillez utiliser le bouton *Créer les commandes manquantes* sur la page de l'équipement pour la rajouter
+- Ajout d'une commande **Dernière erreur** sur les Gardena Smart Socket, Water Control et Irrigation Control. Veuillez utiliser le bouton *Créer les commandes manquantes* sur la page de l'équipement pour la rajouter
 - Ajout de l'info *Dernière erreur* dans la page santé
 - Fix un problème de démarrage du démon avec les tondeuses Husqvarna Automower
 

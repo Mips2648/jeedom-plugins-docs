@@ -7,10 +7,14 @@ pluginId: hydrao
 
 # Beta
 
-- Mise à jour de dépendances
-- Jeedom v4.5 requis
+n/a
 
 # Stable
+
+## 2025-05-12
+
+- Mise à jour de dépendances
+- Jeedom v4.5 requis
 
 ## 2025-06-27
 

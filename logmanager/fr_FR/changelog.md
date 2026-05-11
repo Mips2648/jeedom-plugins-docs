@@ -7,9 +7,13 @@ pluginId: logmanager
 
 # Beta
 
-- Mise à jour de dépendances
+n/a
 
 # Stable
+
+## 2025-05-12
+
+- Mise à jour de dépendances
 
 ## 2026-01-12
 

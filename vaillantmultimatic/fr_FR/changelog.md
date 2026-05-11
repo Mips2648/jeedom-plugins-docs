@@ -11,8 +11,9 @@ pluginId: vaillantmultimatic
 
 # Beta
 
-- Support des images d’équipement personnalisées (Jeedom 4.5)
+- Support des images d’équipement personnalisées
 - Mise à jour de dépendances
+- Jeedom v4.5 requis
 
 # Stable
 

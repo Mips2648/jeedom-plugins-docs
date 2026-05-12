@@ -7,11 +7,15 @@ pluginId: fullup
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2026-05-12
+
 - Support for customized device images (Jeedom 4.5)
 - Update dependencies
 - Jeedom v4.5 required
-
-# Stable
 
 ## 2024-12-25
 

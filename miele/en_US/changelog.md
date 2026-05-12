@@ -7,6 +7,12 @@ pluginId: miele
 
 # Beta
 
+- Update dependencies
+
+# Stable
+
+## 2026-04-12
+
 > **Warning**
 >
 > Major update of the plugin : the entire Miele@Home API implementation has been rewritten in Python, and the plugin now uses a daemon instead of cron. It will be necessary to redo the link between Jeedom and Miele@Home and to log in again via the plugin's configuration page after this update.
@@ -20,8 +26,6 @@ pluginId: miele
 - Adaptation of **Time remaining**, **Start in** and **Elapsed time** commands, see documentation
 - Update dependencies
 - Python 3.11 required, it will be installed automatically if necessary.
-
-# Stable
 
 ## 2025-04-18
 

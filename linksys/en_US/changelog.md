@@ -7,10 +7,14 @@ pluginId: linksys
 
 # Beta
 
-- Update dependencies
-- Jeedom v4.5 required
+n/a
 
 # Stable
+
+## 2026-05-12
+
+- Update dependencies
+- Jeedom v4.5 required
 
 ## 2024-12-25
 

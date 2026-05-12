@@ -7,10 +7,15 @@ pluginId: fail2ban
 
 # Beta
 
-- Ajout des dépendances pour installer fail2ban-client
-- Mise à jour de dépendances
+n/a
 
 # Stable
+
+## 2026-05-12
+
+- Ajout des dépendances pour installer fail2ban-client
+- Mise à jour de dépendances
+- Jeedom v4.5 requis
 
 ## 2025-08-11
 

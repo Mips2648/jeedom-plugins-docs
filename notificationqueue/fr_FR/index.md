@@ -22,7 +22,7 @@ Chaque file peut aussi être configurée pour ajouter un délai avant envoi, un 
 | Composant | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 

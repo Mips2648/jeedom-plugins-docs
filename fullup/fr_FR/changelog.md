@@ -7,11 +7,15 @@ pluginId: fullup
 
 # Beta
 
+n/a
+
+# Stable
+
+## 2026-05-12
+
 - Support des images d’équipement personnalisées (Jeedom 4.5)
 - Mise à jour de dépendances
 - Jeedom v4.5 requis
-
-# Stable
 
 ## 2024-12-25
 

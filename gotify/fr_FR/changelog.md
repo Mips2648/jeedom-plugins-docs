@@ -7,9 +7,14 @@ pluginId: gotify
 
 # Beta
 
-- Jeedom v4.5 requis
+n/a
 
 # Stable
+
+## 2026-05-12
+
+- Mise à jour de dépendances
+- Jeedom v4.5 requis
 
 ## 2025-07-07
 

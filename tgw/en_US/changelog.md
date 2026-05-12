@@ -7,6 +7,7 @@ pluginId: tgw
 
 # Beta
 
+- Advanced option added for configuring scan mode
 - Update dependencies
 - Jeedom v4.5 required
 

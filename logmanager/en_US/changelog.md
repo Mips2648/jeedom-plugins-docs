@@ -11,6 +11,10 @@ n/a
 
 # Stable
 
+## 2026-05-12
+
+- Update dependencies
+
 ## 2026-01-12
 
 - Fix: number of lines to be displayed, which is not respected if less than 200.

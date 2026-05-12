@@ -25,7 +25,7 @@ The valves and thermostats of the ambiSENSE range connected to the system are al
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 
@@ -168,5 +168,5 @@ At a minimum, you will need to provide:
 
 - a screenshot of the Jeedom health page
 - a screenshot of the plugin's configuration page
-- all available plugin logs pasted into a `Preformatted Text` (button `</>` on community), no files!
+- all available plugin logs, at _INFO_ level, pasted into a `Preformatted Text` (button `</>` on community), no files!
 - depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...

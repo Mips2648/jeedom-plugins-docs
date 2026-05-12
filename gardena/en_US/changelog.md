@@ -9,6 +9,8 @@ pluginId: gardena
 
 - Update dependencies
 - Python 3.11 required, it will be installed automatically if necessary.
+- Added info commands **Cutting height**, **Cutting type**, **Progression**, date **Last completed**, and date **Last abandoned** per zone for Husqvarna Automower.
+- Added a command info **External restriction** which gives the reason for the programming restriction. Please use the *Create missing commands* button on the device page to add it.
 
 # Stable
 
@@ -152,7 +154,7 @@ pluginId: gardena
 ## 2021-07-12
 
 - Added a configurable cron for updating Husqvarna Automowers in the plugin configuration.
-- Added the possibility of selecting pause time (in minutes) in command *Pause schedule*. To have this option, you must delete the existing command on the device (do not delete the device), save and then use the function *Create missing commands * so that the command is recreated with the correct configuration. The scenarios will have to be adapted with the new command.
+- Added the possibility of selecting pause time (in minutes) in command **Pause schedule**. To have this option, you must delete the existing command on the device (do not delete the device), save and then use the function *Create missing commands* so that the command is recreated with the correct configuration. The scenarios will have to be adapted with the new command.
 - Move plugin to "Nature" category
 
 ## 2021-03-14
@@ -168,7 +170,7 @@ pluginId: gardena
 
 ## 2020-08-29
 
-- Add **Last error** command on Gardena Smart Socket, Water Control and Irrigation Control: Please use the *Create missing commands* button on the device page to add it
+- Add **Last error** command on Gardena Smart Socket, Water Control and Irrigation Control. Please use the *Create missing commands* button on the device page to add it
 - Add info *Last error* in health page
 - Fix an issue on daemon start with Husqvarna Automower
 

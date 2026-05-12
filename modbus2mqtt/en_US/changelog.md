@@ -9,6 +9,7 @@ pluginId: modbus2mqtt
 
 - Support for customized device images (Jeedom 4.5)
 - Update dependencies
+- Python 3.11 required, it will be installed automatically if necessary.
 
 # Stable
 

@@ -7,9 +7,14 @@ pluginId: SmartMeterP1
 
 # Beta
 
-- Update dependencies
+n/a
 
 # Stable
+
+## 2026-05-12
+
+- Update dependencies
+- Jeedom v4.5 required
 
 ## 2026-01-01
 

@@ -7,14 +7,18 @@ pluginId: arlo
 
 # Beta
 
-- Adaptation pour prendre en charge la nouvelle gestion de modes personnalisées
-- Correction sur la lecture du mode d'un équipement de type *location* qui provoque une erreur lorsque la connexion avec le cloud n'est plus active
-- Correction: il manquait certaines commandes (par exemple la gestion de la sirène ou du spot) pour les caméras qui sont reliées directement au wifi
-- Support des images d’équipement personnalisées (Jeedom 4.5)
 - Mise à jour de dépendances
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
 
 # Stable
+
+## 2025-05-29
+
+- Adaptation pour prendre en charge la nouvelle gestion de modes personnalisées.
+- Correction sur la lecture du mode d'un équipement de type *location* qui provoque une erreur lorsque la connexion avec le cloud n'est plus active
+- Correction: il manquait certaines commandes (par exemple la gestion de la sirène ou du spot) pour les caméras qui sont reliées directement au wifi
+- Support des images d’équipement personnalisées (Jeedom 4.5)
+- Mise à jour de dépendances
 
 ## 2025-08-11
 

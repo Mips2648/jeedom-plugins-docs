@@ -22,7 +22,7 @@ Each queue can also be configured to add a delay before sending, an expiration o
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 

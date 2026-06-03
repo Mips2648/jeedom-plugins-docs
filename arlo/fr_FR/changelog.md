@@ -12,7 +12,7 @@ pluginId: arlo
 
 # Stable
 
-## 2025-05-29
+## 2026-05-29
 
 - Adaptation pour prendre en charge la nouvelle gestion de modes personnalisées.
 - Correction sur la lecture du mode d'un équipement de type *location* qui provoque une erreur lorsque la connexion avec le cloud n'est plus active

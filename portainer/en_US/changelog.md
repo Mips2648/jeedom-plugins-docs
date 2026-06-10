@@ -1,103 +1,103 @@
 ---
 layout: default
-title: Portainer Changelog
+title: Portainer Release Notes
 lang: en_US
 pluginId: portainer
 ---
 
 # Beta
 
-- Update dependencies
+- Updating dependencies
 
 # Stable
 
 ## 2025-04-18
 
-- Panel corrections: some translations were not applied
-- Update dependencies
+- Fixes to the panel: some translations were not being applied
+- Updating dependencies
 
 ## 2025-02-22
 
-- Update dependencies
+- Updating dependencies
 - Icon update
 
 ## 2024-09-16
 
 - Optimizations
-- Update dependencies
-- Plugin translation in English, German, Spanish, Italian, Portuguese
-- Add commands on container-type device: **Health status**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(See documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
-- Debian 11 or higher required
+- Updating dependencies
+- Translation of the plugin into English, German, Spanish, Italian, and Portuguese
+- Added commands for container-type devices: **Health Status**, **Running**, **Paused**, **Restarting**, **Dead**, **OOMKilled** [(See documentation)]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
+- Debian 11 or later is required
 
 ## 2023-05-20
 
-- Add information about the latest available version of Portainer.io to the health page (required portainer.io >= 2.17) + message in the message center
-- Improve password fields
-- Compatibility Jeedom v4.4
-- Add links to documentation in beta
+- Added information about the latest available version of Portainer.io to the health page (requires Portainer.io >= 2.17) + message in the message center
+- Improvements to password fields
+- Jeedom v4.4 Compatibility
+- Added links to the beta documentation
 
 ## 2022-10-17
 
-- Update of the presentation of commands for Jeedom v4.3
+- Update to the control interface for Jeedom v4.3
 
 ## 2022-07-15
 
-- Update of internal libraries
+- Updating internal libraries
 
 ## 2022-02-09
 
-- Add table display mode of the list of device for Jeedom 4.2
+- Added a table view of the equipment list for Jeedom 4.2
 
 ## 2021-08-21
 
-- Added a _State_ command on **agent** and **docker** device
-- Fix a sync issue when an endpoint is offline
+- Added a _Status_ command for equipment of the **agent** and **docker** types
+- Fixed a synchronization issue when an endpoint is offline
 
 ## 2021-05-19
 
-- Add support of Portainer instance of type **agent**
-- Add info commands giving the number of containers, volumes, images, services and stacks on **agent** and **docker** type devices
+- Added support for **agent**-type Portainer instances
+- Added info commands that return the number of containers, volumes, images, services, and stacks on **agent** and **docker** devices
 
 ## 2021-02-08
 
-- Add a _Public URL_ command on the Docker device
-- Add the display of the image used for the container in the device configuration page
-- Fixed a case of duplicate display of containers on the panel if several dockers used (you have to force a manual sync so that the health page displays the correct information after the plugin update)
+- Add a _Public URL_ command to the Docker device
+- Added a display of the image used for the container to the device configuration page
+- Fixed an issue where containers were displayed twice on the dashboard when multiple Docker instances were used (you must force a manual sync for the health page to display the correct information after updating the plugin)
 
 ## 2021-01-06
 
-- New presentation of the list of device by category: Docker & Container
+- New layout for the list of equipment by category: Docker & Containers
 
 ## 2020-12-02
 
-- New presentation of objects list
-- Improved layout of device and commands configuration pages
+- New layout for the list of items
+- Improvements to the layout of the equipment configuration and controls
 
 ## 2020-09-06
 
-- Fix the refresh command on _Docker_ type device was not working
-- Add of the Portainer version number in the health page
-- Add an option in the plugin config to choose the automatic synchronization mode
+- The refresh command on a _Docker_-type device was not working
+- Added the Portainer version number to the health page
+- Added an option in the plugin settings to choose the automatic synchronization mode
 
 ## 2020-08-22
 
-- New health page displaying an overview of all the containers and allowing all basic actions to be performed (similar to the "Containers" page on portainer.io)
-- A new panel (to be activated in the plugin configuration) contains the same information and actions as the health page.
-- Added a configuration on the plugin to define the default parent object that will be used when creating a new container, this will prevent you from having to systematically do it by hand.
-- During a synchronization, the plugin will automatically activate and deactivate the Jeedom devices corresponding to the containers depending on whether or not they exist on Docker in order to facilitate the management of your containers and to provide more clarity.
-- When a container is destroyed and recreated on Docker, the plugin will no longer create a new Jeedom device but will update the existing device if it finds it (the new container must have the same name and be on the same Docker instance than the old one); this will also greatly reduce the maintenance to be carried out on the Jeedom side.
-- Add network information commands on containers (IP, MAC, gateway)
-- Add list of ports published by the container with link to it (visible in the device configuration as well as on the new summary page)
-- When deleting a Jeedom device, the logs files corresponding to the containers will also be deleted from your Jeedom in order to facilitate maintenance.
-- "Docker" type device will have a different icon from "Container" type device to increase visibility.
+- New health page displaying an overview of all containers and allowing you to perform all basic actions (similar to the "Containers" page on portainer.io)
+- A new panel (which can be enabled in the plugin settings) displays the same information and actions as the health page.
+- We've added a configuration option to the plugin that lets you set the default parent object to be used when creating a new container, which will save you from having to do this manually every time.
+- During synchronization, the plugin will automatically enable and disable the Jeedom devices associated with the containers depending on whether they exist in Docker, in order to simplify container management and provide greater clarity.
+- When a container is deleted and recreated in Docker, the plugin will no longer create a new Jeedom device but will update the existing device if it finds it (the new container must have the same name and be on the same Docker instance as the old one); this will also significantly reduce the maintenance required on the Jeedom side.
+- Added network information commands for containers (IP, MAC, gateway)
+- Added a list of ports published by the container, along with a link to the container (visible in the device settings and on the new summary page)
+- When you delete a Jeedom device, the logs associated with the containers will also be deleted from your Jeedom to facilitate maintenance.
+- "Docker"-type equipment will have a different icon from "Container"-type equipment to improve visibility.
 
 ## 2020-03-30
 
-- Move documentations
+- Relocation of documentation
 
 ## 2020-03-19
 
-Add option to fetch stdout and stderr output during synchronization of device. It's needed to go to device configuration page and save the configuration to activate the option.
+Added an option to capture stdout and stderr output during device synchronization. You must return to the device page and save the configuration to enable this option.
 
 ## 2020-03-10
 
@@ -105,4 +105,4 @@ First version
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
+[See the documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

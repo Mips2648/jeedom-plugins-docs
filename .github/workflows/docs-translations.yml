@@ -7,8 +7,6 @@ on:
         description: "Comma-separated target languages"
         required: false
         default: "de_DE,es_ES,en_US"
-  push:
-  pull_request:
 
 permissions:
   contents: write

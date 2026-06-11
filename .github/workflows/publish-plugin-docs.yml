@@ -61,24 +61,19 @@ jobs:
       - name: Sync language folders
         shell: bash
         run: |
-          locales=(fr_FR en_US de_DE es_ES)
           docs_dir="docs"
           images_dir="${docs_dir}/images"
+          lang_dir="${docs_dir}/fr_FR"
 
-          for lang in "${locales[@]}"; do
-            lang_dir="${docs_dir}/$lang"
-            [ -d "$lang_dir" ] || continue
+          dest="documentations/${{ steps.target.outputs.path }}/fr_FR"
+          mkdir -p "$dest"
+          rsync -a --delete "$lang_dir"/ "$dest"/
 
-            dest="documentations/${{ steps.target.outputs.path }}/${lang}"
-            mkdir -p "$dest"
-            rsync -a --delete "$lang_dir"/ "$dest"/
-
-            if [ -d "$images_dir" ]; then
-              images_dest="$(dirname "$dest")/images"
-              mkdir -p "$images_dest"
-              rsync -a --delete "$images_dir"/ "$images_dest"/
-            fi
-          done
+          if [ -d "$images_dir" ]; then
+            images_dest="documentations/${{ steps.target.outputs.path }}/images"
+            mkdir -p "$images_dest"
+            rsync -a --delete "$images_dir"/ "$images_dest"/
+          fi
 
       - name: Commit and push if changed
         shell: bash

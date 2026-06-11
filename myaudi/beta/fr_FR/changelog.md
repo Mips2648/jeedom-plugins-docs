@@ -1,0 +1,101 @@
+---
+layout: default
+title: Changelog MyAudi
+lang: fr_FR
+pluginId: myaudi
+---
+
+> **Important**
+>
+> Attention, il n'est plus possible d'installer les dépendances de ce plugin pour l'instant car la librairie utilisée pour la connexion à My Audi connect a été retirée des dépots. Vous pouvez cependant continuer à utiliser le plugin si vous l'avez déjà installé.
+
+# Beta
+
+n/a
+
+# Stable
+
+## 2026-05-12
+
+- Mise à jour de dépendances
+- Jeedom v4.5 requis
+
+## 2025-02-24
+
+- Fix sur la récupération des données de maintenance du véhicule
+- Mise à jour de dépendances
+- Meilleur gestion des erreurs dans le démon
+
+## 2024-12-25
+
+> **Important**
+>
+> Nouveau plugin, complètement réécrit.
+> Les anciens équipements seront supprimé, aucune migration.
+> Vérifiez la configuration du plugin, installez les dépendances et lancez le démon.
+
+- Mise à jour de dépendances
+- Mise à jour de l'icône
+- Jeedom v4.4 requis
+
+## 2024-08-19
+
+- Mise à jour de dépendances
+- Traduction du plugin en anglais, allemand, espagnol, italien, portugais
+
+## 2024-07-01
+
+- Compatibilité Debian 12 (nécessite Jeedom 4.4.8)
+
+## 2024-04-10
+
+- Mise à jour de dépendances
+
+## 2023-06-08
+
+- Ajout des liens vers la documentation en beta
+- Changement des URLs de login
+
+## 2021-11-04
+
+- Fix login failed suite à un changement chez VW/Audi
+- Fix retry en cas d'échec d'une action
+- Optimisations diverses
+- Nettoyage des dépendances
+
+## 2021-05-22
+
+- Nouvelle version compatible avec les dernières api Audi/VW (thx @ripleyxlr8)
+- Nouvelle présentation de la liste des objets
+- Amélioration de la mise en page de la configuration de l'équipement et des commandes
+
+## 2020-07-13
+
+- Fix affichage carte de localisation sur la vue mobile
+
+## 2020-06-02
+
+- Ajout d'une commande info donnant la dernière localisation connue du véhicule
+- Ajout d'une option pour afficher la carte avec la localisation sur le widget (il faut avoir configuré une clé API Google maps, voir documentation pour plus d'information)
+
+## 2020-04-28
+
+- Ajout du statut du verrouillage des portes et du hayon
+- Ajout du statut d'ouverture des portes et du hayon
+
+## 2020-03-31
+
+- Fix installation des dépendances manquantes
+- Déplacement de la documentation
+
+## 2020-03-23
+
+- Vérification de la configuration et état du démon.
+
+## 2020-03-18
+
+Première version
+
+# Documentation
+
+[Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

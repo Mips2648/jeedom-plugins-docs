@@ -6,7 +6,7 @@ on:
       target_languages:
         description: "Comma-separated target languages"
         required: false
-        default: "de_DE,es_ES,en_US"
+        default: "en_US,es_ES"
 
 permissions:
   contents: write
@@ -19,5 +19,6 @@ jobs:
       - uses: Mips2648/docs-translations@main
         with:
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
-            target_languages: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.target_languages || 'en_US,es_ES,de_DE' }}
+            target_languages: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.target_languages || 'en_US,es_ES' }}
             documents_roots: 'arlo,portainer'
+            cache_path: ${{ github.workspace }}/.translation_cache

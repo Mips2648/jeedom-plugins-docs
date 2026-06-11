@@ -65,6 +65,11 @@ jobs:
           images_dir="${docs_dir}/images"
           lang_dir="${docs_dir}/fr_FR"
 
+          if [ ! -d "$docs_dir" ] || [ ! -d "$lang_dir" ]; then
+            echo "Skipping sync: missing $docs_dir or $lang_dir"
+            exit 0
+          fi
+
           dest="documentations/${{ steps.target.outputs.path }}/fr_FR"
           mkdir -p "$dest"
           rsync -a --delete "$lang_dir"/ "$dest"/

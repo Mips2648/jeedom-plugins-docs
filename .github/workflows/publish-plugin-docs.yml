@@ -1,0 +1,97 @@
+name: Publish Plugin Docs
+
+on:
+  workflow_call:
+    secrets:
+      docs_repo_token:
+        description: "Token with push access to target docs repository"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout plugin repository
+        uses: actions/checkout@v6
+
+      - name: Checkout documentation repository
+        uses: actions/checkout@v6
+        with:
+          repository: Mips2648/jeedom-plugins-docs
+          ref: master
+          token: ${{ secrets.docs_repo_token }}
+          path: documentations
+
+      - name: Validate destination token
+        shell: bash
+        run: |
+          if [ -z "${{ secrets.docs_repo_token }}" ]; then
+            echo "docs_repo_token is empty or not mapped from caller workflow"
+            exit 1
+          fi
+
+      - name: Compute destination suffix
+        id: target
+        shell: bash
+        run: |
+          branch_name="${{ github.head_ref || github.ref_name }}"
+          info_file="plugin_info/info.json"
+          if [ ! -f "$info_file" ]; then
+            echo "Missing $info_file in plugin repository"
+            exit 1
+          fi
+
+          plugin_id="$(jq -r '.id // empty' "$info_file")"
+          if [ -z "$plugin_id" ]; then
+            echo "Unable to read non-empty 'id' from $info_file"
+            exit 1
+          fi
+
+          target="$plugin_id"
+
+          if [ "$branch_name" = "beta" ]; then
+            target="${target}/beta"
+          fi
+          echo "path=${target}" >> "$GITHUB_OUTPUT"
+
+      - name: Sync language folders
+        shell: bash
+        run: |
+          locales=(fr_FR en_US de_DE es_ES)
+          docs_dir="docs"
+          images_dir="${docs_dir}/images"
+
+          for lang in "${locales[@]}"; do
+            lang_dir="${docs_dir}/$lang"
+            [ -d "$lang_dir" ] || continue
+
+            dest="documentations/${{ steps.target.outputs.path }}/${lang}"
+            mkdir -p "$dest"
+            rsync -a --delete "$lang_dir"/ "$dest"/
+
+            if [ -d "$images_dir" ]; then
+              images_dest="$(dirname "$dest")/images"
+              mkdir -p "$images_dest"
+              rsync -a --delete "$images_dir"/ "$images_dest"/
+            fi
+          done
+
+      - name: Commit and push if changed
+        shell: bash
+        run: |
+          cd documentations
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+          if git diff --cached --quiet; then
+            echo "No documentation changes to push"
+            exit 0
+          fi
+
+          git commit -m "docs: sync ${{ github.repository }} (${GITHUB_REF_NAME})"
+          git push origin "master"

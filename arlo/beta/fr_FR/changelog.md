@@ -376,4 +376,4 @@ Première version stable
 
 # Documentation
 
-[Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
+[Voir la documentation](./index)

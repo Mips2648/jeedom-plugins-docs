@@ -134,7 +134,7 @@
       })
 
       $('.sel_beta').on('change', function () {
-        const val = $(this).val();
+        const val = $(this).find('option:selected').attr('value');
         const parts = window.location.pathname.split('/').filter(p => p !== '');
         const langRegex = /^[a-z]{2}_[A-Z]{2}$/;
         console.log(parts);

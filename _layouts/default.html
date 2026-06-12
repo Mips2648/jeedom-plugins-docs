@@ -120,6 +120,12 @@
       if (corresp !== null && corresp[1]) {
         $('.sel_lang').val(corresp[1])
       }
+      if (window.location.pathname.includes('/beta/')) {
+        $('.sel_beta').val('beta');
+      } else {
+        $('.sel_beta').val('');
+      }
+
 
       $('select').material_select();
 

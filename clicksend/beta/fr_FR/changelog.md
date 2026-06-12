@@ -5,11 +5,7 @@ lang: fr_FR
 pluginId: clicksend
 ---
 
-# Beta
-
-n/a
-
-# Stable
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 
 ## 2026-05-12
 

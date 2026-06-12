@@ -145,8 +145,10 @@
         console.log(betaIndex);
 
         if (val === 'beta') {
+          console.log('add beta');
           if (betaIndex === -1) parts.splice(langIndex, 0, 'beta');
         } else {
+          console.log('remove beta');
           if (betaIndex !== -1) parts.splice(betaIndex, 1);
         }
 

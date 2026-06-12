@@ -5,14 +5,15 @@ lang: fr_FR
 pluginId: worxLandroidS
 ---
 
-# Beta
+# Changelog
 
+## 2026-06-12
+
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 - Correction d'un warning sous php 8
 - Support des images d’équipement personnalisées (Jeedom 4.5)
 - Mise à jour de dépendances
 - Jeedom v4.5 requis
-
-# Stable
 
 ## 2025-08-11
 

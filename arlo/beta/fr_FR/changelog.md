@@ -5,6 +5,10 @@ lang: fr_FR
 pluginId: arlo
 ---
 
+# Changelog
+
+## 2026-06-12
+
 - Mise à jour de dépendances
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
 - Mise en place d'un nouveau flux de déploiement pour la documentation

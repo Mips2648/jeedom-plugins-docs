@@ -5,12 +5,13 @@ lang: fr_FR
 pluginId: kroomba
 ---
 
-# Beta
+# Changelog
 
+## 2026-06-12
+
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 - Mise à jour de dépendances
 - Jeedom v4.5 requis
-
-# Stable
 
 ## 2026-01-02
 

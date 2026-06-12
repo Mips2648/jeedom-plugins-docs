@@ -1,107 +1,107 @@
 ---
 layout: default
-title: Portainer documentation
+title: Documentation Portainer
 lang: en_US
 pluginId: portainer
 ---
 
 # Description
 
-Plugin to connect to [portainer.io](https://www.portainer.io/portainer-ce/) which is a solution to manage containers on docker which can be easily installed in a container.
-With this plugin, it is possible to retrieve in Jeedom all dockers servers configured in [portainer.io](https://www.portainer.io/portainer-ce/) and so all containers.
+A plugin that allows you to connect to a [portainer.io](https://www.portainer.io/portainer-ce/) server, which is a Docker container management solution that can itself be easily installed within a container.
+Using this plugin, you can retrieve all Docker instances configured on [portainer.io](https://www.portainer.io/portainer-ce/) as well as all their containers in Jeedom.
 
-The plugin has also a health page and a dedicated panel displaying an overview of all containers and allowing you to perform all basic actions, similar to the "Containers" page on [portainer.io] (https://www.portainer.io/portainer-ce/).
+The plugin also features a health page and a dedicated dashboard that provides an overview of all containers and allows you to perform all basic actions, similar to the "Containers" page on [portainer.io](https://www.portainer.io/portainer-ce/).
 
 # Supported versions
 
-| Component | Version                     |
+| Component | Version |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2                      |
+Debian | Bullseye(11) & Bookworm(12)
+| Jeedom    | >= 4.2 |
 
 # Installation
 
-In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
-You need to have portainer.io already installed, solutions to have this are fully documented on their website.
+To use the plugin, you need to download, install, and activate it just like any other Jeedom plugin.
+You must already have a Portainer.io server set up; the various options for doing so are well documented on their website.
 
-# Plugin configuration
+# Plugin Configuration
 
-In the plugin configuration you have to provide portainer URL with the format `http://PORTAINER_SERVER:9000` as well as a username and a password.
+In the plugin settings, you will need to enter the Portainer URL in the format `http://PORTAINER_SERVER:9000`, along with a username and password.
 
-You can also choose to activate or not the panel as well as the parent object that will be used when creating Jeedom device: if a device with the same name does not yet exist under this object, the new Portainer device will have this object as parent otherwise "None".
-It is also possible to choose between two modes for automatic synchronization:
+You can also choose whether or not to enable the panel, as well as the parent object that will be used when creating Jeedom devices: if a device with the same name does not yet exist under that object, the new Portainer device will have that object as its parent; otherwise, it will be set to "None".
+You can also choose between two modes for automatic synchronization:
 
-- either create new containers that do not yet exist under jeedom and update existing containers
-- or only update existing containers
+- either create new containers that do not yet exist in Jeedom and update the existing containers
+- or simply update the existing containers
 
-> **Tip**
+> **Type**
 >
-> The _Synchronize_ action available in the device page to force a manual synchronization will always create the missing containers. The above option is only applicable for automatic synchronization
+> The _Synchronize_ action available on the equipment page to force a manual synchronization will always create any missing containers. The option above applies only to automatic synchronization
 
-# Devices
+# Facilities
 
-As soon as the configuration is done, the plugin will try to connect to portainer.io every minute to synchronize.
-All devices to which the plugin has access will be automatically created in Jeedom, it is not possible to create a device manually.
-It is possible to do a manual synchronization via the button in the devices page.
+Once a user has been set up, the plugin will attempt to connect to portainer.io every minute to synchronize.
+All devices that the plugin has access to will be automatically created in Jeedom; it is not possible to create a device manually.
+You can perform a manual sync using the button on the equipment page.
 
-There are two options to get the output logs stdout and stderr to Jeedom. If the corresponding options are activated on the device, the logs will be read each time the device is synchronized and accessible in the Jeedom logs interface.
+There are two options for importing stdout and stderr logs into Jeedom. If the corresponding options are enabled on the device, the logs will be read each time the device synchronizes and will be accessible in the Jeedom logs interface.
 
-# Available commands
+# Available orders
 
 ## EndPoint
 
-On device of type EndPoint (docker instance, portainer agent...), there are the following info commands:
+On EndPoint-type devices (Docker instances, Portainer agents, etc.), the following info commands are available:
 
-- **State** is 1 or 0 depending on whether the device is on and reachable or not
-- **Number of CPU** gives the number of CPU of the machine
-- **Memory** gives the total memory of the machine in bytes
-- **Number of containers running** and **Number of containers stopped**
-- **Number of healthy containers** and **Number of unhealthy containers**
-- **Volumes counter**
-- **Images counter**
-- **Services counter**
-- **Stacks counter**
+- **Status** is 1 or 0 depending on whether the device is powered on and reachable
+- **Number of CPUs** indicates the number of CPUs in the machine
+- **Memory** displays the total memory of the machine in bytes
+- **Number of lit containers** and **Number of unlit containers**
+- **Number of sound containers** and **Number of unsound containers**
+- **Number of volumes**
+- **Number of images**
+- **Number of services**
+- **Number of stacks**
 - **Public URL**
 
 ## Container
 
-On device of type Container, there are the following info commands:
+For container-type equipment, the following information commands are available:
 
-- **Status** possible values are: _created_, _running_, _paused_, _restarting_, _removing_, _exited_, _dead_
-- **Health status** possible values are: _none_, _starting_, _healthy_, _unhealthy_
+- **Status**: Possible values are: _created_, _running_, _paused_, _restarting_, _removing_, _exited_, _dead_
+- **Health status**: Possible values are: _none_, _starting_, _healthy_, _unhealthy_
 - **Running** info/binary
 - **Paused** info/binary
 - **Restarting** info/binary
 - **Dead** info/binary
 - **OOMKilled** info/binary
-- **IP address** of container
-- **MAC address** of container
+- **IP address** of the container
+- **MAC address** of the container
 - **Gateway** network gateway
-- **Last start** the date of the last start
-- **Last shutdown** last shutdown
+- **Last startup**: the date of the last startup
+- **Final stop**: the last extinction
 
-and actions commands:
+and action commands:
 
 - **Start**
 - **Stop**
 - **Restart**
 - **Pause**
-- **Unpause**
-- **Kill**
+- **Resume**
+- **To kill**
 
-# Changelog
+# Change log
 
-[See the changelog](./changelog)
+[View the changelog](./changelog)
 
 # Support
 
-If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+If you're having a problem, start by reading the latest threads related to the plugin on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
+If you still can't find an answer to your question, feel free to start a new thread, and don't forget to include the plugin tag ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
-At a minimum, you will need to provide:
+At a minimum, you must provide:
 
-- a screenshot of the Jeedom health page
-- a screenshot of the plugin's configuration page
-- all available plugin logs, at _INFO_ level, pasted into a `Preformatted Text` (button `</>` on community), no files!
-- depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
+- a screenshot of the Jeedom Health page
+- a screenshot of the plugin's settings page
+- All available plugin logs at the _INFO_ level, pasted into a `Preformatted Text` block (use the `</>` button on the community page)—no files!
+- depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...

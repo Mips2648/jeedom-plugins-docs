@@ -5,11 +5,11 @@ lang: fr_FR
 pluginId: linksys
 ---
 
-# Beta
+# Changelog
 
-n/a
+## 2026-06-12
 
-# Stable
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 
 ## 2026-05-12
 

@@ -5,13 +5,14 @@ lang: fr_FR
 pluginId: modbus2mqtt
 ---
 
-# Beta
+# Changelog
 
+## 2026-06-12
+
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 - Support des images d’équipement personnalisées (Jeedom 4.5)
 - Mise à jour de dépendances
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
-
-# Stable
 
 ## 2025-06-27
 

@@ -5,7 +5,9 @@ lang: fr_FR
 pluginId: MQTTDiscovery
 ---
 
-# Beta
+# Changelog
+
+## 2026-06-12
 
 - Support des images d’équipement personnalisées (Jeedom 4.5)
 - Standardisation de la mise à jour des commandes des équipements Bluetooth
@@ -16,8 +18,7 @@ pluginId: MQTTDiscovery
 - Correction de la configuration par défaut des commandes de type *moisture* qui étaient configurées comme des commandes de types *temperature* (ne s'applique que si le type générique est reçu dans les infos de découvertes)
 - Jeedom v4.5 requis
 - Mise à jour de dépendances
-
-# Stable
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 
 ## 2026-03-12
 

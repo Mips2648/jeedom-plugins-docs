@@ -7,13 +7,14 @@ pluginId: worxLandroidS
 
 # Changelog
 
-## 2026-06-12
+## 2026-06-13
 
 - Mise en place d'un nouveau flux de déploiement pour la documentation
 - Correction d'un warning sous php 8
 - Support des images d’équipement personnalisées (Jeedom 4.5)
 - Mise à jour de dépendances
 - Jeedom v4.5 requis
+- Python 3.11 requis, il sera installé automatiquement si nécessaire.
 
 ## 2025-08-11
 

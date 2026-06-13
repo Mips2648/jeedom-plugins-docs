@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Changelog
 
-## 2026-06-12
+## 2026-06-13
 
 - Support des images d’équipement personnalisées (Jeedom 4.5)
 - Standardisation de la mise à jour des commandes des équipements Bluetooth
@@ -19,10 +19,6 @@ pluginId: MQTTDiscovery
 - Jeedom v4.5 requis
 - Mise à jour de dépendances
 - Mise en place d'un nouveau flux de déploiement pour la documentation
-
-## 2026-03-12
-
-- Strictement **aucun** changement, ni correction, ni changement mineur, ni traduction, rien.
 
 ## 2026-01-02
 

@@ -7,8 +7,9 @@ pluginId: kroomba
 
 # Changelog
 
-## 2026-06-12
+## 2026-06-15
 
+- Correction sur sauvegarde des configs lors de la découverte via le cloud
 - Mise en place d'un nouveau flux de déploiement pour la documentation
 - Mise à jour de dépendances
 - Jeedom v4.5 requis

@@ -10,6 +10,7 @@ pluginId: MQTTDiscovery
 ## 2026-06-16
 
 - Mise à jour de dépendances
+- Python 3.11 requis, il sera installé automatiquement si nécessaire.
 
 ## 2026-06-13
 

@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Changelog
 
+## 2026-06-16
+
+- Mise à jour de dépendances
+
 ## 2026-06-13
 
 - Support des images d’équipement personnalisées (Jeedom 4.5)

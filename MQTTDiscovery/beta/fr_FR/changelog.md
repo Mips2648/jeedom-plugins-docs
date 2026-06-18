@@ -7,6 +7,10 @@ pluginId: MQTTDiscovery
 
 # Changelog
 
+## 2026-06-18
+
+- Corrections et optimisations sur la mise à jour des commandes lors de la réception d'un message MQTT
+
 ## 2026-06-16
 
 - Mise à jour de dépendances

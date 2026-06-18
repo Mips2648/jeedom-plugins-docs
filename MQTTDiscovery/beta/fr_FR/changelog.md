@@ -10,6 +10,7 @@ pluginId: MQTTDiscovery
 ## 2026-06-18
 
 - Corrections et optimisations sur la mise à jour des commandes lors de la réception d'un message MQTT
+- Corrections du parsing des infos de découvertes lorsque le payload contient des guillements
 
 ## 2026-06-16
 

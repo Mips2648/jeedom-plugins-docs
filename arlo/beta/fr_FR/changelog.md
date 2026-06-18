@@ -7,6 +7,10 @@ pluginId: arlo
 
 # Changelog
 
+## 2026-06-18
+
+- Force le rafraichissement des modes dans le démon si ceux-ci ne sont pas connus avant d'éviter des problèmes de changement de mode
+
 ## 2026-06-12
 
 - Mise à jour de dépendances

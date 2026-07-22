@@ -7,6 +7,10 @@ pluginId: hydrao
 
 # Changelog
 
+## 2026-07-22
+
+- Mise à jour de dépendances
+
 ## 2026-06-12
 
 - Mise en place d'un nouveau flux de déploiement pour la documentation

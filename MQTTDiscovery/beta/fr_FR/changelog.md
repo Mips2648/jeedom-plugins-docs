@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Changelog
 
-## 2026-07-22
+## 2026-07-27
 
 - Mise à jour de dépendances
 

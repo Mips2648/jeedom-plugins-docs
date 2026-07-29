@@ -1,62 +1,62 @@
 ---
 layout: default
-title: Gotify documentation
+title: Documentation Gotify
 lang: en_US
 pluginId: gotify
 ---
 
 # Description
 
-Plugin allowing Jeedom to act as a Gotify application that can send messages (notifications) to a Gotify server.
-You will find more details in <a href="https://gotify.net/docs/" target="_blank">Gotify's documentation</a> .
+A plugin that allows Jeedom to act as a Gotify application capable of sending messages (notifications) to a Gotify server.
+You can find more details in <a href="https://gotify.net/docs/" target="_blank">the Gotify documentation</a>.
 
-The advantage of this system is that it can be self-hosted (a docker container is enough), your data remains in your possession.
+The advantage of this system is that it can be hosted on your own servers (a Docker container is all you need), so your data remains in your possession.
 
-# Supported versions
+# Supported Versions
 
-| Component | Version                     |
+| Component | Version |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+Debian | Bullseye(11) & Bookworm(12)
+| Jeedom    | >= 4.5 |
 
 # Installation
 
-In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
+To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-It is needed to already have a Gotify server setup, the installation will not be detailed here because it is very clearly explained on the site.
+You must already have a Gotify server; the installation process will not be covered here, as it is explained very clearly on the website.
 
-# Plugin configuration
+# Plugin Configuration
 
-In the configuration of the plugin it will be necessary to setup the URL of the Gotify server in the format:
+In the plugin's configuration, you'll need to enter the Gotify server URL in the following format:
 
 ```HTTP
 http://yourdomain.com:32768
 ```
 
-# Devices configuration
+# Equipment Configuration
 
-After creating new device, the usual options are available.
+After creating a new piece of equipment, the usual options are available.
 
-It will also be needed to setup the token of the application which you will have previously created in Gotify (do not mix with the client token).
-So one Jeedom device matches one Gotify application.
+You'll also need to enter the application token that you previously created in Gotify (not to be confused with the client token).
+So, a Jeedom device corresponds to a Gotify app.
 
-You can optionally configure a client token, this will allow Jeedom to view and delete messages of all apps belonging to the associated client on the server (otherwise it can only send new messages).
+You may want to set up a client token; this will allow Jeedom to view and delete messages from all apps for that client (otherwise, it will only be able to send messages).
 
-It is possible to create several send commands with different priorities (see Gotify documentation on this subject) if your client application manages these.
+You can create multiple send commands with different priorities (see the Gotify documentation on this topic) if your client application supports them.
 
-# Changelog
+# Change log
 
-[See the changelog](./changelog)
+[View the changelog](./changelog)
 
 # Support
 
-If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+If you're having a problem, start by reading the latest threads related to the plugin on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
+If you still can't find an answer to your question, feel free to create a new thread—and don't forget to include the plugin tag ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
-At a minimum, you will need to provide:
+At a minimum, you must provide:
 
-- a screenshot of the Jeedom health page
-- a screenshot of the plugin's configuration page
-- all available plugin logs, at *INFO* level, pasted into a `Preformatted Text` (button `</>` on community), no files!
-- depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
+- a screenshot of the Jeedom Health page
+- a screenshot of the plugin's settings page
+- All available logs from the plugin, at the *INFO* level, pasted into `Preformatted Text` (the `</>` button on the community), no files!
+- Depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...

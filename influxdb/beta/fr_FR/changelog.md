@@ -5,12 +5,17 @@ lang: fr_FR
 pluginId: influxdb
 ---
 
-# Beta
+# Changelog
 
-- Correction d'un bug rare sous Debian 12/php 8
+## 2026-07-22
+
 - Mise à jour de dépendances
 
-# Stable
+## 2026-06-12
+
+- Mise en place d'un nouveau flux de déploiement pour la documentation
+- Correction d'un bug rare sous Debian 12/php 8
+- Mise à jour de dépendances
 
 ## 2025-08-11
 

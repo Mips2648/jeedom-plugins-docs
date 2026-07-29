@@ -5,13 +5,18 @@ lang: fr_FR
 pluginId: tgw
 ---
 
-# Beta
+# Changelog
 
+## 2026-07-22
+
+- Mise à jour de dépendances
+
+## 2026-06-12
+
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 - Ajout d'une option avancée pour configurer le mode de scan
 - Mise à jour de dépendances
 - Jeedom v4.5 requis
-
-# Stable
 
 ## 2026-01-01
 

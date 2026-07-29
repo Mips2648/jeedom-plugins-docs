@@ -1,19 +1,15 @@
 ---
 layout: default
-title: Changelog Vaillant multiMATIC
+title: Changelog myVaillant
 lang: fr_FR
 pluginId: vaillantmultimatic
 ---
 
-> **Attention**
->
-> Ce plugin n'est plus compatible avec le système vaillantMULTIMATIC mais uniquement myVaillant. Si vous n'avez pas encore migré sur myVaillant, n'installez pas cette version du plugin.
+# Changelog
 
-# Beta
+## 2026-06-12
 
-n/a
-
-# Stable
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 
 ## 2026-05-12
 

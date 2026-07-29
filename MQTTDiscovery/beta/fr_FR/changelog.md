@@ -5,7 +5,23 @@ lang: fr_FR
 pluginId: MQTTDiscovery
 ---
 
-# Beta
+# Changelog
+
+## 2026-07-27
+
+- Mise à jour de dépendances
+
+## 2026-06-18
+
+- Corrections et optimisations sur la mise à jour des commandes lors de la réception d'un message MQTT
+- Corrections du parsing des infos de découvertes lorsque le payload contient des guillements
+
+## 2026-06-16
+
+- Mise à jour de dépendances
+- Python 3.11 requis, il sera installé automatiquement si nécessaire.
+
+## 2026-06-13
 
 - Support des images d’équipement personnalisées (Jeedom 4.5)
 - Standardisation de la mise à jour des commandes des équipements Bluetooth
@@ -16,12 +32,7 @@ pluginId: MQTTDiscovery
 - Correction de la configuration par défaut des commandes de type *moisture* qui étaient configurées comme des commandes de types *temperature* (ne s'applique que si le type générique est reçu dans les infos de découvertes)
 - Jeedom v4.5 requis
 - Mise à jour de dépendances
-
-# Stable
-
-## 2026-03-12
-
-- Strictement **aucun** changement, ni correction, ni changement mineur, ni traduction, rien.
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 
 ## 2026-01-02
 

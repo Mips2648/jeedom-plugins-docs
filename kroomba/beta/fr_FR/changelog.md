@@ -5,12 +5,15 @@ lang: fr_FR
 pluginId: kroomba
 ---
 
-# Beta
+# Changelog
 
+## 2026-06-15
+
+- Correction sur sauvegarde des configs lors de la découverte via le cloud
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 - Mise à jour de dépendances
 - Jeedom v4.5 requis
-
-# Stable
+- Python 3.11 requis, il sera installé automatiquement si nécessaire.
 
 ## 2026-01-02
 

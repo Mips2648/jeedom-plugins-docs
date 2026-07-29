@@ -5,11 +5,16 @@ lang: fr_FR
 pluginId: logmanager
 ---
 
-# Beta
+# Changelog
 
-n/a
+## 2026-07-28
 
-# Stable
+- Contrôle plus strict sur le nom donné à l'équipement: n'utilisez rien qui ressemble au nom ni à l'ID d'un plugin existant!
+- Mise à jour de dépendances
+
+## 2026-06-12
+
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 
 ## 2026-05-12
 

@@ -5,11 +5,12 @@ lang: fr_FR
 pluginId: miele
 ---
 
-# Beta
+# Changelog
 
+## 2026-06-12
+
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 - Mise à jour de dépendances
-
-# Stable
 
 ## 2026-04-12
 

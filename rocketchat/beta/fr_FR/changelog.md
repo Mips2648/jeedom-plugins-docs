@@ -5,11 +5,15 @@ lang: fr_FR
 pluginId: rocketchat
 ---
 
-# Beta
+# Changelog
 
-n/a
+## 2026-07-22
 
-# Stable
+- Mise à jour de dépendances
+
+## 2026-06-12
+
+- Mise en place d'un nouveau flux de déploiement pour la documentation
 
 ## 2026-05-12
 

@@ -1,59 +1,59 @@
 ---
 layout: default
-title: ClickSend documentation 
+title: Documentation ClickSend
 lang: en_US
 pluginId: clicksend
 ---
 
 # Description
 
-Plugin to integrate the [ClickSend platform](https://www.clicksend.com) which allows the sending of text messages (SMS) or voice messages (TTS)
+Plugin to integrate the [ClickSend](https://www.clicksend.com) platform, which allows you to send text messages (SMS) or voice messages (TTS)
 
-# Supported versions
+# Supported Versions
 
-| Component | Version                     |
+| Component | Version |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+Debian | Bullseye(11) & Bookworm(12)
+| Jeedom    | >= 4.5 |
 
 # Installation
 
-In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
+To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Plugin configuration
+# Plugin Configuration
 
-There is no additional configuration to do here.
+There is no configuration required here.
 
-# Devices configuration
+# Equipment Configuration
 
-Start by creating a [ClickSend account](https://www.clicksend.com) and make sure you have credit on it.
+Start by creating a [ClickSend](https://www.clicksend.com) account and make sure you have credit in it.
 
-Then, in the Developers > API Credentials section you need to add a new “subaacount”, choose a username and generate an api key.
+Next, in the Developers > API Credentials section, you need to add a new "subaccount," choose a username, and generate an API key.
 
-After creation of a new device , the usual options are available.
-You will also need to configure your clicksend account username and API key.
+In Jeedom, after creating a new device, the usual options are available.
+You'll also need to set up the username and API key for your Clicksend account.
 
-## Commands
+## Orders
 
 ![commands](./../images/commands.png)
 
-In the command tab you will see a **Refresh** command that allows you to update the remaining balance; this information is also updated automatically every night and a **Balance** info command.
+On the "Commands" tab, you'll see a **Refresh** command that updates the remaining balance; this information is also updated automatically every night, and there is a **Balance** info command.
 
-You can add commands to send messages via the *Add command* button. You will have to give a name, choose the type *SMS* or*Call (TTS)* and enter the telephone number in international format.
+You can add commands to send messages using the *Add a Command* button. You'll need to enter a name, select the type (*SMS* or *Call (TTS)*), and enter the phone number in international format.
 
-# Changelog
+# Change log
 
-[See the changelog](./changelog)
+[View the changelog](./changelog)
 
 # Support
 
-If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+If you're having a problem, start by reading the latest threads related to the plugin on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
+If you still can't find an answer to your question, feel free to create a new thread—and don't forget to include the plugin tag ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
-At a minimum, you will need to provide:
+At a minimum, you must provide:
 
-- a screenshot of the Jeedom health page
-- a screenshot of the plugin's configuration page
-- all available plugin logs, at *INFO* level, pasted into a `Preformatted Text` (button `</>` on community), no files!
-- depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
+- a screenshot of the Jeedom Health page
+- a screenshot of the plugin's settings page
+- All available logs from the plugin, at the *INFO* level, pasted into `Preformatted Text` (the `</>` button on the community), no files!
+- Depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...

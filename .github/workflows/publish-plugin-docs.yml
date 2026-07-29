@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: Checkout plugin repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Checkout documentation repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: Mips2648/jeedom-plugins-docs
           ref: master

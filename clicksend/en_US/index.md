@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documentation ClickSend
+title: ClickSend Documentation
 lang: en_US
 pluginId: clicksend
 ---
@@ -14,7 +14,7 @@ Plugin to integrate the [ClickSend](https://www.clicksend.com) platform, which a
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+| Jeedom    | >= 4.5 |
 
 # Installation
 
@@ -24,20 +24,20 @@ To use the plugin, you must download, install, and activate it just like any oth
 
 There is no configuration required here.
 
-# Equipment Configuration
+# Device Setup
 
-Start by creating a [ClickSend](https://www.clicksend.com) account and make sure you have credit in it.
+Start by creating a [ClickSend](https://www.clicksend.com) account and make sure you have credit on it.
 
 Next, in the Developers > API Credentials section, you need to add a new "subaccount," choose a username, and generate an API key.
 
 In Jeedom, after creating a new device, the usual options are available.
 You'll also need to set up the username and API key for your Clicksend account.
 
-## Orders
+## Commands
 
 ![commands](./../images/commands.png)
 
-On the "Commands" tab, you'll see a **Refresh** command that updates the remaining balance; this information is also updated automatically every night, and there is a **Balance** info command.
+In the "Controls" tab, you'll see a **Refresh** command that updates the remaining balance; this information is also updated automatically every night, along with a **Balance** info command.
 
 You can add commands to send messages using the *Add a Command* button. You'll need to enter a name, select the type (*SMS* or *Call (TTS)*), and enter the phone number in international format.
 
@@ -55,5 +55,5 @@ At a minimum, you must provide:
 
 - a screenshot of the Jeedom Health page
 - a screenshot of the plugin's settings page
-- All available logs from the plugin, at the *INFO* level, pasted into `Preformatted Text` (the `</>` button on the community), no files!
+- All available plugin logs at the *INFO* level, pasted into `Preformatted Text` (use the `</>` button on the community), no files!
 - Depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...

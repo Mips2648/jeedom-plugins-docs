@@ -24,22 +24,22 @@ Para utilizar el plugin, debes descargarlo, instalarlo y activarlo como cualquie
 
 Aquí no hay que realizar ninguna configuración.
 
-# Configuración de los equipos
+# Configuración de los dispositivos
 
-Empieza por crear una cuenta en [ClickSend](https://www.clicksend.com) y asegúrate de que dispones de saldo en ella.
+Empieza por crear una cuenta en [ClickSend](https://www.clicksend.com) y asegúrate de tener saldo en ella.
 
 A continuación, en la sección «Developers > API Credentials», debes añadir una nueva «subaacount», elegir un nombre de usuario y generar una clave API.
 
 En Jeedom, tras crear un nuevo dispositivo, están disponibles las opciones habituales.
 También tendrás que configurar el nombre de usuario y la clave API de tu cuenta de Clicksend.
 
-## Pedidos
+## Controles
 
 ![comandos](./../images/commands.png)
 
 En la pestaña «Comandos» verás un comando **Actualizar** que permite actualizar el saldo restante; esta información también se actualiza automáticamente cada noche, así como un comando de información **Saldo**.
 
-Puedes añadir comandos para enviar mensajes mediante el botón *Añadir un comando*. Tendrás que darle un nombre, elegir el tipo *SMS* o *Llamada (TTS)* e introducir el número de teléfono en formato internacional.
+Puedes añadir comandos para enviar mensajes a través del botón *Añadir un comando*. Tendrás que darle un nombre, elegir el tipo *SMS* o *Llamada (TTS)* e introducir el número de teléfono en formato internacional.
 
 # Registro de cambios
 

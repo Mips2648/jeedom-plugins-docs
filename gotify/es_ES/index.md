@@ -7,10 +7,10 @@ pluginId: gotify
 
 # Descripción
 
-Complemento que permite a Jeedom funcionar como una aplicación de Gotify capaz de enviar mensajes (notificaciones) a un servidor de Gotify.
+Complemento que permite a Jeedom funcionar como una aplicación Gotify capaz de enviar mensajes (notificaciones) a un servidor Gotify.
 Encontrarás más detalles en <a href="https://gotify.net/docs/" target="_blank">la documentación de Gotify</a>.
 
-La ventaja de este sistema es que se puede alojar en tus propias instalaciones (basta con un contenedor Docker), por lo que tus datos siguen estando en tu poder.
+La ventaja de este sistema es que se puede alojar en tu propia red (basta con un contenedor Docker), por lo que tus datos siguen estando en tu poder.
 
 # Versiones compatibles
 
@@ -27,18 +27,18 @@ Es necesario disponer ya de un servidor Gotify; aquí no se detallará la instal
 
 # Configuración del complemento
 
-En la configuración del plugin habrá que introducir la URL del servidor Gotify con el siguiente formato:
+En la configuración del complemento, habrá que introducir la URL del servidor Gotify con el siguiente formato:
 
 ```HTTP
 http://yourdomain.com:32768
 ```
 
-# Configuración de los equipos
+# Configuración de los dispositivos
 
-Una vez creado un nuevo equipo, se muestran las opciones habituales.
+Una vez creado un nuevo dispositivo, estarán disponibles las opciones habituales.
 
 También tendrás que introducir el token de la aplicación que hayas creado previamente en Gotify (no lo confundas con el token de cliente).
-Por lo tanto, un dispositivo Jeedom se corresponde con una aplicación Gotify.
+Así pues, un dispositivo Jeedom se corresponde con una aplicación Gotify.
 
 Si lo deseas, puedes configurar un token de cliente; esto permitirá a Jeedom consultar y eliminar los mensajes de todas las aplicaciones de ese cliente (de lo contrario, solo podrá enviarlos).
 

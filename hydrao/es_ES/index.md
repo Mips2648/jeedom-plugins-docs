@@ -24,34 +24,34 @@ Para utilizar el plugin, debes descargarlo, instalarlo y activarlo como cualquie
 
 En la configuración del complemento, debes indicar tu nombre de usuario y contraseña de la aplicación Hydrao, así como la clave API. Para obtener tu clave API, debes ponerte en contacto directamente con el servicio de asistencia de Hydrao.
 
-También puedes configurar cuántas duchas de las registradas anteriormente deben sincronizarse con Jeedom; esto resulta especialmente útil durante la primera sincronización. Más información a continuación.
+También puedes configurar cuántas duchas anteriores deben sincronizarse con Jeedom; esto resulta especialmente útil durante la primera sincronización. Más información a continuación.
 
 # Las instalaciones
 
 En cuanto la configuración del complemento sea correcta, este sincronizará tus cabezales de ducha.
-Se realizará una sincronización cada 2 horas y puedes actualizar manualmente el sistema mediante el comando correspondiente en el equipo.
+Se realizará una sincronización cada dos horas y podrás actualizar manualmente el sistema mediante el comando correspondiente en el dispositivo.
 
 > **Atención**
 >
-> Hydrao limita considerablemente el número de llamadas a la API; si aparece este error en el registro: «Login failed: (429) - response received: {"message":"Limit Exceeded"}», te recomiendo que te pongas en contacto con ellos directamente para pedirles que aumenten el límite.
+> Hydrao limita considerablemente el número de llamadas a la API; si aparece este error en el registro: «Login failed: (429) - response received: {"message":"Limit Exceeded"}», te recomiendo que te pongas en contacto directamente con ellos para pedirles que aumenten el límite.
 
-El plugin creará un equipo *Mango* por cada mango activado en tu cuenta. Cada equipo *Pommeau* contará con los comandos de información que se describen a continuación, que proporcionan datos sobre la *última ducha registrada*, pero las duchas anteriores que aún no se hayan sincronizado con Jeedom también se sincronizarán y se incluirán en el historial de comandos de Jeedom, con la hora registrada por Hydrao. El número máximo de duchas que se pueden sincronizar del pasado se puede seleccionar en la configuración del plugin.
+El complemento creará un dispositivo *Cabezal* por cada cabezal activado en tu cuenta. Cada dispositivo *Mando de ducha* dispondrá de los comandos de información que se describen a continuación, que proporcionan datos sobre la *última ducha registrada*, pero las duchas anteriores que aún no se hayan sincronizado con Jeedom también se sincronizarán y se incluirán en el historial de comandos de Jeedom, con la hora registrada por Hydrao. El número máximo de duchas que se pueden sincronizar del pasado se puede seleccionar en la configuración del complemento.
 
 > **Atención**
 >
-> Como ya sabéis, la fecha de sincronización entre el cabezal de ducha y Hydrao no es necesariamente la fecha real de la ducha, y esa fecha de sincronización es la única que conoce el complemento, por lo que es imposible conocer la fecha real de la ducha a menos que sincronices el cabezal con Hydrao cada vez que te duches. Se trata de una limitación del sistema proporcionado por Hydrao, debida a que los cabezales deben sincronizarse periódicamente con la nube de Hydrao a través de tu teléfono.
+> Como ya sabes, la fecha de sincronización entre el cabezal de ducha y Hydrao no es necesariamente la fecha real en la que te duchaste, y como esa fecha de sincronización es la única que conoce el complemento, es imposible saber la fecha real en la que te duchaste, a menos que sincronices tu cabezal de ducha con Hydrao cada vez que te duches. Esta es una limitación del sistema que ofrece Hydrao, relacionada con el hecho de que los cabezales deben sincronizarse periódicamente con la nube de Hydrao a través de vuestro teléfono.
 
-El complemento también creará un equipo llamado *Cuadro de mando* que ofrece información y estadísticas generales relacionadas con tu cuenta (y no con una ducha en concreto).
+El complemento también creará un dispositivo llamado *Panel de control* que ofrece información y estadísticas generales relacionadas con tu cuenta (y no con una ducha en concreto).
 
 # Los pedidos
 
-En un equipo *Pommeau* hay los siguientes mandos:
+En un dispositivo *Pommeau* existen los siguientes controles:
 
-- **Fecha de sincronización** indica la última fecha de sincronización entre el mando y Hydrao
+- **Fecha de sincronización** indica la última fecha de sincronización entre el pomo y Hydrao
 - **Volumen** indica el número de litros consumidos durante la última ducha
 - **Duración** indica la duración, en segundos, de la última ducha
 - **Temperatura** indica la temperatura media del agua de la última ducha
-- **Duración del enjabonado** y **número de enjabonados** de la última ducha (si se conoce)
+- **Tiempo de enjabonado** y **número de enjabonados** de la última ducha (si se conoce)
 - **Caudal** de la última ducha
 - **Consumo medio** de las últimas 100 duchas
 

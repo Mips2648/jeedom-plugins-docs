@@ -9,7 +9,7 @@ pluginId: influxdb
 
 A plugin that allows you to connect to an InfluxDB database. It makes it easy to send the desired data by simply selecting the corresponding commands from a list, which allows you to export the history so it can then be viewed using Grafana, for example.
 
-The plugin also allows you to export Jeedom order history to InfluxDB.
+The plugin also allows you to export Jeedom commands history to InfluxDB.
 
 # Supported Versions
 
@@ -70,8 +70,8 @@ It is entirely possible to have multiple devices connected to the same database,
 In _Auto-update_ mode, you can choose the schedule as well as the value to be sent as the measurement's timestamp:
 
 - _Posting Time_, Default Value, and Historical Behavior of the Plugin
-- _Order Value Date_
-- _Order Pickup Date_
+- _Command value date_
+- _Command collection date_
 
 ## Selecting the measurements to send
 
@@ -79,17 +79,17 @@ The second tab displays all the commands selected for sending to InfluxDB. You c
 
 ![Command Configuration](../images/commands.png "Config commandes")
 
-There are three ways to search for and select orders to send:
+There are three ways to search for and select commands to send:
 
-- Search for a single order using the **Add Order** button
-- Search for and add multiple orders using the **Add Orders by Object** button. This method has the advantage of displaying only the orders for equipment linked to a specific object, so the display will be faster if you have a large number of orders (more than 10,000).
+- Search for a single command using the **Add command** button
+- Search for and add multiple commands using the **Add commands by object** button. This method has the advantage of displaying only the commands for equipment linked to a specific object, so the display will be faster if you have a large number of commands (more than 10,000).
 - Search for and add multiple commands using the **Add Commands (List)** button. This screen will display all the command information from your Jeedom: it’s convenient because everything is shown, but if you have more than 10,000 commands, it may take 30 seconds or longer.
 
 Search example:
 
-![Order Lookup](../images/search.png "Recherche commandes")
+![Command Lookup](../images/search.png "Recherche commandes")
 
-1. In the order search screens, you can filter or search for any value by typing your search query into the field at the top of the list.
+1. In the commands search screens, you can filter or search for any value by typing your search query into the field at the top of the list.
 2. The list will display only those commands that have not yet been selected for this device/connector.
 3. To select a command and send it to InfluxDB, simply click the **Add** button. Don't forget to save the device after adding all the commands you want.
 
@@ -99,13 +99,13 @@ To export the history, go to the _Measurements_ tab, where you have configured t
 
 You can:
 
-- or export the history of a specific order by clicking the _Export_ button on the corresponding row in the actions
+- or export the history of a specific command by clicking the _Export_ button on the corresponding row in the actions
 - Either check or uncheck the desired measures (or check or uncheck all of them using the checkboxes in the column) and then click the _Export_ button at the top of the column.
 
 In both cases, the next step will ask you for the start date and end date you want for the export, and then the task will be scheduled.
 This may take a little time depending on the amount of data to be exported, but it will be seamless because the task will run in the background.
 
-# Orders
+# Commands
 
 The commands for the InfluxDB equipment/connector are displayed on the third tab:
 
@@ -124,9 +124,9 @@ Below is the link created by the plugin between InfluxDB concepts and Jeedom con
 | Jeedom | InfluxDB | Description |
 | --- | --- | --- |
 | Command Name | Measurement | A measurement in InfluxDB is similar to an SQL table. |
-| Order Value Date | Timestamp | This is the data's timestamp. |
+| Command value date | Timestamp | This is the data's timestamp. |
 | Equipment Name | Field(key) | A field key is similar to a column name in an SQL table. |
-| Order Value | Field(value) | This is the data for the point. |
+| Command value | Field(value) | This is the data for the point. |
 
 ## Tags
 

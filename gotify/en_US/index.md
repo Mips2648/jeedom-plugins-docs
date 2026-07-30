@@ -17,7 +17,7 @@ The advantage of this system is that it can be hosted on your own server (a Dock
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5 |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 

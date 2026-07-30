@@ -14,7 +14,7 @@ Plugin to integrate the [ClickSend](https://www.clicksend.com) platform, which a
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5 |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 

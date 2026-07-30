@@ -7,6 +7,11 @@ on:
         description: "Comma-separated target languages"
         required: false
         default: "en_US,es_ES"
+  push:
+    branches:
+      - master
+    paths:
+      - '**/fr_FR/*.md'
 
 permissions:
   contents: write

@@ -1,83 +1,83 @@
 ---
 layout: default
-title: Design Image Changelog
+title: Changelog Design Image
 lang: en_US
 pluginId: designImgSwitch
 ---
 
-# Beta
+# Change log
 
-n/a
+## 2026-06-12
 
-# Stable
+- Implementation of a new deployment workflow for documentation
 
 ## 2026-05-12
 
-- Update dependencies
+- Dependency Update
 - Jeedom v4.5 required
 
 ## 2024-12-25
 
-- Icon update
+- Icon Update
 
 ## 2024-08-19
 
-- Integration with *Weather* plugin removed
-- Plugin translation in English, German, Spanish, Italian, Portuguese
+- Removal of integration with the *Weather* plugin
+- Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 
 ## 2023-05-20
 
-- Add links to documentation in beta
+- Added links to the beta documentation
 
 ## 2022-10-17
 
-- Update of the presentation of commands for Jeedom v4.3
+- Update to the commands Interface for Jeedom v4.3
 
 ## 2022-02-09
 
-- Added a manual configuration to integrate any weather source, so it is no longer mandatory to have the official Weather plugin
-- Add table display mode of the list of device for Jeedom 4.2
+- Added a manual configuration option to integrate any weather source, so the official Weather plugin is no longer required
+- Added a table-style view of the equipment list for Jeedom 4.2
 
 ## 2021-02-10
 
-- New presentation of objects list
-- Improved layout of device and commands configuration pages
-- Fix on custom image upload for Jeedom v4.1
+- New layout for the list of items
+- Improvements to the layout of the device configuration and commands
+- Fix for uploading custom images in Jeedom v4.1
 
 ## 2020-08-24
 
-- Cleanup of the layout for V4
+- Layout Cleanup for Version 4
 
 ## 2020-08-09
 
-- Fixed an issue on updating the design based on the day / night change
-- Add an info command *Phase of the day*
+- Fixed an issue with the design update based on the day/night cycle
+- Add an "*Time of Day*" info command
 
 ## 2020-05-31
 
-- Add an info command *Condition*
+- Add an "info" command *Condition*
 
 ## 2020-03-30
 
-- Move documentations
+- Relocation of documentation
 
 ## 2020-03-22
 
-- Minor fix when deleting a device
-- Update logo
+- Minor fix in case of device removal
+- Logo Update
 
 ## 2020-02-08
 
-- Add an option to automatically crop image to design dimension
+- Added an option to automatically crop the image to fit the design
 
 ## 2020-01-11
 
-- Add configuration to customize images
+- Added a configuration option to customize images
 
 ## 2019-10-01
 
-- Add English and German translations
-- Add option to force the refresh after a change of the background image
+- Added English and German translations
+- Added an option to force a refresh after changing the background image
 
 ## 2019-09-08
 
@@ -85,4 +85,4 @@ n/a
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
+[See the documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

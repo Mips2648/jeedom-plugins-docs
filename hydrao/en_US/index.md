@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Hydrao documentation
+title: Hydrao Documentation
 lang: en_US
 pluginId: hydrao
 ---
 
 # Description
 
-Plugin to integrate Hydrao shower head.
+Plugin for integrating Hydrao showerheads.
 
-# Supported versions
+# Supported Versions
 
 | Component | Version                     |
 |-----------|-----------------------------|
@@ -18,56 +18,56 @@ Plugin to integrate Hydrao shower head.
 
 # Installation
 
-In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
+To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Plugin configuration
+# Plugin Configuration
 
-In the plugin configuration, you must specify your username and password used on the Hydrao application as well as the API key. To get your API key, you need to contact Hydrao support directly.
+In the plugin settings, you must enter your username and password for the Hydrao app, as well as your API key. To obtain your API key, you must contact Hydrao support directly.
 
-You can also configure how many showers in the past should be synchronized with Jeedom, this is especially useful when synchronizing for the first time, more information below.
+You can also configure how many past showers should be synced with Jeedom; this is especially useful during the initial sync. See below for more information.
 
-# Devices
+# Equipment
 
-As soon as the plugin configuration is correct, the plugin will synchronize your shower heads.
-It will synchronize every 2 hours and you can do a manual refresh via the corresponding command on the device.
+Once the plugin is configured correctly, it will sync your showerheads.
+It will synchronize every 2 hours, and you can perform a manual refresh using the corresponding command on the device.
 
 > **Attention**
 >
-> Hydrao severely limits the number of API calls, if you receive this error in the log ́ ́Login failed: (429) - response received: {"message”: “Limit Exceeded"} ́  I invite you to contact them directly to ask them to increase the limit.
+> Hydrao strictly limits the number of API calls. If you see this error in the log—"Login failed: (429) - response received: {"message":"Limit Exceeded"}"—I recommend contacting them directly to ask them to increase the limit.
 
-The plugin will create one *Shower* device for each shower activated on your account. Each *Shower* device will have the info commands described below giving information on the *last known shower* but the previous showers that have not already been synchronized with Jeedom will also be synchronized and inserted in the command history under Jeedom, with the time known by Hydrao. The maximum number of showers to be synchronized in the past is to be chosen in the configuration of the plugin.
+The plugin will create a *Showerhead* device for each showerhead activated on your account. Each *Showerhead* will have the info commands described below, providing information on the *last known shower*, but previous showers that have not yet been synchronized with Jeedom will also be synchronized and added to the command history in Jeedom, along with the time recorded by Hydrao. The maximum number of showers to synchronize from the past can be selected in the plugin’s settings.
 
-> **Warning**
+> **Attention**
 >
-> As you know, the synchronization date between the shower head and Hydrao is not necessarily the actual date of the shower and this sync date is the only date known by the plugin, it is impossible to know the real date of the shower unless you synchronize between your shower head and Hydrao during each shower. This is a limitation of the system provided by Hydrao due to the fact that the knobs need to be regularly synchronized with the Hydrao cloud via your phone.
+> As you know, the synchronization date between the showerhead and Hydrao isn't necessarily the actual date of the shower, and this synchronization date is the only date known to the plugin; so it’s impossible to know the actual date of the shower unless you sync your showerhead with Hydrao every time you shower. This is a limitation of the system provided by Hydrao, stemming from the fact that showerheads must be regularly synced with the Hydrao cloud via your phone.
 
-The plugin will also create a *Dashboard* device that gives general information and statistics related to your account (and not to a particular shower).
+The plugin will also create a *Dashboard* feature that provides general information and statistics related to your account (not to a specific shower).
 
-# Commands
+# Orders
 
-On a *Shower* device, there are the following controls:
+On a *Pommeau* system, the following controls are available:
 
-- **Sync date** gives the last sync date between the shower and Hydrao
-- **Volume** indicates the number of liters consumed during the last shower
+- **Sync Date** shows the last date the knob was synchronized with Hydrao
+- **Volume** indicates the number of liters used during the last shower
 - **Duration** indicates the duration, in seconds, of the last shower
-- **Temperature** indicates the average temperature of the water from the last shower
-- **Soaping time** & **Soaping number** for the last shower (if known)
-- **Flow rate** of the last shower
-- **Average consumption** of the last 100 showers
+- **Temperature** shows the average water temperature from your last shower
+- **Duration of lathering** & **Number of times lathered** for the last shower (if known)
+- **Water flow rate** of the last shower
+- **Average water usage** for the last 100 showers
 
-# Changelog
+# Change log
 
-[See the changelog](./changelog)
+[View the changelog](./changelog)
 
 # Support
 
-If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+If you're having a problem, start by reading the latest threads related to the plugin on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
+If you still can't find an answer to your question, feel free to create a new thread—and don't forget to include the plugin tag ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
-At a minimum, you will need to provide:
+At a minimum, you must provide:
 
-- a screenshot of the Jeedom health page
-- a screenshot of the plugin's configuration page
-- all available plugin logs, at *INFO* level, pasted into a `Preformatted Text` (button `</>` on community), no files!
-- depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
+- a screenshot of the Jeedom Health page
+- a screenshot of the plugin's settings page
+- All available logs from the plugin, at the *INFO* level, pasted into `Preformatted Text` (the `</>` button on the community), no files!
+- Depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...

@@ -1,43 +1,43 @@
 ---
 layout: default
-title: Hydrao changelog
+title: Hydrao Changelog
 lang: en_US
 pluginId: hydrao
 ---
 
-# Beta
+# Change log
 
-n/a
+## 2026-06-12
 
-# Stable
+- Implementation of a new deployment workflow for documentation
 
 ## 2026-05-12
 
-- Update dependencies
+- Dependency Update
 - Jeedom v4.5 required
 
 ## 2025-06-27
 
-- Update dependencies
+- Dependency Update
 
 ## 2024-12-25
 
-- Update dependencies
-- Icon update
+- Dependency Update
+- Icon Update
 
 ## 2024-10-17
 
-- Update dependencies
+- Dependency Update
 - Jeedom v4.4 required
 
 ## 2024-08-19
 
-- Update dependencies
-- Plugin translation in English, German, Spanish, Italian, Portuguese
+- Dependency Update
+- Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 
 ## 2024-04-10
 
-- Update dependencies
+- Dependency Update
 
 ## 2023-11-10
 
@@ -45,4 +45,4 @@ First stable release
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
+[See the documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

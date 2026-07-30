@@ -5,117 +5,118 @@ lang: en_US
 pluginId: influxdb
 ---
 
-# Beta
+# Change log
 
-- Fixes a rare bug under Debian 12/php 8
-- Update dependencies
+## 2026-06-12
 
-# Stable
+- Implementation of a new deployment workflow for documentation
+- Fixed a rare bug in Debian 12/PHP 8
+- Dependency Update
 
 ## 2025-08-11
 
-- Modification of integration with influxDB v1.8+: the default data retention policy is no longer specified, it will be decided by influxDB according to the configuration made on the database.
-- Update dependencies
+- Change to the InfluxDB v1.8+ integration: The default data retention policy is no longer specified; it will be determined by InfluxDB based on the database configuration.
+- Dependency Update
 
 ## 2025-06-27
 
-- Addition of an advanced parameter: *Total retry time* which sets the maximum total time send retries to Influx, regardless of the number of retries, timeouts and the time between retries.
-- PHP 8.4 compatibility
+- Added an advanced setting: *Total Retry Time* which sets the maximum total time allowed for sending attempts to Influx, regardless of the number of retries, timeouts, and the interval between each attempt.
+- PHP 8.4 Compatibility
 
 ## 2024-12-25
 
-- Update dependencies
-- Icon update
+- Dependency Update
+- Icon Update
 - Jeedom v4.4 required
 
 ## 2024-08-28
 
 > **Attention**
 >
-> The plugin no longer supports InfluxDB versions < 1.8, you must have influxDB version >= 1.8 or >= 2.0. Update your InfluxDB before updating the plugin (see official InfluxDB documentation for the procedure)
+> The plugin no longer supports versions of InfluxDB < 1.8; you must have a version of InfluxDB >= 1.8 or >= 2.0. Update your InfluxDB before updating the plugin (see the official InfluxDB documentation for instructions).
 >
-> You need Debian 11 Bullseye or higher to run the plugin. If you're running Debian 10, don't install the update.
+> You must be running Debian 11 Bullseye or later for the plugin to work. If you are running Debian 10, do not install the update.
 
-- Improve password fields
-- End of support for InfluxDB versions < 1.8 mainly to ensure the compatibility of the plugin with Debian 12 and PHP 8
-- Update dependencies
-- Plugin translation in English, German, Spanish, Italian, Portuguese
+- Improvements to password fields
+- Support for InfluxDB versions < 1.8 has been discontinued, primarily to ensure the plugin's compatibility with Debian 12 and PHP 8
+- Dependency Update
+- Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 
 ## 2024-04-10
 
-- Internal change in dependency management for compatibility with Jeedom v4.4
-- Jeedom v4.2 required
-- Update dependencies
+- Internal changes to dependency management for compatibility with Jeedom v4.4
+- Jeedom v4.2 or later required
+- Dependency Update
 
 ## 2023-02-06
 
-- Add a new export mode: *History* which allows you to export all the history of the day before each night
-- Update of the presentation of commands for Jeedom v4.3
-- Fix: cron was not properly deleted when uninstalling the plugin
+- Added a new export mode: *History*, which allows you to export the entire history from the previous day every night
+- Update to the Order Interface for Jeedom v4.3
+- Fix: The cron job was not properly removed when the plugin was uninstalled
 
 ## 2022-02-09
 
-- Addition of a new option for choosing the value of the timestamp sent, 3 possible options: sending time, command collect time, command value time (see documentation)
-- Add table display mode of the list of device for Jeedom 4.2
+- Added a new option for selecting the value of the timestamp to be sent; 3 options are available: send time, Jeedom collection time, Jeedom value time (see documentation)
+- Added a table-style view of the equipment list for Jeedom 4.2
 
 ## 2022-01-25
 
-- Redesign of the plugin "engine" to perform all tasks in dedicated processes asynchronously in order to not to impact other processes on your Jeedom or navigation in the dashboard
-- Add history export to InfluxDB (which benefits from the redesign explained above)
-- Add a **Send All** command to force sending the current value of all selected commands in device
-- Add several info commands to know the health status of the connector: **Status**, **Last error**... (see documentation)
-- Add connector health information in the general health page
-- Add total and daily counter commands for the number of measurements sent by device
-- Add advanced configuration to set timeouts and number of send retries
-- Sorting device and commands in selection screens by object/room
-- From now on the measurements will be sent with their Jeedom value date as timestamp instead of the time of sending
-- Fix: In the device selection by item it was not possible to search/select device without items/parts
+- Rewritten the plugin's "engine" to perform all tasks asynchronously in dedicated processes so as not to impact other processes on your Jeedom or navigation within the dashboard
+- Added the ability to export history to InfluxDB (which benefits from the redesign described above)
+- Added a **Send All** command to force the current value of all selected commands in the equipment to be sent
+- Added several info commands to check the connector's status: **Status**, **Last Error**... (see documentation)
+- Added health information for connectors to the General Health page
+- Added commands for total and daily counts of the number of measurements sent by device
+- Added advanced configuration options to set timeouts and the number of send attempts
+- Sorting Equipment and Orders in the Selection Screens by Object/Part
+- From now on, measurements will be sent with a timestamp based on their Jeedom value date instead of the time they were sent.
+- Fix: In the equipment selection by item, it was not possible to search for or select equipment without an item or part.
 
 ## 2021-10-26
 
-- Fix: the measure was not correctly sent to influx if it has the value *0*
+- Fix: The point was not sent to Influx when its value was *0*
 
 ## 2021-10-04
 
-- Adaptation of connection timeouts on influxDb v2
+- Adjusting Connection Timeouts in InfluxDB v2
 
 ## 2021-08-22
 
-- Complete redesign of the commands selection, much more responsive interface even with a very large number (+15,000) of commands to display:
-  - Add the ability to search and add individual command
-  - Add the ability to search and add command by object / room
-  - And redesign of search and add of commands via full list of commands
-  - Add search / filter to all lists
-- Add table display mode of the list of device for Jeedom 4.2
+- Complete overhaul of the order selection feature; the interface is now much more responsive, even when displaying a very large number (over 15,000) of orders:
+  - Added the ability to search for and add individual orders
+  - Added the ability to search for and add orders by item/part
+  - And a redesign of the search function and the ability to add commands via the complete list of commands
+  - Add a search/filter field to all lists
+- Added a table-style view of the equipment list for Jeedom 4.2
 
 ## 2021-02-04
 
-- Add https support for InfluxDb v1.x
-- Add support for InfluxDb v2.x (see documentation)
-- New presentation of objects list
+- Added https support for InfluxDB v1.x
+- Added support for InfluxDB v2.x (see documentation)
+- New layout for the list of items
 
 ## 2020-09-04
 
-- Cleanup of the layout for V4
-- Configuration optimization
+- Layout Cleanup for Version 4
+- Optimizing Configurations
 
 ## 2020-08-15
 
-- Fix: real-time sending did not work after deactivating and reactivating the plugin (except when saving again the corresponding device)
+- Fix: Real-time sending did not work after deactivating and reactivating the plugin (unless the corresponding equipment was resaved)
 
 ## 2020-08-09
 
-- Added possibility to define a personalized name of measurement and key for each command (to be configured in the list of commands)
-- Added a configuration on the device allowing to choose the tags to send with each point
-- Add tags (optional) "Command name" (*CommandName*) and "Generic type of command" (*GenericType*)
+- Added the ability to define a custom measurement name and key for each command (to be configured in the command list)
+- Added a configuration option to the device that allows you to select which tags to send with each data point
+- Add the tags (optional) "Command Name" (*CommandName*) and "Generic Command Type" (*GenericType*)
 
 ## 2020-05-03
 
-- Add "Duplicate" button on device configuration
+- Added a "Duplicate" button for equipment
 
 ## 2020-04-23
 
-- Fix an issue with sort of column "Sent" in commands configuration screen
+- Fixed a sorting issue in the "Sent" column on the order configuration screen
 
 ## 2020-04-16
 
@@ -123,7 +124,7 @@ pluginId: influxdb
 
 ## 2020-04-12
 
-- Add custom cron configuration in "auto-refresh" mode (by default set on every minute)
+- Added custom scheduling in "auto-refresh" mode (default: every minute)
 
 ## 2020-04-06
 
@@ -131,4 +132,4 @@ First version
 
 # Documentation
 
-[See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
+[See the documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

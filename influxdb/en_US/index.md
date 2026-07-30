@@ -1,160 +1,160 @@
 ---
 layout: default
-title: InfluxDB Documentation
+title: Documentation InfluxDB
 lang: en_US
 pluginId: influxdb
 ---
 
 # Description
 
-Plugin to connect to InfluxDB. It allows to easily send information by simply selecting the corresponding commands in a list. This allow to externalize the history which can then be consulted via Grafana for example.
+A plugin that allows you to connect to an InfluxDB database. It makes it easy to send the desired data by simply selecting the corresponding commands from a list, which allows you to export the history so it can then be viewed using Grafana, for example.
 
 The plugin also allows you to export Jeedom order history to InfluxDB.
 
-# Supported versions
+# Supported Versions
 
 > **Attention**
 >
-> The plugin supports influxDB versions >= 1.8 or >= 2.0. Older influxDBv1 versions < 1.8 are not supported.
+> The plugin supports InfluxDB versions >= 1.8 or >= 2.0. Older versions of InfluxDBv1 < 1.8 are not supported.
 
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
-| InfluxDB  | v1.8+ & v2                  |
+| Jeedom    | >= 4.4 |
+| InfluxDB  | v1.8+ & v2 |
 
 # Installation
 
-In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
+To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Plugin configuration
+# Plugin Configuration
 
-There is no particular configuration to do, the plugin may use cronDaily to reset the counters.
+There is no specific configuration required; the plugin may use cronDaily to reset the counters.
 
-# Devices
+# Equipment
 
-A Jeedom device correspond to one InfluxDB connection
+A Jeedom device corresponds to an InfluxDB connector.
 
-Each connector will connect and send data to one and only one influxDB instance, but you can have as many connectors as you need.
-The plugin manages InfluxDB v1.8+ and v2, the basic principle between the two remains the same but the way to connect changes between the two.
+Each connector will connect to and send data to one and only one InfluxDB instance, but you can have as many connectors as you need.
+The plugin supports InfluxDB v1.8+ and v2; the basic principle remains the same for both versions, but the connection method differs.
 
 ## InfluxDB v1.8+
 
-For each connector, you have to configure the IP address of InfluxDB server, a user, a password and the database name.
-You have the option to enable or not https.
+For each connector, you must configure the IP address of your InfluxDB server, a username, a password, and the database name.
+You have the option to enable or disable HTTPS.
 
 ![InfluxDB v1](../images/influxV1.png "InfluxDB v1")
 
 ## InfluxDB v2.0+
 
-For v2, you must configure the URL in the form `https://server.my`, the access token, the organization and the destination bucket (see influxDB documentation)
+For v2, you must configure the URL in the format `https://server.my`, along with the access token, the organization, and the destination bucket (see the InfluxDB documentation).
 
 ![InfluxDB v2](../images/influxV2.png "InfluxDB v2")
 
 > **Tip**
-> influxDB has a free cloud offer for v2 that is very easy to set up for testing or even definitively if it suits you (limited to a single organization, rate and history retention), more info: <https://www.influxdata.com/influxdb-cloud-pricing/>
+> InfluxDB offers a free cloud plan for v2 that’s very easy to set up for testing—or even for long-term use if it suits your needs (limited to a single organization, in terms of data volume and history duration). For more information: <https://www.influxdata.com/influxdb-cloud-pricing/>
 
-## Sending mode
+## Shipping Method
 
-You can also choose how data must be sent, by default with auto-refresh. This configuration can be changed anytime without impact.
+You can also choose the delivery mode, which is set to auto-refresh by default. This mode can be changed at any time without any impact.
 
-![Send mode](../images/mode.png "Mode")
+![Shipping Method](../images/mode.png "Mode")
 
-- _Auto-refresh_: the plugin will send all selected measurements at the selected schedule in one call, by default every minute.
-This is the recommended way of working, it's the most optimal and do not add extra load on your Jeedom and at the same time it allows to have measurements every minute.
-- _Real time_: the plugin will send measurement one by one each time there is a change of value, potentially several calls in the second for the same command (depending devices/commands). This mode might induce an important load on your installation depending your hardware and number of selected commands while most of the time an update by minute is more than enough to get useful statistics.
-- _History_: allows you to export each night all the history of the day before 
+- _Auto-update_: The plugin will send all selected measurements according to the chosen schedule in a single call; by default, this occurs every minute.
+This is the recommended operating mode; it is more efficient and places virtually no load on your Jeedom, while still providing measurements every minute.
+- _Real-time_: The plugin will send measurements one by one each time a value changes, potentially resulting in several calls per second for the same command (depending on your equipment and commands). This mode can place a significant load on Jeedom depending on your hardware and the number of selected commands, whereas in many cases, a once-per-minute update to InfluxDB is more than sufficient to obtain useful statistics.
+- _History_: Allows you to export the entire history from the previous day every night
 
-It is possible to have multiple connectors to the same database each configured with different mode and different commands if you want to have some commands send in real time while optimizing the load for others
+It is entirely possible to have multiple devices connected to the same database, each configured with a different mode and different commands, if you want certain commands to be sent in real time while optimizing the load for the others.
 
-In _Auto-refresh_ mode, you can choose the schedule and the value that will be sent as the timestamp of the measurement:
+In _Auto-update_ mode, you can choose the schedule as well as the value to be sent as the measurement's timestamp:
 
-- _Send time_, default value and historical plugin behavior
-- _Value date_
-- _Collect date_
+- _Posting Time_, Default Value, and Historical Behavior of the Plugin
+- _Order Value Date_
+- _Order Pickup Date_
 
-## Selection of measurements to send
+## Selecting the measurements to send
 
-In the second tab are displayed all the commands selected for sending to InfluxDB. It is possible to filter the lines displayed via the "Search" field.
+The second tab displays all the commands selected for sending to InfluxDB. You can filter the displayed rows using the "Search" field.
 
-![Commands config](../images/commands.png "Commands config")
+![Command Configuration](../images/commands.png "Config commandes")
 
-It is possible to search and select commands to send via 3 methods:
+There are three ways to search for and select orders to send:
 
-- Search for a single command via the button **Add a command**
-- Search and add multiple commands via the button **Add commands by object**. This method has the advantage of only displaying the commands of devices linked to a particular object and therefore the display will be faster if you have a lot of commands (more than 10,000)
-- Search and add multiple commands via the **Add commands (list)** button. This screen will display all the info commands of your Jeedom: useful because everything is displayed but if you have more than 10,000 commands it can take 30s or more.
+- Search for a single order using the **Add Order** button
+- Search for and add multiple orders using the **Add Orders by Object** button. This method has the advantage of displaying only the orders for equipment linked to a specific object, so the display will be faster if you have a large number of orders (more than 10,000).
+- Search for and add multiple commands using the **Add Commands (List)** button. This screen will display all the command information from your Jeedom: it’s convenient because everything is shown, but if you have more than 10,000 commands, it may take 30 seconds or longer.
 
 Search example:
 
-![Search commands](../images/search.png "Search commands")
+![Order Lookup](../images/search.png "Recherche commandes")
 
-1. In the command search screens, it is possible to filter / search on any value by typing the search in the field at the top of the list.
-2. The list will only show commands that have not yet been selected for this device / connector.
-3. To select an command and send it to InfluxDB, all you have to do is click on the **Add** button. Remember to save the device after adding all the commands you want.
+1. In the order search screens, you can filter or search for any value by typing your search query into the field at the top of the list.
+2. The list will display only those commands that have not yet been selected for this device/connector.
+3. To select a command and send it to InfluxDB, simply click the **Add** button. Don't forget to save the device after adding all the commands you want.
 
-## Export of Jeedom history to InfluxDB
+## Exporting Jeedom History to InfluxDB
 
-To export the history you must go to the _Measurements_ tab in which you have configured the commands for your Jeedom device to be sent.
+To export the history, go to the _Measurements_ tab, where you have configured the commands to be sent to your Jeedom devices.
 
 You can:
 
-- either send the history of a particular command by clicking on the _Export_ button of the corresponding line in the actions
-- either check/uncheck the desired measures (and check/uncheck everything with the column selectors) and then click on the _Export_ button located in the upper zone of the column.
+- or export the history of a specific order by clicking the _Export_ button on the corresponding row in the actions
+- Either check or uncheck the desired measures (or check or uncheck all of them using the checkboxes in the column) and then click the _Export_ button at the top of the column.
 
-In both cases, the next step will ask you for the start date and the desired end date for the export and then the task will be scheduled.
-This may take some time depending on the amount of data to be exported but it will be transparent as the task will run in the background.
+In both cases, the next step will ask you for the start date and end date you want for the export, and then the task will be scheduled.
+This may take a little time depending on the amount of data to be exported, but it will be seamless because the task will run in the background.
 
-# Commands
+# Orders
 
-The InfluxDb device/connector commands are visible in the 3rd tab:
+The commands for the InfluxDB equipment/connector are displayed on the third tab:
 
-- **Send all** allows you to send all the current values of the measurements configured on the device, this does not send the command history, only the current value.
-- **Status** gives the status of the connector, will be equal to 1 if no problem is detected, 0 otherwise.
-- **Last send date** gives the date/time of the last successful send
-- **Last error date** & **Last error description** gives the date/time of the last error sent as well as the error message
-- **Total measurements** & **Total daily measurements** counters of measurements sent: total & daily.
+- **Send All** allows you to send all current values for the measurements configured on the device; it does not send command history, only the current value.
+- **Status** indicates the connector's status; it will be 1 if no problem is detected, and 0 otherwise.
+- **Last Send Date** shows the date and time of the last successful transmission
+- **Last Error Date** & **Last Error Description** show the date and time of the last failed transmission, as well as the error message
+- **Total Readings** & **Daily Total Readings**: counters for total and daily readings sent.
 
 # Definitions
 
-A **point** in InfluxDB represents a single data record that has 4 components: a **measurement**, **fields** set, **tags** set and a **timestamp**.
+A **point** in InfluxDB represents a data entry characterized by four components: the **metric**, a set of **fields**, a set of **tags**, and **timestamp** information.
 
-Below the relation implemented by the plugin between InfluxDB concepts and Jeedom concepts:
+Below is the link created by the plugin between InfluxDB concepts and Jeedom concepts:
 
 | Jeedom | InfluxDB | Description |
 | --- | --- | --- |
-| Command name | Measurement | A measurement in InfluxDB is conceptually similar to a SQL table. |
-| Command value date | Timestamp | It's the timestamp of the data |
-| Device name | Field(key) | A field key is similar to a column name in a SQL table. |
-| Command value | Field(value) | It is the value of the point. |
+| Command Name | Measurement | A measurement in InfluxDB is similar to an SQL table. |
+| Order Value Date | Timestamp | This is the data's timestamp. |
+| Equipment Name | Field(key) | A field key is similar to a column name in an SQL table. |
+| Order Value | Field(value) | This is the data for the point. |
 
 ## Tags
 
-Tags in InfluxDB are optional additional information associated to points.
-Tags can be used in queries to filter result.
-The following tags can be associated with each point sent, they must be selected in the device configuration page.
-This list can be amended if you need more:
+Tags in InfluxDB are optional pieces of additional information that can be associated with data points.
+They allow you to filter search results.
+The following tags can be associated with each data point sent; they must be selected on the device's configuration page.
+This list can be expanded if you need more:
 
 | Tag(key) | Tag(value) |
 | --- | --- |
 | Plugin | plugin name |
-| Object | Object/room name in Jeedom or "None" |
+| Object | Name of the Jeedom object/room or "None" |
 | CommandName | command name |
-| GenericType | generic type of command |
+| GenericType | generic command type |
 
-# Changelog
+# Change log
 
-[See the changelog](./changelog)
+[View the changelog](./changelog)
 
 # Support
 
-If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+If you're having a problem, start by reading the latest threads related to the plugin on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
+If you still can't find an answer to your question, feel free to create a new thread—and don't forget to include the plugin tag ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
-At a minimum, you will need to provide:
+At a minimum, you must provide:
 
-- a screenshot of the Jeedom health page
-- a screenshot of the plugin's configuration page
-- all available plugin logs, at _INFO_ level, pasted into a `Preformatted Text` (button `</>` on community), no files!
-- depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
+- a screenshot of the Jeedom Health page
+- a screenshot of the plugin's settings page
+- All available plugin logs at the _INFO_ level, pasted into a `Preformatted Text` (use the `</>` button on the community), no files!
+- Depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...

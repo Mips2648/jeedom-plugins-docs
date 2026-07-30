@@ -23,7 +23,7 @@ Debian | Bullseye (11) y Bookworm (12) |
 
 Para utilizar el plugin, debes descargarlo, instalarlo y activarlo como cualquier otro plugin de Jeedom.
 
-Es necesario disponer ya de un servidor Gotify; aquí no se detallará la instalación, ya que se explica con toda claridad en la página web.
+Es necesario disponer ya de un servidor Gotify; aquí no se detallará la instalación, ya que se explica muy claramente en la página web.
 
 # Configuración del complemento
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gotify Change Log
+title: Gotify Changelog
 lang: en_US
 pluginId: gotify
 ---
@@ -32,8 +32,8 @@ pluginId: gotify
 
 ## 2024-09-16
 
-- Removal of the option to skip verifying Gotify's host certificate; this option had not been active for nearly 4 years
-- Debian 11 or later is required
+- Removed the option to skip verifying Gotify's host certificate; this option had not been active for nearly 4 years
+- Debian 11 or later required
 
 ## 2024-08-19
 
@@ -46,17 +46,17 @@ pluginId: gotify
 
 ## 2023-05-20
 
-- Update to the Equipment Configuration Page
+- Update to the device configuration page
 - Improvements to password fields
 - Added links to the beta documentation
 
 ## 2022-10-17
 
-- Update to the Order Interface for Jeedom v4.3
+- Update to the commands Interface for Jeedom v4.3
 
 ## 2022-09-19
 
-- The client token is now configured on the device itself, rather than in the plugin's global settings, to allow you to create devices (apps in Gotify) and clients under different Gotify users => please check your configuration.
+- The client token is now configured on the device itself rather than in the plugin's global settings, allowing you to create devices (apps in Gotify) and clients under different Gotify users => please check your configuration.
 
 ## 2022-01-05
 
@@ -73,7 +73,7 @@ pluginId: gotify
 
 ## 2020-05-03
 
-- Internal Optimizations
+- Internal optimizations
 - Added a "Duplicate" button for equipment
 
 ## 2020-02-12
@@ -82,9 +82,9 @@ pluginId: gotify
 
 ## 2020-01-19
 
-- Added the ability to create multiple shipping orders per piece of equipment
-- Add a setting to each order to choose the shipping priority
-- Add a setting to each order to choose the message format
+- Added the ability to create multiple send commands per device
+- Added a setting to each command to choose the transmission priority
+- Added a setting to each command to choose the message format
 - Added a command to delete all messages on the server (you must have configured a client token)
 
 ## 2019-09-28

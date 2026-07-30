@@ -51,7 +51,7 @@ pluginId: influxdb
 ## 2023-02-06
 
 - Added a new export mode: *History*, which allows you to export the entire history from the previous day every night
-- Update to the Order Interface for Jeedom v4.3
+- Update to the commands Interface for Jeedom v4.3
 - Fix: The cron job was not properly removed when the plugin was uninstalled
 
 ## 2022-02-09
@@ -68,7 +68,7 @@ pluginId: influxdb
 - Added health information for connectors to the General Health page
 - Added commands for total and daily counts of the number of measurements sent by device
 - Added advanced configuration options to set timeouts and the number of send attempts
-- Sorting Equipment and Orders in the Selection Screens by Object/Part
+- Sorting equipment and commands in the selection screens by object/room
 - From now on, measurements will be sent with a timestamp based on their Jeedom value date instead of the time they were sent.
 - Fix: In the equipment selection by item, it was not possible to search for or select equipment without an item or part.
 
@@ -82,9 +82,9 @@ pluginId: influxdb
 
 ## 2021-08-22
 
-- Complete overhaul of the order selection feature; the interface is now much more responsive, even when displaying a very large number (over 15,000) of orders:
-  - Added the ability to search for and add individual orders
-  - Added the ability to search for and add orders by item/part
+- Complete overhaul of the command selection feature; the interface is now much more responsive, even when displaying a very large number (over 15,000) of commands:
+  - Added the ability to search for and add individual command
+  - Added the ability to search for and add command by object/room
   - And a redesign of the search function and the ability to add commands via the complete list of commands
   - Add a search/filter field to all lists
 - Added a table-style view of the equipment list for Jeedom 4.2
@@ -116,7 +116,7 @@ pluginId: influxdb
 
 ## 2020-04-23
 
-- Fixed a sorting issue in the "Sent" column on the order configuration screen
+- Fixed a sorting issue in the "Sent" column on the commands configuration screen
 
 ## 2020-04-16
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documentation Gotify
+title: Gotify Documentation
 lang: en_US
 pluginId: gotify
 ---
@@ -10,37 +10,37 @@ pluginId: gotify
 A plugin that allows Jeedom to act as a Gotify application capable of sending messages (notifications) to a Gotify server.
 You can find more details in <a href="https://gotify.net/docs/" target="_blank">the Gotify documentation</a>.
 
-The advantage of this system is that it can be hosted on your own servers (a Docker container is all you need), so your data remains in your possession.
+The advantage of this system is that it can be hosted on your own server (a Docker container is all you need), so your data remains in your possession.
 
 # Supported Versions
 
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+| Jeedom    | >= 4.5 |
 
 # Installation
 
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-You must already have a Gotify server; the installation process will not be covered here, as it is explained very clearly on the website.
+You must already have a Gotify server; the installation process will not be covered here, as it is clearly explained on the website.
 
 # Plugin Configuration
 
-In the plugin's configuration, you'll need to enter the Gotify server URL in the following format:
+In the plugin settings, you'll need to enter the Gotify server URL in the following format:
 
 ```HTTP
 http://yourdomain.com:32768
 ```
 
-# Equipment Configuration
+# Device Setup
 
-After creating a new piece of equipment, the usual options are available.
+After creating a new device, the usual options are available.
 
-You'll also need to enter the application token you previously created in Gotify (not to be confused with the client token).
+You will also need to enter the application token that you previously created in Gotify (not to be confused with the client token).
 So, a Jeedom device corresponds to a Gotify app.
 
-You may want to set up a client token; this will allow Jeedom to view and delete messages from all apps for that client (otherwise, it will only be able to send messages).
+You may want to configure a client token; this will allow Jeedom to view and delete messages from all apps for that client (otherwise, it will only be able to send messages).
 
 You can create multiple send commands with different priorities (see the Gotify documentation on this topic) if your client application supports them.
 
@@ -58,5 +58,5 @@ At a minimum, you must provide:
 
 - a screenshot of the Jeedom Health page
 - a screenshot of the plugin's settings page
-- All available logs from the plugin, at the *INFO* level, pasted into `Preformatted Text` (the `</>` button on the community), no files!
+- All available plugin logs at the *INFO* level, pasted into `Preformatted Text` (use the `</>` button on the community), no files!
 - Depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...

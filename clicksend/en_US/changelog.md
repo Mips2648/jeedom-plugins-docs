@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ClickSend Changelog
+title: ClickSend Change Log
 lang: en_US
 pluginId: clicksend
 ---
@@ -36,7 +36,7 @@ pluginId: clicksend
 
 ## 2024-06-21
 
-- Fixed a bug in cronDaily
+- Bug fix for cronDaily
 
 ## 2024-06-01
 

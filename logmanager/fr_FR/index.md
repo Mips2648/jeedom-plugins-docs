@@ -33,7 +33,7 @@ Après avoir créé un nouvel équipement, les options habituelles sont disponib
 
 Un équipement correspond à un log, le nom de l'équipement sera utilisé comme nom du fichier log.
 
-> **Tip**
+> **Conseil**
 >
 > Afin d'éviter des problèmes potentiels, le nom de l'équipement doit être uniquement composé des lettres de a à z, en miniscule ou en majuscule, et du caractère souligné "_", le première caractère doit être une lettre.
 

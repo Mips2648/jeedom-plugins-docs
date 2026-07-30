@@ -20,7 +20,7 @@ Plugin permettant la lecture des données des jauges connectées <a href="https:
 
 Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
-> **Tip**
+> **Conseil**
 > le plugin utilise le "cron hourly" pour actualiser les données toutes les heures, vous pouvez choisir de le désactiver et d'actualiser vos équipements manuellement ou via un autre moyen mais il n'est pas nécessaire de le faire plus fréquemment.
 
 # Configuration
@@ -29,7 +29,7 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 Cette étape n'est pas obligatoire, vous pouvez utiliser votre identifiant actuel/principal de Fullup pour ce plugin mais par principe je recommande de créer un nouveau utilisateur auquel vous partagerez l'accès (en lecture uniquement) à vos jauges.
 
-> **Tip**
+> **Conseil**
 >
 > Le plugin ne fait que lire les données fournies par les jauges (volume, température...).
 > Aucune données personnelles n'est récoltées et aucun changement ne sera effectué sur la configuration de vos jauges/citernes même si vous utilisez votre identifiant principal.
@@ -57,7 +57,7 @@ Cette étape n'est pas obligatoire, vous pouvez utiliser votre identifiant actue
 
 - Vous allez recevoir un email de confirmation afin de créer votre nouveau compte sur l'application Fullup, suivez simplement la procédure.
 
-> **Tip**
+> **Conseil**
 >
 > Déconnectez-vous de Fullup, ouvrez une "fenêtre privée" sur votre navigateur ou utilisez un autre navigateur pour pouvoir créer votre deuxième compte Fullup sinon vous serez automatiquement connecté en suivant le lien dans le mail reçu.
 
@@ -77,7 +77,7 @@ Cette étape n'est pas obligatoire, vous pouvez utiliser votre identifiant actue
 
 ![Erreur](../images/sync_failure.png "Erreur")
 
-> **Tip**
+> **Conseil**
 >
 > Il n'est pas possible de créer des équipements manuellement.
 > Si vous voulez rajouter des nouvelles jauges dans le future il suffit de revenir sur cette page et de cliquer sur "Rechercher les jauges Fullup".

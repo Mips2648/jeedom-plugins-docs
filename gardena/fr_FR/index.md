@@ -48,7 +48,7 @@ Les commandes de tous les équipements, que ce soit de la gamme Gardena Smart Sy
 
 Une commande **Rafraichir** existe pour demander une actualisation supplémentaire manuelle pour les tondeuses robots Husqvarna Automower mais cela n'est en principe pas nécessaire puisque tout changement d'état sera mis à jour en temps réel. **Attention** il y a une limite de 10.000 actualisations par mois pour les actualisations manuelles, cette limite est imposée par Husqvarna.
 
-> **Tip**
+> **Conseil**
 >
 > Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement jeedom ne correspond plus à aucun appareil en votre possession, veuillez le supprimer manuellement.
 

@@ -63,7 +63,7 @@ Si vous le port db9 n'est pas présent, il existe aussi des adaptateurs de borni
 
 # Installation du plugin
 
-> **Tip**
+> **Conseil**
 >
 > Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 

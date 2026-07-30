@@ -48,7 +48,7 @@ Il faut y mettre une config similaire à ceci: `file=/path/to/file description="
 
 Attention de bien mettre des guillemets s’il y a des espace dans le path ou dans la description (sinon pas nécessaire); La description est optionnelle.
 
-> **Tip**
+> **Conseil**
 >
 > Ceci n'est pas nécessaire lors de l'envoi d'une nouvelle capture depuis le plugin caméra (par exemple), pour ce cas il suffit d'utiliser la commande adéquate du plugin caméra dans votre scénario et d'y spécifier la commande *message* du plugin *Rocket.Chat* pour l'envoi.
 

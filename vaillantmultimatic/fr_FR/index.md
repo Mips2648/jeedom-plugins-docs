@@ -40,7 +40,7 @@ Vous devez renseigner le nom d'utilisateur et son mot de passe dans la configura
 
 Vous avez également la possibilité de configurer la fréquence de mise à jour des informations, en minute.
 
-> **Tip**
+> **Conseil**
 >
 > Lors d'une action, un changement de consigne ou de mode par exemple, l'état de l'équipement est mis à jour immédiatement. Il s'agit ici de mise à jours supplémentaires effectuées en arrière plan.
 
@@ -48,13 +48,13 @@ Vous avez également la possibilité de configurer la fréquence de mise à jour
 
 Dès que les dépendances seront installées et la configuration du plugin sera correcte, le démon sera démarré et le plugin synchronisera vos équipements avec Jeedom.
 
-> **Tip**
+> **Conseil**
 >
 > Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement Jeedom ne correspond plus à aucun équipement en votre possession, veuillez le supprimer manuellement.
 
 Des équipements de différents types seront créés en fonction de ce qui existent dans votre système. Les équipements possibles sont: la passerelle elle-même, le contrôleur de votre production d'eau chaude et le circulateur, un équipement pour gérer la ventilation, un équipement par zone de chauffage et si vous avez des équipements de la gamme ambiSENSE, un équipement par pièce et un équipement par vanne et par thermostat.
 
-> **Tip**
+> **Conseil**
 >
 > Si votre système myVaillant ne dispose pas d'un des équipements listés ci-dessus il n'y aura donc pas d'équipement de ce type créé sous Jeedom, cela est normal. Cette documentation reprend simplement l'ensemble des possibilités.
 

@@ -34,7 +34,7 @@ Il est également possible de choisir entre deux modes pour la synchronisation a
 - soit créer les nouveaux containers qui n'existent pas encore sous jeedom et mettre à jour les containers existants
 - soit uniquement mettre à jour les containers existants
 
-> **Tip**
+> **Conseil**
 >
 > L'action _Synchroniser_ disponible dans la page des équipements pour forcer une synchronisation manuellement créera toujours les containers manquants. L'option ci-dessus n'est applicable qu'à la synchronisation automatique
 

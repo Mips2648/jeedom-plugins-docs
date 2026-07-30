@@ -71,7 +71,7 @@ Avant de créer un nouvel utilisateur Arlo, il est important de connaître les i
 - le plugin ne cherchera que parmi les mails non lu de la journée en cours, par ordre chronologique inverse (du plus récent au plus ancien) et passera tous les mails envoyés avant son dernier login.
 - la langue du mail n’a pas d’importance: la recherche du code TFA fonctionnera quelque soit la langue du mail.
 
-> **Tip**
+> **Conseil**
 >
 > Dorénavant pour pouvoir vous connecter sur une boite mail gmail (Google) ou Microsoft, vous devez créer un _mot de passe d’application_, qui n’imposera pas le MFA pour se connecter, l'activation de l'option "applications non sécurisées" n'étant plus permise.
 > Plus de détails sur la procédure pour Google ici: <https://community.jeedom.com/t/google-applications-moins-securisees-mot-de-passe-dapplication/85617>.
@@ -95,7 +95,7 @@ Après avoir créé une boite mail pour le plugin, vous pouvez passer à l'étap
 - Cliquez sur "Envoyer une invitation"
 - Vous allez recevoir un email de confirmation afin de créer votre nouveau compte Arlo, suivez simplement la procédure.
 
-> **Tip**
+> **Conseil**
 >
 > Déconnectez-vous de "My Arlo", ouvrez une "fenêtre privée" sur votre navigateur ou utilisez un autre navigateur pour pouvoir créer votre deuxième compte Arlo.
 
@@ -122,7 +122,7 @@ Il n'est pas possible de créer manuellement un équipement. Les équipements so
 Le plugin ne supprimera jamais automatiquement un équipement; si vous ne disposez plus de l'équipement ou si vous avez supprimé les droits d'accès pour le plugin, il est recommandé de supprimer manuellement l'équipement correspondant dans Jeedom.
 Si vous rajoutez un nouvel équipement ou si vous modifiez les modes via l'application Arlo, il est recommandé de faire une synchronisation manuelle afin de mettre à jour la configuration du plugin immédiatement; dans le cas contraire cela se fera lors de la prochaine synchronisation automatique.
 
-> **Tip**
+> **Conseil**
 >
 > Cela ne concerne évidement pas les valeurs des commandes comme le mode sélectionné ou la détection de mouvement ou de son qui sont mis à jour en temps réel.
 
@@ -138,7 +138,7 @@ Pour les équipements de type caméra, il est possible de configurer une command
 
 Il est possible que certaines commandes spécifiques à certains modèles ne soient pas (encore) disponibles, dans ce cas veuillez me contacter via le forum pour plus d'information.
 
-> **Tip**
+> **Conseil**
 >
 > En cas d'ajout d'un équipement (hub, caméra, sonnette...), il est nécessaire de redémarrer le démon pour le bon fonctionnement sous Jeedom.
 

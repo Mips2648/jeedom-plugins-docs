@@ -43,7 +43,7 @@ En plus des configurations habituelles d'un équipement, vous devez configurer:
 - une condition (la condition pour que les notifications soient envoyées)
 - la ou les commandes de notification à utiliser (quand la condition est remplie)
 
-> **Tip**
+> **Conseil**
 >
 > Vous pouvez spécifier plusieurs commandes de notification en les séparant par &&
 

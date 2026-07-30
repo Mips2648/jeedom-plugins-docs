@@ -34,7 +34,7 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 Lors de l'installation des dépendances, le plugin *MQTT Manager* a normalement été installé automatiquement s'il ne l'était pas encore. Dans le cas contraire, veuillez installer ce plugin manuellement via le market Jeedom (plugin officiel gratuit)
 Ensuite, il faudra éventuellement le configurer (voir documentation du plugin *MQTT Manager*, dans la plupart des cas les options par défaut conviendront parfaitement)
 
-> **Tip**
+> **Conseil**
 >
 > Si vous avez déjà un broker MQTT installé, il est malgré tout nécessaire d'installer le plugin *MQTT Manager* mais prenez soin de le configurer en mode *broker distant* en renseignant les paramètres de votre broker actuel.
 
@@ -60,7 +60,7 @@ Depuis la page de configuration des équipements, cliquez sur le bouton *Découv
 - Via le cloud, *uniquement pour la synchronisation initiale*: Saisissez l'adresse e-mail et le mot de passe de votre compte iRobot afin que le plugin se connecte au cloud pour récupérer la liste des robots configurés et leur mot de passe.
 - En local, *ne fonctionne pas avec tous les modèles*: Assurez-vous que les robots à découvrir sont sur la base de recharge et allumés (voyant vert allumé). Ensuite, appuyez et maintenez le bouton HOME de votre robot jusqu'à ce qu'il émette une série de tonalités (environ 2 secondes). Relâchez le bouton et le voyant WIFI devrait clignoter.
 
-> **Tip**
+> **Conseil**
 >
 > Le mode cloud ne concerne que la découverte du robot. Une fois découvert, le contrôle du robot s'effectuera en local dans tous les cas.
 
@@ -70,7 +70,7 @@ Vous pouvez éventuellement renseigner l'adresse IP du robot, c'est utile **et n
 
 Ensuite attendez cela prend entre 15 et 30 secondes, vous verrez des notifications à l'écran et le démon se reconnectera tout seul à la fin du processus si cela a réussi. L’équipement sera ensuite créé (vous pouvez surveiller l’avancement via le log si nécessaire).
 
-> **Tip**
+> **Conseil**
 >
 > Lorsque la procédure de découverte est terminée, vous pouvez à nouveau utiliser votre application mobile iRobot si nécessaire.
 

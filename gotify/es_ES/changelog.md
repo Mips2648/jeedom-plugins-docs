@@ -60,7 +60,7 @@ pluginId: gotify
 
 ## 2022-01-05
 
-- Incorporación de la visualización en formato de tabla de la lista de equipos para Jeedom 4.2
+- Incorporación de la visualización en forma de tabla de la lista de equipos para Jeedom 4.2
 
 ## 2020-11-28
 
@@ -82,7 +82,7 @@ pluginId: gotify
 
 ## 2020-01-19
 
-- Se ha añadido la posibilidad de crear varias órdenes de envío por equipo
+- Se ha añadido la posibilidad de crear varios pedidos de envío por equipo
 - Se ha añadido una opción de configuración en cada pedido para elegir la prioridad del envío
 - Se ha añadido una opción de configuración en cada comando para elegir el formato del mensaje
 - Se ha añadido un comando para eliminar todos los mensajes del servidor (es necesario haber configurado un token de cliente)

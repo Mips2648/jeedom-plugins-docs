@@ -14,10 +14,10 @@ The advantage of this system is that it can be hosted on your own servers (a Doc
 
 # Supported Versions
 
-| Component | Version |
+| Component | Version                     |
 |-----------|-----------------------------|
-Debian | Bullseye(11) & Bookworm(12)
-| Jeedom    | >= 4.5 |
+| Debian    | Bullseye(11) & Bookworm(12) |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 
@@ -37,7 +37,7 @@ http://yourdomain.com:32768
 
 After creating a new piece of equipment, the usual options are available.
 
-You'll also need to enter the application token that you previously created in Gotify (not to be confused with the client token).
+You'll also need to enter the application token you previously created in Gotify (not to be confused with the client token).
 So, a Jeedom device corresponds to a Gotify app.
 
 You may want to set up a client token; this will allow Jeedom to view and delete messages from all apps for that client (otherwise, it will only be able to send messages).

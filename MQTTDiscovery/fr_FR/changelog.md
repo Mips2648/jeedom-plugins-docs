@@ -7,6 +7,20 @@ pluginId: MQTTDiscovery
 
 # Changelog
 
+## 2026-07-27
+
+- Mise à jour de dépendances
+
+## 2026-06-18
+
+- Corrections et optimisations sur la mise à jour des commandes lors de la réception d'un message MQTT
+- Corrections du parsing des infos de découvertes lorsque le payload contient des guillements
+
+## 2026-06-16
+
+- Mise à jour de dépendances
+- Python 3.11 requis, il sera installé automatiquement si nécessaire.
+
 ## 2026-06-13
 
 - Support des images d’équipement personnalisées (Jeedom 4.5)

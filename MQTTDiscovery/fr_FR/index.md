@@ -77,7 +77,7 @@ Le plugin *MQTT Manager (mqtt2)* n'est pas requis mais s'il est installé, la co
 Il faut configurer l'adresse IP du broker, le port, un nom d'utilisateur et son mot de passe.
 Si le plugin *MQTT Manager (mqtt2)* est installé, vous verrez un bouton pour effectuer cette configuration automatiquement.
 
-> **Conseil**
+> **Tip**
 >
 > Il n'est absolument pas nécessaire d'avoir installé ni de garder *MQTT Manager (mqtt2)*. **MQTT Discovery** ne dépend pas de *MQTT Manager (mqtt2)*, les messages ne transitent jamais via ce plugin. **MQTT Discovery** n'a aucun impact sur la configuration de *MQTT Manager (mqtt2)* et réciproquement.
 >
@@ -256,7 +256,7 @@ Il est donc parfaitement possible d'avoir:
 
 Toutes les combinaisons sont réalisables et tout est inter-compatible.
 
-> **Conseil**
+> **Tip**
 >
 > Un avantage pour les antennes sous *OpenMQTTGateway*, que ca soit en DIY ou via le *Theengs Bridge*, c'est qu'elles vont être automatiquement disponnibles comme une équipement de **MQTT Discovery** car elles publient également les infos de découvertes pour elle-même et par conséquent vous pourrez les gérer intégralement depuis Jeedom. Ce na sera pas le cas pour les antennes sous **Theengs gateway** mais vous pourrez les gérer via le [plugin Jeedom Theengs Gateway]({{site.baseurl}}/tgw/{{page.lang}}) si elles sont installées à l'aide du plugin.
 

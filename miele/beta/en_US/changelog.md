@@ -7,6 +7,10 @@ pluginId: miele
 
 # Change log
 
+## 2026-07-22
+
+- Dependency Update
+
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation

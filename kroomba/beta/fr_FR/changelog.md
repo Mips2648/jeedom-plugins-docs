@@ -10,9 +10,6 @@ pluginId: kroomba
 ## 2026-08-02
 
 - Mise à jour de dépendances
-
-## 2026-06-15
-
 - Correction sur sauvegarde des configs lors de la découverte via le cloud
 - Mise en place d'un nouveau flux de déploiement pour la documentation
 - Mise à jour de dépendances

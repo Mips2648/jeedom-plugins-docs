@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rocket.Chat Changelog
+title: Rocket.Chat change log
 lang: en_US
 pluginId: rocketchat
 ---
@@ -9,7 +9,7 @@ pluginId: rocketchat
 
 ## 2026-07-22
 
-- Dependency Update
+- Dependency update
 
 ## 2026-06-12
 
@@ -17,50 +17,50 @@ pluginId: rocketchat
 
 ## 2026-05-12
 
-- Dependency Update
+- Dependency update
 - Python 3.11 is required; it will be installed automatically if necessary.
 - Jeedom v4.5 required
 
 ## 2025-08-11
 
-- Dependency Update
+- Dependency update
 
 ## 2025-04-18
 
-- Dependency Update
+- Dependency update
 
 ## 2024-12-25
 
-- Dependency Update
-- Icon Update
+- Dependency update
+- Icon update
 
 ## 2024-10-17
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.4 required
 
 ## 2024-09-16
 
-- Dependency Update
+- Dependency update
 - Debian 11 or later required
 
 ## 2024-08-21
 
-- Dependency Update
+- Dependency update
 - Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 
 ## 2024-07-02
 
-- Daemon Update
-- Dependency Update
+- Daemon update
+- Dependency update
 
 ## 2024-04-10
 
-- Dependency Update
+- Dependency update
 
 ## 2022-10-17
 
-- Update to the commands Interface for Jeedom v4.3
+- Update to the commands interface for Jeedom v4.3
 
 ## 2022-09-19
 

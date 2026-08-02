@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LogManager Documentation
+title: LogManager documentation
 lang: en_US
 pluginId: logmanager
 ---
@@ -25,7 +25,7 @@ Log purging is also managed through Jeedom's general settings.
 
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Device Setup
+# Device setup
 
 The plugin is located in the Plugins → Programming menu.
 

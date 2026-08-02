@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hydrao Documentation
+title: Hydrao documentation
 lang: en_US
 pluginId: hydrao
 ---
@@ -20,7 +20,7 @@ Plugin for integrating Hydrao showerheads.
 
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Plugin Configuration
+# Plugin configuration
 
 In the plugin settings, you must enter the username and password you use for the Hydrao app, as well as your API key. To obtain your API key, you must contact Hydrao support directly.
 

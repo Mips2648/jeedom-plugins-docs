@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documentation, Design, Image
+title: Design Image documentation
 lang: en_US
 pluginId: designImgSwitch
 ---
@@ -24,7 +24,7 @@ You'll also need to install and configure the official Weather plugin if you wan
 
 No configuration is required for the plugin.
 
-# Device Setup
+# Device setup
 
 The plugin can be found in the Plugins → Weather menu.
 

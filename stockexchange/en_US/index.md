@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stock Exchange Documentation
+title: Stock Exchange documentation
 lang: en_US
 pluginId: stockexchange
 ---
@@ -21,11 +21,11 @@ All data is generally available in real time, but the refresh rate depends on th
 
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Plugin Configuration
+# Plugin configuration
 
 No configuration is required for the plugin; API keys are configured on the devices based on the selected service.
 
-# Setting Up a Device
+# Setting Up a device
 
 After creating a new device, the usual options are available.
 You can also specify how often the information is updated.
@@ -52,14 +52,14 @@ Next, you must select the type of information you want:
 For this type of information, you must enter the symbol for the action or index.
 The plugin offers a dynamic search feature—simply start typing the name of a company (at least 3 characters) or the desired symbol, and a list of options will appear. All you have to do is choose from among them.
 
-![Symbol Configuration](../images/config_symbol.png "Configuration symbole")
+![Symbol configuration](../images/config_symbol.png "Configuration symbole")
 
 ## Exchange rates
 
 For this type of information, you must select the source and destination currencies.
 The plugin offers a dynamic search feature—simply start typing the name of a currency or its code, and a list of matching currencies will be displayed. All you have to do is choose from the list.
 
-![Currency Settings](../images/config_currency.png "Configuration devise")
+![Currency settings](../images/config_currency.png "Configuration devise")
 
 ## Raw materials
 

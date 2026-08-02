@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Linksys Release Notes
+title: Linksys release notes
 lang: en_US
 pluginId: linksys
 ---
@@ -13,34 +13,34 @@ pluginId: linksys
 
 ## 2026-05-12
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.5 required
 
 ## 2024-12-25
 
-- Dependency Update
-- Icon Update
+- Dependency update
+- Icon update
 - Jeedom v4.4 required
 
 ## 2024-08-19
 
-- Dependency Update
+- Dependency update
 - Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 
 ## 2024-04-10
 
-- Dependency Update
+- Dependency update
 
 ## 2023-05-20
 
 - Add **WAN type** command
 - Improvements to password fields
-- Jeedom v4.4 Compatibility
+- Jeedom v4.4 compatibility
 
 ## 2023-02-04
 
 - Plugin taken over by @Mips
-- Update to the commands Interface for Jeedom v4.3
+- Update to the commands interface for Jeedom v4.3
 - Added the ability to configure a custom cron job
 
 ## February 7, 2022 by @hugoks3

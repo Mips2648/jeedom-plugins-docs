@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Linksys Documentation
+title: Linksys documentation
 lang: en_US
 pluginId: linksys
 ---
@@ -18,7 +18,7 @@ What's available:
 - Enable/Disable the guest network
 - Reboot
 - Turn the router's LEDs on/off
-- Firmware Update
+- Firmware update
 - WAN Status
 
 > **Important**
@@ -38,7 +38,7 @@ To use the plugin, you must download, install, and activate it just like any oth
 
 No configuration is required for the plugin.
 
-## Device Setup
+## Device setup
 
 The plugin can be found in the Plugins → Communication menu.
 

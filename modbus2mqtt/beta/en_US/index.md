@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Modbus 2 MQTT Documentation
+title: Modbus 2 MQTT documentation
 lang: en_US
 pluginId: modbus2mqtt
 ---
@@ -21,7 +21,7 @@ Plugin that acts as a gateway between Modbus TCP/IP and MQTT.
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 This plugin requires the *MQTT Manager (MQTT2)* plugin to work.
 
-# Plugin Configuration
+# Plugin configuration
 
 Before you begin, make sure you have installed and configured the *MQTT Manager (MQTT2)* plugin; see the documentation for this plugin.
 
@@ -30,7 +30,7 @@ On the plugin's configuration page, you can change the following options:
 - The main topic under which the plugin will publish information (see device configuration). By default, the plugin will publish under the *modbus2mqtt* topic; you do not need to change this if it suits your needs
 - The listening port for the plugin daemon. Do not change this value unless you understand how it works and only if you are experiencing a conflict with another plugin.
 
-# Device Setup
+# Device setup
 
 The plugin can be found in the Plugins → Home Automation Protocol menu.
 

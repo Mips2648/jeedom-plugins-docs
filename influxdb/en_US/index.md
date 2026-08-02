@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documentation InfluxDB
+title: InfluxDB documentation
 lang: en_US
 pluginId: influxdb
 ---
@@ -27,7 +27,7 @@ The plugin also allows you to export Jeedom commands history to InfluxDB.
 
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Plugin Configuration
+# Plugin configuration
 
 There is no specific configuration required; the plugin may use cronDaily to reset the counters.
 
@@ -54,11 +54,11 @@ For v2, you must configure the URL in the format `https://server.my`, along with
 > **Tip**
 > InfluxDB offers a free cloud plan for v2 that’s very easy to set up for testing—or even for long-term use if it suits your needs (limited to a single organization, in terms of data volume and history duration). For more information: <https://www.influxdata.com/influxdb-cloud-pricing/>
 
-## Shipping Method
+## Shipping method
 
 You can also choose the delivery mode, which is set to auto-refresh by default. This mode can be changed at any time without any impact.
 
-![Shipping Method](../images/mode.png "Mode")
+![Shipping method](../images/mode.png "Mode")
 
 - _Auto-update_: The plugin will send all selected measurements according to the chosen schedule in a single call; by default, this occurs every minute.
 This is the recommended operating mode; it is more efficient and places virtually no load on your Jeedom, while still providing measurements every minute.
@@ -77,7 +77,7 @@ In _Auto-update_ mode, you can choose the schedule as well as the value to be se
 
 The second tab displays all the commands selected for sending to InfluxDB. You can filter the displayed rows using the "Search" field.
 
-![Command Configuration](../images/commands.png "Config commandes")
+![Command configuration](../images/commands.png "Config commandes")
 
 There are three ways to search for and select commands to send:
 
@@ -87,13 +87,13 @@ There are three ways to search for and select commands to send:
 
 Search example:
 
-![Command Lookup](../images/search.png "Recherche commandes")
+![Command lookup](../images/search.png "Recherche commandes")
 
 1. In the commands search screens, you can filter or search for any value by typing your search query into the field at the top of the list.
 2. The list will display only those commands that have not yet been selected for this device/connector.
 3. To select a command and send it to InfluxDB, simply click the **Add** button. Don't forget to save the device after adding all the commands you want.
 
-## Exporting Jeedom History to InfluxDB
+## Exporting Jeedom history to InfluxDB
 
 To export the history, go to the _Measurements_ tab, where you have configured the commands to be sent to your Jeedom devices.
 

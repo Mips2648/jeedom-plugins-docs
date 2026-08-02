@@ -1,6 +1,6 @@
 ---
 layout: default
-title: iRobot Release Notes
+title: iRobot release notes
 lang: en_US
 pluginId: kroomba
 ---
@@ -9,17 +9,17 @@ pluginId: kroomba
 
 ## 2026-08-02
 
-- Dependency Update
+- Dependency update
 - Fix for saving configurations during discovery via the cloud
 - Implementation of a new deployment workflow for documentation
-- Dependency Update
+- Dependency update
 - Jeedom v4.5 required
 - Python 3.11 is required; it will be installed automatically if necessary.
 
 ## 2026-01-02
 
 - Improved validation of the presence of the password during discovery in cloud mode
-- Dependency Update
+- Dependency update
 
 ## 2025-06-27
 
@@ -31,32 +31,32 @@ pluginId: kroomba
 - Change to the configuration backup process to prevent potential duplicates in cases where your robot does not have a static IP address
 - Added the "local" method for discovering robots, in addition to the existing cloud-based method (robots are still controlled locally afterward)
 - Adapting the MQTT client ID to the format "prefix-[random ID]" to facilitate monitoring
-- Dependency Update
+- Dependency update
 
 ## 2025-02-24
 
-- Dependency Update
+- Dependency update
 
 ## 2024-12-25
 
-- Dependency Update
-- Icon Update
+- Dependency update
+- Icon update
 - Jeedom v4.4 required
 
 ## 2024-09-16
 
-- Dependency Update
+- Dependency update
 - Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 - Debian 11 or later required
 
 ## 2024-06-11
 
 - Internal daemon modification
-- Dependency Update
+- Dependency update
 
 ## 2024-04-16
 
-- Dependency Update
+- Dependency update
 - Update to the minimum Python version for Debian 12 compatibility. You will need to reinstall the dependencies if you are still running Debian 10.
 
 ## 2024-04-08
@@ -89,7 +89,7 @@ pluginId: kroomba
 
 ## 2023-05-20
 
-- Jeedom v4.4 Compatibility
+- Jeedom v4.4 compatibility
 - Fixed a daemon crash if the robot's name contained a special character
 
 ## 2023-03-26
@@ -111,7 +111,7 @@ pluginId: kroomba
 - Implementing a daemon to maintain the connection with the robot
 - Communication via MQTT between the daemon and Jeedom
 - Discovering and setting up automated robots (iRobot cloud access required during setup)
-- Update to the commands Interface for Jeedom v4.3
+- Update to the commands interface for Jeedom v4.3
 - Added a button to recreate missing commands based on the configuration (done automatically when the plugin is updated)
 - Added the **Drain** command (works only on compatible models)
 - Added the **Tank** info command (works only on compatible washer models)

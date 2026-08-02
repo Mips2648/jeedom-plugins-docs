@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SmartMeter P1 Release Notes
+title: SmartMeter P1 release notes
 lang: en_US
 pluginId: SmartMeterP1
 ---
@@ -13,16 +13,16 @@ pluginId: SmartMeterP1
 
 ## 2026-05-12
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.5 required
 
 ## 2026-01-01
 
-- Dependency Update
+- Dependency update
 
 ## 2025-06-27
 
-- Dependency Update
+- Dependency update
 
 ## 2025-02-22
 
@@ -30,22 +30,22 @@ pluginId: SmartMeterP1
 - Added codes 1.6.0 (maximum average power drawn over a 15-minute period since the beginning of the month) and 2.6.0 (maximum average power fed into the grid over a 15-minute period since the beginning of the month); this latter piece of information will not be available to everyone—it depends on whether the meter provides it or not.
 - Migrating the PHP daemon to a Python daemon to improve performance
 - Adding an internal heartbeat to the daemon
-- Dependency Update
-- Icon Update
+- Dependency update
+- Icon update
 
 ## 2024-10-17
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.4 required
 
 ## 2024-08-21
 
-- Dependency Update
+- Dependency update
 - Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 
 ## 2024-04-10
 
-- Dependency Update
+- Dependency update
 
 ## 2024-03-03
 

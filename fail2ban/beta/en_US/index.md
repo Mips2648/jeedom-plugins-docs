@@ -26,7 +26,7 @@ It also allows you to block and unblock an IP address.
 
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Plugin Configuration
+# Plugin configuration
 
 There is no configuration required here.
 

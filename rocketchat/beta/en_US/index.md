@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rocket.Chat Documentation
+title: Rocket.Chat documentation
 lang: en_US
 pluginId: rocketchat
 ---
@@ -24,7 +24,7 @@ To use the plugin, you must download, install, and activate it just like any oth
 You must already have a Rocket.chat server; the various options for setting one up are very well documented on their website.
 On this instance, be sure to create a user with the `bot` role.
 
-# Plugin Configuration
+# Plugin configuration
 
 In the plugin settings, you'll need to enter the RocketChat server URL in the format `https://IP_SERVER:3000`, along with your bot's username and password.
 
@@ -37,7 +37,7 @@ Each device has an "action" command to send a message on the channel, as well as
 By default, when a message is received on the channel, the plugin will create a command corresponding to the user who sent it (if one does not already exist).
 
 There is an option on the device to disable this behavior.
-![Device Setup](../images/device.png "Config équipement")
+![Device setup](../images/device.png "Config équipement")
 
 These commands allow you to send a message on the device's channel, notifying the corresponding user (e.g., `@Mips This is a test message`).
 

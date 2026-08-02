@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog Design Image
+title: Design Image change log
 lang: en_US
 pluginId: designImgSwitch
 ---
@@ -13,12 +13,12 @@ pluginId: designImgSwitch
 
 ## 2026-05-12
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.5 required
 
 ## 2024-12-25
 
-- Icon Update
+- Icon update
 
 ## 2024-08-19
 
@@ -31,7 +31,7 @@ pluginId: designImgSwitch
 
 ## 2022-10-17
 
-- Update to the commands Interface for Jeedom v4.3
+- Update to the commands interface for Jeedom v4.3
 
 ## 2022-02-09
 
@@ -64,7 +64,7 @@ pluginId: designImgSwitch
 ## 2020-03-22
 
 - Minor fix in case of device removal
-- Logo Update
+- Logo update
 
 ## 2020-02-08
 

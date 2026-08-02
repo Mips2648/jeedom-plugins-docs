@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ClickSend Documentation
+title: ClickSend documentation
 lang: en_US
 pluginId: clicksend
 ---
@@ -20,11 +20,11 @@ Plugin to integrate the [ClickSend](https://www.clicksend.com) platform, which a
 
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Plugin Configuration
+# Plugin configuration
 
 There is no configuration required here.
 
-# Device Setup
+# Device setup
 
 Start by creating a [ClickSend](https://www.clicksend.com) account and make sure you have credit on it.
 

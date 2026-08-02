@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hydrao Changelog
+title: Hydrao change log
 lang: en_US
 pluginId: hydrao
 ---
@@ -9,7 +9,7 @@ pluginId: hydrao
 
 ## 2026-07-22
 
-- Dependency Update
+- Dependency update
 
 ## 2026-06-12
 
@@ -17,31 +17,31 @@ pluginId: hydrao
 
 ## 2026-05-12
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.5 required
 
 ## 2025-06-27
 
-- Dependency Update
+- Dependency update
 
 ## 2024-12-25
 
-- Dependency Update
-- Icon Update
+- Dependency update
+- Icon update
 
 ## 2024-10-17
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.4 required
 
 ## 2024-08-19
 
-- Dependency Update
+- Dependency update
 - Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 
 ## 2024-04-10
 
-- Dependency Update
+- Dependency update
 
 ## 2023-11-10
 

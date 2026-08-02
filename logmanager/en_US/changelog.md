@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LogManager Change Log
+title: LogManager change log
 lang: en_US
 pluginId: logmanager
 ---
@@ -13,7 +13,7 @@ pluginId: logmanager
 
 ## 2026-05-12
 
-- Dependency Update
+- Dependency update
 
 ## 2026-01-12
 
@@ -25,11 +25,11 @@ pluginId: logmanager
 
 ## 2025-06-27
 
-- Dependency Update
+- Dependency update
 
 ## 2024-12-25
 
-- Icon Update
+- Icon update
 
 ## 2024-08-19
 
@@ -56,7 +56,7 @@ pluginId: logmanager
 
 ## 2022-10-17
 
-- Update to the commands Interface for Jeedom v4.3
+- Update to the commands interface for Jeedom v4.3
 
 ## 2022-07-15
 

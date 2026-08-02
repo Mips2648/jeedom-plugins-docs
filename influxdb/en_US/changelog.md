@@ -1,6 +1,6 @@
 ---
 layout: default
-title: InfluxDB Changelog
+title: InfluxDB change log
 lang: en_US
 pluginId: influxdb
 ---
@@ -11,22 +11,22 @@ pluginId: influxdb
 
 - Implementation of a new deployment workflow for documentation
 - Fixed a rare bug in Debian 12/PHP 8
-- Dependency Update
+- Dependency update
 
 ## 2025-08-11
 
 - Change to the InfluxDB v1.8+ integration: The default data retention policy is no longer specified; it will be determined by InfluxDB based on the database configuration.
-- Dependency Update
+- Dependency update
 
 ## 2025-06-27
 
 - Added an advanced setting: *Total Retry Time* which sets the maximum total time allowed for sending attempts to Influx, regardless of the number of retries, timeouts, and the interval between each attempt.
-- PHP 8.4 Compatibility
+- PHP 8.4 compatibility
 
 ## 2024-12-25
 
-- Dependency Update
-- Icon Update
+- Dependency update
+- Icon update
 - Jeedom v4.4 required
 
 ## 2024-08-28
@@ -39,19 +39,19 @@ pluginId: influxdb
 
 - Improvements to password fields
 - Support for InfluxDB versions < 1.8 has been discontinued, primarily to ensure the plugin's compatibility with Debian 12 and PHP 8
-- Dependency Update
+- Dependency update
 - Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 
 ## 2024-04-10
 
 - Internal changes to dependency management for compatibility with Jeedom v4.4
 - Jeedom v4.2 or later required
-- Dependency Update
+- Dependency update
 
 ## 2023-02-06
 
 - Added a new export mode: *History*, which allows you to export the entire history from the previous day every night
-- Update to the commands Interface for Jeedom v4.3
+- Update to the commands interface for Jeedom v4.3
 - Fix: The cron job was not properly removed when the plugin was uninstalled
 
 ## 2022-02-09
@@ -98,7 +98,7 @@ pluginId: influxdb
 ## 2020-09-04
 
 - Layout Cleanup for Version 4
-- Optimizing Configurations
+- Optimizing configurations
 
 ## 2020-08-15
 

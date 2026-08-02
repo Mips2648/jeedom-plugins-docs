@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Miele Change Log
+title: Miele change log
 lang: en_US
 pluginId: miele
 ---
@@ -10,7 +10,7 @@ pluginId: miele
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation
-- Dependency Update
+- Dependency update
 
 ## 2026-04-12
 
@@ -25,14 +25,14 @@ pluginId: miele
 - Added a binary **Status** command that indicates whether the device is on or off. The **On** and **Off** commands are linked to it
 - Renamed the old command **Status** to **Status Description** to avoid conflict with the new command and better reflect its actual content
 - Customization of the **Time Remaining**, **Start in**, and **Time Elapsed** commands; see documentation
-- Dependency Update
+- Dependency update
 - Python 3.11 is required; it will be installed automatically if necessary.
 
 ## 2025-04-18
 
 - Improvement to generate, whenever possible, only the commands relevant to the type of device
-- Dependency Update
-- Icon Update
+- Dependency update
+- Icon update
 - Jeedom v4.4 required
 
 ## 2024-09-16
@@ -47,11 +47,11 @@ pluginId: miele
 ## 2024-04-10
 
 - Internal modification to dependency management for compatibility with Jeedom v4.4
-- Dependency Update
+- Dependency update
 
 ## 2022-10-17
 
-- Update to the commands Interface for Jeedom v4.3
+- Update to the commands interface for Jeedom v4.3
 
 ## 2022-03-10
 
@@ -69,7 +69,7 @@ pluginId: miele
 
 ## 2021-11-13
 
-- Miele@Home API Update
+- Miele@Home API update
 - Add an "**Program Name**" info command that will return the name of the currently running program on devices that support this feature (you must create any missing commands on the device if you want to use this new command)
 - Change in authentication mode for enhanced security
 - New layout for the list of objects in the device configuration

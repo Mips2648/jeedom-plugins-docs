@@ -1,6 +1,6 @@
 ---
 layout: default
-title: iRobot Documentation
+title: iRobot documentation
 lang: en_US
 pluginId: kroomba
 ---
@@ -38,7 +38,7 @@ Next, you may need to configure it (see the *MQTT Manager* plugin documentation;
 >
 > If you already have an MQTT broker installed, you still need to install the *MQTT Manager* plugin, but be sure to configure it in *remote broker* mode by entering the settings for your current broker.
 
-# Plugin Configuration
+# Plugin configuration
 
 On the plugin's configuration page, you can change the following options:
 

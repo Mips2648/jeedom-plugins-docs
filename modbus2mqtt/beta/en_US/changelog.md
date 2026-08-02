@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Modbus 2 MQTT Change Log
+title: Modbus 2 MQTT change log
 lang: en_US
 pluginId: modbus2mqtt
 ---
@@ -9,13 +9,13 @@ pluginId: modbus2mqtt
 
 ## 2026-07-22
 
-- Dependency Update
+- Dependency update
 
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation
 - Support for custom device images (Jeedom 4.5)
-- Dependency Update
+- Dependency update
 - Python 3.11 is required; it will be installed automatically if necessary.
 
 ## 2025-06-27
@@ -27,7 +27,7 @@ pluginId: modbus2mqtt
 - Added support for the *Coil status* and *Input status* tables
 - Migration to pymodbus 3.8 => removal of the option to reverse the order of bytes
 - Adapting the MQTT client ID to the format "modbus2mqtt-[random ID]" to facilitate monitoring
-- Dependency Update
+- Dependency update
 
 ## 2024-12-26
 
@@ -36,9 +36,9 @@ pluginId: modbus2mqtt
 - Added an option to configure the Modbus request timeout
 - Added an option to configure the interval between two readings
 - Removal of the option to choose the writing mode: it is determined automatically based on the type.
-- Daemon Update
-- Dependency Update
-- Icon Update
+- Daemon update
+- Dependency update
+- Icon update
 - Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 - Fix: The terminal address (slave ID) was not being properly recognized
 - Jeedom v4.4 required
@@ -46,7 +46,7 @@ pluginId: modbus2mqtt
 ## 2024-04-10
 
 - Fix for dependency checking
-- Dependency Update
+- Dependency update
 
 ## 2024-03-16
 
@@ -71,7 +71,7 @@ pluginId: modbus2mqtt
 
 ## 2023-05-20
 
-- Jeedom v4.4 Compatibility
+- Jeedom v4.4 compatibility
 
 ## 2023-01-30
 

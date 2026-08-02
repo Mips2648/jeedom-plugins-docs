@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ClickSend Change Log
+title: ClickSend change log
 lang: en_US
 pluginId: clicksend
 ---
@@ -9,7 +9,7 @@ pluginId: clicksend
 
 ## 2026-07-22
 
-- Dependency Update
+- Dependency update
 
 ## 2026-06-12
 
@@ -17,7 +17,7 @@ pluginId: clicksend
 
 ## 2026-05-12
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.5 required
 
 ## 2025-04-18
@@ -26,12 +26,12 @@ pluginId: clicksend
 
 ## 2024-12-25
 
-- Dependency Update
-- Icon Update
+- Dependency update
+- Icon update
 
 ## 2024-10-17
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.4 required
 
 ## 2024-08-21
@@ -44,7 +44,7 @@ pluginId: clicksend
 
 ## 2024-06-01
 
-- Dependency Update
+- Dependency update
 
 ## 2024-04-29
 

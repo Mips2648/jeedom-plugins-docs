@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Miele Documentation
+title: Miele documentation
 lang: en_US
 pluginId: miele
 ---
@@ -24,7 +24,7 @@ You must have a Miele user account with at least one compatible Miele@Home devic
 
 Dependencies are normally installed or updated automatically. If this does not happen, you can start the installation manually. Python 3.11 or later is required: it will be installed automatically if necessary, but this may take some time on a small system. Please be patient and do not interrupt the installation.
 
-# Plugin Configuration
+# Plugin configuration
 
 In the plugin settings, you'll need to enter the _Client Id_ and _Client Secret_ you received to access the API, then save the settings.
 Start the daemon, then click the "Link Jeedom and Miele@Home" button and follow the instructions. A new tab will open on the Miele website, where you'll need to log in with your Miele credentials to confirm the link.
@@ -49,13 +49,13 @@ Below, you will find descriptions of all the commands that may be available on y
 
 In addition, in order to perform an action, the device must be in a specific state. For example, it is not possible to stop the device if it has not been started.
 
-## Commands Common to All Devices
+## Commands Common to all devices
 
 - **Refresh**: Refresh the device information.
 - **Status** & **Status Description**: Indicates the device's status (numeric) and its description, respectively (see below for a list of possible statuses)
 - **Error**: binary value indicating whether the device is in an error state
 
-## General Information & Actions
+## General Information & actions
 
 Below are the commands available for various devices, depending on whether they can be turned on or off, or whether they have an associated port or lighting.
 
@@ -67,7 +67,7 @@ Below are the commands available for various devices, depending on whether they 
 - **Light**: a binary value indicating the status of the device's light (if applicable)
 - **Turn on the light** & **Turn off the light**
 
-## "Program" Commands
+## "Program" commands
 
 These commands are typically found on washing machines, dryers, dishwashers, coffee makers, ovens (conventional, steam, microwave, or combination), refrigerators, freezers (or combination units), and wine coolers.
 
@@ -123,7 +123,7 @@ These commands are typically found on ovens (conventional, steam, microwave, or 
 
 # Possible values for the "infos" commands
 
-## "Status" Command
+## "Status" command
 
 - 1 = OFF
 - 2 = ON
@@ -143,16 +143,16 @@ These commands are typically found on ovens (conventional, steam, microwave, or 
 - 146 = SUPERCOOLING_SUPERFREEZING
 - 255 = NOT_CONNECTED
 
-## "Schedule" Information Command
+## "Schedule" information command
 
 This list is not exhaustive; there may be other values.
 
 - Normal operating mode
 - Custom program
 - Automatic program
-- Cleaning and Care Program
+- Cleaning and care program
 
-## "Phase" Information Command
+## "Phase" Information command
 
 These lists are not exhaustive; there may be other values.
 
@@ -169,12 +169,12 @@ These lists are not exhaustive; there may be other values.
 - PreHeat
 - Program Running
 
-## "Dryness Level" Command
+## "Dryness Level" command
 
 This list is not exhaustive; there may be other values.
 
 - No drying step
-- Extra Dry
+- Extra dry
 - Normal Plus
 - Normal
 - Slightly Dry

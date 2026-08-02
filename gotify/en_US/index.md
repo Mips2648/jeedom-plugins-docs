@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gotify Documentation
+title: Gotify documentation
 lang: en_US
 pluginId: gotify
 ---
@@ -25,7 +25,7 @@ To use the plugin, you must download, install, and activate it just like any oth
 
 You must already have a Gotify server; the installation process will not be covered here, as it is clearly explained on the website.
 
-# Plugin Configuration
+# Plugin configuration
 
 In the plugin settings, you'll need to enter the Gotify server URL in the following format:
 
@@ -33,7 +33,7 @@ In the plugin settings, you'll need to enter the Gotify server URL in the follow
 http://yourdomain.com:32768
 ```
 
-# Device Setup
+# Device setup
 
 After creating a new device, the usual options are available.
 

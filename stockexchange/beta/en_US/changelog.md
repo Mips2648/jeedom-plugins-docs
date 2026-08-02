@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog Stock Exchange
+title: Stock Exchange change log
 lang: en_US
 pluginId: stockexchange
 ---
@@ -13,27 +13,27 @@ pluginId: stockexchange
 
 ## 2026-05-12
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.5 required
 
 ## 2024-12-25
 
-- Dependency Update
-- Icon Update
+- Dependency update
+- Icon update
 
 ## 2024-10-17
 
-- Dependency Update
+- Dependency update
 - Jeedom v4.4 required
 
 ## 2024-08-21
 
-- Dependency Update
+- Dependency update
 - Translation of the plugin into English, German, Spanish, Italian, and Portuguese
 
 ## 2024-04-10
 
-- Dependency Update
+- Dependency update
 
 ## 2024-01-26
 
@@ -41,12 +41,12 @@ pluginId: stockexchange
 
 ## 2023-05-20
 
-- Jeedom v4.4 Compatibility
+- Jeedom v4.4 compatibility
 - Added links to the beta documentation
 
 ## 2022-10-17
 
-- Update to the commands Interface for Jeedom v4.3
+- Update to the commands interface for Jeedom v4.3
 
 ## 2022-02-11
 
@@ -55,7 +55,7 @@ pluginId: stockexchange
 ## 2021-07-27
 
 - Changed the API used for MarketStack to avoid the "incorrect data received:null" issue
-- Internal Optimization
+- Internal optimization
 
 ## 2021-05-12
 

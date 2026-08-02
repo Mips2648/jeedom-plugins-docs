@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SmartMeter P1 Documentation
+title: SmartMeter P1 documentation
 lang: en_US
 pluginId: SmartMeterP1
 ---
@@ -23,7 +23,7 @@ This works for both three-phase and single-phase meters.
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 Next, you need to install the dependencies.
 
-# Plugin Configuration
+# Plugin configuration
 
 In the plugin settings, you can configure the cycle that determines the interval between each data update sent to Jeedom.
 The default setting should work for most users, but you can adjust it if necessary. There's no point in setting it to less than 1 second, since the counter only reports data once per second.

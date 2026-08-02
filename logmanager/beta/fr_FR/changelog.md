@@ -7,7 +7,7 @@ pluginId: logmanager
 
 # Changelog
 
-## 2026-07-28
+## 2026-08-03
 
 - Contrôle plus strict sur le nom donné à l'équipement: n'utilisez rien qui ressemble au nom ni à l'ID d'un plugin existant!
 - Mise à jour de dépendances

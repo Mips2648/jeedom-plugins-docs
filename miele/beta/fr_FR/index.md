@@ -37,7 +37,7 @@ Si tout s'est déroulé sans erreur, en revenant sur la page de configuration, v
 
 Dès que l'authentification est réussie, le plugin synchronisera vos appareils. Il créera les appareils manquants avec leurs commandes et mettra à jour l'état de tous les appareils connectés. La mise à jour des commandes se fera ensuite en temps réel (tant que le démon est lancé)
 
-> **Conseil**
+> **Tip**
 >
 > Le plugin ne supprimera jamais un équipement dans votre Jeedom. Si effectivement un équipement ne correspond plus à aucun appareil en votre possession, veuillez le supprimer manuellement.
 

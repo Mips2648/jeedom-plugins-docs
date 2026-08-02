@@ -10,9 +10,6 @@ pluginId: kroomba
 ## 2026-08-02
 
 - Dependency Update
-
-## 2026-06-15
-
 - Fix for saving configurations during discovery via the cloud
 - Implementation of a new deployment workflow for documentation
 - Dependency Update

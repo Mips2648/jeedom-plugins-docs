@@ -5,12 +5,16 @@ lang: es_ES
 pluginId: kroomba
 ---
 
-# Beta
+# Registro de cambios
+
+## 2026-08-02
 
 - Actualización de dependencias
+- Corrección en el guardado de configuraciones durante la detección a través de la nube
+- Implantación de un nuevo flujo de trabajo para la documentación
+- Actualización de dependencias
 - Se requiere Jeedom v4.5
-
-# Estable
+- Se requiere Python 3.11; se instalará automáticamente si es necesario.
 
 ## 2026-01-02
 
@@ -113,27 +117,6 @@ pluginId: kroomba
 - Se ha añadido el comando de información **Depósito** (solo funciona en los modelos de lavadoras compatibles)
 - Se han añadido los comandos de información: **Número de tareas de limpieza**, **Número de tareas completadas con éxito**, **Número de tareas fallidas**, **Número de vaciados automáticos**, **Número de detecciones de suciedad**, **Número de atascos**, **Número de tareas canceladas**
 - Se han añadido los comandos «**Información**» y «**Seguridad infantil**»
-
-## 24 de mayo de 2020 por @vedrine
-
-- Nuevos iconos para los estados, por @kiboost.
-
-## 23 de mayo de 2020 por @vedrine
-
-- Nuevos estados hmMidMsn (Es necesario recargar) y hmPostMsn (tarea completada)
-
-## 21 de septiembre de 2019 por @vedrine
-
-- Migración a Python 3
-- Se ha corregido un problema en las traducciones
-- Nuevo script de Bash para instalar las dependencias
-- Plantillas para Jeedom V4
-- Compatibilidad entre Jeedom V3 y V4
-
-## 13 de agosto de 2019 por @vedrine
-
-- Compatibilidad entre PHP 7.3 y Font Awesome 5
-- Versión mínima requerida de Jeedom: 3.3
 
 # Documentación
 

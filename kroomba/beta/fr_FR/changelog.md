@@ -7,6 +7,10 @@ pluginId: kroomba
 
 # Changelog
 
+## 2026-08-02
+
+- Mise à jour de dépendances
+
 ## 2026-06-15
 
 - Correction sur sauvegarde des configs lors de la découverte via le cloud
@@ -116,27 +120,6 @@ pluginId: kroomba
 - Ajout de la commande info **Réservoir** (ne fonctionne que sur les modèles laveurs compatibles)
 - Ajout des commandes info: **Nombre de tâches de nettoyage**, **Nombre de tâches réussies**, **Nombre de tâches échouées**, **Nombre de vidages automatiques**, **Nombre de détections de saleté**, **Nombre de blocages**, **Nombre de tâches annulées**
 - Ajout des commandes info **Erreur** et **Sécurité enfant**
-
-## 2020-05-24 by @vedrine
-
-- Nouvelles icônes pour les états par @kiboost.
-
-## 2020-05-23 by @vedrine
-
-- Nouveaux états hmMidMsn (Recharge nécessaire) et hmPostMsn (tâche achevée)
-
-## 2019-09-21 by @vedrine
-
-- Passage à Python 3
-- Correction d'un problème dans les traductions
-- Nouveau script bash d'installation des dépendances
-- Templates pour Jeedom V4
-- Compatibilité Jeedom V3 et V4
-
-## 2019-08-13 by @vedrine
-
-- Compatibilité php 7.3 et font awesome 5
-- Version minimum de Jeedom requise : 3.3
 
 # Documentation
 

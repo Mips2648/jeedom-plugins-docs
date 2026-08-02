@@ -85,6 +85,7 @@
     "**Température du programme** : la température cible du programme": "**Program Temperature**: the target temperature for the program",
     "**Température** : la température actuelle de l'appareil (votre four est par exemple réglé sur 180°C mais n'a que 70°C)": "**Temperature**: the current temperature of the appliance (for example, your oven is set to 180°C but is only at 70°C)",
     "**Température** indique la température moyenne de l'eau de la dernière douche": "**Temperature** shows the average water temperature from the last shower",
+    "**Tip**": "**Tip**",
     "**Total banni** info donnant le nombre d'IP bannie au total": "**Total Banned**: Information showing the total number of banned IP addresses",
     "**Total mesures** & **Total journalier mesures** compteurs des mesures envoyées: total & journalier.": "**Total Readings** & **Daily Total Readings**: counters for total and daily readings sent.",
     "**Type de programme** : donne le programme en cours (voir ci-dessous la liste des valeurs possibles connues)": "**Program Type**: Displays the current program (see the list of known possible values below)",

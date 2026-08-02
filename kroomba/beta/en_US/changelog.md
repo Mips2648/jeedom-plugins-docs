@@ -7,6 +7,10 @@ pluginId: kroomba
 
 # Change log
 
+## 2026-08-02
+
+- Dependency Update
+
 ## 2026-06-15
 
 - Fix for saving configurations during discovery via the cloud
@@ -116,27 +120,6 @@ pluginId: kroomba
 - Added the **Tank** info command (works only on compatible washer models)
 - Added the following info commands: **Number of cleaning tasks**, **Number of successful tasks**, **Number of failed tasks**, **Number of automatic empties**, **Number of dirt detections**, **Number of blockages**, **Number of canceled tasks**
 - Added the **Error** and **Child Safety** info commands
-
-## May 24, 2020 by @vedrine
-
-- New status icons by @kiboost.
-
-## May 23, 2020 by @vedrine
-
-- New statuses: hmMidMsn (Recharge Required) and hmPostMsn (Task Completed)
-
-## September 21, 2019 by @vedrine
-
-- Migration to Python 3
-- Fixed an issue with the translations
-- New Bash script for installing dependencies
-- Templates for Jeedom V4
-- Jeedom V3 and V4 Compatibility
-
-## August 13, 2019 by @vedrine
-
-- PHP 7.3 and Font Awesome 5 compatibility
-- Minimum required Jeedom version: 3.3
 
 # Documentation
 

@@ -7,14 +7,15 @@ pluginId: MQTTDiscovery
 
 # Changelog
 
-## 2026-07-27
+## 2026-08-03
 
 - Mise à jour de dépendances
 
-## 2026-06-18
+## 2026-07-27
 
 - Corrections et optimisations sur la mise à jour des commandes lors de la réception d'un message MQTT
 - Corrections du parsing des infos de découvertes lorsque le payload contient des guillements
+- Mise à jour de dépendances
 
 ## 2026-06-16
 

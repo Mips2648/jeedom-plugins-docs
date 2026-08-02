@@ -26,7 +26,7 @@ Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’a
 
 # Configuration utilisateur Proxmox
 
-> **Conseil**
+> **Tip**
 >
 > Il est recommandé de créer un utilisateur local dédié à Jeedom et c'est ce qui est documenté ici, d'autres configurations sont possibles bien entendu tant que Jeedom dispose d'un utilisateur ayant accès aux ressources Proxmox que vous voulez surveiller.
 
@@ -132,7 +132,7 @@ Les commandes actions suivantes sont également disponibles:
 
 Plusieurs commandes info existent donnant entre autre le statut, le nombre de CPU et leur utilisation, la mémoire totale et l'utilisation, le temps d'activité, les adresses IPv4 et IPv6.
 
-> **Conseil**
+> **Tip**
 >
 > Pour remonter les adresses IP, il est nécessaire d'installer l'agent Proxmox sur les VMs et de l'activer (voir documentation Proxmox). Cet agent assurera aussi un état stable de votre VM lors des sauvegardes et snapshots.
 

@@ -11,14 +11,10 @@ pluginId: MQTTDiscovery
 
 - Mise à jour de dépendances
 
-## 2026-07-27
+## 2026-08-01
 
 - Corrections et optimisations sur la mise à jour des commandes lors de la réception d'un message MQTT
 - Corrections du parsing des infos de découvertes lorsque le payload contient des guillements
-- Mise à jour de dépendances
-
-## 2026-06-16
-
 - Mise à jour de dépendances
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
 

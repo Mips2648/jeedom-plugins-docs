@@ -51,7 +51,7 @@ Pour la v2, vous devez configurer l'url sous la forme `https://server.my`, le to
 
 ![InfluxDB v2](../images/influxV2.png "InfluxDB v2")
 
-> **Conseil**
+> **Tip**
 > influxDB possède une offre cloud gratuite pour la v2 très facile à mettre en place pour tester ou même définitivement si cela vous convient (limitée à une seule organisation, en volume de donnée et durée d'historique), plus d'info: <https://www.influxdata.com/influxdb-cloud-pricing/>
 
 ## Mode d'envoi

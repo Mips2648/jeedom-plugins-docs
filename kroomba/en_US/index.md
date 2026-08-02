@@ -1,26 +1,25 @@
 ---
 layout: default
-title: iRobot Documentation
+title: iRobot documentation 
 lang: en_US
 pluginId: kroomba
 ---
 
 # Description
 
-A plugin that allows you to control iRobot robot vacuums and floor mops **exclusively locally**.
+Plugin for controlling iRobot brand robot vacuum cleaners and floor cleaners **exclusively locally**.
 
-The plugin has been successfully tested on many different models, and most of the brand's Wi-Fi models should be supported. If you're unsure, test it yourself and you'll know for sure!
-This plugin does not work with older models of Roomba robot vacuums equipped with a hardware extension (type RooWifi or Thinking Cleaner); it only works with recent models equipped with Wi-Fi connectivity.
+The plugin has been successfully tested on many different models and most of the wifi models should be supported, if you have any doubts, test for yourself and you will be fixed!This plugin does not work with older models of Roomba robot vacuum cleaners equipped with a hardware extension (RooWifi or Thinking Cleaner type), it only works with recent models equipped with a Wifi connection.
 
-This plugin enables automatic detection and pairing of Roomba and Braava robots on the local network, reports various information about the robot's status (status, dustbin full, water tank level, etc.), and allows you to control the robot (Start, Stop, Return to Base, etc.).
+This plugin allows the automatic detection and pairing of Roomba & Braava robots on the local network, to report various information on the robot's status (status, full bin info, tank info, etc.) as well as to control the robot ( Start, Stop, Return to base...)
 
 It includes a desktop widget.
 
 > **Important**
 >
-> New robot models are coming—the x05 series—with a new *Roomba Home* app. These models are not currently compatible with the plugin, and I have no idea if they will be in the future.
+> New robot models arrive, the x05 series, with a new *Roomba Home* application. These models are currently not compatible with the plugin, and I have no idea whether they will be in the future.
 
-# Supported Versions
+# Supported versions
 
 | Component | Version                     |
 |-----------|-----------------------------|
@@ -29,102 +28,100 @@ It includes a desktop widget.
 
 # Installation
 
-To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
+In order to use the plugin, you must download, install and activate it like any Jeedom plugin.
 
-When installing the dependencies, the *MQTT Manager* plugin should have been installed automatically if it wasn't already. If not, please install this plugin manually via the Jeedom Market (official free plugin).
-Next, you may need to configure it (see the *MQTT Manager* plugin documentation; in most cases, the default settings will work just fine)
-
-> **Tip**
->
-> If you already have an MQTT broker installed, you still need to install the *MQTT Manager* plugin, but be sure to configure it in *remote broker* mode by entering the settings for your current broker.
-
-# Plugin Configuration
-
-On the plugin's configuration page, you can change the following options:
-
-- The main topic under which the plugin will post information. By default, the plugin will post under the *iRobot* topic; you don't need to change this if it works for you
-- The listening port for the plugin daemon. Do not change this value unless you understand how it works and only if you are experiencing a conflict with another plugin.
-
-If the dependencies have been successfully installed and the *MQTT Manager* plugin is up and running, you can start the daemon.
-
-# Exploring and Creating Devices (Robots)
-
-Before you begin:
-
-- Make sure the robot is properly configured on the local network and can be reached from Jeedom (normally on the same local network) (procedure via the iRobot app);
-- Close all iRobot apps on Android or iOS. Note: Using the iRobot app at the same time may cause communication issues between the plugin and the robot;
-- Make sure the robot is on its base and is not in "sleep" mode (press "Clean" briefly to wake it up if necessary).
-
-From the device configuration page, click the *Discovery* button. There are two ways to discover your robots and retrieve the password required by the plugin so that it can then control the robot locally:
-
-- Via the cloud, *only for initial synchronization*: Enter your iRobot account email address and password so that the plugin can connect to the cloud to retrieve the list of configured robots and their passwords.
-- Locally, *does not work with all models*: Make sure the robots you want to discover are on the charging base and turned on (green light on). Then, press and hold the HOME button on your robot until it emits a series of beeps (about 2 seconds). Release the button, and the Wi-Fi light should start blinking.
+When installing dependencies, the *MQTT Manager* plugin was normally installed automatically if it wasn't already. Otherwise, please install this plugin manually via the Jeedom market (free official plugin)
+Then, it may need to be configured (see *MQTT Manager* plugin documentation, in most cases the default options will be fine)
 
 > **Tip**
 >
-> Cloud mode applies only to the robot's discovery process. Once discovered, the robot will always be controlled locally.
+> If you already have an MQTT broker installed, it is still necessary to install the *MQTT Manager* plugin but take care to configure it in *remote broker* mode by entering the parameters of your current broker.
 
-You may enter the robot's IP address; this is useful **and necessary** if the robot is not on the same subnet as Jeedom, since the discovery process uses a broadcast message to find robots.
+# Plugin configuration
 
-![Explore](../images/discovery.png "Découverte")
+In the plugin configuration page, you can change the following options:
 
-Then wait—it takes between 15 and 30 seconds. You’ll see notifications on the screen, and the daemon will automatically reconnect at the end of the process if it was successful. The device will then be created (you can monitor the progress via the log if necessary).
+- The base topic under which the plugin will publish information. By default the plugin will publish under the *iRobot* topic; you don't need to modify if it suits you
+- The listening port of the plugin daemon. Only change this value if you understand how it works and only if you have a conflict with another plugin.
+
+If the dependencies have been successfully installed and the *MQTT Manager* plugin is started and functional, you can launch the daemon.
+
+# Discovery and creation of devices (robots)
+
+Before you start:
+
+- Ensure that the robot is correctly configured on the local network and can be reached from Jeedom (in principle on the same local network) (procedure via the iRobot application)
+- Shut down any iRobot app on Android or iOS. Warning: the simultaneous use of the iRobot application can cause communication blockages between the plugin and the robot
+- Make sure the robot is on its base and not "asleep" (briefly press "Clean" to wake it up if necessary).
+
+From the equipment configuration page, click on the *Discover* button. There are two ways to discover your robots and retrieve the password needed by the plugin to control the robot locally:
+
+- Via the cloud, *only for initial synchronization*: Enter the eMail address and password of your iRobot account so that the plugin can connect to the cloud to retrieve the list of configured robots and their passwords.
+- Locally, *does not work with all models*: Make sure the robots to be discovered are on the charging base and switched on (green lights on). Then press and hold your robot's HOME button until it emits a series of tones (approx. 2 seconds). Release the button and the WIFI LED should flash.
+
+> **Tip**>> Cloud mode is for robot discovery only. Once discovered, the robot will be controlled locally in all cases.
+
+You can optionally enter the robot's IP address, it is useful **and necessary** if the robot is not on the same subnet as Jeedom because the discovery process uses a broadcast message to find the robots.
+
+![Discovery](../images/discovery.png "Discovery")
+
+Then wait for 15 to 30 seconds, you'll see on-screen notifications and the daemon will reconnect itself at the end of the process if successful. The device will then be created (you can monitor progress via the log if necessary).
 
 > **Tip**
 >
-> Once the discovery process is complete, you can use your iRobot mobile app again if needed.
+> When the discovery process is complete, you can use your iRobot mobile app again if needed.
 
-# Cleaning by room or by zone
+# Cleaning by room or zone
 
-When you set up the robot, the corresponding basic commands for the robot will be created. You’ll have a **Start** command that allows you to initiate a full cleaning of all rooms. The plugin also lets you start cleaning a specific room or area (on compatible models).
+When the robot is discovered, the basic commands corresponding to the robot will be created. You will have a **Start** command that allows you to start a complete cleaning of all the rooms. But the plugin also allows you to start cleaning of a specific room or area (on compatible models).
 
-To do this, there are a few steps to follow to ensure that the corresponding commands are created on the device:
+To do this, there are a few steps to follow so that the corresponding commands are created on the device:
 
-Therefore, you need to:
+It is therefore necessary to:
 
-- have created the rooms or zones in the official app;
-- Ensure that the connection between the plugin and the robot is operational (daemon running, data being sent to Jeedom...);
-- From the official app, start the cleaning cycle once in the desired room or zone, and within a few seconds, the plugin should detect the new area and create a corresponding action command for the robot's device;
-- Optional: You can return the robot to its charging station;
-- For now, it’s not possible to automatically retrieve the region’s name, so the command will have an obscure name, but you can rename it however you like. Do this now before starting a new task to detect the next room; otherwise, you won’t know which command corresponds to which room.
+- have created the rooms or zones in the official app.
+- that the connection between the plugin and the robot is operational (daemon started, the information goes back to Jeedom...)
+- From the official app, start cleaning in the desired room or area and in the following seconds, the plugin should detect the new region and create a corresponding action command on the device corresponding to the robot.
+- optional: you can return the robot to the base
+- For now it is impossible to get the name of the region automatically, so the command will have an obscure name but you can rename it as you wish. Do it now before starting a new task to detect the next room otherwise you will no longer know which command corresponds to which room.
 
-You can now use these commands just like any other Jeedom command (you do not need to use the **Start** command as well).
+Now you can use these commands like any other Jeedom command (you should not use the **Start** command on top)
 
-Sometimes iRobot changes the map IDs (probably whenever a map is modified). When this happens, you need to manually restart a room cleanup so that the plugin can update the command.
+Sometimes card IDs are changed by iRobot (probably as soon as a card change is made). When this occurs, you must restart manual cleaning of the room for the plugin to update the command.
 
-# List of known statuses and their corresponding widget displays
+# List of known states and correspondence on the widget
 
-| Command Value *Status* | Meaning |
+| Command value *State*                         | Meaning      |
 |------------------------------------------------|--------------------|
-| *Charging* and *Recharging* | *Charging* |
-| *Docking - End Mission* and *Mission Completed* | *Task Completed*    |
-| *Docking* and *User Docking* | *Return to Base* |
-| *Paused* | *Paused*     |
-| *Running* | *Cleaning* |
-| *Stopped* | *Arrêté* |
-| *Stuck* and *Base Unplugged* | *Stuck* |
+| *Charging* et *Recharging*                     | *Charging*        |
+| *Docking - End Mission* et *Mission Completed* | *Task completed*    |
+| *Docking* et *User Docking*                    | *Docking* |
+| *Paused*                                       | *Paused*     |
+| *Running*                                      | *Cleaning*        |
+| *Stopped*                                      | *Stopped*           |
+| *Stuck* and *Base Unplugged*                    | *Stuck*           |
 
-# History
+# Historic
 
 This plugin was originally created by @kavod (Brice Grichy).
-The plugin was then taken over by @vedrine
+The plugin was later taken over by @vedrine
 
-# Change log
+# Changelog
 
-[View the changelog](./changelog)
+[See the changelog](./changelog)
 
 # Support
 
-If you're having a problem, start by reading the latest threads related to the plugin on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
+If you have a problem, start by reading the latest plugin-related topics on [community]({{site.forum}}/tag/plugin-{{page.pluginId}}).
 
-If you still can't find an answer to your question, feel free to create a new thread—and don't forget to include the plugin tag ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
+If despite this you do not find an answer to your question, do not hesitate to create a new topic, with the tag of the plugin ([plugin-{{page.pluginId}}]({{site.forum}}/tag/plugin-{{page.pluginId}})).
 
-At a minimum, you must provide:
+At a minimum, you will need to provide:
 
-- a screenshot of the Jeedom Health page
-- a screenshot of the plugin's settings page
-- All available plugin logs at the *INFO* level, pasted into `Preformatted Text` (use the `</>` button on the community), no files!
-- Depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...
+- a screenshot of the Jeedom health page
+- a screenshot of the plugin's configuration page
+- all available plugin logs, at *INFO* level, pasted into a `Preformatted Text` (button `</>` on community), no files!
+- depending on the case, a screenshot of the error encountered, a screenshot of the configuration causing the problem...
 
 # Do you like the plugin?
 

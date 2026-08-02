@@ -7,7 +7,7 @@ pluginId: influxdb
 
 # Registro de cambios
 
-## 2026-07-22
+## 2026-08-03
 
 - Actualización de dependencias
 

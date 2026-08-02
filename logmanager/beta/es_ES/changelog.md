@@ -7,7 +7,7 @@ pluginId: logmanager
 
 # Registro de cambios
 
-## 2026-07-28
+## 2026-08-03
 
 - Control más estricto sobre el nombre que se le da al equipo: ¡no utilices nada que se parezca al nombre ni al ID de un complemento ya existente!
 - Actualización de dependencias

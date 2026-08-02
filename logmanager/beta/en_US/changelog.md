@@ -7,7 +7,7 @@ pluginId: logmanager
 
 # Change log
 
-## 2026-07-28
+## 2026-08-03
 
 - Stricter controls on device names: do not use anything that resembles the name or ID of an existing plugin!
 - Dependency update

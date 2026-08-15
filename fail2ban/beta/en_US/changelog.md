@@ -7,7 +7,7 @@ pluginId: fail2ban
 
 # Change log
 
-## 2026-08-03
+## 2026-08-15
 
 - Dependency update
 

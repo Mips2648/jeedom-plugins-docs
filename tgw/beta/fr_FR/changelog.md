@@ -7,7 +7,7 @@ pluginId: tgw
 
 # Changelog
 
-## 2026-08-03
+## 2026-08-15
 
 - Mise à jour de dépendances
 

@@ -7,7 +7,7 @@ pluginId: fail2ban
 
 # Registro de cambios
 
-## 2026-08-03
+## 2026-08-15
 
 - Actualización de dependencias
 

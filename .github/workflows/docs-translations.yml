@@ -26,5 +26,5 @@ jobs:
         with:
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
             target_languages: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.target_languages || 'en_US,es_ES' }}
-            documents_roots: 'arlo,clicksend,designImgSwitch,fail2ban,gotify,hydrao,influxdb,kroomba,linksys,logmanager,miele,modbus2mqtt,rocketchat,SmartMeterP1,stockexchange'
+            documents_roots: 'arlo,bticino,clicksend,designImgSwitch,fail2ban,gardena,gotify,hydrao,influxdb,kroomba,linksys,logmanager,miele,modbus2mqtt,rocketchat,SmartMeterP1,stockexchange'
             memory_path: ${{ github.workspace }}/.translation_memory

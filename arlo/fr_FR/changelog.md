@@ -5,12 +5,14 @@ lang: fr_FR
 pluginId: arlo
 ---
 
-# Beta
+# Changelog
 
-- Mise à jour de dépendances
+## 2026-08-18
+
+- Force le rafraichissement des modes dans le démon si ceux-ci ne sont pas connus avant d'éviter des problèmes de changement de mode
 - Python 3.11 requis, il sera installé automatiquement si nécessaire.
-
-# Stable
+- Mise en place d'un nouveau flux de déploiement pour la documentation
+- Mise à jour de dépendances
 
 ## 2026-05-29
 
@@ -379,4 +381,4 @@ Première version stable
 
 # Documentation
 
-[Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
+[Voir la documentation](./index)

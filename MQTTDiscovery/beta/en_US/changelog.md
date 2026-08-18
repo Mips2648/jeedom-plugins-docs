@@ -7,17 +7,16 @@ pluginId: MQTTDiscovery
 
 # Change log
 
-## 2026-07-27
+## 2026-08-18
 
+- Improving code consistency and security for PHP 8
+- Fixes for `climate`-type components
 - Dependency update
 
-## 2026-06-18
+## 2026-08-01
 
 - Fixes and optimizations regarding command updates when an MQTT message is received
 - Fixes for parsing discovery information when the payload contains quotation marks
-
-## 2026-06-16
-
 - Dependency update
 - Python 3.11 is required; it will be installed automatically if necessary.
 

@@ -7,8 +7,10 @@ pluginId: fail2ban
 
 # Registro de cambios
 
-## 2026-08-15
+## 2026-08-18
 
+- Mejora en la gestión de los resultados de los comandos locales y SSH
+- Corrección de la conversión de los contadores de visitantes antes del incremento
 - Actualización de dependencias
 
 ## 2026-06-12

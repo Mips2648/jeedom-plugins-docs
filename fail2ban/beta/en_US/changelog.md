@@ -7,8 +7,10 @@ pluginId: fail2ban
 
 # Change log
 
-## 2026-08-15
+## 2026-08-18
 
+- Improvements to the handling of local and SSH command results
+- Fixed the conversion of visitor counters before incrementing
 - Dependency update
 
 ## 2026-06-12

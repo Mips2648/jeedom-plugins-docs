@@ -14,10 +14,10 @@ La ventaja de este sistema es que se puede alojar en tu propia red (basta con un
 
 # Versiones compatibles
 
-| Componente | Versión |
+| Componente | Versión                     |
 |-----------|-----------------------------|
 Debian | Bullseye (11) y Bookworm (12) |
-| Jeedom    | >= 4.5 |
+| Jeedom    | >= 4.5                      |
 
 # Instalación
 

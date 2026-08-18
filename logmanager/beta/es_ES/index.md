@@ -16,10 +16,10 @@ La purga de los registros también se gestiona desde la configuración general d
 
 # Versiones compatibles
 
-| Componente | Versión |
+| Componente | Versión                     |
 |-----------|-----------------------------|
 Debian | Bullseye (11) y Bookworm (12) |
-| Jeedom    | >= 4.2 |
+| Jeedom    | >= 4.2                      |
 
 # Instalación
 

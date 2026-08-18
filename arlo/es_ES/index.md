@@ -38,10 +38,10 @@ A continuación te ofrecemos un resumen de las posibilidades del complemento:
 
 # Versiones compatibles
 
-| Componente | Versión |
+| Componente | Versión                     |
 |-----------|-----------------------------|
 Debian | Bullseye (11) y Bookworm (12) |
-| Jeedom    | >= 4.4 |
+| Jeedom    | >= 4.4                      |
 
 > **Importante**
 >

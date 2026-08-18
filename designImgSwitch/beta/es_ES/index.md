@@ -12,10 +12,10 @@ La información meteorológica, así como la hora de salida y puesta del sol, se
 
 # Versiones compatibles
 
-| Componente | Versión |
+| Componente | Versión                     |
 |-----------|-----------------------------|
 Debian | Bullseye (11) y Bookworm (12) |
-| Jeedom    | >= 4.3 |
+| Jeedom    | >= 4.3                      |
 
 # Instalación
 

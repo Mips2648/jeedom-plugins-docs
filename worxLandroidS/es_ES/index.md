@@ -13,7 +13,7 @@ Este complemento permite conectarse a los cortacéspedes Worx Landroid con conex
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-Debian | Bullseye (11) y Bookworm (12) |
+| Debian    | Bullseye(11) & Bookworm(12) |
 | Jeedom    | >= 4.5                      |
 
 # Instalación

@@ -15,7 +15,7 @@ La ventaja de esta solución es que se puede alojar en tu propia casa (basta con
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-Debian | Bullseye (11) y Bookworm (12) |
+| Debian    | Bullseye(11) & Bookworm(12) |
 | Jeedom    | >= 4.5                      |
 
 # Instalación

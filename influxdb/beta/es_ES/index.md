@@ -19,7 +19,7 @@ El complemento también permite exportar el historial de comandos de Jeedom a In
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-Debian | Bullseye (11) y Bookworm (12) |
+| Debian    | Bullseye(11) & Bookworm(12) |
 | Jeedom    | >= 4.4                      |
 | InfluxDB  | v1.8+ y v2                  |
 

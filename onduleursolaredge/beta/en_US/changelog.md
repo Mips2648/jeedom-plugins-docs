@@ -7,6 +7,11 @@ pluginId: onduleursolaredge
 
 # Change log
 
+## 2026-08-19
+
+- Improved reliability of data retrieval from the SolarEdge API
+- Improved handling of communication errors and invalid API responses
+
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation

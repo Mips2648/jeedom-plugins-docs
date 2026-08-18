@@ -13,7 +13,7 @@ Complemento que permite actuar como pasarela entre Modbus TCP/IP y MQTT.
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-Debian | Bullseye (11) y Bookworm (12) |
+| Debian    | Bullseye(11) & Bookworm(12) |
 | Jeedom    | >= 4.4                      |
 
 # Instalación

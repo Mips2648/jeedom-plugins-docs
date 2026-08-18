@@ -7,6 +7,10 @@ pluginId: vaillantmultimatic
 
 # Change log
 
+## 2026-08-18
+
+- Dependency update
+
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation

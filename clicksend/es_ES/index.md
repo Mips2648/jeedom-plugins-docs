@@ -11,10 +11,10 @@ Complemento para integrar la plataforma [ClickSend](https://www.clicksend.com), 
 
 # Versiones compatibles
 
-| Componente | Versión |
+| Componente | Versión                     |
 |-----------|-----------------------------|
 Debian | Bullseye (11) y Bookworm (12) |
-| Jeedom    | >= 4.5 |
+| Jeedom    | >= 4.5                      |
 
 # Instalación
 

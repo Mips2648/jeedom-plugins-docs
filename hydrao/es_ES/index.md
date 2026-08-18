@@ -11,10 +11,10 @@ Complemento que permite integrar los cabezales de ducha Hydrao.
 
 # Versiones compatibles
 
-| Componente | Versión |
+| Componente | Versión                     |
 |-----------|-----------------------------|
 Debian | Bullseye (11) y Bookworm (12) |
-| Jeedom    | >= 4.5 |
+| Jeedom    | >= 4.5                      |
 
 # Instalación
 

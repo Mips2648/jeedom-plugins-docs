@@ -17,11 +17,11 @@ El complemento también permite exportar el historial de comandos de Jeedom a In
 >
 > El complemento es compatible con las versiones de InfluxDB >= 1.8 o >= 2.0. Las versiones anteriores de InfluxDB v1 < 1.8 no son compatibles.
 
-| Componente | Versión |
+| Componente | Versión                     |
 |-----------|-----------------------------|
 Debian | Bullseye (11) y Bookworm (12) |
-| Jeedom    | >= 4.4 |
-| InfluxDB  | v1.8+ y v2 |
+| Jeedom    | >= 4.4                      |
+| InfluxDB  | v1.8+ y v2                  |
 
 # Instalación
 

@@ -12,10 +12,10 @@ Por lo general, todos los datos están disponibles en tiempo real, pero la frecu
 
 # Versiones compatibles
 
-| Componente | Versión |
+| Componente | Versión                     |
 |-----------|-----------------------------|
 Debian | Bullseye (11) y Bookworm (12) |
-| Jeedom    | >= 4.5 |
+| Jeedom    | >= 4.5                      |
 
 # Instalación
 

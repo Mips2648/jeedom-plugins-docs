@@ -41,6 +41,7 @@ jobs:
               logmanager,
               miele,
               modbus2mqtt,
+              MQTTDiscovery,
               notificationqueue,
               onduleursolaredge,
               rocketchat,

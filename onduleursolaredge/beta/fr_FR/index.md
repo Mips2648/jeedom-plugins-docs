@@ -25,7 +25,7 @@ Les informations suivantes sont récupérables, d'autres pourraient être rajout
 
 # Installation
 
-> **Conseil**
+> **Tip**
 >
 > Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 

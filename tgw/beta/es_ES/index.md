@@ -29,7 +29,7 @@ También os invito a consultar [esta documentación](https://mips2648.github.io/
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-Debian | Bullseye (11) y Bookworm (12) |
+| Debian    | Bullseye(11) & Bookworm(12) |
 | Jeedom    | >= 4.5                      |
 
 # Instalación

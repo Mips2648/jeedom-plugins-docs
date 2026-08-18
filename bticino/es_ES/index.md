@@ -13,7 +13,7 @@ Complemento que permite integrar todos los dispositivos de Bticino, Netatmo y Le
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-Debian | Bullseye (11) y Bookworm (12) |
+| Debian    | Bullseye(11) & Bookworm(12) |
 | Jeedom    | >= 4.6                      |
 
 # Instalación

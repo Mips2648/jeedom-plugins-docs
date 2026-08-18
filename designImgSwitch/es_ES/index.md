@@ -14,7 +14,7 @@ La información meteorológica, así como la hora de salida y puesta del sol, se
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-Debian | Bullseye (11) y Bookworm (12) |
+| Debian    | Bullseye(11) & Bookworm(12) |
 | Jeedom    | >= 4.3                      |
 
 # Instalación

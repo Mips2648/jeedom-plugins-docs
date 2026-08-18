@@ -7,7 +7,7 @@ pluginId: rocketchat
 
 # Registro de cambios
 
-## 2026-08-03
+## 2026-08-19
 
 - Actualización de dependencias
 

@@ -7,6 +7,10 @@ pluginId: vaillantmultimatic
 
 # Registro de cambios
 
+## 2026-08-18
+
+- Actualización de dependencias
+
 ## 2026-06-12
 
 - Implantación de un nuevo flujo de trabajo para la documentación

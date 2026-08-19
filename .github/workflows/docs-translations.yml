@@ -44,6 +44,8 @@ jobs:
               MQTTDiscovery,
               notificationqueue,
               onduleursolaredge,
+              portainer,
+              proxmox,
               rocketchat,
               SmartMeterP1,
               stockexchange,

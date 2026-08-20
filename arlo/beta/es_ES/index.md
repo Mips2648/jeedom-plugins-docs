@@ -45,7 +45,7 @@ A continuación te ofrecemos un resumen de las posibilidades del complemento:
 
 > **Importante**
 >
-> La compatibilidad con los sistemas de 32 bits (Raspbian de 32 bits en Pi 3) se eliminará en una próxima versión.
+> Este complemento no es compatible con sistemas de 32 bits, en particular con las instalaciones de Raspberry Pi 3B que utilizan un sistema operativo de 32 bits.
 
 # Instalación
 

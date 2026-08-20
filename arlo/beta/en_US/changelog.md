@@ -7,6 +7,16 @@ pluginId: arlo
 
 # Change log
 
+## 2026-08-20
+
+> **Attention**
+>
+> As announced in November 2024, this version no longer supports 32-bit systems. If your setup is still based on a Pi 3B running a 32-bit OS, do not update.
+
+- Added support for the Arlo Wired Floodlight Camera 2K
+- Improving code consistency and security for PHP 8
+- Updating dependencies.
+
 ## 2026-08-18
 
 - Forces the daemon to refresh the modes if they are not known beforehand, to avoid mode-switching issues

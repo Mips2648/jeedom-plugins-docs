@@ -7,6 +7,14 @@ pluginId: arlo
 
 # Changelog
 
+## 2026-08-20
+
+> **Attention**
+>
+> Comme annoncé en novembre 2024, cette version ne prend plus en charge les systèmes 32 bits. Si votre installation repose encore sur un Pi 3B avec un OS 32 bits, ne procédez pas à la mise à jour.
+
+- Mise à jour de dépendances.
+
 ## 2026-08-18
 
 - Force le rafraichissement des modes dans le démon si ceux-ci ne sont pas connus avant d'éviter des problèmes de changement de mode

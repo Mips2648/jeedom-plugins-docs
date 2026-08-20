@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Changelog
 
-## 2026-08-03
+## 2026-08-20
 
 - Mise à jour de dépendances
 

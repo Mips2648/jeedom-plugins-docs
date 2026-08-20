@@ -7,6 +7,16 @@ pluginId: arlo
 
 # Registro de cambios
 
+## 2026-08-20
+
+> **Atención**
+>
+> Tal y como se anunció en noviembre de 2024, esta versión ya no es compatible con los sistemas de 32 bits. Si tu instalación sigue basándose en una Pi 3B con un sistema operativo de 32 bits, no realices la actualización.
+
+- Se ha añadido compatibilidad con la cámara Arlo Wired Floodlight Camera 2K
+- Mejora de la coherencia y la seguridad del código para PHP 8
+- Actualización de dependencias.
+
 ## 2026-08-18
 
 - Fuerza la actualización de los modos en el demonio si estos no se conocen de antemano, para evitar problemas al cambiar de modo

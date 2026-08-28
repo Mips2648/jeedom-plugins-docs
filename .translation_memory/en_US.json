@@ -528,7 +528,6 @@
     "9 = PROGRAMME INTERRUPTED": "9 = PROGRAM INTERRUPTED",
     "9: Bloquée": "9: Stuck",
     "9: Moteur roues bloqué": "9: Wheel motor locked",
-    "<a href=\"https://www.buymeacoffee.com/mips2648\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/default-orange.png\" alt=\"Buy Me A Coffee\" height=\"41\" width=\"174\"></a>": "<a href=\"https://www.buymeacoffee.com/mips2648\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/default-orange.png\" alt=\"Buy Me A Coffee\" height=\"41\" width=\"174\"></a>",
     "A ce stade, il est recommandé de déjà mettre à jour votre pi (apt-get update, apt-get upgrade) afin d'accélérer l'installation du démon plus tard (voir ci-dessous).": "At this point, it is recommended that you update your Pi (apt-get update, apt-get upgrade) to speed up the installation of the daemon later (see below).",
     "A la fin du fichier, ajouter cette ligne:": "At the end of the file, add this line:",
     "A priori celle-ci ne doit jamais être utilisée, les images de fonds seront déjà automatiquement mises à jours à chaque fois que nécessaire.": "In principle, this should never be used; the background images will already be automatically updated whenever necessary.",

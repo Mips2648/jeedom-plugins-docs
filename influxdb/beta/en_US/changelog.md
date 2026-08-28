@@ -7,8 +7,9 @@ pluginId: influxdb
 
 # Change log
 
-## 2026-08-03
+## 2026-08-27
 
+- Jeedom v4.5 required
 - Dependency update
 
 ## 2026-06-12

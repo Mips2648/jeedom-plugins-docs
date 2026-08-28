@@ -45,7 +45,7 @@ Voici un aperçu des possibilités du plugin:
 
 > **Important**
 >
-> La compatibilité avec les systèmes 32bits (Rasbian 32bits sur pi3) sera supprimée lors d'une prochaine version.
+> Ce plugin n’est pas compatible avec les systèmes 32 bits, notamment les installations Raspberry Pi 3B utilisant un OS 32 bits.
 
 # Installation
 

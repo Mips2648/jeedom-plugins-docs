@@ -7,6 +7,10 @@ pluginId: SmartMeterP1
 
 # Change log
 
+## 2026-08-03
+
+- Dependency update
+
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation

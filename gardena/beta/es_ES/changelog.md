@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Registro de cambios
 
-## 2026-08-03
+## 2026-08-20
 
 - Actualización de dependencias
 

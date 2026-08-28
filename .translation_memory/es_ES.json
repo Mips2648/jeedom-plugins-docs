@@ -528,7 +528,6 @@
     "9 = PROGRAMME INTERRUPTED": "9 = PROGRAMA INTERRUMPIDO",
     "9: Bloquée": "9: Bloqueada",
     "9: Moteur roues bloqué": "9: Motor de las ruedas bloqueado",
-    "<a href=\"https://www.buymeacoffee.com/mips2648\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/default-orange.png\" alt=\"Buy Me A Coffee\" height=\"41\" width=\"174\"></a>": "<a href=\"https://www.buymeacoffee.com/mips2648\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/default-orange.png\" alt=\"Buy Me A Coffee\" height=\"41\" width=\"174\"></a>",
     "A ce stade, il est recommandé de déjà mettre à jour votre pi (apt-get update, apt-get upgrade) afin d'accélérer l'installation du démon plus tard (voir ci-dessous).": "En este punto, se recomienda actualizar ya tu Raspberry Pi (apt-get update, apt-get upgrade) para agilizar la instalación del demonio más adelante (véase más abajo).",
     "A la fin du fichier, ajouter cette ligne:": "Al final del archivo, añade esta línea:",
     "A priori celle-ci ne doit jamais être utilisée, les images de fonds seront déjà automatiquement mises à jours à chaque fois que nécessaire.": "En principio, esta opción no debe utilizarse nunca, ya que las imágenes de fondo se actualizarán automáticamente cada vez que sea necesario.",

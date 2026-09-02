@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Changelog
 
-## 2026-08-20
+## 2026-09-02
 
 > **Attention**
 >
@@ -15,6 +15,8 @@ pluginId: arlo
 
 - Ajout du support de la Arlo Wired Floodlight Camera 2K
 - Renforcement de la cohérence et la sécurité du code pour PHP8
+- Correction d'un warning
+- Correction d'une fuite mémoire potentielle
 - Mise à jour de dépendances.
 
 ## 2026-08-18

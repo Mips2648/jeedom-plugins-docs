@@ -45,6 +45,7 @@ Cette liste est loin d'être exhaustive, il en existe tellement que cela serait 
 
 - [Chaudière Hargassner](https://community.jeedom.com/t/pilotage-chaudiere-hargassner-via-mqtt-discovery/142840)
 - [Climatisation Teknopoint et Airton utilisant le module wifi Tuya ACW02 Wi-Fi](https://github.com/devildant/acw02_esphome), voir ce [tutoriel sur community](https://community.jeedom.com/t/climatisation-airton-connexion-a-jeedom-en-mqtt/142359)
+- [Liebherr SmartDevice](https://github.com/ripleyXLR8/liebherr2mqtt), voir ce [tutoriel sur community](https://community.jeedom.com/t/passerelle-liebherr-smartdevice-vers-mqtt-frigos-et-congelateurs-connectes/150679)
 - [MG iSMART](https://github.com/SAIC-iSmart-API/saic-python-mqtt-gateway), voir ce [tutoriel sur community](https://community.jeedom.com/t/tuto-integrer-sa-mg-dans-jeedom/118686)
 - [MyFox2MQTT](https://github.com/Minims/MyFox2MQTT), voir [explication sur community](https://community.jeedom.com/t/myfox-et-jedom-4-4/111828/14)
 - [Nuki Smart Lock Pro (3 & 4)](https://support.nuki.io/hc/fr/articles/12947926779409-MQTT-support)

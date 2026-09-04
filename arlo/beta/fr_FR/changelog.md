@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Changelog
 
-## 2026-09-02
+## 2026-09-04
 
 > **Attention**
 >
@@ -17,6 +17,7 @@ pluginId: arlo
 - Renforcement de la cohérence et la sécurité du code pour PHP8
 - Correction d'un warning
 - Correction d'une fuite mémoire potentielle
+- Jeedom v4.5 requis
 - Mise à jour de dépendances.
 
 ## 2026-08-18

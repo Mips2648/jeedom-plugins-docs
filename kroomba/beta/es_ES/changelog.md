@@ -9,7 +9,6 @@ pluginId: kroomba
 
 ## 2026-08-02
 
-- Actualización de dependencias
 - Corrección en el guardado de configuraciones durante la detección a través de la nube
 - Implantación de un nuevo flujo de trabajo para la documentación
 - Actualización de dependencias

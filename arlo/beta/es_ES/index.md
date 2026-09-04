@@ -41,7 +41,7 @@ A continuación te ofrecemos un resumen de las posibilidades del complemento:
 | Componente | Versión                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
+| Jeedom    | >= 4.5                      |
 
 > **Importante**
 >

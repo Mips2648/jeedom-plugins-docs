@@ -7,10 +7,11 @@ pluginId: MQTTDiscovery
 
 # Registro de cambios
 
-## 2026-08-18
+## 2026-09-04
 
 - Mejora de la coherencia y la seguridad del código para PHP 8
 - Correcciones en los componentes de tipo `climate`
+- Añadir un mensaje en el centro de mensajes cuando se detecte un nuevo tema (nueva categoría de equipo) al que no se esté suscrito
 - Actualización de dependencias
 
 ## 2026-08-01

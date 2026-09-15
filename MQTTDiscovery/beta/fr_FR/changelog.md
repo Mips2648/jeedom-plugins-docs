@@ -12,7 +12,7 @@ pluginId: MQTTDiscovery
 - Renforcement de la cohérence et la sécurité du code pour PHP8
 - Corrections sur les composants de type `climate`
 - Ajout d'un message dans le centre de message lorsqu'un nouveau topic (nouvelle catégorie d'équipement) non-souscrit est découvert
-- Correction de la découverte pour les payload contenant un booléen sous PHP8
+- Correction de la découverte pour les payload contenant un booléen
 - Mise à jour de dépendances
 
 ## 2026-08-01

@@ -1167,6 +1167,7 @@
     "Correction de la commande *Rafraîchir* qui ne fonctionnait plus & suppression de la commande *Update* qui fonctionnait, elle, et réalisait la même action.": "Fixed the *Refresh* command, which was no longer working, and removed the *Update* command, which was working but performed the same action.",
     "Correction de la configuration par défaut des commandes de type *moisture* qui étaient configurées comme des commandes de types *temperature* (ne s'applique que si le type générique est reçu dans les infos de découvertes)": "Fixed the default configuration for *moisture* commands, which were configured as *temperature* commands (applies only if the generic type is received in the discovery information)",
     "Correction de la conversion des compteurs de visiteurs avant incrémentation": "Fixed the conversion of visitor counters before incrementing",
+    "Correction de la découverte pour les payload contenant un booléen": "Fixed discovery for payloads containing a Boolean",
     "Correction de la migration des zones si plusieurs zones existent": "Fixed zone migration when multiple zones exist",
     "Correction des types génériques": "Generic Type Correction",
     "Correction du décodage pour compatibilité avec les compteurs suisses": "Decoding correction for compatibility with Swiss meters",

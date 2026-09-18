@@ -12,6 +12,7 @@ pluginId: MQTTDiscovery
 - Improving code consistency and security for PHP 8
 - Fixes for `climate`-type components
 - Add a message to the message center when a new topic (new device category) that is not subscribed to is discovered
+- Fixed discovery for payloads containing a Boolean
 - Dependency update
 
 ## 2026-08-01

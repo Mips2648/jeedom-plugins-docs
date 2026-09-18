@@ -15,6 +15,7 @@ pluginId: arlo
 
 - Ajout du support de la Arlo Wired Floodlight Camera 2K
 - Renforcement de la cohérence et la sécurité du code pour PHP8
+- Amélioration de la résilience du code lors de l'accès aux dossiers d'enregistrements des caméras
 - Correction d'un warning
 - Correction d'une fuite mémoire potentielle
 - Jeedom v4.5 requis

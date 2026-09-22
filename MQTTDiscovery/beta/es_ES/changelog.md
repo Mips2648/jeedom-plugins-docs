@@ -11,10 +11,11 @@ pluginId: MQTTDiscovery
 
 - Mejora de la coherencia y la seguridad del código para PHP 8
 - Correcciones en los componentes de tipo `climate`
+- Compatibilidad con el tipo «siren»
 - Añadir un mensaje en el centro de mensajes cuando se detecte un nuevo tema (nueva categoría de equipo) al que no se esté suscrito
 - Corrección del descubrimiento para las cargas útiles que contienen un valor booleano
 - Actualización de dependencias
-- Se requiere Debian 12 y PHP 8.0
+- Se requiere Debian 12 y PHP 8.2
 - Compatible con Debian 13
 
 ## 2026-08-01

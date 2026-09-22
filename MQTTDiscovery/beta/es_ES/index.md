@@ -206,6 +206,7 @@ Aún no se han integrado por completo todos los componentes/entidades. Si tu equ
 - número
 - seleccionar
 - sensor
+- sirena
 - interruptor
 - texto
 - actualización

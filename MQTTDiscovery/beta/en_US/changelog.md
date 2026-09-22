@@ -7,13 +7,15 @@ pluginId: MQTTDiscovery
 
 # Change log
 
-## 2026-09-04
+## 2026-09-23
 
 - Improving code consistency and security for PHP 8
 - Fixes for `climate`-type components
 - Add a message to the message center when a new topic (new device category) that is not subscribed to is discovered
 - Fixed discovery for payloads containing a Boolean
 - Dependency update
+- Debian 12 and PHP 8.0 required
+- Debian 13 supported
 
 ## 2026-08-01
 

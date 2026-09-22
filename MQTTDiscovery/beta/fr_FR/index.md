@@ -24,7 +24,7 @@ Mais cela ne se limite pas aux équipements Bluetooth puisque tous les équipeme
 
 | Composant | Version                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm(12) & Trixie(13)   |
 | Jeedom    | >= 4.5                      |
 
 # Compatibilité

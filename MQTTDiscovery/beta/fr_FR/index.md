@@ -206,6 +206,7 @@ Tous les composants/entités ne sont pas encore entièrement ni complètement in
 - number
 - select
 - sensor
+- siren
 - switch
 - text
 - update

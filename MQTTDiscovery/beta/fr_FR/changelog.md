@@ -11,10 +11,11 @@ pluginId: MQTTDiscovery
 
 - Renforcement de la cohérence et la sécurité du code pour PHP8
 - Corrections sur les composants de type `climate`
+- Prise en charge du type `siren`
 - Ajout d'un message dans le centre de message lorsqu'un nouveau topic (nouvelle catégorie d'équipement) non-souscrit est découvert
 - Correction de la découverte pour les payload contenant un booléen
 - Mise à jour de dépendances
-- Debian 12 et PHP 8.0 requis
+- Debian 12 et PHP 8.2 requis
 - Debian 13 supporté
 
 ## 2026-08-01

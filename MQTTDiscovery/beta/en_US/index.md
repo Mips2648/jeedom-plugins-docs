@@ -206,6 +206,7 @@ Not all components/entities are fully integrated yet. If your hardware requires 
 - number
 - select
 - sensor
+- siren
 - switch
 - text
 - update

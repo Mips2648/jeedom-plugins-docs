@@ -15,4 +15,5 @@ jobs:
       - name: Lint Markdown
         uses: DavidAnson/markdownlint-cli2-action@v14
         with:
+          config: '.markdownlint.json'
           globs: "**/*.md"

@@ -12,7 +12,7 @@ pluginId: presencemngt
 | Componente | Versión                     |
 |-----------|-----------------------------|
 | Debian    | Bookworm (12) y Trixie (13)   |
-| Jeedom    | >= 4.5                      |
+| Jeedom    | >= 4.6                      |
 
 # Instalación
 
@@ -37,5 +37,3 @@ Como mínimo, habrá que presentar:
 - una captura de pantalla de la página de configuración del complemento
 - Todos los registros disponibles del complemento, con nivel *INFO*, pegados en un `Texto preformateado` (botón `</>` en la comunidad), ¡sin archivos!
 - según el caso, una captura de pantalla del error que se ha producido, una captura de pantalla de la configuración que da problemas...
-
-Si la pregunta se refiere al reconocimiento o a los comandos de un dispositivo, habrá que proporcionar la *información de reconocimiento*: copia esta información mediante el botón de la página del dispositivo y pégala **sin modificar** en un bloque de `texto preformateado`.

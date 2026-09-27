@@ -2,5 +2,11 @@
     "default": true,
     "MD013": false,
     "MD025": false,
-    "MD033": { "allowed_elements": ["a", "img"] }
+    "MD033": {
+        "allowed_elements": [
+            "a",
+            "img"
+        ]
+    },
+    "MD045": false
 }

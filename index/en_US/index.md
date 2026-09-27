@@ -136,7 +136,7 @@ Plugin allowing custom log management in your scenarios. It is possible to creat
 
 Plugin allowing to integrate all appliances compatible with Miel@Home.
 
-It is possible to get appliances information, to monitor them and execute some actions (depending the appliance). 
+It is possible to get appliances information, to monitor them and execute some actions (depending the appliance).
 
 - [Documentation]({{site.baseurl}}/miele/{{page.lang}})
 - [Changelog]({{site.baseurl}}/miele/{{page.lang}}/changelog)
@@ -157,7 +157,7 @@ Plugin to create a gateway between modbus TCP/IP and MQTT.
 [<img width="77" src="{{site.market}}/filestore/market/plugin/images/MQTTDiscovery_icon.png">]({{site.baseurl}}/MQTTDiscovery/{{page.lang}})
 
 Plugin for automatic discovery of MQTT device on the principle of 'MQTT Auto Discovery' which exists under home assistant.
-This allows to use the excellent [Open MQTT Gateway] project (https://docs.openmqttgateway.com/) to be used on esp32 or the equivalent [Theengs gateway] (https://gateway.theengs.io/) on pi. It is becoming very easy to manage the presence of Bluetooth tags such as nuts or to integrate a large list of BLEA compatible hardware.
+This allows to use the excellent [Open MQTT Gateway] project [Open MQTT Gateway](https://docs.openmqttgateway.com/) to be used on esp32 or the equivalent [Theengs gateway](https://gateway.theengs.io/) on pi. It is becoming very easy to manage the presence of Bluetooth tags such as nuts or to integrate a large list of BLEA compatible hardware.
 
 - [Documentation]({{site.baseurl}}/MQTTDiscovery/{{page.lang}})
 - [Changelog]({{site.baseurl}}/MQTTDiscovery/{{page.lang}}/changelog)
@@ -200,7 +200,7 @@ The plugin allow to retrieve data of an Solaredge inverter.
 Plugin to connect to [portainer.io](https://www.portainer.io/portainer-ce/) which is a solution to manage containers on docker which can be easily installed in a container.
 With this plugin, it is possible to retrieve in Jeedom all dockers servers configured in [portainer.io](https://www.portainer.io/portainer-ce/) and so all containers.
 
-The plugin has also a health page and a dedicated panel displaying an overview of all containers and allowing you to perform all basic actions, similar to the "Containers" page on [portainer.io] (https://www.portainer.io/portainer-ce/).
+The plugin has also a health page and a dedicated panel displaying an overview of all containers and allowing you to perform all basic actions, similar to the "Containers" page on [portainer.io](https://www.portainer.io/portainer-ce/).
 
 - [Documentation]({{site.baseurl}}/portainer/{{page.lang}})
 - [Changelog]({{site.baseurl}}/portainer/{{page.lang}}/changelog)

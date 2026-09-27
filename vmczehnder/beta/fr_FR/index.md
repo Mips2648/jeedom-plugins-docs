@@ -163,4 +163,7 @@ Il faudra au minimum fournir:
 
 # Vous aimez le plugin?
 
+S'il vous facilite le quotidien, un petit soutien aide à faire vivre le projet.
+
+<iframe src="https://github.com/sponsors/Mips2648/card" title="Sponsor Mips2648" height="225" width="600" style="border: 0;"></iframe>
 <a href="https://www.buymeacoffee.com/mips2648" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>

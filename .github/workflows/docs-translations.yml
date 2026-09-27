@@ -45,6 +45,7 @@ jobs:
               notificationqueue,
               onduleursolaredge,
               portainer,
+              presencemngt,
               proxmox,
               rocketchat,
               SmartMeterP1,

@@ -12,7 +12,7 @@ pluginId: presencemngt
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bookworm (12) & Trixie (13)   |
-| Jeedom    | >= 4.5                      |
+| Jeedom    | >= 4.6 |
 
 # Installation
 
@@ -37,5 +37,3 @@ At a minimum, you must provide:
 - a screenshot of the plugin's settings page
 - All available plugin logs at the *INFO* level, pasted into `Preformatted Text` (use the `</>` button on the community), no files!
 - Depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...
-
-If the question concerns the discovery or commands for a device, you'll need to provide the *Discovery Info*: copy this information using the button on the device's page and paste it **without modification** into a `Formatted Text` block.

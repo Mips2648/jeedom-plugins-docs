@@ -14,6 +14,8 @@ pluginId: MQTTDiscovery
 - Support for the `siren` type
 - Add a message to the message center when a new topic (new device category) that is not subscribed to is discovered
 - Fixed discovery for payloads containing a Boolean
+- The daemon now regulates the batch sending of events to Jeedom to maintain stable performance, even during peaks in activity.
+- Added a button to completely reset dependencies as a last resort when their installation fails. Warning: This action is irreversible, even if you restore a backup.
 - Dependency update
 - Debian 12 and PHP 8.2 required
 - Debian 13 supported

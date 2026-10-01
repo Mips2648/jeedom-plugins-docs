@@ -14,6 +14,8 @@ pluginId: MQTTDiscovery
 - Compatibilidad con el tipo «siren»
 - Añadir un mensaje en el centro de mensajes cuando se detecte un nuevo tema (nueva categoría de equipo) al que no se esté suscrito
 - Corrección del descubrimiento para las cargas útiles que contienen un valor booleano
+- El demonio regula ahora el envío de eventos por lotes a Jeedom para mantener un rendimiento estable, incluso en caso de picos de actividad.
+- Se ha añadido un botón que permite restablecer completamente las dependencias como último recurso cuando falla su instalación. Atención: esta operación es irreversible, incluso al restaurar una copia de seguridad.
 - Actualización de dependencias
 - Se requiere Debian 12 y PHP 8.2
 - Compatible con Debian 13

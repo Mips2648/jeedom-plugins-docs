@@ -67,6 +67,8 @@ Debes haber instalado ya un broker MQTT, ya sea por tu cuenta o mediante otro pl
 
 El complemento *MQTT Manager (mqtt2)* no es necesario, pero si está instalado, la configuración para conectarse al servidor se podrá recuperar automáticamente.
 
+En la página de configuración también encontrarás un botón que permite restablecer por completo las dependencias del demonio. Esta acción elimina todas las dependencias instaladas para poder volver a partir de un entorno totalmente limpio en caso de que persista algún problema durante su instalación. Esta operación debe utilizarse como último recurso, ya que es irreversible, incluso tras restaurar una copia de seguridad.
+
 # Configuración del complemento
 
 > **Importante**

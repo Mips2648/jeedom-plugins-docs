@@ -9,6 +9,7 @@ pluginId: modbus2mqtt
 
 ## 2026-04-10
 
+- Jeedom v4.5 requis
 - Mise à jour de dépendances
 
 ## 2026-06-12

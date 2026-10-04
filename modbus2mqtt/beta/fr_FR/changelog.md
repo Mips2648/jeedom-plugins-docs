@@ -7,7 +7,7 @@ pluginId: modbus2mqtt
 
 # Changelog
 
-## 2026-07-22
+## 2026-04-10
 
 - Mise à jour de dépendances
 

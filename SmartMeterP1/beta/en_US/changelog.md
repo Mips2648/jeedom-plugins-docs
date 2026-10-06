@@ -7,9 +7,10 @@ pluginId: SmartMeterP1
 
 # Change log
 
-## 2026-08-03
+## 2026-10-06
 
 - Dependency update
+- Debian 12 required
 
 ## 2026-06-12
 

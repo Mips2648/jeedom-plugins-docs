@@ -7,7 +7,7 @@ pluginId: rocketchat
 
 # Change log
 
-## 2026-09-01
+## 2026-10-06
 
 - Dependency update
 

@@ -7,8 +7,9 @@ pluginId: gardena
 
 # Registro de cambios
 
-## 2026-08-20
+## 2026-10-04
 
+- Se requiere Jeedom v4.5
 - Actualización de dependencias
 
 ## 2026-06-12

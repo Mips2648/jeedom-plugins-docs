@@ -67,6 +67,8 @@ Vous devez avoir déjà installé un broker MQTT, soit par vous-même, soit par 
 
 Le plugin *MQTT Manager (mqtt2)* n'est pas requis mais s'il est installé, la configuration pour se connecter au broker pourra être récupérée automatiquement.
 
+Dans la page de configuration vous trouverez également un bouton permettant de réinitialiser complètement les dépendances du démon. Cette action supprime l’ensemble des dépendances installées afin de repartir d’un environnement totalement sain en cas de problème persistant lors de l’installation de celles-ci. Cette opération doit être utilisée en dernier recours, car elle est irréversible, même après restauration d’un backup.
+
 # Configuration du plugin
 
 > **Important**

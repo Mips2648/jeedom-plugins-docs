@@ -14,6 +14,8 @@ pluginId: MQTTDiscovery
 - Prise en charge du type `siren`
 - Ajout d'un message dans le centre de message lorsqu'un nouveau topic (nouvelle catégorie d'équipement) non-souscrit est découvert
 - Correction de la découverte pour les payload contenant un booléen
+- Le démon régule désormais l’envoi des événements par lots vers Jeedom afin de maintenir des performances stables, même en cas de pic d’activité.
+- Ajout d’un bouton permettant de réinitialiser complètement les dépendances en dernier recours lorsque leur installation échoue. Attention : cette opération est irréversible, même en restaurant un backup.
 - Mise à jour de dépendances
 - Debian 12 et PHP 8.2 requis
 - Debian 13 supporté

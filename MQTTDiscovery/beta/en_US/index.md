@@ -67,6 +67,8 @@ You must have already installed an MQTT broker, either on your own or through an
 
 The *MQTT Manager (mqtt2)* plugin is not required, but if it is installed, the configuration for connecting to the broker can be retrieved automatically.
 
+On the configuration page, you’ll also find a button that allows you to completely reset the daemon’s dependencies. This action removes all installed dependencies so you can start over with a completely clean environment in case of a persistent issue during their installation. This operation should be used as a last resort, as it is irreversible, even after restoring from a backup.
+
 # Plugin configuration
 
 > **Important**

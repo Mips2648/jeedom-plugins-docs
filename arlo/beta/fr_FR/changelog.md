@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Changelog
 
-## 2026-09-04
+## 2026-10-10
 
 > **Attention**
 >

@@ -7,7 +7,7 @@ pluginId: vaillantmultimatic
 
 # Changelog
 
-## 2026-08-18
+## 2026-10-09
 
 - Mise à jour de dépendances
 

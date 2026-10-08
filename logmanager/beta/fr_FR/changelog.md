@@ -7,9 +7,10 @@ pluginId: logmanager
 
 # Changelog
 
-## 2026-08-03
+## 2026-10-09
 
 - Contrôle plus strict sur le nom donné à l'équipement: n'utilisez rien qui ressemble au nom ni à l'ID d'un plugin existant!
+- Jeedom v4.5 requis
 - Mise à jour de dépendances
 
 ## 2026-06-12

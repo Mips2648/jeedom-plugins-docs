@@ -7,8 +7,9 @@ pluginId: designImgSwitch
 
 # Changelog
 
-## 2026-08-03
+## 2026-10-09
 
+- Corrections mineures
 - Mise à jour de dépendances
 
 ## 2026-06-12

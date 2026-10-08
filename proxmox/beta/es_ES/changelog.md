@@ -7,8 +7,11 @@ pluginId: proxmox
 
 # Registro de cambios
 
-## 2026-08-03
+## 2026-10-09
 
+- Se requiere Proxmox v9
+- Se ha añadido compatibilidad con Debian 13 (Trixie)
+- Se requiere Jeedom v4.5
 - Actualización de dependencias
 
 ## 2026-06-12

@@ -14,11 +14,11 @@ También cuenta con una página específica de estado que resume toda la informa
 
 # Versiones compatibles
 
-| Componente | Versión                     |
-|-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
-| Proxmox   | >= 8.2 |
+| Componente | Versión |
+|-----------|-----------------------------------------|
+| Debian    | Bullseye (11), Bookworm (12) y Trixie (13) |
+| Jeedom    | >= 4.5 |
+| Proxmox   | >= 9.2 |
 
 # Instalación
 
@@ -64,7 +64,6 @@ No se recomienda asignar el rol de «Administrador» al usuario «Jeedom»; los 
 | Sys.Audit | obligatorio | obligatorio | | | | |
 | Sys.Modify | | obligatorio | | | | |
 | Sys.PowerMgmt | | obligatorio | | | | |
-| VM.Monitor | | | Requisitos | | | |
 | VM.Audit | | | requerido | requerido | | |
 | VM.Backup | | | | | Requisitos | |
 | VM.PowerMgmt | | | | obligatorio | | |

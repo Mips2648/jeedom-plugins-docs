@@ -7,8 +7,6 @@ pluginId: designImgSwitch
 
 # Description
 
-[![CI](https://github.com/mips2648/jeedom-{{page.pluginId}}/actions/workflows/ci.yml/badge.svg)](https://github.com/mips2648/jeedom-{{page.pluginId}}/actions/workflows/ci.yml)
-
 A plugin that automatically changes the background image of your designs based on the weather.
 Weather information, as well as sunrise and sunset times, will be obtained either from the official Weather plugin (automatic integration) or from commands of your choice with manual configuration.
 

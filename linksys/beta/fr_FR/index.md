@@ -29,7 +29,7 @@ Ce qui est disponible:
 
 | Composant | Version                     |
 |-----------|-----------------------------|
-| Debian    | Bookworm(12) a Trixie(13)   |
+| Debian    | Bookworm(12) & Trixie(13)   |
 | Jeedom    | >= 4.5                      |
 
 # Installation

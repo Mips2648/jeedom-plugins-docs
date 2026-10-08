@@ -14,11 +14,11 @@ It also features a dedicated health page that summarizes all the information abo
 
 # Supported Versions
 
-| Component | Version                     |
-|-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
-| Proxmox   | >= 8.2 |
+| Component | Version |
+|-----------|-----------------------------------------|
+| Debian    | Bullseye (11), Bookworm (12), and Trixie (13) |
+| Jeedom    | >= 4.5 |
+| Proxmox   | >= 9.2 |
 
 # Installation
 
@@ -64,7 +64,6 @@ It is not recommended to assign the "Administrator" role to the "Jeedom" user; t
 | Sys.Audit | required | required | | | | |
 | Sys.Modify | | required | | | | |
 | Sys.PowerMgmt | | required | | | | |
-| VM.Monitor | | | required | | | |
 | VM.Audit | | | required | required | | |
 | VM.Backup | | | | | required | |
 | VM.PowerMgmt | | | | required | | |

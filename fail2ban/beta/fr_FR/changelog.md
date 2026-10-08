@@ -7,6 +7,10 @@ pluginId: fail2ban
 
 # Changelog
 
+## 2026-10-09
+
+- Corrections mineures
+
 ## 2026-09-24
 
 - Amélioration de la gestion des résultats des commandes locales et SSH

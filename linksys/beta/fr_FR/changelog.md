@@ -7,6 +7,11 @@ pluginId: linksys
 
 # Changelog
 
+## 2026-10-09
+
+- Debian 12 requis
+- Debian 13 supporté
+
 ## 2026-06-12
 
 - Mise en place d'un nouveau flux de déploiement pour la documentation

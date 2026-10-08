@@ -7,9 +7,10 @@ pluginId: logmanager
 
 # Registro de cambios
 
-## 2026-08-03
+## 2026-10-09
 
 - Control más estricto sobre el nombre que se le da al equipo: ¡no utilices nada que se parezca al nombre ni al ID de un complemento ya existente!
+- Se requiere Jeedom v4.5
 - Actualización de dependencias
 
 ## 2026-06-12

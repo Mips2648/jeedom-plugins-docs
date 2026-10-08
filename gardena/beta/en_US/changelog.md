@@ -7,7 +7,7 @@ pluginId: gardena
 
 # Change log
 
-## 2026-10-04
+## 2026-10-08
 
 - Jeedom v4.5 required
 - Dependency update

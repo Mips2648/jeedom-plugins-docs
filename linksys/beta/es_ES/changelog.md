@@ -7,6 +7,11 @@ pluginId: linksys
 
 # Registro de cambios
 
+## 2026-10-09
+
+- Se requiere Debian 12
+- Compatible con Debian 13
+
 ## 2026-06-12
 
 - Implantación de un nuevo flujo de trabajo para la documentación

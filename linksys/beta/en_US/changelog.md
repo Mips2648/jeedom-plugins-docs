@@ -7,6 +7,11 @@ pluginId: linksys
 
 # Change log
 
+## 2026-10-09
+
+- Debian 12 required
+- Debian 13 supported
+
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation

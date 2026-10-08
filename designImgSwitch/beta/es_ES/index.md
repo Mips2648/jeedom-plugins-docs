@@ -7,6 +7,8 @@ pluginId: designImgSwitch
 
 # Descripción
 
+[![CI](https://github.com/mips2648/jeedom-{{page.pluginId}}/actions/workflows/ci.yml/badge.svg)](https://github.com/mips2648/jeedom-{{page.pluginId}}/actions/workflows/ci.yml)
+
 Complemento que permite cambiar automáticamente la imagen de fondo de tus diseños en función del tiempo.
 La información meteorológica, así como la hora de salida y puesta del sol, se obtendrá bien a través del complemento oficial de meteorología (integración automática), bien mediante los comandos que elijas con configuración manual.
 

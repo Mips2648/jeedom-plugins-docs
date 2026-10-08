@@ -11,10 +11,10 @@ Plugin pour intégrer la plateforme [ClickSend](https://www.clicksend.com) qui p
 
 # Versions supportées
 
-| Composant | Version                     |
-|-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+| Composant | Version                                 |
+|-----------|-----------------------------------------|
+| Debian    | Bullseye(11), Bookworm(12) & Trixie(13) |
+| Jeedom    | >= 4.5                                  |
 
 # Installation
 

@@ -7,6 +7,8 @@ pluginId: designImgSwitch
 
 # Description
 
+[![CI](https://github.com/mips2648/jeedom-{{page.pluginId}}/actions/workflows/ci.yml/badge.svg)](https://github.com/mips2648/jeedom-{{page.pluginId}}/actions/workflows/ci.yml)
+
 Plugin permettant de changer automatiquement l'image de fond de vos design en fonction de la météo.
 Les informations de météo ainsi que de lever et coucher du soleil seront obtenues soit du plugin Météo officiel (intégration automatique) soit depuis des commandes de votre choix avec configuration manuelle.
 

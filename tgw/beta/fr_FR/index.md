@@ -25,7 +25,7 @@ Je vous invite également à consulter [cette documentation](https://mips2648.gi
 
 > **Important**
 >
-> L'installation d'antenne sur **Debian Buster (10) n'est plus supportée**. Pour installer une antenne, il est obligatoire d'avoir à disposition une machine sous **Debian Bullseye (11) ou Debian Bookworm (12)** (ou équivalent raspbian pour raspberry).
+> L'installation d'antenne sur **Debian Bullseye (11) n'est plus supportée**. Pour installer une antenne, il est obligatoire d'avoir à disposition une machine sous **Debian Bookworm (12)** minimum (ou équivalent raspbian pour raspberry).
 
 | Composant | Version                     |
 |-----------|-----------------------------|

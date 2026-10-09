@@ -7,8 +7,9 @@ pluginId: tgw
 
 # Change log
 
-## 2026-08-15
+## 2026-10-10
 
+- Antenna installation on **Debian Bullseye (11) is no longer supported**
 - Dependency update
 
 ## 2026-06-12

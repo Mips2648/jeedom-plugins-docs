@@ -25,7 +25,7 @@ I also invite you to check out [this documentation](https://mips2648.github.io/j
 
 > **Important**
 >
-> Antenna installation on **Debian Buster (10) is no longer supported**. To install Antenna, you must have a machine running **Debian Bullseye (11) or Debian Bookworm (12)** (or the equivalent Raspbian version for Raspberry Pi).
+> Antenna installation on **Debian Bullseye (11) is no longer supported**. To install Antenna, you must have a machine running at least **Debian Bookworm (12)** (or the equivalent Raspbian for Raspberry Pi).
 
 | Component | Version                     |
 |-----------|-----------------------------|

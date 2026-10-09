@@ -7,8 +7,9 @@ pluginId: tgw
 
 # Registro de cambios
 
-## 2026-08-15
+## 2026-10-10
 
+- La instalación de antenas en **Debian Bullseye (11) ya no es compatible**
 - Actualización de dependencias
 
 ## 2026-06-12

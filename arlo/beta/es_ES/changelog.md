@@ -7,7 +7,7 @@ pluginId: arlo
 
 # Registro de cambios
 
-## 2026-10-10
+## 2026-10-11
 
 > **Atención**
 >
@@ -16,6 +16,7 @@ pluginId: arlo
 - Se ha añadido compatibilidad con la cámara Arlo Wired Floodlight Camera 2K
 - Mejora de la coherencia y la seguridad del código para PHP 8
 - Mejora de la resiliencia del código al acceder a las carpetas de grabaciones de las cámaras
+- Se ha añadido un botón que permite restablecer completamente las dependencias como último recurso cuando falla la instalación. Atención: esta operación es irreversible, incluso al restaurar una copia de seguridad.
 - Corrección de una advertencia
 - Corrección de una posible fuga de memoria
 - Se requiere Jeedom v4.5

@@ -7,21 +7,27 @@ pluginId: onduleursolaredge
 
 # Description
 
-Plugin permettant la lecture des données d'un onduleur de panneaux photovoltaïque de la marque Solaredge.
-Le plugin utilise l'API mise à disposition par Solaredge pour récupérer les données se trouvant dans la plateforme de monitoring.
-Les informations suivantes sont récupérables, d'autres pourraient être rajoutée selon les demandes:
+Le plugin permet de lire les données de production photovoltaïque d'un site SolarEdge via l'API de monitoring v2.
 
-- Aperçu global (puissance actuelle et historique de production)
-- Puissance actuelle des différents équipements dans l'installation & flux entre ceux-ci (si supporté par votre installation)
-- Détails des consommations d'énergie du dernier quart d'heure (achat, production, consommation, auto-consommation)
-- Détails de puissance du dernier quart d'heure (achat, production, consommation, auto-consommation)
+Les informations disponibles sont:
+
+- la puissance de production photovoltaïque;
+- l'énergie produite, selon la période choisie;
+- l'énergie totale produite depuis la mise en service du site;
+- les caractéristiques du site et de ses équipements.
+
+> **Important**
+>
+> SolarEdge impose un accès externe à Jeedom en **HTTPS avec un certificat valide**.\
+> Vous ne pourrez pas utiliser le plugin sans avoir cet accès.
 
 # Versions supportées
 
-| Composant | Version                     |
-|-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+| Composant | Version                   |
+|-----------|---------------------------|
+| Debian    | Bookworm(12) & Trixie(13) |
+| Jeedom    | >= 4.5                    |
+| PHP       | >= 8.2                    |
 
 # Installation
 
@@ -29,64 +35,88 @@ Les informations suivantes sont récupérables, d'autres pourraient être rajout
 >
 > Afin d’utiliser le plugin, vous devez le télécharger, l’installer et l’activer comme tout plugin Jeedom.
 
-Sur la page de configuration du plugin, il est possible de renseigner des commandes pour l'heure du lever et l'heure du coucher du soleil tel que fournit par le plugin *Météo* ou *Héliotrope*. Ceci permettra de mettre en pause la récupération des données entre ces heures car il y a généralement peu de production solaire la nuit ;-). Si aucune commande n'est fournie, la tâche tournera toute la journée, de minuit à 23h59. Vous pouvez également entrer des heures en "dur", format hhmm, par exemple 400 pour 4h00 et 2200 pour 22h00.
-
 # Configuration
 
-## Activation de l'accès API Solaredge
+## Connexion à SolarEdge
 
 > **Important**
 >
-> La procédure ci-dessous n'est plus valide. SolarEdge a modifié sont site de monitoring et les menus sont différents. Il faut contacter leur support pour leur demander la procédure pour obtenir une API key. Cette documentation sera mise à jour dès que la procédure sera connue.
+> L'API v2 utilise une authentification OAuth. L'ancienne clé API ne permet plus de configurer cette version du plugin.
 
-- Rendez-vous sur votre compte à l'adresse <https://monitoring.solaredge.com/> (vous devez vous connecter avec les identifiants reçu de votre fournisseur), vous devriez arriver sur votre Dashboard.
-- Ensuite, cliquez sur la section "Admin", en jaune dans la capture:
+### Obtention du Client Id et du Client Secret
 
-![Dashboard Solaredge](../images/solaredge_dashboard.png "Dashboard Solaredge")
+Vous devez disposer d'un **Client Id** et d'un **Client Secret** pour l'accès OAuth SolarEdge. Si vous ne disposez pas encore de ces identifiants, suivez la procédure ci-dessous.
 
-- Ensuite, cliquez sur l'onglet "Politique d'accès..." et dans le bas de l'écran vous devez accepter les conditions d'utilisations, générer une nouvelle clé (ou copier celle existante) et prendre note de l'ID du site. N'oubliez pas de sauver les changements.
+> **Important**
+>
+> SolarEdge impose un accès externe à Jeedom en **HTTPS avec un certificat valide**. Une adresse interne ou une adresse sans HTTPS ne peut pas être utilisée comme URL de redirection.
 
-![Menu admin](../images/solaredge_admin.png "Menu admin")
+1. Rendez-vous sur la [plateforme développeur SolarEdge](https://developer.solaredge.com/) et créez un compte.
+2. Créez une application. Les seuls paramètres obligatoires sont le **nom** de l'application et l'**URL de redirection**.
+3. Pour l'URL de redirection, indiquez l'adresse externe de Jeedom suivie de `/plugins/onduleursolaredge/core/php/oauth.php`, par exemple: `https://monjeedom.mondomaine.com/plugins/onduleursolaredge/core/php/oauth.php`.
+4. Générez les identifiants de l'application (les « credentials ») en activant **tous les scopes disponibles** (autorisations d'accès): `SITE_DATA` et `DEVICE_DATA`. Le **Client Id** et le **Client Secret** obtenus seront à renseigner dans la configuration du plugin.
+
+### Liaison entre Jeedom et SolarEdge
+
+1. Vérifiez que l'adresse d'accès externe de Jeedom est correctement configurée dans sa configuration réseau et accessible depuis le navigateur utilisé pour l'autorisation.
+2. Dans la configuration du plugin, renseignez les champs **Client Id** et **Client Secret**, puis sauvegardez.
+3. Cliquez sur **Lier Jeedom et SolarEdge** et confirmez l'ouverture de la fenêtre d'autorisation.
+4. Connectez-vous avec votre compte SolarEdge et approuvez la liaison.
+5. Après le retour dans Jeedom, cliquez sur **Actualiser** pour vérifier que le statut est **OK**.
+
+Le plugin conserve les jetons d'accès et les renouvelle automatiquement. Si le statut indique qu'une autorisation est nécessaire, relancez la liaison.
 
 ## Création de l'équipement dans votre Jeedom
 
-- Rendez-vous sur la page de configuration des équipements via le menu "Plugins", puis "Energie" et "Solaredge".
-- Cliquez sur "Ajouter" et donnez un nom.
-- Vous arriverez sur la page de configuration de l'équipement sur laquelle vous pouvez configurer les options habituelles dans Jeedom (n'oubliez pas d'activer votre nouvel équipement).
+1. Ouvrez le menu **Plugins**, puis **Energie** et **Solaredge**.
+2. Cliquez sur **Ajouter** et donnez un nom à l'équipement.
+3. Renseignez l'**ID du site** SolarEdge auquel votre compte a accès.
+4. Configurez l'objet parent, les options **Activer** et **Visible**, puis sauvegardez.
 
-> **Important**
+Les informations du site sont chargées à la sauvegarde si la date d'installation n'est pas encore connue. Le bouton **Recharger les détails du site** permet de les actualiser: type, date d'installation, puissance crête, fabricant, modèle et nombre d'optimiseurs.
+
+## Configuration des commandes
+
+La commande d'action **Rafraîchir** est créée automatiquement.
+
+Un même équipement peut contenir plusieurs commandes info de production, ajoutez les commandes souhaitées avec le bouton **Ajouter une commande**.
+
+Pour chaque commande, renseignez un nom, la donnée à récupérer, la période et l'unité. Les commandes ajoutées sont de type information numérique. Vous pouvez choisir de les afficher et de les historiser.
+
+| Donnée | Périodes disponibles | Unités disponibles |
+| -------- | ---------------------- | -------------------- |
+| Production photovoltaïque (puissance) | Quart d'heure, heure | W, kW, MW |
+| Production photovoltaïque (énergie) | Quart d'heure, heure, jour, semaine, mois, année, total | Wh, kWh, MWh |
+| Production photovoltaïque totale | Total | Wh |
+
+La commande de type **Production photovoltaïque totale** fournit l'énergie produite depuis la mise en service du site en lisant un compteur d'énergie cumulée intégré aux équipements, plutôt que d'additionner les mesures reçues pour chaque intervalle. SolarEdge utilise le compteur du compteur de production si le site en possède un, ou la somme de ces compteurs s'il en possède plusieurs. À défaut, la valeur correspond à la somme des compteurs d'énergie cumulée des onduleurs. Contrairement à la commande **Production photovoltaïque (énergie)** avec la période **Total**, cette valeur n'est pas affectée par les lacunes de l'historique de transmission: elle reflète la valeur réelle des compteurs, et non la somme des seuls intervalles reçus.
+
+### Rafraîchissement
+
+Chaque commande d'information dispose également d'un champ cron pour planifier sa propre actualisation. Le bouton **?** ouvre l'assistant cron de Jeedom.
+
+Laissez le cron d'une commande vide si vous ne souhaitez pas lui ajouter de planification individuelle. La commande **Rafraîchir** actualise toutes les commandes d'information de l'équipement, y compris celles qui ont leur propre cron. Elle peut aussi être appelée depuis un scénario.
+
+Chaque commande actualisée effectue sa propre requête: adaptez les fréquences au nombre de commandes et aux limites applicables à votre accès SolarEdge.
+
+### Valeurs récupérées
+
+Pour les commandes de puissance et d'énergie, le plugin demande les mesures depuis le début de la période précédente jusqu'au moment de la requête, puis retient la dernière valeur numérique disponible dans la réponse.
+
+Si le dernier point vaut `null`, par exemple parce que le quart d'heure en cours n'est pas encore disponible, le plugin utilise le point numérique précédent. Une valeur de `0` est conservée. La valeur affichée ne correspond donc pas nécessairement à une mesure instantanée.
+
+Si aucune valeur numérique n'est disponible, la commande n'est pas mise à jour et un avertissement est écrit dans les logs. Pour la production totale, la valeur est lue directement dans le champ d'énergie renvoyé par SolarEdge.
+
+## Migration depuis l'API v1
+
+> **Attention**
 >
-> Vous devez renseigner la clé API et l'ID du site précédemment générés/copiés depuis la plateforme de monitoring de Solaredge.
+> La migration vers l'API v2 nécessite de reconfigurer la connexion et les équipements. Les anciens équipements sont désactivés à la mise à jour; leurs anciennes tâches de rafraîchissement sont supprimées.
 
-Choisissez ensuite le type d'informations voulue. Si vous en voulez plus qu'une il suffit de créer un deuxième équipement avec le même ID de site et la même clé API.
-
-![Configuration équipement](../images/equip_config.png "Configuration équipement")
-
-Enfin, choisissez la fréquence de rafraîchissement de l'équipement. Les choix suivant sont possibles:
-
-- automatique: la fréquence sera calculée dynamiquement en fonction des heures de lever et coucher configurées afin de rafraîchir le plus souvent possible sans dépasser la limite du nombre de requêtes imposée par Solaredge.
-- manuelle: vous choisissez la fréquence mais le plugin n'acceptera pas de passer en dessous du minimum indiqué.
-- désactivé.
-
-> **Important**
->
-> Solaredge n'autorise que 300 appels par jours via l'API; actualiser les données toutes les 5 minutes pendant 24 heures exécutera 288 appels (donc en dessous de la limite des 300). Si vous choisissez de gérer l'actualisation des données autrement, prenez soin de ne pas dépasser cette limite.
-
-## Exemples de widget
-
-Aperçu global:
-
-![Widget](../images/widget.png "Widget")
-
-Puissance actuelle des différents équipements avec information de production/consommation/auto-consommation, achat/vente et chargement/déchargement batterie (selon les équipements de votre installation).
-
-Exemple achat:
-
-![Widget](../images/widget_powerflow_purchased.png "Widget")
-
-Exemple vente:
-
-![Widget](../images/widget_powerflow_feedin.png "Widget")
+1. Configurez la liaison OAuth dans la configuration du plugin.
+2. Créez les nouveaux équipements avec leur ID de site et ajoutez les commandes nécessaires.
+3. Configurez les planifications de rafraîchissement et vérifiez les valeurs reçues.
+4. Adaptez les scénarios, widgets et autres références aux anciennes commandes avant de supprimer les anciens équipements.
 
 # Changelog
 
@@ -101,6 +131,8 @@ Si malgré tout vous ne trouvez pas de réponse à votre question, n'hésitez pa
 Il faudra au minimum fournir:
 
 - une capture d'écran de la page santé Jeedom
-- une capture d'écran de la page de config du plugin
-- tous les logs disponibles du plugin, en niveau *INFO*, collés dans un `Texte préformaté` (bouton `</>` sur community), pas de fichiers!
+- une capture d'écran de la page de config du plugin, en masquant le Client Id et le Client Secret
+- tous les logs disponibles du plugin, en niveau *INFO*, collés dans un `Texte préformaté` (bouton `</>` sur community), pas de fichiers! Pour un problème de données, le niveau *DEBUG* permet de voir les réponses de l'API.
 - selon les cas, une capture d'écran de l'erreur rencontrée, une capture d'écran de la configuration posant problème...
+
+Avant de publier des captures ou des logs, masquez les identifiants, les jetons OAuth et toute donnée personnelle.

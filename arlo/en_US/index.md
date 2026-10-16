@@ -41,11 +41,11 @@ Here is an overview of the plugin's features:
 | Component | Version                     |
 |-----------|-----------------------------|
 | Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.4                      |
+| Jeedom    | >= 4.5                      |
 
 > **Important**
 >
-> Compatibility with 32-bit systems (Raspbian 32-bit on Pi 3) will be removed in a future release.
+> This plugin is not compatible with 32-bit systems, including Raspberry Pi 3B setups running a 32-bit OS.
 
 # Installation
 

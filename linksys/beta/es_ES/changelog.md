@@ -7,7 +7,7 @@ pluginId: linksys
 
 # Registro de cambios
 
-## 2026-10-09
+## 2026-10-17
 
 - Se requiere Debian 12
 - Compatible con Debian 13

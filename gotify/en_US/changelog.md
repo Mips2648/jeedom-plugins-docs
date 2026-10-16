@@ -7,6 +7,11 @@ pluginId: gotify
 
 # Change log
 
+## 2026-10-17
+
+- Debian 12 required
+- Debian 13 supported
+
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation

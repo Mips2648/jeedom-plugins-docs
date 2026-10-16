@@ -7,9 +7,10 @@ pluginId: clicksend
 
 # Change log
 
-## 2026-10-09
+## 2026-10-17
 
-- Compatible with Debian 13 (Trixie)
+- Debian 12 required
+- Debian 13 supported
 - Dependency update
 
 ## 2026-06-12

@@ -7,7 +7,7 @@ pluginId: linksys
 
 # Change log
 
-## 2026-10-09
+## 2026-10-17
 
 - Debian 12 required
 - Debian 13 supported

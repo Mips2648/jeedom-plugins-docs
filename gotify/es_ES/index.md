@@ -16,7 +16,7 @@ La ventaja de este sistema es que se puede alojar en tu propia red (basta con un
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm (12) y Trixie (13)   |
 | Jeedom    | >= 4.5                      |
 
 # Instalación

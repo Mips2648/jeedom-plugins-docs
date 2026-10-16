@@ -18,7 +18,7 @@ La purga de los registros también se gestiona desde la configuración general d
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm (12) y Trixie (13)   |
 | Jeedom    | >= 4.5                      |
 
 # Instalación

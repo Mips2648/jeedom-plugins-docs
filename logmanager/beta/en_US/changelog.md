@@ -7,19 +7,16 @@ pluginId: logmanager
 
 # Change log
 
-## 2026-10-09
+## 2026-10-17
 
 - Stricter controls on device names: do not use anything that resembles the name or ID of an existing plugin!
+- Debian 12 required
+- Debian 13 supported
 - Jeedom v4.5 required
-- Dependency update
 
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation
-
-## 2026-05-12
-
-- Dependency update
 
 ## 2026-01-12
 
@@ -28,10 +25,6 @@ pluginId: logmanager
 ## 2026-01-01
 
 - Fixed the display in the widget to show multiline logs in chronological order
-
-## 2025-06-27
-
-- Dependency update
 
 ## 2024-12-25
 

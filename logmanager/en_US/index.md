@@ -18,8 +18,8 @@ Log purging is also managed through Jeedom's general settings.
 
 | Component | Version                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.2 |
+| Debian    | Bookworm (12) & Trixie (13)   |
+| Jeedom    | >= 4.5                      |
 
 # Installation
 

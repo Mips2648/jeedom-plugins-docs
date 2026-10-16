@@ -7,13 +7,16 @@ pluginId: logmanager
 
 # Registro de cambios
 
+## 2026-10-17
+
+- Control más estricto sobre el nombre que se le da al equipo: ¡no utilices nada que se parezca al nombre ni al ID de un complemento ya existente!
+- Se requiere Debian 12
+- Compatible con Debian 13
+- Se requiere Jeedom v4.5
+
 ## 2026-06-12
 
 - Implantación de un nuevo flujo de trabajo para la documentación
-
-## 2026-05-12
-
-- Actualización de dependencias
 
 ## 2026-01-12
 
@@ -22,10 +25,6 @@ pluginId: logmanager
 ## 2026-01-01
 
 - Corrección de la visualización en el widget por orden cronológico para los registros de varias líneas
-
-## 2025-06-27
-
-- Actualización de dependencias
 
 ## 2024-12-25
 

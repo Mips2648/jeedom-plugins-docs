@@ -7,6 +7,21 @@ pluginId: arlo
 
 # Change log
 
+## 2026-10-11
+
+> **Attention**
+>
+> As announced in November 2024, this version no longer supports 32-bit systems. If your setup is still based on a Pi 3B running a 32-bit OS, do not update.
+
+- Added support for the Arlo Wired Floodlight Camera 2K
+- Improving code consistency and security for PHP 8
+- Improving code resilience when accessing camera recording folders
+- Added a button to completely reset dependencies as a last resort when installation fails. Warning: This action is irreversible, even if you restore a backup.
+- Fixing a warning
+- Fixed a potential memory leak
+- Jeedom v4.5 required
+- Updating dependencies.
+
 ## 2026-08-18
 
 - Forces the daemon to refresh the modes if they are not known beforehand, to avoid mode-switching issues

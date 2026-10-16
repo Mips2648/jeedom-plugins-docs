@@ -113,10 +113,14 @@ Si aucune valeur numérique n'est disponible, la commande n'est pas mise à jour
 >
 > La migration vers l'API v2 nécessite de reconfigurer la connexion et les équipements. Les anciens équipements sont désactivés à la mise à jour; leurs anciennes tâches de rafraîchissement sont supprimées.
 
-1. Configurez la liaison OAuth dans la configuration du plugin.
-2. Créez les nouveaux équipements avec leur ID de site et ajoutez les commandes nécessaires.
-3. Configurez les planifications de rafraîchissement et vérifiez les valeurs reçues.
-4. Adaptez les scénarios, widgets et autres références aux anciennes commandes avant de supprimer les anciens équipements.
+1. **Créer votre compte** sur la [plateforme développeur SolarEdge](https://developer.solaredge.com/)
+2. **Configurer la liaison OAuth** dans la configuration du plugin (Client Id + Client Secret).
+3. **Créer les nouveaux équipements** en renseignant l’ID de site.
+4. **Ajouter les commandes** souhaitées (puissance, énergie par période, énergie totale).
+5. **Configurer les planifications** de rafraîchissement.
+6. **Vérifier les valeurs reçues**.
+7. **Adapter vos scénarios, widgets, virtuels, design**, etc. (vous pouvez utiliser l'outil *Remplacer* du core pour cela).
+8. Une fois tout validé, **supprimer les anciens équipements v1**.
 
 # Changelog
 

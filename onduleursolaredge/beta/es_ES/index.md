@@ -31,9 +31,7 @@ La información disponible es la siguiente:
 
 # Instalación
 
-> **Consejo**
->
-> Para utilizar el plugin, debes descargarlo, instalarlo y activarlo como cualquier otro plugin de Jeedom.
+Para utilizar el plugin, debes descargarlo, instalarlo y activarlo como cualquier otro plugin de Jeedom.
 
 # Configuración
 
@@ -89,7 +87,9 @@ Para cada comando, introduce un nombre, el dato que se va a recuperar, el period
 | Producción fotovoltaica (energía) | Cuarto de hora, hora, día, semana, mes, año, total | Wh, kWh, MWh |
 | Producción fotovoltaica total | Total | Wh |
 
-El comando de tipo **Producción fotovoltaica total** proporciona la energía producida desde la puesta en marcha de la instalación mediante la lectura de un contador de energía acumulada integrado en los equipos, en lugar de sumar las mediciones recibidas para cada intervalo. SolarEdge utiliza el contador de producción si la instalación dispone de uno, o la suma de dichos contadores si hay varios. En su defecto, el valor corresponde a la suma de los contadores de energía acumulada de los inversores. A diferencia del comando **Producción fotovoltaica (energía)** con el periodo **Total**, este valor no se ve afectado por las lagunas en el historial de transmisión: refleja el valor real de los contadores, y no solo la suma de los intervalos recibidos.
+El comando de tipo **Producción fotovoltaica total** devuelve la energía producida desde la puesta en servicio de la instalación, leyendo un contador de energía acumulada integrado en los equipos, en lugar de sumar las mediciones recibidas para cada intervalo.\
+SolarEdge utiliza el valor del contador de producción si la instalación dispone de uno, o la suma de dichos contadores si hay varios. En su defecto, el valor corresponde a la suma de los contadores de energía acumulada de los inversores.\
+A diferencia del comando **Producción fotovoltaica (energía)** con el periodo **Total**, este valor no se ve afectado por las lagunas en el historial de transmisión: refleja el valor real de los contadores, y no solo la suma de los intervalos recibidos.
 
 ### Actualización
 

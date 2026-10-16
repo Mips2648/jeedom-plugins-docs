@@ -29,7 +29,7 @@ Lo que hay disponible:
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm (12) y Trixie (13)   |
 | Jeedom    | >= 4.5                      |
 
 # Instalación

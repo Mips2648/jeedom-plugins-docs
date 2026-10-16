@@ -7,21 +7,27 @@ pluginId: onduleursolaredge
 
 # Description
 
-Plugin that reads data from a Solaredge solar panel inverter.
-The plugin uses the API provided by Solaredge to retrieve data from the monitoring platform.
-The following information is available; additional information may be added based on requests:
+The plugin allows you to read photovoltaic production data from a SolarEdge site via the v2 monitoring API.
 
-- Overview (Current and Historical Power Generation)
-- Current power consumption of the various devices in the system & power flow between them (if supported by your system)
-- Details of energy consumption over the last quarter-hour (purchase, generation, consumption, self-consumption)
-- Power details for the last quarter-hour (purchase, generation, consumption, self-consumption)
+The available information is:
+
+- photovoltaic power generation;
+- energy generated, depending on the selected time period;
+- total energy generated since the site went into operation;
+- the features of the site and its equipment.
+
+> **Important**
+>
+> SolarEdge requires external access to Jeedom via **HTTPS with a valid certificate**.\
+> You won't be able to use the plugin without this access.
 
 # Supported Versions
 
-| Component | Version                     |
-|-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+| Component | Version |
+|-----------|---------------------------|
+| Debian    | Bookworm (12) & Trixie (13) |
+| Jeedom    | >= 4.5 |
+| PHP | >= 8.2 |
 
 # Installation
 
@@ -29,64 +35,92 @@ The following information is available; additional information may be added base
 >
 > To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-On the plugin's configuration page, you can enter commands for sunrise and sunset times as provided by the *Weather* or *Heliotrope* plugin. This will pause data retrieval between these times, since there is generally little solar production at night ;-). If no commands are provided, the task will run all day, from midnight to 11:59 p.m. You can also enter specific times in the "hhmm" format, for example, 400 for 4:00 a.m. and 2200 for 10:00 p.m.
-
 # Setup
 
-## Enabling Solaredge API Access
+## Connection to SolarEdge
 
 > **Important**
 >
-> The procedure below is no longer valid. SolarEdge has updated its monitoring website, and the menus are different. You must contact their support team to request the procedure for obtaining an API key. This documentation will be updated as soon as the procedure is known.
+> The v2 API uses OAuth authentication. The old API key can no longer be used to configure this version of the plugin.
 
-- Go to your account at <https://monitoring.solaredge.com/> (you'll need to log in using the credentials provided by your provider), and you should be taken to your Dashboard.
-- Next, click on the "Admin" section, highlighted in yellow in the screenshot:
+### Obtaining the Client ID and Client Secret
 
-![Solaredge Dashboard](../images/solaredge_dashboard.png "Dashboard Solaredge")
+You must have a **Client ID** and a **Client Secret** for SolarEdge OAuth access. If you do not yet have these credentials, follow the steps below.
 
-- Next, click the "Access Policy..." tab. At the bottom of the screen, you must accept the terms of use, generate a new key (or copy the existing one), and make a note of the site ID. Don't forget to save your changes.
+> **Important**
+>
+> SolarEdge requires external access to Jeedom via **HTTPS with a valid certificate**. An internal address or an address without HTTPS cannot be used as a redirect URL.
 
-![Admin menu](../images/solaredge_admin.png "Menu admin")
+1. Go to the [SolarEdge Developer Platform](https://developer.solaredge.com/) and create an account.
+2. Create an app. The only required settings are the **name** of the app and the **redirect URL**.
+3. For the redirect URL, enter the external Jeedom address followed by `/plugins/onduleursolaredge/core/php/oauth.php`, for example: `https://monjeedom.mondomaine.com/plugins/onduleursolaredge/core/php/oauth.php`.
+4. Generate the application credentials by enabling **all available scopes** (access permissions): `SITE_DATA` and `DEVICE_DATA`. Enter the **Client Id** and **Client Secret** you receive in the plugin's configuration.
+
+### Integration between Jeedom and SolarEdge
+
+1. Verify that Jeedom's external access address is correctly configured in its network settings and accessible from the browser used for authorization.
+2. In the plugin settings, fill in the **Client Id** and **Client Secret** fields, then save.
+3. Click **Link Jeedom and SolarEdge** and confirm that the authorization window opens.
+4. Log in with your SolarEdge account and approve the connection.
+5. After returning to Jeedom, click **Refresh** to verify that the status is **OK**.
+
+The plugin stores access tokens and renews them automatically. If the status indicates that authorization is required, restart the connection.
 
 ## Creating the device in your Jeedom
 
-- Go to the device configuration page via the "Plugins" menu, then "Energy" and "Solaredge."
-- Click "Add" and enter a name.
-- You'll be taken to the device configuration page, where you can set up the usual options in Jeedom (don't forget to enable your new device).
+1. Open the **Plugins** menu, then **Energy** and **Solaredge**.
+2. Click **Add** and give the device a name.
+3. Enter the **SolarEdge site ID** that your account has access to.
+4. Configure the parent object, the **Enable** and **Visible** options, and then save.
 
-> **Important**
+The site information is saved if the installation date is not yet known. The **Reload Site Details** button allows you to update this information: type, installation date, peak power, manufacturer, model, and number of optimizers.
+
+## Configuring Commands
+
+The **Refresh** action is created automatically.
+
+A single device can contain multiple production information commands; add the desired commands using the **Add Command** button.
+
+For each command, enter a name, the data to be retrieved, the time period, and the unit. The commands added are of the numeric information type. You can choose to display them and log them.
+
+| Data | Available periods | Available units |
+| -------- | ---------------------- | -------------------- |
+| Photovoltaic generation (power) | Quarter-hour, hour | W, kW, MW |
+| Solar power generation (energy) | Quarter-hour, hour, day, week, month, year, total | Wh, kWh, MWh |
+| Total photovoltaic generation | Total | Wh |
+
+The **Total Photovoltaic Production** type command provides the energy produced since the site was commissioned by reading a cumulative energy meter built into the equipment, rather than summing the measurements received for each interval. SolarEdge uses the production meter if the site has one, or the sum of these meters if there are multiple. Otherwise, the value corresponds to the sum of the inverters’ cumulative energy meters. Unlike the **PV Production (Energy)** command with the **Total** period, this value is not affected by gaps in the transmission history: it reflects the actual meter readings, not just the sum of the received intervals.
+
+### Refresh
+
+Each information command also has a cron field for scheduling its own refresh. The **?** button opens the Jeedom cron wizard.
+
+Leave the cron field for a command blank if you do not want to add a custom schedule to it. The **Refresh** command updates all equipment information commands, including those that have their own cron. It can also be called from a scenario.
+
+Each updated command sends its own request: adjust the frequency based on the number of commands and the limits applicable to your SolarEdge access.
+
+### Retrieved values
+
+For power and energy commands, the plugin requests measurements from the start of the previous period until the time of the request, then retains the last numerical value available in the response.
+
+If the last data point is `null`—for example, because the current quarter-hour is not yet available—the plugin uses the previous data point. A value of `0` is retained. The displayed value therefore does not necessarily correspond to an instantaneous measurement.
+
+If no numerical value is available, the command is not updated and a warning is logged. For total production, the value is read directly from the energy field returned by SolarEdge.
+
+## Migration from API v1
+
+> **Attention**
 >
-> You must enter the API key and site ID that you previously generated or copied from the Solaredge monitoring platform.
+> Migrating to the v2 API requires reconfiguring the connection and devices. Older devices are disabled upon the update; their old refresh tasks are deleted.
 
-Next, select the type of information you want. If you want more than one, simply create a second device with the same site ID and API key.
-
-![Device Setup](../images/equip_config.png "Configuration équipement")
-
-Finally, choose the refresh rate for the device. The following options are available:
-
-- Automatic: The frequency will be calculated dynamically based on the configured sunrise and sunset times to refresh as often as possible without exceeding the request limit imposed by Solaredge.
-- Manual: You choose the frequency, but the plugin will not allow you to set it below the specified minimum.
-- disabled.
-
-> **Important**
->
-> Solaredge allows only 300 API calls per day; refreshing the data every 5 minutes for 24 hours will result in 288 calls (which is below the 300-call limit). If you choose to manage data refreshes differently, be careful not to exceed this limit.
-
-## Widget Examples
-
-Overview:
-
-![Widget](../images/widget.png "Widget")
-
-Current power consumption of various devices, including information on generation, consumption, and self-consumption, as well as power purchase, sale, and battery charging/discharging (depending on the equipment in your system).
-
-Purchase example:
-
-![Widget](../images/widget_powerflow_purchased.png "Widget")
-
-Sales example:
-
-![Widget](../images/widget_powerflow_feedin.png "Widget")
+1. **Create your account** on the [SolarEdge Developer Platform](https://developer.solaredge.com/)
+2. **Set up the OAuth connection** in the plugin settings (Client ID + Client Secret).
+3. **Create new devices** by entering the site ID.
+4. **Add the desired commands** (power, energy per period, total energy).
+5. **Set up schedules** for cooling.
+6. **Check the received values**.
+7. **Customize your scenarios, widgets, virtuals, design**, etc. (you can use the *Replace* tool in the core for this).
+8. Once everything has been verified, **delete the old v1 devices**.
 
 # Change log
 
@@ -101,6 +135,8 @@ If you still can't find an answer to your question, feel free to create a new th
 At a minimum, you must provide:
 
 - a screenshot of the Jeedom Health page
-- a screenshot of the plugin's settings page
-- All available plugin logs at the *INFO* level, pasted into `Preformatted Text` (use the `</>` button on the community), no files!
+- A screenshot of the plugin's configuration page, with the Client ID and Client Secret hidden
+- All available plugin logs at the *INFO* level, pasted into a `Preformatted Text` field (use the `</>` button on the community page)—no files! If you're having a data issue, the *DEBUG* level lets you view the API responses.
 - Depending on the situation, a screenshot of the error encountered, a screenshot of the problematic configuration...
+
+Before posting screenshots or logs, hide usernames, OAuth tokens, and any personal information.

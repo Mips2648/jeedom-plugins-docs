@@ -7,10 +7,21 @@ pluginId: onduleursolaredge
 
 # Change log
 
-## 2026-08-19
+## October xx, 2026
 
-- Improved reliability of data retrieval from the SolarEdge API
-- Improved handling of communication errors and invalid API responses
+> **Attention**
+>
+> Migration to the SolarEdge v2 API: This version introduces changes that are incompatible with the previous configuration. The connection and equipment must be reconfigured; see the migration section of the documentation.
+
+- Debian 12 & PHP 8.2+ required
+- Replacing the API key with an OAuth connection using a Client ID and Client Secret; automatic token renewal
+- Deactivation of legacy v1 devices and removal of legacy refresh tasks
+- Configuration of multiple production commands per piece of equipment: power, energy per period, and total energy
+- Selecting the time period and unit based on the retrieved data
+- Cron scheduling at the device level and for each command; removal of calculations based on sunrise and sunset
+- Updating site and equipment specifications
+- Retrieves the last available numeric value when the most recent measurement points are `null`, while retaining zero values
+- Documentation Update for Configuration and Migration to the v2 API
 
 ## 2026-06-12
 

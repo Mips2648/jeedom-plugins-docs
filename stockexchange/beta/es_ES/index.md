@@ -14,7 +14,7 @@ Por lo general, todos los datos están disponibles en tiempo real, pero la frecu
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm (12) y Trixie (13)   |
 | Jeedom    | >= 4.5                      |
 
 # Instalación

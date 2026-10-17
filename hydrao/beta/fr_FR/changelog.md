@@ -10,6 +10,9 @@ pluginId: hydrao
 ## 2026-10-17
 
 - Correction mineures
+- Renforcement de la cohérence et la sécurité du code pour PHP8
+- Debian 12 et PHP 8.2 requis
+- Debian 13 supporté
 
 ## 2026-06-12
 

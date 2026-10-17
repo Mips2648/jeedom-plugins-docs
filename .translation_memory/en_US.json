@@ -1199,6 +1199,7 @@
     "Correction du nombre de lignes à afficher qui n'est pas respecté si inférieur à 200.": "Fixed an issue where the number of lines to display was not observed if it was less than 200.",
     "Correction due à un changement de comportement de l'API Miele@Home": "Fix due to a change in the behavior of the Miele@Home API",
     "Correction mineure sur l'appel api d'envoi de SMS": "Minor fix to the SMS-sending API call",
+    "Correction mineures": "Minor corrections",
     "Correction pour Debian 12 si la config Proxmox est incorrecte et que par conséquent le plugin n'a pas accès à l'intégralité de l'information à laquelle il essaye d'accéder": "Fix for Debian 12 if the Proxmox configuration is incorrect and, as a result, the plugin does not have access to all the information it is trying to access",
     "Correction pour ne plus essayer de créer des ressources qui n'auraient pas de nom (cela peut arriver suite à un problème sur vos serveurs Proxmox)": "Fixed an issue where the system would attempt to create resources without names (this can occur due to an issue with your Proxmox servers)",
     "Correction sur la lecture du mode d'un équipement de type *location* qui provoque une erreur lorsque la connexion avec le cloud n'est plus active": "Fixed an issue with reading the mode of a *rental* device that caused an error when the connection to the cloud was no longer active",

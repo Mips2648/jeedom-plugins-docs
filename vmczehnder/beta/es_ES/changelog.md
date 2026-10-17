@@ -7,7 +7,7 @@ pluginId: vmczehnder
 
 # Registro de cambios
 
-## 2026-08-18
+## 2026-10-17
 
 - Actualización de dependencias
 

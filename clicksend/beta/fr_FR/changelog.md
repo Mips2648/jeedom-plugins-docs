@@ -9,6 +9,7 @@ pluginId: clicksend
 
 ## 2026-10-18
 
+- Corrections mineures
 - Debian 12 requis
 - Debian 13 supporté
 - Mise à jour de dépendances

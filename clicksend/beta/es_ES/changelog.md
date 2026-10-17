@@ -7,8 +7,9 @@ pluginId: clicksend
 
 # Registro de cambios
 
-## 2026-10-17
+## 2026-10-18
 
+- Correcciones menores
 - Se requiere Debian 12
 - Compatible con Debian 13
 - Actualización de dependencias
@@ -43,10 +44,6 @@ pluginId: clicksend
 ## 2024-06-21
 
 - Corrección de un error en cronDaily
-
-## 2024-06-01
-
-- Actualización de dependencias
 
 ## 2024-04-29
 

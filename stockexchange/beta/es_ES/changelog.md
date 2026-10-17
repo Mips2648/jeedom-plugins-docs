@@ -7,6 +7,13 @@ pluginId: stockexchange
 
 # Registro de cambios
 
+## 2026-10-18
+
+- Correcciones menores
+- Se requiere Debian 12
+- Compatible con Debian 13
+- Actualización de dependencias
+
 ## 2026-06-12
 
 - Implantación de un nuevo flujo de trabajo para la documentación
@@ -30,10 +37,6 @@ pluginId: stockexchange
 
 - Actualización de dependencias
 - Traducción del complemento al inglés, alemán, español, italiano y portugués
-
-## 2024-04-10
-
-- Actualización de dependencias
 
 ## 2024-01-26
 

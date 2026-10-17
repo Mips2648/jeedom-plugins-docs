@@ -7,6 +7,13 @@ pluginId: rocketchat
 
 # Change log
 
+## 2026-10-18
+
+- Minor corrections
+- Debian 12 required
+- Debian 13 supported
+- Dependency update
+
 ## 2026-06-12
 
 - Implementation of a new deployment workflow for documentation
@@ -16,14 +23,6 @@ pluginId: rocketchat
 - Dependency update
 - Python 3.11 is required; it will be installed automatically if necessary.
 - Jeedom v4.5 required
-
-## 2025-08-11
-
-- Dependency update
-
-## 2025-04-18
-
-- Dependency update
 
 ## 2024-12-25
 
@@ -48,10 +47,6 @@ pluginId: rocketchat
 ## 2024-07-02
 
 - Daemon update
-- Dependency update
-
-## 2024-04-10
-
 - Dependency update
 
 ## 2022-10-17

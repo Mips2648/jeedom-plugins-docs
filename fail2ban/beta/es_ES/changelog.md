@@ -7,7 +7,7 @@ pluginId: fail2ban
 
 # Registro de cambios
 
-## 2026-10-09
+## 2026-10-18
 
 - Correcciones menores
 

@@ -7,8 +7,9 @@ pluginId: SmartMeterP1
 
 # Registro de cambios
 
-## 2026-10-06
+## 2026-10-17
 
+- Correcciones menores
 - Actualización de dependencias
 - Se requiere Debian 12
 
@@ -20,14 +21,6 @@ pluginId: SmartMeterP1
 
 - Actualización de dependencias
 - Se requiere Jeedom v4.5
-
-## 2026-01-01
-
-- Actualización de dependencias
-
-## 2025-06-27
-
-- Actualización de dependencias
 
 ## 2025-02-22
 
@@ -47,10 +40,6 @@ pluginId: SmartMeterP1
 
 - Actualización de dependencias
 - Traducción del complemento al inglés, alemán, español, italiano y portugués
-
-## 2024-04-10
-
-- Actualización de dependencias
 
 ## 2024-03-03
 

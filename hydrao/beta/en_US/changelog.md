@@ -7,9 +7,12 @@ pluginId: hydrao
 
 # Change log
 
-## 2026-08-03
+## 2026-10-17
 
-- Dependency update
+- Minor corrections
+- Improving code consistency and security for PHP 8
+- Debian 12 and PHP 8.2 required
+- Debian 13 supported
 
 ## 2026-06-12
 
@@ -19,10 +22,6 @@ pluginId: hydrao
 
 - Dependency update
 - Jeedom v4.5 required
-
-## 2025-06-27
-
-- Dependency update
 
 ## 2024-12-25
 
@@ -38,10 +37,6 @@ pluginId: hydrao
 
 - Dependency update
 - Translation of the plugin into English, German, Spanish, Italian, and Portuguese
-
-## 2024-04-10
-
-- Dependency update
 
 ## 2023-11-10
 

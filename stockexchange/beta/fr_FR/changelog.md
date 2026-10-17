@@ -7,6 +7,13 @@ pluginId: stockexchange
 
 # Changelog
 
+## 2026-10-18
+
+- Corrections mineures
+- Debian 12 requis
+- Debian 13 supporté
+- Mise à jour de dépendances
+
 ## 2026-06-12
 
 - Mise en place d'un nouveau flux de déploiement pour la documentation
@@ -30,10 +37,6 @@ pluginId: stockexchange
 
 - Mise à jour de dépendances
 - Traduction du plugin en anglais, allemand, espagnol, italien, portugais
-
-## 2024-04-10
-
-- Mise à jour de dépendances
 
 ## 2024-01-26
 

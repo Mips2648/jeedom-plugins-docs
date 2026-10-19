@@ -91,13 +91,23 @@ El comando de tipo **Producción fotovoltaica total** devuelve la energía produ
 SolarEdge utiliza el valor del contador de producción si la instalación dispone de uno, o la suma de dichos contadores si hay varios. En su defecto, el valor corresponde a la suma de los contadores de energía acumulada de los inversores.\
 A diferencia del comando **Producción fotovoltaica (energía)** con el periodo **Total**, este valor no se ve afectado por las lagunas en el historial de transmisión: refleja el valor real de los contadores, y no solo la suma de los intervalos recibidos.
 
+### Descripción general del sitio web
+
+En la configuración del equipo, la opción **Información general > Resumen** activa la recuperación del resumen de la instalación de SolarEdge. En la próxima actualización global, el complemento crea automáticamente ocho comandos de información: resumen de la producción, autoconsumo, energía hacia la batería y hacia la red, resumen del consumo, energía procedente de la instalación fotovoltaica, de la red y de la batería.
+
+Estos comandos se actualizan conjuntamente mediante la consulta de visión general. Su frecuencia se configura mediante el campo **Actualización automática** de esta opción, que utiliza un cron global a nivel del equipo; no se trata del cron individual de los comandos clásicos.
+
+A diferencia de los controles clásicos, no ofrecen la posibilidad de elegir una API, un periodo o una programación individual.
+
 ### Actualización
 
 Cada comando de información dispone también de un campo cron para programar su propia actualización. El botón **?** abre el asistente cron de Jeedom.
 
 Deja el cron de un comando en blanco si no deseas añadirle una programación individual. El comando **Actualizar** actualiza todos los comandos de información del equipo, incluidos aquellos que tienen su propio cron. También se puede invocar desde un escenario.
 
-Cada comando actualizado realiza su propia solicitud: adapta la frecuencia al número de comandos y a los límites aplicables a tu acceso a SolarEdge.
+Cada comando clásico actualizado realiza su propia llamada a la API. La vista general realiza una llamada a la API específica que actualiza sus ocho comandos a la vez. El comando **Actualizar** activa la vista general y la actualización de los comandos clásicos, por lo que puede generar varias llamadas.
+
+SolarEdge establece límites para las llamadas a la API, que pueden depender de tu nivel de acceso. Configura las tareas programadas individuales y la tarea programada global de la vista general teniendo en cuenta estos límites y el número de equipos y comandos; evita también las actualizaciones manuales demasiado frecuentes.
 
 ### Valores recuperados
 

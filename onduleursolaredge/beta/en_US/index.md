@@ -91,13 +91,23 @@ The **Total Photovoltaic Production** type command returns the energy produced s
 SolarEdge uses the production meter reading if the site has one, or the sum of these readings if there are multiple meters. Otherwise, the value corresponds to the sum of the cumulative energy readings from the inverters.\
 Unlike the **Photovoltaic Production (Energy)** command with the **Total** period, this value is not affected by gaps in the transmission history: it reflects the actual meter readings, not just the sum of the received intervals.
 
+### Site Overview
+
+In the device configuration, the **General Information > Overview** option is active. It enables retrieval of the SolarEdge site summary. Upon the next global refresh, the plugin automatically creates eight info commands: production overview, self-consumption, energy to the battery and to the grid, consumption overview, and energy from PV, the grid, and the battery.
+
+These commands are updated together by the overview request. Their update frequency is configured using the **Auto-refresh** field in this option, which uses a global cron job at the device level; this is not the individual cron job used for standard commands.
+
+Unlike traditional commands, they do not offer a choice of API, time period, or individual cron job.
+
 ### Refresh
 
 Each information command also has a cron field for scheduling its own refresh. The **?** button opens the Jeedom cron wizard.
 
 Leave the cron field for a command blank if you do not want to add a custom schedule to it. The **Refresh** command updates all equipment information commands, including those that have their own cron. It can also be called from a scenario.
 
-Each updated command sends its own request: adjust the frequency based on the number of commands and the limits applicable to your SolarEdge access.
+Each updated standard command makes its own API call. The overview makes a dedicated API call that updates all eight commands at once. Since the **Refresh** command triggers the overview and updates the standard commands, it can generate multiple calls.
+
+SolarEdge imposes limits on API calls, which may vary depending on your access level. Configure the individual cron jobs and the global cron job in the overview, taking these limits and the number of devices and commands into account; also, avoid manually refreshing the page too frequently.
 
 ### Retrieved values
 

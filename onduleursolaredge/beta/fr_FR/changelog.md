@@ -7,7 +7,7 @@ pluginId: onduleursolaredge
 
 # Changelog
 
-## 2026-10-xx
+## 2026-10-19
 
 > **Attention**
 >

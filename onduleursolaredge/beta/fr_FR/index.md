@@ -91,13 +91,23 @@ La commande de type **Production photovoltaïque totale** retourne l'énergie pr
 SolarEdge utilise le compteur du compteur de production si le site en possède un, ou la somme de ces compteurs s'il en possède plusieurs. À défaut, la valeur correspond à la somme des compteurs d'énergie cumulée des onduleurs.\
 Contrairement à la commande **Production photovoltaïque (énergie)** avec la période **Total**, cette valeur n'est pas affectée par les lacunes de l'historique de transmission: elle reflète la valeur réelle des compteurs, et non la somme des seuls intervalles reçus.
 
+### Vue d'ensemble du site
+
+Dans la configuration de l'équipement, l'option **Informations globales > Vue d'ensemble** active la récupération de la synthèse du site SolarEdge. Au prochain rafraîchissement global, le plugin crée automatiquement huit commandes info: aperçu de la production, autoconsommation, énergie vers la batterie et vers le réseau, aperçu de la consommation, énergie provenant du photovoltaïque, du réseau et de la batterie.
+
+Ces commandes sont mises à jour ensemble par la requête de vue d'ensemble. Leur fréquence se configure avec le champ **Auto-actualisation** de cette option, qui utilise un cron global au niveau de l'équipement; ce n'est pas le cron individuel des commandes classiques.
+
+Contrairement aux commandes classiques, elles ne proposent pas de choix d'API, de période ou de cron individuel.
+
 ### Rafraîchissement
 
 Chaque commande d'information dispose également d'un champ cron pour planifier sa propre actualisation. Le bouton **?** ouvre l'assistant cron de Jeedom.
 
 Laissez le cron d'une commande vide si vous ne souhaitez pas lui ajouter de planification individuelle. La commande **Rafraîchir** actualise toutes les commandes d'information de l'équipement, y compris celles qui ont leur propre cron. Elle peut aussi être appelée depuis un scénario.
 
-Chaque commande actualisée effectue sa propre requête: adaptez les fréquences au nombre de commandes et aux limites applicables à votre accès SolarEdge.
+Chaque commande classique actualisée effectue son propre appel à l'API. La vue d'ensemble effectue un appel API dédié qui met à jour ses huit commandes ensemble. La commande **Rafraîchir** déclenchant la vue d'ensemble et l'actualisation des commandes classiques, elle peut donc générer plusieurs appels.
+
+SolarEdge impose des limites d'appels API, qui peuvent dépendre de votre accès. Paramétrez les crons individuels et le cron global de la vue d'ensemble en tenant compte de ces limites et du nombre d'équipements et de commandes; évitez également les rafraîchissements manuels trop fréquents.
 
 ### Valeurs récupérées
 

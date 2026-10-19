@@ -7,7 +7,7 @@ pluginId: onduleursolaredge
 
 # Registro de cambios
 
-## xx de octubre de 2026
+## 2026-10-19
 
 > **Atención**
 >

@@ -10,6 +10,8 @@ pluginId: vmczehnder
 ## 2026-10-21
 
 - Corrections mineures
+- Debian 12 requis
+- Debian 13 supporté
 - Mise à jour de dépendances
 
 ## 2026-06-12

@@ -18,7 +18,7 @@ Los siguientes modelos deberían ser compatibles, aunque no todos se han probado
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm (12) y Trixie (13)   |
 | Jeedom    | >= 4.5                      |
 
 # Instalación de equipos

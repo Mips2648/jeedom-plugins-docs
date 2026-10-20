@@ -7,8 +7,9 @@ pluginId: vmczehnder
 
 # Changelog
 
-## 2026-10-17
+## 2026-10-21
 
+- Corrections mineures
 - Mise à jour de dépendances
 
 ## 2026-06-12

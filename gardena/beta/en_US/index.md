@@ -18,7 +18,7 @@ You can access device data, monitor devices, and perform certain actions (depend
 
 | Component | Version                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm (12) & Trixie (13)   |
 | Jeedom    | >= 4.5                      |
 
 # Installation

@@ -9,6 +9,8 @@ pluginId: gardena
 
 ## 2026-10-08
 
+- Correcciones menores
+- Se requiere Debian 12
 - Se requiere Jeedom v4.5
 - Actualización de dependencias
 

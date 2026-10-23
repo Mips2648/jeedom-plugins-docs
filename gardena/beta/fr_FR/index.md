@@ -18,7 +18,7 @@ Il est possible d'accéder aux données des appareils, de les monitorer et d'eff
 
 | Composant | Version                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm(12) & Trixie(13)   |
 | Jeedom    | >= 4.5                      |
 
 # Installation

@@ -7,8 +7,9 @@ pluginId: proxmox
 
 # Changelog
 
-## 2026-10-09
+## 2026-10-26
 
+- Possibilité de configurer des tags de ressources proxmox à inclure; si configuré, uniquement les équipements correspondant seront créés dans Jeedom
 - Proxmox v9 requis
 - Ajout compatibilité Debian 13 (Trixie)
 - Jeedom v4.5 requis
@@ -21,7 +22,7 @@ pluginId: proxmox
 
 ## 2025-11-08
 
-- Possibilité de configurer des tags de ressources proxmox à exclure, les équipements correspondant ne seront pas créé dans Jeedom
+- Possibilité de configurer des tags de ressources proxmox à exclure, les équipements correspondant ne seront pas créés dans Jeedom
 - Sauvegarde les tags définis sous proxmox sur les équipements Jeedom correspondant pour qu'ils puissent être utilisés dans la recherche sur le dashboard Jeedom
 
 ## 2025-08-11

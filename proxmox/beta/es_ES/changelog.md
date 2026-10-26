@@ -7,8 +7,9 @@ pluginId: proxmox
 
 # Registro de cambios
 
-## 2026-10-09
+## 2026-10-26
 
+- Posibilidad de configurar las etiquetas de recursos de Proxmox que se van a incluir; si se configura, solo se crearán en Jeedom los dispositivos correspondientes
 - Se requiere Proxmox v9
 - Se ha añadido compatibilidad con Debian 13 (Trixie)
 - Se requiere Jeedom v4.5

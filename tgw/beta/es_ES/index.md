@@ -29,7 +29,8 @@ También os invito a consultar [esta documentación](https://mips2648.github.io/
 
 | Componente | Versión                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm (12) y Trixie (13)   |
+| PHP | >= 8.2 |
 | Jeedom    | >= 4.5                      |
 
 # Instalación

@@ -7,6 +7,10 @@ pluginId: arlo
 
 # Registro de cambios
 
+## 2026-10-31
+
+- Corrección: los nombres de los comandos de modo se sobrescribían con cada sincronización
+
 ## 2026-10-11
 
 > **Atención**

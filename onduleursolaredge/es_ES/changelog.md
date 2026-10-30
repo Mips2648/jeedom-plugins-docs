@@ -7,6 +7,22 @@ pluginId: onduleursolaredge
 
 # Registro de cambios
 
+## 2026-10-28
+
+> **Atención**
+>
+> Migración a la API SolarEdge v2: esta versión introduce cambios incompatibles con la configuración anterior. Es necesario reconfigurar la conexión y los equipos; consulta la sección de migración de la documentación.
+
+- Se requiere Debian 12 y PHP 8.2 o superior
+- Sustitución de la clave API por una conexión OAuth con Client Id y Client Secret; renovación automática de los tokens
+- Desactivación de los antiguos equipos v1 y eliminación de las antiguas tareas de actualización
+- Configuración de varios parámetros de producción por equipo: potencia, energía por periodo y energía total
+- Selección del periodo y la unidad en función de los datos recuperados
+- Programación cron a nivel de equipo y de cada comando; eliminación del cálculo basado en la salida y la puesta del sol
+- Actualización de las características de la instalación y de los equipos
+- Extracción del último valor numérico disponible cuando los últimos puntos de medición son `null`, conservando los valores en cero
+- Actualización de la documentación sobre la configuración y la migración a la API v2
+
 ## 2026-06-12
 
 - Implantación de un nuevo flujo de trabajo para la documentación

@@ -7,7 +7,7 @@ pluginId: stockexchange
 
 # Changelog
 
-## 2026-10-18
+## 2026-11-02
 
 - Corrections mineures
 - Debian 12 requis

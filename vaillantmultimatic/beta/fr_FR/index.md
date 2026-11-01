@@ -22,10 +22,11 @@ Les vannes et les thermostats de la gamme ambiSENSE reliées au système sont é
 >
 > Ce plugin n'est plus compatible avec le système vaillantMULTIMATIC mais uniquement myVaillant. Si vous n'avez pas encore migré sur myVaillant, n'installez pas cette version du plugin.
 
-| Composant | Version                     |
-|-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+| Composant | Version                   |
+|-----------|---------------------------|
+| Debian    | Bookworm(12) & Trixie(13) |
+| Jeedom    | >= 4.5                    |
+| PHP       | >= 8.2                    |
 
 # Installation
 

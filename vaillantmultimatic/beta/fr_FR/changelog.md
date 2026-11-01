@@ -7,9 +7,10 @@ pluginId: vaillantmultimatic
 
 # Changelog
 
-## 2026-10-09
+## 2026-11-02
 
 - Mise à jour de dépendances
+- Debian 12 & PHP 8.2+ requis
 
 ## 2026-06-12
 

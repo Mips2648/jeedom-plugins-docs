@@ -7,6 +7,10 @@ pluginId: arlo
 
 # Change log
 
+## 2026-10-31
+
+- Correction: The names of the mode commands were overwritten with each synchronization
+
 ## 2026-10-11
 
 > **Attention**

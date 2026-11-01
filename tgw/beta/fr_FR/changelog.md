@@ -7,10 +7,11 @@ pluginId: tgw
 
 # Changelog
 
-## 2026-10-28
+## 2026-11-01
 
 - L'installation d'antenne sur **Debian Bullseye (11) n'est plus supportée**
 - Ajout du paramètre optionel: *publish_all* qui permet de Publier toutes les annonces (par défaut) ou uniquement les annonces décodées voir <https://gateway.theengs.io/use/use.html#details-options>
+- Correction des types de paramètres dans le fichier de configuration
 - Debian 12 & PHP 8.2+ requis
 - Mise à jour de dépendances
 

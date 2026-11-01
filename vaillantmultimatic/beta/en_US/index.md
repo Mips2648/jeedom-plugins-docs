@@ -22,10 +22,11 @@ The valves and thermostats in the ambiSENSE line that are connected to the syste
 >
 > This plugin is no longer compatible with the vaillantMULTIMATIC system; it is now compatible only with myVaillant. If you have not yet migrated to myVaillant, do not install this version of the plugin.
 
-| Component | Version                     |
-|-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+| Component | Version |
+|-----------|---------------------------|
+| Debian    | Bookworm (12) & Trixie (13) |
+| Jeedom    | >= 4.5 |
+| PHP | >= 8.2 |
 
 # Installation
 

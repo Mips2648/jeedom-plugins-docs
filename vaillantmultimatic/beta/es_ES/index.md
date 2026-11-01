@@ -22,10 +22,11 @@ También se controlan las válvulas y los termostatos de la gama ambiSENSE conec
 >
 > Este complemento ya no es compatible con el sistema vaillantMULTIMATIC, sino únicamente con myVaillant. Si aún no has migrado a myVaillant, no instales esta versión del complemento.
 
-| Componente | Versión                     |
-|-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+| Componente | Versión |
+|-----------|---------------------------|
+| Debian    | Bookworm (12) y Trixie (13) |
+| Jeedom    | >= 4.5 |
+| PHP | >= 8.2 |
 
 # Instalación
 

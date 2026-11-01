@@ -7,9 +7,10 @@ pluginId: vaillantmultimatic
 
 # Registro de cambios
 
-## 2026-10-09
+## 2026-11-02
 
 - Actualización de dependencias
+- Se requiere Debian 12 y PHP 8.2 o superior
 
 ## 2026-06-12
 

@@ -14,7 +14,7 @@ Toutes les données sont généralement disponibles en temps réel mais la fréq
 
 | Composant | Version                     |
 |-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
+| Debian    | Bookworm(12) & Trixie(13)   |
 | Jeedom    | >= 4.5                      |
 
 # Installation
@@ -34,7 +34,7 @@ Ensuite vous devez sélectionner le service à utiliser pour cet équipement par
 
 Il faudra ensuite renseigner la clé API correspondante au service.
 
-> **Conseil**
+> **Tip**
 > Faite attention à ne pas demander une actualisation trop fréquente si cela n'est pas nécessaire en tenant compte du nombre d'équipement que vous créez afin de ne pas dépasser la limite imposée par le service.
 
 Vous devez ensuite choisir le type d'informations souhaitée:

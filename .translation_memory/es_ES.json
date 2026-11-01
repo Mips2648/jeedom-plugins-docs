@@ -1191,6 +1191,7 @@
     "Correction de la conversion des compteurs de visiteurs avant incrémentation": "Corrección de la conversión de los contadores de visitantes antes del incremento",
     "Correction de la découverte pour les payload contenant un booléen": "Corrección del descubrimiento para las cargas útiles que contienen un valor booleano",
     "Correction de la migration des zones si plusieurs zones existent": "Corrección de la migración de zonas si existen varias zonas",
+    "Correction des types de paramètres dans le fichier de configuration": "Corrección de los tipos de parámetros en el archivo de configuración",
     "Correction des types génériques": "Corrección de los tipos genéricos",
     "Correction du décodage pour compatibilité avec les compteurs suisses": "Corrección de la decodificación para garantizar la compatibilidad con los contadores suizos",
     "Correction du nombre de lignes à afficher qui n'est pas respecté si inférieur à 200.": "Corrección del número de líneas que se deben mostrar, que no se respeta si es inferior a 200.",

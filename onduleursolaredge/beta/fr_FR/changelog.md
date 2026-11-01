@@ -7,6 +7,10 @@ pluginId: onduleursolaredge
 
 # Changelog
 
+## 2026-11-02
+
+- Mise à jour de dépendances
+
 ## 2026-10-28
 
 > **Attention**

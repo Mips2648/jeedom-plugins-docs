@@ -83,13 +83,13 @@ For each command, enter a name, the data to be retrieved, the time period, and t
 
 | Data | Available periods | Available units |
 | -------- | ---------------------- | -------------------- |
-| Photovoltaic generation (power) | Quarter-hour, hour | W, kW, MW |
-| Solar power generation (energy) | Quarter-hour, hour, day, week, month, year, total | Wh, kWh, MWh |
-| Total photovoltaic generation | Total | Wh |
+| Generation (power) | Quarter-hour, hour | W, kW, MW |
+| Production (energy) | Quarter-hour, hour, day, week, month, year, total | Wh, kWh, MWh |
+| Total production | Total | Wh |
 
-The **Total Photovoltaic Production** type command returns the energy produced since the site was commissioned by reading a cumulative energy meter built into the equipment, rather than adding up the measurements received for each interval.\
+The **Total Production** type command returns the energy produced since the site went live by reading a cumulative energy meter built into the equipment, rather than summing the measurements received for each interval.\
 SolarEdge uses the production meter reading if the site has one, or the sum of these readings if there are multiple meters. Otherwise, the value corresponds to the sum of the cumulative energy readings from the inverters.\
-Unlike the **Photovoltaic Production (Energy)** command with the **Total** period, this value is not affected by gaps in the transmission history: it reflects the actual meter readings, not just the sum of the received intervals.
+Unlike the **Production (energy)** command with the **Total** period, this value is not affected by gaps in the transmission history: it reflects the actual meter readings, not just the sum of the received intervals.
 
 ### Site Overview
 

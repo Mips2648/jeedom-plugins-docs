@@ -83,13 +83,13 @@ Pour chaque commande, renseignez un nom, la donnée à récupérer, la période 
 
 | Donnée | Périodes disponibles | Unités disponibles |
 | -------- | ---------------------- | -------------------- |
-| Production photovoltaïque (puissance) | Quart d'heure, heure | W, kW, MW |
-| Production photovoltaïque (énergie) | Quart d'heure, heure, jour, semaine, mois, année, total | Wh, kWh, MWh |
-| Production photovoltaïque totale | Total | Wh |
+| Production (puissance) | Quart d'heure, heure | W, kW, MW |
+| Production (énergie) | Quart d'heure, heure, jour, semaine, mois, année, total | Wh, kWh, MWh |
+| Production totale | Total | Wh |
 
-La commande de type **Production photovoltaïque totale** retourne l'énergie produite depuis la mise en service du site en lisant un compteur d'énergie cumulée intégré aux équipements, plutôt que d'additionner les mesures reçues pour chaque intervalle.\
+La commande de type **Production totale** retourne l'énergie produite depuis la mise en service du site en lisant un compteur d'énergie cumulée intégré aux équipements, plutôt que d'additionner les mesures reçues pour chaque intervalle.\
 SolarEdge utilise le compteur du compteur de production si le site en possède un, ou la somme de ces compteurs s'il en possède plusieurs. À défaut, la valeur correspond à la somme des compteurs d'énergie cumulée des onduleurs.\
-Contrairement à la commande **Production photovoltaïque (énergie)** avec la période **Total**, cette valeur n'est pas affectée par les lacunes de l'historique de transmission: elle reflète la valeur réelle des compteurs, et non la somme des seuls intervalles reçus.
+Contrairement à la commande **Production (énergie)** avec la période **Total**, cette valeur n'est pas affectée par les lacunes de l'historique de transmission: elle reflète la valeur réelle des compteurs, et non la somme des seuls intervalles reçus.
 
 ### Vue d'ensemble du site
 

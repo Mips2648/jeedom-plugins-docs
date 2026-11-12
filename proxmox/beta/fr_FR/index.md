@@ -57,18 +57,18 @@ Dans le menu principal "Permissions", cliquez sur sur "Add" puis "User permissio
 
 Il n'est pas recommandé de donner le rôle "Administrator" à l'utilisateur "Jeedom"; les privilèges minimum requis pour que toutes les fonctions du plugin fonctionnent sont les suivants:
 
-| Privilèges              | Noeud: infos | Noeud: actions | KVM & LXC: infos | KVM & LXC: actions | KVM & LXC: backup & snapshot | Stockage: infos |
-|-------------------------|--------------|----------------|------------------|--------------------|------------------------------|-----------------|
-| Datastore.Allocate      |              |                |                  |                    | requis                       |                 |
-| Datastore.AllocateSpace |              |                |                  |                    | requis                       |                 |
-| Datastore.Audit         |              |                |                  |                    | requis                       | requis          |
-| Sys.Audit               | requis       | requis         |                  |                    |                              |                 |
-| Sys.Modify              |              | requis         |                  |                    |                              |                 |
-| Sys.PowerMgmt           |              | requis         |                  |                    |                              |                 |
-| VM.Audit                |              |                | requis           | requis             |                              |                 |
-| VM.Backup               |              |                |                  |                    | requis                       |                 |
-| VM.PowerMgmt            |              |                |                  | requis             |                              |                 |
-| VM.Snapshot             |              |                |                  |                    | requis                       |                 |
+| Privilèges              | Noeud: infos | Noeud: actions | VM & LXC: infos | VM & LXC: actions | VM & LXC: backup & snapshot | Stockage: infos |
+|-------------------------|--------------|----------------|-----------------|-------------------|-----------------------------|-----------------|
+| Datastore.Allocate      |              |                |                 |                   | requis                      |                 |
+| Datastore.AllocateSpace |              |                |                 |                   | requis                      |                 |
+| Datastore.Audit         |              |                |                 |                   | requis                      | requis          |
+| Sys.Audit               | requis       | requis         |                 |                   |                             |                 |
+| Sys.Modify              |              | requis         |                 |                   |                             |                 |
+| Sys.PowerMgmt           |              | requis         |                 |                   |                             |                 |
+| VM.Audit                |              |                | requis          | requis            |                             |                 |
+| VM.Backup               |              |                |                 |                   | requis                      |                 |
+| VM.PowerMgmt            |              |                |                 | requis            |                             |                 |
+| VM.Snapshot             |              |                |                 |                   | requis                      |                 |
 
 Pour limiter les accès à ce qui est strictement nécessaire, vous devez donc créer un nouveau rôle personnalisé (menu "Permissions" > "Roles"); donnez un nom et accordez les privilèges listés ci-dessus.
 Vous pourrez ensuite assigner ce rôle à l'utilisateur via le menu "Permissions" (à la place du rôle "Administrator" donc).

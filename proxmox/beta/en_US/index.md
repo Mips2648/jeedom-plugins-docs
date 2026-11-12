@@ -27,35 +27,15 @@ To use the plugin, you must download, install, and activate it just like any oth
 
 # Proxmox User Configuration
 
-> **Tip**
->
-> It is recommended that you create a local user specifically for Jeedom, and that is what is documented here. Of course, other configurations are possible as long as Jeedom has a user with access to the Proxmox resources you want to monitor.
-
-Creating a Proxmox user will not be covered in detail here; only the main points will be covered. It is best to refer to the official Proxmox documentation for details.
+The Proxmox account you use must have access to the resources you want to monitor. Creating accounts and setting permissions is not described in detail here; see the official Proxmox documentation for more information.
 
 This configuration is done on the "datacenter" in the Proxmox interface, under the "Permissions" menu
 
-## User Creation
-
-In the Permissions > Users menu, click "Add" and fill out the following screen:
-
-![Proxmox user](../images/proxmox_user.png "Proxmox user")
-
-> **Important**
->
-> Select the "Proxmox VE authentication server" realm; otherwise, you will not be able to choose a password here.
-
-Make a note of the username and password you chose; you'll need to enter them when configuring the plugin.
-
 ## Permission Assignment
 
-We created a new user in Proxmox, but this user still doesn't have any access.
+The user or token used by Jeedom must have the necessary permissions for the features you want to use.
 
-In the "Permissions" main menu, click "Add," then "User permission," and fill out the next screen according to the permissions you want to grant to Jeedom (see the Proxmox documentation for more details):
-
-![Proxmox permissions](../images/proxmox_permissions.png "Proxmox permissions")
-
-It is not recommended to assign the "Administrator" role to the "Jeedom" user; the minimum privileges required for all plugin features to function are as follows:
+It is not recommended to assign the "Administrator" role to the user or token used by Jeedom. The minimum privileges required for all plugin features to function are as follows:
 
 | Privileges | Node: Info | Node: Actions | VM & LXC: Info | VM & LXC: Actions | VM & LXC: Backup & Snapshot | Storage: Info |
 |-------------------------|--------------|----------------|-----------------|-------------------|-----------------------------|-----------------|
@@ -70,24 +50,41 @@ It is not recommended to assign the "Administrator" role to the "Jeedom" user; t
 | VM.PowerMgmt | | | | required | | |
 | VM.Snapshot | | | | | required | |
 
-To limit access to only what is strictly necessary, you must create a new custom role (go to the "Permissions" menu > "Roles"); give it a name and grant the privileges listed above.
-You can then assign this role to the user via the "Permissions" menu (instead of the "Administrator" role).
+To limit access to only what is strictly necessary, create a custom role in "Permissions" > "Roles," then grant it the privileges listed above. Depending on the authentication mode you choose, you will assign this role to the user, or to the owner user and the API token.
 
 You can find more information here: <https://pve.proxmox.com/wiki/User_Management>
 
-## Creating an API token
+## Authentication Modes
 
-The plugin can authenticate using a password or a Proxmox API token. The token belongs to a Proxmox user: create it for the user dedicated to Jeedom in the "Permissions" menu in Proxmox, then in that user's token management settings.
+The plugin offers two authentication modes. Select one in the plugin settings.
 
-When creating the token, Proxmox displays the token secret only once. Copy it immediately so you can enter it in Jeedom. In the plugin, enter the owner’s username in “Username,” their realm in “Realm,” the token ID alone in “Token ID,” and the secret displayed by Proxmox in “Secret.” The “Token ID” field must not contain the user’s name, the realm, the `!` character, or the secret.
+> **Tip**
+>
+> The recommended mode of authentication is the API token with privilege separation enabled. Authentication via username and password is still possible. In both cases, it is recommended to create a custom role limited to the privileges required by the plugin, as listed in the table above.
 
-### Token permissions
+### Token API
 
-By default, Proxmox creates tokens with privilege separation enabled. In this mode, the token’s actual permissions are the intersection of the owner user’s permissions and those assigned to the token: therefore, the token cannot have more rights than its user, and its rights can be restricted separately.
+This mode is recommended. Create a token for the Proxmox user of your choice in that user's token management settings. Leave "Separation of Privileges" enabled so that the token's permissions can be managed independently. Please note that the token remains limited by its owner's permissions.
 
-For the token to work, grant both the user and the token the permissions required for the plugin’s functions. You can reuse the custom role containing the privileges listed in the previous section by assigning it to the user and then to the token on the relevant paths (for example, `/`). To assign the role to the token, go to Proxmox’s permissions management and select the token as the subject. If you choose to disable privilege separation, the token inherits the user’s permissions; this option grants the token more rights and is not necessary if its permissions are configured separately.
+In "Permissions," verify that the user who owns the token has permissions at least equivalent to those of the custom role. Then add a permission for the token itself and assign that role to it by selecting the token as the subject. With privilege separation enabled, the token's effective permissions are the intersection of the owner's permissions and the token's permissions.
+
+When you create the token, Proxmox displays the token secret only once. Copy it immediately so you can enter it in Jeedom. In the plugin, enter the owner’s username in “User,” their realm in “Realm,” the token ID in “Token ID,” and the secret displayed by Proxmox in “Secret.”
 
 See the Proxmox documentation on [API tokens](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_tokens) and [permission management](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_permission_management) for details and the effects of privilege separation.
+
+### Username and password
+
+If you choose password authentication, create a Proxmox account for Jeedom under "Permissions" > "Users." We recommend using a dedicated account with a password reserved for this purpose.
+
+When creating the account, select the "Proxmox VE authentication server" realm to set the password in Proxmox:
+
+![Proxmox user](../images/proxmox_user.png "Proxmox user")
+
+Save the username, realm, and password to enter them in the plugin's configuration. Do not enable two-factor authentication (2FA) for this account: it is not supported by the plugin's password-based authentication mode.
+
+In the "Permissions" main menu, click "Add" and then "User permission" to assign a role (see the Proxmox documentation for more details):
+
+![Proxmox permissions](../images/proxmox_permissions.png "Proxmox permissions")
 
 # Plugin configuration
 
@@ -96,7 +93,7 @@ You must enter the following information in the plugin's configuration:
 - Your server's IP address (or that of one of the cluster nodes, if you have multiple). You can configure a comma-separated list of IP addresses for each node **in the same cluster or data center**.
 - a port that is different from the default port (8006)
 - a username and its authentication realm, which is different from "pve" (="Proxmox VE authentication server," the default realm for users created locally on Proxmox)
-- either this user's password, or the Token ID and Secret of the token created for this user
+- the API token ID and secret (recommended mode), or the Proxmox user's password
 
 If both the Token ID and Secret are entered, the plugin uses the token, even if a password is also configured. To use the password, clear both token fields. An incomplete token is not used.
 

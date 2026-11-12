@@ -25,7 +25,7 @@ También cuenta con una página específica de estado que resume toda la informa
 
 Para utilizar el plugin, debes descargarlo, instalarlo y activarlo como cualquier otro plugin de Jeedom.
 
-# Configuración de usuario de Proxmox
+# Configuración de Proxmox
 
 La cuenta de Proxmox que utilices debe tener acceso a los recursos que desees supervisar. Aquí no se describe en detalle cómo crear cuentas y permisos; consulta la documentación oficial de Proxmox para obtener más información.
 

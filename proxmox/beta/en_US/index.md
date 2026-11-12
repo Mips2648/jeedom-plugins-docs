@@ -25,7 +25,7 @@ It also features a dedicated health page that summarizes all the information abo
 
 To use the plugin, you must download, install, and activate it just like any other Jeedom plugin.
 
-# Proxmox User Configuration
+# Proxmox Configuration
 
 The Proxmox account you use must have access to the resources you want to monitor. Creating accounts and setting permissions is not described in detail here; see the official Proxmox documentation for more information.
 

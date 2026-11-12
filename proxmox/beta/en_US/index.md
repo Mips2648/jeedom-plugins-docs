@@ -15,9 +15,10 @@ It also features a dedicated health page that summarizes all the information abo
 # Supported Versions
 
 | Component | Version |
-|-----------|-----------------------------------------|
-| Debian    | Bullseye (11), Bookworm (12), and Trixie (13) |
+|-----------|---------------------------|
+| Debian    | Bookworm (12) & Trixie (13) |
 | Jeedom    | >= 4.5 |
+| PHP | >= 8.2 |
 | Proxmox   | >= 9.2 |
 
 # Installation

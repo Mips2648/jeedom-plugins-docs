@@ -15,9 +15,10 @@ También cuenta con una página específica de estado que resume toda la informa
 # Versiones compatibles
 
 | Componente | Versión |
-|-----------|-----------------------------------------|
-| Debian    | Bullseye (11), Bookworm (12) y Trixie (13) |
+|-----------|---------------------------|
+| Debian    | Bookworm (12) y Trixie (13) |
 | Jeedom    | >= 4.5 |
+| PHP | >= 8.2 |
 | Proxmox   | >= 9.2 |
 
 # Instalación

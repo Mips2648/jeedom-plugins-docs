@@ -10,6 +10,7 @@ pluginId: proxmox
 ## 2026-10-26
 
 - Posibilidad de configurar las etiquetas de recursos de Proxmox que se van a incluir; si se configura, solo se crearán en Jeedom los dispositivos correspondientes
+- Se ha añadido la autenticación mediante token de API; [Ver documentación]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 - Se requiere Proxmox v9
 - Se ha añadido compatibilidad con Debian 13 (Trixie)
 - Se requiere Debian 12 y PHP 8.2 o superior
@@ -99,7 +100,7 @@ pluginId: proxmox
   - Clasificación de los recursos (mismo orden que en Proxmox: LXC, VM, almacenamiento);
   - Posibilidad de realizar acciones ((re)iniciar, pausar, detener...) en las máquinas virtuales y LXC desde el panel;
 - Se ha añadido más información sobre la configuración de LXC
-- Se han añadido comandos de información sobre los nodos que indican el número de máquinas virtuales (VM) y LXC iniciadas y detenidas ([Ver la documentación]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
+- Se han añadido comandos de información sobre los nodos que indican el número de máquinas virtuales (VM) y LXC iniciadas y detenidas; ([Ver documentación]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
 - Incorporación de la visualización en formato de tabla de la lista de equipos para Jeedom 4.2
 - Mejora: Los equipos que son plantillas de VM y LXC tienen un icono diferente para identificarlos más fácilmente
 - Mejora: la sincronización ahora se ejecuta en segundo plano para poder aumentar la frecuencia de actualización, que se puede configurar en los ajustes del complemento.
@@ -160,7 +161,7 @@ pluginId: proxmox
 ## 2019-11-05
 
 - Incorporación de información adicional sobre los equipos de almacenamiento
-- Se ha añadido un comando «Backup» para las máquinas virtuales (consulta la documentación para conocer todas las opciones)
+- Se ha añadido un comando de copia de seguridad para las máquinas virtuales; [Consulta la documentación]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) para ver todas las opciones
 
 ## 2019-10-28
 
@@ -176,7 +177,7 @@ pluginId: proxmox
 
 - Se ha añadido compatibilidad con contenedores de Linux (LXC)
 - Se ha añadido un comando para realizar una instantánea en VM y LXC
-- Se han añadido los comandos «Iniciar», «Detener» y «Detener inmediatamente» para VM y LXC (consulta la documentación)
+- Se han añadido los comandos «Iniciar», «Detener» y «Detener inmediatamente» para VM y LXC; [Ver documentación]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 - Incorporación de un comando «Actualizar» en VM y LXC
 - Soluciona el problema de conexión a Proxmox cuando el certificado no es válido
 

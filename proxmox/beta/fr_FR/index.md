@@ -56,7 +56,7 @@ Vous trouverez plus d'information ici: <https://pve.proxmox.com/wiki/User_Manage
 
 ## Modes d'authentification
 
-Le plugin propose deux modes d'authentification. Choisissez-en un dans la configuration du plugin.
+Le plugin propose deux modes d'authentification: par token API ou par mot de passe.
 
 > **Tip**
 >

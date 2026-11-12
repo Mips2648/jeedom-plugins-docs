@@ -57,18 +57,18 @@ En el menú principal «Permisos», haz clic en «Añadir» y, a continuación, 
 
 No se recomienda asignar el rol de «Administrador» al usuario «Jeedom»; los privilegios mínimos necesarios para que funcionen todas las funciones del complemento son los siguientes:
 
-| Privilegios | Nodo: información | Nodo: acciones | KVM y LXC: información | KVM y LXC: acciones | KVM y LXC: copias de seguridad e instantáneas | Almacenamiento: información |
-|-------------------------|--------------|----------------|------------------|--------------------|------------------------------|-----------------|
+| Privilegios | Nodo: información | Nodo: acciones | VM y LXC: información | VM y LXC: acciones | VM y LXC: copias de seguridad e instantáneas | Almacenamiento: información |
+|-------------------------|--------------|----------------|-----------------|-------------------|-----------------------------|-----------------|
 | Datastore.Allocate | | | | | obligatorio | |
 | Datastore.AllocateSpace | | | | | obligatorio | |
 | Datastore.Audit | | | | | obligatorio | obligatorio |
 | Sys.Audit | obligatorio | obligatorio | | | | |
 | Sys.Modify | | obligatorio | | | | |
 | Sys.PowerMgmt | | obligatorio | | | | |
-| VM.Audit | | | requerido | requerido | | |
+| VM.Audit | | | necesario | necesario | | |
 | VM.Backup | | | | | Requisitos | |
 | VM.PowerMgmt | | | | obligatorio | | |
-| VM.Snapshot | | | | | obligatorio | |
+| VM.Snapshot | | | | | requerido | |
 
 Para limitar el acceso a lo estrictamente necesario, debe crear un nuevo rol personalizado (menú «Permisos» > «Roles»); asígnele un nombre y concédale los privilegios indicados anteriormente.
 A continuación, podrás asignar este rol al usuario a través del menú «Permisos» (en lugar del rol «Administrador», por tanto).

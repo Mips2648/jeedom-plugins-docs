@@ -57,8 +57,8 @@ In the "Permissions" main menu, click "Add," then "User permission," and fill ou
 
 It is not recommended to assign the "Administrator" role to the "Jeedom" user; the minimum privileges required for all plugin features to function are as follows:
 
-| Permissions | Node: Info | Node: Actions | KVM & LXC: Info | KVM & LXC: Actions | KVM & LXC: Backup & Snapshot | Storage: Info |
-|-------------------------|--------------|----------------|------------------|--------------------|------------------------------|-----------------|
+| Privileges | Node: Info | Node: Actions | VM & LXC: Info | VM & LXC: Actions | VM & LXC: Backup & Snapshot | Storage: Info |
+|-------------------------|--------------|----------------|-----------------|-------------------|-----------------------------|-----------------|
 | Datastore.Allocate | | | | | required | |
 | Datastore.AllocateSpace | | | | | required | |
 | Datastore.Audit | | | | | required | required |

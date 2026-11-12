@@ -75,14 +75,30 @@ A continuación, podrás asignar este rol al usuario a través del menú «Permi
 
 Encontrarás más información aquí: <https://pve.proxmox.com/wiki/User_Management>
 
+## Creación de un token de API
+
+El complemento puede autenticarse con una contraseña o con un token de la API de Proxmox. El token pertenece a un usuario de Proxmox: créalo para el usuario dedicado a Jeedom, en el menú «Permisos» de Proxmox y, a continuación, en la gestión de tokens de dicho usuario.
+
+Al crearlo, Proxmox muestra una sola vez el secreto del token. Cópialo inmediatamente para introducirlo en Jeedom. En el complemento, introduce el nombre del usuario propietario en «Usuario», su reino en «Reino», solo el identificador del token en «ID del token» y el secreto mostrado por Proxmox en «Secreto». El campo «Token ID» no debe contener el nombre de usuario, el reino, el carácter `!` ni el secreto.
+
+### Permisos del token
+
+Por defecto, Proxmox crea los tokens con la separación de privilegios activada. En este modo, los permisos efectivos del token son la intersección entre los permisos del usuario propietario y los asignados al token: por lo tanto, el token no puede tener más derechos que su usuario, y sus derechos pueden restringirse por separado.
+
+Para que el token funcione, asigne tanto al usuario como al token los permisos necesarios para las funciones del complemento. Puede reutilizar el rol personalizado que contiene los privilegios enumerados en la sección anterior, asignándolo primero al usuario y luego al token en las rutas correspondientes (por ejemplo, `/`). La asignación al token se realiza en la gestión de permisos de Proxmox seleccionando el token como sujeto. Si decide desactivar la separación de privilegios, el token heredará los permisos del usuario; esta opción otorga más derechos al token y no es necesaria si sus permisos se configuran por separado.
+
+Consulta la documentación de Proxmox sobre los [tokens de la API](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_tokens) y la [gestión de permisos](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_permission_management) para conocer los detalles y las consecuencias de la separación de privilegios.
+
 # Configuración del complemento
 
 Hay que introducir la siguiente información en la configuración del complemento:
 
 - Dirección IP de tu servidor (o de uno de los nodos del clúster, si tienes varios). Puedes configurar una lista de direcciones IP para cada uno de los nodos **de un mismo clúster o centro de datos**, separadas por una coma.
 - el puerto, tan diferente del puerto predeterminado (8006)
-- un nombre de usuario y su contraseña
-- el dominio de autenticación del usuario, tan diferente de «pve» ( = «Proxmox VE authentication server», dominio predeterminado para los usuarios creados localmente en Proxmox; véase la documentación de Proxmox)
+- un nombre de usuario y su dominio de autenticación, tan diferente de «pve» (que significa «Proxmox VE authentication server», el dominio predeterminado para los usuarios creados localmente en Proxmox)
+- o bien la contraseña de este usuario, o bien el ID del token y el secreto del token creado para este usuario
+
+Si se han rellenado tanto el «Token ID» como el «Secret», el complemento utiliza el token, aunque también se haya configurado una contraseña. Para utilizar la contraseña, deja vacíos ambos campos del token. No se utiliza un token incompleto.
 
 ![Configuración del complemento](../images/plugin_config.png "Configuration plugin")
 

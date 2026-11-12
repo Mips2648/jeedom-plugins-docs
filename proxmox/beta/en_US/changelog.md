@@ -10,6 +10,7 @@ pluginId: proxmox
 ## 2026-10-26
 
 - Option to configure Proxmox resource tags to include; if configured, only the corresponding devices will be created in Jeedom
+- Added API token authentication; [See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 - Proxmox v9 required
 - Added compatibility with Debian 13 (Trixie)
 - Debian 12 & PHP 8.2+ required
@@ -99,7 +100,7 @@ pluginId: proxmox
   - Sorting resources (same order as in Proxmox: LXC, VM, storage);
   - Ability to perform actions (Restart, Pause, Stop, etc.) on VMs and LXC containers from the dashboard;
 - Added more configuration information about LXC
-- Added info commands for nodes showing the number of VMs/LXCs that are running and stopped ([See the documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
+- Added info commands for nodes showing the number of VMs/LXCs that are running and stopped; ([See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
 - Added a table-style view of the equipment list for Jeedom 4.2
 - Improvement: Devices that are VM and LXC templates now have a different icon to make them easier to identify
 - Improvement: Synchronization has been moved to a daemon to increase the refresh rate; this can be configured in the plugin settings.
@@ -160,7 +161,7 @@ pluginId: proxmox
 ## 2019-11-05
 
 - Adding additional information about storage devices
-- Added a "Backup" command for VMs (check the documentation for all options)
+- Added a "Backup" command for VMs; [Check the documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) for all options
 
 ## 2019-10-28
 
@@ -176,7 +177,7 @@ pluginId: proxmox
 
 - Added support for Linux containers (LXC)
 - Added a command to take a snapshot on VM and LXC
-- Added Start, Stop, and Stop Immediately commands for VM and LXC (see the documentation)
+- Added Start, Stop, and Stop Immediately commands for VM and LXC; [See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 - Adding a "Refresh" command to VM and LXC
 - Fixes a connection issue with Proxmox when the certificate is invalid
 

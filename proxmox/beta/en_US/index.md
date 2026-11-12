@@ -75,14 +75,30 @@ You can then assign this role to the user via the "Permissions" menu (instead of
 
 You can find more information here: <https://pve.proxmox.com/wiki/User_Management>
 
+## Creating an API token
+
+The plugin can authenticate using a password or a Proxmox API token. The token belongs to a Proxmox user: create it for the user dedicated to Jeedom in the "Permissions" menu in Proxmox, then in that user's token management settings.
+
+When creating the token, Proxmox displays the token secret only once. Copy it immediately so you can enter it in Jeedom. In the plugin, enter the owner’s username in “Username,” their realm in “Realm,” the token ID alone in “Token ID,” and the secret displayed by Proxmox in “Secret.” The “Token ID” field must not contain the user’s name, the realm, the `!` character, or the secret.
+
+### Token permissions
+
+By default, Proxmox creates tokens with privilege separation enabled. In this mode, the token’s actual permissions are the intersection of the owner user’s permissions and those assigned to the token: therefore, the token cannot have more rights than its user, and its rights can be restricted separately.
+
+For the token to work, grant both the user and the token the permissions required for the plugin’s functions. You can reuse the custom role containing the privileges listed in the previous section by assigning it to the user and then to the token on the relevant paths (for example, `/`). To assign the role to the token, go to Proxmox’s permissions management and select the token as the subject. If you choose to disable privilege separation, the token inherits the user’s permissions; this option grants the token more rights and is not necessary if its permissions are configured separately.
+
+See the Proxmox documentation on [API tokens](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_tokens) and [permission management](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_permission_management) for details and the effects of privilege separation.
+
 # Plugin configuration
 
 You must enter the following information in the plugin's configuration:
 
 - Your server's IP address (or that of one of the cluster nodes, if you have multiple). You can configure a comma-separated list of IP addresses for each node **in the same cluster or data center**.
 - a port that is different from the default port (8006)
-- a username and password
-- the user authentication realm, which is different from "pve" (="Proxmox VE authentication server," the default realm for users created locally on Proxmox; see the Proxmox documentation)
+- a username and its authentication realm, which is different from "pve" (="Proxmox VE authentication server," the default realm for users created locally on Proxmox)
+- either this user's password, or the Token ID and Secret of the token created for this user
+
+If both the Token ID and Secret are entered, the plugin uses the token, even if a password is also configured. To use the password, clear both token fields. An incomplete token is not used.
 
 ![Plugin configuration](../images/plugin_config.png "Configuration plugin")
 

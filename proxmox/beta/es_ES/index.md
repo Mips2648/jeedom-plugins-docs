@@ -56,7 +56,7 @@ Encontrarás más información aquí: <https://pve.proxmox.com/wiki/User_Managem
 
 ## Métodos de autenticación
 
-El complemento ofrece dos modos de autenticación. Elige uno de ellos en la configuración del complemento.
+El complemento ofrece dos modos de autenticación: mediante token de API o mediante contraseña.
 
 > **Consejo**
 >

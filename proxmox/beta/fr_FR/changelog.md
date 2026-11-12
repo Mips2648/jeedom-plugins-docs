@@ -12,6 +12,7 @@ pluginId: proxmox
 - Possibilité de configurer des tags de ressources proxmox à inclure; si configuré, uniquement les équipements correspondant seront créés dans Jeedom
 - Proxmox v9 requis
 - Ajout compatibilité Debian 13 (Trixie)
+- Debian 12 & PHP 8.2+ requis
 - Jeedom v4.5 requis
 - Mise à jour de dépendances
 

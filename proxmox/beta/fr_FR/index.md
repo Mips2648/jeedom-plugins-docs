@@ -14,11 +14,12 @@ Il dispose également d'une page santé spécifique résumant l'ensemble des inf
 
 # Versions supportées
 
-| Composant | Version                                 |
-|-----------|-----------------------------------------|
-| Debian    | Bullseye(11), Bookworm(12) & Trixie(13) |
-| Jeedom    | >= 4.5                                  |
-| Proxmox   | >= 9.2                                  |
+| Composant | Version                   |
+|-----------|---------------------------|
+| Debian    | Bookworm(12) & Trixie(13) |
+| Jeedom    | >= 4.5                    |
+| PHP       | >= 8.2                    |
+| Proxmox   | >= 9.2                    |
 
 # Installation
 

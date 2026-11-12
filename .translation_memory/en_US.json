@@ -1146,6 +1146,7 @@
     "Configuration": "Setup",
     "Configuration avancée": "Advanced Settings",
     "Configuration d'un équipement": "Setting Up a device",
+    "Configuration de Proxmox": "Proxmox Configuration",
     "Configuration de la VMC": "Setting Up the Mechanical Ventilation System",
     "Configuration de plusieurs commandes de production par équipement: puissance, énergie par période et énergie totale": "Configuration of multiple production commands per piece of equipment: power, energy per period, and total energy",
     "Configuration des commandes": "Configuring Commands",

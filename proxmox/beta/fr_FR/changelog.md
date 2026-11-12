@@ -10,6 +10,7 @@ pluginId: proxmox
 ## 2026-10-26
 
 - Possibilité de configurer des tags de ressources proxmox à inclure; si configuré, uniquement les équipements correspondant seront créés dans Jeedom
+- Ajout de l'authentification par token API; [Voir documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 - Proxmox v9 requis
 - Ajout compatibilité Debian 13 (Trixie)
 - Debian 12 & PHP 8.2+ requis
@@ -99,7 +100,7 @@ pluginId: proxmox
   - Tri des ressources (même ordre que sous Proxmox: LXC, VM, stockage);
   - Possibilité d'exécuter les actions ((re)Démarrer, Pause, Arrêter...) sur les VMs et LXC depuis le panel;
 - Ajout de plus d'information de config sur les LXC
-- Ajout de commandes info sur les noeuds donnant le nombre de VM/LXC démarré et arrêté ([Voir la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
+- Ajout de commandes info sur les noeuds donnant le nombre de VM/LXC démarré et arrêté; ([Voir documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}))
 - Ajout de la présentation en mode tableau de la liste des équipements pour Jeedom 4.2
 - Amélioration : Les équipements qui sont des templates de VM et de LXC ont une icône différente pour les identifier plus facilement
 - Amélioration : passage de la synchronisation en démon pour pouvoir augmenter la fréquence d'actualisation, celle-ci est paramétrable dans la configuration du plugin.
@@ -160,7 +161,7 @@ pluginId: proxmox
 ## 2019-11-05
 
 - Ajout d'information supplémentaire sur les équipements de stockage
-- Ajout d'une commande Backup pour les VMs (vérifier la documentation pour toutes les options)
+- Ajout d'une commande Backup pour les VMs; [Vérifiez la documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}}) pour toutes les options
 
 ## 2019-10-28
 
@@ -176,7 +177,7 @@ pluginId: proxmox
 
 - Ajout du support des containers linux (LXC)
 - Ajout d'une commande pour prendre un snapshot sur VM et LXC
-- Ajout d'une commande Démarrer, Arrêter et Arrêter immédiatement sur VM et LXC (voir la documentation)
+- Ajout d'une commande Démarrer, Arrêter et Arrêter immédiatement sur VM et LXC; [Voir documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})
 - Ajout d'une commande Rafraichir sur VM et LXC
 - Fixe problème de connexion à Proxmox quand le certificat est invalide
 

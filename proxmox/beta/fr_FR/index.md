@@ -75,14 +75,30 @@ Vous pourrez ensuite assigner ce rôle à l'utilisateur via le menu "Permissions
 
 Vous trouverez plus d'information ici: <https://pve.proxmox.com/wiki/User_Management>
 
+## Création d'un token API
+
+Le plugin peut s'authentifier avec un mot de passe ou avec un token API Proxmox. Le token appartient à un utilisateur Proxmox : créez-le pour l'utilisateur dédié à Jeedom, dans le menu "Permissions" de Proxmox, puis dans la gestion des tokens de cet utilisateur.
+
+Lors de la création, Proxmox affiche une seule fois le secret du token. Copiez-le immédiatement pour le saisir dans Jeedom. Dans le plugin, renseignez le nom de l'utilisateur propriétaire dans "Utilisateur", son royaume dans "Royaume", l'identifiant du token seul dans "Token ID" et le secret affiché par Proxmox dans "Secret". Le champ "Token ID" ne doit pas contenir le nom de l'utilisateur, le royaume, le caractère `!` ni le secret.
+
+### Permissions du token
+
+Par défaut, Proxmox crée les tokens avec la séparation des privilèges activée. Dans ce mode, les permissions effectives du token sont l'intersection des permissions de l'utilisateur propriétaire et de celles attribuées au token : le token ne peut donc pas avoir plus de droits que son utilisateur, et ses droits peuvent être restreints séparément.
+
+Pour que le token fonctionne, attribuez à la fois à l'utilisateur et au token les permissions nécessaires aux fonctions du plugin. Vous pouvez réutiliser le rôle personnalisé contenant les privilèges listés dans la section précédente, en l'assignant à l'utilisateur puis au token sur les chemins concernés (par exemple `/`). L'assignation au token se fait dans la gestion des permissions de Proxmox en sélectionnant le token comme sujet. Si vous choisissez de désactiver la séparation des privilèges, le token hérite des permissions de l'utilisateur; ce choix accorde davantage de droits au token et n'est pas nécessaire si ses permissions sont configurées séparément.
+
+Consultez la documentation Proxmox sur les [tokens API](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_tokens) et la [gestion des permissions](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_permission_management) pour les détails et les effets de la séparation des privilèges.
+
 # Configuration du plugin
 
 Il faut saisir les informations suivantes dans la configuration du plugin:
 
 - adresse IP de votre serveur (ou d'un des noeuds du cluster si vous en avez plusieurs). Vous pouvez configurer une liste d'IP vers chacun des noeuds **d'un même cluster / datacenter**, séparée par une virgule.
 - le port si différent du port par défaut (8006)
-- un nom d'utilisateur et son mot de passe
-- le royaume d'authentification de l'utilisateur, si différent de "pve" (="Proxmox VE authentication server", royaume par défaut pour les utilisateurs créés localement sur Proxmox, voir documentation de Proxmox)
+- un nom d'utilisateur et son royaume d'authentification, si différent de "pve" (="Proxmox VE authentication server", royaume par défaut pour les utilisateurs créés localement sur Proxmox)
+- soit le mot de passe de cet utilisateur, soit le Token ID et le Secret du token créé pour cet utilisateur
+
+Si le Token ID et le Secret sont tous deux renseignés, le plugin utilise le token, même si un mot de passe est également configuré. Pour utiliser le mot de passe, videz les deux champs du token. Un token incomplet n'est pas utilisé.
 
 ![Configuration plugin](../images/plugin_config.png "Configuration plugin")
 

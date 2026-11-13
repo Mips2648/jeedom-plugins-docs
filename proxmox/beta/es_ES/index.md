@@ -52,6 +52,9 @@ No se recomienda asignar el rol de «Administrador» al usuario o al token utili
 
 Para limitar el acceso a lo estrictamente necesario, crea un rol personalizado en «Permisos» > «Roles» y, a continuación, asígnale los privilegios indicados anteriormente. Dependiendo del método de autenticación elegido, asignarás este rol al usuario, o bien al usuario propietario y al token de la API.
 
+Ejemplo:\
+![Creación del rol](../images/proxmox_role.png "Création du rôle")
+
 Encontrarás más información aquí: <https://pve.proxmox.com/wiki/User_Management>
 
 ## Métodos de autenticación
@@ -66,9 +69,23 @@ El complemento ofrece dos modos de autenticación: mediante token de API o media
 
 Se recomienda este modo. Crea un token para el usuario de Proxmox que elijas en la gestión de tokens de dicho usuario. Mantén activada la separación de privilegios para que los derechos del token se puedan gestionar de forma independiente. Ten en cuenta que el token sigue estando limitado por los permisos de su propietario.
 
-En «Permisos», comprueba que el usuario propietario del token disponga, como mínimo, de permisos equivalentes a los del rol personalizado. A continuación, añade un permiso para el propio token y asígnale ese rol, seleccionando el token como sujeto. Con la separación de privilegios activada, los derechos efectivos del token son la intersección entre los derechos del propietario y los del token.
+> **Consejo**
+>
+> En este modo, es aceptable crear el token para el usuario `root@pam` siempre y cuando hayas limitado correctamente los permisos del token a lo estrictamente necesario para su uso en el complemento.
 
-Al crearlo, Proxmox muestra una sola vez el secreto del token. Cópialo inmediatamente para introducirlo en Jeedom. En el complemento, introduce el nombre del usuario propietario en «Usuario», su reino en «Reino», el identificador del token en «ID del token» y el secreto mostrado por Proxmox en «Secreto».
+Ejemplo:\
+![Creación del token](../images/proxmox_token.png "Création du token")
+
+Al crearlo, Proxmox muestra una sola vez el secreto del token. Cópialo inmediatamente para introducirlo en Jeedom.\
+En el complemento, introduce el nombre del usuario propietario en «Usuario», su reino en «Reino», el identificador del token en «ID del token» y el secreto que muestra Proxmox en «Secreto».
+
+> **Atención**
+>
+> Proxmox utiliza a veces los términos «Token ID» y «Token name» de forma intercambiable: pueden referirse al nombre elegido para el token (por ejemplo, `jeedom`) o a su identificador técnico completo, con el formato `USER@[REALM]![TOKEN_NAME]`. En el campo «Token ID» de Jeedom, introduce únicamente el nombre elegido, por ejemplo, `jeedom`.
+
+En «Permisos», comprueba que el usuario propietario del token disponga, como mínimo, de permisos equivalentes a los del rol personalizado (el usuario puede ser administrador). A continuación, añade un permiso para el propio token y asígnale el rol creado anteriormente. Con la separación de privilegios activada, los derechos efectivos del token son la intersección entre los derechos del propietario y los del token.
+
+![Token de permisos](../images/token_permissions.png "Permissions token")
 
 Consulta la documentación de Proxmox sobre los [tokens de la API](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_tokens) y la [gestión de permisos](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_permission_management) para conocer los detalles y las consecuencias de la separación de privilegios.
 
@@ -78,39 +95,37 @@ Si eliges la autenticación mediante contraseña, crea una cuenta de Proxmox par
 
 Al crearla, selecciona el ámbito «Proxmox VE authentication server» para configurar la contraseña en Proxmox:
 
-![Usuario de Proxmox](../images/proxmox_user.png "Proxmox user")
+![Creación de usuario](../images/proxmox_user.png "Création de l'utilisateur")
 
 Anota el nombre de usuario, el reino y la contraseña para introducirlos en la configuración del complemento. No actives la autenticación de dos factores (2FA) para esta cuenta: el modo de autenticación mediante contraseña del complemento no la admite.
 
 En el menú principal «Permisos», haz clic en «Añadir» y, a continuación, en «Permisos de usuario» para asignar un rol (consulta la documentación de Proxmox para obtener más detalles):
 
-![Permisos de Proxmox](../images/proxmox_permissions.png "Proxmox permissions")
+![Permisos de usuario](../images/user_permissions.png "Permissions utilisateur")
 
 # Configuración del complemento
 
 Hay que introducir la siguiente información en la configuración del complemento:
 
-- Dirección IP de tu servidor (o de uno de los nodos del clúster, si tienes varios). Puedes configurar una lista de direcciones IP para cada uno de los nodos **de un mismo clúster o centro de datos**, separadas por una coma.
+- Nombre de host, dominio o dirección IP de tu servidor (o de uno de los nodos del clúster si tienes varios). Puede configurar una lista de valores para cada uno de los nodos **de un mismo clúster o centro de datos**, separados por una coma; por ejemplo: `pve1,pve2,192.168.0.100,192.168.0.200`
 - el puerto, tan diferente del puerto predeterminado (8006)
 - un nombre de usuario y su dominio de autenticación, tan diferente de «pve» (que significa «Proxmox VE authentication server», el dominio predeterminado para los usuarios creados localmente en Proxmox)
-- el ID del token y el secreto del token de la API (método recomendado), o la contraseña del usuario de Proxmox
+- el ID del token y la clave secreta (modo recomendado),
+- o la contraseña del usuario de Proxmox
 
 Si se han rellenado tanto el «Token ID» como el «Secret», el complemento utiliza el token, aunque también se haya configurado una contraseña. Para utilizar la contraseña, deja vacíos ambos campos del token. No se utiliza un token incompleto.
 
 ![Configuración del complemento](../images/plugin_config.png "Configuration plugin")
 
-Puedes comprobar si la configuración del plugin es correcta a través de la página de estado (menú Análisis > Estado)
+Puedes definir etiquetas que se deben incluir o excluir para filtrar las nuevas máquinas virtuales y los nuevos contenedores creados en Jeedom. Si se configuran etiquetas para su inclusión, solo se crearán los recursos que tengan al menos una de esas etiquetas. No se creará ningún recurso que tenga una etiqueta excluida.
 
-![Complemento de salud](../images/plugin_health.png "Santé plugin")
+También puedes elegir el objeto principal por defecto al que vincular los dispositivos para no tener que moverlos después. El complemento no lo asignará si ya existe un dispositivo con el mismo nombre en ese objeto.
 
-Si la conexión se establece correctamente, se mostrará la versión de tu servidor Proxmox.
+Por fin puedes ajustar el intervalo de actualización de la información, que por defecto es de 30 segundos.
 
-También puedes configurar el objeto en el que se crearán los dispositivos para no tener que moverlos después. El complemento intentará asignar el objeto principal al dispositivo, salvo que ya exista un dispositivo con el mismo nombre para ese objeto.
+Guarda la configuración después de cada modificación antes de iniciar el demonio. Si la configuración es correcta, su estado seguirá siendo «OK».
 
-Por último, puedes elegir el intervalo de actualización de la información, que por defecto es de 30 segundos.
-
-También puedes activar el panel del tablero de control, al que podrás acceder a través del menú *Inicio*
-
+También puedes activar el panel del tablero de control, al que podrás acceder a través del menú *Inicio*:\
 ![Panel de menú](../images/panel_menu.png "Menu panel")
 
 # Panel

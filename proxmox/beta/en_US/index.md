@@ -52,6 +52,9 @@ It is not recommended to assign the "Administrator" role to the user or token us
 
 To limit access to only what is strictly necessary, create a custom role in "Permissions" > "Roles," then grant it the privileges listed above. Depending on the authentication mode you choose, you will assign this role to the user, or to the owner user and the API token.
 
+Example:\
+![Creating the role](../images/proxmox_role.png "Création du rôle")
+
 You can find more information here: <https://pve.proxmox.com/wiki/User_Management>
 
 ## Authentication Modes
@@ -66,9 +69,23 @@ The plugin offers two authentication modes: via API token or password.
 
 This mode is recommended. Create a token for the Proxmox user of your choice in that user's token management settings. Leave "Separation of Privileges" enabled so that the token's permissions can be managed independently. Please note that the token remains limited by its owner's permissions.
 
-In "Permissions," verify that the user who owns the token has permissions at least equivalent to those of the custom role. Then add a permission for the token itself and assign that role to it by selecting the token as the subject. With privilege separation enabled, the token's effective permissions are the intersection of the owner's permissions and the token's permissions.
+> **Tip**
+>
+> In this mode, it is acceptable to create the token for the `root@pam` user if you have strictly limited the token's access to what is strictly necessary for your use within the plugin.
 
-When you create the token, Proxmox displays the token secret only once. Copy it immediately so you can enter it in Jeedom. In the plugin, enter the owner’s username in “User,” their realm in “Realm,” the token ID in “Token ID,” and the secret displayed by Proxmox in “Secret.”
+Example:\
+![Token Creation](../images/proxmox_token.png "Création du token")
+
+When you create it, Proxmox displays the token secret only once. Copy it immediately so you can enter it in Jeedom.\
+In the plugin, enter the owner's username in "User," their realm in "Realm," the token ID in "Token ID," and the secret displayed by Proxmox in "Secret."
+
+> **Attention**
+>
+> Proxmox sometimes uses the terms “Token ID” and “Token name” interchangeably: they can refer to the name chosen for the token (for example, `jeedom`) or its full technical identifier, in the format `USER@[REALM]![TOKEN_NAME]`. In the “Token ID” field in Jeedom, enter only the chosen name, for example `jeedom`.
+
+In "Permissions," verify that the user who owns the token has permissions at least equivalent to those of the custom role (the user may be an administrator). Then add a permission for the token itself and assign it the role you created earlier. With privilege separation enabled, the token's actual permissions are the intersection of the owner's permissions and the token's permissions.
+
+![Permissions token](../images/token_permissions.png "Permissions token")
 
 See the Proxmox documentation on [API tokens](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_tokens) and [permission management](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_permission_management) for details and the effects of privilege separation.
 
@@ -78,39 +95,37 @@ If you choose password authentication, create a Proxmox account for Jeedom under
 
 When creating the account, select the "Proxmox VE authentication server" realm to set the password in Proxmox:
 
-![Proxmox user](../images/proxmox_user.png "Proxmox user")
+![User Creation](../images/proxmox_user.png "Création de l'utilisateur")
 
 Save the username, realm, and password to enter them in the plugin's configuration. Do not enable two-factor authentication (2FA) for this account: it is not supported by the plugin's password-based authentication mode.
 
 In the "Permissions" main menu, click "Add" and then "User permission" to assign a role (see the Proxmox documentation for more details):
 
-![Proxmox permissions](../images/proxmox_permissions.png "Proxmox permissions")
+![User Permissions](../images/user_permissions.png "Permissions utilisateur")
 
 # Plugin configuration
 
 You must enter the following information in the plugin's configuration:
 
-- Your server's IP address (or that of one of the cluster nodes, if you have multiple). You can configure a comma-separated list of IP addresses for each node **in the same cluster or data center**.
+- Hostname, domain, or IP address of your server (or one of the nodes in the cluster if you have multiple). You can configure a comma-separated list of values for each node **in the same cluster or data center**; for example: `pve1,pve2,192.168.0.100,192.168.0.200`
 - a port that is different from the default port (8006)
 - a username and its authentication realm, which is different from "pve" (="Proxmox VE authentication server," the default realm for users created locally on Proxmox)
-- the API token ID and secret (recommended mode), or the Proxmox user's password
+- the Token ID and secret (recommended mode),
+- or the Proxmox user password
 
 If both the Token ID and Secret are entered, the plugin uses the token, even if a password is also configured. To use the password, clear both token fields. An incomplete token is not used.
 
 ![Plugin configuration](../images/plugin_config.png "Configuration plugin")
 
-You can check whether the plugin is configured correctly using the Health page (Analysis > Health menu)
+You can define tags to include or exclude in order to filter new virtual machines and containers created in Jeedom. If tags are configured for inclusion, only resources bearing at least one of these tags will be created. A resource bearing an excluded tag will not be created.
 
-![Health plugin](../images/plugin_health.png "Santé plugin")
+You can also choose the default parent object to which the devices will be linked so that you don't have to move them later. The plugin will not assign them if a device with the same name already exists in that object.
 
-If the connection is successful, the version of your Proxmox server will be displayed.
+You can now adjust the refresh interval for information, which defaults to 30 seconds.
 
-You can also configure the object in which the devices will be created so you don't have to move them later. The plugin will attempt to assign the parent to the device unless a device with the same name already exists for that object.
+Save the configuration after each change before starting the daemon. If your configuration is correct, its status will remain "OK."
 
-Finally, you can choose the refresh interval for the information, which is set to 30 seconds by default.
-
-You can also enable the dashboard panel, which will be accessible via the *Home* menu
-
+You can also enable the dashboard panel, which will be accessible via the *Home* menu:\
 ![Menu panel](../images/panel_menu.png "Menu panel")
 
 # Panel

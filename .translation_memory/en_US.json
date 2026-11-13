@@ -2093,7 +2093,7 @@
     "Program Running": "Program Running",
     "Programmation manuelle": "Manual programming",
     "Protection contre les configurations incorrectes": "Protection against incorrect configurations",
-    "Proxmox emploie parfois les termes « Token ID » et « Token name » de manière interchangeable : ils peuvent désigner le nom choisi pour le token (par exemple `jeedom`) ou son identifiant technique complet, au format `USER@[REALM]![TOKEN_NAME]`. Dans le champ « Token ID » de Jeedom, renseignez uniquement le nom choisi, par exemple `jeedom`.": "Proxmox sometimes uses the terms “Token ID” and “Token name” interchangeably: they can refer to the name chosen for the token (for example, `jeedom`) or its full technical identifier, in the format `USER@[REALM]![TOKEN_NAME]`. In the “Token ID” field in Jeedom, enter only the chosen name, for example `jeedom`.",
+    "Proxmox emploie parfois les termes « Token ID » et « Token name » de manière interchangeable : ils peuvent désigner le nom choisi pour le token (par exemple `jeedom`) ou son identifiant technique complet, au format `[USER]@[REALM]![TOKEN_NAME]`. Dans le champ « Token ID » de Jeedom, renseignez uniquement le nom choisi, par exemple `jeedom`.": "Proxmox sometimes uses the terms “Token ID” and “Token name” interchangeably: they can refer to the name chosen for the token (for example, `jeedom`) or its full technical identifier, in the format `[USER]@[REALM]![TOKEN_NAME]`. In the “Token ID” field in Jeedom, enter only the chosen name, for example `jeedom`.",
     "Proxmox permissions": "Proxmox permissions",
     "Proxmox user": "Proxmox user",
     "Proxmox v9 requis": "Proxmox v9 required",

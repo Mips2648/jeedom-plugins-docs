@@ -81,7 +81,7 @@ In the plugin, enter the owner's username in "User," their realm in "Realm," the
 
 > **Attention**
 >
-> Proxmox sometimes uses the terms “Token ID” and “Token name” interchangeably: they can refer to the name chosen for the token (for example, `jeedom`) or its full technical identifier, in the format `USER@[REALM]![TOKEN_NAME]`. In the “Token ID” field in Jeedom, enter only the chosen name, for example `jeedom`.
+> Proxmox sometimes uses the terms “Token ID” and “Token name” interchangeably: they can refer to the name chosen for the token (for example, `jeedom`) or its full technical identifier, in the format `[USER]@[REALM]![TOKEN_NAME]`. In the “Token ID” field in Jeedom, enter only the chosen name, for example `jeedom`.
 
 In "Permissions," verify that the user who owns the token has permissions at least equivalent to those of the custom role (the user may be an administrator). Then add a permission for the token itself and assign it the role you created earlier. With privilege separation enabled, the token's actual permissions are the intersection of the owner's permissions and the token's permissions.
 

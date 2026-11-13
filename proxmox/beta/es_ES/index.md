@@ -81,7 +81,7 @@ En el complemento, introduce el nombre del usuario propietario en «Usuario», s
 
 > **Atención**
 >
-> Proxmox utiliza a veces los términos «Token ID» y «Token name» de forma intercambiable: pueden referirse al nombre elegido para el token (por ejemplo, `jeedom`) o a su identificador técnico completo, con el formato `USER@[REALM]![TOKEN_NAME]`. En el campo «Token ID» de Jeedom, introduce únicamente el nombre elegido, por ejemplo, `jeedom`.
+> Proxmox utiliza a veces los términos «Token ID» y «Token name» de forma intercambiable: pueden referirse al nombre elegido para el token (por ejemplo, `jeedom`) o a su identificador técnico completo, con el formato `[USER]@[REALM]![TOKEN_NAME]`. En el campo «Token ID» de Jeedom, introduce únicamente el nombre elegido, por ejemplo, `jeedom`.
 
 En «Permisos», comprueba que el usuario propietario del token disponga, como mínimo, de permisos equivalentes a los del rol personalizado (el usuario puede ser administrador). A continuación, añade un permiso para el propio token y asígnale el rol creado anteriormente. Con la separación de privilegios activada, los derechos efectivos del token son la intersección entre los derechos del propietario y los del token.
 

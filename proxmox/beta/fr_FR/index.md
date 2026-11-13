@@ -81,7 +81,7 @@ Dans le plugin, renseignez le nom de l'utilisateur propriétaire dans "Utilisate
 
 > **Attention**
 >
-> Proxmox emploie parfois les termes « Token ID » et « Token name » de manière interchangeable : ils peuvent désigner le nom choisi pour le token (par exemple `jeedom`) ou son identifiant technique complet, au format `USER@[REALM]![TOKEN_NAME]`. Dans le champ « Token ID » de Jeedom, renseignez uniquement le nom choisi, par exemple `jeedom`.
+> Proxmox emploie parfois les termes « Token ID » et « Token name » de manière interchangeable : ils peuvent désigner le nom choisi pour le token (par exemple `jeedom`) ou son identifiant technique complet, au format `[USER]@[REALM]![TOKEN_NAME]`. Dans le champ « Token ID » de Jeedom, renseignez uniquement le nom choisi, par exemple `jeedom`.
 
 Dans "Permissions", vérifiez que l'utilisateur propriétaire du token dispose au minimum de permissions équivalentes à celles du rôle personnalisé (l'utilisateur peut être administrateur). Ajoutez ensuite une permission pour le token lui-même et attribuez-lui le rôle précédemment créé. Avec la séparation des privilèges activée, les droits effectifs du token sont l'intersection des droits du propriétaire et de ceux du token.
 

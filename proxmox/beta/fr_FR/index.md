@@ -52,6 +52,9 @@ Il n'est pas recommandé de donner le rôle "Administrator" à l'utilisateur ou 
 
 Pour limiter les accès à ce qui est strictement nécessaire, créez un rôle personnalisé dans "Permissions" > "Roles", puis accordez-lui les privilèges listés ci-dessus. Selon le mode d'authentification choisi, vous attribuerez ce rôle à l'utilisateur, ou à l'utilisateur propriétaire et au token API.
 
+Exemple:\
+![Création du rôle](../images/proxmox_role.png "Création du rôle")
+
 Vous trouverez plus d'information ici: <https://pve.proxmox.com/wiki/User_Management>
 
 ## Modes d'authentification
@@ -66,9 +69,23 @@ Le plugin propose deux modes d'authentification: par token API ou par mot de pas
 
 Ce mode est recommandé. Créez un token pour l'utilisateur Proxmox de votre choix dans la gestion des tokens de cet utilisateur. Laissez activée la séparation des privilèges afin que les droits du token puissent être gérés indépendamment. Attention, le token reste limité par les permissions de son propriétaire.
 
-Dans "Permissions", vérifiez que l'utilisateur propriétaire du token dispose au minimum de permissions équivalentes à celles du rôle personnalisé. Ajoutez ensuite une permission pour le token lui-même et attribuez-lui ce rôle, en sélectionnant le token comme sujet. Avec la séparation des privilèges activée, les droits effectifs du token sont l'intersection des droits du propriétaire et de ceux du token.
+> **Tip**
+>
+> Dans ce mode, il est acceptable de créer le token sur l'utilisateur `root@pam` si vous avez bien limité les accès du token à ce qui est scrictement nécessaire pour votre utilisation dans le plugin.
 
-Lors de la création, Proxmox affiche une seule fois le secret du token. Copiez-le immédiatement pour le saisir dans Jeedom. Dans le plugin, renseignez le nom de l'utilisateur propriétaire dans "Utilisateur", son royaume dans "Royaume", l'identifiant du token dans "Token ID" et le secret affiché par Proxmox dans "Secret".
+Exemple:\
+![Création du token](../images/proxmox_token.png "Création du token")
+
+Lors de la création, Proxmox affiche une seule fois le secret du token. Copiez-le immédiatement pour le saisir dans Jeedom.\
+Dans le plugin, renseignez le nom de l'utilisateur propriétaire dans "Utilisateur", son royaume dans "Royaume", l'identifiant du token dans "Token ID" et le secret affiché par Proxmox dans "Secret".
+
+> **Attention**
+>
+> Proxmox emploie parfois les termes « Token ID » et « Token name » de manière interchangeable : ils peuvent désigner le nom choisi pour le token (par exemple `jeedom`) ou son identifiant technique complet, au format `USER@[REALM]![TOKEN_NAME]`. Dans le champ « Token ID » de Jeedom, renseignez uniquement le nom choisi, par exemple `jeedom`.
+
+Dans "Permissions", vérifiez que l'utilisateur propriétaire du token dispose au minimum de permissions équivalentes à celles du rôle personnalisé (l'utilisateur peut être administrateur). Ajoutez ensuite une permission pour le token lui-même et attribuez-lui le rôle précédemment créé. Avec la séparation des privilèges activée, les droits effectifs du token sont l'intersection des droits du propriétaire et de ceux du token.
+
+![Permissions token](../images/token_permissions.png "Permissions token")
 
 Consultez la documentation Proxmox sur les [tokens API](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_tokens) et la [gestion des permissions](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_permission_management) pour les détails et les effets de la séparation des privilèges.
 
@@ -78,39 +95,37 @@ Si vous choisissez l'authentification par mot de passe, créez un compte Proxmox
 
 Lors de la création, sélectionnez le realm "Proxmox VE authentication server" pour définir le mot de passe dans Proxmox:
 
-![Proxmox user](../images/proxmox_user.png "Proxmox user")
+![Création de l'utilisateur](../images/proxmox_user.png "Création de l'utilisateur")
 
 Conservez le nom d'utilisateur, son realm et le mot de passe pour les saisir dans la configuration du plugin. N'activez pas la double authentification (2FA) pour ce compte: elle n'est pas prise en charge par le mode d'authentification par mot de passe du plugin.
 
 Dans le menu principal "Permissions", cliquez sur "Add" puis "User permission" pour attribuer un rôle (voir la documentation de Proxmox pour plus de détails):
 
-![Proxmox permissions](../images/proxmox_permissions.png "Proxmox permissions")
+![Permissions utilisateur](../images/user_permissions.png "Permissions utilisateur")
 
 # Configuration du plugin
 
 Il faut saisir les informations suivantes dans la configuration du plugin:
 
-- adresse IP de votre serveur (ou d'un des noeuds du cluster si vous en avez plusieurs). Vous pouvez configurer une liste d'IP vers chacun des noeuds **d'un même cluster / datacenter**, séparée par une virgule.
+- Nom d'hôte, domaine ou adresse IP de votre serveur (ou d'un des noeuds du cluster si vous en avez plusieurs). Vous pouvez configurer une liste de valeur vers chacun des noeuds **d'un même cluster / datacenter**, séparée par une virgule; exemple: `pve1,pve2,192.168.0.100,192.168.0.200`
 - le port si différent du port par défaut (8006)
 - un nom d'utilisateur et son royaume d'authentification, si différent de "pve" (="Proxmox VE authentication server", royaume par défaut pour les utilisateurs créés localement sur Proxmox)
-- le Token ID et le Secret du token API (mode recommandé), ou le mot de passe de l'utilisateur Proxmox
+- le Token ID et le secret (mode recommandé),
+- ou le mot de passe de l'utilisateur Proxmox
 
 Si le Token ID et le Secret sont tous deux renseignés, le plugin utilise le token, même si un mot de passe est également configuré. Pour utiliser le mot de passe, videz les deux champs du token. Un token incomplet n'est pas utilisé.
 
 ![Configuration plugin](../images/plugin_config.png "Configuration plugin")
 
-Vous pouvez vérifier si la configuration du plugin est correcte grâce à la page santé (menu Analyse > Santé)
+Vous pouvez définir des tags à inclure ou à exclure pour filtrer les nouvelles machines virtuelles et les nouveaux containers créés dans Jeedom. Si des tags sont configurés pour l'inclusion, seules les ressources portant au moins l'un de ces tags seront créées. Une ressource portant un tag exclu ne sera pas créée.
 
-![Santé plugin](../images/plugin_health.png "Santé plugin")
+Vous pouvez également choisir l'objet parent par défaut auquel rattacher les équipements afin de ne pas avoir à les déplacer ensuite. Le plugin ne l'assignera pas si un équipement du même nom existe déjà dans cet objet.
 
-Si la connexion est réussie, la version de votre serveur Proxmox sera affichée.
+Vous pouvez enfin régler le délai d'actualisation des informations, de 30 secondes par défaut.
 
-Vous pouvez également configurer l'objet dans lequel seront créer les équipements pour ne pas devoir les déplacer ensuite. Le plugin tentera d'assigner le parent à l'équipement sauf si un équipement du même nom existe déjà pour cet objet.
+Enregistrez la configuration après chaque modification avant de démarrer le démon. Si votre configuration est correcte, son statut restera « OK ».
 
-Enfin, vous pouvez choisir le délai d'actualisation des informations, par défaut à 30s.
-
-Vous pouvez aussi activer le panel pour le dashboard qui sera accessible via le menu *Accueil*
-
+Vous pouvez aussi activer le panel pour le dashboard qui sera accessible via le menu *Accueil*:\
 ![Menu panel](../images/panel_menu.png "Menu panel")
 
 # Panel

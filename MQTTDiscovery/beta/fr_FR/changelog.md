@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Changelog
 
-## 2026-10-11
+## 2026-11-16
 
 - Renforcement de la cohérence et la sécurité du code pour PHP8
 - Corrections sur les composants de type `climate`

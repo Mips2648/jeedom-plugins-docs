@@ -7,9 +7,13 @@ pluginId: kroomba
 
 # Change log
 
+## 2026-11-16
+
+- Dependency update
+
 ## 2026-08-02
 
-- Fix for saving configurations during discovery via the cloud
+- Fixed the saving of configurations during discovery via the cloud
 - Implementation of a new deployment workflow for documentation
 - Dependency update
 - Jeedom v4.5 required

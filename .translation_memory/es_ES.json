@@ -1200,6 +1200,7 @@
     "Correction de la conversion des compteurs de visiteurs avant incrémentation": "Corrección de la conversión de los contadores de visitantes antes del incremento",
     "Correction de la découverte pour les payload contenant un booléen": "Corrección del descubrimiento para las cargas útiles que contienen un valor booleano",
     "Correction de la migration des zones si plusieurs zones existent": "Corrección de la migración de zonas si existen varias zonas",
+    "Correction de la sauvegarde des configs lors de la découverte via le cloud": "Corrección del guardado de configuraciones durante la detección a través de la nube",
     "Correction des types de paramètres dans le fichier de configuration": "Corrección de los tipos de parámetros en el archivo de configuración",
     "Correction des types génériques": "Corrección de los tipos genéricos",
     "Correction du décodage pour compatibilité avec les compteurs suisses": "Corrección de la decodificación para garantizar la compatibilidad con los contadores suizos",

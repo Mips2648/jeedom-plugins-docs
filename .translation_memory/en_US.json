@@ -1200,6 +1200,7 @@
     "Correction de la conversion des compteurs de visiteurs avant incrémentation": "Fixed the conversion of visitor counters before incrementing",
     "Correction de la découverte pour les payload contenant un booléen": "Fixed discovery for payloads containing a Boolean",
     "Correction de la migration des zones si plusieurs zones existent": "Fixed zone migration when multiple zones exist",
+    "Correction de la sauvegarde des configs lors de la découverte via le cloud": "Fixed the saving of configurations during discovery via the cloud",
     "Correction des types de paramètres dans le fichier de configuration": "Correcting parameter types in the configuration file",
     "Correction des types génériques": "Generic Type Correction",
     "Correction du décodage pour compatibilité avec les compteurs suisses": "Decoding correction for compatibility with Swiss meters",

@@ -7,9 +7,13 @@ pluginId: kroomba
 
 # Registro de cambios
 
+## 2026-11-16
+
+- Actualización de dependencias
+
 ## 2026-08-02
 
-- Corrección en el guardado de configuraciones durante la detección a través de la nube
+- Corrección del guardado de configuraciones durante la detección a través de la nube
 - Implantación de un nuevo flujo de trabajo para la documentación
 - Actualización de dependencias
 - Se requiere Jeedom v4.5

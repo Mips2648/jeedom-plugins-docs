@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Registro de cambios
 
-## 2026-10-26
+## 2026-11-16
 
 - Posibilidad de configurar las etiquetas de recursos de Proxmox que se van a incluir; si se configura, solo se crearán en Jeedom los dispositivos correspondientes
 - Se ha añadido la autenticación mediante token de API; [Ver documentación]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

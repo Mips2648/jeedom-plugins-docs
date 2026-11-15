@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Changelog
 
-## 2026-10-26
+## 2026-11-16
 
 - Possibilité de configurer des tags de ressources proxmox à inclure; si configuré, uniquement les équipements correspondant seront créés dans Jeedom
 - Ajout de l'authentification par token API; [Voir documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

@@ -7,7 +7,7 @@ pluginId: MQTTDiscovery
 
 # Change log
 
-## 2026-10-11
+## 2026-11-16
 
 - Improving code consistency and security for PHP 8
 - Fixes for `climate`-type components

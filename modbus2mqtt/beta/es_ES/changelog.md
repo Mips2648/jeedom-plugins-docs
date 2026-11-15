@@ -7,7 +7,7 @@ pluginId: modbus2mqtt
 
 # Registro de cambios
 
-## 2026-10-09
+## 2026-11-16
 
 - Correcciones menores
 - Se requiere Jeedom v4.5

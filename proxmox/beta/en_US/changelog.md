@@ -7,7 +7,7 @@ pluginId: proxmox
 
 # Change log
 
-## 2026-10-26
+## 2026-11-16
 
 - Option to configure Proxmox resource tags to include; if configured, only the corresponding devices will be created in Jeedom
 - Added API token authentication; [See documentation]({{site.baseurl}}/{{page.pluginId}}/{{page.lang}})

@@ -11,10 +11,11 @@ Plugin for integrating Hydrao showerheads.
 
 # Supported Versions
 
-| Component | Version                     |
-|-----------|-----------------------------|
-| Debian    | Bullseye(11) & Bookworm(12) |
-| Jeedom    | >= 4.5                      |
+| Component | Version |
+|-----------|---------------------------|
+| Debian    | Bookworm (12) & Trixie (13) |
+| PHP | >= 8.2 |
+| Jeedom    | >= 4.5 |
 
 # Installation
 

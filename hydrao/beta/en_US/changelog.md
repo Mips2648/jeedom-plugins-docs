@@ -7,7 +7,7 @@ pluginId: hydrao
 
 # Change log
 
-## 2026-10-17
+## 2026-11-19
 
 - Minor corrections
 - Improving code consistency and security for PHP 8

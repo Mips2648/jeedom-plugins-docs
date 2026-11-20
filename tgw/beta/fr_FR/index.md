@@ -117,6 +117,10 @@ Il est possible d'effectuer plusieurs configurations, une par ligne.
 
 Pour savoir comment obtenir cette IRK pour les appareils Apple, veuillez consulter [cette documentation](https://gateway.theengs.io/use/use.html#getting-identity-resolving-key-irk-for-apple-watch-iphone-ipad-and-airpods).
 
+### Liste noire Bluetooth
+
+Le champ *Liste noire Bluetooth* permet d'ignorer des appareils à partir de leur adresse MAC. Saisissez une adresse MAC par ligne ou séparez-les par des virgules. Les appareils listés seront ignorés par l'antenne ; les autres restent autorisés. Laissez le champ vide pour ne pas appliquer de liste noire.
+
 # Les commandes
 
 Chaque antenne dispose des commandes suivantes:

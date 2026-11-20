@@ -119,11 +119,13 @@ Pour savoir comment obtenir cette IRK pour les appareils Apple, veuillez consult
 
 # Les commandes
 
-Chaque antenne dispose de 3 commandes:
+Chaque antenne dispose des commandes suivantes:
 
 - **Online** commande info/binaire indiquant si l'antenne est en ligne ou non. "En ligne" veut dire connecté au broker et à l'écoute de périphérique Bluetooth.
 - **Redémarrer** action permettant de (re)démarrer l'antenne si nécessaire. Cela va redémarrer le service Bluetooth et le service TheengsGateway
+- **Réinitialiser l'adaptateur Bluetooth** action qui met hors service l'adaptateur Bluetooth sélectionné dans la configuration de l'équipement (hci0 par défaut), attend une seconde, le réactive, puis redémarre le service TheengsGateway pour qu'il se reconnecte à l'adaptateur.
 - **Stop** action permettant d'arrêter l'antenne si nécessaire
+- **Nettoyer le log distant** commande disponible en mode SSH. Elle applique la rotation au log du service sur l'antenne distante, puis récupère le log actualisé dans Jeedom.
 
 # Annexe: comment créer un utilisateur sous Debian et lui donner les droits sudo
 

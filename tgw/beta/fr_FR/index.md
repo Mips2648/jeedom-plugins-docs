@@ -122,7 +122,7 @@ Pour savoir comment obtenir cette IRK pour les appareils Apple, veuillez consult
 Chaque antenne dispose de 3 commandes:
 
 - **Online** commande info/binaire indiquant si l'antenne est en ligne ou non. "En ligne" veut dire connecté au broker et à l'écoute de périphérique Bluetooth.
-- **Redémarrer** action permettant de (re)démarrer l'antenne si nécessaire
+- **Redémarrer** action permettant de (re)démarrer l'antenne si nécessaire. Cela va redémarrer le service Bluetooth et le service TheengsGateway
 - **Stop** action permettant d'arrêter l'antenne si nécessaire
 
 # Annexe: comment créer un utilisateur sous Debian et lui donner les droits sudo

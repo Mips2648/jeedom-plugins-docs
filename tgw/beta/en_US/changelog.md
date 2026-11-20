@@ -7,8 +7,10 @@ pluginId: tgw
 
 # Change log
 
-## 2026-11-01
+## 2026-11-21
 
+- Added the *Bluetooth Blacklist* setting to ignore devices by MAC address
+- Added a command to reset the configured Bluetooth adapter and restart TheengsGateway
 - Antenna installation on **Debian Bullseye (11) is no longer supported**
 - Added the optional parameter: *publish_all*, which allows you to publish all announcements (by default) or only decoded announcements; see <https://gateway.theengs.io/use/use.html#details-options>
 - Correcting parameter types in the configuration file

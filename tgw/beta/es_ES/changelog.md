@@ -7,8 +7,10 @@ pluginId: tgw
 
 # Registro de cambios
 
-## 2026-11-01
+## 2026-11-21
 
+- Se ha añadido el parámetro *Lista negra de Bluetooth* para ignorar dispositivos por dirección MAC
+- Se ha añadido un comando para reiniciar el adaptador Bluetooth configurado y reiniciar TheengsGateway
 - La instalación de antenas en **Debian Bullseye (11) ya no es compatible**
 - Se ha añadido el parámetro opcional: *publish_all*, que permite publicar todos los anuncios (por defecto) o solo los anuncios descodificados; véase <https://gateway.theengs.io/use/use.html#details-options>
 - Corrección de los tipos de parámetros en el archivo de configuración

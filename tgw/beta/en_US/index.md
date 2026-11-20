@@ -117,13 +117,19 @@ You can enter multiple configurations, one per line.
 
 To learn how to obtain this IRK for Apple devices, please see [this documentation](https://gateway.theengs.io/use/use.html#getting-identity-resolving-key-irk-for-apple-watch-iphone-ipad-and-airpods).
 
+### Bluetooth Blacklist
+
+The *Bluetooth Blacklist* field allows you to block devices based on their MAC addresses. Enter one MAC address per line or separate them with commas. The listed devices will be blocked by the antenna; all others remain allowed. Leave the field blank to disable the blacklist.
+
 # Commands
 
-Each antenna has 3 commands:
+Each antenna has the following commands:
 
 - **Online** command (boolean) indicating whether the antenna is online or not. "Online" means connected to the broker and listening for Bluetooth devices.
-- **Restart**: an action that allows you to restart the antenna if necessary
+- **Restart**: an action that allows you to restart the antenna if necessary. This will restart the Bluetooth service and the TheengsGateway service.
+- **Reset the Bluetooth adapter**: This action disables the Bluetooth adapter selected in the device configuration (hci0 by default), waits one second, re-enables it, and then restarts the TheengsGateway service so that it reconnects to the adapter.
 - **Stop** action: an action that allows you to turn off the antenna if necessary
+- **Clear the remote log** command available in SSH mode. It rotates the service log on the remote server, then retrieves the updated log in Jeedom.
 
 # Appendix: How to create a user in Debian and grant them sudo privileges
 

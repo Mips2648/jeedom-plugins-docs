@@ -117,13 +117,19 @@ Se pueden realizar varias configuraciones, una por línea.
 
 Para saber cómo obtener este IRK para los dispositivos de Apple, consulta [esta documentación](https://gateway.theengs.io/use/use.html#getting-identity-resolving-key-irk-for-apple-watch-iphone-ipad-and-airpods).
 
+### Lista negra de Bluetooth
+
+El campo *Lista negra de Bluetooth* permite ignorar dispositivos en función de su dirección MAC. Introduce una dirección MAC por línea o sepáralas con comas. La antena ignorará los dispositivos que figuren en la lista; el resto seguirá estando autorizado. Deja el campo en blanco para no aplicar ninguna lista negra.
+
 # Los pedidos
 
-Cada antena dispone de 3 mandos:
+Cada antena dispone de los siguientes controles:
 
 - **Online**: comando de información/binario que indica si la antena está en línea o no. «En línea» significa que está conectada al broker y a la escucha de dispositivos Bluetooth.
-- **Reiniciar**: acción que permite (re)iniciar la antena si es necesario
+- **Reiniciar**: acción que permite (re)iniciar la antena si es necesario. Esto reiniciará el servicio Bluetooth y el servicio TheengsGateway.
+- **Restablecer el adaptador Bluetooth**: acción que desactiva el adaptador Bluetooth seleccionado en la configuración del equipo (hci0 por defecto), espera un segundo, lo vuelve a activar y, a continuación, reinicia el servicio TheengsGateway para que se vuelva a conectar al adaptador.
 - **Stop**: acción que permite detener la antena si es necesario
+- **Limpiar el registro remoto**: comando disponible en modo SSH. Aplica la rotación al registro del servicio en el servidor remoto y, a continuación, recupera el registro actualizado en Jeedom.
 
 # Anexo: cómo crear un usuario en Debian y otorgarle permisos de sudo
 

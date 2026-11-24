@@ -7,6 +7,11 @@ pluginId: stockexchange
 
 # Change log
 
+# 2026-11-24
+
+- Add an automatic description for the cron job
+- Addition and clarification of logs
+
 ## 2026-11-02
 
 - Minor corrections

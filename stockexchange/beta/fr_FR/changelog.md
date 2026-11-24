@@ -7,6 +7,11 @@ pluginId: stockexchange
 
 # Changelog
 
+# 2026-11-24
+
+- Ajout d'une description automatique du cron
+- Ajout et clarification de log
+
 ## 2026-11-02
 
 - Corrections mineures

@@ -9,6 +9,7 @@ pluginId: vaillantmultimatic
 
 ## 2026-11-02
 
+- Se ha corregido la gestión de la renovación de la autenticación de myVaillant, que podía provocar un error en el demonio hasta que se reiniciara.
 - Actualización de dependencias
 - Se requiere Debian 12 y PHP 8.2 o superior
 

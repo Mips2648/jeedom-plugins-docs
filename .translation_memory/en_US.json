@@ -1207,6 +1207,7 @@
     "Correction de la configuration par défaut des commandes de type *moisture* qui étaient configurées comme des commandes de types *temperature* (ne s'applique que si le type générique est reçu dans les infos de découvertes)": "Fixed the default configuration for *moisture* commands, which were configured as *temperature* commands (applies only if the generic type is received in the discovery information)",
     "Correction de la conversion des compteurs de visiteurs avant incrémentation": "Fixed the conversion of visitor counters before incrementing",
     "Correction de la découverte pour les payload contenant un booléen": "Fixed discovery for payloads containing a Boolean",
+    "Correction de la gestion du renouvellement de l'authentification myVaillant qui pouvait mettre le démon en erreur jusqu'à son redémarrage": "Fixed an issue with myVaillant authentication renewal handling that could cause the daemon to malfunction until it was restarted",
     "Correction de la migration des zones si plusieurs zones existent": "Fixed zone migration when multiple zones exist",
     "Correction de la sauvegarde des configs lors de la découverte via le cloud": "Fixed the saving of configurations during discovery via the cloud",
     "Correction des types de paramètres dans le fichier de configuration": "Correcting parameter types in the configuration file",

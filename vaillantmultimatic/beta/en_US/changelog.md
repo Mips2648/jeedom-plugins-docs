@@ -9,6 +9,7 @@ pluginId: vaillantmultimatic
 
 ## 2026-11-02
 
+- Fixed an issue with myVaillant authentication renewal handling that could cause the daemon to malfunction until it was restarted
 - Dependency update
 - Debian 12 & PHP 8.2+ required
 

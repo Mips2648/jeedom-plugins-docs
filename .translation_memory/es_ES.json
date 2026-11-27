@@ -1207,6 +1207,7 @@
     "Correction de la configuration par défaut des commandes de type *moisture* qui étaient configurées comme des commandes de types *temperature* (ne s'applique que si le type générique est reçu dans les infos de découvertes)": "Se ha corregido la configuración predeterminada de los comandos de tipo *humedad*, que estaban configurados como comandos de tipo *temperatura* (solo se aplica si se recibe el tipo genérico en la información de detección).",
     "Correction de la conversion des compteurs de visiteurs avant incrémentation": "Corrección de la conversión de los contadores de visitantes antes del incremento",
     "Correction de la découverte pour les payload contenant un booléen": "Corrección del descubrimiento para las cargas útiles que contienen un valor booleano",
+    "Correction de la gestion du renouvellement de l'authentification myVaillant qui pouvait mettre le démon en erreur jusqu'à son redémarrage": "Se ha corregido la gestión de la renovación de la autenticación de myVaillant, que podía provocar un error en el demonio hasta que se reiniciara.",
     "Correction de la migration des zones si plusieurs zones existent": "Corrección de la migración de zonas si existen varias zonas",
     "Correction de la sauvegarde des configs lors de la découverte via le cloud": "Corrección del guardado de configuraciones durante la detección a través de la nube",
     "Correction des types de paramètres dans le fichier de configuration": "Corrección de los tipos de parámetros en el archivo de configuración",

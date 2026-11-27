@@ -9,6 +9,7 @@ pluginId: vaillantmultimatic
 
 ## 2026-11-02
 
+- Correction de la gestion du renouvellement de l'authentification myVaillant qui pouvait mettre le démon en erreur jusqu'à son redémarrage
 - Mise à jour de dépendances
 - Debian 12 & PHP 8.2+ requis
 
